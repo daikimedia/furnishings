@@ -33,7 +33,6 @@ const Navbar = () => {
         { label: "Flooring", href: "#flooring" },
         { label: "Carpet tiles", href: "#" },
         { label: "Spc & Laminate", href: "#" },
-        { label: "Vinyl", href: "#" },
         { label: "Vinyl Sheet", dropdown: downloadLinks, key: "download" },
         { label: "Artificial Grass", href: "/contact" },
         { label: "Contact", href: "/contact" },
@@ -120,7 +119,6 @@ const Navbar = () => {
                     <NavLink title="Flooring" href="#flooring" />
                     <NavLink title="Carpet tiles" href="#" />
                     <NavLink title="Spc & Laminate" href="#" />
-                    <NavLink title="Vinyl" href="#" />
                     <div>
                         <p className="text-sm font-semibold text-gray-700 mb-1">Vinyl Sheet</p>
                         {downloadLinks.map((link, idx) => (
