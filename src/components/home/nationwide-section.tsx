@@ -62,7 +62,7 @@ export default function FlooringProjectSection() {
             <section className="container mx-auto px-4 py-16">
                 {/* Header */}
                 <div className="text-center mb-16">
-                    <h2 className="text-4xl font-bold text-gray-900 mb-4">
+                    <h2 className="text-3xl font-bold text-gray-900 mb-4">
                         Start Your Flooring Project Today
                     </h2>
                     <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-6">
@@ -82,7 +82,7 @@ export default function FlooringProjectSection() {
                             return (
                                 <div key={index} className="group relative h-full flex flex-col">
                                     {/* Step Card */}
-                                    <div className="bg-white rounded-2xl p-6 shadow-lg transition-all duration-300  border border-gray-100 text-center h-full flex flex-col justify-between">
+                                    <div className="bg-white rounded-2xl p-6 shadow-lg transition-all duration-300  border border-orange-100 text-center h-full flex flex-col justify-between">
                                         {/* Icon */}
                                         <div className="w-12 h-12 bg-gradient-to-br from-orange-500 to-orange-600 rounded-full flex items-center justify-center mx-auto mb-4  transition-transform duration-300 shadow-lg">
                                             <IconComponent className="w-6 h-6 text-white" />

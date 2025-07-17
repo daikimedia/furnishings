@@ -18,7 +18,7 @@ const CategoryTabs = () => {
 
     return (
         <div className="container mx-auto px-4 py-10">
-            <h2 className="text-5xl font-semibold text-center text-black mb-3">Our Products</h2>
+            <h2 className="text-3xl font-bold text-center text-black mb-3">Our Products</h2>
             <p className="text-gray-600 text-center text-xl max-w-2xl mx-auto my-10 mb-12">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore
             </p>

@@ -32,7 +32,7 @@ export default function FloorCategories() {
     const categories = getUniqueCategories();
 
     return (
-        <div className="py-16 bg-gray-50">
+        <div className="py-16 ">
             <div className="container mx-auto px-4 sm:px-6 lg:px-8">
                 {/* Header */}
                 <div className="text-center mb-12">
@@ -50,7 +50,7 @@ export default function FloorCategories() {
                         <Link
                             key={category.slug}
                             href={`/category/${category.slug}`}
-                            className="group relative overflow-hidden rounded-xl bg-white shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2"
+                            className="group relative overflow-hidden rounded-xl bg-white shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-orange-100"
                         >
                             {/* Image Container */}
                             <div className="relative h-64 overflow-hidden">

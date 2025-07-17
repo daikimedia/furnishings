@@ -64,7 +64,7 @@ const CertificateMarquee = () => {
     return (
         <div className=" py-10 overflow-hidden">
             <div className="mx-auto ">
-                <h2 className="text-center text-2xl md:text-3xl font-bold mb-8">
+                <h2 className="text-center text-3xl  font-bold mb-8">
                     <span className="text-orange-600">CHOOSE WITH CONFIDENT WITH OUR </span>
                     <span className="text-gray-800">CERTIFICATE</span>
                 </h2>

@@ -48,7 +48,7 @@ export default function ProcessSection() {
         <section className="container mx-auto px-4 py-16 ">
             {/* Header */}
             <div className="text-center mb-16">
-                <h2 className="text-4xl font-bold text-gray-900 mb-4">
+                <h2 className="text-2xl font-bold text-black mb-4">
                     Our Process — Clear, Efficient, Customer-Centric
                 </h2>
             </div>
@@ -69,7 +69,7 @@ export default function ProcessSection() {
                             <div className={`flex flex-col md:flex-row items-center gap-4 ${isEven ? 'md:flex-row' : 'md:flex-row-reverse'}`}>
                                 {/* Content Card */}
                                 <div className={`flex-1 ${isEven ? 'md:text-right' : 'md:text-left'}`}>
-                                    <div className="bg-white rounded-2xl p-4 shadow-lg  transition-all duration-300 border border-gray-100">
+                                    <div className="bg-white rounded-2xl p-4 shadow-lg  transition-all duration-300 border border-orange-100">
                                         <div className={`flex items-center gap-4 mb-4 ${isEven ? 'md:justify-end' : 'md:justify-start'} justify-center`}>
                                             {/* <span className="text-3xl font-bold text-gray-300">{process.step}</span> */}
                                             <h3 className="text-xl font-semibold  text-black">{process.title}</h3>

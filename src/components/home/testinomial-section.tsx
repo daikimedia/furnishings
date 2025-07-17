@@ -31,14 +31,14 @@ const TestimonialsSection = () => {
         <section className="relative  overflow-hidden py-16">
             <div className="container mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="text-center mb-16">
-                    <h2 className="text-4xl font-bold text-black">Client Testimonials</h2>
+                    <h2 className="text-3xl font-bold text-black">Client Testimonials</h2>
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                     {testimonials.map((testimonial) => (
                         <div
                             key={testimonial.id}
-                            className="bg-white rounded-2xl border border-white shadow-lg p-6 h-full flex flex-col justify-between"
+                            className="bg-white rounded-2xl border border-orange-100 shadow-lg p-6 h-full flex flex-col justify-between"
                         >
                             <div>
                                 <Quote className="w-8 h-8 text-orange-500 mb-4" />

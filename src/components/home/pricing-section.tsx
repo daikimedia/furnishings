@@ -28,7 +28,7 @@ export default function PricingSection() {
         <section className=" py-20 px-4">
             <div className="container mx-auto">
                 <div className="text-center mb-14">
-                    <h2 className="text-4xl font-bold text-black">Pricing Guide</h2>
+                    <h2 className="text-3xl font-bold text-black">Pricing Guide</h2>
                     <p className="text-gray-500 mt-2 text-sm">(RM per sq ft)</p>
                 </div>
 
@@ -36,17 +36,17 @@ export default function PricingSection() {
                     {pricingData.map((item, index) => (
                         <div
                             key={index}
-                            className="bg-white border border-gray-200 rounded-xl shadow-lg p-6  transition-all duration-300"
+                            className="bg-white border border-orange-200 rounded-xl shadow-lg p-6  transition-all duration-300"
                         >
                             <h3 className="text-xl font-semibold text-orange-600 mb-4">{item.product}</h3>
 
                             <div className="grid grid-cols-2 gap-4">
-                                <div className="bg-orange-100 p-4 rounded-md border">
+                                <div className="bg-orange-100 p-4 rounded-md border border-orange-200">
                                     <p className="text-sm text-gray-600">Standard Range</p>
                                     <p className="text-lg font-bold text-gray-800">{item.standard}</p>
                                 </div>
 
-                                <div className="bg-yellow-50 p-4 rounded-md border">
+                                <div className="bg-yellow-50 p-4 rounded-md border border-orange-200">
                                     <p className="text-sm text-gray-600">Premium Range</p>
                                     <p className="text-lg font-bold text-gray-800">{item.premium}</p>
                                 </div>
