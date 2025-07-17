@@ -1,142 +1,221 @@
 "use client";
 import React, { useState } from "react";
 import {
-    Star,
     Facebook,
     Twitter,
     Instagram,
+    Phone,
+    MapPin,
 } from "lucide-react";
 import mockData from "@/data/mockData";
 import Link from "next/link";
-type Product = {
-    id: number;
+
+type ProductData = {
+    id: string;
     name: string;
-    description: string;
-    price: number;
-    originalPrice: number | null;
-    discount: number | null;
-    image: string;
+    slug: string;
     category: string;
-    isAlreadyAdded: boolean;
+    brand: string;
+    images: {
+        main_image: string;
+        gallery: string[];
+        thumbnails: string[];
+        alt_texts: string[];
+    };
+    seo: {
+        meta_title: string;
+        meta_description: string;
+        keywords: string[];
+    };
+    description: {
+        short: string;
+        long: string;
+    };
+    features: {
+        main_features: string[];
+        benefits: string[];
+        design_compatibility: string[];
+    };
+    specifications: {
+        waterproof: boolean;
+        slip_resistant: boolean;
+        durability: string;
+        installation_type: string;
+        surface_requirement: string;
+        maintenance: string;
+    };
+    suitable_areas: string[];
+    climate_suitability: {
+        humid_climate: boolean;
+        tropical_weather: boolean;
+        moisture_resistant: boolean;
+        country_specific: string;
+    };
+    installation: {
+        method: string;
+        surface_types: string[];
+        diy_friendly: boolean;
+        professional_recommended: boolean;
+        requirements: string[];
+    };
+    maintenance: {
+        cleaning_method: string;
+        special_treatments: string;
+        no_waxing: boolean;
+        no_polishing: boolean;
+        no_sealants: boolean;
+    };
+    faqs: Array<{
+        question: string;
+        answer: string;
+    }>;
+    call_to_action: {
+        primary: string;
+        secondary: string;
+        tertiary: string;
+    };
+    status: string;
+    created_at: string;
+    updated_at: string;
 };
 
 type SingleProductProps = {
-    product: Product;
+    productData: ProductData;
 };
 
-export default function SingleProduct({ product }: SingleProductProps) {
+export default function SingleProduct({ productData }: SingleProductProps) {
     const [activeTab, setActiveTab] = useState("description");
     const [selectedImage, setSelectedImage] = useState(0);
 
     // Related products - same category ke products, current product ko exclude kar ke
     const relatedProducts = mockData.products
-        .filter(p => p.category === product.category && p.id !== product.id)
-        .slice(0, 4); // sirf 4 products show karenge
-
-    const thumbnails = [
-        product.image,
-        // product.image,
-        // product.image,
-        // product.image
-    ];
+        .filter(p => p.product.category === productData.category && p.product.id !== productData.id)
+        .slice(0, 4);
 
     const renderTabContent = () => {
         switch (activeTab) {
             case "description":
                 return (
                     <div className="py-8">
-                        <p className="text-gray-600 leading-relaxed">
-                            {product.description}
-                        </p>
-                        <br />
-                        <p className="text-gray-600 leading-relaxed">
-                            Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical
-                            Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at
-                            Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem
-                            Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.
-                        </p>
-                    </div>
-                );
-            case "additional":
-                return (
-                    <div className="py-8">
-                        <div className="grid grid-cols-2 gap-8">
+                        <div className="space-y-6">
                             <div>
-                                <h4 className="font-semibold mb-4">Size:</h4>
-                                <p className="text-gray-600">S, M, L, XL</p>
-                            </div>
-                            <div>
-                                <h4 className="font-semibold mb-4">Color:</h4>
-                                <p className="text-gray-600">Red, Green, Blue, Yellow, White</p>
-                            </div>
-                        </div>
-                    </div>
-                );
-            case "reviews":
-                return (
-                    <div className="py-8">
-                        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-                            <div>
-                                <div className="flex items-center mb-6">
-                                    <div className="w-12 h-12 bg-gray-300 rounded-full flex items-center justify-center mr-4">
-                                        <span className="text-gray-600 font-semibold">WL</span>
-                                    </div>
-                                    <div>
-                                        <h4 className="font-semibold">White Lewis</h4>
-                                        <div className="flex items-center">
-                                            {[...Array(5)].map((_, i) => (
-                                                <Star key={i} className="w-4 h-4 text-yellow-400 fill-current" />
-                                            ))}
-                                        </div>
-                                    </div>
-                                </div>
-                                <p className="text-gray-600">
-                                    Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia euismod
-                                    vehicula. Phasellus congue nulla.
+                                <h3 className="text-xl font-semibold mb-4">Product Description</h3>
+                                <p className="text-gray-600 leading-relaxed mb-4">
+                                    {productData.description.long}
                                 </p>
                             </div>
 
                             <div>
-                                <h3 className="text-lg font-semibold mb-4">Add your Review</h3>
-                                <div className="space-y-4">
-                                    <div>
-                                        <label className="block text-sm font-medium mb-2">Your Rating:</label>
-                                        <div className="flex items-center space-x-1">
-                                            {[...Array(5)].map((_, i) => (
-                                                <Star key={i} className="w-5 h-5 text-gray-300 cursor-pointer hover:text-yellow-400" />
-                                            ))}
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <label className="block text-sm font-medium mb-2">Message</label>
-                                        <textarea
-                                            className="w-full border border-gray-300 rounded-md px-3 py-2 h-24 resize-none"
-                                            placeholder="Write your review..."
-                                        />
-                                    </div>
-                                    <div className="grid grid-cols-2 gap-4">
-                                        <div>
-                                            <label className="block text-sm font-medium mb-2">Name</label>
-                                            <input
-                                                type="text"
-                                                className="w-full border border-gray-300 rounded-md px-3 py-2"
-                                                placeholder="Your name"
-                                            />
-                                        </div>
-                                        <div>
-                                            <label className="block text-sm font-medium mb-2">Email</label>
-                                            <input
-                                                type="email"
-                                                className="w-full border border-gray-300 rounded-md px-3 py-2"
-                                                placeholder="Your email"
-                                            />
-                                        </div>
-                                    </div>
-                                    <button className="bg-orange-500 hover:bg-orange-600 text-white px-6 py-2 rounded-md transition-colors">
-                                        Submit
-                                    </button>
+                                <h4 className="text-lg font-semibold mb-3">Key Features</h4>
+                                <ul className="list-disc list-inside space-y-2 text-gray-600">
+                                    {productData.features.main_features.map((feature, index) => (
+                                        <li key={index}>{feature}</li>
+                                    ))}
+                                </ul>
+                            </div>
+
+                            <div>
+                                <h4 className="text-lg font-semibold mb-3">Benefits</h4>
+                                <ul className="list-disc list-inside space-y-2 text-gray-600">
+                                    {productData.features.benefits.map((benefit, index) => (
+                                        <li key={index}>{benefit}</li>
+                                    ))}
+                                </ul>
+                            </div>
+
+                            <div>
+                                <h4 className="text-lg font-semibold mb-3">Suitable Areas</h4>
+                                <ul className="list-disc list-inside space-y-2 text-gray-600">
+                                    {productData.suitable_areas.map((area, index) => (
+                                        <li key={index}>{area}</li>
+                                    ))}
+                                </ul>
+                            </div>
+
+                            <div>
+                                <h4 className="text-lg font-semibold mb-3">Design Compatibility</h4>
+                                <div className="flex flex-wrap gap-2">
+                                    {productData.features.design_compatibility.map((style, index) => (
+                                        <span key={index} className="px-3 py-1 bg-orange-100 text-orange-600 rounded-full text-sm">
+                                            {style}
+                                        </span>
+                                    ))}
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                );
+            case "specifications":
+                return (
+                    <div className="py-8">
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                            <div>
+                                <h4 className="text-lg font-semibold mb-4">Product Specifications</h4>
+                                <div className="space-y-3">
+                                    <div className="flex justify-between border-b pb-2">
+                                        <span className="text-gray-600">Waterproof:</span>
+                                        <span className="font-medium">{productData.specifications.waterproof ? 'Yes' : 'No'}</span>
+                                    </div>
+                                    <div className="flex justify-between border-b pb-2">
+                                        <span className="text-gray-600">Slip Resistant:</span>
+                                        <span className="font-medium">{productData.specifications.slip_resistant ? 'Yes' : 'No'}</span>
+                                    </div>
+                                    <div className="flex justify-between border-b pb-2">
+                                        <span className="text-gray-600">Durability:</span>
+                                        <span className="font-medium">{productData.specifications.durability}</span>
+                                    </div>
+                                    <div className="flex justify-between border-b pb-2">
+                                        <span className="text-gray-600">Installation Type:</span>
+                                        <span className="font-medium">{productData.specifications.installation_type}</span>
+                                    </div>
+                                    <div className="flex justify-between border-b pb-2">
+                                        <span className="text-gray-600">Surface Requirement:</span>
+                                        <span className="font-medium">{productData.specifications.surface_requirement}</span>
+                                    </div>
+                                    <div className="flex justify-between">
+                                        <span className="text-gray-600">Maintenance:</span>
+                                        <span className="font-medium">{productData.specifications.maintenance}</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div>
+                                <h4 className="text-lg font-semibold mb-4">Installation & Maintenance</h4>
+                                <div className="space-y-4">
+                                    <div>
+                                        <h5 className="font-medium mb-2">Installation Method:</h5>
+                                        <p className="text-gray-600 text-sm">{productData.installation.method}</p>
+                                    </div>
+                                    <div>
+                                        <h5 className="font-medium mb-2">Surface Types:</h5>
+                                        <p className="text-gray-600 text-sm">{productData.installation.surface_types.join(', ')}</p>
+                                    </div>
+                                    <div>
+                                        <h5 className="font-medium mb-2">Cleaning Method:</h5>
+                                        <p className="text-gray-600 text-sm">{productData.maintenance.cleaning_method}</p>
+                                    </div>
+                                    <div>
+                                        <h5 className="font-medium mb-2">Climate Suitability:</h5>
+                                        <p className="text-gray-600 text-sm">
+                                            Perfect for {productData.climate_suitability.country_specific} climate
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                );
+            case "faq":
+                return (
+                    <div className="py-8">
+                        <h3 className="text-xl font-semibold mb-6">Frequently Asked Questions</h3>
+                        <div className="space-y-6">
+                            {productData.faqs.map((faq, index) => (
+                                <div key={index} className="border-b pb-4">
+                                    <h4 className="font-semibold text-gray-900 mb-2">{faq.question}</h4>
+                                    <p className="text-gray-600">{faq.answer}</p>
+                                </div>
+                            ))}
                         </div>
                     </div>
                 );
@@ -146,7 +225,7 @@ export default function SingleProduct({ product }: SingleProductProps) {
     };
 
     return (
-        <div className=" bg-white">
+        <div className="bg-white">
             <div className="container mx-auto px-8 py-8">
                 {/* Product Section */}
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-12">
@@ -155,18 +234,18 @@ export default function SingleProduct({ product }: SingleProductProps) {
                         {/* Main Image */}
                         <div className="aspect-square bg-gray-100 rounded-lg overflow-hidden">
                             <img
-                                src={product.image}
-                                alt={product.name}
+                                src={productData.images.gallery[selectedImage]}
+                                alt={productData.images.alt_texts[selectedImage]}
                                 className="w-full h-full object-cover"
                             />
                         </div>
 
                         {/* Thumbnail Images */}
-                        <div className="flex space-x-4">
-                            {thumbnails.map((thumb, index) => (
+                        <div className="flex space-x-4 overflow-x-auto">
+                            {productData.images.thumbnails.map((thumb, index) => (
                                 <div
                                     key={index}
-                                    className={`w-20 h-20 bg-gray-100 rounded-lg overflow-hidden cursor-pointer border-2 ${selectedImage === index ? 'border-orange-500' : 'border-transparent'
+                                    className={`w-20 h-20 bg-gray-100 rounded-lg overflow-hidden cursor-pointer border-2 flex-shrink-0 ${selectedImage === index ? 'border-orange-500' : 'border-transparent'
                                         }`}
                                     onClick={() => setSelectedImage(index)}
                                 >
@@ -184,81 +263,52 @@ export default function SingleProduct({ product }: SingleProductProps) {
                     <div className="space-y-6">
                         <div>
                             <div className="text-sm text-gray-500 mb-2">
-                                SKU: <span className="font-medium">#{product.id.toString().padStart(6, '0')}</span>
+                                SKU: <span className="font-medium">{productData.id}</span>
+                            </div>
+                            <div className="text-sm text-green-600 mb-2">
+                                Brand: <span className="font-medium">{productData.brand}</span>
                             </div>
                             <div className="text-sm text-green-600 mb-4">
-                                Availability: <span className="font-medium">10 in Stock</span>
+                                Category: <span className="font-medium">{productData.category}</span>
                             </div>
 
                             <h1 className="text-3xl font-bold text-gray-900 mb-4">
-                                {product.name}
+                                {productData.name}
                             </h1>
+
+                            <p className="text-gray-600 leading-relaxed mb-6">
+                                {productData.description.short}
+                            </p>
                         </div>
 
-                        <div className="space-y-4">
-                            <h3 className="text-lg font-semibold text-gray-900 mb-3">Product Specifications</h3>
-                            <div className="grid grid-cols-1 gap-3 text-sm">
-                                <div className="flex justify-between border-b pb-2">
-                                    <span className="text-gray-600">SKU:</span>
-                                    <span className="font-medium">Galaxy 6503-23</span>
-                                </div>
-                                <div className="flex justify-between border-b pb-2">
-                                    <span className="text-gray-600">Product Type:</span>
-                                    <span className="font-medium">06 AMAZON® CARPET TILES NYLON (PROMO)</span>
-                                </div>
-                                <div className="flex justify-between border-b pb-2">
-                                    <span className="text-gray-600">Collection:</span>
-                                    <span className="font-medium">Galaxy 6503, Universal® Nylon/Pvc</span>
-                                </div>
-                                <div className="flex justify-between border-b pb-2">
-                                    <span className="text-gray-600">Product Composition:</span>
-                                    <span className="font-medium">100% Universal Nylon 6,6</span>
-                                </div>
-                                <div className="flex justify-between border-b pb-2">
-                                    <span className="text-gray-600">Origin:</span>
-                                    <span className="font-medium">Asia</span>
-                                </div>
-                                <div className="flex justify-between border-b pb-2">
-                                    <span className="text-gray-600">Construction:</span>
-                                    <span className="font-medium">Multi-level loop</span>
-                                </div>
-                                <div className="flex justify-between border-b pb-2">
-                                    <span className="text-gray-600">Material:</span>
-                                    <span className="font-medium">Nylon Carpet</span>
-                                </div>
-                                <div className="flex justify-between border-b pb-2">
-                                    <span className="text-gray-600">Unit of Measurement:</span>
-                                    <span className="font-medium">box(s)</span>
-                                </div>
-                                <div className="flex justify-between border-b pb-2">
-                                    <span className="text-gray-600">SQFT Per Box:</span>
-                                    <span className="font-medium">54</span>
-                                </div>
-                                <div className="flex justify-between border-b pb-2">
-                                    <span className="text-gray-600">Thickness/undefined:</span>
-                                    <span className="font-medium">6.0 mm</span>
-                                </div>
-                                <div className="flex justify-between border-b pb-2">
-                                    <span className="text-gray-600">Backing:</span>
-                                    <span className="font-medium">PVC</span>
-                                </div>
-                                <div className="flex justify-between border-b pb-2">
-                                    <span className="text-gray-600">Pile Weight:</span>
-                                    <span className="font-medium">21oz/yd2 or 710g/m!!</span>
-                                </div>
-                                <div className="flex justify-between border-b pb-2">
-                                    <span className="text-gray-600">Certification:</span>
-                                    <span className="font-medium">CRI Green Label Plus</span>
-                                </div>
-                                <div className="flex justify-between border-b pb-2">
-                                    <span className="text-gray-600">Box Packaging (pcs/box):</span>
-                                    <span className="font-medium">20 pcs</span>
-                                </div>
-                                <div className="flex justify-between">
-                                    <span className="text-gray-600">Size Per Piece:</span>
-                                    <span className="font-medium">500 mm x 500 mm</span>
-                                </div>
+                        {/* Key Features Quick Preview */}
+                        <div className="bg-gray-50 rounded-lg p-6">
+                            <h3 className="font-semibold mb-3">Key Features</h3>
+                            <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
+                                {productData.features.main_features.slice(0, 6).map((feature, index) => (
+                                    <div key={index} className="flex items-center text-sm text-gray-600">
+                                        <div className="w-2 h-2 bg-orange-500 rounded-full mr-3"></div>
+                                        {feature}
+                                    </div>
+                                ))}
                             </div>
+                        </div>
+
+                        {/* Call to Action */}
+                        <div className="bg-orange-50 rounded-lg p-6 space-y-4">
+                            <h3 className="font-semibold text-orange-800">Get This Product</h3>
+                            <p className="text-orange-700">{productData.call_to_action.primary}</p>
+                            <div className="flex flex-col sm:flex-row gap-3">
+                                <button className="flex items-center justify-center bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 rounded-md transition-colors">
+                                    <Phone className="w-4 h-4 mr-2" />
+                                    Call for Quote
+                                </button>
+                                <button className="flex items-center justify-center border border-orange-500 text-orange-500 hover:bg-orange-500 hover:text-white px-6 py-3 rounded-md transition-colors">
+                                    <MapPin className="w-4 h-4 mr-2" />
+                                    Visit Showroom
+                                </button>
+                            </div>
+                            <p className="text-sm text-orange-600">{productData.call_to_action.secondary}</p>
                         </div>
 
                         {/* Social Share */}
@@ -286,13 +336,22 @@ export default function SingleProduct({ product }: SingleProductProps) {
                             Description
                         </button>
                         <button
-                            onClick={() => setActiveTab("additional")}
-                            className={`pb-4 px-2 font-medium transition-colors ${activeTab === "additional"
+                            onClick={() => setActiveTab("specifications")}
+                            className={`pb-4 px-2 font-medium transition-colors ${activeTab === "specifications"
                                 ? "text-orange-500 border-b-2 border-orange-500"
                                 : "text-gray-600 hover:text-gray-900"
                                 }`}
                         >
-                            Additional Info
+                            Specifications
+                        </button>
+                        <button
+                            onClick={() => setActiveTab("faq")}
+                            className={`pb-4 px-2 font-medium transition-colors ${activeTab === "faq"
+                                ? "text-orange-500 border-b-2 border-orange-500"
+                                : "text-gray-600 hover:text-gray-900"
+                                }`}
+                        >
+                            FAQ
                         </button>
                     </div>
 
@@ -302,22 +361,20 @@ export default function SingleProduct({ product }: SingleProductProps) {
                     </div>
                 </div>
 
-
+                {/* Related Products */}
                 {relatedProducts.length > 0 && (
                     <div className="border-t pt-12">
                         <h2 className="text-2xl font-bold text-gray-900 mb-8">Related Products</h2>
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                            {relatedProducts.map((product) => (
-                                <div key={product.id} className="group">
-                                    <div
-                                        className="bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 cursor-pointer transform hover:-translate-y-2 overflow-hidden"
-                                    >
-                                        <Link href={`/shop/${product.id}`}>
+                            {relatedProducts.map((productItem) => (
+                                <div key={productItem.product.id} className="group">
+                                    <div className="bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 cursor-pointer transform hover:-translate-y-2 overflow-hidden">
+                                        <Link href={`/shop/${productItem.product.slug}`}>
                                             {/* Image Container */}
                                             <div className="relative h-48 overflow-hidden">
                                                 <img
-                                                    src={product.image}
-                                                    alt={product.name}
+                                                    src={productItem.product.images.main_image}
+                                                    alt={productItem.product.name}
                                                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
                                                 />
                                                 <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300"></div>
@@ -326,10 +383,10 @@ export default function SingleProduct({ product }: SingleProductProps) {
                                             {/* Content */}
                                             <div className="p-6">
                                                 <h3 className="text-xl font-semibold text-gray-900 mb-2 group-hover:text-orange-600 transition-colors duration-300 line-clamp-2">
-                                                    {product.name}
+                                                    {productItem.product.name}
                                                 </h3>
                                                 <p className="text-gray-600 text-base mb-4 line-clamp-2">
-                                                    {product.description}
+                                                    {productItem.product.description.short}
                                                 </p>
 
                                                 <div className="flex items-center text-orange-600 font-medium group-hover:text-orange-600 transition-colors duration-300">
@@ -354,8 +411,6 @@ export default function SingleProduct({ product }: SingleProductProps) {
                         </div>
                     </div>
                 )}
-
-
             </div>
         </div>
     );

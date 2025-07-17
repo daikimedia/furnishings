@@ -20,11 +20,59 @@ type ProductsSectionProps = {
     showAll?: boolean;
 };
 
+// Option 1: Define a proper type for the mock data structure
+type MockDataItem = {
+    product: {
+        description: string | { short: string; long: string };
+        id: string | number;
+        name: string;
+        price: number;
+        originalPrice?: number;
+        discount?: number;
+        images?: {
+            main_image?: string;
+        };
+        category: string;
+        isAlreadyAdded?: boolean;
+    };
+};
+
 export default function ProductsSection({
     limit,
     showAll = false,
 }: ProductsSectionProps) {
-    const [products] = useState<Product[]>(mockData.products);
+    const [products] = useState<Product[]>(
+        // Option 1: Cast to the proper type
+        (mockData.products as unknown as MockDataItem[]).map((item) => ({
+            description: typeof item.product.description === 'string'
+                ? item.product.description
+                : item.product.description?.short || item.product.description?.long || "",
+            id: Number(item.product.id),
+            name: item.product.name,
+            price: item.product.price,
+            originalPrice: item.product.originalPrice ?? null,
+            discount: item.product.discount ?? null,
+            image: item.product.images?.main_image || "",
+            category: item.product.category,
+            isAlreadyAdded: item.product.isAlreadyAdded ?? false,
+        }))
+
+        // Option 2: Use type assertion (simpler but less type-safe)
+        // (mockData.products as unknown[]).map((item: unknown) => {
+        //     const productItem = item as MockDataItem;
+        //     return {
+        //         description: productItem.product.description,
+        //         id: Number(productItem.product.id),
+        //         name: productItem.product.name,
+        //         price: productItem.product.price,
+        //         originalPrice: productItem.product.originalPrice ?? null,
+        //         discount: productItem.product.discount ?? null,
+        //         image: productItem.product.images?.main_image || "",
+        //         category: productItem.product.category,
+        //         isAlreadyAdded: productItem.product.isAlreadyAdded ?? false,
+        //     };
+        // })
+    );
     const [, setHoveredProduct] = useState<number | null>(null);
 
     // Filter states

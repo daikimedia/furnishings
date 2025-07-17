@@ -10,49 +10,48 @@ type Params = Promise<{
 export default async function ProductPage({ params }: { params: Params }) {
     const { slug } = await params;
 
-    const productId = parseInt(slug);
+    // Find product by slug instead of ID
+    const productData = mockData.products.find(p => p.product.slug === slug);
 
-    const product = mockData.products.find(p => p.id === productId);
-
-    if (!product) {
+    if (!productData) {
         notFound();
     }
 
     return (
         <main>
             <PageHeader />
-            <SingleProduct product={product} />
+            <SingleProduct productData={productData.product} />
         </main>
     );
 }
 
-
 export async function generateStaticParams() {
-    return mockData.products.map((product) => ({
-        slug: product.id.toString(),
+    return mockData.products.map((productData) => ({
+        slug: productData.product.slug,
     }));
 }
 
 export async function generateMetadata({ params }: { params: Params }) {
-
     const { slug } = await params;
-    const productId = parseInt(slug);
-    const product = mockData.products.find(p => p.id === productId);
+    const productData = mockData.products.find(p => p.product.slug === slug);
 
-    if (!product) {
+    if (!productData) {
         return {
             title: 'Product Not Found',
             description: 'The product you are looking for does not exist.',
         };
     }
 
+    const { product } = productData;
+
     return {
-        title: `${product.name} - Your Store`,
-        description: product.description,
+        title: product.seo.meta_title,
+        description: product.seo.meta_description,
+        keywords: product.seo.keywords,
         openGraph: {
             title: product.name,
-            description: product.description,
-            images: [product.image],
+            description: product.description.short,
+            images: [product.images.main_image],
         },
     };
 }

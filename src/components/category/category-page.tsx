@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import { useParams, useRouter } from "next/navigation";
-import mockData from "@/data/mockData"; // Adjust path as needed
+import mockData from "@/data/mockData";
 import Link from "next/link";
 
 export default function CategoryPage() {
@@ -11,16 +11,16 @@ export default function CategoryPage() {
 
     // Convert slug back to category name
     const getCategoryFromSlug = (slug: string) => {
-        return mockData.products.find(product =>
-            product.category.toLowerCase().replace(/\s+/g, '-').replace(/&/g, 'and') === slug
-        )?.category;
+        return mockData.products.find(item =>
+            item.product.category.toLowerCase().replace(/\s+/g, '-').replace(/&/g, 'and') === slug
+        )?.product.category;
     };
 
     const categoryName = typeof slug === "string" ? getCategoryFromSlug(slug) : undefined;
 
     // Filter products by category
     const categoryProducts = mockData.products.filter(
-        product => product.category === categoryName
+        item => item.product.category === categoryName
     );
 
     if (!categoryName || categoryProducts.length === 0) {
@@ -56,40 +56,49 @@ export default function CategoryPage() {
             {/* Products Grid */}
             <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-8">
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
-                    {categoryProducts.map((product) => (
-                        <div key={product.id} className="group">
-                            <Link
-                                href={`/shop/${product.id}`}
-                                className="block bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 cursor-pointer transform hover:-translate-y-2 overflow-hidden"
-                            >
-                                {/* Image Section */}
-                                <div className="relative h-64 overflow-hidden">
-                                    <img
-                                        src={product.image}
-                                        alt={product.name}
-                                        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
-                                    />
-                                    <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300"></div>
-                                </div>
+                    {categoryProducts.map((item) => {
+                        const product = item.product;
+                        return (
+                            <div key={product.id} className="group">
+                                <Link
+                                    href={`/shop/${product.slug}`}
+                                    className="block bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 cursor-pointer transform hover:-translate-y-2 overflow-hidden"
+                                >
+                                    {/* Image Section */}
+                                    <div className="relative h-64 overflow-hidden">
+                                        <img
+                                            src={product.images?.main_image || '/images/placeholder.jpg'}
+                                            alt={product.images?.alt_texts?.[0] || product.name}
+                                            className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                                        />
+                                        <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300"></div>
+                                    </div>
 
-                                {/* Product Info */}
-                                <div className="p-4">
-                                    <h3 className="text-lg font-semibold text-gray-900 mb-2 group-hover:text-orange-600 transition-colors duration-300 line-clamp-2">
-                                        {product.name}
-                                    </h3>
-                                    <p className="text-gray-600 text-sm line-clamp-2">
-                                        {product.description || "Lorem ipsum dolor sit amet, consectetur adipiscing elit."}
-                                    </p>
-                                </div>
+                                    {/* Product Info */}
+                                    <div className="p-4">
+                                        <h3 className="text-lg font-semibold text-gray-900 mb-2 group-hover:text-orange-600 transition-colors duration-300 line-clamp-2">
+                                            {product.name}
+                                        </h3>
+                                        <p className="text-gray-600 text-sm line-clamp-2">
+                                            {product.description.short || product.description.long || "Premium flooring solution for modern spaces"}
+                                        </p>
 
-                                {/* Decorative Border */}
-                                <div className="h-1 bg-gradient-to-r from-orange-400 to-orange-600 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
-                            </Link>
-                        </div>
-                    ))}
+                                        {/* Brand Badge */}
+                                        <div className="mt-2">
+                                            <span className="inline-block bg-orange-100 text-orange-800 text-xs px-2 py-1 rounded-full">
+                                                {product.brand}
+                                            </span>
+                                        </div>
+                                    </div>
+
+                                    {/* Decorative Border */}
+                                    <div className="h-1 bg-gradient-to-r from-orange-400 to-orange-600 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
+                                </Link>
+                            </div>
+                        );
+                    })}
                 </div>
             </div>
-
         </div>
     );
 }
