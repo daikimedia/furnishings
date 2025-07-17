@@ -64,7 +64,7 @@ const ContactUsPage = () => {
         message: ''
     });
 
-    const handleInputChange = (e: { target: { name: any; value: any; }; }) => {
+    const handleInputChange = (e: { target: { name: string; value: string; }; }) => {
         const { name, value } = e.target;
         setFormData(prev => ({
             ...prev,
@@ -104,10 +104,10 @@ const ContactUsPage = () => {
                 <div className="container mx-auto px-4">
                     <div className="max-w-4xl mx-auto text-center">
                         <h2 className="text-3xl font-bold text-gray-900 mb-6">
-                            Let's Start Your Flooring Project with Confidence
+                            Let&apos;s Start Your Flooring Project with Confidence
                         </h2>
                         <p className="text-lg text-gray-700 leading-relaxed">
-                            Looking for premium vinyl, PVC, or SPC flooring solutions in Malaysia? At Furnishing, we're committed to transforming residential and commercial spaces with high-quality, durable, and stylish flooring options. Whether you need expert advice, a custom quote, or an on-site consultation, our experienced team is ready to assist you.
+                            Looking for premium vinyl, PVC, or SPC flooring solutions in Malaysia? At Furnishing, we&apos;re committed to transforming residential and commercial spaces with high-quality, durable, and stylish flooring options. Whether you need expert advice, a custom quote, or an on-site consultation, our experienced team is ready to assist you.
                         </p>
                     </div>
                 </div>
@@ -179,7 +179,7 @@ const ContactUsPage = () => {
                             <div className="flex justify-center items-center gap-3 text-orange-600">
                                 <CalendarCheck className="w-5 h-5" />
                                 <p className="text-base">
-                                    If you'd like to visit our showroom or need on-site flooring samples, please call ahead to schedule your visit.
+                                    If you&apos;d like to visit our showroom or need on-site flooring samples, please call ahead to schedule your visit.
                                 </p>
                             </div>
                         </div>
@@ -403,7 +403,7 @@ const ContactUsPage = () => {
                             <div className="space-y-4">
                                 <div className="flex items-start gap-3">
                                     <div className="w-2 h-2 bg-orange-600 rounded-full mt-2 flex-shrink-0"></div>
-                                    <p className="text-gray-700">High-quality flooring materials tailored for Malaysia's humid climate</p>
+                                    <p className="text-gray-700">High-quality flooring materials tailored for Malaysia&apos;s humid climate</p>
                                 </div>
                                 <div className="flex items-start gap-3">
                                     <div className="w-2 h-2 bg-orange-600 rounded-full mt-2 flex-shrink-0"></div>

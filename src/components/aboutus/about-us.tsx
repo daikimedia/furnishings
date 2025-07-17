@@ -1,5 +1,5 @@
 import React from 'react';
-import { Heart, Target, Eye, Star, Users, Award, Home, Building, Leaf, Shield } from 'lucide-react';
+import { Heart, Star, Users, Award, Home, Building, Leaf, Shield } from 'lucide-react';
 import Image from 'next/image';
 const AboutUs = () => {
     return (
@@ -10,7 +10,7 @@ const AboutUs = () => {
                     <div className="text-center">
                         <h1 className="text-3xl font-bold mb-6">About Furnishing</h1>
                         <p className="text-xl md:text-2xl text-black max-w-4xl mx-auto">
-                            Malaysia's trusted name for delivering premium vinyl and SPC flooring, stylish interior solutions, and modern furnishing materials tailored to local tastes.
+                            Malaysia&apos;s trusted name for delivering premium vinyl and SPC flooring, stylish interior solutions, and modern furnishing materials tailored to local tastes.
                         </p>
                     </div>
                 </div>
@@ -182,8 +182,8 @@ const AboutUs = () => {
 
                     <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                         <div className="bg-white rounded-xl shadow-lg p-6 border border-orange-100">
-                            <h3 className="text-xl font-bold text-gray-900 mb-3">Designed for Malaysia's Climate</h3>
-                            <p className="text-gray-600">All products are selected for their resistance to moisture, heat, and tropical weather conditions—perfect for Malaysia's environment.</p>
+                            <h3 className="text-xl font-bold text-gray-900 mb-3">Designed for Malaysia&apos;s Climate</h3>
+                            <p className="text-gray-600">All products are selected for their resistance to moisture, heat, and tropical weather conditions—perfect for Malaysia&apos;s environment.</p>
                         </div>
 
                         <div className="bg-white rounded-xl shadow-lg p-6 border border-orange-100">
@@ -334,7 +334,7 @@ const AboutUs = () => {
                         Furnish Your Space with Confidence
                     </h3>
                     <p className="text-gray-700 text-lg">
-                        Whether you're upgrading your home or re-fitting your commercial space, we’re ready to help.   <span className='text-orange-600'> <a href="https://www.furnishings.com.my/contact">Contact us</a></span>  for a free consultation today, and let us bring your vision to life.
+                        Whether you&apos;re upgrading your home or re-fitting your commercial space, we’re ready to help.   <span className='text-orange-600'> <a href="https://www.furnishings.com.my/contact">Contact us</a></span>  for a free consultation today, and let us bring your vision to life.
 
                     </p>
                 </div>
