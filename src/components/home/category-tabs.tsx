@@ -13,7 +13,7 @@ const CategoryTabs = () => {
     const [activeCategory, setActiveCategory] = useState('Artificial Grass')
 
     const filteredProducts = mockData.products.filter(
-        (product) => product.category === activeCategory
+        (product) => product.product.category === activeCategory
     )
 
     return (
@@ -53,16 +53,16 @@ const CategoryTabs = () => {
                 >
                     {filteredProducts.map((product) => (
                         <motion.div
-                            key={product.id}
+                            key={product.product.id}
                             whileHover={{ y: -8 }}
                             className="group bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-200 cursor-pointer transform overflow-hidden"
                         >
-                            <Link href={`/shop/${product.id}`}>
+                            <Link href={`/shop/${product.product.id}`}>
                                 {/* Image */}
                                 <div className="relative h-60 overflow-hidden">
                                     <Image
-                                        src={product.image}
-                                        alt={product.name}
+                                        src={product.product.images.main_image}
+                                        alt={product.product.name}
                                         width={300}
                                         height={240}
                                         className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
@@ -73,10 +73,10 @@ const CategoryTabs = () => {
                                 {/* Content */}
                                 <div className="p-6">
                                     <h3 className="text-xl font-semibold text-gray-900 mb-2 group-hover:text-orange-600 transition-colors duration-300">
-                                        {product.name}
+                                        {product.product.name}
                                     </h3>
                                     <p className="text-gray-600 text-base mb-4 line-clamp-2">
-                                        {product.description}
+                                        {product.product.description.short}
                                     </p>
 
                                     <div className="flex items-center text-orange-600 font-medium group-hover:text-orange-600 transition-colors duration-300">

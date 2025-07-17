@@ -9,18 +9,19 @@ export default function PageHeader() {
     const paths = pathname.split("/").filter(Boolean);
     const lastSegment = paths[paths.length - 1];
 
-    const product = mockData.products.find(p => p.id === Number(lastSegment));
+    // Fixed: Access p.product.id instead of p.id
+    const product = mockData.products.find(p => p.product.id === lastSegment);
     const pageTitle = product
-        ? product.name.toUpperCase()
+        ? product.product.name.toUpperCase()  // Also fixed: product.product.name
         : lastSegment?.replace(/-/g, " ").toUpperCase() || "HOME";
 
     const breadcrumb = paths.map((segment, index) => {
         const path = "/" + paths.slice(0, index + 1).join("/");
 
-        // Try to find if this segment is a product ID
-        const productMatch = mockData.products.find(p => p.id === Number(segment));
+        // Fixed: Access p.product.id and p.product.name
+        const productMatch = mockData.products.find(p => p.product.id === segment);
         const label = productMatch
-            ? productMatch.name.toUpperCase()
+            ? productMatch.product.name.toUpperCase()
             : segment.replace(/-/g, " ").toUpperCase();
 
         return (
