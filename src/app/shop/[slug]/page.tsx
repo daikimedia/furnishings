@@ -3,42 +3,50 @@ import SingleProduct from "@/components/shop/single-product";
 import mockData from "@/data/mockData";
 import PageHeader from "@/components/common/header";
 
-type Params = Promise<{
+type Params = {
     slug: string;
-}>;
+};
 
-export default async function ProductPage({ params }: { params: Params }) {
+export default async function ProductPage({ params }: { params: Promise<Params> }) {
     const { slug } = await params;
 
-    // Find product by slug instead of ID
     const productData = mockData.products.find(p => p.product.slug === slug);
 
     if (!productData) {
         notFound();
     }
 
+    // Ensure additional_description is always defined
+    const productWithAdditionalDescription = {
+        ...productData.product,
+        additional_description: productData.product.additional_description ?? {
+            headline: "",
+            sections: [],
+        },
+    };
+
     return (
         <main>
             <PageHeader />
-            <SingleProduct productData={productData.product} />
+            <SingleProduct productData={productWithAdditionalDescription} />
         </main>
     );
 }
 
 export async function generateStaticParams() {
-    return mockData.products.map((productData) => ({
+    return mockData.products.map(productData => ({
         slug: productData.product.slug,
     }));
 }
 
-export async function generateMetadata({ params }: { params: Params }) {
+export async function generateMetadata({ params }: { params: Promise<Params> }) {
     const { slug } = await params;
     const productData = mockData.products.find(p => p.product.slug === slug);
 
     if (!productData) {
         return {
-            title: 'Product Not Found',
-            description: 'The product you are looking for does not exist.',
+            title: "Product Not Found",
+            description: "The product you are looking for does not exist.",
         };
     }
 
