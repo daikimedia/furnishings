@@ -38,7 +38,7 @@ export default function VinylBenefitsSection() {
         <section className="container mx-auto px-4 py-16">
             {/* Header */}
             <div className="text-center mb-12">
-                <h2 className="text-4xl font-bold text-black mb-4">
+                <h2 className="text-3xl font-bold text-black mb-4">
                     Benefits of Vinyl & PVC Floors for <span className="text-orange-600">Malaysian Homes</span>
                 </h2>
             </div>
@@ -49,7 +49,7 @@ export default function VinylBenefitsSection() {
                     return (
                         <div
                             key={index}
-                            className="group bg-white rounded-xl border border-gray-200 p-6  transition-all duration-300 shadow-lg "
+                            className="group bg-white rounded-xl border border-orange-200 p-6  transition-all duration-300 shadow-lg "
                         >
                             {/* Icon */}
                             <div className="flex items-center justify-center w-12 h-12 bg-orange-600 rounded-lg mb-4 ">

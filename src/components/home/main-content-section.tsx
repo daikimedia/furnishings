@@ -142,7 +142,7 @@ export default function MainContentSections() {
                     {flooringData.map((flooring, index) => (
                         <div
                             key={index}
-                            className="w-full md:w-[47%] lg:w-[30%] max-w-sm bg-white rounded-xl shadow-lg  transition-shadow duration-300 overflow-hidden"
+                            className="w-full md:w-[47%] lg:w-[30%] max-w-sm bg-white rounded-xl shadow-lg  transition-shadow duration-300 overflow-hidden border border-orange-100"
                         >
                             {/* Card Header */}
                             <div className="bg-gradient-to-r from-orange-500 to-orange-600 p-6">

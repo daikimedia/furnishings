@@ -63,7 +63,7 @@ export default function FaqSection() {
                     <Accordion
                         type="single"
                         collapsible
-                        className="w-full border rounded-lg shadow-sm divide-y"
+                        className="w-full border border-orange-100 rounded-lg shadow-sm divide-y"
                         onValueChange={(val) => setOpenItem(val)}
                     >
                         {faqItems.map((item, index) => {
