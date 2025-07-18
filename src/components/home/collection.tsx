@@ -2,6 +2,7 @@
 import React from "react";
 import Link from "next/link";
 import mockData from "@/data/mockData";
+import { ArrowRight } from "lucide-react";
 
 type Category = {
     name: string;
@@ -32,17 +33,17 @@ export default function FloorCategories() {
     const categories = getUniqueCategories();
 
     return (
-        <div className="py-16 ">
-            <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="py-8 ">
+            <div className="container mx-auto px-6">
                 {/* Header */}
-                <div className="text-center mb-12">
-                    <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
+                <section className="text-center  mb-12 text-lg">
+                    <h2 className="text-3xl lg:text-4xl font-bold text-black mb-12">
                         Our Floor Collections
                     </h2>
-                    <p className="text-gray-600 max-w-2xl mx-auto">
+                    <p className="text-gray-600">
                         Discover our premium flooring solutions designed for Malaysian homes and commercial spaces.
                     </p>
-                </div>
+                </section>
 
                 {/* Categories Grid */}
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -50,24 +51,24 @@ export default function FloorCategories() {
                         <Link
                             key={category.slug}
                             href={`/category/${category.slug}`}
-                            className="group relative overflow-hidden rounded-xl bg-white shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-orange-100"
+                            className="group relative overflow-hidden rounded-2xl bg-white shadow-md "
                         >
                             {/* Image Container */}
-                            <div className="relative h-64 overflow-hidden">
+                            <div className="relative h-56 overflow-hidden bg-orange-200">
                                 <img
                                     src={category.image}
                                     alt={category.name}
-                                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                                    className="w-full h-full object-cover  p-4"
                                 />
-                                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
+
                             </div>
 
                             {/* Content */}
-                            <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
-                                <h3 className="text-xl font-semibold mb-2 group-hover:text-orange-300 transition-colors duration-300">
+                            <div className="p-6">
+                                <h3 className="text-xl font-semibold mb-3 text-gray-800 group-hover:text-orange-600 transition-colors duration-300">
                                     {category.name}
                                 </h3>
-                                <div className="flex items-center text-orange-300 font-medium">
+                                <div className="flex items-center text-orange-500 font-medium">
                                     <span className="text-sm">Explore Collection</span>
                                     <svg
                                         className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform duration-300"
@@ -80,7 +81,7 @@ export default function FloorCategories() {
                                 </div>
                             </div>
 
-                            {/* Decorative border */}
+                            {/* Decorative accent */}
                             <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-orange-400 to-orange-600 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
                         </Link>
                     ))}
@@ -90,17 +91,9 @@ export default function FloorCategories() {
                 <div className="text-center mt-12">
                     <Link
                         href="/shop"
-                        className="inline-flex items-center bg-orange-500 hover:bg-orange-600 text-white px-8 py-3 rounded-lg font-medium transition-colors duration-300"
+                        className="inline-flex items-center bg-orange-600  text-white px-8 py-3 rounded-lg font-medium"
                     >
-                        View All Products
-                        <svg
-                            className="w-5 h-5 ml-2"
-                            fill="none"
-                            stroke="currentColor"
-                            viewBox="0 0 24 24"
-                        >
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                        </svg>
+                        <ArrowRight className="mr-2 h-4 w-4" />  View All Products
                     </Link>
                 </div>
             </div>

@@ -51,46 +51,49 @@ export default function FaqSection() {
     const [openItem, setOpenItem] = useState<string | null>(null);
 
     return (
-        <section className="container mx-auto px-4 py-16">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-10 items-start">
-                {/* Sticky Heading */}
-                <div className="md:sticky md:top-24 self-start">
-                    <h2 className="text-3xl font-bold text-left">Frequently Asked Questions</h2>
-                </div>
+        <section className=" px-6 py-12">
+            <div className="container mx-auto">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-10 items-start">
+                    {/* Sticky Heading */}
+                    <div className="md:sticky md:top-24 self-start">
+                        <h2 className="text-3xl font-bold text-left">Frequently Asked Questions</h2>
+                        <p className="text-gray-600 mt-2">Got questions? We’ve got you covered – check out our most asked queries.</p>
+                    </div>
 
-                {/* Accordion Q&A */}
-                <div className="md:col-span-2">
-                    <Accordion
-                        type="single"
-                        collapsible
-                        className="w-full border border-orange-100 rounded-lg shadow-sm divide-y"
-                        onValueChange={(val) => setOpenItem(val)}
-                    >
-                        {faqItems.map((item, index) => {
-                            const itemKey = `item-${index}`;
-                            const isOpen = openItem === itemKey;
+                    {/* Accordion Q&A */}
+                    <div className="md:col-span-2">
+                        <Accordion
+                            type="single"
+                            collapsible
+                            className="w-full border border-orange-100 rounded-lg shadow-sm divide-y"
+                            onValueChange={(val) => setOpenItem(val)}
+                        >
+                            {faqItems.map((item, index) => {
+                                const itemKey = `item-${index}`;
+                                const isOpen = openItem === itemKey;
 
-                            return (
-                                <AccordionItem key={itemKey} value={itemKey}>
-                                    <AccordionTrigger
-                                        className="text-left text-lg font-medium py-4 px-4 flex justify-between items-center hover:bg-gray-50 [&>svg]:hidden no-underline hover:no-underline"
-                                    >
-                                        <span className="flex-1">{item.question}</span>
-                                        <div className="flex-shrink-0 ml-2">
-                                            {isOpen ? (
-                                                <Minus className="w-5 h-5 text-gray-600" />
-                                            ) : (
-                                                <Plus className="w-5 h-5 text-gray-600" />
-                                            )}
-                                        </div>
-                                    </AccordionTrigger>
-                                    <AccordionContent className="text-gray-700 px-4 pb-4">
-                                        {item.answer}
-                                    </AccordionContent>
-                                </AccordionItem>
-                            );
-                        })}
-                    </Accordion>
+                                return (
+                                    <AccordionItem key={itemKey} value={itemKey}>
+                                        <AccordionTrigger
+                                            className="text-left text-lg font-medium py-4 px-4 flex justify-between items-center hover:bg-orange-50 [&>svg]:hidden no-underline hover:no-underline"
+                                        >
+                                            <span className="flex-1">{item.question}</span>
+                                            <div className="flex-shrink-0 ml-2">
+                                                {isOpen ? (
+                                                    <Minus className="w-5 h-5 text-gray-600" />
+                                                ) : (
+                                                    <Plus className="w-5 h-5 text-gray-600" />
+                                                )}
+                                            </div>
+                                        </AccordionTrigger>
+                                        <AccordionContent className="text-gray-700 px-4 pb-4">
+                                            {item.answer}
+                                        </AccordionContent>
+                                    </AccordionItem>
+                                );
+                            })}
+                        </Accordion>
+                    </div>
                 </div>
             </div>
         </section>

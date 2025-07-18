@@ -55,40 +55,40 @@ export default function CategoryPage() {
 
             {/* Products Grid */}
             <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-8">
-                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6 mb-8">
                     {categoryProducts.map((item) => {
                         const product = item.product;
                         return (
                             <div key={product.id} className="group">
                                 <Link
                                     href={`/shop/${product.slug}`}
-                                    className="block bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 cursor-pointer transform hover:-translate-y-2 overflow-hidden"
+                                    className="block bg-white rounded-2xl shadow-md  cursor-pointer   overflow-hidden"
                                 >
                                     {/* Image Section */}
-                                    <div className="relative h-64 overflow-hidden">
+                                    <div className="relative h-56 overflow-hidden bg-orange-200">
                                         <img
                                             src={product.images?.main_image || '/images/placeholder.jpg'}
                                             alt={product.images?.alt_texts?.[0] || product.name}
-                                            className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                                            className="w-full h-full object-cover p-4 "
                                         />
-                                        <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300"></div>
+
                                     </div>
 
                                     {/* Product Info */}
-                                    <div className="p-4">
-                                        <h3 className="text-lg font-semibold text-gray-900 mb-2 group-hover:text-orange-600 transition-colors duration-300 line-clamp-2">
+                                    <div className="p-6">
+                                        <h3 className="text-lg font-semibold text-gray-800 mb-2 group-hover:text-orange-600 transition-colors duration-300 line-clamp-2">
                                             {product.name}
                                         </h3>
-                                        <p className="text-gray-600 text-sm line-clamp-2">
+                                        <p className="text-gray-600 text-sm line-clamp-2 mb-3">
                                             {product.description.short || product.description.long || "Premium flooring solution for modern spaces"}
                                         </p>
 
                                         {/* Brand Badge */}
-                                        <div className="mt-2">
-                                            <span className="inline-block bg-orange-100 text-orange-800 text-xs px-2 py-1 rounded-full">
+                                        {/* <div className="mt-2">
+                                            <span className="inline-block bg-orange-100 text-orange-800 text-xs px-3 py-1 rounded-full font-medium">
                                                 {product.brand}
                                             </span>
-                                        </div>
+                                        </div> */}
                                     </div>
 
                                     {/* Decorative Border */}

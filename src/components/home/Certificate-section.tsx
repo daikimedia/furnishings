@@ -62,19 +62,14 @@ const CertificateMarquee = () => {
     ];
 
     return (
-        <div className=" py-10 overflow-hidden">
+        <div className=" py-12 overflow-hidden">
             <div className="mx-auto ">
-                <h2 className="text-center text-3xl  font-bold mb-8">
-                    <span className="text-orange-600">CHOOSE WITH CONFIDENT WITH OUR </span>
-                    <span className="text-gray-800">CERTIFICATE</span>
+                <h2 className="text-center text-3xl  font-bold mb-12 text-black">
+                    Choose with Confidence with Our Certification
                 </h2>
-
                 <div className="relative">
-
-
-                    {/* Marquee container - seamless infinite scroll */}
                     <div className="flex animate-seamless-marquee gap-12">
-                        {/* Triple the certificates for ultra-smooth seamless loop */}
+
                         {[...certificates, ...certificates, ...certificates].map((cert, index) => (
                             <div
                                 key={`cert-${index}`}
@@ -91,7 +86,6 @@ const CertificateMarquee = () => {
                     </div>
                 </div>
             </div>
-
             <style jsx>{`
                 @keyframes seamless-marquee {
                     0% {

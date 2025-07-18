@@ -5,7 +5,7 @@ import Image from 'next/image';
 
 export default function FurniturePromoBanner() {
     return (
-        <section className='container mx-auto px-4   py-16'>
+        <section className='container mx-auto px-6   py-12'>
             <div className="w-full flex flex-col md:flex-row gap-4 ">
                 {/* Left Banner */}
                 <div className="relative w-full md:w-1/2 h-[300px] bg-[#f8f7fb] overflow-hidden flex items-center">

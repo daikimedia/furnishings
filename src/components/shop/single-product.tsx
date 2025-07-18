@@ -122,7 +122,7 @@ export default function SingleProduct({ productData }: SingleProductProps) {
                                             (section, index) => (
                                                 <div
                                                     key={index}
-                                                    className="bg-gradient-to-br from-orange-50 to-orange-100 rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow duration-300"
+                                                    className="bg-gradient-to-br from-orange-50 to-orange-100 rounded-xl p-6 shadow-md "
                                                 >
                                                     <h4 className="text-lg font-semibold mb-4 text-orange-800">
                                                         {section.title}
@@ -145,7 +145,7 @@ export default function SingleProduct({ productData }: SingleProductProps) {
                                         (style, index) => (
                                             <span
                                                 key={index}
-                                                className="px-4 py-2 bg-orange-100 text-orange-600 rounded-full text-sm font-medium"
+                                                className="px-4 py-2 bg-orange-600 text-white rounded-md text-sm font-medium"
                                             >
                                                 {style}
                                             </span>
@@ -228,7 +228,7 @@ export default function SingleProduct({ productData }: SingleProductProps) {
                                             {productData.installation.requirements.map(
                                                 (req, index) => (
                                                     <li key={index} className="flex items-start">
-                                                        <span className="w-2 h-2 bg-blue-500 rounded-full mt-2 mr-2 flex-shrink-0"></span>
+                                                        <span className="w-2 h-2 bg-orange-500 rounded-full mt-2 mr-2 flex-shrink-0"></span>
                                                         {req}
                                                     </li>
                                                 )
@@ -353,10 +353,10 @@ export default function SingleProduct({ productData }: SingleProductProps) {
                             <div className="text-sm text-gray-500 mb-2">
                                 SKU: <span className="font-medium">{productData.id}</span>
                             </div>
-                            <div className="text-sm text-green-600 mb-2">
+                            <div className="text-sm text-gray-500 mb-2">
                                 Brand: <span className="font-medium">{productData.brand}</span>
                             </div>
-                            <div className="text-sm text-green-600 mb-4">
+                            <div className="text-sm text-gray-500 mb-4">
                                 Category:{" "}
                                 <span className="font-medium">{productData.category}</span>
                             </div>
@@ -395,11 +395,11 @@ export default function SingleProduct({ productData }: SingleProductProps) {
                                 {productData.call_to_action.primary}
                             </p>
                             <div className="flex flex-col sm:flex-row gap-3">
-                                <button className="flex items-center justify-center bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 rounded-md transition-colors">
+                                <button className="flex items-center justify-center bg-orange-600  text-white px-6 py-3 rounded-md transition-colors">
                                     <Phone className="w-4 h-4 mr-2" />
                                     Call for Quote
                                 </button>
-                                <button className="flex items-center justify-center border border-orange-500 text-orange-500 hover:bg-orange-500 hover:text-white px-6 py-3 rounded-md transition-colors">
+                                <button className="flex items-center justify-center border border-orange-500 text-orange-600 hover:bg-orange-600 hover:text-white px-6 py-3 rounded-md transition-colors">
                                     <MapPin className="w-4 h-4 mr-2" />
                                     Visit Showroom
                                 </button>
@@ -468,55 +468,52 @@ export default function SingleProduct({ productData }: SingleProductProps) {
                         </h2>
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                             {relatedProducts.map((productItem) => (
-                                <div key={productItem.product.id} className="group">
-                                    <div className="bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 cursor-pointer transform hover:-translate-y-2 overflow-hidden">
-                                        <Link href={`/shop/${productItem.product.slug}`}>
-                                            {/* Image Container */}
-                                            <div className="relative h-48 overflow-hidden">
-                                                <img
-                                                    src={
-                                                        productItem.product.images.main_image ||
-                                                        "/placeholder.svg"
-                                                    }
-                                                    alt={productItem.product.name}
-                                                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
-                                                />
-                                                <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300"></div>
-                                            </div>
-                                            {/* Content */}
-                                            <div className="p-6">
-                                                <h3 className="text-xl font-semibold text-gray-900 mb-2 group-hover:text-orange-600 transition-colors duration-300 line-clamp-2">
-                                                    {productItem.product.name}
-                                                </h3>
-                                                <p className="text-gray-600 text-base mb-4 line-clamp-2">
-                                                    {productItem.product.description.short}
-                                                </p>
-                                                <div className="flex items-center text-orange-600 font-medium group-hover:text-orange-600 transition-colors duration-300">
-                                                    <span className="text-sm font-semibold">
-                                                        View Product
-                                                    </span>
-                                                    <svg
-                                                        className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform duration-300"
-                                                        fill="none"
-                                                        stroke="currentColor"
-                                                        viewBox="0 0 24 24"
-                                                    >
-                                                        <path
-                                                            strokeLinecap="round"
-                                                            strokeLinejoin="round"
-                                                            strokeWidth={2}
-                                                            d="M9 5l7 7-7 7"
-                                                        />
-                                                    </svg>
-                                                </div>
-                                            </div>
-                                            {/* Decorative border */}
-                                            <div className="h-1 bg-gradient-to-r from-orange-400 to-orange-600 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
-                                        </Link>
+                                <Link
+                                    key={productItem.product.id}
+                                    href={`/shop/${productItem.product.slug}`}
+                                    className="group relative overflow-hidden rounded-2xl bg-white shadow-md transition-shadow hover:shadow-lg"
+                                >
+                                    {/* Image Section */}
+                                    <div className="relative h-48 overflow-hidden bg-orange-100">
+                                        <img
+                                            src={productItem.product.images.main_image || "/placeholder.svg"}
+                                            alt={productItem.product.name}
+                                            className="w-full h-full object-cover p-4 "
+                                        />
                                     </div>
-                                </div>
+
+                                    {/* Content Section */}
+                                    <div className="p-6">
+                                        <h3 className="text-xl font-semibold mb-2 text-gray-900 group-hover:text-orange-600 transition-colors duration-300 line-clamp-2">
+                                            {productItem.product.name}
+                                        </h3>
+                                        <p className="text-sm text-gray-600 mb-4 line-clamp-2">
+                                            {productItem.product.description.short}
+                                        </p>
+                                        <div className="flex items-center text-orange-600 font-medium">
+                                            <span className="text-sm font-semibold">View Product</span>
+                                            <svg
+                                                className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform duration-300"
+                                                fill="none"
+                                                stroke="currentColor"
+                                                viewBox="0 0 24 24"
+                                            >
+                                                <path
+                                                    strokeLinecap="round"
+                                                    strokeLinejoin="round"
+                                                    strokeWidth={2}
+                                                    d="M9 5l7 7-7 7"
+                                                />
+                                            </svg>
+                                        </div>
+                                    </div>
+
+                                    {/* Decorative Accent */}
+
+                                </Link>
                             ))}
                         </div>
+
                     </div>
                 )}
             </div>
