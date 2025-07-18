@@ -51,7 +51,7 @@ export default function HeroBanner() {
                             {slides[currentSlide].description}
                         </p>
                         <div className="pt-4">
-                            <button className="bg-orange-600  text-black px-8 py-4 rounded-xl text-lg font-semibold transition-all duration-200 transform hover:scale-105 shadow-lg hover:shadow-xl">
+                            <button className="bg-orange-600  text-white px-8 py-4 rounded-xl text-lg font-semibold transition-all duration-200 transform hover:scale-105 shadow-lg hover:shadow-xl">
                                 Shop Now
                             </button>
                         </div>
@@ -92,15 +92,21 @@ export default function HeroBanner() {
                 <div className="container mx-auto px-6 py-12">
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
                         <div className="flex items-center justify-center space-x-3 text-gray-800">
-                            <Star className="w-8 h-8 text-black" />
+                            <div className="flex items-center justify-center w-12 h-12 bg-orange-600 rounded-lg mb-4 ">
+                                <Star className="w-8 h-8 text-white" />
+                            </div>
                             <span className="font-medium">Premium Quality Guaranteed</span>
                         </div>
                         <div className="flex items-center justify-center space-x-3 text-gray-800">
-                            <Users className="w-8 h-8 text-black" />
+                            <div className="flex items-center justify-center w-12 h-12 bg-orange-600 rounded-lg mb-4 ">
+                                <Users className="w-8 h-8 text-white" />
+                            </div>
                             <span className="font-medium">10,000+ Happy Customers</span>
                         </div>
                         <div className="flex items-center justify-center space-x-3 text-gray-800">
-                            <Shield className="w-8 h-8 text-black" />
+                            <div className="flex items-center justify-center w-12 h-12 bg-orange-600 rounded-lg mb-4 ">
+                                <Shield className="w-8 h-8 text-white" />
+                            </div>
                             <span className="font-medium">Secure & Fast Delivery</span>
                         </div>
                     </div>

@@ -59,13 +59,13 @@ export default function FlooringProjectSection() {
     return (
         <div className="bg-white">
             {/* Start Your Project Section */}
-            <section className="container mx-auto px-4 py-16">
+            <section className="container mx-auto px-6 py-12">
                 {/* Header */}
                 <div className="text-center mb-16">
-                    <h2 className="text-3xl font-bold text-gray-900 mb-4">
+                    <h2 className="text-3xl font-bold text-gray-900 mb-12">
                         Start Your Flooring Project Today
                     </h2>
-                    <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-6">
+                    <p className="text-xl text-gray-600  mb-6">
                         From consultation to completion, we make your flooring dreams a reality with our streamlined 6-step process.
                     </p>
                 </div>
@@ -73,18 +73,18 @@ export default function FlooringProjectSection() {
                 {/* Process Steps - Horizontal Timeline */}
                 <div className="relative">
                     {/* Timeline Line */}
-                    <div className="absolute top-20 left-0 right-0 h-0.5 bg-orange-600 hidden lg:block"></div>
+
 
                     {/* Steps Grid */}
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-8 mb-16">
+                    <div className="grid grid-cols-3 gap-8">
                         {projectSteps.map((step, index) => {
                             const IconComponent = step.icon;
                             return (
                                 <div key={index} className="group relative h-full flex flex-col">
                                     {/* Step Card */}
-                                    <div className="bg-white rounded-2xl p-6 shadow-lg transition-all duration-300  border border-orange-100 text-center h-full flex flex-col justify-between">
+                                    <div className="bg-white rounded-2xl p-6 shadow-md transition-all duration-300  border border-orange-100 text-center h-full flex flex-col justify-between">
                                         {/* Icon */}
-                                        <div className="w-12 h-12 bg-gradient-to-br from-orange-500 to-orange-600 rounded-full flex items-center justify-center mx-auto mb-4  transition-transform duration-300 shadow-lg">
+                                        <div className="w-12 h-12 bg-gradient-to-br from-orange-500 to-orange-600 rounded-lg flex items-center justify-center mx-auto mb-4  ">
                                             <IconComponent className="w-6 h-6 text-white" />
                                         </div>
 
@@ -94,7 +94,7 @@ export default function FlooringProjectSection() {
                                         </h3>
 
                                         {/* Description */}
-                                        <p className="text-gray-600 text-sm mb-4 leading-relaxed flex-grow">
+                                        <p className="text-gray-600 text-base leading-relaxed flex-grow">
                                             {step.description}
                                         </p>
                                     </div>
@@ -105,14 +105,14 @@ export default function FlooringProjectSection() {
                 </div>
             </section>
 
-            <section className="container mx-auto px-4 ">
+            <section className="py-12 px-6 ">
                 {/* Header */}
                 <div className="text-center mb-12">
-                    <h2 className="text-4xl font-bold text-gray-900 mb-4">
+                    <h2 className="text-4xl font-bold text-gray-900 mb-8">
                         Nationwide Coverage
                     </h2>
-                    <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-6">
-                        <span className="font-semibold text-orange-600">Furnishing Solutions</span> serves all of Malaysia, delivering professional service and installation across the nation.
+                    <p className="text-xl text-gray-700   mb-6">
+                        Furnishing Solutions serves all of Malaysia, delivering professional service and installation across the nation.
                     </p>
                 </div>
 
@@ -127,7 +127,7 @@ export default function FlooringProjectSection() {
                         </div>
                     ))}
                 </div>
-                <p className="text-base text-gray-600 max-w-3xl mx-auto mb-6">No matter your location or project size, our team is equipped to deliver consistent quality and service.</p>
+                <p className="text-base text-gray-600  text-center mx-auto ">No matter your location or project size, our team is equipped to deliver consistent quality and service.</p>
             </section>
         </div>
     );

@@ -4,7 +4,7 @@ import HeroBanner from "@/components/home/hero-section";
 // import SocialMediaBanner from "@/components/home/SocialMediaBanner";
 import CertificateMarquee from "@/components/home/Certificate-section";
 import TestimonialsSection from "@/components/home/testinomial-section";
-import CategoryTabs from "@/components/home/category-tabs"
+// import CategoryTabs from "@/components/home/category-tabs"
 import BlogSection from "@/components/home/latest-news";
 import FurniturePromoBanner from "@/components/home/sales-card";
 import FaqSection from "@/components/home/faq-section";
@@ -28,7 +28,7 @@ export default function Home() {
       <MainContentSections />
 
       <FloorCategories />
-      <CategoryTabs />
+      {/* <CategoryTabs /> */}
       {/* <ProductsSection limit={8} showAll={false} /> */}
       {/* <SocialMediaBanner /> */}
       <CertificateMarquee />

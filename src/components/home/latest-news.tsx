@@ -25,17 +25,18 @@ const blogs = [
 
 const BlogSection = () => {
     return (
-        <section className="py-16 bg-white text-center">
-            <div className="container mx-auto px-4">
-                <h2 className="text-3xl font-semibold mb-2">Latest News</h2>
-                <p className="text-gray-600 mb-10 text-sm sm:text-base">
-                    Torem ipsum dolor sit amet, consectetur adipiscing elitsed do eiusmod tempor incididunt ut labore
-                </p>
-
+        <section className="py-12 px-6">
+            <div className="container mx-auto">
+                <div className='text-center'>
+                    <h2 className="text-3xl font-bold  mb-12">Latest News</h2>
+                    <p className="text-gray-600 mb-10 text-xl">
+                        Stay updated with the latest ideas, inspiration, and innovations from the furnishing world
+                    </p>
+                </div>
                 {blogs.length > 0 ? (
                     <div className="grid md:grid-cols-3 gap-6">
                         {blogs.map((blog) => (
-                            <div key={blog.id} className="border rounded-lg overflow-hidden shadow hover:shadow-md transition duration-300">
+                            <div key={blog.id} className="border rounded-lg overflow-hidden shadow-md border-orange-100 ">
                                 <Image
                                     src={blog.image}
                                     alt={blog.title}

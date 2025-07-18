@@ -45,54 +45,52 @@ const processSteps = [
 
 export default function ProcessSection() {
     return (
-        <section className="container mx-auto px-4 py-16 ">
-            {/* Header */}
-            <div className="text-center mb-16">
-                <h2 className="text-2xl font-bold text-black mb-4">
-                    Our Process — Clear, Efficient, Customer-Centric
-                </h2>
-            </div>
+        <section className=" px-6 py-12 ">
+            <div className="container mx-auto">
+                {/* Header */}
+                <div className="text-center mb-16">
+                    <h2 className="text-3xl font-bold text-black mb-12">
+                        Our Process — Clear, Efficient, Customer-Centric
+                    </h2>
+                </div>
 
-            {/* Process Steps */}
-            <div className="max-w-4xl mx-auto space-y-8">
-                {processSteps.map((process, index) => {
-                    const IconComponent = process.icon;
-                    const isEven = index % 2 === 0;
+                {/* Process Steps */}
+                <div className="max-w-4xl mx-auto space-y-2">
+                    {processSteps.map((process, index) => {
+                        const IconComponent = process.icon;
+                        const isEven = index % 2 === 0;
 
-                    return (
-                        <div key={index} className="relative">
-                            {/* Connector Line */}
-                            {index < processSteps.length - 1 && (
-                                <div className="absolute left-1/2 top-36 w-0.5 h-16 bg-gradient-to-b from-gray-300 to-gray-200 transform -translate-x-px hidden md:block"></div>
-                            )}
+                        return (
+                            <div key={index} className="relative">
+                                {/* Connector Line */}
+                                {index < processSteps.length - 1 && (
+                                    <div className="absolute left-1/2 top-36 "></div>
+                                )}
 
-                            <div className={`flex flex-col md:flex-row items-center gap-4 ${isEven ? 'md:flex-row' : 'md:flex-row-reverse'}`}>
-                                {/* Content Card */}
-                                <div className={`flex-1 ${isEven ? 'md:text-right' : 'md:text-left'}`}>
-                                    <div className="bg-white rounded-2xl p-4 shadow-lg  transition-all duration-300 border border-orange-100">
-                                        <div className={`flex items-center gap-4 mb-4 ${isEven ? 'md:justify-end' : 'md:justify-start'} justify-center`}>
-                                            {/* <span className="text-3xl font-bold text-gray-300">{process.step}</span> */}
-                                            <h3 className="text-xl font-semibold  text-black">{process.title}</h3>
+                                <div className={`flex flex-col md:flex-row items-center gap-4 ${isEven ? 'md:flex-row' : 'md:flex-row-reverse'}`}>
+                                    {/* Content Card */}
+                                    <div className={`flex-1 ${isEven ? 'md:text-right' : 'md:text-left'}`}>
+                                        <div className="bg-white rounded-2xl p-4 shadow-md  transition-all duration-300 border border-orange-100">
+                                            <div className={`flex items-center gap-4 mb-4 ${isEven ? 'md:justify-end' : 'md:justify-start'} justify-center`}>
+
+                                                <h3 className="text-xl font-semibold  text-black">{process.title}</h3>
+                                            </div>
+                                            <p className="text-gray-600 text-justify text-base">
+                                                {process.description}
+                                            </p>
                                         </div>
-                                        <p className="text-gray-600 text-justify text-base">
-                                            {process.description}
-                                        </p>
                                     </div>
-                                </div>
-
-                                {/* Icon Circle */}
-                                <div className="flex-shrink-0">
-                                    <div className={`w-12 h-12 rounded-full bg-orange-600 flex items-center justify-center shadow-lg  transition-transform duration-300`}>
-                                        <IconComponent className="w-6 h-6 text-white" />
+                                    <div className="flex-shrink-0">
+                                        <div className={`w-12 h-12 rounded-full bg-orange-600 flex items-center justify-center shadow-md  transition-transform duration-300`}>
+                                            <IconComponent className="w-6 h-6 text-white" />
+                                        </div>
                                     </div>
+                                    <div className="flex-1 hidden md:block"></div>
                                 </div>
-
-                                {/* Empty space for alternating layout */}
-                                <div className="flex-1 hidden md:block"></div>
                             </div>
-                        </div>
-                    );
-                })}
+                        );
+                    })}
+                </div>
             </div>
         </section>
     );

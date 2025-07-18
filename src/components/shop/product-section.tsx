@@ -13,6 +13,7 @@ type Product = {
     image: string;
     category: string;
     isAlreadyAdded: boolean;
+    slug: string;
 };
 
 type ProductsSectionProps = {
@@ -20,7 +21,7 @@ type ProductsSectionProps = {
     showAll?: boolean;
 };
 
-// Option 1: Define a proper type for the mock data structure
+// Properly typed mock data structure
 type MockDataItem = {
     product: {
         description: string | { short: string; long: string };
@@ -34,6 +35,7 @@ type MockDataItem = {
         };
         category: string;
         isAlreadyAdded?: boolean;
+        slug?: string; // Added slug to the type definition
     };
 };
 
@@ -42,12 +44,12 @@ export default function ProductsSection({
     showAll = false,
 }: ProductsSectionProps) {
     const [products] = useState<Product[]>(
-        // Option 1: Cast to the proper type
         (mockData.products as unknown as MockDataItem[]).map((item) => ({
             description: typeof item.product.description === 'string'
                 ? item.product.description
                 : item.product.description?.short || item.product.description?.long || "",
             id: Number(item.product.id),
+            slug: item.product.slug || `product-${item.product.id}`,
             name: item.product.name,
             price: item.product.price,
             originalPrice: item.product.originalPrice ?? null,
@@ -56,22 +58,6 @@ export default function ProductsSection({
             category: item.product.category,
             isAlreadyAdded: item.product.isAlreadyAdded ?? false,
         }))
-
-        // Option 2: Use type assertion (simpler but less type-safe)
-        // (mockData.products as unknown[]).map((item: unknown) => {
-        //     const productItem = item as MockDataItem;
-        //     return {
-        //         description: productItem.product.description,
-        //         id: Number(productItem.product.id),
-        //         name: productItem.product.name,
-        //         price: productItem.product.price,
-        //         originalPrice: productItem.product.originalPrice ?? null,
-        //         discount: productItem.product.discount ?? null,
-        //         image: productItem.product.images?.main_image || "",
-        //         category: productItem.product.category,
-        //         isAlreadyAdded: productItem.product.isAlreadyAdded ?? false,
-        //     };
-        // })
     );
     const [, setHoveredProduct] = useState<number | null>(null);
 
@@ -125,8 +111,8 @@ export default function ProductsSection({
                 {/* Header */}
                 <div className="text-center mb-12">
                     <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-4">Our Products</h2>
-                    <p className="text-sm sm:text-base text-gray-600 max-w-2xl mx-auto">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore.
+                    <p className="text-lg text-gray-600  mx-auto">
+                        Enhance your home or office with our elegant and durable carpet flooring collections.
                     </p>
                 </div>
 
@@ -146,7 +132,7 @@ export default function ProductsSection({
                                                 type="checkbox"
                                                 checked={selectedCategories.includes(category)}
                                                 onChange={() => handleCategoryChange(category)}
-                                                className="w-4 h-4 text-gray-900 bg-gray-100 border-gray-300 rounded focus:ring-gray-500"
+                                                className="w-4 h-4 accent-orange-600  hover:accent-orange-600"
                                             />
                                             <span className="ml-2 text-sm text-gray-700">{category}</span>
                                         </label>
@@ -164,7 +150,7 @@ export default function ProductsSection({
                                                 type="checkbox"
                                                 checked={selectedColors.includes(color)}
                                                 onChange={() => handleColorChange(color)}
-                                                className="w-4 h-4 text-gray-900 bg-gray-100 border-gray-300 rounded focus:ring-gray-500"
+                                                className="w-4 h-4 accent-orange-600  hover:accent-orange-600"
                                             />
                                             <span className="ml-2 text-sm text-gray-700">{color}</span>
                                         </label>
@@ -182,7 +168,7 @@ export default function ProductsSection({
                                                 type="checkbox"
                                                 checked={selectedBrands.includes(brand)}
                                                 onChange={() => handleBrandChange(brand)}
-                                                className="w-4 h-4 text-gray-900 bg-gray-100 border-gray-300 rounded focus:ring-gray-500"
+                                                className="w-4 h-4 accent-orange-600  hover:accent-orange-600"
                                             />
                                             <span className="ml-2 text-sm text-gray-700">{brand}</span>
                                         </label>
@@ -197,7 +183,7 @@ export default function ProductsSection({
                                     setSelectedColors([]);
                                     setSelectedBrands([]);
                                 }}
-                                className="w-full bg-gray-900 text-white px-4 py-2 rounded text-sm hover:bg-gray-800 transition"
+                                className="w-full bg-orange-600 text-white px-4 py-2 rounded text-base font-medium "
                             >
                                 Clear All Filters
                             </button>
@@ -206,30 +192,51 @@ export default function ProductsSection({
 
                     {/* Products Grid */}
                     <div className="flex-1 w-full">
-                        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
+                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-8">
                             {displayedProducts.map((product) => (
                                 <Link
                                     key={product.id}
-                                    href={`/shop/${product.id}`}
-                                    className="group relative bg-gray-100 rounded-lg overflow-hidden hover:shadow-lg transition-shadow"
+                                    href={`/shop/${product.slug}`}
+                                    className="group relative overflow-hidden rounded-2xl bg-white shadow-md transition-shadow"
                                     onMouseEnter={() => setHoveredProduct(product.id)}
                                     onMouseLeave={() => setHoveredProduct(null)}
                                 >
-                                    <div className="relative h-64 bg-gray-200 flex items-center justify-center">
+                                    {/* Image Section */}
+                                    <div className="relative h-56 overflow-hidden bg-orange-100">
                                         <img
                                             src={product.image}
                                             alt={product.name}
-                                            className="w-full h-full object-cover"
+                                            className="w-full h-full object-cover p-4"
                                         />
                                     </div>
-                                    <div className="p-4">
-                                        <h3 className="font-medium text-gray-900 mb-2 line-clamp-2">
+
+                                    {/* Content Section */}
+                                    <div className="p-6">
+                                        <h3 className="text-xl font-semibold mb-3 text-gray-800 group-hover:text-orange-600 transition-colors duration-300 line-clamp-2">
                                             {product.name}
                                         </h3>
-                                        <p className="text-gray-600 font-medium text-sm">
+                                        <p className="text-sm text-gray-600 mb-4 line-clamp-2">
                                             {product.description || "Lorem ipsum dolor sit amet, consectetur adipiscing elit."}
                                         </p>
+
+                                        <div className="flex items-center text-orange-500 font-medium">
+                                            <span className="text-sm">View Product</span>
+                                            <svg
+                                                className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform duration-300"
+                                                fill="none"
+                                                stroke="currentColor"
+                                                viewBox="0 0 24 24"
+                                            >
+                                                <path
+                                                    strokeLinecap="round"
+                                                    strokeLinejoin="round"
+                                                    strokeWidth={2}
+                                                    d="M9 5l7 7-7 7"
+                                                />
+                                            </svg>
+                                        </div>
                                     </div>
+
                                 </Link>
                             ))}
                         </div>
