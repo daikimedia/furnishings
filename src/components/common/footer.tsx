@@ -10,14 +10,13 @@ import {
 
 export default function Footer() {
     return (
-        <footer className="bg-[#21252C] text-white pt-16 pb-8 text-sm">
+        <footer className="bg-black text-white pt-16 pb-8 text-sm">
             <div className="container mx-auto px-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
                 {/* ABOUT US */}
                 <div>
                     <h4 className="text-lg font-semibold mb-4">ABOUT US</h4>
                     <p className="text-gray-300 leading-relaxed mb-6">
-                        Lorem ipsum dolor sit amet cons adipisicing elit sed do eiusmod tempor incididunt ut
-                        labor et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.
+                        From supply to professional installation, Furnishing is your one-stop destination for innovative, lasting, and visually striking interior solutions.
                     </p>
                     <div className="flex space-x-4 text-white">
                         < Facebook className="hover:text-orange-500 cursor-pointer" />

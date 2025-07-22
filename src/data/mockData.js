@@ -4997,8 +4997,6 @@ const mockData = {
                 }
             }
         }
-
-
     ]
 };
 

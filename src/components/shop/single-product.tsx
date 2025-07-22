@@ -471,7 +471,7 @@ export default function SingleProduct({ productData }: SingleProductProps) {
                                 <Link
                                     key={productItem.product.id}
                                     href={`/shop/${productItem.product.slug}`}
-                                    className="group relative overflow-hidden rounded-2xl bg-white shadow-md transition-shadow hover:shadow-lg"
+                                    className="group relative overflow-hidden rounded-2xl bg-white shadow-md transition-shadow "
                                 >
                                     {/* Image Section */}
                                     <div className="relative h-48 overflow-hidden bg-orange-100">
