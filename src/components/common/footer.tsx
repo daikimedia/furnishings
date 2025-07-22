@@ -33,7 +33,7 @@ export default function Footer() {
                     <h4 className="text-lg font-semibold mb-4">INFORMATION</h4>
                     <ul className="space-y-2 text-gray-300">
                         <li><a href="/about-us" className="hover:text-orange-500">About Us</a></li>
-                        <li><Link href="/" className="hover:text-orange-500">Contact Us</Link></li>
+                        <li><Link href="/contact" className="hover:text-orange-500">Contact Us</Link></li>
                         <li><Link href="/terms-&-conditions" className="hover:text-orange-500">Terms & Conditions</Link></li>
                         <li><Link href="/return-and-refunds-policy" className="hover:text-orange-500">Return and Refunds Policy</Link></li>
 
