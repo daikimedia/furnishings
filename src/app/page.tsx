@@ -19,6 +19,9 @@ import MainContentSections from "@/components/home/main-content-section";
 export const metadata = {
   title: "Vinyl & PVC Flooring Malaysia | Furnishing Solutions",
   description: "Transform your space in Malaysia with waterproof, stylish vinyl and PVC flooring. Furnishing Solutions offers expert installation and free quotations nationwide.",
+  alternates: {
+    canonical: "https://www.furnishings.com.my",
+  },
 };
 
 export default function Home() {
