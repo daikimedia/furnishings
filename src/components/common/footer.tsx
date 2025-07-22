@@ -20,10 +20,10 @@ export default function Footer() {
                         From supply to professional installation, Furnishing is your one-stop destination for innovative, lasting, and visually striking interior solutions.
                     </p>
                     <div className="flex space-x-4 text-white   justify-center">
-                        < Facebook className="hover:text-orange-500 cursor-pointer" />
-                        <Twitter className="hover:text-orange-500 cursor-pointer" />
-                        <Linkedin className="hover:text-orange-500 cursor-pointer" />
-                        <Youtube className="hover:text-orange-500 cursor-pointer" />
+                        < Facebook className="hover:text-orange-600 " />
+                        <Twitter className="hover:text-orange-600 " />
+                        <Linkedin className="hover:text-orange-600" />
+                        <Youtube className="hover:text-orange-600" />
 
                     </div>
                 </div>
@@ -32,10 +32,10 @@ export default function Footer() {
                 <div>
                     <h4 className="text-lg font-semibold mb-4">INFORMATION</h4>
                     <ul className="space-y-2 text-gray-300">
-                        <li><a href="/about-us" className="hover:text-orange-500">About Us</a></li>
-                        <li><Link href="/contact" className="hover:text-orange-500">Contact Us</Link></li>
-                        <li><Link href="/terms-&-conditions" className="hover:text-orange-500">Terms & Conditions</Link></li>
-                        <li><Link href="/return-and-refunds-policy" className="hover:text-orange-500">Return and Refunds Policy</Link></li>
+                        <li><a href="/about-us" className="hover:text-orange-600">About Us</a></li>
+                        <li><Link href="/contact" className="hover:text-orange-600">Contact Us</Link></li>
+                        <li><Link href="/terms-&-conditions" className="hover:text-orange-600">Terms & Conditions</Link></li>
+                        <li><Link href="/return-and-refunds-policy" className="hover:text-orange-600">Return and Refunds Policy</Link></li>
 
                     </ul>
                 </div>
@@ -44,11 +44,11 @@ export default function Footer() {
                 <div>
                     <h4 className="text-lg font-semibold mb-4">Categories</h4>
                     <ul className="space-y-2 text-gray-300">
-                        <li><Link href="/" className="hover:text-orange-500">Flooring</Link></li>
-                        <li><Link href="/" className="hover:text-orange-500">Carpet tiles</Link></li>
-                        <li><Link href="/" className="hover:text-orange-500">Spc & Laminate</Link></li>
-                        <li><Link href="/category/vinyl-sheet-flooring" className="hover:text-orange-500">Vinyl Sheet</Link></li>
-                        <li><Link href="/" className="hover:text-orange-500">Artificial Grass</Link></li>
+                        <li><Link href="/" className="hover:text-orange-600">Flooring</Link></li>
+                        <li><Link href="/" className="hover:text-orange-600">Carpet tiles</Link></li>
+                        <li><Link href="/" className="hover:text-orange-600">Spc & Laminate</Link></li>
+                        <li><Link href="/category/vinyl-sheet-flooring" className="hover:text-orange-600">Vinyl Sheet</Link></li>
+                        <li><Link href="/" className="hover:text-orange-600">Artificial Grass</Link></li>
                     </ul>
                 </div>
 

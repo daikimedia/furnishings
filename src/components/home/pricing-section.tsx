@@ -29,7 +29,7 @@ export default function PricingSection() {
             <div className="container mx-auto">
                 <div className="text-center mb-12">
                     <h2 className="text-3xl font-bold text-black">Pricing Guide</h2>
-                    <p className="text-gray-500 mt-2 text-sm">(RM per sq ft)</p>
+                    <h2 className="text-gray-500 mt-2 text-sm">(Buy synthetic grass Malaysia RM per sq ft)</h2>
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">

@@ -3,9 +3,11 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import blogs from '@/data/blogsData';
+import PageHeader from '@/components/common/header';
 
 const BlogPage = () => {
-    return (
+    return (<>
+        <PageHeader />
         <section className="py-12 px-6">
             <div className="container mx-auto">
                 <div className="text-center">
@@ -39,6 +41,7 @@ const BlogPage = () => {
                 )}
             </div>
         </section>
+    </>
     );
 };
 
