@@ -5,7 +5,7 @@ import HeroBanner from "@/components/home/hero-section";
 import CertificateMarquee from "@/components/home/Certificate-section";
 import TestimonialsSection from "@/components/home/testinomial-section";
 // import CategoryTabs from "@/components/home/category-tabs"
-import BlogSection from "@/components/home/latest-news";
+import BlogPage from "@/components/home/latest-news";
 import FurniturePromoBanner from "@/components/home/sales-card";
 import FaqSection from "@/components/home/faq-section";
 import PricingSection from "@/components/home/pricing-section";
@@ -14,6 +14,7 @@ import ProcessSection from "@/components/home/process-section";
 import FlooringProjectSection from "@/components/home/nationwide-section";
 import CompanyOverviewSection from "@/components/home/overview-section";
 import MainContentSections from "@/components/home/main-content-section";
+import FlooringSection from "@/components/home/flooring-section";
 
 
 export const metadata = {
@@ -39,12 +40,12 @@ export default function Home() {
       <ProcessSection />
       <VinylBenefitsSection />
       <PricingSection />
-
+      <FlooringSection />
       <FaqSection />
       <TestimonialsSection />
       <FlooringProjectSection />
       <CompanyOverviewSection />
-      <BlogSection />
+      <BlogPage />
     </main>
   );
 }

@@ -12,13 +12,14 @@ const slides = [
         image: '/carpet-tile.jpg',
     },
     {
-        title: 'Comfortable Sofa',
+        title: 'synthetic grass',
         subtitle: 'Trending Now',
         description:
-            'Discover unmatched comfort and timeless elegance in our latest sofa collection for modern homes.',
+            'Buy premium synthetic grass in Malaysia – durable, low-maintenance, and perfect for homes, offices, and outdoor spaces.',
         image: '/sofa.jpg',
     },
 ];
+
 
 export default function HeroBanner() {
     const [currentSlide, setCurrentSlide] = useState(0);
