@@ -52,7 +52,7 @@ export default function HeroBanner() {
                         </p>
                         <div className="pt-4">
                             <button className="bg-orange-600  text-white px-8 py-4 rounded-xl text-lg font-semibold transition-all duration-200 transform hover:scale-105 shadow-lg hover:shadow-xl">
-                                <a href="https://www.furnishings.com.my/shop">   Shop Now</a>
+                                <a href="/shop">   Shop Now</a>
                             </button>
                         </div>
                     </div>
