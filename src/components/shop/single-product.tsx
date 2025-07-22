@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 import { Facebook, Twitter, Instagram, Phone, MapPin } from "lucide-react";
-import mockData from "@/data/mockData";
+import vinylSheetFlooringData from "@/data/vinylSheetFlooringData";
 import Link from "next/link";
 import {
     Accordion,
@@ -88,7 +88,7 @@ export default function SingleProduct({ productData }: SingleProductProps) {
     const [selectedImage, setSelectedImage] = useState(0);
 
     // Related products - same category ke products, current product ko exclude kar ke
-    const relatedProducts = mockData.products
+    const relatedProducts = vinylSheetFlooringData.products
         .filter(
             (p) =>
                 p.product.category === productData.category &&

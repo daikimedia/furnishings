@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import Link from "next/link";
-import mockData from "@/data/mockData";
+import vinylSheetFlooringData from "@/data/vinylSheetFlooringData";
 import { ArrowRight } from "lucide-react";
 
 type Category = {
@@ -13,7 +13,7 @@ type Category = {
 const getUniqueCategories = (): Category[] => {
     const categoryMap = new Map<string, Category>();
 
-    mockData.products.forEach(({ product }) => {
+    vinylSheetFlooringData.products.forEach(({ product }) => {
         // Check if product and product.category exist
         if (product && product.category) {
             if (!categoryMap.has(product.category)) {

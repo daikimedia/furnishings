@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import Link from "next/link";
-import mockData from "@/data/mockData";
+import vinylSheetFlooringData from "@/data/vinylSheetFlooringData";
 
 type Product = {
     description: string;
@@ -44,7 +44,7 @@ export default function ProductsSection({
     showAll = false,
 }: ProductsSectionProps) {
     const [products] = useState<Product[]>(
-        (mockData.products as unknown as MockDataItem[]).map((item) => ({
+        (vinylSheetFlooringData.products as unknown as MockDataItem[]).map((item) => ({
             description: typeof item.product.description === 'string'
                 ? item.product.description
                 : item.product.description?.short || item.product.description?.long || "",

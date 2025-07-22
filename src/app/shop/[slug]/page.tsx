@@ -1,6 +1,6 @@
 import { notFound } from "next/navigation";
 import SingleProduct from "@/components/shop/single-product";
-import mockData from "@/data/mockData";
+import vinylSheetFlooringData from "@/data/vinylSheetFlooringData";
 import PageHeader from "@/components/common/header";
 
 type Params = {
@@ -10,7 +10,7 @@ type Params = {
 export default async function ProductPage({ params }: { params: Promise<Params> }) {
     const { slug } = await params;
 
-    const productData = mockData.products.find(p => p.product.slug === slug);
+    const productData = vinylSheetFlooringData.products.find(p => p.product.slug === slug);
 
     if (!productData) {
         notFound();
@@ -34,14 +34,14 @@ export default async function ProductPage({ params }: { params: Promise<Params> 
 }
 
 export async function generateStaticParams() {
-    return mockData.products.map(productData => ({
+    return vinylSheetFlooringData.products.map(productData => ({
         slug: productData.product.slug,
     }));
 }
 
 export async function generateMetadata({ params }: { params: Promise<Params> }) {
     const { slug } = await params;
-    const productData = mockData.products.find(p => p.product.slug === slug);
+    const productData = vinylSheetFlooringData.products.find(p => p.product.slug === slug);
 
     if (!productData) {
         return {
