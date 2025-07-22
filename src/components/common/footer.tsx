@@ -7,6 +7,7 @@ import {
     Send,
 
 } from "lucide-react";
+import Link from "next/link";
 
 export default function Footer() {
     return (
@@ -32,10 +33,10 @@ export default function Footer() {
                     <h4 className="text-lg font-semibold mb-4">INFORMATION</h4>
                     <ul className="space-y-2 text-gray-300">
                         <li><a href="/about-us" className="hover:text-orange-500">About Us</a></li>
-                        <li><a href="#" className="hover:text-orange-500">Manufactures</a></li>
-                        <li><a href="#" className="hover:text-orange-500">Tracking Order</a></li>
-                        <li><a href="#" className="hover:text-orange-500">Privacy & Policy</a></li>
-                        <li><a href="#" className="hover:text-orange-500">Terms & Conditions</a></li>
+                        <li><Link href="/" className="hover:text-orange-500">Manufactures</Link></li>
+                        <li><Link href="/" className="hover:text-orange-500">Tracking Order</Link></li>
+                        <li><Link href="/" className="hover:text-orange-500">Privacy & Policy</Link></li>
+                        <li><Link href="/" className="hover:text-orange-500">Terms & Conditions</Link></li>
                     </ul>
                 </div>
 
@@ -43,11 +44,11 @@ export default function Footer() {
                 <div>
                     <h4 className="text-lg font-semibold mb-4">MY ACCOUNT</h4>
                     <ul className="space-y-2 text-gray-300">
-                        <li><a href="#" className="hover:text-orange-500">Login</a></li>
-                        <li><a href="#" className="hover:text-orange-500">My Cart</a></li>
-                        <li><a href="#" className="hover:text-orange-500">Wishlist</a></li>
-                        <li><a href="#" className="hover:text-orange-500">Compare</a></li>
-                        <li><a href="#" className="hover:text-orange-500">My Account</a></li>
+                        <li><Link href="/" className="hover:text-orange-500">Login</Link></li>
+                        <li><Link href="/" className="hover:text-orange-500">My Cart</Link></li>
+                        <li><Link href="/" className="hover:text-orange-500">Wishlist</Link></li>
+                        <li><Link href="/" className="hover:text-orange-500">Compare</Link></li>
+                        <li><Link href="/" className="hover:text-orange-500">My Account</Link></li>
                     </ul>
                 </div>
 
