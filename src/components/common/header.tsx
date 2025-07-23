@@ -1,7 +1,7 @@
 "use client";
 
 import { usePathname } from "next/navigation";
-import mockData from "@/data/mockData";
+import vinylSheetFlooringData from "@/data/vinylSheetFlooringData";
 import Link from "next/link";
 
 export default function PageHeader() {
@@ -10,7 +10,7 @@ export default function PageHeader() {
     const lastSegment = paths[paths.length - 1];
 
     // Fixed: Access p.product.id instead of p.id
-    const product = mockData.products.find(p => p.product.id === lastSegment);
+    const product = vinylSheetFlooringData.products.find(p => p.product.id === lastSegment);
     const pageTitle = product
         ? product.product.name.toUpperCase()  // Also fixed: product.product.name
         : lastSegment?.replace(/-/g, " ").toUpperCase() || "HOME";
@@ -19,7 +19,7 @@ export default function PageHeader() {
         const path = "/" + paths.slice(0, index + 1).join("/");
 
         // Fixed: Access p.product.id and p.product.name
-        const productMatch = mockData.products.find(p => p.product.id === segment);
+        const productMatch = vinylSheetFlooringData.products.find(p => p.product.id === segment);
         const label = productMatch
             ? productMatch.product.name.toUpperCase()
             : segment.replace(/-/g, " ").toUpperCase();

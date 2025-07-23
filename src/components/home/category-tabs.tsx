@@ -1,7 +1,7 @@
 'use client'
 
 import React, { useState } from 'react'
-import mockData from '@/data/mockData'
+import vinylSheetFlooringData from '@/data/vinylSheetFlooringData'
 import Image from 'next/image'
 import { cn } from '@/lib/utils'
 import Link from 'next/link'
@@ -12,7 +12,7 @@ const categories = ['Artificial Grass', 'Carpet', 'Carpet Tiles', 'LVT & SPC', '
 const CategoryTabs = () => {
     const [activeCategory, setActiveCategory] = useState('Artificial Grass')
 
-    const filteredProducts = mockData.products.filter(
+    const filteredProducts = vinylSheetFlooringData.products.filter(
         (product) => product.product.category === activeCategory
     )
 

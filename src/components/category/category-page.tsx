@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import { useParams, useRouter } from "next/navigation";
-import mockData from "@/data/mockData";
+import vinylSheetFlooringData from "@/data/vinylSheetFlooringData";
 import Link from "next/link";
 
 export default function CategoryPage() {
@@ -11,7 +11,7 @@ export default function CategoryPage() {
 
     // Convert slug back to category name
     const getCategoryFromSlug = (slug: string) => {
-        return mockData.products.find(item =>
+        return vinylSheetFlooringData.products.find(item =>
             item.product.category.toLowerCase().replace(/\s+/g, '-').replace(/&/g, 'and') === slug
         )?.product.category;
     };
@@ -19,7 +19,7 @@ export default function CategoryPage() {
     const categoryName = typeof slug === "string" ? getCategoryFromSlug(slug) : undefined;
 
     // Filter products by category
-    const categoryProducts = mockData.products.filter(
+    const categoryProducts = vinylSheetFlooringData.products.filter(
         item => item.product.category === categoryName
     );
 

@@ -58,38 +58,35 @@ const locations = [
 export default function FlooringProjectSection() {
     return (
         <div className="bg-white">
-            {/* Start Your Project Section */}
+
             <section className="container mx-auto px-6 py-12">
                 {/* Header */}
                 <div className="text-center mb-16">
                     <h2 className="text-3xl font-bold text-gray-900 mb-12">
                         Start Your Flooring Project Today
                     </h2>
-                    <p className="text-xl text-gray-600  mb-6">
+                    <p className="text-xl text-gray-600 mb-6">
                         From consultation to completion, we make your flooring dreams a reality with our streamlined 6-step process.
                     </p>
                 </div>
 
                 {/* Process Steps - Horizontal Timeline */}
                 <div className="relative">
-                    {/* Timeline Line */}
-
-
                     {/* Steps Grid */}
-                    <div className="grid grid-cols-3 gap-8">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
                         {projectSteps.map((step, index) => {
                             const IconComponent = step.icon;
                             return (
                                 <div key={index} className="group relative h-full flex flex-col">
                                     {/* Step Card */}
-                                    <div className="bg-white rounded-2xl p-6 shadow-md transition-all duration-300  border border-orange-100 text-center h-full flex flex-col justify-between">
+                                    <div className="bg-white rounded-2xl p-6 shadow-md transition-all duration-300 border border-orange-100 text-center h-full flex flex-col justify-between">
                                         {/* Icon */}
-                                        <div className="w-12 h-12 bg-gradient-to-br from-orange-500 to-orange-600 rounded-lg flex items-center justify-center mx-auto mb-4  ">
+                                        <div className="w-12 h-12 bg-orange-600 rounded-lg flex items-center justify-center mx-auto mb-4">
                                             <IconComponent className="w-6 h-6 text-white" />
                                         </div>
 
                                         {/* Title */}
-                                        <h3 className="text-lg font-semibold text-gray-900 mb-3  transition-colors">
+                                        <h3 className="text-lg font-semibold text-gray-900 mb-3 transition-colors">
                                             {step.title}
                                         </h3>
 
@@ -105,8 +102,9 @@ export default function FlooringProjectSection() {
                 </div>
             </section>
 
+
             <section className="py-12 px-6 ">
-                {/* Header */}
+
                 <div className="text-center mb-12">
                     <h2 className="text-4xl font-bold text-gray-900 mb-8">
                         Nationwide Coverage

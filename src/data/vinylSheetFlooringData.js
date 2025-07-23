@@ -1,4 +1,4 @@
-const mockData = {
+const vinylSheetFlooringData = {
     products: [
         {
             "product": {
@@ -5000,6 +5000,6 @@ const mockData = {
     ]
 };
 
-export default mockData;
+export default vinylSheetFlooringData;
 
 
