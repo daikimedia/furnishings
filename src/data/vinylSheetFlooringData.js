@@ -4996,7 +4996,7 @@ const vinylSheetFlooringData = {
                     ]
                 }
             }
-        }
+        },
     ]
 };
 
