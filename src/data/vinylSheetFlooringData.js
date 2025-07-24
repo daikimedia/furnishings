@@ -824,9 +824,9 @@ const vinylSheetFlooringData = {
                 "category": "Vinyl Sheet Flooring",
                 "brand": "Versafloor",
                 "images": {
-                    "main_image": "/vinyal_sheet/CM-10212.webp",
-                    "gallery": ["/vinyal_sheet/CM-10212.webp"],
-                    "thumbnails": ["/vinyal_sheet/CM-10212.webp"],
+                    "main_image": "/vinyal_sheet/dummy.webp",
+                    "gallery": ["/vinyal_sheet/dummy.webp"],
+                    "thumbnails": ["/vinyal_sheet/dummy.webp"],
                     "alt_texts": [
                         "Versafloor CM10267 stylish vinyl sheet flooring in modern Malaysian home",
                         "Waterproof vinyl flooring with anti-slip surface",
@@ -1091,9 +1091,9 @@ const vinylSheetFlooringData = {
                 "category": "Vinyl Sheet Flooring",
                 "brand": "Versafloor",
                 "images": {
-                    "main_image": "/vinyal_sheet/CM-10212.webp",
-                    "gallery": ["/vinyal_sheet/CM-10212.webp"],
-                    "thumbnails": ["/vinyal_sheet/CM-10212.webp"],
+                    "main_image": "/vinyal_sheet/dummy.webp",
+                    "gallery": ["/vinyal_sheet/dummy.webp"],
+                    "thumbnails": ["/vinyal_sheet/dummy.webp"],
                     "alt_texts": [
                         "Versafloor GM10193 stylish vinyl sheet flooring in modern Malaysian home",
                         "Waterproof vinyl flooring with anti-slip surface",
@@ -1231,9 +1231,9 @@ const vinylSheetFlooringData = {
                 "category": "Vinyl Sheet Flooring",
                 "brand": "Versafloor",
                 "images": {
-                    "main_image": "/vinyal_sheet/CM-10212.webp",
-                    "gallery": ["/vinyal_sheet/CM-10212.webp"],
-                    "thumbnails": ["/vinyal_sheet/CM-10212.webp"],
+                    "main_image": "/vinyal_sheet/dummy.webp",
+                    "gallery": ["/vinyal_sheet/dummy.webp"],
+                    "thumbnails": ["/vinyal_sheet/dummy.webp"],
                     "alt_texts": [
                         "Versafloor HM10003 vinyl sheet flooring with modern wood texture finish",
                         "Waterproof and anti-slip vinyl flooring ideal for Malaysian kitchens",
@@ -3132,6 +3132,130 @@ const vinylSheetFlooringData = {
         },
         {
             "product": {
+                "id": "PG20207",
+                "name": "Versafloor Vinyl Sheet PG20207",
+                "slug": "versafloor-vinyl-sheet-pg20207",
+                "category": "Vinyl Sheet Flooring",
+                "brand": "Versafloor",
+                "images": {
+                    "main_image": "/vinyal_sheet/PG20207.jpg",
+                    "gallery": ["/vinyal_sheet/PG20207.jpg"],
+                    "thumbnails": ["/vinyal_sheet/PG20207.jpg"],
+                    "alt_texts": [
+                        "Versafloor PG20207 resilient vinyl sheet in Malaysian interior",
+                        "Stylish, resilient PG20207 vinyl sheet, built for Malaysian humidity and daily wear.",
+                        "VersaFloor PG20207 offers a refined flooring solution crafted for Malaysia’s humid climate.",
+                        "This vinyl sheet combines durability, elegance, and practicality, making it ideal for both residential and commercial interiors."
+                    ]
+                },
+                "seo": {
+                    "meta_title": "PG20207 Vinyl Sheet Malaysia | Stylish, Resilient & Humidity-Proof Flooring",
+                    "meta_description": "Versafloor PG20207 vinyl sheet offers stylish, humidity-proof flooring for Malaysian homes and businesses. Durable and easy to maintain – shop now!",
+                    "keywords": [
+                        "PG20207 vinyl sheet Malaysia",
+                        "resilient vinyl flooring",
+                        "humidity-proof vinyl"
+                    ]
+                },
+                "description": {
+                    "short": "Versafloor PG20207 vinyl sheet delivers stylish, humidity-proof flooring for Malaysian interiors. Durable, elegant, and low-maintenance – shop now at Furnishings.com.",
+                    "long": "VersaFloor PG20207 offers a refined flooring solution crafted for Malaysia’s humid climate. This vinyl sheet combines durability, elegance, and practicality, making it ideal for both residential and commercial interiors. Engineered for comfort and long-term performance, it stands up to daily wear while maintaining its sophisticated appearance across all spaces."
+                },
+                "features": {
+                    "main_features": [
+                        "Resilient Vinyl Flooring Built for Malaysia’s Climate: High moisture resistance ensures durability in high-humidity areas like bathrooms, kitchens, and laundry rooms.",
+                        "Elegant Wood-Inspired Finish: Aesthetic appeal of timber with none of the maintenance, offering a natural, sophisticated look.",
+                        "Comfort & Safety Underfoot: Soft, cushioned, and slip-resistant, perfect for family homes, healthcare facilities, and retail spaces.",
+                        "Easy to Clean & Maintain: Seamless structure allows hassle-free cleaning with simple sweeping and mopping."
+                    ],
+                    "benefits": [
+                        "High moisture resistance ensures long-lasting durability in humid conditions",
+                        "Natural, sophisticated look complements any interior",
+                        "Soft, cushioned, and slip-resistant for enhanced comfort and safety",
+                        "Hassle-free cleaning with minimal maintenance requirements"
+                    ],
+                    "design_compatibility": ["Modern", "Contemporary", "Traditional", "Scandinavian"]
+                },
+                "specifications": {
+                    "waterproof": true,
+                    "slip_resistant": true,
+                    "thickness": "2.0mm",
+                    "width": "2m",
+                    "material": "Fiber-reinforced cushion vinyl",
+                    "durability": "10 Years (Residential Use)",
+                    "installation_type": "Glue-down",
+                    "surface_requirement": "Smooth concrete or plywood subfloors",
+                    "maintenance": "Easy to clean with standard sweeping and mopping"
+                },
+                "installation": {
+                    "method": "Glue-down",
+                    "surface_types": ["concrete", "plywood"],
+                    "diy_friendly": true,
+                    "professional_recommended": true,
+                    "requirements": [
+                        "Use smooth concrete or plywood subfloors",
+                        "Ensure proper surface preparation for a flawless, long-lasting finish."
+                    ]
+                },
+                "maintenance": {
+                    "cleaning_method": "Regular sweeping and occasional mopping with gentle cleaner",
+                    "special_treatments": "No sealing or polishing required",
+                    "no_waxing": true,
+                    "no_polishing": true,
+                    "no_sealants": true
+                },
+                "faqs": [
+                    {
+                        "question": "What is the code for vinyl sheet?",
+                        "answer": "The product code is PG20207, a signature model in the VersaFloor collection known for its durability and stylish design."
+                    },
+                    {
+                        "question": "What is sheet vinyl used for?",
+                        "answer": "Sheet vinyl is commonly used in homes, offices, and commercial settings for its seamless installation, water resistance, and comfort underfoot."
+                    },
+                    {
+                        "question": "What is Fiberfloor sheet vinyl?",
+                        "answer": "Fiberfloor vinyl, like PG20207, is a layered flooring material reinforced with fiberglass. It provides strength, cushioning, and superior moisture resistance."
+                    },
+                    {
+                        "question": "What is the difference between sheet vinyl and luxury vinyl?",
+                        "answer": "While both offer resilience and style, sheet vinyl like PG20207 comes in large rolls for seamless coverage, making it ideal for moisture-prone areas. Luxury vinyl often mimics tiles or planks and can be slightly thicker."
+                    }
+                ],
+                "call_to_action": {
+                    "primary": "Bring Your Space to Life with PG20207 Vinyl Sheet. Order today at Furnishings.com.",
+                    "secondary": "Contact us now to request a quote.",
+                    "tertiary": "Transform your interiors with humidity-proof vinyl – speak with our flooring specialists."
+                },
+                "status": "active",
+                "created_at": "2025-07-17",
+                "updated_at": "2025-07-17",
+                "additional_description": {
+                    "headline": "PG20207 Vinyl Sheet Malaysia | Stylish, Resilient & Humidity-Proof Flooring for Every Space",
+                    "sections": [
+                        {
+                            "title": "Why Choose PG20207 Vinyl Sheet Flooring?",
+                            "content": "Resilient Vinyl Flooring Built for Malaysia’s Climate: With high moisture resistance, the PG20207 vinyl sheet Malaysia variant ensures long-lasting durability, even in high-humidity areas like bathrooms, kitchens, and laundry rooms. Elegant Wood-Inspired Finish: Enjoy the aesthetic appeal of timber with none of the maintenance. The PG20207 design offers a natural, sophisticated look that complements any interior. Comfort & Safety Underfoot: Soft, cushioned, and slip-resistant, this sheet vinyl is perfect for family homes, healthcare facilities, and retail spaces where comfort and safety matter most. Easy to Clean & Maintain: Thanks to its seamless structure, cleaning is hassle-free. Just sweep, mop, and enjoy spotless, stylish flooring every day."
+                        },
+                        {
+                            "title": "What Makes VersaFloor PG20207 Different?",
+                            "content": "Unlike traditional options, the PG20207 vinyl sheet is crafted for resilience. Whether you’re renovating a condo in Kuala Lumpur or fitting out a retail store in Penang, this humidity-proof vinyl stands up to wear and tear, while looking great."
+                        },
+                        {
+                            "title": "Specifications of PG20207 Vinyl Sheet Flooring",
+                            "content": "Thickness: 2.0mm. Width: 2m. Material: Fiber-reinforced cushion vinyl. Usage: Residential & light commercial. Water Resistance: 100% humidity-proof."
+                        },
+                        {
+                            "title": "Bring Your Space to Life with PG20207 Vinyl Sheet | Order Today!",
+                            "content": "Don’t settle for less. Upgrade your flooring with resilient vinyl flooring made to handle Malaysia’s unique climate. Whether it's your home, office, or retail space, VersaFloor’s PG20207 vinyl sheet ensures long-lasting beauty, comfort, and performance. Contact us now or request a quote to transform your interiors with humidity-proof vinyl you can trust."
+                        }
+                    ]
+                }
+            }
+        }
+        ,
+        {
+            "product": {
                 "id": "PG20208",
                 "name": "Versafloor Vinyl Sheet PG20208",
                 "slug": "versafloor-vinyl-sheet-PG20208",
@@ -4997,6 +5121,3238 @@ const vinylSheetFlooringData = {
                 }
             }
         },
+        {
+            "product": {
+                "id": "PG20226",
+                "name": "Versafloor Vinyl Sheet PG20226",
+                "slug": "versafloor-vinyl-sheet-PG20226",
+                "category": "Vinyl Sheet Flooring",
+                "brand": "Versafloor",
+                "images": {
+                    "main_image": "/vinyal_sheet/PG20226.jpg",
+                    "gallery": [
+                        "/vinyal_sheet/PG20226.jpg"
+                    ],
+                    "thumbnails": [
+                        "/vinyal_sheet/PG20226.jpg"
+                    ],
+                    "alt_texts": [
+                        "Heavy duty vinyl sheet flooring used in industrial factories",
+                        "Anti-slip surface reducing workplace accidents and easy to clean",
+                        "Durability tested for heavy traffic and rolling machinery",
+                        "Industrial-grade vinyl flooring for warehouses and labs",
+                        "Moisture and chemical-resistant surface in harsh environments",
+                        "CM10212 in use across commercial and healthcare facilities"
+                    ]
+                },
+                "seo": {
+                    "meta_title": "Versafloor Vinyl Sheet PG20226 – Heavy‑Duty Vinyl Flooring Malaysia",
+                    "meta_description": "Heavy-duty vinyl sheet PG20226 – built for Malaysian industrial and commercial use.",
+                    "keywords": [
+                        "PG20226 vinyl Malaysia",
+                        "heavy duty vinyl sheet",
+                        "industrial vinyl flooring"
+                    ]
+                },
+                "description": {
+                    "short": "VERSAFLOOR – Stylish, durable vinyl sheets for industrial and residential spaces.",
+                    "long": "Introducing VERSAFLOOR, our latest vinyl sheet collection designed to seamlessly blend style and functionality for both industrial and residential spaces. Built with durability in mind, VERSAFLOOR offers exceptional resilience to heavy traffic, making it the perfect choice for bustling commercial environments while maintaining the aesthetic appeal needed for a cozy, homey atmosphere. Whether you’re transforming a modern home or a high-traffic industrial setting, VERSAFLOOR provides superior comfort, easy maintenance, and a variety of contemporary designs that release stress and enhance any space. Choose VERSAFLOOR for the ultimate combination of toughness and elegance, creating a space that endures while offering serenity and style."
+                },
+                "features": {
+                    "main_features": [
+                        "Thickness - 2.0 mm",
+                        "Wear Layer - 0.7 mm",
+                        "Roll Width - 2 m",
+                        "Roll - Length 20 m",
+                        "Surface - Finish Matte Texture",
+                        "Usage  -  Industrial, Commercial",
+                        "Fire Resistanc -  B1 Certified",
+                        "Slip Resistance - R10"
+                    ],
+                    "benefits": [
+                        "Ensures long-term performance in high-traffic and high-demand environments",
+                        "Improves safety in the workplace with anti-slip protection",
+                        "Reduces cleaning and maintenance time, increasing efficiency",
+                        "Withstands industrial wear and tear including chemical exposure",
+                        "Supports safe and clean environments in healthcare and factory settings"
+                    ],
+                    "design_compatibility": [
+                        "Minimalist",
+                        "Retro",
+                        "Scandinavian",
+                        "Industrial chic"
+                    ]
+                },
+                "specifications": {
+                    "waterproof": true,
+                    "slip_resistant": true,
+                    "durability": "10-20 years",
+                    "installation_type": "Glue-down method",
+                    "surface_requirement": "Dry, flat surfaces (tile or concrete)",
+                    "maintenance": "Sweep and damp mop only"
+                },
+                "installation": {
+                    "method": "Glue-down method",
+                    "surface_types": [
+                        "tile",
+                        "concrete"
+                    ],
+                    "diy_friendly": true,
+                    "professional_recommended": true,
+                    "requirements": [
+                        "Clean surface preparation",
+                        "Flat and dry substrate",
+                        "Follow standard fitting instructions"
+                    ]
+                },
+                "maintenance": {
+                    "cleaning_method": "Sweep and damp mop",
+                    "special_treatments": "None required",
+                    "no_waxing": true,
+                    "no_polishing": true,
+                    "no_sealants": true
+                },
+                "faqs": [
+                    {
+                        "question": "What is the code for vinyl sheet?",
+                        "answer": "The code for this product is PG20226, part of the Versafloor industrial collection. Each code corresponds to a specific design and performance rating for accurate specification in commercial projects."
+                    },
+                    {
+                        "question": "Is vinyl sheet good for flooring?",
+                        "answer": "Yes, vinyl sheet flooring is an excellent choice for both residential and commercial spaces. PG20226, in particular, is optimized for industrial flooring, offering superior durability, resistance to chemicals, and ease of maintenance."
+                    },
+                    {
+                        "question": "What kind of underlayment for vinyl sheet?",
+                        "answer": "The ideal underlayment depends on your subfloor type. Common options include PVC foam underlay, concrete leveling compounds, or acoustic underlayment for sound reduction in commercial buildings. PG20226 is compatible with most standard underlayments used in Malaysian industrial flooring."
+                    },
+                    {
+                        "question": "How do you measure vinyl sheets?",
+                        "answer": "Measure the length and width of the area in meters. Multiply both to get the square meterage. PG20226 comes in 2-meter-wide rolls, making it easy to calculate how many rolls you’ll need based on your total floor area."
+                    }
+                ],
+                "call_to_action": {
+                    "primary": "Take a sample free of charge and experience the quality yourself",
+                    "secondary": "Drop by or call us to receive a free quote or install tips",
+                    "tertiary": "View more beautiful looks in our Versafloor Vinyl Sheet Collection"
+                },
+                "status": "active",
+                "created_at": "2025-07-17",
+                "updated_at": "2025-07-17",
+                "additional_description": {
+                    "headline": "PG20226 Vinyl Sheet Malaysia | Anti-Scratch, Pet-Friendly Flooring Built for Real Life",
+                    "sections": [
+                        {
+                            "title": "Searching for Scratch-Proof, Pet-Safe Vinyl Flooring in Malaysia?",
+                            "content": "Introducing the Versafloor PG20226 vinyl sheet, designed for modern Malaysian homes that demand durability, style, and pet-friendly performance. Whether you’re a pet owner tired of claw marks or simply need long-lasting flooring that resists daily wear and tear, this anti-scratch vinyl flooring is built to withstand it all."
+                        },
+                        {
+                            "title": "Why Choose PG20226 Anti-Scratch Flooring?",
+                            "content": "Because your space deserves flooring that performs as good as it looks."
+                        },
+                        {
+                            "title": "Benefits of PG20226 Vinyl Sheet Malaysia",
+                            "content": "Anti-Scratch Surface:  Ideal for high-traffic areas and pet-friendly homes. No more worrying about claw marks or furniture scuffs.\n\nPet-Friendly Vinyl Sheet:  Safe, soft underfoot, and resistant to stains and spills.\n\nLow Maintenance: Wipe-clean surface for busy households and commercial settings.\n\nElegant Design:  Stylish aesthetics to suit modern interiors across Malaysia.\n\nComfort & Quiet: Softer underfoot and quieter than traditional tiles or hardwood."
+                        },
+                        {
+                            "title": "Perfect for Every Room",
+                            "content": "Pet areas & living rooms\n\nBedrooms & nurseries\n\nOffices with rolling chairs\n\nRental & commercial properties"
+                        },
+                        {
+                            "title": "Product Specifications",
+                            "content": "Product Code: PG20226\n\nCategory: Vinyl Sheet\n\nFinish: Matte, anti-scratch coating\n\nSize: Insert dimensions if available\n\nInstallation: Glue-down\n\nIdeal Use: Homes, offices, pet spaces"
+                        },
+                        {
+                            "title": "Frequently Asked Questions (FAQs)",
+                            "content": "Is vinyl sheet good for flooring?\nYes! Vinyl sheet flooring is durable, water-resistant, budget-friendly, and ideal for high-traffic or pet-heavy areas. PG20226 adds anti-scratch protection for even greater performance.\n\nWhat is the code for vinyl sheet?\nThe product code is PG20226, a premium anti-scratch, pet-friendly vinyl sheet designed for the Malaysian market.\n\nWhat kind of underlayment for vinyl sheet?\nFor PG20226, a smooth, clean, and dry subfloor is essential. Use vinyl-approved underlayment for added comfort and sound absorption.\n\nHow do you measure vinyl sheets?\nMeasure the length and width of your space in meters, then add 5 to 10% extra for trimming and fitting. Our experts can help you calculate the exact amount."
+                        },
+                        {
+                            "title": "Final Thoughts",
+                            "content": "Don’t let weak flooring disrupt your operations or increase your maintenance costs. Choose Versafloor PG20226 vinyl Malaysia for a flooring solution that combines technical performance, visual appeal, and long-term value.\n\nTrusted in factories\nRecommended by commercial contractors\nBuilt for real-world conditions in Malaysia\n\nReady to Transform Your Space?\nGet in touch today for a free consultation or to request a sample. Our team is here to help you bring strength and style to your floors."
+                        }
+                    ]
+                }
+
+            }
+        },
+        {
+            "product": {
+                "id": "PG20227",
+                "name": "Versafloor Vinyl Sheet PG20227",
+                "slug": "versafloor-vinyl-sheet-PG20227",
+                "category": "Vinyl Sheet Flooring",
+                "brand": "Versafloor",
+                "images": {
+                    "main_image": "/vinyal_sheet/PG20227.webp",
+                    "gallery": [
+                        "/vinyal_sheet/PG20227.webp"
+                    ],
+                    "thumbnails": [
+                        "/vinyal_sheet/PG20227.webp"
+                    ],
+                    "alt_texts": [
+                        "Heavy duty vinyl sheet flooring used in industrial factories",
+                        "Anti-slip surface reducing workplace accidents and easy to clean",
+                        "Durability tested for heavy traffic and rolling machinery",
+                        "Industrial-grade vinyl flooring for warehouses and labs",
+                        "Moisture and chemical-resistant surface in harsh environments",
+                        "PG20228 in use across commercial and healthcare facilities"
+                    ]
+                },
+                "seo": {
+                    "meta_title": "Versafloor Vinyl Sheet PG20227 – Low‑Maintenance Vinyl flooring Malaysia",
+                    "meta_description": "Low‑maintenance vinyl sheet PG20227 – ideal for busy Malaysian households.",
+                    "keywords": [
+                        "PG20227 vinyl sheet Malaysia",
+                        "easy care vinyl",
+                        "low maintenance flooring"
+                    ]
+                },
+                "description": {
+                    "short": "Premium vinyl sheet flooring combining durability, comfort, and elegant modern design.",
+                    "long": "Introducing VERSAFLOOR, our latest vinyl sheet collection crafted to merge style with heavy-duty functionality for both industrial and residential spaces. Whether you're upgrading a modern home or a high-traffic commercial environment, VERSAFLOOR offers exceptional durability, slip resistance, and aesthetic appeal. Designed for comfort and easy maintenance, its contemporary looks create calming interiors while withstanding the toughest daily wear. From busy workplaces to cozy living rooms, VERSAFLOOR delivers the perfect balance of toughness, serenity, and style."
+
+                },
+                "features": {
+                    "main_features": [
+                        "Heavy Duty Vinyl Sheet: Built for factories, hospitals, retail environments, and commercial spaces",
+                        "Anti-Slip & Easy Maintenance: Enhances workplace safety while reducing cleaning downtime",
+                        "Durability Tested: Withstands high foot traffic, rolling equipment, and constant movement",
+                        "Industrial-Grade Performance: Suitable for warehouses, logistics centers, labs, and manufacturing facilities",
+                        "Moisture & Chemical Resistance: Ideal for areas exposed to liquid spills or harsh substances"
+                    ],
+                    "benefits": [
+                        "Ensures long-term performance in high-traffic and high-demand environments",
+                        "Improves safety in the workplace with anti-slip protection",
+                        "Reduces cleaning and maintenance time, increasing efficiency",
+                        "Withstands industrial wear and tear including chemical exposure",
+                        "Supports safe and clean environments in healthcare and factory settings"
+                    ],
+                    "design_compatibility": [
+                        "Minimalist",
+                        "Retro",
+                        "Scandinavian",
+                        "Industrial chic"
+                    ]
+                },
+                "specifications": {
+                    "waterproof": true,
+                    "slip_resistant": true,
+                    "durability": "10-20 years",
+                    "installation_type": "Glue-down method",
+                    "surface_requirement": "Dry, flat surfaces (tile or concrete)",
+                    "maintenance": "Sweep and damp mop only"
+                },
+                "installation": {
+                    "method": "Glue-down method",
+                    "surface_types": [
+                        "tile",
+                        "concrete"
+                    ],
+                    "diy_friendly": true,
+                    "professional_recommended": true,
+                    "requirements": [
+                        "Clean surface preparation",
+                        "Flat and dry substrate",
+                        "Follow standard fitting instructions"
+                    ]
+                },
+                "maintenance": {
+                    "cleaning_method": "Sweep and damp mop",
+                    "special_treatments": "None required",
+                    "no_waxing": true,
+                    "no_polishing": true,
+                    "no_sealants": true
+                },
+                "faqs": [
+                    {
+                        "question": "What is the code for vinyl sheet?",
+                        "answer": "The code for this product is PG20227, part of the Versafloor industrial collection. Each code corresponds to a specific design and performance rating for accurate specification in commercial projects."
+                    },
+                    {
+                        "question": "Is vinyl sheet good for flooring?",
+                        "answer": "Yes, vinyl sheet flooring is an excellent choice for both residential and commercial spaces.PG20227, in particular, is optimized for industrial flooring, offering superior durability, resistance to chemicals, and ease of maintenance."
+                    },
+                    {
+                        "question": "What kind of underlayment for vinyl sheet?",
+                        "answer": "The ideal underlayment depends on your subfloor type. Common options include PVC foam underlay, concrete leveling compounds, or acoustic underlayment for sound reduction in commercial buildings.PG20227 is compatible with most standard underlayments used in Malaysian industrial flooring."
+                    },
+                    {
+                        "question": "How do you measure vinyl sheets?",
+                        "answer": "Measure the length and width of the area in meters. Multiply both to get the square meterage.PG20227 comes in 2-meter-wide rolls, making it easy to calculate how many rolls you’ll need based on your total floor area."
+                    }
+                ],
+                "call_to_action": {
+                    "primary": "Take a sample free of charge and experience the quality yourself",
+                    "secondary": "Drop by or call us to receive a free quote or install tips",
+                    "tertiary": "View more beautiful looks in our Versafloor Vinyl Sheet Collection"
+                },
+                "status": "active",
+                "created_at": "2025-07-17",
+                "updated_at": "2025-07-17",
+                "additional_description": {
+                    "headline": "PG20227 Vinyl Sheet Malaysia | Anti-Scratch, Pet-Friendly Flooring Built for Real Life",
+                    "sections": [
+                        {
+                            "title": "Searching for Scratch-Proof, Pet-Safe Vinyl Flooring in Malaysia?",
+                            "content": "Introducing the Versafloor PG20227 vinyl sheet, designed for modern Malaysian homes that demand durability, style, and pet-friendly performance. Whether you’re a pet owner tired of claw marks or simply need long-lasting flooring that resists daily wear and tear, this anti-scratch vinyl flooring is built to withstand it all."
+                        },
+                        {
+                            "title": "Why Choose PG20227 Anti-Scratch Flooring?",
+                            "content": "Because your space deserves flooring that performs as good as it looks."
+                        },
+                        {
+                            "title": "Benefits of PG20227 Vinyl Sheet Malaysia",
+                            "content": "Anti-Scratch Surface:  Ideal for high-traffic areas and pet-friendly homes. No more worrying about claw marks or furniture scuffs.\n\nPet-Friendly Vinyl Sheet:  Safe, soft underfoot, and resistant to stains and spills.\n\nLow Maintenance: Wipe-clean surface for busy households and commercial settings.\n\nElegant Design:  Stylish aesthetics to suit modern interiors across Malaysia.\n\nComfort & Quiet: Softer underfoot and quieter than traditional tiles or hardwood."
+                        },
+                        {
+                            "title": "Perfect for Every Room",
+                            "content": "Pet areas & living rooms\n\nBedrooms & nurseries\n\nOffices with rolling chairs\n\nRental & commercial properties"
+                        },
+                        {
+                            "title": "Product Specifications",
+                            "content": "Product Code:PG20227\n\nCategory: Vinyl Sheet\n\nFinish: Matte, anti-scratch coating\n\nSize: Insert dimensions if available\n\nInstallation: Glue-down\n\nIdeal Use: Homes, offices, pet spaces"
+                        },
+                        {
+                            "title": "Frequently Asked Questions (FAQs)",
+                            "content": "Is vinyl sheet good for flooring?\nYes! Vinyl sheet flooring is durable, water-resistant, budget-friendly, and ideal for high-traffic or pet-heavy areas.PG20227 adds anti-scratch protection for even greater performance.\n\nWhat is the code for vinyl sheet?\nThe product code is PG20227, a premium anti-scratch, pet-friendly vinyl sheet designed for the Malaysian market.\n\nWhat kind of underlayment for vinyl sheet?\nFor PG20227, a smooth, clean, and dry subfloor is essential. Use vinyl-approved underlayment for added comfort and sound absorption.\n\nHow do you measure vinyl sheets?\nMeasure the length and width of your space in meters, then add 5 to 10% extra for trimming and fitting. Our experts can help you calculate the exact amount."
+                        },
+                        {
+                            "title": "Final Thoughts",
+                            "content": "Don’t let weak flooring disrupt your operations or increase your maintenance costs. Choose Versafloor PG20227 vinyl Malaysia for a flooring solution that combines technical performance, visual appeal, and long-term value.\n\nTrusted in factories\nRecommended by commercial contractors\nBuilt for real-world conditions in Malaysia\n\nReady to Transform Your Space?\nGet in touch today for a free consultation or to request a sample. Our team is here to help you bring strength and style to your floors."
+                        }
+                    ]
+                }
+
+            }
+        },
+        {
+            "product": {
+                "id": "PG20228",
+                "name": "Versafloor Vinyl Sheet PG20228",
+                "slug": "versafloor-vinyl-sheet-PG20228",
+                "category": "Vinyl Sheet Flooring",
+                "brand": "Versafloor",
+                "images": {
+                    "main_image": "/vinyal_sheet/PG20228.jpg",
+                    "gallery": [
+                        "/vinyal_sheet/PG20228.jpg"
+                    ],
+                    "thumbnails": [
+                        "/vinyal_sheet/PG20228.jpg"
+                    ],
+                    "alt_texts": [
+                        "UV-resistant vinyl sheet flooring for outdoor Malaysian spaces",
+                        "Weather-resistant outdoor vinyl perfect for patios and balconies",
+                        "PG20228 vinyl sheet with natural wood grain texture",
+                        "Fade-resistant vinyl flooring for semi-covered outdoor areas",
+                        "Durable outdoor vinyl flooring for Malaysian climate",
+                        "PG20228 in use across patios, verandas and commercial outdoor spaces"
+                    ]
+                },
+                "seo": {
+                    "meta_title": "Versafloor Vinyl Sheet PG20228 – UV‑Resistant Vinyl Flooring Malaysia",
+                    "meta_description": "UV-resistant vinyl sheet PG20228 – guards against sun damage in Malaysian buildings.",
+                    "keywords": [
+                        "PG20228 vinyl sheet Malaysia",
+                        "UV resistant vinyl flooring",
+                        "outdoor vinyl Malaysia"
+                    ]
+                },
+                "description": {
+                    "short": "Premium UV-resistant vinyl sheet flooring combining outdoor durability, weather protection, and elegant wood-grain design.",
+                    "long": "Introducing VERSAFLOOR PG20228, our premium UV-resistant vinyl sheet collection engineered specifically for Malaysian outdoor and semi-outdoor applications. This advanced flooring solution merges cutting-edge UV protection technology with stunning natural wood-grain aesthetics, making it the perfect choice for spaces exposed to direct sunlight and harsh weather conditions. Whether you're upgrading a patio, balcony, commercial outdoor area, or sunroom, VERSAFLOOR PG20228 offers exceptional fade resistance, moisture protection, and visual appeal that withstands Malaysia's intense UV exposure while maintaining its beautiful appearance year after year."
+                },
+                "features": {
+                    "main_features": [
+                        "UV Resistant Surface: Perfect for balconies, patios, or sunrooms",
+                        "Moisture Resistant: Handles humid environments with ease",
+                        "Comfort Underfoot: Soft yet firm, ideal for barefoot comfort",
+                        "Modern Design: Natural wood grain texture that suits both contemporary and classic interiors",
+                        "Engineered for Malaysian Conditions: Including high UV exposure and frequent rain"
+                    ],
+                    "benefits": [
+                        "Maintains color and finish even when exposed to direct sunlight",
+                        "Ideal for outdoor vinyl flooring in Malaysia",
+                        "Long-lasting, fade-resistant surface even in semi-covered outdoor areas",
+                        "Seamless installation with water resistance and ease of cleaning",
+                        "Versatile application for both indoor and outdoor use"
+                    ],
+                    "design_compatibility": [
+                        "Contemporary",
+                        "Classic",
+                        "Natural wood aesthetics",
+                        "Outdoor modern"
+                    ]
+                },
+                "specifications": {
+                    "waterproof": true,
+                    "slip_resistant": false,
+                    "uv_resistant": true,
+                    "durability": "15-20 years",
+                    "installation_type": "Glue-down method",
+                    "surface_requirement": "Dry, flat surfaces suitable for outdoor use",
+                    "maintenance": "Easy cleaning and maintenance",
+                    "size": "2m (W) x 20m (L)",
+                    "thickness": "2.0mm",
+                    "wear_layer": "0.15mm",
+                    "surface_finish": "Textured wood design",
+                    "application": "Indoor & Outdoor (semi-covered)"
+                },
+                "installation": {
+                    "method": "Glue-down",
+                    "surface_types": [
+                        "concrete",
+                        "tile",
+                        "outdoor substrates"
+                    ],
+                    "diy_friendly": true,
+                    "professional_recommended": true,
+                    "requirements": [
+                        "Clean and dry surface preparation",
+                        "Flat substrate essential for outdoor durability",
+                        "Follow manufacturer's outdoor installation guidelines"
+                    ]
+                },
+                "maintenance": {
+                    "cleaning_method": "Easy cleaning and maintenance",
+                    "special_treatments": "UV protection built-in",
+                    "no_waxing": true,
+                    "no_polishing": true,
+                    "no_sealants": true
+                },
+                "faqs": [
+                    {
+                        "question": "What is the code for vinyl sheet?",
+                        "answer": "The product code for this sheet vinyl is PG20228, a top-tier option in the Malaysian market known for its UV resistance and elegant finish."
+                    },
+                    {
+                        "question": "What is sheet vinyl used for?",
+                        "answer": "Sheet vinyl is commonly used for residential and commercial flooring due to its seamless installation, water resistance, and ease of cleaning. It's ideal for both indoor and outdoor use in Malaysia's humid and sunny climate."
+                    },
+                    {
+                        "question": "What is the difference between LVT and vinyl sheet?",
+                        "answer": "LVT (Luxury Vinyl Tile) is modular and often thicker, suited for heavy-duty indoor use. Vinyl sheet, like the PG20228, is a continuous roll, perfect for larger areas and offers better moisture and UV resistance in outdoor or semi-outdoor Malaysian environments."
+                    },
+                    {
+                        "question": "What is Fiberfloor sheet vinyl?",
+                        "answer": "Fiberfloor sheet vinyl incorporates a fiberglass backing for added stability and comfort. The PG20228 doesn't just offer this, it enhances it with UV resistance and outdoor-grade durability."
+                    }
+                ],
+                "call_to_action": {
+                    "primary": "Get UV Resistant Flooring That Lasts – Shop PG20228 Vinyl Sheet in Malaysia Now!",
+                    "secondary": "Contact us for a FREE consultation or bulk order pricing",
+                    "tertiary": "View more beautiful looks in our Versafloor Vinyl Sheet Collection"
+                },
+                "status": "active",
+                "created_at": "2025-07-24",
+                "updated_at": "2025-07-24",
+                "additional_description": {
+                    "headline": "PG20228 Vinyl Sheet Malaysia | Stylish, Durable, UV Resistant Flooring",
+                    "sections": [
+                        {
+                            "title": "Looking for Outdoor Vinyl in Malaysia That Combines Style and Strength? Discover the PG20228 Vinyl Sheet",
+                            "content": "Step into a world where beauty meets durability. The PG20228 Vinyl Sheet by Versafloor isn't just another flooring option, it's a UV-resistant vinyl flooring solution engineered for Malaysian weather, lifestyle, and taste. Whether you're upgrading your patio, commercial outdoor area, or indoor space, this sheet vinyl delivers unmatched performance and visual appeal."
+                        },
+                        {
+                            "title": "Why Choose the PG20228 Vinyl Sheet?",
+                            "content": "Elegant Aesthetics Meets Rugged Durability\n\nIf you're tired of dull, uninspiring floors that warp under the Malaysian sun, the PG20228 vinyl sheet is your answer. Designed with UV-resistant technology, this flooring maintains its color and finish even when exposed to direct sunlight, making it ideal for outdoor vinyl flooring in Malaysia."
+                        },
+                        {
+                            "title": "Built for Malaysia's Climate and Lifestyle",
+                            "content": "UV Resistant Surface: Perfect for balconies, patios, or sunrooms.\n\nMoisture Resistant: Handles humid environments with ease.\n\nComfort Underfoot: Soft yet firm, ideal for barefoot comfort.\n\nModern Design: Natural wood grain texture that suits both contemporary and classic interiors.\n\nWhether you're outfitting a café terrace or a stylish condo balcony, the PG20228 vinyl sheet Malaysia offers the versatility you need."
+                        },
+                        {
+                            "title": "Key Product Features of Versafloor PG20228",
+                            "content": "Feature | Description\nProduct Code | PG20228\nSize | 2m (W) x 20m (L)\nThickness | 2.0mm\nWear Layer | 0.15mm\nSurface Finish | Textured wood design\nInstallation | Glue-down\nApplication | Indoor & Outdoor (semi-covered)"
+                        },
+                        {
+                            "title": "What Makes PG20228 Perfect for Outdoor Vinyl in Malaysia?",
+                            "content": "Unlike standard vinyl floors, this product is engineered for Malaysian conditions, including high UV exposure and frequent rain. Its UV-resistant vinyl flooring technology means you get a long-lasting, fade-resistant surface, even in semi-covered outdoor areas.\n\nUse it in:\n• Patios & verandas\n• Restaurants & cafes with outdoor seating\n• Balconies & service yards\n• Light commercial walkways"
+                        },
+                        {
+                            "title": "People Also Ask (FAQs)",
+                            "content": "What is the code for vinyl sheet?\nThe product code for this sheet vinyl is PG20228, a top-tier option in the Malaysian market known for its UV resistance and elegant finish.\n\nWhat is sheet vinyl used for?\nSheet vinyl is commonly used for residential and commercial flooring due to its seamless installation, water resistance, and ease of cleaning. It's ideal for both indoor and outdoor use in Malaysia's humid and sunny climate.\n\nWhat is the difference between LVT and vinyl sheet?\nLVT (Luxury Vinyl Tile) is modular and often thicker, suited for heavy-duty indoor use. Vinyl sheet, like the PG20228, is a continuous roll, perfect for larger areas and offers better moisture and UV resistance in outdoor or semi-outdoor Malaysian environments.\n\nWhat is Fiberfloor sheet vinyl?\nFiberfloor sheet vinyl incorporates a fiberglass backing for added stability and comfort. The PG20228 doesn't just offer this, it enhances it with UV resistance and outdoor-grade durability."
+                        },
+                        {
+                            "title": "Upgrade Your Floors Today with PG20228",
+                            "content": "Available Now in Malaysia, Perfect for Outdoor Vinyl Projects\n\nDon't let extreme weather limit your design choices. The PG20228 vinyl sheet in Malaysia is your go-to solution for UV protection, elegant aesthetics, and long-term performance. Whether you're designing a trendy outdoor café or upgrading your home balcony, Versafloor has you covered.\n\nGet UV Resistant Flooring That Lasts – Shop PG20228 Vinyl Sheet in Malaysia Now! Contact us for a FREE consultation or bulk order pricing."
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "product": {
+                "id": "PG20229",
+                "name": "Versafloor Vinyl Sheet PG20229",
+                "slug": "versafloor-vinyl-sheet-PG20229",
+                "category": "Vinyl Sheet Flooring",
+                "brand": "Versafloor",
+                "images": {
+                    "main_image": "/vinyal_sheet/PG20229.webp",
+                    "gallery": [
+                        "/vinyal_sheet/PG20229.webp"
+                    ],
+                    "thumbnails": [
+                        "/vinyal_sheet/PG20229.webp"
+                    ],
+                    "alt_texts": [
+                        "Slip-proof vinyl sheet flooring for safe Malaysian homes",
+                        "Anti-slip surface ideal for bathrooms and kitchens",
+                        "FDA-grade PU wear layer for durability and safety",
+                        "Water-resistant vinyl flooring for humid climates",
+                        "Seamless 2-meter width installation for modern interiors",
+                        "PG20229 slip-resistant flooring in use across residential spaces"
+                    ]
+                },
+                "seo": {
+                    "meta_title": "Versafloor Vinyl Sheet PG20229 – Slip‑Proof Vinyl Flooring Malaysia",
+                    "meta_description": "Slip-proof vinyl sheet PG20229 – safe flooring for bathrooms & kitchens in Malaysia.",
+                    "keywords": [
+                        "PG20229 vinyl sheet Malaysia",
+                        "slip proof vinyl",
+                        "safe flooring Malaysia"
+                    ]
+                },
+                "description": {
+                    "short": "Premium slip-proof vinyl sheet flooring combining safety, durability, and elegant modern design for Malaysian homes.",
+                    "long": "Introducing VERSAFLOOR PG20229, our premium slip-proof vinyl sheet collection designed specifically for Malaysian homes and commercial spaces. This advanced flooring solution merges cutting-edge safety technology with contemporary aesthetics, making it the perfect choice for families prioritizing both style and security. Whether you're upgrading a bathroom, kitchen, or high-traffic area, VERSAFLOOR PG20229 offers exceptional slip resistance, water protection, and visual appeal. Engineered with FDA-grade PU wear layer and built-in slip-proof technology, it creates secure environments while maintaining the elegant look that complements Malaysia's modern interiors."
+                },
+                "features": {
+                    "main_features": [
+                        "Built-in Slip Proof Technology: Engineered to reduce slip risk, it's ideal for families with children or elderly loved ones",
+                        "FDA-Grade PU Wear Layer: Reinforced protection against everyday wear, scratches, and stains",
+                        "Seamless 2‑meter Width: Easy fitting, fewer joins, smoother finish",
+                        "Water-Resistant & Hygienic: Perfect for kitchens, bathrooms, and even nursery rooms",
+                        "Vibrant Design, Malaysian Style: PG20229's contemporary patterns bring elegance to Malaysia's modern interiors"
+                    ],
+                    "benefits": [
+                        "Stay confident with every step",
+                        "Withstands daily scuffs and busy households",
+                        "Faster fitting, fewer seams mean seamless aesthetics",
+                        "Ideal for humid climates and heavy-use rooms",
+                        "Beauty and safety in perfect harmony",
+                        "Low-Maintenance: Quick mop and gentle wash, keeping your floors fresh in minutes!"
+                    ],
+                    "design_compatibility": [
+                        "Contemporary",
+                        "Modern Malaysian",
+                        "Minimalist",
+                        "Family-friendly"
+                    ]
+                },
+                "specifications": {
+                    "waterproof": true,
+                    "slip_resistant": true,
+                    "durability": "10-15 years",
+                    "installation_type": "Glue-down method",
+                    "surface_requirement": "Dry, clean, flat surfaces",
+                    "maintenance": "Quick mop and gentle wash only"
+                },
+                "installation": {
+                    "method": "Glue-down method",
+                    "surface_types": [
+                        "tile",
+                        "concrete",
+                        "existing vinyl"
+                    ],
+                    "diy_friendly": true,
+                    "professional_recommended": true,
+                    "requirements": [
+                        "Clean and dry surface preparation",
+                        "Flat substrate essential for slip-resistance effectiveness",
+                        "Follow manufacturer's installation guidelines"
+                    ]
+                },
+                "maintenance": {
+                    "cleaning_method": "Quick mop and gentle wash",
+                    "special_treatments": "None required",
+                    "no_waxing": true,
+                    "no_polishing": true,
+                    "no_sealants": true
+                },
+                "faqs": [
+                    {
+                        "question": "What is the code for vinyl sheet?",
+                        "answer": "Our featured product is coded as PG20229, part of the VersaFloor vinyl sheet series, designed with a slip-resistant surface and durable structure for long-lasting performance."
+                    },
+                    {
+                        "question": "What is sheet vinyl used for?",
+                        "answer": "Sheet vinyl offers a continuous, seamless flooring solution. It's ideal for moisture-prone spaces (bathrooms, kitchens), high-traffic areas (offices, hallways), and anywhere you value easy cleaning, durability, and safety."
+                    },
+                    {
+                        "question": "What is Fiberfloor sheet vinyl?",
+                        "answer": "Fiberfloor is a variant of sheet vinyl reinforced with fiberglass for added dimensional stability and resilience. While VersaFloor PG20229 doesn't use fiberglass, it delivers similar long-term durability through a premium PU wear layer."
+                    },
+                    {
+                        "question": "What is the difference between sheet vinyl and luxury vinyl?",
+                        "answer": "Sheet Vinyl comes in wide rolls like PG20229. It provides waterproof coverage with minimal seams. Luxury Vinyl (LVT/LVP) is sold as interlocking planks or tiles, offering realistic wood or stone visuals but with more installation complexity. Sheet vinyl is cost-effective, easy to install, and cleaner, perfect for Malaysian homes seeking practical safety solutions."
+                    }
+                ],
+                "call_to_action": {
+                    "primary": "Claim your FREE sample of PG20229 vinyl sheet today, risk-free!",
+                    "secondary": "Contact us now to schedule an installation or get expert advice tailored to safe flooring solutions",
+                    "tertiary": "View more beautiful looks in our Versafloor Vinyl Sheet Collection"
+                },
+                "status": "active",
+                "created_at": "2025-07-24",
+                "updated_at": "2025-07-24",
+                "additional_description": {
+                    "headline": "VersaFloor Vinyl Sheet PG20229 | Safe, Stylish Flooring in Malaysia",
+                    "sections": [
+                        {
+                            "title": "Secure Your Space with the #1 PG20229 Vinyl Sheet Malaysia Solution!",
+                            "content": "Looking for a flooring upgrade that combines modern style with top-tier safety? Meet VersaFloor PG20229 vinyl sheet, Malaysia's premium choice for slip-proof vinyl and safe flooring."
+                        },
+                        {
+                            "title": "Highlight Benefits & Features",
+                            "content": "Transform your home, school, or workspace with flooring that cares about your comfort and well-being:\n\nBuilt-in Slip Proof Technology: Engineered to reduce slip risk, it's ideal for families with children or elderly loved ones.\n\nFDA-Grade PU Wear Layer: Reinforced protection against everyday wear, scratches, and stains.\n\nSeamless 2‑meter Width: Easy fitting, fewer joins, smoother finish.\n\nWater-Resistant & Hygienic: Perfect for kitchens, bathrooms, and even nursery rooms.\n\nVibrant Design, Malaysian Style: PG20229's contemporary patterns bring elegance to Malaysia's modern interiors.\n\nLow-Maintenance: Quick mop and gentle wash, keeping your floors fresh in minutes!"
+                        },
+                        {
+                            "title": "Why settle for average when you can have peace of mind?",
+                            "content": "Picture your toddler's first steps or grandma navigating the bathroom, without worrying about slippery floors. VersaFloor PG20229 delivers that confidence. Its blend of safety and sophistication elevates your space, ensuring every step is secure"
+                        },
+                        {
+                            "title": "Features at a Glance",
+                            "content": "Feature | Benefit\nSlip-resistant texture | Stay confident with every step\nDurable PU top layer | Withstands daily scuffs and busy households\nWide format installation | Faster fitting, fewer seams mean seamless aesthetics\nWater & stain-resistant base | Ideal for humid climates and heavy-use rooms\nElegant design with grip | Beauty and safety in perfect harmony"
+                        },
+                        {
+                            "title": "Why Choose VW VersaFloor PG20229 in Malaysia?",
+                            "content": "Safety First Flooring: Engineered to reduce slip risk, essential in Malaysia's humid environments.\n\nBuilt for Malaysian Life: Withstands heavy foot traffic, humidity, and occasional spills without buckling.\n\nStylish & Contemporary: Compliments modern condo units, office spaces, recreational areas, and even vehicular showrooms.\n\nProfessional Malaysian Service: Local supply and installations, no shipping delays, no hidden costs."
+                        },
+                        {
+                            "title": "Use Case Examples:",
+                            "content": "Residential Homes: Keep tots and elders safe.\n\nSchools & Clinics: Manage spills and foot traffic effortlessly.\n\nShowrooms & Offices: Impress clients with sleek, durable flooring."
+                        },
+                        {
+                            "title": "Ready to make the switch?",
+                            "content": "Claim your FREE sample of PG20229 vinyl sheet today, risk-free!\n\nContact us now to schedule an installation or get expert advice tailored to safe flooring solutions."
+                        }
+                    ]
+                }
+            }
+        }, {
+            "product": {
+                "id": "PG20230",
+                "name": "Versafloor Vinyl Sheet PG20230",
+                "slug": "versafloor-vinyl-sheet-PG20230",
+                "category": "Vinyl Sheet Flooring",
+                "brand": "Versafloor",
+                "images": {
+                    "main_image": "/vinyal_sheet/PG20232-1.jpg",
+                    "gallery": [
+                        "/vinyal_sheet/PG20232-1.jpg"
+                    ],
+                    "thumbnails": [
+                        "/vinyal_sheet/PG20232-1.jpg"
+                    ],
+                    "alt_texts": [
+                        "Heat-resistant vinyl sheet flooring for Malaysian tropical climate",
+                        "Sun-proof vinyl flooring perfect for hot weather conditions",
+                        "PG20230 vinyl sheet with UV protection and fade resistance",
+                        "Waterproof heat-resistant flooring for Malaysian homes",
+                        "Cool underfoot vinyl flooring for sun-exposed areas",
+                        "PG20230 in use across Malaysian homes and commercial spaces"
+                    ]
+                },
+                "seo": {
+                    "meta_title": "Versafloor Vinyl Sheet PG20230 – Heat‑Resistant Vinyl Flooring Malaysia",
+                    "meta_description": "Heat-resistant vinyl sheet PG20230 – built to withstand Malaysian heat and sun exposure.",
+                    "keywords": [
+                        "PG20230 vinyl sheet Malaysia",
+                        "heat resistant flooring",
+                        "sunproof vinyl sheet"
+                    ]
+                },
+                "description": {
+                    "short": "Premium heat-resistant vinyl sheet flooring engineered for Malaysia's tropical climate with superior UV protection and cooling properties.",
+                    "long": "Introducing VERSAFLOOR PG20230, our premium heat-resistant vinyl sheet collection specifically engineered for Malaysia's intense tropical climate. This advanced flooring solution combines cutting-edge heat resistance technology with superior UV protection, making it the perfect choice for spaces exposed to blazing sun and high temperatures. Whether you're upgrading sun-scorched patios, hot kitchens, or living rooms with large windows, VERSAFLOOR PG20230 offers exceptional cooling properties, fade resistance, and long-lasting beauty that withstands Malaysia's harshest weather conditions while maintaining elegant aesthetics year after year."
+                },
+                "features": {
+                    "main_features": [
+                        "Exceptional heat resistance keeps the surface cool even under direct sunlight, ideal for tropical climates",
+                        "Sun‑proof vinyl sheet layer resists UV damage and fading, perfect for rooms with big windows or covered terraces",
+                        "Crafted with a wear-resistant top layer, this vinyl sheet stays scratch-free and strong under heavy foot traffic",
+                        "Waterproof and stain-resistant: just wipe clean, no fuss, no forklifts",
+                        "Realistic textures mimic wood, stone, or tile, delivering high-end aesthetics, no heavy installation required"
+                    ],
+                    "benefits": [
+                        "Cool underfoot: No more scorching tiles or warping boards",
+                        "Long-term elegance: UV-stable protectant keeps colors bold and vibrant",
+                        "Cost-effective longevity: Reduced maintenance costs, fewer replacements, more peace of mind",
+                        "Flexible sheet format means seamless finishes across large areas, no grout lines, no trip hazards",
+                        "Specifically optimized for the Malaysian climate and usage"
+                    ],
+                    "design_compatibility": [
+                        "Wood textures",
+                        "Stone patterns",
+                        "Tile designs",
+                        "Modern tropical"
+                    ]
+                },
+                "specifications": {
+                    "waterproof": true,
+                    "slip_resistant": false,
+                    "heat_resistant": true,
+                    "sun_proof": true,
+                    "durability": "15-25 years",
+                    "installation_type": "Glue-down method",
+                    "surface_requirement": "Dry, flat surfaces suitable for high temperature exposure",
+                    "maintenance": "Just wipe clean, no fuss"
+                },
+                "installation": {
+                    "method": "Glue-down",
+                    "surface_types": [
+                        "concrete",
+                        "tile",
+                        "existing vinyl"
+                    ],
+                    "diy_friendly": true,
+                    "professional_recommended": true,
+                    "requirements": [
+                        "Clean and dry surface preparation",
+                        "Flat substrate essential for heat resistance effectiveness",
+                        "Follow manufacturer's tropical climate installation guidelines"
+                    ]
+                },
+                "maintenance": {
+                    "cleaning_method": "Just wipe clean, no fuss",
+                    "special_treatments": "Heat and UV protection built-in",
+                    "no_waxing": true,
+                    "no_polishing": true,
+                    "no_sealants": true
+                },
+                "faqs": [
+                    {
+                        "question": "What is the code for vinyl sheet?",
+                        "answer": "The PG20230 code uniquely identifies this premium heat‑resistant and sun‑proof vinyl sheet in our product catalog, making ordering and referencing simple and precise."
+                    },
+                    {
+                        "question": "What is sheet vinyl used for?",
+                        "answer": "Sheet vinyl is used as a durable, waterproof, and stylish flooring solution. It's ideal for kitchens, bathrooms, offices, living areas, and even outdoor terraces, especially when you choose PG20230 vinyl sheet Malaysia, tailored for tropical conditions."
+                    },
+                    {
+                        "question": "What is Fiberfloor sheet vinyl?",
+                        "answer": "Fiberfloor is a vinyl sheet brand known for quality, often reinforced with fiberglass. PG20230 features similar technology, stable, flexible, and strong, while offering superior heat‑resistant and sun‑proof performance."
+                    },
+                    {
+                        "question": "What is the difference between sheet vinyl and luxury vinyl?",
+                        "answer": "Sheet vinyl comes in large, continuous rolls, perfect for seamless, water-resistant surfaces across wide spaces. Luxury vinyl tile (LVT) is modular planks or tiles with visible seams and grout lines. PG20230 offers the seamless practicality and climate resilience of sheet vinyl, combined with premium, room-enhancing aesthetics."
+                    }
+                ],
+                "call_to_action": {
+                    "primary": "Order a free sample of PG20230 vinyl sheet Malaysia now and experience reliable heat‑resistance, sun‑proof protection, and stunning floor aesthetics, perfect for Malaysia's weather",
+                    "secondary": "Request a sample and feel the sturdy texture, test the heat resistance, and view realistic patterns",
+                    "tertiary": "Get support from authorized Malaysian dealers, with responsiveness guaranteed, even after installation"
+                },
+                "status": "active",
+                "created_at": "2025-07-24",
+                "updated_at": "2025-07-24",
+                "additional_description": {
+                    "headline": "PG20230 Vinyl Sheet Malaysia | Ultimate Heat‑Resistant, Sun‑Proof Flooring!",
+                    "sections": [
+                        {
+                            "title": "Upgrade your space with the PG20230 vinyl sheet, Malaysia, engineered for Malaysia's tropical climate",
+                            "content": "Ready for sun-scorched patios, hot kitchens, and living rooms exposed to blazing heat. This heat‑resistant flooring solution is designed to stand up to high temperatures, prevent fading, and deliver long-lasting beauty under the Malaysian sun."
+                        },
+                        {
+                            "title": "Why PG20230 Is Malaysia's Go‑To Vinyl Flooring",
+                            "content": "Built for Heat‑Proof Durability\n\nExceptional heat resistance keeps the surface cool even under direct sunlight, ideal for tropical climates.\n\nThe sun‑proof vinyl sheet layer resists UV damage and fading, perfect for rooms with big windows or covered terraces.\n\nPremium Quality & Easy to Maintain\n\nCrafted with a wear-resistant top layer, this vinyl sheet stays scratch-free and strong under heavy foot traffic.\n\nWaterproof and stain-resistant: just wipe clean, no fuss, no forklifts.\n\nStylish Looks, Versatile Performance\n\nRealistic textures mimic wood, stone, or tile, delivering high-end aesthetics, no heavy installation required.\n\nFlexible sheet format means seamless finishes across large areas, no grout lines, no trip hazards."
+                        },
+                        {
+                            "title": "Ideal for Malaysian Homes & Businesses",
+                            "content": "From sleek offices in Kuala Lumpur to cozy bungalows in Penang, PG20230's resilience against heat and sunlight meets Malaysia's diverse environmental demands."
+                        },
+                        {
+                            "title": "Imagine the Difference in Your Space",
+                            "content": "A serene living room flooded with sunlight, yet the floor doesn't fade or blister.\n\nA commercial cafe with sunlit windows, maintaining floor beauty even after years of guests.\n\nA heat-prone kitchen in Johor Bahru, protected from scorching outdoor temps, cool, easy to clean, and elegant.\n\nWith PG20230 heat‑resistant flooring, you get:\n\nCool underfoot: No more scorching tiles or warping boards.\n\nLong-term elegance: UV-stable protectant keeps colors bold and vibrant.\n\nCost-effective longevity: Reduced maintenance costs, fewer replacements, more peace of mind."
+                        },
+                        {
+                            "title": "Get Started with PG20230 Today",
+                            "content": "Request a sample and feel the sturdy texture, test the heat resistance, and view realistic patterns.\n\nOrder & install easily with professional installers or standard DIY tools.\n\nGet support from authorized Malaysian dealers, with responsiveness guaranteed, even after installation."
+                        },
+                        {
+                            "title": "Key Features at a Glance",
+                            "content": "Feature | Benefit for You\nPG20230 Vinyl Sheet Malaysia | Specifically optimized for the Malaysian climate and usage\nHeat‑Resistant Flooring | Keeps floors cool, prevents warping, ideal for hot weather\nSun‑Proof Vinyl Sheet | UV-stable, colorfast, fading-resistant\nWaterproof & Easy-Clean | Reduces maintenance, perfect for messy zones\nSeamless Sheet Format | Elegant, safe, and hygienic finish\nWear‑Resistant Surface | Durable under heavy furniture and foot traffic"
+                        },
+                        {
+                            "title": "Ready to Transform Your Space?",
+                            "content": "Transform your space with climate-smart flooring! Order a free sample of PG20230 vinyl sheet Malaysia now and experience reliable heat‑resistance, sun‑proof protection, and stunning floor aesthetics, perfect for Malaysia's weather."
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "product": {
+                "id": "PG20231",
+                "name": "Versafloor Vinyl Sheet PG20231",
+                "slug": "versafloor-vinyl-sheet-pg20231",
+                "category": "Vinyl Sheet Flooring",
+                "brand": "Versafloor",
+                "images": {
+                    "main_image": "/vinyal_sheet/PG20231.webp",
+                    "gallery": ["/vinyal_sheet/PG20231.webp"],
+                    "thumbnails": ["/vinyal_sheet/PG20231.webp"],
+                    "alt_texts": [
+                        "PG20231 Vinyl Sheet Malaysia | Tile Look Kitchen Vinyl Flooring | VersaFloor",
+                        "Transform Your Home with Tile-Look Vinyl That Combines Elegance & Durability",
+                        "Kitchen vinyl flooring that looks like real tile but is easier to install, clean, and maintain? The PG20231 vinyl sheet, Malaysia edition by Versa Floor, offers the ideal blend of modern aesthetics and long-lasting performance.",
+                        "Whether you’re revamping your kitchen, laundry room, or commercial space, this tile-look vinyl sheet gives your floor a fresh, stylish makeover without breaking the bank.",
+                        "Realistic Tile Design, Without the Grout Hassles",
+                        "With the PG20231 tile look vinyl, you get the aesthetic of ceramic tiles with none of the hassle. There are no grout lines, no cracks, just smooth, continuous vinyl flooring that’s slip-resistant and waterproof."
+                    ]
+                },
+                "seo": {
+                    "meta_title": "Versafloor Vinyl Sheet PG20231 – Tile-Look Vinyl Flooring Malaysia",
+                    "meta_description": "Tile-look vinyl sheet PG20231 – stylish and practical for Malaysian kitchens.",
+                    "keywords": [
+                        "PG20231 vinyl sheet Malaysia",
+                        "tile look vinyl",
+                        "kitchen vinyl flooring"
+                    ]
+                },
+                "description": {
+                    "short": "Discover PG20231 vinyl sheet in Malaysia, and realistic tile-look vinyl flooring, perfect for kitchens. Easy to clean, waterproof & stylish. Order online from WCD.",
+                    "long": "PG20231 Vinyl Sheet Malaysia | The Perfect Tile Look Vinyl for Stylish & Durable Kitchen Flooring"
+                },
+                "features": {
+                    "main_features": [
+                        "Realistic Tile Design, Without the Grout Hassles",
+                        "Designed for Malaysian Homes",
+                        "Easy Maintenance and Installation",
+                        "Perfect for Kitchen Vinyl Flooring in Malaysia"
+                    ],
+                    "benefits": [
+                        "With the PG20231 tile look vinyl, you get the aesthetic of ceramic tiles with none of the hassle. There are no grout lines, no cracks, just smooth, continuous vinyl flooring that’s slip-resistant and waterproof.",
+                        "Crafted with Malaysia’s climate and design preferences in mind, this vinyl sheet resists moisture, heat, and heavy foot traffic. Whether it's a cozy condo or a busy commercial kitchen, PG20231 performs beautifully.",
+                        "Forget expensive renovation costs. VersaFloor’s PG20231 vinyl sheet offers quick, glue-down installation and a surface that’s easy to clean with simple mopping. It is ideal for kitchen floors, wet areas, and even retail spaces.",
+                        "The kitchen is the heart of your home. It deserves a floor that’s waterproof, easy to clean, and visually appealing. PG20231 checks all the boxes for Malaysian kitchens. It’s made to withstand humidity, spills, and heavy cooking traffic."
+                    ],
+                    "design_compatibility": ["Minimalist", "Retro", "Scandinavian", "Industrial chic"]
+                },
+                "specifications": {
+                    "waterproof": true,
+                    "slip_resistant": true,
+                    "durability": "10 Years (Residential Use)",
+                    "installation_type": "Glue-down",
+                    "surface_requirement": "Dry, flat surfaces (tile or concrete)",
+                    "maintenance": "easy to clean with simple mopping"
+                },
+                "installation": {
+                    "method": "Glue-down",
+                    "surface_types": ["tile", "concrete"],
+                    "diy_friendly": true,
+                    "professional_recommended": true,
+                    "requirements": [
+                        "Clean surface preparation",
+                        "Flat and dry substrate",
+                        "Follow standard fitting instructions"
+                    ]
+                },
+                "maintenance": {
+                    "cleaning_method": "easy to clean with simple mopping",
+                    "special_treatments": "None required",
+                    "no_waxing": true,
+                    "no_polishing": true,
+                    "no_sealants": true
+                },
+                "faqs": [
+                    {
+                        "question": "What is the code for the vinyl sheet?",
+                        "answer": "The code for this vinyl flooring model is PG20231. It represents a tile-inspired design from VersaFloor’s premium sheet vinyl collection."
+                    },
+                    {
+                        "question": "What is sheet vinyl used for?",
+                        "answer": "Sheet vinyl is used for seamless, waterproof flooring in kitchens, bathrooms, laundry rooms, and commercial settings. It's preferred for areas prone to moisture and where low maintenance is essential."
+                    },
+                    {
+                        "question": "What is a suitable thickness for sheet vinyl?",
+                        "answer": "A 2.0 mm vinyl sheet with a 0.3 mm wear layer (like PG20231) is excellent for residential and light commercial use. It offers durability, comfort, and cost-effectiveness."
+                    },
+                    {
+                        "question": "What is Fiberfloor sheet vinyl?",
+                        "answer": "Fiberfloor is a type of sheet vinyl that includes a fiberglass backing for extra stability and comfort. While PG20231 isn’t a Fiberfloor type, it still offers excellent resilience and slip resistance with its multi-layer construction."
+                    },
+                    {
+                        "question": "Where to Buy PG20231 Vinyl Sheet in Malaysia",
+                        "answer": "You can buy the PG20231 vinyl sheet online through WCD Malaysia or visit any of our local distributors across Malaysia. We deliver to Klang Valley, Penang, Johor, and all major cities."
+                    },
+                    {
+                        "question": "Need help to choose?",
+                        "answer": "Contact our flooring experts for a complimentary consultation and product matching."
+                    }
+                ],
+                "call_to_action": {
+                    "primary": "Take a sample free of charge and experience the quality yourself",
+                    "secondary": "Drop by or call us to receive a free quote or install tips",
+                    "tertiary": "View more beautiful looks in our Versafloor Vinyl Sheet Collection"
+                },
+                "status": "active",
+                "created_at": "2025-07-17",
+                "updated_at": "2025-07-17",
+                "additional_description": {
+                    "headline": "Versafloor Vinyl Sheet PG20231",
+                    "sections": [
+                        {
+                            "title": "Realistic Tile Design, Without the Grout Hassles",
+                            "content": "With the PG20231 tile look vinyl, you get the aesthetic of ceramic tiles with none of the hassle. There are no grout lines, no cracks, just smooth, continuous vinyl flooring that’s slip-resistant and waterproof."
+                        },
+                        {
+                            "title": "Designed for Malaysian Homes",
+                            "content": "Crafted with Malaysia’s climate and design preferences in mind, this vinyl sheet resists moisture, heat, and heavy foot traffic. Whether it's a cozy condo or a busy commercial kitchen, PG20231 performs beautifully."
+                        },
+                        {
+                            "title": "Easy Maintenance and Installation",
+                            "content": "Forget expensive renovation costs. VersaFloor’s PG20231 vinyl sheet offers quick, glue-down installation and a surface that’s easy to clean with simple mopping. It is ideal for kitchen floors, wet areas, and even retail spaces."
+                        },
+                        {
+                            "title": "Perfect for Kitchen Vinyl Flooring in Malaysia",
+                            "content": "The kitchen is the heart of your home. It deserves a floor that’s waterproof, easy to clean, and visually appealing. PG20231 checks all the boxes for Malaysian kitchens. It’s made to withstand humidity, spills, and heavy cooking traffic."
+                        },
+                        {
+                            "title": "Technical Specifications: PG20231 Vinyl Sheet",
+                            "content": "Collection: VersaFloor Vinyl Sheet, Design Code: PG20231, Style: Tile Look, Installation Method: Glue-down, Thickness: 2.0 mm (Ideal balance between comfort and durability), Wear Layer: 0.3 mm for extended lifespan, Size: 2m width x custom length, Usage: Residential & Light Commercial, Warranty: 10 Years (Residential Use)"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "product": {
+                "id": "PG20232",
+                "name": "Versafloor Vinyl Sheet PG20232",
+                "slug": "versafloor-vinyl-sheet-pg20232",
+                "category": "Vinyl Sheet Flooring",
+                "brand": "Versafloor",
+                "images": {
+                    "main_image": "/vinyal_sheet/PG20232.jpg",
+                    "gallery": ["/vinyal_sheet/PG20232.jpg"],
+                    "thumbnails": ["/vinyal_sheet/PG20232.jpg"],
+                    "alt_texts": [
+                        "Versafloor Vinyl Sheet PG20232 | Wood-Look Vinyl Flooring Malaysia",
+                        "Discover the Versafloor Vinyl Sheet PG20232, a durable, water-resistant, wood-look flooring solution ideal for Malaysian homes and commercial spaces. Affordable, stylish, and easy to maintain.",
+                        "The Versafloor Vinyl Sheet PG20232 is a stylish and durable flooring solution that brings the timeless elegance of natural wood into modern interiors.",
+                        "With its realistic wood grain finish and high-performance surface, this vinyl sheet is perfect for Malaysian homes, offices, and commercial spaces.",
+                        "Built for beauty and resilience, PG20232 offers an ideal blend of aesthetics and practicality, making it a popular choice among homeowners, interior designers, and flooring contractors.",
+                        "Realistic Wood Grain Finish Offers the authentic look of hardwood flooring with natural tones and textures."
+                    ]
+                },
+                "seo": {
+                    "meta_title": "Versafloor Vinyl Sheet PG20232 – Wood-Look Vinyl Flooring Malaysia",
+                    "meta_description": "Wood-look vinyl sheet PG20232 – realistic wood grain for Malaysian interiors.",
+                    "keywords": [
+                        "PG20232 vinyl sheet Malaysia",
+                        "wood look flooring",
+                        "hardwood-style vinyl"
+                    ]
+                },
+                "description": {
+                    "short": "Discover the Versafloor Vinyl Sheet PG20232, a durable, water-resistant, wood-look flooring solution ideal for Malaysian homes and commercial spaces. Affordable, stylish, and easy to maintain.",
+                    "long": "The Versafloor Vinyl Sheet PG20232 is a stylish and durable flooring solution that brings the timeless elegance of natural wood into modern interiors. With its realistic wood grain finish and high-performance surface, this vinyl sheet is perfect for Malaysian homes, offices, and commercial spaces. Built for beauty and resilience, PG20232 offers an ideal blend of aesthetics and practicality, making it a popular choice among homeowners, interior designers, and flooring contractors."
+                },
+                "features": {
+                    "main_features": [
+                        "Realistic Wood Grain Finish",
+                        "Durable and Scratch-Resistant Surface",
+                        "Water-Resistant and Slip-Resistant",
+                        "Comfortable Underfoot",
+                        "Low Maintenance and Easy to Clean",
+                        "Ideal for High-Traffic Residential and Commercial Spaces"
+                    ],
+                    "benefits": [
+                        "Offers the authentic look of hardwood flooring with natural tones and textures.",
+                        "Designed to withstand daily wear and tear in both residential and high-traffic commercial environments.",
+                        "Safe for use in kitchens, bathrooms, and other moisture-prone areas.",
+                        "Cushioned surface provides added comfort and warmth underfoot.",
+                        "Simply sweep or mop for hassle-free maintenance.",
+                        "Retains its aesthetic appeal and performance even in busy settings."
+                    ],
+                    "design_compatibility": ["Minimalist", "Retro", "Scandinavian", "Industrial chic"]
+                },
+                "specifications": {
+                    "waterproof": true,
+                    "slip_resistant": true,
+                    "durability": "10 Years (Residential Use)",
+                    "installation_type": "Glue-down or lay-loose",
+                    "surface_requirement": "Clean, dry, and level",
+                    "maintenance": "Simply sweep or mop"
+                },
+                "installation": {
+                    "method": "Glue-down or lay-loose",
+                    "surface_types": ["tile", "concrete"],
+                    "diy_friendly": true,
+                    "professional_recommended": true,
+                    "requirements": [
+                        "Ensure the subfloor is clean, dry, and level before installation.",
+                        "This product supports both glue-down and lay-loose installation techniques, allowing flexibility depending on site conditions and budget.",
+                        "The PG20232 vinyl sheet cuts easily with standard utility knives, allowing precise fits around edges, corners, and irregular shapes.",
+                        "Use transition strips for room edges and consider light-textured finishes to enhance grip and visual flow."
+                    ]
+                },
+                "maintenance": {
+                    "cleaning_method": "Simply sweep or mop",
+                    "special_treatments": "None required",
+                    "no_waxing": true,
+                    "no_polishing": true,
+                    "no_sealants": true
+                },
+                "faqs": [
+                    {
+                        "question": "What is the code for the vinyl sheet?",
+                        "answer": "The code for this vinyl flooring model is PG20232. It represents a wood-inspired design from Versafloor’s premium sheet vinyl collection."
+                    },
+                    {
+                        "question": "What is sheet vinyl used for?",
+                        "answer": "Sheet vinyl is used for seamless, water-resistant flooring in kitchens, bathrooms, offices, and commercial settings. It's preferred for areas prone to moisture and where low maintenance is essential."
+                    },
+                    {
+                        "question": "Why choose Versafloor PG20232 in Malaysia?",
+                        "answer": "The PG20232 vinyl sheet is engineered for Malaysia’s climate, offering moisture resistance that suits humid interiors. Unlike real hardwood, it does not warp or swell, making it a smarter option for tropical environments. Compared to laminate, PG20232 offers a softer, quieter surface and better resistance to spills and scratches."
+                    },
+                    {
+                        "question": "How to install PG20232 vinyl sheet?",
+                        "answer": "Ensure the subfloor is clean, dry, and level before installation. This product supports both glue-down and lay-loose installation techniques. The PG20232 vinyl sheet cuts easily with standard utility knives, allowing precise fits around edges, corners, and irregular shapes."
+                    },
+                    {
+                        "question": "Where to buy PG20232 vinyl sheet in Malaysia?",
+                        "answer": "You can buy the PG20232 vinyl sheet online through WCD Malaysia or visit any of our local distributors across Malaysia. We deliver to Klang Valley, Penang, Johor, and all major cities."
+                    },
+                    {
+                        "question": "How to maintain PG20232 vinyl sheet?",
+                        "answer": "Simply sweep or mop for hassle-free maintenance. No special treatments, waxing, or polishing required."
+                    }
+                ],
+                "call_to_action": {
+                    "primary": "Explore all vinyl sheet flooring options → https://www.wcd.com.my/product-category/vinyl-sheet-flooring/",
+                    "secondary": "Request a quote or developer pricing → https://www.wcd.com.my/contact/",
+                    "tertiary": "If you like the natural tones of PG20232, consider Versafloor PG20230, another wood-look vinyl sheet with a slightly lighter grain design."
+                },
+                "status": "active",
+                "created_at": "2025-07-17",
+                "updated_at": "2025-07-17",
+                "additional_description": {
+                    "headline": "Versafloor Vinyl Sheet PG20232 – Wood-Look Vinyl Flooring Malaysia",
+                    "sections": [
+                        {
+                            "title": "Product Overview",
+                            "content": "The Versafloor Vinyl Sheet PG20232 is a stylish and durable flooring solution that brings the timeless elegance of natural wood into modern interiors. With its realistic wood grain finish and high-performance surface, this vinyl sheet is perfect for Malaysian homes, offices, and commercial spaces. Built for beauty and resilience, PG20232 offers an ideal blend of aesthetics and practicality, making it a popular choice among homeowners, interior designers, and flooring contractors."
+                        },
+                        {
+                            "title": "Key Features of PG20232 Vinyl Sheet",
+                            "content": "Realistic Wood Grain Finish: Offers the authentic look of hardwood flooring with natural tones and textures. Durable and Scratch-Resistant Surface: Designed to withstand daily wear and tear in both residential and high-traffic commercial environments. Water-Resistant and Slip-Resistant: Safe for use in kitchens, bathrooms, and other moisture-prone areas. Comfortable Underfoot: Cushioned surface provides added comfort and warmth underfoot. Low Maintenance and Easy to Clean: Simply sweep or mop for hassle-free maintenance. Ideal for High-Traffic Residential and Commercial Spaces: Retains its aesthetic appeal and performance even in busy settings."
+                        },
+                        {
+                            "title": "Why Choose Versafloor PG20232 in Malaysia?",
+                            "content": "The PG20232 vinyl sheet is engineered for Malaysia’s climate, offering moisture resistance that suits humid interiors. Unlike real hardwood, it does not warp or swell, making it a smarter option for tropical environments. Compared to laminate, PG20232 offers a softer, quieter surface and better resistance to spills and scratches. For budget-conscious customers who don’t want to compromise on style, Versafloor vinyl sheet provides an affordable, low-maintenance solution that captures the look of high-end wood flooring without the associated upkeep or cost."
+                        },
+                        {
+                            "title": "Installation Tips for Developers and Contractors",
+                            "content": "Subfloor Preparation: Ensure the subfloor is clean, dry, and level before installation. A smooth base enhances the longevity and finish of the PG20232 vinyl sheet. Installation Methods: This product supports both glue-down and lay-loose installation techniques, allowing flexibility depending on site conditions and budget. Cutting & Trimming: The PG20232 vinyl sheet cuts easily with standard utility knives, allowing precise fits around edges, corners, and irregular shapes. Surface Finish Suggestions: Use transition strips for room edges and consider light-textured finishes to enhance grip and visual flow."
+                        },
+                        {
+                            "title": "Final Thoughts",
+                            "content": "The Versafloor Vinyl Sheet PG20232 is a premium choice for those seeking hardwood-style vinyl flooring in Malaysia. Its stunning wood aesthetics, long-lasting performance, and easy maintenance make it ideal for residential interiors, retail spaces, and commercial environments alike. Versafloor Vinyl Sheet PG20232 offers stunning wood visuals with exceptional performance. Whether for residential or commercial use, this vinyl sheet brings warmth, durability, and style to any Malaysian interior."
+                        }
+                    ]
+                }
+            }
+        },
+        //need to be recheck 
+        {
+            "product": {
+                "id": "PG20237",
+                "name": "Versafloor Vinyl Sheet PG20237",
+                "slug": "versafloor-vinyl-sheet-pg20237",
+                "category": "Vinyl Sheet Flooring",
+                "brand": "Versafloor",
+                "images": {
+                    "main_image": "/vinyal_sheet/PG-20237.webp",
+                    "gallery": ["/vinyal_sheet/PG-20237.webp"],
+                    "thumbnails": ["/vinyal_sheet/PG-20237.webp"],
+                    "alt_texts": [
+                        "Versafloor PG20237 stone-look vinyl sheet in Malaysian interior",
+                        "Stone-look vinyl sheet PG20237 – elegant and durable for Malaysian floors.",
+                        "Looking to upgrade your floors without the mess and cost of tiles? The Versafloor Vinyl Sheet PG20237 offers a stunning stone-like appearance, combined with the comfort, flexibility, and affordability of premium vinyl.",
+                        "Designed for Malaysian homes and light commercial spaces, this durable sheet vinyl combines timeless elegance with modern performance."
+                    ]
+                },
+                "seo": {
+                    "meta_title": "Stone Look Vinyl Sheet PG20237 | Durable Flooring Malaysia",
+                    "meta_description": "Shop Versafloor PG20237 – elegant stone-look vinyl sheet flooring in Malaysia. Durable, stylish, and easy to maintain. Ideal tile replacement solution.",
+                    "keywords": [
+                        "PG20237 vinyl sheet Malaysia",
+                        "stone look flooring",
+                        "tile replacement vinyl"
+                    ]
+                },
+                "description": {
+                    "short": "Versafloor PG20237 stone-look vinyl sheet offers elegant, durable flooring for Malaysian homes and businesses. Waterproof and easy to maintain – shop now at Furnishings.com.",
+                    "long": "Looking to upgrade your floors without the mess and cost of tiles? The Versafloor Vinyl Sheet PG20237 offers a stunning stone-like appearance, combined with the comfort, flexibility, and affordability of premium vinyl. Designed for Malaysian homes and light commercial spaces, this durable sheet vinyl combines timeless elegance with modern performance."
+                },
+                "features": {
+                    "main_features": [
+                        "Stone-look finish – realistic texture and color tones",
+                        "Water and scratch resistant – made for daily life",
+                        "Easy maintenance – simple to clean with standard tools",
+                        "Durable – built to last in high-traffic areas",
+                        "Multipurpose use – suitable for homes and light commercial interiors",
+                        "Budget-friendly – elegant appearance without high costs"
+                    ],
+                    "benefits": [
+                        "Quick and simple installation – no grouting or heavy tools required",
+                        "Low maintenance – no sealing or polishing needed",
+                        "Comfortable underfoot – softer and warmer than hard tiles",
+                        "Budget-friendly – more affordable than natural stone or ceramic tiles",
+                        "Seamless design – fewer joins create a cleaner, cohesive look"
+                    ],
+                    "design_compatibility": ["Modern", "Contemporary", "Minimalist", "Traditional"]
+                },
+                "specifications": {
+                    "waterproof": true,
+                    "slip_resistant": true,
+                    "thickness": "2.0mm to 4.0mm",
+                    "durability": "10 Years (Residential Use)",
+                    "installation_type": "Glue-down or loose-lay",
+                    "surface_requirement": "Smooth concrete or plywood subfloors",
+                    "maintenance": "Easy to clean with standard tools"
+                },
+                "installation": {
+                    "method": "Glue-down or loose-lay",
+                    "surface_types": ["concrete", "plywood"],
+                    "diy_friendly": true,
+                    "professional_recommended": true,
+                    "requirements": [
+                        "Use smooth concrete or plywood subfloors",
+                        "Ensure proper surface preparation for a flawless, long-lasting finish."
+                    ]
+                },
+                "maintenance": {
+                    "cleaning_method": "Wipe-clean surfaces with standard tools",
+                    "special_treatments": "No sealing or polishing required",
+                    "no_waxing": true,
+                    "no_polishing": true,
+                    "no_sealants": true
+                },
+                "faqs": [
+                    {
+                        "question": "What is the code for vinyl sheet PG20237?",
+                        "answer": "The product code is PG20237, part of the Versafloor collection. Use this code when browsing or contacting us for quotes and catalogues."
+                    },
+                    {
+                        "question": "Is vinyl sheet a good flooring option in Malaysia’s humid climate?",
+                        "answer": "Yes. Vinyl sheets, such as PG20237, are water-resistant, making them ideal for Malaysia’s humid climate. Unlike wood or laminate, they don’t swell or warp in moist conditions."
+                    },
+                    {
+                        "question": "Can it be repaired if scratched or torn?",
+                        "answer": "Minor surface scratches can often be buffed out or treated with vinyl repair kits. For larger damage, individual sections may be replaced without requiring the entire floor to be redone."
+                    },
+                    {
+                        "question": "What is an ideal thickness for vinyl sheets at home?",
+                        "answer": "A thickness between 2mm and 4mm is ideal for residential use. It strikes a balance between comfort, durability, and cost-effectiveness. Please consult with our team to match the right option for your space."
+                    }
+                ],
+                "call_to_action": {
+                    "primary": "Order or Enquire About PG20237 Today at Furnishings.com.",
+                    "secondary": "Visit our showroom or request a catalogue.",
+                    "tertiary": "Speak to our product experts for tailored recommendations or get a quote."
+                },
+                "status": "active",
+                "created_at": "2025-07-17",
+                "updated_at": "2025-07-17",
+                "additional_description": {
+                    "headline": "Versafloor Vinyl Sheet PG20237 – Stone-Look Vinyl Flooring Malaysia",
+                    "sections": [
+                        {
+                            "title": "Transform Your Home with the Elegant Look of Stone",
+                            "content": "The PG20237 vinyl sheet captures the refined beauty of natural stone with high-definition detail and texture, elevating your interiors without the weight or maintenance of traditional tile. Ideal for: Living rooms – add visual depth and warmth. Kitchens – water-resistant and easy to wipe clean. Bedrooms or offices – soft underfoot, quiet, and inviting. Whether you're building a new home or refreshing your space, this vinyl sheet offers a contemporary look that fits effortlessly into Malaysian design aesthetics."
+                        },
+                        {
+                            "title": "Why Choose Vinyl Over Traditional Tiles?",
+                            "content": "When compared to ceramic or porcelain tiles, vinyl sheet flooring offers several practical benefits: Quick and simple installation – no grouting or heavy tools required. Low maintenance – no sealing or polishing needed. Comfortable underfoot – softer and warmer than hard tiles. Budget-friendly – more affordable than natural stone or ceramic tiles. Seamless design – fewer joins create a cleaner, cohesive look. PG20237 is a smart alternative to tile flooring, especially in humid climates like Malaysia, where water resistance and easy upkeep are essential."
+                        },
+                        {
+                            "title": "Key Features of PG20237 Vinyl Sheet",
+                            "content": "Stone-look finish – realistic texture and color tones. Water and scratch resistant – made for daily life. Easy maintenance – simple to clean with standard tools. Durable – built to last in high-traffic areas. Multipurpose use – suitable for homes and light commercial interiors. Budget-friendly – elegant appearance without high costs."
+                        },
+                        {
+                            "title": "Product Specifications",
+                            "content": "Code: PG20237. Material: Premium vinyl. Thickness: [Insert available data]. Finish: Matte stone-look texture. Installation: Glue-down or loose-lay (depending on subfloor). Country of Origin: [Insert if known – e.g., Malaysia or imported]. Note: For detailed technical specifications, please refer to the official datasheet or contact our team."
+                        },
+                        {
+                            "title": "Order or Enquire About PG20237 Today",
+                            "content": "Interested in upgrading your space with the Versafloor PG20237 vinyl sheet? Visit our showroom, request a catalogue, or speak to our product experts for tailored recommendations. Contact us now to learn more or get a quote for your home, office, or project."
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "product": {
+                "id": "PG20240",
+                "name": "Versafloor Vinyl Sheet PG20240",
+                "slug": "versafloor-vinyl-sheet-pg20240",
+                "category": "Vinyl Sheet Flooring",
+                "brand": "Versafloor",
+                "images": {
+                    "main_image": "/vinyal_sheet/PG-20240.webp",
+                    "gallery": ["/vinyal_sheet/PG-20240.webp"],
+                    "thumbnails": ["/vinyal_sheet/PG-20240.webp"],
+                    "alt_texts": [
+                        "Versafloor PG20240 marble look vinyl sheet in modern Malaysian interior",
+                        "Explore Versafloor PG20240 – a luxury marble-look vinyl sheet ideal for Malaysian interiors, offering a durable, stylish, and affordable alternative to marble flooring.",
+                        "Elevate your interior spaces with Versafloor Vinyl Sheet PG20240, a premium marble-look vinyl flooring solution tailored for modern Malaysian environments.",
+                        "Designed to replicate the luxurious appeal of natural marble, this product delivers a timeless aesthetic without the cost, weight, or maintenance typically associated with stone surfaces.",
+                        "Whether you're upgrading a stylish condominium, designing a chic office, or furnishing a hotel lobby, PG20240 offers the perfect balance of elegance and practicality.",
+                        "Its seamless visual texture and refined color palette bring a sophisticated charm to both residential and commercial spaces."
+                    ]
+                },
+                "seo": {
+                    "meta_title": "Versafloor Vinyl Sheet PG20240 | Marble-Look Vinyl Flooring Malaysia",
+                    "meta_description": "Marble-look vinyl sheet PG20240 – luxury marble effect without the cost.",
+                    "keywords": [
+                        "PG20240 vinyl sheet Malaysia",
+                        "marble look flooring",
+                        "luxury vinyl sheet"
+                    ]
+                },
+                "description": {
+                    "short": "Explore Versafloor PG20240 – a luxury marble-look vinyl sheet ideal for Malaysian interiors, offering a durable, stylish, and affordable alternative to marble flooring.",
+                    "long": "Elevate your interior spaces with Versafloor Vinyl Sheet PG20240, a premium marble-look vinyl flooring solution tailored for modern Malaysian environments. Designed to replicate the luxurious appeal of natural marble, this product delivers a timeless aesthetic without the cost, weight, or maintenance typically associated with stone surfaces. Whether you're upgrading a stylish condominium, designing a chic office, or furnishing a hotel lobby, PG20240 offers the perfect balance of elegance and practicality. Its seamless visual texture and refined color palette bring a sophisticated charm to both residential and commercial spaces."
+                },
+                "features": {
+                    "main_features": [
+                        "An elegant marble finish with authentic veining for a high-end visual effect",
+                        "Durable and wear-resistant surface built to last in busy environments",
+                        "Water- and stain-resistant, making cleaning effortless",
+                        "Soft and comfortable underfoot for everyday use",
+                        "Excellent sound absorption, reducing noise for a more peaceful space",
+                        "Ideal for high-traffic and moisture-prone areas like kitchens and bathrooms"
+                    ],
+                    "benefits": [
+                        "Humidity resistance, unlike natural marble or ceramic tiles",
+                        "Cost-effective installation with reduced labor time and material requirements",
+                        "A lightweight composition that eases handling and transport",
+                        "Low maintenance, requiring only regular sweeping and occasional mopping"
+                    ],
+                    "design_compatibility": ["Minimalist", "Retro", "Scandinavian", "Industrial chic"]
+                },
+                "specifications": {
+                    "waterproof": true,
+                    "slip_resistant": true,
+                    "durability": "10 Years (Residential Use)",
+                    "installation_type": "Glue-down",
+                    "surface_requirement": "Dry, clean, and level",
+                    "maintenance": "Regular sweeping and occasional mopping"
+                },
+                "installation": {
+                    "method": "Glue-down",
+                    "surface_types": ["concrete", "plywood"],
+                    "diy_friendly": true,
+                    "professional_recommended": true,
+                    "requirements": [
+                        "Subfloor Compatibility: Ideal for concrete, plywood, and other smooth surfaces",
+                        "Adhesive Recommendation: Use high-bond vinyl adhesive for secure placement",
+                        "Preparation Tips: Ensure the subfloor is dry, clean, and level",
+                        "Trimming & Fitting: Easy to cut for precise edges and seamless commercial layouts",
+                        "Installation Speed: Quick to lay, reducing project timelines and labor costs"
+                    ]
+                },
+                "maintenance": {
+                    "cleaning_method": "Regular sweeping and occasional mopping",
+                    "special_treatments": "None required",
+                    "no_waxing": true,
+                    "no_polishing": true,
+                    "no_sealants": true
+                },
+                "faqs": [
+                    {
+                        "question": "What is the code for the vinyl sheet?",
+                        "answer": "The product code for this model is PG20240. It helps you identify the exact pattern and finish when ordering or comparing specifications."
+                    },
+                    {
+                        "question": "Is a vinyl sheet suitable for flooring?",
+                        "answer": "Yes, vinyl sheet flooring is highly durable, easy to clean, and resistant to moisture. It’s an ideal solution for Malaysian homes and commercial spaces."
+                    },
+                    {
+                        "question": "What type of underlayment is recommended for vinyl sheets?",
+                        "answer": "Vinyl sheets work best on smooth concrete or plywood subfloors. For added comfort, a thin foam underlayment can improve softness and reduce sound."
+                    },
+                    {
+                        "question": "How do you measure vinyl sheets?",
+                        "answer": "Measure the length and width of the room in meters. Multiply to get the area in square meters, and add 5–10% extra for trimming and fitting."
+                    }
+                ],
+                "call_to_action": {
+                    "primary": "View all vinyl sheet flooring options",
+                    "secondary": "Get in touch for bulk orders or trade quotes",
+                    "tertiary": "Other luxury-look designs you might like: PG20237 – Stone-look texture for a natural rugged appeal, PG20236 – Neutral tone finish for minimalist modern interiors"
+                },
+                "status": "active",
+                "created_at": "2025-07-17",
+                "updated_at": "2025-07-17",
+                "additional_description": {
+                    "headline": "Versafloor Vinyl Sheet PG20240, Marble-Look Vinyl Flooring Malaysia",
+                    "sections": [
+                        {
+                            "title": "Product Introduction",
+                            "content": "Elevate your interior spaces with Versafloor Vinyl Sheet PG20240, a premium marble-look vinyl flooring solution tailored for modern Malaysian environments. Designed to replicate the luxurious appeal of natural marble, this product delivers a timeless aesthetic without the cost, weight, or maintenance typically associated with stone surfaces. Whether you're upgrading a stylish condominium, designing a chic office, or furnishing a hotel lobby, PG20240 offers the perfect balance of elegance and practicality. Its seamless visual texture and refined color palette bring a sophisticated charm to both residential and commercial spaces."
+                        },
+                        {
+                            "title": "Standout Features of PG20240 Vinyl Sheet",
+                            "content": "An elegant marble finish with authentic veining for a high-end visual effect. Durable and wear-resistant surface built to last in busy environments. Water- and stain-resistant, making cleaning effortless. Soft and comfortable underfoot for everyday use. Excellent sound absorption, reducing noise for a more peaceful space. Ideal for high-traffic and moisture-prone areas like kitchens and bathrooms."
+                        },
+                        {
+                            "title": "Why Choose PG20240 in Malaysian Interiors?",
+                            "content": "Malaysia’s hot and humid climate demands flooring that not only looks good but also performs well under local conditions. PG20240 luxury vinyl sheet is specifically suited for this, offering: Humidity resistance, unlike natural marble or ceramic tiles. Cost-effective installation with reduced labor time and material requirements. A lightweight composition that eases handling and transport. Low maintenance, requiring only regular sweeping and occasional mopping. Compared to marble or ceramic, vinyl sheets are faster to install, easier to replace, and more forgiving on uneven surfaces, making them a wise long-term investment for both homeowners and developers."
+                        },
+                        {
+                            "title": "Installation Recommendations for Developers & Contractors",
+                            "content": "Versafloor PG20240 is designed for professional results with minimal effort. Here's how to achieve the best outcome: Subfloor Compatibility: Ideal for concrete, plywood, and other smooth surfaces. Adhesive Recommendation: Use high-bond vinyl adhesive for secure placement. Preparation Tips: Ensure the subfloor is dry, clean, and level. Trimming & Fitting: Easy to cut for precise edges and seamless commercial layouts. Installation Speed: Quick to lay, reducing project timelines and labor costs. This makes PG20240 a dependable choice for high-volume housing projects, retail outlets, and public facilities."
+                        },
+                        {
+                            "title": "Final Note",
+                            "content": "Versafloor Vinyl Sheet PG20240 brings the elegance of marble into your space without the high price or maintenance. With its authentic stone-inspired look, water resistance, and simple installation, it’s the perfect flooring solution for modern Malaysian lifestyles. Bring timeless marble elegance to your space without the high cost. Order Versafloor PG20240 now or connect with our team for project-based support."
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "product": {
+                "id": "PG20246",
+                "name": "Versafloor Vinyl Sheet PG20246",
+                "slug": "versafloor-vinyl-sheet-pg20246",
+                "category": "Vinyl Sheet Flooring",
+                "brand": "Versafloor",
+                "images": {
+                    "main_image": "/vinyal_sheet/PG20246.webp",
+                    "gallery": ["/vinyal_sheet/PG20246.webp"],
+                    "thumbnails": ["/vinyal_sheet/PG20246.webp"],
+                    "alt_texts": [
+                        "Versafloor PG20246 concrete-style vinyl sheet in modern Malaysian office",
+                        "Explore PG20246, a concrete-inspired vinyl sheet ideal for crafting industrial-style interiors in Malaysia. Durable, sleek, and easy to maintain.",
+                        "Bring the raw elegance of concrete into your interiors, without the hassle. Versafloor Vinyl Sheet PG20246 provides an innovative and stylish alternative to traditional poured concrete flooring.",
+                        "Its refined matte surface and warm grey undertones deliver a rugged industrial aesthetic with the comfort and practicality of vinyl.",
+                        "Perfect for urban lofts, boutique cafés, creative studios, and modern office spaces, PG20246 blends visual impact with functionality.",
+                        "Designed for Malaysian commercial and residential environments, this flooring solution elevates any room with a minimalist, contemporary flair."
+                    ]
+                },
+                "seo": {
+                    "meta_title": "Versafloor Vinyl Sheet PG20246 | Concrete-Look Vinyl Flooring Malaysia",
+                    "meta_description": "Concrete-look vinyl sheet PG20246 – industrial styling for Malaysian interiors.",
+                    "keywords": [
+                        "PG20246 vinyl sheet Malaysia",
+                        "concrete look flooring",
+                        "industrial vinyl sheet"
+                    ]
+                },
+                "description": {
+                    "short": "Explore PG20246, a concrete-inspired vinyl sheet ideal for crafting industrial-style interiors in Malaysia. Durable, sleek, and easy to maintain.",
+                    "long": "Bring the raw elegance of concrete into your interiors, without the hassle. Versafloor Vinyl Sheet PG20246 provides an innovative and stylish alternative to traditional poured concrete flooring. Its refined matte surface and warm grey undertones deliver a rugged industrial aesthetic with the comfort and practicality of vinyl. Perfect for urban lofts, boutique cafés, creative studios, and modern office spaces, PG20246 blends visual impact with functionality. Designed for Malaysian commercial and residential environments, this flooring solution elevates any room with a minimalist, contemporary flair."
+                },
+                "features": {
+                    "main_features": [
+                        "Realistic, concrete appearance with urban texture",
+                        "Tough, wear-resistant top layer",
+                        "Moisture-proof and anti-slip design",
+                        "Soft underfoot for added comfort",
+                        "Suitable for both homes and high-traffic commercial settings",
+                        "Quick and economical alternative to concrete flooring"
+                    ],
+                    "benefits": [
+                        "PG20246 is engineered with Malaysia’s evolving interior design landscape in mind. Whether your project leans toward industrial chic, minimalist modern, or raw luxe aesthetics, this concrete-look vinyl sheet delivers a striking result.",
+                        "Its non-porous surface is easy to clean and maintain, perfect for Malaysia’s humid climate.",
+                        "This product supports the needs of local architects, builders, and business owners seeking stylish yet resilient flooring that aligns with modern design values and client expectations."
+                    ],
+                    "design_compatibility": ["Minimalist", "Retro", "Scandinavian", "Industrial chic"]
+                },
+                "specifications": {
+                    "waterproof": true,
+                    "slip_resistant": true,
+                    "durability": "10 Years (Residential Use)",
+                    "installation_type": "Glue-down",
+                    "surface_requirement": "Flat, clean concrete or levelled wooden subfloor",
+                    "maintenance": "Easy to clean and maintain"
+                },
+                "installation": {
+                    "method": "Glue-down",
+                    "surface_types": ["concrete", "wooden"],
+                    "diy_friendly": true,
+                    "professional_recommended": true,
+                    "requirements": [
+                        "Surface Prep: Ensure a flat, clean concrete or levelled wooden subfloor for best adhesion.",
+                        "Adhesive: Use high-performance vinyl flooring adhesive recommended for humid climates.",
+                        "Installation Tips: Maintain expansion gaps, roll the flooring to eliminate air pockets, and use joint sealing for enhanced longevity.",
+                        "Finishing Touches: Add matching trims for a seamless industrial finish and professional-grade aesthetics."
+                    ]
+                },
+                "maintenance": {
+                    "cleaning_method": "Easy to clean and maintain",
+                    "special_treatments": "None required",
+                    "no_waxing": true,
+                    "no_polishing": true,
+                    "no_sealants": true
+                },
+                "faqs": [
+                    {
+                        "question": "What is the code for vinyl sheet?",
+                        "answer": "PG20246 is the product code for this specific concrete-look vinyl sheet. It ensures you’re ordering the exact visual style and material performance needed for consistent flooring across your space."
+                    },
+                    {
+                        "question": "What is sheet vinyl used for?",
+                        "answer": "Sheet vinyl is commonly used for flooring in residential, commercial, and retail spaces. It’s valued for its durability, water resistance, and easy maintenance, especially in high-traffic or moisture-prone areas. See our Vinyl Sheet Range for more options."
+                    },
+                    {
+                        "question": "What is Fiberfloor sheet vinyl?",
+                        "answer": "Fiberfloor is a type of vinyl flooring that includes a fiberglass-reinforced backing. It offers extra stability, resilience, and comfort underfoot—ideal for spaces where durability and comfort are both priorities."
+                    },
+                    {
+                        "question": "What is a good thickness for sheet vinyl?",
+                        "answer": "For general residential areas, 2mm–4mm is considered good. For commercial use, 3mm–5mm is ideal. Versafloor PG20246 meets these standards, offering a perfect balance of comfort and performance for diverse Malaysian settings."
+                    }
+                ],
+                "call_to_action": {
+                    "primary": "Vinyl Sheet Flooring Collection",
+                    "secondary": "Contact Page → Inquire about bulk orders or installation help",
+                    "tertiary": "Explore PG20245 – Another Concrete-Inspired Option, All Versafloor Vinyl Sheets"
+                },
+                "status": "active",
+                "created_at": "2025-07-17",
+                "updated_at": "2025-07-17",
+                "additional_description": {
+                    "headline": "Versafloor Vinyl Sheet PG20246, Concrete-Look Vinyl Flooring Malaysia",
+                    "sections": [
+                        {
+                            "title": "Modern Industrial Flooring, Reinvented",
+                            "content": "Bring the raw elegance of concrete into your interiors, without the hassle. Versafloor Vinyl Sheet PG20246 provides an innovative and stylish alternative to traditional poured concrete flooring. Its refined matte surface and warm grey undertones deliver a rugged industrial aesthetic with the comfort and practicality of vinyl. Perfect for urban lofts, boutique cafés, creative studios, and modern office spaces, PG20246 blends visual impact with functionality. Designed for Malaysian commercial and residential environments, this flooring solution elevates any room with a minimalist, contemporary flair."
+                        },
+                        {
+                            "title": "Product Highlights",
+                            "content": "Realistic, concrete appearance with urban texture. Tough, wear-resistant top layer. Moisture-proof and anti-slip design. Soft underfoot for added comfort. Suitable for both homes and high-traffic commercial settings. Quick and economical alternative to concrete flooring. Explore all Vinyl Sheet Flooring for more styles and colours."
+                        },
+                        {
+                            "title": "Designed for Malaysian Interiors",
+                            "content": "PG20246 is engineered with Malaysia’s evolving interior design landscape in mind. Whether your project leans toward industrial chic, minimalist modern, or raw luxe aesthetics, this concrete-look vinyl sheet delivers a striking result. Its non-porous surface is easy to clean and maintain, perfect for Malaysia’s humid climate. This product supports the needs of local architects, builders, and business owners seeking stylish yet resilient flooring that aligns with modern design values and client expectations."
+                        },
+                        {
+                            "title": "Installation Notes for Contractors & Renovation Teams",
+                            "content": "Installing Versafloor PG20246 is straightforward and time-efficient, making it an ideal choice for projects with tight deadlines. Surface Prep: Ensure a flat, clean concrete or levelled wooden subfloor for best adhesion. Adhesive: Use high-performance vinyl flooring adhesive recommended for humid climates. Installation Tips: Maintain expansion gaps, roll the flooring to eliminate air pockets, and use joint sealing for enhanced longevity. Finishing Touches: Add matching trims for a seamless industrial finish and professional-grade aesthetics. Need technical advice or contractor pricing? Contact our support team here."
+                        },
+                        {
+                            "title": "Final Thoughts",
+                            "content": "If you're looking to create a sleek industrial statement without the cost or complexity of concrete, Versafloor Vinyl Sheet PG20246 is your solution. It brings together durability, design appeal, and affordability—all in one stylish package. Ready to create that industrial statement floor? Choose PG20246 – where strength, style, and smart pricing meet."
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "product": {
+                "id": "PG20247",
+                "name": "Versafloor Vinyl Sheet PG20247",
+                "slug": "versafloor-vinyl-sheet-pg20247",
+                "category": "Vinyl Sheet Flooring",
+                "brand": "Versafloor",
+                "images": {
+                    "main_image": "/vinyal_sheet/PG-20247.webp",
+                    "gallery": ["/vinyal_sheet/PG-20247.webp"],
+                    "thumbnails": ["/vinyal_sheet/PG-20247.webp"],
+                    "alt_texts": [
+                        "Versafloor PG20247 gloss finish vinyl sheet in modern Malaysian interior",
+                        "Add modern gloss to your interior with PG20247, a high-shine vinyl flooring option made for elegant Malaysian homes. Durable and easy to maintain.",
+                        "Elevate your interiors with the Versafloor Vinyl Sheet PG20247, a premium gloss-finish vinyl flooring designed for stylish Malaysian homes, salons, and contemporary spaces.",
+                        "With its radiant shine and modern appeal, PG20247 enhances any interior by creating an illusion of space and adding a sleek touch.",
+                        "Whether you're designing a boutique, upgrading a condo, or modernising an office, the PG20247 delivers both aesthetics and performance.",
+                        "As part of the trusted Versafloor vinyl sheet collection in Malaysia, this high-gloss design offers a polished look without the hassle of maintaining marble or tiles."
+                    ]
+                },
+                "seo": {
+                    "meta_title": "Versafloor Vinyl Sheet PG20247 | Gloss Finish Vinyl Flooring Malaysia",
+                    "meta_description": "Gloss finish vinyl sheet PG20247 – sleek shine for stylish Malaysian homes.",
+                    "keywords": [
+                        "PG20247 vinyl sheet Malaysia",
+                        "gloss finish flooring",
+                        "shiny vinyl sheet"
+                    ]
+                },
+                "description": {
+                    "short": "Add modern gloss to your interior with PG20247, a high-shine vinyl flooring option made for elegant Malaysian homes. Durable and easy to maintain.",
+                    "long": "Elevate your interiors with the Versafloor Vinyl Sheet PG20247, a premium gloss-finish vinyl flooring designed for stylish Malaysian homes, salons, and contemporary spaces. With its radiant shine and modern appeal, PG20247 enhances any interior by creating an illusion of space and adding a sleek touch. Whether you're designing a boutique, upgrading a condo, or modernising an office, the PG20247 delivers both aesthetics and performance. As part of the trusted Versafloor vinyl sheet collection in Malaysia, this high-gloss design offers a polished look without the hassle of maintaining marble or tiles. Expect a smooth surface, light-reflective brilliance, and the enduring quality that Versafloor is known for."
+                },
+                "features": {
+                    "main_features": [
+                        "Smooth, reflective gloss surface",
+                        "Stylish and modern aesthetic",
+                        "Scratch-resistant and easy to clean",
+                        "Moisture-resistant and built for durability.",
+                        "Comfortable underfoot with soft cushioning.",
+                        "Ideal for homes, salons, boutiques, and reception areas"
+                    ],
+                    "benefits": [
+                        "Enhances light and space perception",
+                        "Aligns with Malaysia’s modern, bright aesthetic themes",
+                        "Requires less upkeep than polished stone or marble",
+                        "Offers better slip resistance than high-gloss ceramics"
+                    ],
+                    "design_compatibility": ["Minimalist", "Retro", "Scandinavian", "Industrial chic"]
+                },
+                "specifications": {
+                    "waterproof": true,
+                    "slip_resistant": true,
+                    "durability": "10 Years (Residential Use)",
+                    "installation_type": "Glue-down or floating",
+                    "surface_requirement": "Smooth concrete, plywood, or existing vinyl flooring",
+                    "maintenance": "Easy to clean"
+                },
+                "installation": {
+                    "method": "Glue-down or floating",
+                    "surface_types": ["concrete", "plywood", "existing vinyl"],
+                    "diy_friendly": true,
+                    "professional_recommended": true,
+                    "requirements": [
+                        "Compatible with smooth concrete, plywood, or existing vinyl flooring",
+                        "Use recommended adhesives for a secure fit or explore floating methods.",
+                        "Protect the gloss finish during installation with felt pads or protective sheets.",
+                        "Easy to cut and install seamlessly in large, open layouts"
+                    ]
+                },
+                "maintenance": {
+                    "cleaning_method": "Easy to clean",
+                    "special_treatments": "None required",
+                    "no_waxing": true,
+                    "no_polishing": true,
+                    "no_sealants": true
+                },
+                "faqs": [
+                    {
+                        "question": "What is the code for vinyl sheet?",
+                        "answer": "PG20247 is the specific product code for this gloss finish vinyl sheet, making it easy to reference for orders, comparisons, and installation support."
+                    },
+                    {
+                        "question": "Is vinyl sheet suitable for flooring?",
+                        "answer": "Yes. Vinyl sheet flooring is renowned for its durability, water resistance, and ease of maintenance. It's a cost-effective choice for both homes and commercial areas."
+                    },
+                    {
+                        "question": "What is Fiberfloor sheet vinyl?",
+                        "answer": "Fiberfloor is a type of vinyl flooring with a built-in fiberglass core. It enhances stability, strength, and comfort, making it ideal for spaces that require added durability and resilience."
+                    },
+                    {
+                        "question": "How do you measure vinyl sheets?",
+                        "answer": "Measure the room’s width and length in meters, then multiply them to get the total square meters. Add 5–10% extra to account for waste and fitting."
+                    }
+                ],
+                "call_to_action": {
+                    "primary": "Vinyl Sheet Flooring Collection – Browse our entire vinyl flooring collection.",
+                    "secondary": "Contact Us – Request a consultation or quote.",
+                    "tertiary": "Versafloor Vinyl Sheet PG20244 – Explore another sleek, bright finish. Versafloor Vinyl Sheet PG20245 – Discover a light-enhancing design"
+                },
+                "status": "active",
+                "created_at": "2025-07-17",
+                "updated_at": "2025-07-17",
+                "additional_description": {
+                    "headline": "Versafloor Vinyl Sheet PG20247, Gloss Finish Vinyl Flooring Malaysia",
+                    "sections": [
+                        {
+                            "title": "Bring Shine and Style to Every Step",
+                            "content": "Elevate your interiors with the Versafloor Vinyl Sheet PG20247, a premium gloss-finish vinyl flooring designed for stylish Malaysian homes, salons, and contemporary spaces. With its radiant shine and modern appeal, PG20247 enhances any interior by creating an illusion of space and adding a sleek touch. Whether you're designing a boutique, upgrading a condo, or modernising an office, the PG20247 delivers both aesthetics and performance. As part of the trusted Versafloor vinyl sheet collection in Malaysia, this high-gloss design offers a polished look without the hassle of maintaining marble or tiles. Expect a smooth surface, light-reflective brilliance, and the enduring quality that Versafloor is known for."
+                        },
+                        {
+                            "title": "Key Features of PG20247 Vinyl Sheet",
+                            "content": "Smooth, reflective gloss surface. Stylish and modern aesthetic. Scratch-resistant and easy to clean. Moisture-resistant and built for durability. Comfortable underfoot with soft cushioning. Ideal for homes, salons, boutiques, and reception areas."
+                        },
+                        {
+                            "title": "Why Choose Gloss Vinyl for Malaysian Interiors?",
+                            "content": "Gloss vinyl flooring, such as PG20247, is ideally suited for Malaysia’s evolving interior trends. Its high-shine surface reflects ambient light, making rooms feel larger and brighter — an ideal feature for smaller urban spaces. Enhances light and space perception. Aligns with Malaysia’s modern, bright aesthetic themes. Requires less upkeep than polished stone or marble. Offers better slip resistance than high-gloss ceramics. Gloss vinyl delivers the shine without sacrificing practicality."
+                        },
+                        {
+                            "title": "Installation Notes for Fit-Out Teams & Contractors",
+                            "content": "To ensure the best installation experience with PG20247, follow these key guidelines: Compatible with smooth concrete, plywood, or existing vinyl flooring. Use recommended adhesives for a secure fit or explore floating methods. Protect the gloss finish during installation with felt pads or protective sheets. Easy to cut and install seamlessly in large, open layouts. Versafloor’s engineered design ensures a professional look with minimal effort."
+                        },
+                        {
+                            "title": "Final Word",
+                            "content": "Versafloor PG20247 delivers a luxurious glossy finish with the trusted durability of vinyl. Whether you're designing a boutique space or modernising your home, this shiny vinyl sheet adds that perfect touch of elegance while being practical and easy to maintain. Order PG20247 today or contact us for bulk pricing on your next interior design project."
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "product": {
+                "id": "PG20249",
+                "name": "Versafloor Vinyl Sheet PG20249",
+                "slug": "versafloor-vinyl-sheet-pg20249",
+                "category": "Vinyl Sheet Flooring",
+                "brand": "Versafloor",
+                "images": {
+                    "main_image": "/vinyal_sheet/PG-20249.webp",
+                    "gallery": ["/vinyal_sheet/PG-20249.webp"],
+                    "thumbnails": ["/vinyal_sheet/PG-20249.webp"],
+                    "alt_texts": [
+                        "Versafloor PG20249 matte finish vinyl sheet in modern Malaysian interior",
+                        "Discover PG20249 – a soft, matte vinyl sheet that brings modern comfort to homes and offices in Malaysia. Stylish, non-slip, and easy to maintain.",
+                        "Versafloor Vinyl Sheet PG20249 combines soft elegance with practical durability in a single, seamless solution.",
+                        "With its matte finish and anti-reflective surface, this non-reflective vinyl flooring is ideal for spaces where visual calm and comfort are most important.",
+                        "Whether you're designing a cozy bedroom, a peaceful living room, or a quiet commercial corner, PG20249 offers a smooth, understated style perfect for minimalist and Japandi interiors."
+                    ]
+                },
+                "seo": {
+                    "meta_title": "Versafloor Vinyl Sheet PG20249 | Matte Finish Vinyl Flooring Malaysia",
+                    "meta_description": "Matte finish vinyl sheet PG20249 – modern, non‑reflective surface for Malaysia.",
+                    "keywords": [
+                        "PG20249 vinyl sheet Malaysia",
+                        "matte finish flooring",
+                        "soft vinyl sheet"
+                    ]
+                },
+                "description": {
+                    "short": "Discover PG20249 – a soft, matte vinyl sheet that brings modern comfort to homes and offices in Malaysia. Stylish, non-slip, and easy to maintain.",
+                    "long": "Versafloor Vinyl Sheet PG20249 combines soft elegance with practical durability in a single, seamless solution. With its matte finish and anti-reflective surface, this non-reflective vinyl flooring is ideal for spaces where visual calm and comfort are most important. Whether you're designing a cozy bedroom, a peaceful living room, or a quiet commercial corner, PG20249 offers a smooth, understated style perfect for minimalist and Japandi interiors."
+                },
+                "features": {
+                    "main_features": [
+                        "Matte finish with anti-glare surface.",
+                        "Soft texture and cushioned feel underfoot",
+                        "Durable and resistant to wear",
+                        "Easy to clean and maintain",
+                        "Reduces light reflection in both daylight and artificial lighting",
+                        "Ideal for bedrooms, living rooms, and quiet office zones"
+                    ],
+                    "benefits": [
+                        "The soft vinyl sheet structure helps absorb sound, adding a sense of peace to homes and offices.",
+                        "Moisture-resistant composition adapts well to Malaysia’s humid climate.",
+                        "Perfect for low-light or glare-sensitive environments"
+                    ],
+                    "design_compatibility": ["Minimalist", "Japandi", "Scandinavian", "Industrial chic"]
+                },
+                "specifications": {
+                    "waterproof": true,
+                    "slip_resistant": true,
+                    "durability": "10 Years (Residential Use)",
+                    "installation_type": "Glue-down or floating",
+                    "surface_requirement": "Level subfloors like concrete or wood",
+                    "maintenance": "Easy to clean and maintain"
+                },
+                "installation": {
+                    "method": "Glue-down or floating",
+                    "surface_types": ["concrete", "wood"],
+                    "diy_friendly": true,
+                    "professional_recommended": true,
+                    "requirements": [
+                        "Install over-level subfloors like concrete or wood",
+                        "Suitable for glue-down or floating installation methods",
+                        "Allows for precise trimming and neat edge sealing",
+                        "Ensure proper surface preparation for a flawless, long-lasting finish."
+                    ]
+                },
+                "maintenance": {
+                    "cleaning_method": "Easy to clean and maintain",
+                    "special_treatments": "None required",
+                    "no_waxing": true,
+                    "no_polishing": true,
+                    "no_sealants": true
+                },
+                "faqs": [
+                    {
+                        "question": "What is the code for vinyl sheet?",
+                        "answer": "PG20249 is the model code for this specific matte finish vinyl sheet. Use it for accurate product referencing when placing an order, or when coordinating with designers, architects, or installers."
+                    },
+                    {
+                        "question": "What is sheet vinyl used for?",
+                        "answer": "Sheet vinyl is used in homes, offices, and retail spaces as a cost-effective, water-resistant flooring choice. It’s quick to install, easy to maintain, and ideal for areas prone to moisture or needing hygienic surfaces."
+                    },
+                    {
+                        "question": "What is Fiberfloor sheet vinyl?",
+                        "answer": "Fiberfloor is a type of sheet vinyl flooring reinforced with a fiberglass backing. This structure enhances comfort, acoustic insulation, and dimensional stability—perfect for residential applications where quiet and comfort matter."
+                    },
+                    {
+                        "question": "What is the difference between vinyl plank and vinyl sheet?",
+                        "answer": "Vinyl planks mimic wood and come in rigid pieces, while vinyl sheets like PG20249 are rolled for seamless, wide coverage. Vinyl sheet is better for moisture protection and creates a more unified look across the floor."
+                    }
+                ],
+                "call_to_action": {
+                    "primary": "Browse all vinyl sheet flooring options",
+                    "secondary": "Contact us for bulk pricing or installation guidance",
+                    "tertiary": "Check out PG20248 – a similar matte finish in a neutral tone, Explore PG20250 – a matte vinyl sheet with warm color tones"
+                },
+                "status": "active",
+                "created_at": "2025-07-17",
+                "updated_at": "2025-07-17",
+                "additional_description": {
+                    "headline": "Versafloor Vinyl Sheet PG20249, Matte Finish Vinyl Flooring Malaysia",
+                    "sections": [
+                        {
+                            "title": "Soft Look, Strong Performance",
+                            "content": "Versafloor Vinyl Sheet PG20249 combines soft elegance with practical durability in a single, seamless solution. With its matte finish and anti-reflective surface, this non-reflective vinyl flooring is ideal for spaces where visual calm and comfort are most important. Whether you're designing a cozy bedroom, a peaceful living room, or a quiet commercial corner, PG20249 offers a smooth, understated style perfect for minimalist and Japandi interiors."
+                        },
+                        {
+                            "title": "Key Features & Benefits",
+                            "content": "Matte finish with anti-glare surface. Soft texture and cushioned feel underfoot. Durable and resistant to wear. Easy to clean and maintain. Reduces light reflection in both daylight and artificial lighting. Ideal for bedrooms, living rooms, and quiet office zones."
+                        },
+                        {
+                            "title": "Designed for Malaysian Interiors",
+                            "content": "PG20249 is crafted with Malaysia’s interior needs in mind. Its non-reflective vinyl flooring complements local style preferences, including minimalist and Japandi themes. The soft vinyl sheet structure helps absorb sound, adding a sense of peace to homes and offices. Moisture-resistant composition adapts well to Malaysia’s humid climate. Perfect for low-light or glare-sensitive environments."
+                        },
+                        {
+                            "title": "Installation Guidance for Fitters & Contractors",
+                            "content": "For flooring professionals, PG20249 offers flexibility and ease during installation: Install over-level subfloors like concrete or wood. Suitable for glue-down or floating installation methods. Allows for precise trimming and neat edge sealing. Ensure proper surface preparation for a flawless, long-lasting finish."
+                        },
+                        {
+                            "title": "Final Thoughts",
+                            "content": "Versafloor PG20249 features a smooth, matte surface that’s both visually appealing and gentle underfoot. Whether for residential use or light commercial settings, this soft vinyl sheet delivers both style and substance. Order PG20249 today or contact our team to elevate your next interior project with comfort and style."
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "product": {
+                "id": "PG20250",
+                "name": "Versafloor Vinyl Sheet PG20250",
+                "slug": "versafloor-vinyl-sheet-pg20250",
+                "category": "Vinyl Sheet Flooring",
+                "brand": "Versafloor",
+                "images": {
+                    "main_image": "/vinyal_sheet/PG-20250.webp",
+                    "gallery": ["/vinyal_sheet/PG-20250.webp"],
+                    "thumbnails": ["/vinyal_sheet/PG-20250.webp"],
+                    "alt_texts": [
+                        "Versafloor PG20250 stone-grain vinyl sheet in modern Malaysian interior",
+                        "Stone-grain vinyl sheet PG20250 – textured elegance for Malaysian interiors.",
+                        "Enhance your interiors with Versafloor Vinyl Sheet PG20250. A premium stone-grain vinyl flooring solution designed explicitly for contemporary Malaysian spaces.",
+                        "Its textured surface mimics natural stone, delivering both aesthetic appeal and long-lasting performance.",
+                        "Whether you're outfitting a home or commercial property, PG20250 is your go-to choice for stylish, durable vinyl flooring."
+                    ]
+                },
+                "seo": {
+                    "meta_title": "Versafloor Vinyl Sheet PG20250 | Stone-Grain Vinyl Flooring Malaysia",
+                    "meta_description": "Stone-grain vinyl sheet PG20250 – textured elegance for Malaysian interiors.",
+                    "keywords": [
+                        "PG20250 vinyl sheet Malaysia",
+                        "stone grain vinyl flooring",
+                        "textured vinyl sheet"
+                    ]
+                },
+                "description": {
+                    "short": "Discover PG20250 – a premium stone-grain vinyl sheet that brings textured elegance to homes and offices in Malaysia. Stylish, waterproof, and easy to maintain.",
+                    "long": "Enhance your interiors with Versafloor Vinyl Sheet PG20250. A premium stone-grain vinyl flooring solution designed explicitly for contemporary Malaysian spaces. Its textured surface mimics natural stone, delivering both aesthetic appeal and long-lasting performance. Whether you're outfitting a home or commercial property, PG20250 is your go-to choice for stylish, durable vinyl flooring."
+                },
+                "features": {
+                    "main_features": [
+                        "Authentic stone grain texture for a refined, natural look",
+                        "Soft-touch feel with high resistance to daily wear and tear",
+                        "Waterproof, stain-resistant, and easy to clean",
+                        "Perfect for residential or commercial flooring needs",
+                        "Designed to complement modern Malaysian interior themes"
+                    ],
+                    "benefits": [
+                        "Ideal for living rooms, bedrooms, retail outlets, and showrooms",
+                        "Matches beautifully with minimalist, industrial, and stone-inspired interiors",
+                        "Adds a natural aesthetic without the maintenance of real stone",
+                        "A wise, budget-friendly choice for modern renovations"
+                    ],
+                    "design_compatibility": ["Minimalist", "Industrial", "Stone-inspired", "Scandinavian"]
+                },
+                "specifications": {
+                    "waterproof": true,
+                    "slip_resistant": true,
+                    "durability": "10 Years (Residential Use)",
+                    "installation_type": "Glue-down",
+                    "surface_requirement": "Level subfloors like concrete or wood",
+                    "maintenance": "Easy to clean and maintain"
+                },
+                "installation": {
+                    "method": "Glue-down",
+                    "surface_types": ["concrete", "wood"],
+                    "diy_friendly": true,
+                    "professional_recommended": true,
+                    "requirements": [
+                        "Install over-level subfloors like concrete or wood",
+                        "Ensure proper surface preparation for a flawless, long-lasting finish."
+                    ]
+                },
+                "maintenance": {
+                    "cleaning_method": "Easy to clean and maintain",
+                    "special_treatments": "None required",
+                    "no_waxing": true,
+                    "no_polishing": true,
+                    "no_sealants": true
+                },
+                "faqs": [
+                    {
+                        "question": "What is the code for a vinyl sheet?",
+                        "answer": "The product code for this stylish vinyl sheet is PG20250—a textured stone-grain finish from the Versafloor series, crafted for elegance and durability in Malaysian interiors."
+                    },
+                    {
+                        "question": "Is a vinyl sheet suitable for flooring?",
+                        "answer": "Absolutely. Vinyl sheet flooring, such as PG20250, is water-resistant, durable, and easy to maintain, making it ideal for homes and commercial spaces in Malaysia."
+                    },
+                    {
+                        "question": "What is Fiberfloor sheet vinyl?",
+                        "answer": "Fiberfloor features fiberglass backing for extra strength. While PG20250 is not Fiberfloor, it offers similar durability and comfort underfoot for high-traffic areas."
+                    },
+                    {
+                        "question": "Is vinyl sheet flooring expensive?",
+                        "answer": "Not at all. The PG20250 vinyl sheet offers the look of stone flooring at a fraction of the cost, making it a budget-friendly choice for any renovation."
+                    }
+                ],
+                "call_to_action": {
+                    "primary": "Browse all vinyl sheet flooring options",
+                    "secondary": "Contact us for bulk pricing or installation guidance",
+                    "tertiary": "Order Versafloor PG20250 today - textured luxury, delivered."
+                },
+                "status": "active",
+                "created_at": "2025-07-17",
+                "updated_at": "2025-07-17",
+                "additional_description": {
+                    "headline": "Versafloor Vinyl Sheet PG20250 - Stone-Grain Elegance for Every Space",
+                    "sections": [
+                        {
+                            "title": "Why Choose the PG20250 Vinyl Sheet for Your Interior?",
+                            "content": "Discover why the PG20250 vinyl sheet in Malaysia stands out: Authentic stone grain texture for a refined, natural look. Soft-touch feel with high resistance to daily wear and tear. Waterproof, stain-resistant, and easy to clean. Perfect for residential or commercial flooring needs. Designed to complement modern Malaysian interior themes. From cozy homes to chic offices, this textured vinyl sheet blends resilience with design elegance."
+                        },
+                        {
+                            "title": "Technical Specifications",
+                            "content": "Product Code: PG20250. Type: Vinyl Sheet. Surface: Textured stone grain finish. Dimensions: [Please insert available size]. Water & Slip Resistance: Yes. Installation: Glue-down method. Country of Origin: Malaysia."
+                        },
+                        {
+                            "title": "Application & Style Flexibility",
+                            "content": "The PG20250 Versafloor vinyl sheet adapts seamlessly to various spaces: Ideal for living rooms, bedrooms, retail outlets, and showrooms. Matches beautifully with minimalist, industrial, and stone-inspired interiors. Adds a natural aesthetic without the maintenance of real stone. A wise, budget-friendly choice for modern renovations. Give your flooring a modern stone-look while enjoying the practical benefits of resilient vinyl sheet flooring."
+                        },
+                        {
+                            "title": "Why Buy from Furnishings?",
+                            "content": "When you choose Furnishings, you get more than just a floor—you get confidence. Trusted supplier of flooring in Malaysia. Authentic Versafloor™ vinyl sheet products. Competitive pricing with no compromise on quality. Nationwide delivery and professional support. Expert installation guidance available on request."
+                        },
+                        {
+                            "title": "Ready to Upgrade Your Floors?",
+                            "content": "Transform your space with the Versafloor PG20250 vinyl sheet, where textured elegance meets modern performance. Get a quote or book a consultation today with our flooring experts at Furnishings."
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "product": {
+                "id": "PG20251",
+                "name": "Versafloor Vinyl Sheet PG20251",
+                "slug": "/vinyl-sheet-wood-flooring-malaysia-pg20251",
+                "category": "Vinyl Sheet Flooring",
+                "brand": "Versafloor",
+                "images": {
+                    "main_image": "/vinyal_sheet/PG-20251.webp",
+                    "gallery": ["/vinyal_sheet/PG-20251.webp"],
+                    "thumbnails": ["/vinyal_sheet/PG-20251.webp"],
+                    "alt_texts": [
+                        "Versafloor PG20251 wood-grain vinyl sheet in modern Malaysian interior",
+                        "Versafloor PG20251 delivers natural wood-grain vinyl sheet flooring for Malaysian homes. Warm texture, affordable style. Shop online at Furnishings.com.",
+                        "Step into the charm of natural wood without the cost or hassle. Versafloor Vinyl Sheet PG20251 offers a beautiful wood-grain look combined with the durability and ease of vinyl—perfect for Malaysian homes.",
+                        "Whether you're updating a bedroom, living space, or small office, this flooring delivers warmth, comfort, and a timeless aesthetic that fits effortlessly into any interior style."
+                    ]
+                },
+                "seo": {
+                    "meta_title": "Versafloor Vinyl Sheet PG20251 | Wood-Grain Look Malaysia",
+                    "meta_description": "Wood-grain vinyl sheet PG20251 – warm and natural look for Malaysian rooms.",
+                    "keywords": [
+                        "PG20251 vinyl sheet Malaysia",
+                        "wood grain flooring",
+                        "natural vinyl sheet"
+                    ]
+                },
+                "description": {
+                    "short": "Versafloor PG20251 delivers natural wood-grain vinyl sheet flooring for Malaysian homes. Warm texture, affordable style. Shop online at Furnishings.com.",
+                    "long": "Step into the charm of natural wood without the cost or hassle. Versafloor Vinyl Sheet PG20251 offers a beautiful wood-grain look combined with the durability and ease of vinyl—perfect for Malaysian homes. Whether you're updating a bedroom, living space, or small office, this flooring delivers warmth, comfort, and a timeless aesthetic that fits effortlessly into any interior style."
+                },
+                "features": {
+                    "main_features": [
+                        "Crafted for a Realistic Wood Texture",
+                        "Smooth Underfoot Feel with Long-Lasting Surface",
+                        "Adds Cozy Elegance to Bedrooms, Living Spaces, Offices",
+                        "Waterproof, Low-Maintenance, and Pet-Friendly",
+                        "Perfect for Both Modern and Rustic Interior Styles"
+                    ],
+                    "benefits": [
+                        "The fine wood-grain design creates the appearance of authentic timber, adding warmth and elegance to any room.",
+                        "Enjoy a soft, cushioned feel underfoot paired with a scratch-resistant surface that’s made to last.",
+                        "Its soft, natural tone enhances relaxation while elevating the overall room ambiance.",
+                        "Designed for daily life, resistant to spills, stains, and pet activity with easy upkeep."
+                    ],
+                    "design_compatibility": ["Minimalist", "Rustic", "Modern", "Scandinavian"]
+                },
+                "specifications": {
+                    "waterproof": true,
+                    "slip_resistant": true,
+                    "durability": "10 Years (Residential Use)",
+                    "installation_type": "Glue-down",
+                    "surface_requirement": "Level subfloors like concrete or wood",
+                    "maintenance": "Easy to clean and maintain"
+                },
+                "installation": {
+                    "method": "Glue-down",
+                    "surface_types": ["concrete", "wood"],
+                    "diy_friendly": true,
+                    "professional_recommended": true,
+                    "requirements": [
+                        "Install over-level subfloors like concrete or wood",
+                        "Ensure proper surface preparation for a flawless, long-lasting finish."
+                    ]
+                },
+                "maintenance": {
+                    "cleaning_method": "Easy to clean and maintain",
+                    "special_treatments": "None required",
+                    "no_waxing": true,
+                    "no_polishing": true,
+                    "no_sealants": true
+                },
+                "faqs": [
+                    {
+                        "question": "What is the code for a vinyl sheet?",
+                        "answer": "The product code for this wood-style vinyl is PG20251, part of the trusted Versafloor series."
+                    },
+                    {
+                        "question": "Is a vinyl sheet suitable for flooring?",
+                        "answer": "Yes! PG20251 is a great choice. It's waterproof, scratch-resistant, and budget-friendly, especially suitable for humid Malaysian climates."
+                    },
+                    {
+                        "question": "What is Fiberfloor sheet vinyl?",
+                        "answer": "Fiberfloor is vinyl flooring with fiberglass backing. While PG20251 doesn’t use fiberglass, it still offers excellent stability and comfort underfoot."
+                    },
+                    {
+                        "question": "Can sheet vinyl be repaired?",
+                        "answer": "Yes. Minor damage, like scratches, can be treated using vinyl repair kits. PG20251’s durable surface helps prevent most everyday wear and tear."
+                    }
+                ],
+                "call_to_action": {
+                    "primary": "Click to order now",
+                    "secondary": "Request a free sample.",
+                    "tertiary": "Need help? Contact our flooring experts."
+                },
+                "status": "active",
+                "created_at": "2025-07-17",
+                "updated_at": "2025-07-17",
+                "additional_description": {
+                    "headline": "Versafloor Vinyl Sheet PG20251 - Natural Wood-Grain Look for Malaysian Interiors",
+                    "sections": [
+                        {
+                            "title": "Embrace Natural Warmth with PG20251 Wood-Grain Vinyl Flooring",
+                            "content": "Looking for flooring that feels like home? PG20251 brings the inviting texture of real wood into your space, without the upkeep. Crafted for a Realistic Wood Texture. The fine wood-grain design creates the appearance of authentic timber, adding warmth and elegance to any room. Smooth Underfoot Feel with Long-Lasting Surface. Enjoy a soft, cushioned feel underfoot paired with a scratch-resistant surface that’s made to last. Adds Cozy Elegance to Bedrooms, Living Spaces, Offices. Its soft, natural tone enhances relaxation while elevating the overall room ambiance. Waterproof, Low-Maintenance, and Pet-Friendly. Designed for daily life, resistant to spills, stains, and pet activity with easy upkeep. Perfect for Both Modern and Rustic Interior Styles. Whether you're styling a minimalist space or a more traditional setup, PG20251 adapts beautifully."
+                        },
+                        {
+                            "title": "Product Specifications",
+                            "content": "Product Code: PG20251. Style: Wood-Grain Vinyl Sheet. Surface: Natural texture, matte finish. Water & Stain Resistant. Installation: Glue-down. Application: Residential & Light Commercial. Origin: Malaysia."
+                        },
+                        {
+                            "title": "Where Can You Use PG20251 Vinyl Sheet?",
+                            "content": "PG20251 is a flexible, affordable solution for: Bedrooms and guest rooms. Family living and lounge areas. Small offices and creative studios. Rental homes and apartments need a cost-effective upgrade."
+                        },
+                        {
+                            "title": "Why Choose PG20251 from Furnishings.com?",
+                            "content": "100% authentic Versafloor product. Natural wood-like look at a fraction of the cost. Built to handle moisture, dents, and daily wear. Easy cleaning with minimal maintenance. Reliable delivery across Malaysia."
+                        },
+                        {
+                            "title": "Make Every Room Feel Like Home",
+                            "content": "With Versafloor PG20251, you don’t have to choose between beauty and practicality. Its realistic wood-grain design, waterproof surface, and long-term durability make it the innovative flooring solution for Malaysian homes and offices. Click to order now. Request a free sample. Need help? Contact our flooring experts."
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "product": {
+                "id": "PG20252",
+                "name": "Versafloor Vinyl Sheet PG20252",
+                "slug": "versafloor-vinyl-sheet-pg20252",
+                "category": "Vinyl Sheet Flooring",
+                "brand": "Versafloor",
+                "images": {
+                    "main_image": "/vinyal_sheet/PG-20252.webp",
+                    "gallery": ["/vinyal_sheet/PG-20252.webp"],
+                    "thumbnails": ["/vinyal_sheet/PG-20252.webp"],
+                    "alt_texts": [
+                        "Versafloor PG20252 striped vinyl sheet in modern Malaysian interior",
+                        "Striped vinyl sheet PG20252 – modern stripe design for Malaysian interiors.",
+                        "If you’re looking to redefine your interior spaces with design-forward flooring, Versafloor Vinyl Sheet PG20252 delivers the bold sophistication your floors deserve.",
+                        "With its sleek striped pattern and durable construction, this vinyl sheet is more than just flooring. It’s a statement piece that sets the tone for modern, minimalist, and elegant interiors across Malaysia."
+                    ]
+                },
+                "seo": {
+                    "meta_title": "Versafloor Vinyl Sheet PG20253 | Checkerboard Vinyl Flooring Malaysia",
+                    "meta_description": "Versafloor Vinyl Sheet PG20253 – Checkerboard Vinyl Flooring Malaysia",
+                    "keywords": [
+                        "PG20252 vinyl sheet Malaysia",
+                        "checkerboard flooring",
+                        "retro vinyl sheet",
+                        "striped vinyl sheet"
+                    ]
+                },
+                "description": {
+                    "short": "Striped vinyl sheet PG20252 – modern stripe design for Malaysian interiors.",
+                    "long": "If you’re looking to redefine your interior spaces with design-forward flooring, Versafloor Vinyl Sheet PG20252 delivers the bold sophistication your floors deserve. With its sleek striped pattern and durable construction, this vinyl sheet is more than just flooring. It’s a statement piece that sets the tone for modern, minimalist, and elegant interiors across Malaysia."
+                },
+                "features": {
+                    "main_features": [
+                        "Statement-making striped design in a clean, matte vinyl finish",
+                        "Enhances depth and direction in any floor layout",
+                        "Perfect for living rooms, cafés, designer boutiques, office hallways, and entryways",
+                        "Water-resistant, easy to clean, and designed for everyday use",
+                        "Suited for both residential and commercial interiors"
+                    ],
+                    "benefits": [
+                        "Unique striped pattern that elevates the look of any space",
+                        "Scratch-resistant and low-maintenance for busy environments",
+                        "Offers a premium feel at a cost-effective price",
+                        "Withstands heavy foot traffic with ease",
+                        "Blends beautifully with Scandinavian, modern industrial, and minimalist themes"
+                    ],
+                    "design_compatibility": ["Scandinavian", "Modern Industrial", "Minimalist"]
+                },
+                "specifications": {
+                    "waterproof": true,
+                    "slip_resistant": true,
+                    "durability": "10 Years (Residential Use)",
+                    "installation_type": "Glue-down",
+                    "surface_requirement": "Level subfloors like concrete or wood",
+                    "maintenance": "Easy to clean and maintain"
+                },
+                "installation": {
+                    "method": "Glue-down",
+                    "surface_types": ["concrete", "wood"],
+                    "diy_friendly": true,
+                    "professional_recommended": true,
+                    "requirements": [
+                        "Install over-level subfloors like concrete or wood",
+                        "Ensure proper surface preparation for a flawless, long-lasting finish."
+                    ]
+                },
+                "maintenance": {
+                    "cleaning_method": "Easy to clean and maintain",
+                    "special_treatments": "None required",
+                    "no_waxing": true,
+                    "no_polishing": true,
+                    "no_sealants": true
+                },
+                "faqs": [
+                    {
+                        "question": "What is the code for a vinyl sheet?",
+                        "answer": "The code for this design-rich vinyl flooring is PG20252, part of Versafloor’s exclusive pattern series."
+                    },
+                    {
+                        "question": "Is a vinyl sheet suitable for flooring?",
+                        "answer": "Absolutely. Vinyl sheets, such as PG20252, are durable, water-resistant, and easy to install, making them ideal for both homes and commercial spaces."
+                    },
+                    {
+                        "question": "What is Fiberfloor sheet vinyl?",
+                        "answer": "Fiberfloor includes reinforced backing for strength. While PG20252 doesn’t carry the Fiberfloor label, it features robust construction for long-term performance."
+                    },
+                    {
+                        "question": "How do you measure vinyl sheets?",
+                        "answer": "Measure your space’s length and width in meters, and always add 5–10% for trimming and coverage. Need help? Our experts are just a call away."
+                    }
+                ],
+                "call_to_action": {
+                    "primary": "Stand out with your floor design order PG20252 today at Furnishings.",
+                    "secondary": "Contact us or request a quote today.",
+                    "tertiary": "Ready to make a statement?"
+                },
+                "status": "active",
+                "created_at": "2025-07-17",
+                "updated_at": "2025-07-17",
+                "additional_description": {
+                    "headline": "Versafloor Vinyl Sheet PG20252 - Modern Striped Design Flooring for Stylish Malaysian Interiors",
+                    "sections": [
+                        {
+                            "title": "Bring Linear Elegance to Any Room with PG20252",
+                            "content": "Say goodbye to dull floors. The PG20252 vinyl sheet introduces a sophisticated stripe pattern that adds a directional flow and architectural rhythm to your interiors. Whether you're renovating a cozy condo in Kuala Lumpur or styling a boutique in Penang, this patterned vinyl sheet adds a high-end, modern vibe to your space. Statement-making striped design in a clean, matte vinyl finish. Enhances depth and direction in any floor layout. Perfect for living rooms, cafés, designer boutiques, office hallways, and entryways. Water-resistant, easy to clean, and designed for everyday use. Suited for both residential and commercial interiors."
+                        },
+                        {
+                            "title": "Product Details & Specifications",
+                            "content": "Attribute: Product Code, Details: PG20252. Attribute: Design, Details: Linear / Striped Vinyl Sheet. Attribute: Finish, Details: Smooth, matte. Attribute: Water & Slip Resistance, Details: Yes. Attribute: Installation Method, Details: Glue-down. Attribute: Application, Details: Residential / Commercial. Attribute: Country of Origin, Details: Malaysia."
+                        },
+                        {
+                            "title": "Where PG20252 Works Best",
+                            "content": "This striped flooring option adds movement and modernity to interiors, ideal for: Entryways needing a directional visual flow. Living rooms designed around contemporary or minimalist aesthetics. Office corridors and small commercial spaces. Boutiques and café interiors with a creative flair. Any area looking for a bold, pattern-rich vinyl floor design."
+                        },
+                        {
+                            "title": "Benefits of Choosing PG20252 Vinyl Sheet",
+                            "content": "Why choose standard when you can make a design statement? Unique striped pattern that elevates the look of any space. Scratch-resistant and low-maintenance for busy environments. Offers a premium feel at a cost-effective price. Withstands heavy foot traffic with ease. Blends beautifully with Scandinavian, modern industrial, and minimalist themes."
+                        },
+                        {
+                            "title": "Why Furnishings is Your Trusted Vinyl Flooring Source?",
+                            "content": "We bring more than just flooring. We bring expertise. Official Versafloor partner with quality assurance. Nationwide shipping across Malaysia. Expert advice on choosing the right vinyl designs. Responsive customer service with a people-first approach. Explore bold flooring with personality. Choose PG20252 today."
+                        },
+                        {
+                            "title": "Final Take: Redefine Your Floors with Design-First Vinyl",
+                            "content": "With Versafloor PG20252, your space gains more than just a new floor. It gains a new identity. Combining bold modern stripes, practical durability, and aesthetic appeal, this vinyl sheet is ideal for Malaysian homeowners, designers, and commercial property owners who want their floors to reflect their style. Ready to make a statement? Contact us or request a quote today."
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "product": {
+                "id": "PG20253",
+                "name": "Versafloor Vinyl Sheet PG20253",
+                "slug": "/checkerboard-vinyl-flooring-malaysia-pg20253",
+                "category": "Vinyl Sheet Flooring",
+                "brand": "Versafloor",
+                "images": {
+                    "main_image": "/vinyal_sheet/PG-20253.webp",
+                    "gallery": ["/vinyal_sheet/PG-20253.webp"],
+                    "thumbnails": ["/vinyal_sheet/PG-20253.webp"],
+                    "alt_texts": [
+                        "Versafloor PG20253 checkerboard vinyl sheet in retro Malaysian interior",
+                        "Classic checkerboard vinyl flooring by Versafloor. PG20253 brings vintage charm to Malaysian interiors. Stylish, durable & easy to clean — shop now.",
+                        "Bring back the bold with Versafloor PG20253, a vintage checkerboard vinyl sheet that blends 1950s flair with today’s flooring functionality.",
+                        "Whether you're styling a nostalgic café, updating your home kitchen, or giving your studio a punch of personality, this black-and-white checker pattern delivers the drama and durability Malaysian interiors demand."
+                    ]
+                },
+                "seo": {
+                    "meta_title": "Versafloor PG20253 | Retro Checkerboard Vinyl Flooring MY",
+                    "meta_description": "Checkerboard vinyl sheet PG20253 – retro style vinyl for Malaysia.",
+                    "keywords": [
+                        "PG20253 vinyl sheet Malaysia",
+                        "checkerboard flooring",
+                        "retro vinyl sheet"
+                    ]
+                },
+                "description": {
+                    "short": "Classic checkerboard vinyl flooring by Versafloor. PG20253 brings vintage charm to Malaysian interiors. Stylish, durable & easy to clean — shop now.",
+                    "long": "Bring back the bold with Versafloor PG20253, a vintage checkerboard vinyl sheet that blends 1950s flair with today’s flooring functionality. Whether you're styling a nostalgic café, updating your home kitchen, or giving your studio a punch of personality, this black-and-white checker pattern delivers the drama and durability Malaysian interiors demand."
+                },
+                "features": {
+                    "main_features": [
+                        "Bold contrast for kitchens, entryways, diners, cafés, or statement studios",
+                        "Inspired by 1950s floor design trends in Malaysia",
+                        "Smooth matte finish for a clean, stylish surface",
+                        "Fully waterproof and slip-resistant – built for real life",
+                        "Easy to clean and maintain – perfect for busy, high-traffic spaces"
+                    ],
+                    "benefits": [
+                        "High visual impact with a nostalgic yet modern twist",
+                        "Low-maintenance flooring that stands up to spills, scuffs, and everyday foot traffic",
+                        "Adds depth and style to bland interiors without overwhelming them",
+                        "Pairs well with minimalist, retro, or industrial decor themes",
+                        "A resilient choice for design-led, functional spaces"
+                    ],
+                    "design_compatibility": ["Minimalist", "Retro", "Industrial"]
+                },
+                "specifications": {
+                    "waterproof": true,
+                    "slip_resistant": true,
+                    "durability": "10 Years (Residential Use)",
+                    "installation_type": "Glue-down",
+                    "surface_requirement": "Level subfloors like concrete or wood",
+                    "maintenance": "Easy to clean and maintain"
+                },
+                "installation": {
+                    "method": "Glue-down",
+                    "surface_types": ["concrete", "wood"],
+                    "diy_friendly": true,
+                    "professional_recommended": true,
+                    "requirements": [
+                        "Install over-level subfloors like concrete or wood",
+                        "Ensure proper surface preparation for a flawless, long-lasting finish."
+                    ]
+                },
+                "maintenance": {
+                    "cleaning_method": "Easy to clean and maintain",
+                    "special_treatments": "None required",
+                    "no_waxing": true,
+                    "no_polishing": true,
+                    "no_sealants": true
+                },
+                "faqs": [
+                    {
+                        "question": "What is the code for a vinyl sheet?",
+                        "answer": "This product’s code is PG20253, a standout from the Versafloor vinyl sheet Malaysia collection."
+                    },
+                    {
+                        "question": "What is sheet vinyl used for?",
+                        "answer": "Sheet vinyl is perfect for residential and commercial spaces. PG20253 offers waterproof, easy-clean performance wrapped in retro vinyl sheet style."
+                    },
+                    {
+                        "question": "What is Fiberfloor sheet vinyl?",
+                        "answer": "Fiberfloor includes a fiberglass core for extra softness and stability. While PG20253 doesn’t include this feature, it’s engineered for resilience and long-term use."
+                    },
+                    {
+                        "question": "Can sheet vinyl be repaired?",
+                        "answer": "Yes! Minor damage can often be patched using vinyl repair kits. Plus, PG20253’s durable wear layer resists most day-to-day wear and tear."
+                    }
+                ],
+                "call_to_action": {
+                    "primary": "Want retro vibes that last? Order PG20253 now.",
+                    "secondary": "Request a quote",
+                    "tertiary": "Talk to our design team. See how vintage can lead the modern trend."
+                },
+                "status": "active",
+                "created_at": "2025-07-17",
+                "updated_at": "2025-07-17",
+                "additional_description": {
+                    "headline": "Versafloor Vinyl Sheet PG20253 - Retro Checkerboard Style for Bold Malaysian Interiors",
+                    "sections": [
+                        {
+                            "title": "Step Back in Style with PG20253’s Iconic Checkerboard Design",
+                            "content": "Turn heads and ground your space in character with this classic tile-inspired vinyl floor. The black and white checkerboard design makes a strong statement, capturing the essence of retro interiors while complementing modern or industrial aesthetics. Bold contrast for kitchens, entryways, diners, cafés, or statement studios. Inspired by 1950s floor design trends in Malaysia. Smooth matte finish for a clean, stylish surface. Fully waterproof and slip-resistant – built for real life. Easy to clean and maintain – perfect for busy, high-traffic spaces. Whether you’re renovating a heritage home or bringing a pop of pattern to a modern apartment, PG20253 is your go-to retro floor solution."
+                        },
+                        {
+                            "title": "Key Specifications",
+                            "content": "Product Code: PG20253. Pattern: Checkerboard (Black & White). Finish: Smooth matte vinyl. Water-resistant: Yes. Installation: Glue-down vinyl sheet. Ideal For: Residential kitchens, cafés, salons, retail stores, creative rooms. Manufactured in: Malaysia."
+                        },
+                        {
+                            "title": "Why Choose Checkerboard Vinyl Flooring?",
+                            "content": "Checkerboard flooring isn’t just a trend. It’s a design staple that speaks volumes. Here's why PG20253 is turning heads: High visual impact with a nostalgic yet modern twist. Low-maintenance flooring that stands up to spills, scuffs, and everyday foot traffic. Adds depth and style to bland interiors without overwhelming them. Pairs well with minimalist, retro, or industrial decor themes. A resilient choice for design-led, functional spaces. Transform your space with PG20253, featuring a classic design and modern durability."
+                        },
+                        {
+                            "title": "Design Inspiration: Where to Use PG20253",
+                            "content": "Get creative! The checker pattern brings vibrant character wherever it's placed: Retro kitchen revamps. Hip cafés or bistros. Studios, workshops, or laundry rooms. Salons or boutique retail with flair. Vintage-style home entryways or bathrooms. If your space needs vintage energy with modern ease, PG20253 is the perfect fit."
+                        },
+                        {
+                            "title": "Why Buy PG20253 from Furnishings.com?",
+                            "content": "We’re more than just a supplier. We’re your design ally. Official distributor of Versafloor vinyl sheet in Malaysia. Reliable shipping + responsive design assistance. 100% authentic materials – no compromises. Simple online quote requests and expert consultation."
+                        },
+                        {
+                            "title": "The Final Word: Vintage Floors. Modern Performance.",
+                            "content": "With PG20253, you don’t just install flooring, you make a statement. Let this vintage vinyl flooring Malaysia classic reimagine your space with retro soul and resilient design. It's timeless, practical, and ideally in step with today's retro interior trends. Request a quote. Talk to our design team. See how vintage can lead the modern trend."
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "product": {
+                "id": "PG20254",
+                "name": "Versafloor Vinyl Sheet PG20254",
+                "slug": "versafloor-vinyl-sheet-pg20254",
+                "category": "Vinyl Sheet Flooring",
+                "brand": "Versafloor",
+                "images": {
+                    "main_image": "/vinyal_sheet/PG-20254.webp",
+                    "gallery": ["/vinyal_sheet/PG-20254.webp"],
+                    "thumbnails": ["/vinyal_sheet/PG-20254.webp"],
+                    "alt_texts": [
+                        "Versafloor PG20254 geometric vinyl sheet in modern Malaysian interior",
+                        "PG20254 geometric vinyl sheet blends modern patterns with durable performance. Ideal for stylish Malaysian homes. Easy to clean, striking in any space.",
+                        "If you’re ready to take your space from ordinary to outstanding, the Versafloor Vinyl Sheet PG20254 is your go-to solution.",
+                        "With its bold geometric pattern, modern edge, and practical performance, this sheet vinyl is perfect for stylish Malaysian homes, creative studios, and commercial interiors that demand attention."
+                    ]
+                },
+                "seo": {
+                    "meta_title": "Versafloor PG20254 Vinyl | Geometric Pattern Flooring MY",
+                    "meta_description": "Geometric vinyl sheet PG20254 – stylish patterns for Malaysian homes.",
+                    "keywords": [
+                        "PG20254 vinyl sheet Malaysia",
+                        "geometric flooring",
+                        "patterned vinyl sheet"
+                    ]
+                },
+                "description": {
+                    "short": "PG20254 geometric vinyl sheet blends modern patterns with durable performance. Ideal for stylish Malaysian homes. Easy to clean, striking in any space.",
+                    "long": "If you’re ready to take your space from ordinary to outstanding, the Versafloor Vinyl Sheet PG20254 is your go-to solution. With its bold geometric pattern, modern edge, and practical performance, this sheet vinyl is perfect for stylish Malaysian homes, creative studios, and commercial interiors that demand attention. Designed for visual impact and built for daily durability, PG20254 is the ultimate blend of artistic flair and functional flooring."
+                },
+                "features": {
+                    "main_features": [
+                        "Bold, symmetrical geometric designs that create depth and flow",
+                        "Ideal for eye-catching floors in living rooms, home offices, cafés, or studios",
+                        "Durable, waterproof, and scratch-resistant for practical, long-term use",
+                        "Easy to clean and maintain, perfect for high-traffic interiors",
+                        "A fresh take on modern vinyl sheet design, sleek, modular, and memorable"
+                    ],
+                    "benefits": [
+                        "Statement style: Bold patterns create stunning focal points in any room",
+                        "Durable performance: Waterproof, stain-resistant, and scratch-proof",
+                        "Low maintenance: Just sweep and mop—no heavy upkeep needed",
+                        "Architectural impact: Mimics the elegance of tiles or stone with vinyl’s flexibility",
+                        "Cost-effective beauty: High-end design without the high-end price tag"
+                    ],
+                    "design_compatibility": ["Minimalist", "Modern", "Industrial", "Scandinavian"]
+                },
+                "specifications": {
+                    "waterproof": true,
+                    "slip_resistant": true,
+                    "durability": "10 Years (Residential Use)",
+                    "installation_type": "Glue-down",
+                    "surface_requirement": "Level subfloors like concrete or wood",
+                    "maintenance": "Easy to clean and maintain"
+                },
+                "installation": {
+                    "method": "Glue-down",
+                    "surface_types": ["concrete", "wood"],
+                    "diy_friendly": true,
+                    "professional_recommended": true,
+                    "requirements": [
+                        "Install over-level subfloors like concrete or wood",
+                        "Ensure proper surface preparation for a flawless, long-lasting finish."
+                    ]
+                },
+                "maintenance": {
+                    "cleaning_method": "Easy to clean and maintain",
+                    "special_treatments": "None required",
+                    "no_waxing": true,
+                    "no_polishing": true,
+                    "no_sealants": true
+                },
+                "faqs": [
+                    {
+                        "question": "What is the code for a vinyl sheet?",
+                        "answer": "The code for this geometric flooring design is PG20254, part of the Versafloor premium collection."
+                    },
+                    {
+                        "question": "What is sheet vinyl used for?",
+                        "answer": "Sheet vinyl like PG20254 is ideal for moisture-resistant, decorative flooring in homes, studios, or light commercial areas."
+                    },
+                    {
+                        "question": "What is Fiberfloor sheet vinyl?",
+                        "answer": "Fiberfloor is a reinforced vinyl flooring with fiberglass backing. PG20254 offers reliable performance even without fiberglass, thanks to its high-grade composition."
+                    },
+                    {
+                        "question": "Can sheet vinyl be repaired?",
+                        "answer": "Yes, minor scuffs or scratches can be patched. That said, PG20254 is designed to withstand everyday wear, so repairs are rarely necessary."
+                    }
+                ],
+                "call_to_action": {
+                    "primary": "Order now and experience the difference.",
+                    "secondary": "Request a sample or quote before making a decision.",
+                    "tertiary": "Chat with our vinyl experts and bring your floor plan to life."
+                },
+                "status": "active",
+                "created_at": "2025-07-17",
+                "updated_at": "2025-07-17",
+                "additional_description": {
+                    "headline": "Versafloor Vinyl Sheet PG20254 - Geometric Vinyl Flooring That Elevates Your Interior",
+                    "sections": [
+                        {
+                            "title": "Add Artistic Dimension to Any Space with PG20254",
+                            "content": "The PG20254 isn’t just a floor covering. It’s a visual statement. Bold, symmetrical geometric designs that create depth and flow. Ideal for eye-catching floors in living rooms, home offices, cafés, or studios. Durable, waterproof, and scratch-resistant for practical, long-term use. Easy to clean and maintain, perfect for high-traffic interiors. A fresh take on modern vinyl sheet design, sleek, modular, and memorable. Whether you're aiming for a chic minimalist look or an artistic edge, this contemporary pattern floor sheet is crafted to amplify your interior design without compromising on quality."
+                        },
+                        {
+                            "title": "PG20254 Product Details",
+                            "content": "Product Code: PG20254. Finish: Smooth vinyl with a printed geometric design. Pattern: Contemporary, abstract, or symmetrical (see product visuals). Use Case: Ideal for residential and light commercial applications. Installation: Glue-down vinyl sheet flooring. Origin: Proudly made in Malaysia. Supplier: Furnishings, a trusted Malaysian vinyl sheet supplier."
+                        },
+                        {
+                            "title": "Where PG20254 Looks Best",
+                            "content": "Let PG20254 bring modern geometry to life in your favorite spaces: Minimalist Malaysian homes with neutral tones and clean layouts. Creative studios, art spaces, or co-working areas needing bold character. Hallways, foyers, or entrance areas where first impressions count. Boutique commercial interiors, including fashion shops or modern cafés. From soft neutrals to bold palettes, PG20254 complements any modern design vision seamlessly."
+                        },
+                        {
+                            "title": "Why Choose PG20254 Geometric Vinyl Flooring?",
+                            "content": "Statement style: Bold patterns create stunning focal points in any room. Durable performance: Waterproof, stain-resistant, and scratch-proof. Low maintenance: Just sweep and mop—no heavy upkeep needed. Architectural impact: Mimics the elegance of tiles or stone with vinyl’s flexibility. Cost-effective beauty: High-end design without the high-end price tag. Want bold style underfoot? Get PG20254 vinyl sheet now from Furnishings."
+                        },
+                        {
+                            "title": "Why Furnishings is Your Source for Stylish Vinyl",
+                            "content": "At Furnishings, we make it easy to transform your interiors with premium flooring: Authentic Versafloor vinyl direct from trusted Malaysian sources. Expert guidance from flooring specialists who understand design and durability. Responsive support and fast delivery across Malaysia. Option to order samples, request quotes, or chat live with our team. Shop confidently. Style with purpose. Choose PG20254 today."
+                        },
+                        {
+                            "title": "Create a Floor That’s Anything but Flat",
+                            "content": "Forget dull surfaces. PG20254 is interior design vinyl with a voice—an artistic rhythm that turns every step into an experience. Whether you're a designer, renovator, or first-time homeowner, this artistic floor vinyl brings your vision to life. Order now and experience the difference. Request a sample or quote before making a decision. Chat with our vinyl experts and bring your floor plan to life."
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "product": {
+                "id": "PG20255",
+                "name": "Versafloor Vinyl Sheet PG20255",
+                "slug": "abstract-artistic-vinyl-flooring-malaysia-pg20255",
+                "category": "Vinyl Sheet Flooring",
+                "brand": "Versafloor",
+                "images": {
+                    "main_image": "/vinyal_sheet/PG-20255.webp",
+                    "gallery": ["/vinyal_sheet/PG-20255.webp"],
+                    "thumbnails": ["/vinyal_sheet/PG-20255.webp"],
+                    "alt_texts": [
+                        "Versafloor PG20255 abstract vinyl sheet in modern Malaysian interior",
+                        "PG20255 by Versafloor brings abstract artistry to vinyl flooring in Malaysia. Make your space stand out with bold, expressive floor design. Explore now.",
+                        "If your space craves personality, PG20255 vinyl sheet Malaysia is the bold answer. Designed with expressive, abstract patterns, this artistic vinyl sheet injects style, flair, and originality into any interior.",
+                        "Inspired by modern art, each sheet features a unique painterly design that gives your floor the feeling of a curated gallery."
+                    ]
+                },
+                "seo": {
+                    "meta_title": "Versafloor PG20255 | Abstract Artistic Vinyl Flooring MY",
+                    "meta_description": "Abstract vinyl sheet PG20255 – artistic vinyl for Malaysian interiors.",
+                    "keywords": [
+                        "PG20255 vinyl sheet Malaysia",
+                        "abstract flooring",
+                        "artistic vinyl sheet"
+                    ]
+                },
+                "description": {
+                    "short": "PG20255 by Versafloor brings abstract artistry to vinyl flooring in Malaysia. Make your space stand out with bold, expressive floor design. Explore now.",
+                    "long": "If your space craves personality, PG20255 vinyl sheet Malaysia is the bold answer. Designed with expressive, abstract patterns, this artistic vinyl sheet injects style, flair, and originality into any interior. Inspired by modern art, each sheet features a unique painterly design that gives your floor the feeling of a curated gallery. Whether you’re designing a boutique, a statement-making living room, or an inspiring workspace, this creative vinyl floor Malaysia instantly transforms dull floors into vibrant expressions of taste. Made for dreamers, decorators, and those who dare to make daring design choices, PG20255 adds sophistication while remaining durable, waterproof, and easy to maintain — a seamless blend of modern vinyl flooring design and everyday functionality."
+                },
+                "features": {
+                    "main_features": [
+                        "Bold, symmetrical geometric designs that create depth and flow",
+                        "Ideal for eye-catching floors in living rooms, home offices, cafés, or studios",
+                        "Durable, waterproof, and scratch-resistant for practical, long-term use",
+                        "Easy to clean and maintain, perfect for high-traffic interiors",
+                        "A fresh take on modern vinyl sheet design, sleek, modular, and memorable"
+                    ],
+                    "benefits": [
+                        "Transforms rooms into art – Express your personality with flooring that defies the ordinary",
+                        "Low-maintenance luxury – Wipe-clean surfaces perfect for Malaysian humidity",
+                        "Tough & traffic-ready – Built to handle busy spaces with wear-resistant construction",
+                        "Affordably artistic – Achieve designer looks without designer prices"
+                    ],
+                    "design_compatibility": ["Minimalist", "Modern", "Artistic", "Scandinavian"]
+                },
+                "specifications": {
+                    "waterproof": true,
+                    "slip_resistant": true,
+                    "durability": "10 Years (Residential Use)",
+                    "installation_type": "Glue-down",
+                    "surface_requirement": "Smooth, level cement or plywood base",
+                    "maintenance": "Easy to clean and maintain"
+                },
+                "installation": {
+                    "method": "Glue-down",
+                    "surface_types": ["cement", "plywood"],
+                    "diy_friendly": true,
+                    "professional_recommended": true,
+                    "requirements": [
+                        "Use a smooth, level cement or plywood base",
+                        "Ensure proper surface preparation for a flawless, long-lasting finish.",
+                        "Can add thin foam or felt for additional softness"
+                    ]
+                },
+                "maintenance": {
+                    "cleaning_method": "Wipe-clean surfaces",
+                    "special_treatments": "None required",
+                    "no_waxing": true,
+                    "no_polishing": true,
+                    "no_sealants": true
+                },
+                "faqs": [
+                    {
+                        "question": "Is a vinyl sheet suitable for flooring?",
+                        "answer": "Yes. It’s durable, moisture-resistant, and easy to clean, ideal for Malaysian homes and commercial spaces."
+                    },
+                    {
+                        "question": "What is the code for a vinyl sheet?",
+                        "answer": "This abstract vinyl floor's code is PG20255."
+                    },
+                    {
+                        "question": "What kind of underlayment is used for vinyl sheet?",
+                        "answer": "Use a smooth, level cement or plywood base. You can add thin foam or felt for additional softness."
+                    },
+                    {
+                        "question": "How do you measure vinyl sheets?",
+                        "answer": "Measure your room’s length and width, and add 5–10% for trimming. PG20255 is available in cut-to-fit rolls."
+                    }
+                ],
+                "call_to_action": {
+                    "primary": "Create art beneath your feet. Order PG20255 today.",
+                    "secondary": "Explore abstract vinyl designs.",
+                    "tertiary": "Request a design consultation. Book your PG20255 order before it sells out."
+                },
+                "status": "active",
+                "created_at": "2025-07-17",
+                "updated_at": "2025-07-17",
+                "additional_description": {
+                    "headline": "Versafloor Vinyl Sheet PG20255 - Artistic Abstract Flooring for Modern Malaysian Spaces",
+                    "sections": [
+                        {
+                            "title": "Make a Bold Statement with PG20255",
+                            "content": "Unleash creativity through a floor that speaks in strokes and swirls. If your space craves personality, PG20255 vinyl sheet Malaysia is the bold answer. Designed with expressive, abstract patterns, this artistic vinyl sheet injects style, flair, and originality into any interior. Inspired by modern art, each sheet features a unique painterly design that gives your floor the feeling of a curated gallery. Whether you’re designing a boutique, a statement-making living room, or an inspiring workspace, this creative vinyl floor Malaysia instantly transforms dull floors into vibrant expressions of taste. Made for dreamers, decorators, and those who dare to make daring design choices, PG20255 adds sophistication while remaining durable, waterproof, and easy to maintain — a seamless blend of modern vinyl flooring design and everyday functionality. “Perfect for designers who want their floors to do more than just support a room —they define it.”"
+                        },
+                        {
+                            "title": "Product Specifications",
+                            "content": "Product Code: PG20255. Design Style: Abstract / Artistic. Surface: Matte, textured finish. Water-Resistant: Yes. Installation: Glue-down. Application: Residential & creative commercial spaces. Made in: Malaysia."
+                        },
+                        {
+                            "title": "Where PG20255 Works Best",
+                            "content": "Designer apartments. Artistic homes and studios. Boutique retail interiors. Statement cafés and creative lounges. Gallery entryways and expressive commercial zones. If you want bold, artistic interiors that make a lasting impression, this floor is your ideal canvas."
+                        },
+                        {
+                            "title": "Why Choose Abstract Vinyl Flooring?",
+                            "content": "Transforms rooms into art – Express your personality with flooring that defies the ordinary. Low-maintenance luxury – Wipe-clean surfaces perfect for Malaysian humidity. Tough & traffic-ready – Built to handle busy spaces with wear-resistant construction. Affordably artistic – Achieve designer looks without designer prices. Looking for flooring with personality? Choose PG20255 now at Furnishings."
+                        },
+                        {
+                            "title": "Why Buy PG20255 from Furnishings.com?",
+                            "content": "Official Versafloor supplier in Malaysia. Quick delivery and expert support. Secure online inquiries and simple checkout. Access to a wide range of decorative sheet vinyl options. Create art beneath your feet. Order PG20255 today."
+                        },
+                        {
+                            "title": "The Final Word: Flooring as Creative Expression",
+                            "content": "PG20255 doesn’t just cover your floor, it elevates your entire interior. With every brushstroke-inspired swirl and abstract touch, it brings depth, energy, and artistic vision into your everyday spaces. Whether you're decorating a gallery loft, redesigning your living room, or refreshing your studio, this premium vinyl flooring Malaysia makes your floor the centerpiece. Explore abstract vinyl designs. Request a design consultation. Book your PG20255 order before it sells out."
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "product": {
+                "id": "PG20256",
+                "name": "Versafloor Vinyl Sheet PG20256",
+                "slug": "versafloor-vinyl-sheet-pg20256",
+                "category": "Vinyl Sheet Flooring",
+                "brand": "Versafloor",
+                "images": {
+                    "main_image": "/vinyal_sheet/PG-20256.webp",
+                    "gallery": ["/vinyal_sheet/PG-20256.webp"],
+                    "thumbnails": ["/vinyal_sheet/PG-20256.webp"],
+                    "alt_texts": [
+                        "Versafloor PG20256 rustic vinyl sheet in Malaysian interior",
+                        "Rustic vinyl sheet PG20256 – earthy textures for Malaysian homes.",
+                        "Transform your interiors with the rich, earthy beauty of Versafloor PG20256 vinyl sheet Malaysia. Designed to replicate the essence of weathered wood and textured stone, this rustic flooring option invites nature indoors, without compromising on performance.",
+                        "Whether you're creating a countryside-inspired home, a cozy café, or a wellness retreat, PG20256 delivers the perfect blend of rustic elegance and everyday durability."
+                    ]
+                },
+                "seo": {
+                    "meta_title": "Versafloor Vinyl Sheet PG20256 | Rustic Vinyl Flooring Malaysia",
+                    "meta_description": "Rustic vinyl sheet PG20256 – earthy textures for Malaysian homes.",
+                    "keywords": [
+                        "PG20256 vinyl sheet Malaysia",
+                        "rustic flooring",
+                        "natural texture vinyl"
+                    ]
+                },
+                "description": {
+                    "short": "Rustic vinyl sheet PG20256 – earthy textures for Malaysian homes. Transform your space with nature-inspired, durable vinyl flooring from Versafloor.",
+                    "long": "Transform your interiors with the rich, earthy beauty of Versafloor PG20256 vinyl sheet Malaysia. Designed to replicate the essence of weathered wood and textured stone, this rustic flooring option invites nature indoors, without compromising on performance. Whether you're creating a countryside-inspired home, a cozy café, or a wellness retreat, PG20256 delivers the perfect blend of rustic elegance and everyday durability."
+                },
+                "features": {
+                    "main_features": [
+                        "Inspired by nature: wood grain detail and stone-like patterning",
+                        "Perfect for cozy homes, countryside cafés, or creative studios",
+                        "Built to last: water-resistant, scratch-resistant, and low maintenance",
+                        "A harmony of traditional design with modern vinyl flooring technology"
+                    ],
+                    "benefits": [
+                        "Looks like wood or stone – without the upkeep",
+                        "Easy maintenance – simply sweep and mop",
+                        "Scratch, spill, and stain-resistant – perfect for busy homes",
+                        "Comfortable underfoot – warm tone vinyl sheet for serene living",
+                        "Waterproof rustic flooring option – great for Malaysian humidity"
+                    ],
+                    "design_compatibility": ["Rustic", "Country", "Modern", "Scandinavian"]
+                },
+                "specifications": {
+                    "waterproof": true,
+                    "slip_resistant": true,
+                    "durability": "10 Years (Residential Use)",
+                    "installation_type": "Glue-down",
+                    "surface_requirement": "Smooth concrete or plywood subfloors",
+                    "maintenance": "Easy to clean and maintain"
+                },
+                "installation": {
+                    "method": "Glue-down",
+                    "surface_types": ["concrete", "plywood"],
+                    "diy_friendly": true,
+                    "professional_recommended": true,
+                    "requirements": [
+                        "Use smooth concrete or plywood subfloors",
+                        "Ensure proper surface preparation for a flawless, long-lasting finish.",
+                        "A thin underlayment may improve comfort and sound reduction"
+                    ]
+                },
+                "maintenance": {
+                    "cleaning_method": "Sweep and mop",
+                    "special_treatments": "None required",
+                    "no_waxing": true,
+                    "no_polishing": true,
+                    "no_sealants": true
+                },
+                "faqs": [
+                    {
+                        "question": "What is the code for a vinyl sheet?",
+                        "answer": "The product code for this rustic vinyl flooring design is PG20256."
+                    },
+                    {
+                        "question": "Is a vinyl sheet suitable for flooring?",
+                        "answer": "Absolutely. It's a durable, waterproof, and low-maintenance choice, especially suited for Malaysian interiors."
+                    },
+                    {
+                        "question": "What kind of underlayment is best for vinyl sheet?",
+                        "answer": "Use smooth concrete or plywood subfloors. A thin underlayment may improve comfort and sound reduction."
+                    },
+                    {
+                        "question": "How do you measure vinyl sheets?",
+                        "answer": "Measure the length and width of your room, then add 5–10% for cutting and fitting. Check with your supplier for roll sizes."
+                    }
+                ],
+                "call_to_action": {
+                    "primary": "Bring the outdoors in. Make PG20256 your next design choice.",
+                    "secondary": "Request a sample today.",
+                    "tertiary": "Book a consultation with our flooring experts. Order securely online at Furnishings."
+                },
+                "status": "active",
+                "created_at": "2025-07-17",
+                "updated_at": "2025-07-17",
+                "additional_description": {
+                    "headline": "Versafloor Vinyl Sheet PG20256 – Rustic Warmth with Natural Texture for Malaysian Interiors",
+                    "sections": [
+                        {
+                            "title": "Add Earthy Charm with PG20256 Rustic Vinyl",
+                            "content": "Let your floors tell a story of warmth, texture, and timeless appeal. The PG20256 vinyl sheet features a natural-textured vinyl surface in soothing warm tones, ideal for Malaysian spaces that celebrate tranquility and organic design. Crafted for both residential charm and light commercial function, this vinyl sheet with rustic design adapts effortlessly to interiors inspired by woodlands, homesteads, or rural escapes. Inspired by nature: wood grain detail and stone-like patterning. Perfect for cozy homes, countryside cafés, or creative studios. Built to last: water-resistant, scratch-resistant, and low maintenance. A harmony of traditional design with modern vinyl flooring technology."
+                        },
+                        {
+                            "title": "Product Specifications",
+                            "content": "Product Code: PG20256. Finish: Textured, matte rustic surface. Color Tone: Warm, natural earth-inspired shades. Waterproof: Yes. Application: Home or light commercial. Installation: Glue-down vinyl sheet. Origin: Malaysia."
+                        },
+                        {
+                            "title": "Where PG20256 Makes the Biggest Impact",
+                            "content": "Looking to infuse your interior with rustic charm? Here's where PG20256 truly shines: Living rooms with wooden or earthy accents. Rustic-style kitchens or family dining spaces. Countryside retreats and vacation homes. Boutique shops, wellness studios, and creative workspaces. Each space becomes a grounded, comforting environment, enhanced by the earthy vinyl flooring that Malaysia loves for both its beauty and functionality."
+                        },
+                        {
+                            "title": "Why Choose PG20256 Vinyl Sheet?",
+                            "content": "When choosing flooring that speaks to your aesthetic and lifestyle, PG20256 delivers: Looks like wood or stone – without the upkeep. Easy maintenance – simply sweep and mop. Scratch, spill, and stain-resistant – perfect for busy homes. Comfortable underfoot – warm tone vinyl sheet for serene living. Waterproof rustic flooring option – great for Malaysian humidity. Add grounded elegance to your space. Shop PG20256 now on Furnishings."
+                        },
+                        {
+                            "title": "Why Buy PG20256 from Furnishings?",
+                            "content": "When you purchase from Furnishings, you’re not just buying flooring, you’re investing in service and expertise: Official Versafloor distributor. Local Malaysian stock and timely delivery. Expert advice from our vinyl specialists. Trusted by designers and renovators nationwide. Bring the outdoors in. Make PG20256 your next design choice."
+                        },
+                        {
+                            "title": "Final Word: Rustic Design Meets Modern Performance",
+                            "content": "Versafloor PG20256 isn’t just flooring. It’s a design statement. With its nature-inspired textures, soothing color palette, and advanced vinyl durability, it strikes a balance between rustic charm and modern ease. Create warm, welcoming interiors that last. Request a sample today. Book a consultation with our flooring experts. Order securely online at Furnishings."
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "product": {
+                "id": "PG20257",
+                "name": "Versafloor Vinyl Sheet PG20257",
+                "slug": "versafloor-vinyl-sheet-pg20257",
+                "category": "Vinyl Sheet Flooring",
+                "brand": "Versafloor",
+                "images": {
+                    "main_image": "/vinyal_sheet/PG-20257.webp",
+                    "gallery": ["/vinyal_sheet/PG-20257.webp"],
+                    "thumbnails": ["/vinyal_sheet/PG-20257.webp"],
+                    "alt_texts": [
+                        "Versafloor PG20257 patterned vinyl sheet in modern Malaysian interior",
+                        "Patterned vinyl sheet PG20257 – decorative flooring for Malaysian spaces.",
+                        "If your space feels uninspired, it’s time to introduce a floor that speaks design. The Versafloor Vinyl Sheet PG20257 brings vibrant energy and artistic texture to any interior.",
+                        "This stylish, patterned vinyl sheet is designed for Malaysian homeowners, decorators, and commercial spaces that seek both visual appeal and functional durability."
+                    ]
+                },
+                "seo": {
+                    "meta_title": "Versafloor Vinyl Sheet PG20257 | Patterned Vinyl Flooring Malaysia",
+                    "meta_description": "Patterned vinyl sheet PG20257 – decorative flooring for Malaysian spaces.",
+                    "keywords": [
+                        "PG20257 vinyl sheet Malaysia",
+                        "patterned flooring",
+                        "design vinyl sheet"
+                    ]
+                },
+                "description": {
+                    "short": "PG20257 patterned vinyl sheet brings vibrant, decorative design to Malaysian homes and businesses. Durable, waterproof, and stylish – shop now at Furnishings.",
+                    "long": "If your space feels uninspired, it’s time to introduce a floor that speaks design. The Versafloor Vinyl Sheet PG20257 brings vibrant energy and artistic texture to any interior. This stylish, patterned vinyl sheet is designed for Malaysian homeowners, decorators, and commercial spaces that seek both visual appeal and functional durability. Whether you're redesigning a cozy studio, a bold retail space, or a lifestyle-themed living room, PG20257 vinyl sheet Malaysia is your go-to solution for turning ordinary floors into a statement."
+                },
+                "features": {
+                    "main_features": [
+                        "Design-rich, patterned vinyl flooring is ideal for both residential and commercial settings.",
+                        "Perfect for feature areas, boutique entrances, creative workspaces, and more",
+                        "Designed with modern taste in mind and manufactured for longevity",
+                        "Fully water-resistant, with a smooth matte surface that's easy to clean",
+                        "Ideal for Malaysia’s tropical conditions, built to endure daily wear"
+                    ],
+                    "benefits": [
+                        "Artful flair with its bold, decorative design",
+                        "Durable wear, made for high-traffic environments",
+                        "Low maintenance – simply wipe and go",
+                        "Resilient surface, resistant to scratches and moisture",
+                        "A designer’s dream, without the high-end cost"
+                    ],
+                    "design_compatibility": ["Modern", "Minimalist", "Artistic", "Scandinavian"]
+                },
+                "specifications": {
+                    "waterproof": true,
+                    "slip_resistant": true,
+                    "durability": "10 Years (Residential Use)",
+                    "installation_type": "Glue-down",
+                    "surface_requirement": "Smooth concrete or plywood subfloors",
+                    "maintenance": "Easy to clean and maintain"
+                },
+                "installation": {
+                    "method": "Glue-down",
+                    "surface_types": ["concrete", "plywood"],
+                    "diy_friendly": true,
+                    "professional_recommended": true,
+                    "requirements": [
+                        "Use smooth concrete or plywood subfloors",
+                        "Ensure proper surface preparation for a flawless, long-lasting finish."
+                    ]
+                },
+                "maintenance": {
+                    "cleaning_method": "Wipe-clean surfaces",
+                    "special_treatments": "None required",
+                    "no_waxing": true,
+                    "no_polishing": true,
+                    "no_sealants": true
+                },
+                "faqs": [
+                    {
+                        "question": "What is the code for a vinyl sheet?",
+                        "answer": "The code is PG20257, a part of the Versafloor decorative vinyl collection."
+                    },
+                    {
+                        "question": "Is a vinyl sheet suitable for flooring?",
+                        "answer": "Absolutely. Vinyl sheets, such as PG20257, are excellent for homes and businesses due to their durability, waterproof nature, and ease of care."
+                    },
+                    {
+                        "question": "What is Fiberfloor sheet vinyl?",
+                        "answer": "Fiberfloor contains a fiberglass core for extra stability. PG20257 does not have this feature, but still provides outstanding performance and comfort underfoot."
+                    },
+                    {
+                        "question": "What is vinyl sheet piling?",
+                        "answer": "That’s a construction term unrelated to flooring. PG20257 is a decorative vinyl flooring sheet, not used for structural piling."
+                    }
+                ],
+                "call_to_action": {
+                    "primary": "Give your interior a fresh, patterned finish. Order PG20257 today!",
+                    "secondary": "Request a quote",
+                    "tertiary": "Ask for a sample. Book a flooring consultation today."
+                },
+                "status": "active",
+                "created_at": "2025-07-17",
+                "updated_at": "2025-07-17",
+                "additional_description": {
+                    "headline": "Versafloor Vinyl Sheet PG20257 – Stylish Patterned Vinyl for Creative Malaysian Interiors",
+                    "sections": [
+                        {
+                            "title": "Add Personality to Every Step with PG20257",
+                            "content": "Let your floors do the talking. The PG20257 patterned vinyl sheet offers a tasteful blend of decorative design and practical performance, specifically designed for the diverse needs of Malaysian interiors. Design-rich, patterned vinyl flooring is ideal for both residential and commercial settings. Perfect for feature areas, boutique entrances, creative workspaces, and more. Designed with modern taste in mind and manufactured for longevity. Fully water-resistant, with a smooth matte surface that's easy to clean. Ideal for Malaysia’s tropical conditions, built to endure daily wear. Whether you're creating a striking foyer or updating a children’s playroom with charm, this sheet delivers lasting beauty without sacrificing practicality."
+                        },
+                        {
+                            "title": "PG20257 Specifications",
+                            "content": "Product Code: PG20257. Design: Decorative / Patterned. Surface Finish: Smooth, matte texture. Water Resistance: Yes. Installation: Glue-down. Ideal For: Homes, studios, boutiques, offices. Country of Manufacture: Malaysia."
+                        },
+                        {
+                            "title": "Where This Patterned Vinyl Works Best",
+                            "content": "PG20257 was designed to inspire. Its versatile aesthetic fits seamlessly into: Creative studios and collaborative workspaces. Art-inspired retail stores and cafés. Home entryways, feature walls, or living room accents. Kids' areas and lifestyle boutiques. From artistic installations to refined home interiors, PG20257 elevates any environment with flair."
+                        },
+                        {
+                            "title": "Why Choose PG20257 Design Vinyl Sheet?",
+                            "content": "Looking to move beyond plain, uninspiring floors? PG20257 is a stylish vinyl interior Malaysia favorite, built to offer: Artful flair with its bold, decorative design. Durable wear, made for high-traffic environments. Low maintenance – simply wipe and go. Resilient surface, resistant to scratches and moisture. A designer’s dream, without the high-end cost. Redefine your floors with PG20257. Shop it now on Furnishings."
+                        },
+                        {
+                            "title": "Why Order from Furnishings?",
+                            "content": "At Furnishings.com, we offer more than just flooring. We deliver confidence and style. Official Malaysian retailer for authentic Versafloor products. Design guidance tailored to your needs. Fast delivery nationwide, with quality checks on every order. Expert support to help you choose the perfect vinyl. Give your interior a fresh, patterned finish. Order PG20257 today!"
+                        },
+                        {
+                            "title": "Final Thought - When Style Meets Practicality",
+                            "content": "PG20257 doesn’t just look great—it works hard, too. A beautiful blend of art-inspired design and everyday utility, this vinyl sheet is ideal for anyone looking to refresh their space without compromise. Request a quote. Ask for a sample. Book a flooring consultation today."
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "product": {
+                "id": "PG20258",
+                "name": "Versafloor Vinyl Sheet PG20258",
+                "slug": "versafloor-vinyl-sheet-pg20258",
+                "category": "Vinyl Sheet Flooring",
+                "brand": "Versafloor",
+                "images": {
+                    "main_image": "/vinyal_sheet/pg20258.jpg",
+                    "gallery": ["/vinyal_sheet/pg20258.jpg"],
+                    "thumbnails": ["/vinyal_sheet/pg20258.jpg"],
+                    "alt_texts": [
+                        "Versafloor PG20258 solid color vinyl sheet in modern Malaysian interior",
+                        "Solid color vinyl sheet PG20258 – bold hues for Malaysian interiors.",
+                        "Transform your space with simplicity and style. The Versafloor Vinyl Sheet PG20258 delivers a bold monochromatic look with the high-performance features today’s interiors demand.",
+                        "Designed for Malaysian homes and commercial settings, PG20258 is the answer for those seeking a solid color flooring that’s clean, modern, and undeniably striking."
+                    ]
+                },
+                "seo": {
+                    "meta_title": "Versafloor Vinyl Sheet PG20258 | Solid Color Vinyl Flooring Malaysia",
+                    "meta_description": "Solid color vinyl sheet PG20258 – bold hues for Malaysian interiors.",
+                    "keywords": [
+                        "PG20258 vinyl sheet Malaysia",
+                        "solid color flooring",
+                        "colored vinyl sheet"
+                    ]
+                },
+                "description": {
+                    "short": "PG20258 solid color vinyl sheet by Versafloor offers bold, modern hues for Malaysian interiors. Waterproof, durable, and easy to maintain – shop now at Furnishings.com.",
+                    "long": "Transform your space with simplicity and style. The Versafloor Vinyl Sheet PG20258 delivers a bold monochromatic look with the high-performance features today’s interiors demand. Designed for Malaysian homes and commercial settings, PG20258 is the answer for those seeking a solid color flooring that’s clean, modern, and undeniably striking."
+                },
+                "features": {
+                    "main_features": [
+                        "Vibrant, saturated color tones perfect for bold, expressive design",
+                        "Waterproof & wear-resistant, ideal for busy areas, and easy maintenance",
+                        "Seamlessly blends with minimalist furniture, wood tones, or high-gloss finishes",
+                        "Customizable rolls to suit your specific room size and style"
+                    ],
+                    "benefits": [
+                        "Vibrant, saturated color tones perfect for bold, expressive design",
+                        "Waterproof & wear-resistant, ideal for busy areas",
+                        "Easy maintenance – simply wipe and go",
+                        "Seamlessly blends with minimalist furniture, wood tones, or high-gloss finishes",
+                        "Customizable rolls to suit your specific room size and style"
+                    ],
+                    "design_compatibility": ["Minimalist", "Modern", "Contemporary", "Scandinavian"]
+                },
+                "specifications": {
+                    "waterproof": true,
+                    "slip_resistant": true,
+                    "durability": "10 Years (Residential Use)",
+                    "installation_type": "Glue-down",
+                    "surface_requirement": "Smooth concrete or plywood subfloors",
+                    "maintenance": "Easy to clean and maintain"
+                },
+                "installation": {
+                    "method": "Glue-down",
+                    "surface_types": ["concrete", "plywood"],
+                    "diy_friendly": true,
+                    "professional_recommended": true,
+                    "requirements": [
+                        "Use smooth concrete or plywood subfloors",
+                        "Ensure proper surface preparation for a flawless, long-lasting finish."
+                    ]
+                },
+                "maintenance": {
+                    "cleaning_method": "Wipe-clean surfaces",
+                    "special_treatments": "None required",
+                    "no_waxing": true,
+                    "no_polishing": true,
+                    "no_sealants": true
+                },
+                "faqs": [
+                    {
+                        "question": "What is the code for a vinyl sheet?",
+                        "answer": "This solid color design is labeled PG20258, part of Versafloor’s exclusive range."
+                    },
+                    {
+                        "question": "What is sheet vinyl used for?",
+                        "answer": "Vinyl sheets are commonly used in residential and commercial spaces for their seamless finish, water resistance, and easy cleaning."
+                    },
+                    {
+                        "question": "What is the difference between LVT and vinyl sheet?",
+                        "answer": "LVT comes in planks or tiles with layered construction. Vinyl sheet, such as PG20258, is available in a single roll for smooth, joint-free installation."
+                    },
+                    {
+                        "question": "What is Fiberfloor sheet vinyl?",
+                        "answer": "Fiberfloor adds fiberglass reinforcement. While PG20258 doesn’t include this, it still offers high durability, water resistance, and a comfortable feel underfoot."
+                    }
+                ],
+                "call_to_action": {
+                    "primary": "Bring color confidence to your space. Order PG20258 today from Furnishings.com.",
+                    "secondary": "Explore more color tones.",
+                    "tertiary": "Request a sample. Contact us for bulk pricing."
+                },
+                "status": "active",
+                "created_at": "2025-07-17",
+                "updated_at": "2025-07-17",
+                "additional_description": {
+                    "headline": "Versafloor Vinyl Sheet PG20258 – Clean, Bold, Solid Color Flooring for Malaysian Interiors",
+                    "sections": [
+                        {
+                            "title": "Add a Splash of Sophistication with PG20258",
+                            "content": "Minimalism isn’t dull, it’s intentional. The PG20258 vinyl sheet Malaysia brings a vivid yet elegant feel to any room with its uniform solid tone. It offers the perfect backdrop for contemporary furnishings and bold accents, allowing color to speak without distractions. This colored vinyl sheet shines in: Sleek modern apartments with geometric aesthetics. Chic cafés and boutique showrooms want a fresh ambiance. Professional office spaces that favor a clean, minimal visual. Creative zones or children’s rooms require a floor that is easy to clean and offers visual clarity. Crafted for both beauty and practicality, PG20258 is durable, waterproof, and low-maintenance, making it ideal for both residential and commercial environments."
+                        },
+                        {
+                            "title": "Product Specifications",
+                            "content": "Product Code: PG20258. Finish: Matte solid color. Application: Residential and light commercial. Installation: Glue-down. Waterproof: Yes. Origin: Malaysia."
+                        },
+                        {
+                            "title": "Best Use Cases for Solid Color Vinyl",
+                            "content": "Seeking plain vinyl flooring with a modern appeal? PG20258 is a versatile flooring solution that adapts beautifully to a variety of settings: High-end minimalist living rooms – Create calm, clutter-free zones. Modern office interiors – Achieve clean aesthetics and professional polish. Art galleries or retail displays – Let your products or artwork really stand out. Children’s rooms or creative zones – Easy to clean, smooth underfoot, visually simple."
+                        },
+                        {
+                            "title": "Why Choose PG20258 Colored Vinyl Sheet?",
+                            "content": "PG20258 is more than just a floor. It’s a design statement. Here's why it stands out in the modern vinyl flooring Malaysia market: Vibrant, saturated color tones perfect for bold, expressive design. Waterproof & wear-resistant, ideal for busy areas, and easy maintenance. Seamlessly blends with minimalist furniture, wood tones, or high-gloss finishes. Customizable rolls to suit your specific room size and style. Minimalism meets impact. Shop PG20258 now at Furnishings.com."
+                        },
+                        {
+                            "title": "Why Furnishings Is Your Go-To for Premium Vinyl",
+                            "content": "When you choose Furnishings.com, you're choosing reliability and design excellence. Official distributor of Versafloor in Malaysia. Fast delivery, responsive support. In-stock assurance and custom quote options for bulk orders."
+                        },
+                        {
+                            "title": "Final Note: Flooring That’s Bold, Bright, and Built to Last",
+                            "content": "From creating a serene monotone room to crafting a bold statement floor, PG20258 vinyl sheet Malaysia offers beauty, simplicity, and lasting performance. With smooth texture and vibrant finish, it suits the needs of homeowners, architects, and commercial decorators alike. Explore more color tones. Request a sample. Contact us for bulk pricing."
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "product": {
+                "id": "PG20259",
+                "name": "Versafloor Vinyl Sheet PG20259",
+                "slug": "versafloor-vinyl-sheet-pg20259",
+                "category": "Vinyl Sheet Flooring",
+                "brand": "Versafloor",
+                "images": {
+                    "main_image": "/vinyal_sheet/PG-20259.webp",
+                    "gallery": ["/vinyal_sheet/PG-20259.webp"],
+                    "thumbnails": ["/vinyal_sheet/PG-20259.webp"],
+                    "alt_texts": [
+                        "Versafloor PG20259 tone-on-tone vinyl sheet in sophisticated Malaysian interior",
+                        "Tone-on-tone vinyl sheet PG20259 – subtle palette flooring for Malaysia.",
+                        "Step into a world where flooring whispers style, not shouts it. The Versafloor Vinyl Sheet PG20259 is a masterclass in subtle sophistication.",
+                        "Designed for Malaysian interiors that prioritize grace and calm over boldness, PG20259 brings tone-on-tone elegance to both modern homes and commercial spaces."
+                    ]
+                },
+                "seo": {
+                    "meta_title": "Versafloor Vinyl Sheet PG20259 | Tone-On-Tone Vinyl Flooring Malaysia",
+                    "meta_description": "Tone-on-tone vinyl sheet PG20259 – subtle palette flooring for Malaysia.",
+                    "keywords": [
+                        "PG20259 vinyl sheet Malaysia",
+                        "tone on tone flooring",
+                        "subtle vinyl sheet"
+                    ]
+                },
+                "description": {
+                    "short": "PG20259 tone-on-tone vinyl sheet by Versafloor offers subtle elegance for Malaysian interiors. Waterproof, durable, and stylish – shop now at Furnishings.com.",
+                    "long": "Step into a world where flooring whispers style, not shouts it. The Versafloor Vinyl Sheet PG20259 is a masterclass in subtle sophistication. Designed for Malaysian interiors that prioritize grace and calm over boldness, PG20259 brings tone-on-tone elegance to both modern homes and commercial spaces."
+                },
+                "features": {
+                    "main_features": [
+                        "Discover the quiet luxury of tone-on-tone design, a trend taking over refined Malaysian interiors.",
+                        "With a muted palette and soft surface texture, this vinyl sheet creates gentle visual interest without overpowering the space.",
+                        "Ideal for interiors where minimalism meets warmth, PG20259 delivers comfort with an air of elegance.",
+                        "Whether you’re designing a calm home lounge, an elegant meeting room, or a serene study nook, this sheet vinyl becomes the perfect foundation."
+                    ],
+                    "benefits": [
+                        "Soft, layered design creates understated depth and visual calm",
+                        "Waterproof and easy to clean, ideal for humid Malaysian climates",
+                        "Scratch-resistant and durable, made for real life",
+                        "A modern muted vinyl sheet that’s design-forward yet timeless"
+                    ],
+                    "design_compatibility": ["Minimalist", "Modern", "Contemporary", "Scandinavian"]
+                },
+                "specifications": {
+                    "waterproof": true,
+                    "slip_resistant": true,
+                    "durability": "10 Years (Residential Use)",
+                    "installation_type": "Glue-down",
+                    "surface_requirement": "Smooth concrete or plywood subfloors",
+                    "maintenance": "Easy to clean and maintain"
+                },
+                "installation": {
+                    "method": "Glue-down",
+                    "surface_types": ["concrete", "plywood"],
+                    "diy_friendly": true,
+                    "professional_recommended": true,
+                    "requirements": [
+                        "Use smooth concrete or plywood subfloors",
+                        "Ensure proper surface preparation for a flawless, long-lasting finish."
+                    ]
+                },
+                "maintenance": {
+                    "cleaning_method": "Wipe-clean surfaces",
+                    "special_treatments": "None required",
+                    "no_waxing": true,
+                    "no_polishing": true,
+                    "no_sealants": true
+                },
+                "faqs": [
+                    {
+                        "question": "What is the code for a vinyl sheet?",
+                        "answer": "This particular product is identified by PG20259, offering tone-on-tone texture and a soft matte finish."
+                    },
+                    {
+                        "question": "What is sheet vinyl used for?",
+                        "answer": "Sheet vinyl is used for seamless, low-maintenance flooring in both homes and commercial interiors. It’s water-resistant, comfortable underfoot, and visually clean."
+                    },
+                    {
+                        "question": "What is Fiberfloor sheet vinyl?",
+                        "answer": "Fiberfloor includes a fiberglass layer for added flexibility. While PG20259 does not contain fiberglass, it still offers excellent durability and ease of installation."
+                    },
+                    {
+                        "question": "What is the difference between sheet vinyl and luxury vinyl?",
+                        "answer": "Sheet vinyl comes in large rolls and installs as seamless sheets, great for waterproofing. Luxury vinyl tiles (LVT) mimic the appearance of wood or stone and are installed plank by plank, often requiring more detailed installation."
+                    }
+                ],
+                "call_to_action": {
+                    "primary": "Elegant floors start here. Shop PG20259 at Furnishings today.",
+                    "secondary": "Request a free sample",
+                    "tertiary": "Talk to our experts. Order PG20259 online at Furnishings."
+                },
+                "status": "active",
+                "created_at": "2025-07-17",
+                "updated_at": "2025-07-17",
+                "additional_description": {
+                    "headline": "Versafloor Vinyl Sheet PG20259 - Elegant Tone-on-Tone Flooring for Sophisticated Malaysian Spaces",
+                    "sections": [
+                        {
+                            "title": "Where Style Whispers - PG20259’s Understated Vinyl Charm",
+                            "content": "Minimalist design thrives in quiet details, and PG20259 understands this deeply. Discover the quiet luxury of tone-on-tone design, a trend taking over refined Malaysian interiors. With a muted palette and soft surface texture, this vinyl sheet creates gentle visual interest without overpowering the space. Ideal for interiors where minimalism meets warmth, PG20259 delivers comfort with an air of elegance. Whether you’re designing a calm home lounge, an elegant meeting room, or a serene study nook, this sheet vinyl becomes the perfect foundation."
+                        },
+                        {
+                            "title": "Product Specifications",
+                            "content": "Product Code: PG20259. Design Type: Tone-on-Tone, Subtle Texture. Finish: Matte Soft-Touch Surface. Water-Resistant: Yes. Ideal Use: Residential and Light Commercial Spaces. Installation: Glue-down Sheet Vinyl. Manufactured In: Malaysia."
+                        },
+                        {
+                            "title": "Where PG20259 Makes a Lasting Impression?",
+                            "content": "Bring harmony and subtlety into spaces like: Neutral-toned bedrooms or home offices where concentration and calm matter. Boutique commercial settings that demand sophistication. Contemporary living rooms with minimalist furniture and soft lighting. Spa-inspired bathrooms seeking waterproof elegance. Its monochromatic visual texture lets you experiment with different tones and materials, while keeping your floor grounded in peace and balance."
+                        },
+                        {
+                            "title": "Why Choose PG20259 Vinyl Sheet?",
+                            "content": "This isn’t just another flooring option—it’s a deliberate design choice. Soft, layered design creates understated depth and visual calm. Waterproof and easy to clean, ideal for humid Malaysian climates. Scratch-resistant and durable, made for real life. A modern muted vinyl sheet that’s design-forward yet timeless. Looking for subtle sophistication? Discover PG20259 on Furnishings."
+                        },
+                        {
+                            "title": "Why Furnishings.com is the Trusted Source for Versafloor",
+                            "content": "Official Versafloor distributor in Malaysia. Friendly support from vinyl flooring experts. Local delivery with competitive pricing. Trusted by interior professionals across Malaysia. Elegant floors start here. Shop PG20259 at Furnishings today."
+                        },
+                        {
+                            "title": "The Last Word - A Floor That Knows Subtlety is Power",
+                            "content": "If you believe that actual elegance lives in restraint, PG20259 is your perfect match. It offers the beauty of simplicity with the performance of premium vinyl. This isn’t just flooring. It's a statement of quiet confidence. Request a free sample. Talk to our experts. Order PG20259 online at Furnishings."
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "product": {
+                "id": "PG20260",
+                "name": "Versafloor Vinyl Sheet PG20260",
+                "slug": "versafloor-vinyl-sheet-pg20260",
+                "category": "Vinyl Sheet Flooring",
+                "brand": "Versafloor",
+                "images": {
+                    "main_image": "/vinyal_sheet/PG-20260.webp",
+                    "gallery": ["/vinyal_sheet/PG-20260.webp"],
+                    "thumbnails": ["/vinyal_sheet/PG-20260.webp"],
+                    "alt_texts": [
+                        "Versafloor PG20260 dual-tone vinyl sheet in modern Malaysian interior",
+                        "Dual-tone vinyl sheet PG20260 – two-tone styling for Malaysian floors.",
+                        "Seeking a flooring option that combines modern design with exceptional durability? The Versafloor PG20260 vinyl sheet offers the perfect balance of style, comfort, and durability.",
+                        "With its dual-tone visual texture and highly resilient surface, this flooring is a wise choice for Malaysian homes and commercial spaces looking for aesthetic appeal and ease of maintenance."
+                    ]
+                },
+                "seo": {
+                    "meta_title": "Dual Tone Vinyl Sheet PG20260 | Versafloor Malaysia",
+                    "meta_description": "Discover PG20260 vinyl sheet in Malaysia – dual-tone vinyl flooring with color contrast, waterproof design, and lasting durability.",
+                    "keywords": [
+                        "PG20260 vinyl sheet Malaysia",
+                        "dual tone flooring",
+                        "color contrast vinyl"
+                    ]
+                },
+                "description": {
+                    "short": "PG20260 dual-tone vinyl sheet by Versafloor offers stylish color contrast for Malaysian interiors. Waterproof, durable, and low-maintenance – shop now at Furnishings.com.",
+                    "long": "Seeking a flooring option that combines modern design with exceptional durability? The Versafloor PG20260 vinyl sheet offers the perfect balance of style, comfort, and durability. With its dual-tone visual texture and highly resilient surface, this flooring is a wise choice for Malaysian homes and commercial spaces looking for aesthetic appeal and ease of maintenance. Designed for areas that require both functionality and style, PG20260 delivers consistent quality with a touch of refined elegance."
+                },
+                "features": {
+                    "main_features": [
+                        "Distinct Dual-Tone Design: Contrasts highlight room layout and décor",
+                        "Engineered for Malaysian Environments: Performs reliably in humid conditions and heavy foot traffic",
+                        "Comfort and Function in One: Soft underfoot, yet durable under pressure",
+                        "Wear-resistant 2.0mm thickness: Provides long-term surface integrity",
+                        "Waterproof and easy to clean: Prevents staining and water damage",
+                        "Anti-slip surface texture: Safer flooring in moisture-prone areas",
+                        "Glue-down installation: Ensures a secure, smooth fit"
+                    ],
+                    "benefits": [
+                        "Enhances visual depth and complements modern interiors",
+                        "Withstands daily use in homes and commercial spaces",
+                        "Low maintenance requirements with lasting aesthetics",
+                        "Ideal for families with children or elderly residents",
+                        "Creates a polished, professional finish in every room"
+                    ],
+                    "design_compatibility": ["Modern", "Contemporary", "Minimalist", "Industrial"]
+                },
+                "specifications": {
+                    "waterproof": true,
+                    "slip_resistant": true,
+                    "thickness": "2.0mm",
+                    "durability": "10 Years (Residential Use)",
+                    "installation_type": "Glue-down",
+                    "surface_requirement": "Clean, level, and dry subfloor (tile or concrete)",
+                    "maintenance": "Regular sweeping and occasional mopping with gentle cleaner"
+                },
+                "installation": {
+                    "method": "Glue-down",
+                    "surface_types": ["tile", "concrete"],
+                    "diy_friendly": false,
+                    "professional_recommended": true,
+                    "requirements": [
+                        "Subfloor must be clean, level, and dry",
+                        "Professional installers can assess surface conditions and apply leveling compounds if needed",
+                        "Cut to fit the space and glued securely for a seamless, joint-free appearance"
+                    ]
+                },
+                "maintenance": {
+                    "cleaning_method": "Regular sweeping and occasional mopping with gentle cleaner",
+                    "special_treatments": "No polishing or waxing needed",
+                    "no_waxing": true,
+                    "no_polishing": true,
+                    "no_sealants": true
+                },
+                "faqs": [
+                    {
+                        "question": "Is this vinyl sheet suitable for high-humidity areas?",
+                        "answer": "Yes, PG20260 is moisture-resistant, making it suitable for semi-damp areas such as kitchens or entryways. However, for full wet zones, such as bathrooms, a specialty waterproof vinyl product is recommended."
+                    },
+                    {
+                        "question": "Can I install this over existing tile or concrete?",
+                        "answer": "Yes, as long as the subfloor is clean, level, and dry. Professional installers can assess surface conditions and apply any necessary leveling compounds."
+                    },
+                    {
+                        "question": "Is this flooring suitable for pets?",
+                        "answer": "Yes, PG20260 is scratch-resistant and non-toxic. It holds up well against pet traffic and is easy to clean in case of spills or accidents."
+                    },
+                    {
+                        "question": "Does the dual-tone color fade over time?",
+                        "answer": "The product is designed with UV-resistant finishes that help maintain color vibrancy in typical indoor environments."
+                    },
+                    {
+                        "question": "Can this flooring be used in commercial settings?",
+                        "answer": "Yes, the durable construction and easy maintenance make it well-suited for light commercial use such as boutiques, salons, and offices."
+                    }
+                ],
+                "call_to_action": {
+                    "primary": "Ready to Upgrade Your Space? Order PG20260 today from Furnishings.com.",
+                    "secondary": "Contact us today to request a quote.",
+                    "tertiary": "Speak with one of our flooring specialists."
+                },
+                "status": "active",
+                "created_at": "2025-07-17",
+                "updated_at": "2025-07-17",
+                "additional_description": {
+                    "headline": "Versafloor Vinyl Sheet PG20260 – Dual Tone Flooring with Distinct Color Contrast",
+                    "sections": [
+                        {
+                            "title": "What Makes PG20260 Stand Out?",
+                            "content": "Distinct Dual-Tone Design: Featuring a contrast-rich dual-tone appearance, this vinyl sheet adds character to any room while maintaining a clean, cohesive feel. Engineered for Malaysian Environments: From humid conditions to heavy foot traffic, the PG20260 sheet performs reliably across a variety of settings. Its waterproof properties and long wear-life make it ideal for urban homes and offices alike. Comfort and Function in One: Soft underfoot, yet durable under pressure, this sheet ensures long-term comfort and resilience without compromising on visual appeal."
+                        },
+                        {
+                            "title": "Key Features and Benefits",
+                            "content": "Feature: Dual-tone surface finish. Advantage: Contrasts highlight room layout and décor. Benefit: Enhances visual depth and complements modern interiors. Feature: Wear-resistant 2.0mm thickness. Advantage: Provides long-term surface integrity. Benefit: Withstands daily use in homes and commercial spaces. Feature: Waterproof and easy to clean. Advantage: Prevents staining and water damage. Benefit: Low maintenance requirements with lasting aesthetics. Feature: Anti-slip surface texture. Advantage: Safer flooring in moisture-prone areas. Benefit: Ideal for families with children or elderly residents. Feature: Glue-down installation. Advantage: Ensures a secure, smooth fit. Benefit: Creates a polished, professional finish in every room."
+                        },
+                        {
+                            "title": "Application and Installation",
+                            "content": "The PG20260 vinyl sheet is ideal for a wide range of settings, including: Residential living areas. Bedrooms and hallways. Office spaces. Retail stores. Cafés and waiting areas. Installation is straightforward and efficient when handled by a professional. The sheet is cut to fit the space, then glued securely to a smooth, prepared surface. Once installed, it offers a seamless, joint-free appearance that resists water infiltration and dirt accumulation. Cleaning requires only regular sweeping and occasional mopping with a gentle cleaner. No polishing or waxing needed."
+                        },
+                        {
+                            "title": "Frequently Asked Questions",
+                            "content": "Is this vinyl sheet suitable for high-humidity areas? Yes, PG20260 is moisture-resistant, making it suitable for semi-damp areas such as kitchens or entryways. However, for full wet zones, such as bathrooms, a specialty waterproof vinyl product is recommended. Can I install this over existing tile or concrete? Yes, as long as the subfloor is clean, level, and dry. Professional installers can assess surface conditions and apply any necessary leveling compounds. Is this flooring suitable for pets? Yes, PG20260 is scratch-resistant and non-toxic. It holds up well against pet traffic and is easy to clean in case of spills or accidents. Does the dual-tone color fade over time? The product is designed with UV-resistant finishes that help maintain color vibrancy in typical indoor environments. Can this flooring be used in commercial settings? Yes, the durable construction and easy maintenance make it well-suited for light commercial use such as boutiques, salons, and offices."
+                        },
+                        {
+                            "title": "Ready to Upgrade Your Space?",
+                            "content": "If you're looking for a modern, practical, and visually impactful flooring solution, Versafloor PG20260 is the right choice. From design-conscious homeowners to interior professionals, this dual-tone vinyl sheet delivers both style and substance. Contact us today to request a quote or speak with one of our flooring specialists."
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "product": {
+                "id": "PG20261",
+                "name": "Versafloor Vinyl Sheet PG20261",
+                "slug": "versafloor-vinyl-sheet-pg20261",
+                "category": "Vinyl Sheet Flooring",
+                "brand": "Versafloor",
+                "images": {
+                    "main_image": "/vinyal_sheet/PG-20261.webp",
+                    "gallery": ["/vinyal_sheet/PG-20261.webp"],
+                    "thumbnails": ["/vinyal_sheet/PG-20261.webp"],
+                    "alt_texts": [
+                        "Versafloor PG20261 multi-tone vinyl sheet in modern Malaysian interior",
+                        "Multi-tone vinyl sheet PG20261 – dynamic color blend for Malaysia.",
+                        "The PG20261 vinyl sheet in Malaysia is a vibrant flooring solution crafted to elevate modern interiors with its dynamic multi-tone design.",
+                        "Developed by Versafloor, this colorful vinyl sheet combines rich color variation with reliable durability, making it a smart and stylish choice for residential and commercial applications across Malaysia."
+                    ]
+                },
+                "seo": {
+                    "meta_title": "Versafloor Vinyl Sheet PG20261 – Multi-Tone Vinyl Flooring Malaysia",
+                    "meta_description": "Versafloor PG20261 vinyl sheet features a durable, multi-tone design—ideal for modern homes and commercial interiors in Malaysia.",
+                    "keywords": [
+                        "PG20261 vinyl sheet Malaysia",
+                        "multitone flooring",
+                        "colorful vinyl sheet"
+                    ]
+                },
+                "description": {
+                    "short": "PG20261 multi-tone vinyl sheet by Versafloor offers vibrant, durable flooring for Malaysian homes and businesses. Shop now at Furnishings.com.",
+                    "long": "The PG20261 vinyl sheet in Malaysia is a vibrant flooring solution crafted to elevate modern interiors with its dynamic multi-tone design. Developed by Versafloor, this colorful vinyl sheet combines rich color variation with reliable durability, making it a smart and stylish choice for residential and commercial applications across Malaysia. Whether you're a homeowner redesigning a living space, an interior designer seeking visual impact, or a contractor sourcing quality materials, the PG20261 offers both visual appeal and long-term value."
+                },
+                "features": {
+                    "main_features": [
+                        "Multi-Tone Color Pattern: A distinctive blend of tones creates depth and contrast, adding character to any room.",
+                        "Durable Wear Layer: Built to withstand daily foot traffic in high-use areas, offering longevity with minimal wear.",
+                        "Low Maintenance: Its surface resists stains, scratches, and moisture, making it easy to clean and maintain.",
+                        "Comfort Underfoot: Designed with a slightly cushioned structure to reduce fatigue and improve everyday comfort.",
+                        "Seamless Installation: The sheet format enables smooth and fast installation with minimal joints or gaps.",
+                        "Slip Resistance: Safe for households and businesses, especially in areas exposed to moisture or spills."
+                    ],
+                    "benefits": [
+                        "A distinctive blend of tones creates depth and contrast, adding character to any room",
+                        "Withstands daily foot traffic in high-use areas, offering longevity with minimal wear",
+                        "Resists stains, scratches, and moisture, making it easy to clean and maintain",
+                        "Slightly cushioned structure reduces fatigue and improves everyday comfort",
+                        "Smooth and fast installation with minimal joints or gaps",
+                        "Safe for households and businesses, especially in moisture-prone areas"
+                    ],
+                    "design_compatibility": ["Modern", "Contemporary", "Eclectic", "Scandinavian"]
+                },
+                "specifications": {
+                    "waterproof": true,
+                    "slip_resistant": true,
+                    "thickness": "2.0mm to 3.5mm",
+                    "durability": "10 Years (Residential Use)",
+                    "installation_type": "Glue-down",
+                    "surface_requirement": "Smooth concrete or plywood subfloors",
+                    "maintenance": "Easy to clean and maintain"
+                },
+                "installation": {
+                    "method": "Glue-down",
+                    "surface_types": ["concrete", "plywood"],
+                    "diy_friendly": true,
+                    "professional_recommended": true,
+                    "requirements": [
+                        "Use smooth concrete or plywood subfloors",
+                        "Ensure proper surface preparation for a flawless, long-lasting finish."
+                    ]
+                },
+                "maintenance": {
+                    "cleaning_method": "Wipe-clean surfaces",
+                    "special_treatments": "None required",
+                    "no_waxing": true,
+                    "no_polishing": true,
+                    "no_sealants": true
+                },
+                "faqs": [
+                    {
+                        "question": "What is the code for vinyl sheet?",
+                        "answer": "The product code is PG20261. Use this code when requesting a quote or placing an order to ensure you receive the correct design."
+                    },
+                    {
+                        "question": "What is sheet vinyl used for?",
+                        "answer": "Sheet vinyl is used for seamless, low-maintenance flooring in both residential and commercial spaces. It’s ideal for kitchens, bathrooms, and areas exposed to foot traffic or moisture."
+                    },
+                    {
+                        "question": "What is a good thickness for sheet vinyl?",
+                        "answer": "A thickness of 2mm to 3.5mm is considered ideal for everyday use. It offers a balance of comfort and durability. PG20261 is designed to meet this standard, making it suitable for long-term use."
+                    },
+                    {
+                        "question": "What is Fiberfloor sheet vinyl?",
+                        "answer": "Fiberfloor is a reinforced type of vinyl sheet that includes fiberglass layers. It offers improved dimensional stability, added comfort, and better resistance to tears or curling. While PG20261 is not branded explicitly as Fiberfloor, it delivers similar performance benefits."
+                    }
+                ],
+                "call_to_action": {
+                    "primary": "Upgrade your interior with Versafloor PG20261 vinyl sheet Malaysia. Order now at Furnishings.com.",
+                    "secondary": "Contact us today to request a quote.",
+                    "tertiary": "Explore our extensive vinyl flooring collection or seek design assistance for bulk orders."
+                },
+                "status": "active",
+                "created_at": "2025-07-17",
+                "updated_at": "2025-07-17",
+                "additional_description": {
+                    "headline": "Versafloor Vinyl Sheet PG20261 – Multi-Tone Vinyl Flooring Malaysia",
+                    "sections": [
+                        {
+                            "title": "Product Overview",
+                            "content": "The PG20261 vinyl sheet in Malaysia is a vibrant flooring solution crafted to elevate modern interiors with its dynamic multi-tone design. Developed by Versafloor, this colorful vinyl sheet combines rich color variation with reliable durability, making it a smart and stylish choice for residential and commercial applications across Malaysia. Whether you're a homeowner redesigning a living space, an interior designer seeking visual impact, or a contractor sourcing quality materials, the PG20261 offers both visual appeal and long-term value."
+                        },
+                        {
+                            "title": "Features & Benefits",
+                            "content": "Enhance your space with a vinyl flooring option that balances form and function. Key features include: Multi-Tone Color Pattern: A distinctive blend of tones creates depth and contrast, adding character to any room. Durable Wear Layer: Built to withstand daily foot traffic in high-use areas, offering longevity with minimal wear. Low Maintenance: Its surface resists stains, scratches, and moisture, making it easy to clean and maintain. Comfort Underfoot: Designed with a slightly cushioned structure to reduce fatigue and improve everyday comfort. Seamless Installation: The sheet format enables smooth and fast installation with minimal joints or gaps. Slip Resistance: Safe for households and businesses, especially in areas exposed to moisture or spills."
+                        },
+                        {
+                            "title": "Ideal Applications",
+                            "content": "Thanks to its colorful and durable construction, the PG20261 is well-suited for: Homes – living rooms, bedrooms, kitchens, and dining spaces. Offices – workstations, reception areas, and meeting rooms. Retail – boutiques, fashion stores, and salons. Commercial Spaces – cafes, clinics, studios, and co-working hubs. Its multi-tone aesthetic adds warmth and personality, while its functionality ensures lasting performance in both residential and commercial interiors."
+                        },
+                        {
+                            "title": "Request a Quote for PG20261 Vinyl Sheet",
+                            "content": "Upgrade your interior with Versafloor PG20261 vinyl sheet Malaysia, a reliable, stylish, and long-lasting solution for modern spaces. Contact us today to request a quote or explore our extensive vinyl flooring collection. For design assistance or bulk orders, our team is ready to help you find the perfect fit."
+                        }
+                    ]
+                }
+            }
+        }
     ]
 };
 
