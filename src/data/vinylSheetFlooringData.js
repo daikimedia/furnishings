@@ -6935,7 +6935,7 @@ const vinylSheetFlooringData = {
             "product": {
                 "id": "PG20251",
                 "name": "Versafloor Vinyl Sheet PG20251",
-                "slug": "/vinyl-sheet-wood-flooring-malaysia-pg20251",
+                "slug": "vinyl-sheet-wood-flooring-malaysia-pg20251",
                 "category": "Vinyl Sheet Flooring",
                 "brand": "Versafloor",
                 "images": {
@@ -7191,7 +7191,7 @@ const vinylSheetFlooringData = {
             "product": {
                 "id": "PG20253",
                 "name": "Versafloor Vinyl Sheet PG20253",
-                "slug": "/checkerboard-vinyl-flooring-malaysia-pg20253",
+                "slug": "checkerboard-vinyl-flooring-malaysia-pg20253",
                 "category": "Vinyl Sheet Flooring",
                 "brand": "Versafloor",
                 "images": {
