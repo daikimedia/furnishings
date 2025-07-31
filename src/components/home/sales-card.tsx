@@ -18,7 +18,7 @@ export default function FurniturePromoBanner() {
 
                     <div className="relative z-10 ml-auto mr-10 max-w-[300px] text-white">
                         <h2 className="text-3xl font-semibold mb-2 leading-tight">Cool Looks. <br /> Hot Deals.</h2>
-                        <Link href='#' className="text-lg">Great Discounts Here</Link>
+                        <Link href='/shop' className="text-lg">Great Discounts Here</Link>
                     </div>
                 </div>
 
@@ -33,7 +33,7 @@ export default function FurniturePromoBanner() {
 
                     <div className="relative z-10 ml-10 max-w-[300px] text-white">
                         <h2 className="text-3xl font-semibold mb-2 leading-tight">Crafted for <br /> Comfort & Class</h2>
-                        <Link href='#' className="text-lg">Great Discounts Here</Link>
+                        <Link href='/shop' className="text-lg">Great Discounts Here</Link>
                     </div>
                 </div>
             </div>

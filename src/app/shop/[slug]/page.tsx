@@ -3,6 +3,7 @@ import SingleProduct from "@/components/shop/single-product";
 import vinylSheetFlooringData from "@/data/vinylSheetFlooringData";
 import PageHeader from "@/components/common/header";
 
+
 type Params = {
     slug: string;
 };
@@ -28,7 +29,8 @@ export default async function ProductPage({ params }: { params: Promise<Params> 
     return (
         <main>
             <PageHeader />
-            <SingleProduct productData={productWithAdditionalDescription} />
+            {/* eslint-disable-next-line @typescript-eslint/no-explicit-any */}
+            <SingleProduct productData={productWithAdditionalDescription as any} />
         </main>
     );
 }
