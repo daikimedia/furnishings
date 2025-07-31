@@ -40,7 +40,7 @@ type ProductData = {
         waterproof: boolean;
         slip_resistant: boolean;
         durability: string;
-        installation_type: string;
+        installation_type: string | string[];
         surface_requirement: string;
         maintenance: string;
     };

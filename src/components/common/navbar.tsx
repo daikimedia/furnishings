@@ -48,16 +48,16 @@ const Navbar = () => {
     }
 
     const vinylSheetLinks = [
-        { title: "Alberta", href: "/" },
-        { title: "Versafloor", href: "/" },
+        { title: "Alberta", href: "/category/alberta" },
+        { title: "Versafloor", href: "/category/versafloor" },
     ]
 
     const exploreCategories = [
-        { label: "Flooring", href: "/" },
-        { label: "Carpet tiles", href: "/" },
-        { label: "Spc & Laminate", href: "/" },
-        { label: "Vinyl Sheet", href: "category/vinyl-sheet-flooring", dropdown: vinylSheetLinks, key: "vinyl" },
-        { label: "Artificial Grass", href: "/" },
+        { label: "Flooring", href: "/category/flooring" },
+        { label: "Carpet tiles", href: "/category/carpet-tiles" },
+        { label: "Spc & Laminate", href: "/category/spc-and-laminate" },
+        { label: "Vinyl Sheet", href: "/category/vinyl-sheet-flooring", dropdown: vinylSheetLinks, key: "vinyl" },
+        { label: "Artificial Grass", href: "/category/artificial-grass" },
     ]
 
     const NavLink = ({ title, href }: { title: string, href: string }) => (

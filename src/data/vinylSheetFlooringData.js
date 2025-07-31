@@ -8476,7 +8476,7 @@ const vinylSheetFlooringData = {
                 }
             }
         },
-        //data need  be added here cat have the access to the file
+
 
         {
             "product": {
@@ -9855,9 +9855,9 @@ const vinylSheetFlooringData = {
                 "category": "Vinyl Sheet Flooring",
                 "brand": "Versafloor",
                 "images": {
-                    "main_image": "/vinyal_sheet/PM20146.webp",
-                    "gallery": ["/vinyal_sheet/PM20146.webp"],
-                    "thumbnails": ["/vinyal_sheet/PM20146.webp"],
+                    "main_image": "/vinyal_sheet/dummy.webp",
+                    "gallery": ["/vinyal_sheet/dummy.webp"],
+                    "thumbnails": ["/vinyal_sheet/dummy.webp"],
                     "alt_texts": [
                         "Versafloor PM20146 vinyl sheet in Malaysian interior",
                         "Versafloor Vinyl Sheet PM20146 – Waterproof & Durable Vinyl Flooring in Malaysia | WCD",
@@ -9992,9 +9992,9 @@ const vinylSheetFlooringData = {
                 "category": "Vinyl Sheet Flooring",
                 "brand": "Versafloor",
                 "images": {
-                    "main_image": "/vinyal_sheet/PM20147.webp",
-                    "gallery": ["/vinyal_sheet/PM20147.webp"],
-                    "thumbnails": ["/vinyal_sheet/PM20147.webp"],
+                    "main_image": "/vinyal_sheet/dummy.webp",
+                    "gallery": ["/vinyal_sheet/dummy.webp"],
+                    "thumbnails": ["/vinyal_sheet/dummy.webp"],
                     "alt_texts": [
                         "Versafloor PM20147 vinyl sheet in Malaysian interior",
                         "Versafloor PM20147 Vinyl Sheet | Waterproof & Durable Vinyl Flooring Malaysia",
@@ -10137,9 +10137,9 @@ const vinylSheetFlooringData = {
                 "category": "Vinyl Sheet Flooring",
                 "brand": "Versafloor",
                 "images": {
-                    "main_image": "/vinyal_sheet/PM20150.webp",
-                    "gallery": ["/vinyal_sheet/PM20150.webp"],
-                    "thumbnails": ["/vinyal_sheet/PM20150.webp"],
+                    "main_image": "/vinyal_sheet/dummy.webp",
+                    "gallery": ["/vinyal_sheet/dummy.webp"],
+                    "thumbnails": ["/vinyal_sheet/dummy.webp"],
                     "alt_texts": [
                         "Versafloor PM20150 vinyl sheet in Malaysian interior",
                         "Versafloor PM20150 Vinyl Sheet | Waterproof Commercial Vinyl Flooring Malaysia",
@@ -10285,9 +10285,9 @@ const vinylSheetFlooringData = {
                 "category": "Vinyl Sheet Flooring",
                 "brand": "Versafloor",
                 "images": {
-                    "main_image": "/vinyal_sheet/PM20151.webp",
-                    "gallery": ["/vinyal_sheet/PM20151.webp"],
-                    "thumbnails": ["/vinyal_sheet/PM20151.webp"],
+                    "main_image": "/vinyal_sheet/dummy.webp",
+                    "gallery": ["/vinyal_sheet/dummy.webp"],
+                    "thumbnails": ["/vinyal_sheet/dummy.webp"],
                     "alt_texts": [
                         "Versafloor PM20151 vinyl sheet in Malaysian interior",
                         "Versafloor Vinyl Sheet PM20151 | Premium Waterproof Flooring Malaysia",
@@ -10436,9 +10436,9 @@ const vinylSheetFlooringData = {
                 "category": "Vinyl Sheet Flooring",
                 "brand": "Versafloor",
                 "images": {
-                    "main_image": "/vinyal_sheet/PM20157.webp",
-                    "gallery": ["/vinyal_sheet/PM20157.webp"],
-                    "thumbnails": ["/vinyal_sheet/PM20157.webp"],
+                    "main_image": "/vinyal_sheet/dummy.webp",
+                    "gallery": ["/vinyal_sheet/dummy.webp"],
+                    "thumbnails": ["/vinyal_sheet/dummy.webp"],
                     "alt_texts": [
                         "Versafloor PM20157 vinyl sheet in Malaysian interior",
                         "Versafloor Vinyl Sheet PM20157 | Waterproof Vinyl Flooring Malaysia",
@@ -10588,9 +10588,9 @@ const vinylSheetFlooringData = {
                 "category": "Vinyl Sheet Flooring",
                 "brand": "Versafloor",
                 "images": {
-                    "main_image": "/vinyal_sheet/PM20158.webp",
-                    "gallery": ["/vinyal_sheet/PM20158.webp"],
-                    "thumbnails": ["/vinyal_sheet/PM20158.webp"],
+                    "main_image": "/vinyal_sheet/dummy.webp",
+                    "gallery": ["/vinyal_sheet/dummy.webp"],
+                    "thumbnails": ["/vinyal_sheet/dummy.webp"],
                     "alt_texts": [
                         "Versafloor PM20158 vinyl sheet in Malaysian interior",
                         "Versafloor Vinyl Sheet PM20158 | Premium Vinyl Flooring Malaysia",
@@ -10752,9 +10752,9 @@ const vinylSheetFlooringData = {
                 "category": "Vinyl Sheet Flooring",
                 "brand": "Versafloor",
                 "images": {
-                    "main_image": "/vinyal_sheet/PM20159.webp",
-                    "gallery": ["/vinyal_sheet/PM20159.webp"],
-                    "thumbnails": ["/vinyal_sheet/PM20159.webp"],
+                    "main_image": "/vinyal_sheet/dummy.webp",
+                    "gallery": ["/vinyal_sheet/dummy.webp"],
+                    "thumbnails": ["/vinyal_sheet/dummy.webp"],
                     "alt_texts": [
                         "Versafloor PM20159 vinyl sheet in Malaysian interior",
                         "Versafloor Vinyl Sheet PM20159 | Premium Vinyl Flooring Malaysia",
@@ -10912,9 +10912,9 @@ const vinylSheetFlooringData = {
                 "category": "Vinyl Sheet Flooring",
                 "brand": "Versafloor",
                 "images": {
-                    "main_image": "/vinyal_sheet/PM20160.webp",
-                    "gallery": ["/vinyal_sheet/PM20160.webp"],
-                    "thumbnails": ["/vinyal_sheet/PM20160.webp"],
+                    "main_image": "/vinyal_sheet/dummy.webp",
+                    "gallery": ["/vinyal_sheet/dummy.webp"],
+                    "thumbnails": ["/vinyal_sheet/dummy.webp"],
                     "alt_texts": [
                         "Versafloor PM20160 vinyl sheet in Malaysian interior",
                         "Versafloor PM20160 – Premium Vinyl Sheet Flooring | WCD Malaysia",
@@ -11076,9 +11076,9 @@ const vinylSheetFlooringData = {
                 "category": "Vinyl Sheet Flooring",
                 "brand": "Versafloor",
                 "images": {
-                    "main_image": "/vinyal_sheet/PM20162.webp",
-                    "gallery": ["/vinyal_sheet/PM20162.webp"],
-                    "thumbnails": ["/vinyal_sheet/PM20162.webp"],
+                    "main_image": "/vinyal_sheet/dummy.webp",
+                    "gallery": ["/vinyal_sheet/dummy.webp"],
+                    "thumbnails": ["/vinyal_sheet/dummy.webp"],
                     "alt_texts": [
                         "Versafloor PM20162 vinyl sheet in Malaysian interior",
                         "Versafloor Vinyl Sheet PM20162 | Durable Waterproof Vinyl Flooring Malaysia",
@@ -11233,6 +11233,1968 @@ const vinylSheetFlooringData = {
                         {
                             "title": "Ready to Transform Your Space?",
                             "content": "Upgrade your floors with Versafloor Vinyl Sheet PM20162 and enjoy long-lasting quality at a competitive vinyl sheet flooring price. Visit the product page now to check availability or contact WCD Malaysia for expert guidance. Explore the Product Now"
+                        }
+                    ]
+                }
+            }
+        },
+
+
+
+        // we need data to add rest of the products  category Flooring 
+        // dummy data  for now  rest of the products  category Flooring 
+
+
+
+        {
+            "product": {
+                "id": "Flooring-123",
+                "name": "Flooring-123",
+                "slug": "flooring-123",
+                "category": "Flooring",
+                "brand": "Versafloor",
+                "images": {
+                    "main_image": "/Flooring/Flooring-1.jpg",
+                    "gallery": ["/Flooring/Flooring-1.jpg"],
+                    "thumbnails": ["/Flooring/Flooring-1.jpg"],
+                    "alt_texts": [
+                        "Flooring-123 vinyl sheet in stylish Malaysian interior",
+                        "Flooring-123 | Durable Waterproof Vinyl Flooring Malaysia",
+                        "Upgrade your home or office with Flooring-123 – a cost-effective, waterproof, and modern vinyl flooring solution for Malaysian spaces.",
+                        "Crafted for durability and elegance, Flooring-123 is ideal for high-traffic and moisture-prone areas."
+                    ]
+                },
+                "seo": {
+                    "meta_title": "Flooring-123 | Durable & Stylish Vinyl Flooring Malaysia",
+                    "meta_description": "Discover Flooring-123 – a waterproof, durable, and stylish vinyl flooring option for Malaysian homes and offices. Shop now at WCD Malaysia for quality and affordability.",
+                    "keywords": [
+                        "Flooring-123 Malaysia",
+                        "vinyl flooring Malaysia",
+                        "waterproof vinyl flooring",
+                        "affordable vinyl flooring",
+                        "durable flooring Malaysia",
+                        "anti-slip vinyl flooring",
+                        "buy vinyl flooring online Malaysia",
+                        "stylish vinyl flooring",
+                        "vinyl sheet flooring price",
+                        "low maintenance flooring"
+                    ]
+                },
+                "description": {
+                    "short": "Redefine your interiors with Flooring-123 – a durable, waterproof, and stylish vinyl flooring solution for Malaysian homes and businesses. Shop now at WCD Malaysia.",
+                    "long": "Flooring-123 brings unmatched style and durability to Malaysian homes and commercial spaces. This waterproof, anti-slip vinyl flooring is built to endure daily wear while adding a sleek, contemporary look to any room. Perfect for kitchens, bathrooms, living spaces, or offices, Flooring-123 combines easy installation, low maintenance, and affordability, making it the go-to choice for homeowners, interior designers, and property developers across Malaysia."
+                },
+                "features": {
+                    "main_features": [
+                        "Waterproof & Anti-Slip: Ideal for wet areas like bathrooms and kitchens.",
+                        "Superior Durability: Resists scratches, dents, and heavy foot traffic.",
+                        "Contemporary Design: Smooth, matte finish that suits modern interiors.",
+                        "Low Maintenance: Easy to clean with regular sweeping and mopping.",
+                        "Comfortable Surface: Soft and warm underfoot compared to tiles.",
+                        "Sustainable Choice: Made with eco-friendly, allergen-free materials."
+                    ],
+                    "benefits": [
+                        "Enhanced safety in wet zones with anti-slip properties",
+                        "Built to last in high-traffic homes and offices",
+                        "Adds a sleek, modern vibe to any space",
+                        "Effortless cleaning for busy lifestyles",
+                        "Warm and cozy feel for enhanced comfort",
+                        "Eco-conscious and safe for all environments"
+                    ],
+                    "design_compatibility": ["Modern", "Minimalist", "Industrial", "Coastal"]
+                },
+                "specifications": {
+                    "waterproof": true,
+                    "slip_resistant": true,
+                    "product_code": "PM20162",
+                    "dimensions": "2m width x custom length",
+                    "thickness": "2.0 mm",
+                    "wear_layer": "0.3 mm",
+                    "backing": "Non-woven fabric",
+                    "finish": "Textured, matte",
+                    "installation_type": ["Glue-down method", "Loose lay method"],
+                    "durability": "10 to 15 years",
+                    "maintenance": "Sweep regularly and mop with a mild detergent. Avoid abrasive cleaners."
+                },
+                "installation": {
+                    "method": ["Glue-down for permanent setups", "Loose lay for quick installations"],
+                    "surface_types": ["Concrete", "Tile", "Plywood"],
+                    "diy_friendly": true,
+                    "professional_recommended": true,
+                    "requirements": [
+                        "Clean, dry, and level subfloor required",
+                        "Use adhesive for glue-down in high-traffic zones",
+                        "Loose lay ideal for smaller spaces",
+                        "Seal seams in wet areas for added protection"
+                    ]
+                },
+                "maintenance": {
+                    "cleaning_method": "Sweep regularly and mop with a mild detergent. Avoid abrasive cleaners.",
+                    "special_treatments": "No waxing or polishing needed",
+                    "no_waxing": true,
+                    "no_polishing": true,
+                    "no_sealants": true
+                },
+                "faqs": [
+                    {
+                        "question": "What is Flooring-123 used for?",
+                        "answer": "Flooring-123 is a versatile vinyl flooring solution for homes, offices, and commercial spaces, perfect for both dry and wet areas due to its waterproof properties."
+                    },
+                    {
+                        "question": "Is Flooring-123 suitable for Malaysian homes?",
+                        "answer": "Yes, its durability, comfort, and low maintenance make it an excellent choice for Malaysian households."
+                    },
+                    {
+                        "question": "How durable is Flooring-123?",
+                        "answer": "With proper care, it lasts 10–15 years, even in busy environments."
+                    },
+                    {
+                        "question": "Is Flooring-123 safe for wet areas?",
+                        "answer": "Yes, its waterproof and anti-slip features make it perfect for bathrooms, kitchens, and laundry rooms."
+                    },
+                    {
+                        "question": "Can I install Flooring-123 myself?",
+                        "answer": "Yes, it’s DIY-friendly with glue-down or loose lay options, though professionals are recommended for larger areas."
+                    },
+                    {
+                        "question": "How much does vinyl flooring cost in Malaysia?",
+                        "answer": "Vinyl flooring like Flooring-123 typically costs RM3 to RM8 per square foot, depending on quality and brand."
+                    },
+                    {
+                        "question": "How do I clean Flooring-123?",
+                        "answer": "Sweep regularly and mop with a mild detergent. Avoid harsh chemicals or abrasive tools."
+                    },
+                    {
+                        "question": "Where can I buy Flooring-123 in Malaysia?",
+                        "answer": "Purchase online from WCD Malaysia, a trusted supplier of premium vinyl flooring."
+                    }
+                ],
+                "call_to_action": {
+                    "primary": "Transform Your Space Now! Choose Flooring-123 for stylish, durable, and budget-friendly vinyl flooring.",
+                    "secondary": "Visit WCD Malaysia to check availability and get expert flooring advice.",
+                    "tertiary": "Shop Flooring-123 at WCD Malaysia, your trusted source for quality vinyl flooring."
+                },
+                "status": "active",
+                "created_at": "2025-07-17",
+                "updated_at": "2025-07-31",
+                "additional_description": {
+                    "headline": "Flooring-123 – Your Solution for Stylish and Durable Vinyl Flooring",
+                    "sections": [
+                        {
+                            "title": "Upgrade with Flooring-123",
+                            "content": "Revamp your home or office with Flooring-123, a budget-friendly vinyl flooring solution that combines durability, waterproofing, and modern style for Malaysian interiors."
+                        },
+                        {
+                            "title": "Versatile for Every Space",
+                            "content": "Whether it’s a busy kitchen, a cozy bedroom, or a professional office, Flooring-123 delivers safety, durability, and elegance to any room."
+                        },
+                        {
+                            "title": "Why Flooring-123 Stands Out",
+                            "content": "Enjoy a waterproof, anti-slip surface, minimal maintenance, and a contemporary design. Made with eco-friendly materials, it’s a safe choice for any environment."
+                        },
+                        {
+                            "title": "Simple and Flexible Installation",
+                            "content": "Flooring-123 is easy to install with DIY-friendly loose lay or secure glue-down methods, perfect for any project size."
+                        },
+                        {
+                            "title": "Trusted Quality from WCD Malaysia",
+                            "content": "WCD Malaysia is your reliable source for premium vinyl flooring. Shop Flooring-123 online for quality, value, and nationwide support."
+                        },
+                        {
+                            "title": "Start Your Flooring Journey",
+                            "content": "Ready to elevate your floors? Choose Flooring-123 from WCD Malaysia for durable, stylish, and affordable vinyl flooring."
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "product": {
+                "id": "Flooring-567",
+                "name": "Flooring-567",
+                "slug": "flooring-567",
+                "category": "Flooring",
+                "brand": "Versafloor",
+                "images": {
+                    "main_image": "/Flooring/Flooring-2.jpg",
+                    "gallery": ["/Flooring/Flooring-2.jpg"],
+                    "thumbnails": ["/Flooring/Flooring-2.jpg"],
+                    "alt_texts": [
+                        "Flooring-567 vinyl sheet in modern Malaysian interior",
+                        "Flooring-567 | Stylish Waterproof Vinyl Flooring Malaysia",
+                        "Elevate your space with Flooring-567 – durable, waterproof, and affordable vinyl flooring for Malaysian homes and offices.",
+                        "Designed for style and resilience, Flooring-567 is perfect for high-traffic and wet areas."
+                    ]
+                },
+                "seo": {
+                    "meta_title": "Flooring-567 | Stylish & Durable Vinyl Flooring Malaysia",
+                    "meta_description": "Discover Flooring-567 – a waterproof, durable, and stylish vinyl flooring solution for Malaysian homes and businesses. Shop now at WCD Malaysia for quality and value.",
+                    "keywords": [
+                        "Flooring-567 Malaysia",
+                        "vinyl flooring Malaysia",
+                        "waterproof vinyl flooring",
+                        "affordable flooring Malaysia",
+                        "durable vinyl flooring",
+                        "anti-slip vinyl flooring",
+                        "buy vinyl flooring online Malaysia",
+                        "stylish vinyl flooring Malaysia",
+                        "vinyl sheet flooring price",
+                        "low maintenance flooring"
+                    ]
+                },
+                "description": {
+                    "short": "Transform your interiors with Flooring-567 – a stylish, waterproof, and durable vinyl flooring solution for Malaysian homes and offices. Shop now at WCD Malaysia.",
+                    "long": "Flooring-567 redefines modern flooring with its perfect blend of style, durability, and affordability. This waterproof and anti-slip vinyl sheet is engineered to withstand daily wear while enhancing the aesthetic of any space. Ideal for kitchens, bathrooms, living rooms, or commercial offices, Flooring-567 offers easy installation and minimal maintenance, making it a top pick for Malaysian homeowners, interior designers, and property developers."
+                },
+                "features": {
+                    "main_features": [
+                        "Waterproof & Anti-Slip: Perfect for wet zones like kitchens and bathrooms.",
+                        "Robust Durability: Resists scratches, dents, and heavy traffic.",
+                        "Sleek Design: Textured, matte finish that elevates any interior.",
+                        "Effortless Cleaning: Requires only sweeping and occasional mopping.",
+                        "Comfortable Feel: Softer and warmer than tiles or stone.",
+                        "Eco-Friendly: Made with sustainable, allergen-free materials."
+                    ],
+                    "benefits": [
+                        "Safe for moisture-prone areas with anti-slip properties",
+                        "Long-lasting performance in busy homes and offices",
+                        "Enhances spaces with a contemporary aesthetic",
+                        "Low-effort maintenance for busy lifestyles",
+                        "Warm and cozy underfoot for added comfort",
+                        "Healthy and sustainable for all environments"
+                    ],
+                    "design_compatibility": ["Modern", "Minimalist", "Industrial", "Coastal"]
+                },
+                "specifications": {
+                    "waterproof": true,
+                    "slip_resistant": true,
+                    "product_code": "PM20162",
+                    "dimensions": "2m width x custom length",
+                    "thickness": "2.0 mm",
+                    "wear_layer": "0.3 mm",
+                    "backing": "Non-woven fabric",
+                    "finish": "Textured, matte",
+                    "installation_type": ["Glue-down method", "Loose lay method"],
+                    "durability": "10 to 15 years",
+                    "maintenance": "Regular sweeping and occasional mopping with a damp cloth and mild detergent. Avoid harsh chemicals or abrasive tools."
+                },
+                "installation": {
+                    "method": ["Glue-down method for permanent installations", "Loose lay method for quick residential renovations"],
+                    "surface_types": ["Concrete", "Tile", "Plywood"],
+                    "diy_friendly": true,
+                    "professional_recommended": true,
+                    "requirements": [
+                        "Ensure a clean, dry, and level subfloor",
+                        "Use appropriate adhesive for glue-down method in high-traffic areas",
+                        "Loose lay method suitable for smaller residential spaces",
+                        "Seal seams for moisture protection in wet areas"
+                    ]
+                },
+                "maintenance": {
+                    "cleaning_method": "Regular sweeping and occasional mopping with a damp cloth and mild detergent. Avoid harsh chemicals or abrasive tools.",
+                    "special_treatments": "No waxing, sealing, or polishing required",
+                    "no_waxing": true,
+                    "no_polishing": true,
+                    "no_sealants": true
+                },
+                "faqs": [
+                    {
+                        "question": "What is Flooring-567 used for?",
+                        "answer": "Flooring-567 is a versatile vinyl flooring solution for homes, offices, and commercial spaces, ideal for both dry and wet areas due to its waterproof properties."
+                    },
+                    {
+                        "question": "Is Flooring-567 suitable for Malaysian homes?",
+                        "answer": "Yes, its durability, comfort, and easy maintenance make it perfect for Malaysian households."
+                    },
+                    {
+                        "question": "How durable is Flooring-567?",
+                        "answer": "With proper care, it lasts 10–15 years, even in high-traffic environments."
+                    },
+                    {
+                        "question": "Is Flooring-567 safe for bathrooms and kitchens?",
+                        "answer": "Yes, its waterproof and anti-slip features make it ideal for wet areas."
+                    },
+                    {
+                        "question": "Can I install Flooring-567 myself?",
+                        "answer": "Yes, it’s DIY-friendly with glue-down or loose lay methods, though professional installation is recommended for larger spaces."
+                    },
+                    {
+                        "question": "What’s the cost of vinyl flooring like Flooring-567 in Malaysia?",
+                        "answer": "Prices typically range from RM3 to RM8 per square foot, depending on quality and brand."
+                    },
+                    {
+                        "question": "How do I maintain Flooring-567?",
+                        "answer": "Sweep regularly and mop with a mild detergent. Avoid harsh chemicals or abrasive tools."
+                    },
+                    {
+                        "question": "Where can I buy Flooring-567 in Malaysia?",
+                        "answer": "Shop online at WCD Malaysia, a trusted supplier of quality vinyl flooring."
+                    }
+                ],
+                "call_to_action": {
+                    "primary": "Elevate Your Floors Today! Choose Flooring-567 for stylish, durable, and affordable vinyl flooring.",
+                    "secondary": "Shop now at WCD Malaysia to explore availability and get expert flooring guidance.",
+                    "tertiary": "Discover Flooring-567 at WCD Malaysia, your trusted vinyl flooring supplier."
+                },
+                "status": "active",
+                "created_at": "2025-07-17",
+                "updated_at": "2025-07-31",
+                "additional_description": {
+                    "headline": "Flooring-567 – Stylish and Durable Vinyl Flooring for Every Space",
+                    "sections": [
+                        {
+                            "title": "Transform with Flooring-567",
+                            "content": "Upgrade your home or office with Flooring-567, a cost-effective vinyl flooring solution that blends durability, waterproofing, and modern style for Malaysian interiors."
+                        },
+                        {
+                            "title": "Perfect for Any Environment",
+                            "content": "From kitchens and bathrooms to living rooms and offices, Flooring-567 delivers safety, durability, and elegance to every space."
+                        },
+                        {
+                            "title": "Why Choose Flooring-567?",
+                            "content": "Enjoy a waterproof, anti-slip surface, easy maintenance, and a sleek design. Made with eco-friendly materials, it’s safe for all environments."
+                        },
+                        {
+                            "title": "Effortless Installation",
+                            "content": "Flooring-567’s flexible design supports easy DIY loose lay or secure glue-down installation, ideal for any project."
+                        },
+                        {
+                            "title": "Trusted by WCD Malaysia",
+                            "content": "WCD Malaysia is your go-to source for premium vinyl flooring. Shop Flooring-567 online for quality, affordability, and nationwide support."
+                        },
+                        {
+                            "title": "Ready to Redesign Your Floors?",
+                            "content": "Choose Flooring-567 from WCD Malaysia for durable, stylish, and budget-friendly vinyl flooring. Shop now to get started."
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "product": {
+                "id": "Flooring-789",
+                "name": "Flooring-789",
+                "slug": "flooring-789",
+                "category": "Flooring",
+                "brand": "Versafloor",
+                "images": {
+                    "main_image": "/Flooring/Flooring-3.jpg",
+                    "gallery": ["/Flooring/Flooring-3.jpg"],
+                    "thumbnails": ["/Flooring/Flooring-3.jpg"],
+                    "alt_texts": [
+                        "Flooring-789 vinyl sheet in stylish Malaysian interior",
+                        "Flooring-789 | Durable Waterproof Vinyl Flooring Malaysia",
+                        "Transform your space with Flooring-789 – a cost-effective, waterproof, and modern vinyl flooring solution for Malaysian homes and offices.",
+                        "Designed for durability and elegance, Flooring-789 is perfect for high-traffic and moisture-prone areas."
+                    ]
+                },
+                "seo": {
+                    "meta_title": "Flooring-789 | Stylish & Durable Vinyl Flooring Malaysia",
+                    "meta_description": "Explore Flooring-789 – a waterproof, durable, and stylish vinyl flooring solution for Malaysian homes and offices. Shop now at WCD Malaysia for quality and affordability.",
+                    "keywords": [
+                        "Flooring-789 Malaysia",
+                        "vinyl flooring Malaysia",
+                        "waterproof vinyl flooring",
+                        "affordable vinyl flooring",
+                        "durable flooring Malaysia",
+                        "anti-slip vinyl flooring",
+                        "buy vinyl flooring online Malaysia",
+                        "stylish vinyl flooring",
+                        "vinyl sheet flooring price",
+                        "low maintenance flooring"
+                    ]
+                },
+                "description": {
+                    "short": "Redefine your interiors with Flooring-789 – a stylish, waterproof, and durable vinyl flooring solution for Malaysian homes and businesses. Shop now at WCD Malaysia.",
+                    "long": "Flooring-789 brings unmatched style and durability to Malaysian homes and commercial spaces. This waterproof, anti-slip vinyl flooring is built to endure daily wear while adding a sleek, contemporary look to any room. Perfect for kitchens, bathrooms, living spaces, or offices, Flooring-789 combines easy installation, low maintenance, and affordability, making it the go-to choice for homeowners, interior designers, and property developers across Malaysia."
+                },
+                "features": {
+                    "main_features": [
+                        "Waterproof & Anti-Slip: Ideal for wet areas like bathrooms and kitchens.",
+                        "Superior Durability: Resists scratches, dents, and heavy foot traffic.",
+                        "Contemporary Design: Smooth, matte finish that suits modern interiors.",
+                        "Low Maintenance: Easy to clean with regular sweeping and mopping.",
+                        "Comfortable Surface: Soft and warm underfoot compared to tiles.",
+                        "Sustainable Choice: Made with eco-friendly, allergen-free materials."
+                    ],
+                    "benefits": [
+                        "Enhanced safety in wet zones with anti-slip properties",
+                        "Long-lasting performance for busy homes and offices",
+                        "Adds a sleek, modern vibe to any space",
+                        "Effortless cleaning for busy lifestyles",
+                        "Cozy and comfortable flooring experience",
+                        "Eco-conscious and safe for all environments"
+                    ],
+                    "design_compatibility": ["Modern", "Minimalist", "Industrial", "Coastal"]
+                },
+                "specifications": {
+                    "waterproof": true,
+                    "slip_resistant": true,
+                    "product_code": "PM20162",
+                    "dimensions": "2m width x custom length",
+                    "thickness": "2.0 mm",
+                    "wear_layer": "0.3 mm",
+                    "backing": "Non-woven fabric",
+                    "finish": "Textured, matte",
+                    "installation_type": ["Glue-down method", "Loose lay method"],
+                    "durability": "10 to 15 years",
+                    "maintenance": "Regular sweeping and occasional mopping with a damp cloth and mild detergent. Avoid harsh chemicals or abrasive tools."
+                },
+                "installation": {
+                    "method": ["Glue-down method for permanent installations", "Loose lay method for quick residential renovations"],
+                    "surface_types": ["Concrete", "Tile", "Plywood"],
+                    "diy_friendly": true,
+                    "professional_recommended": true,
+                    "requirements": [
+                        "Ensure a clean, dry, and level subfloor",
+                        "Use appropriate adhesive for glue-down method in high-traffic areas",
+                        "Loose lay method suitable for smaller residential spaces",
+                        "Seal seams for moisture protection in wet areas"
+                    ]
+                },
+                "maintenance": {
+                    "cleaning_method": "Regular sweeping and occasional mopping with a damp cloth and mild detergent. Avoid harsh chemicals or abrasive tools.",
+                    "special_treatments": "No waxing, sealing, or polishing required",
+                    "no_waxing": true,
+                    "no_polishing": true,
+                    "no_sealants": true
+                },
+                "faqs": [
+                    {
+                        "question": "What is Flooring-789 used for?",
+                        "answer": "Flooring-789 is a versatile vinyl flooring solution for homes, offices, and commercial spaces, ideal for both dry and wet areas due to its waterproof properties."
+                    },
+                    {
+                        "question": "Is Flooring-789 suitable for Malaysian homes?",
+                        "answer": "Yes, its durability, comfort, and low maintenance make it an excellent choice for Malaysian households."
+                    },
+                    {
+                        "question": "How durable is Flooring-789?",
+                        "answer": "With proper care, it lasts 10–15 years, even in high-traffic areas."
+                    },
+                    {
+                        "question": "Is Flooring-789 safe for wet areas?",
+                        "answer": "Yes, its waterproof and anti-slip features make it perfect for bathrooms, kitchens, and laundry rooms."
+                    },
+                    {
+                        "question": "Can I install Flooring-789 myself?",
+                        "answer": "Yes, it’s DIY-friendly with glue-down or loose lay methods, though professional installation is recommended for larger spaces."
+                    },
+                    {
+                        "question": "What’s the cost of vinyl flooring in Malaysia?",
+                        "answer": "Vinyl flooring like Flooring-789 typically costs RM3 to RM8 per square foot, depending on quality and brand."
+                    },
+                    {
+                        "question": "How do I clean Flooring-789?",
+                        "answer": "Sweep regularly and mop with a damp cloth and mild detergent. Avoid harsh chemicals or abrasive tools."
+                    },
+                    {
+                        "question": "Where can I buy Flooring-789 in Malaysia?",
+                        "answer": "Purchase online from WCD Malaysia, a trusted supplier of premium vinyl flooring."
+                    }
+                ],
+                "call_to_action": {
+                    "primary": "Transform Your Space Now! Choose Flooring-789 for stylish, durable, and budget-friendly vinyl flooring.",
+                    "secondary": "Visit WCD Malaysia to check availability and get expert flooring advice.",
+                    "tertiary": "Shop Flooring-789 at WCD Malaysia, your trusted source for quality vinyl flooring."
+                },
+                "status": "active",
+                "created_at": "2025-07-17",
+                "updated_at": "2025-07-31",
+                "additional_description": {
+                    "headline": "Flooring-789 – Your Solution for Stylish and Durable Vinyl Flooring",
+                    "sections": [
+                        {
+                            "title": "Upgrade with Flooring-789",
+                            "content": "Revamp your home or office with Flooring-789, a budget-friendly vinyl flooring solution that combines durability, waterproofing, and modern style for Malaysian interiors."
+                        },
+                        {
+                            "title": "Versatile for Every Space",
+                            "content": "Whether it’s a busy kitchen, a cozy bedroom, or a professional office, Flooring-789 delivers safety, durability, and elegance to any room."
+                        },
+                        {
+                            "title": "Why Flooring-789 Stands Out",
+                            "content": "Enjoy a waterproof, anti-slip surface, minimal maintenance, and a contemporary design. Made with eco-friendly materials, it’s a safe choice for any environment."
+                        },
+                        {
+                            "title": "Simple and Flexible Installation",
+                            "content": "Flooring-789 is easy to install with DIY-friendly loose lay or secure glue-down methods, perfect for any project size."
+                        },
+                        {
+                            "title": "Trusted Quality from WCD Malaysia",
+                            "content": "WCD Malaysia is your reliable source for premium vinyl flooring. Shop Flooring-789 online for quality, value, and nationwide support."
+                        },
+                        {
+                            "title": "Start Your Flooring Journey",
+                            "content": "Ready to elevate your floors? Choose Flooring-789 from WCD Malaysia for durable, stylish, and affordable vinyl flooring."
+                        }
+                    ]
+                }
+            }
+        },
+        // dummy data  for now  rest of the products  category Carpet tiles 
+
+        {
+            "product": {
+                "id": "Carpet-tiles-123",
+                "name": "Carpet-tiles-123",
+                "slug": "Carpet-tiles-123",
+                "category": "Carpet tiles",
+                "brand": "Versafloor",
+                "images": {
+                    "main_image": "/Carpet tiles/Carpet-tiles-1.jpg",
+                    "gallery": ["/Carpet tiles/Carpet-tiles-1.jpg"],
+                    "thumbnails": ["/Carpet tiles/Carpet-tiles-1.jpg"],
+                    "alt_texts": [
+                        "Carpet-tiles-123 in stylish Malaysian interior",
+                        "Carpet-tiles-123 | Durable and Stylish Carpet Tiles Malaysia",
+                        "Transform your space with Carpet-tiles-123 – a versatile, durable, and modern carpet tile solution for Malaysian homes and offices.",
+                        "Designed for comfort and durability, Carpet-tiles-123 is perfect for high-traffic areas and stylish interiors."
+                    ]
+                },
+                "seo": {
+                    "meta_title": "Carpet-tiles-123 | Stylish & Durable Carpet Tiles Malaysia",
+                    "meta_description": "Explore Carpet-tiles-123 – a durable, stylish, and versatile carpet tile solution for Malaysian homes and offices. Shop now at WCD Malaysia for quality and affordability.",
+                    "keywords": [
+                        "Carpet-tiles-123 Malaysia",
+                        "carpet tiles Malaysia",
+                        "durable carpet tiles",
+                        "affordable carpet tiles",
+                        "stylish carpet tiles",
+                        "buy carpet tiles online Malaysia",
+                        "carpet tiles for office",
+                        "modern carpet tiles Malaysia",
+                        "carpet tiles price Malaysia",
+                        "low maintenance carpet tiles"
+                    ]
+                },
+                "description": {
+                    "short": "Elevate your interiors with Carpet-tiles-123 – a stylish, durable, and versatile carpet tile solution for Malaysian homes and businesses. Shop now at WCD Malaysia.",
+                    "long": "Carpet-tiles-123 brings comfort, style, and durability to Malaysian homes and commercial spaces. These high-quality carpet tiles are designed to withstand heavy foot traffic while adding a warm, contemporary look to any room. Ideal for offices, living spaces, bedrooms, or commercial settings, Carpet-tiles-123 offers easy installation, low maintenance, and endless design possibilities, making it the top choice for homeowners, interior designers, and property developers across Malaysia."
+                },
+                "features": {
+                    "main_features": [
+                        "High Durability: Built to resist wear and tear in high-traffic areas.",
+                        "Stylish Design: Modern, textured finish that enhances any interior style.",
+                        "Easy Installation: Modular tiles allow for flexible and creative layouts.",
+                        "Low Maintenance: Simple to clean with regular vacuuming and occasional spot cleaning.",
+                        "Comfort Underfoot: Soft and cushioned for a cozy feel compared to hard floors.",
+                        "Eco-Friendly: Made with sustainable, allergen-resistant materials."
+                    ],
+                    "benefits": [
+                        "Long-lasting performance for busy homes and offices",
+                        "Customizable designs to suit any aesthetic",
+                        "Quick and easy installation for any project size",
+                        "Hassle-free maintenance for busy lifestyles",
+                        "Warm and comfortable flooring experience",
+                        "Safe and eco-conscious for all environments"
+                    ],
+                    "design_compatibility": ["Modern", "Minimalist", "Industrial", "Traditional"]
+                },
+                "specifications": {
+                    "waterproof": false,
+                    "slip_resistant": true,
+                    "product_code": "PM20162",
+                    "dimensions": "50cm x 50cm tiles",
+                    "thickness": "5.0 mm",
+                    "wear_layer": "0.5 mm",
+                    "backing": "Bitumen backing",
+                    "finish": "Textured, plush",
+                    "installation_type": ["Glue-down method", "Loose lay method"],
+                    "durability": "10 to 15 years",
+                    "maintenance": "Vacuum regularly and spot clean with mild detergent. Avoid excessive water."
+                },
+                "installation": {
+                    "method": ["Glue-down for permanent setups", "Loose lay for flexible installations"],
+                    "surface_types": ["Concrete", "Tile", "Plywood"],
+                    "diy_friendly": true,
+                    "professional_recommended": true,
+                    "requirements": [
+                        "Ensure a clean, dry, and level subfloor",
+                        "Use adhesive for glue-down in high-traffic areas",
+                        "Loose lay suitable for smaller or temporary setups",
+                        "Align tiles for consistent patterns and secure fit"
+                    ]
+                },
+                "maintenance": {
+                    "cleaning_method": "Vacuum regularly and spot clean with a mild detergent. Avoid excessive water or harsh chemicals.",
+                    "special_treatments": "No waxing or polishing needed",
+                    "no_waxing": true,
+                    "no_polishing": true,
+                    "no_sealants": true
+                },
+                "faqs": [
+                    {
+                        "question": "What are Carpet-tiles-123 used for?",
+                        "answer": "Carpet-tiles-123 are versatile flooring solutions for homes, offices, and commercial spaces, ideal for creating stylish and comfortable interiors."
+                    },
+                    {
+                        "question": "Are Carpet-tiles-123 suitable for Malaysian homes?",
+                        "answer": "Yes, their durability, comfort, and easy maintenance make them perfect for Malaysian households."
+                    },
+                    {
+                        "question": "How durable are Carpet-tiles-123?",
+                        "answer": "With proper care, they last 10–15 years, even in high-traffic areas."
+                    },
+                    {
+                        "question": "Are Carpet-tiles-123 suitable for wet areas?",
+                        "answer": "They are not waterproof but can be used in low-moisture areas. Avoid bathrooms or kitchens with high water exposure."
+                    },
+                    {
+                        "question": "Can I install Carpet-tiles-123 myself?",
+                        "answer": "Yes, they’re DIY-friendly with glue-down or loose lay options, though professional installation is recommended for larger spaces."
+                    },
+                    {
+                        "question": "How much do carpet tiles cost in Malaysia?",
+                        "answer": "Carpet tiles like Carpet-tiles-123 typically cost RM4 to RM10 per square foot, depending on quality and brand."
+                    },
+                    {
+                        "question": "How do I clean Carpet-tiles-123?",
+                        "answer": "Vacuum regularly and spot clean with a mild detergent. Avoid excessive water or harsh chemicals."
+                    },
+                    {
+                        "question": "Where can I buy Carpet-tiles-123 in Malaysia?",
+                        "answer": "Purchase online from WCD Malaysia, a trusted supplier of premium carpet tiles."
+                    }
+                ],
+                "call_to_action": {
+                    "primary": "Transform Your Space Now! Choose Carpet-tiles-123 for stylish, durable, and comfortable flooring.",
+                    "secondary": "Visit WCD Malaysia to check availability and get expert flooring advice.",
+                    "tertiary": "Shop Carpet-tiles-123 at WCD Malaysia, your trusted source for quality carpet tiles."
+                },
+                "status": "active",
+                "created_at": "2025-07-17",
+                "updated_at": "2025-07-31",
+                "additional_description": {
+                    "headline": "Carpet-tiles-123 – Your Solution for Stylish and Comfortable Flooring",
+                    "sections": [
+                        {
+                            "title": "Upgrade with Carpet-tiles-123",
+                            "content": "Revamp your home or office with Carpet-tiles-123, a versatile carpet tile solution that combines durability, comfort, and modern style for Malaysian interiors."
+                        },
+                        {
+                            "title": "Perfect for Every Space",
+                            "content": "From cozy bedrooms to busy offices, Carpet-tiles-123 delivers comfort, durability, and elegance to any room."
+                        },
+                        {
+                            "title": "Why Carpet-tiles-123 Stands Out",
+                            "content": "Enjoy a durable, easy-to-clean surface with a stylish design. Made with eco-friendly materials, it’s a safe and sustainable choice for any environment."
+                        },
+                        {
+                            "title": "Flexible and Easy Installation",
+                            "content": "Carpet-tiles-123 are simple to install with DIY-friendly loose lay or secure glue-down methods, offering flexibility for any project."
+                        },
+                        {
+                            "title": "Trusted Quality from WCD Malaysia",
+                            "content": "WCD Malaysia is your reliable source for premium carpet tiles. Shop Carpet-tiles-123 online for quality, value, and nationwide support."
+                        },
+                        {
+                            "title": "Start Your Flooring Journey",
+                            "content": "Ready to refresh your floors? Choose Carpet-tiles-123 from WCD Malaysia for durable, stylish, and comfortable flooring."
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "product": {
+                "id": "Carpet-tiles-456",
+                "name": "Carpet-tiles-456",
+                "slug": "Carpet-tiles-456",
+                "category": "Carpet tiles",
+                "brand": "Versafloor",
+                "images": {
+                    "main_image": "/Carpet tiles/Carpet-tiles-2.jpg",
+                    "gallery": ["/Carpet tiles/Carpet-tiles-2.jpg"],
+                    "thumbnails": ["/Carpet tiles/Carpet-tiles-2.jpg"],
+                    "alt_texts": [
+                        "Carpet-tiles-456 in stylish Malaysian interior",
+                        "Carpet-tiles-456 | Durable and Stylish Carpet Tiles Malaysia",
+                        "Transform your space with Carpet-tiles-456 – a versatile, durable, and modern carpet tile solution for Malaysian homes and offices.",
+                        "Designed for comfort and durability, Carpet-tiles-456 is perfect for high-traffic areas and stylish interiors."
+                    ]
+                },
+                "seo": {
+                    "meta_title": "Carpet-tiles-456 | Stylish & Durable Carpet Tiles Malaysia",
+                    "meta_description": "Explore Carpet-tiles-456 – a durable, stylish, and versatile carpet tile solution for Malaysian homes and offices. Shop now at WCD Malaysia for quality and affordability.",
+                    "keywords": [
+                        "Carpet-tiles-456 Malaysia",
+                        "carpet tiles Malaysia",
+                        "durable carpet tiles",
+                        "affordable carpet tiles",
+                        "stylish carpet tiles",
+                        "buy carpet tiles online Malaysia",
+                        "carpet tiles for office",
+                        "modern carpet tiles Malaysia",
+                        "carpet tiles price Malaysia",
+                        "low maintenance carpet tiles"
+                    ]
+                },
+                "description": {
+                    "short": "Elevate your interiors with Carpet-tiles-456 – a stylish, durable, and versatile carpet tile solution for Malaysian homes and businesses. Shop now at WCD Malaysia.",
+                    "long": "Carpet-tiles-456 brings comfort, style, and durability to Malaysian homes and commercial spaces. These premium carpet tiles are engineered to withstand heavy foot traffic while adding a warm, modern aesthetic to any room. Perfect for offices, living spaces, bedrooms, or commercial settings, Carpet-tiles-456 offers easy installation, low maintenance, and versatile design options, making it the ideal choice for homeowners, interior designers, and property developers across Malaysia."
+                },
+                "features": {
+                    "main_features": [
+                        "High Durability: Built to resist wear and tear in high-traffic areas.",
+                        "Stylish Design: Modern, textured finish that enhances any interior style.",
+                        "Easy Installation: Modular tiles allow for flexible and creative layouts.",
+                        "Low Maintenance: Simple to clean with regular vacuuming and occasional spot cleaning.",
+                        "Comfort Underfoot: Soft and cushioned for a cozy feel compared to hard floors.",
+                        "Eco-Friendly: Made with sustainable, allergen-resistant materials."
+                    ],
+                    "benefits": [
+                        "Long-lasting performance for busy homes and offices",
+                        "Customizable designs to suit any aesthetic",
+                        "Quick and easy installation for any project size",
+                        "Hassle-free maintenance for busy lifestyles",
+                        "Warm and comfortable flooring experience",
+                        "Safe and eco-conscious for all environments"
+                    ],
+                    "design_compatibility": ["Modern", "Minimalist", "Industrial", "Traditional"]
+                },
+                "specifications": {
+                    "waterproof": false,
+                    "slip_resistant": true,
+                    "product_code": "PM20162",
+                    "dimensions": "50cm x 50cm tiles",
+                    "thickness": "5.0 mm",
+                    "wear_layer": "0.5 mm",
+                    "backing": "Bitumen backing",
+                    "finish": "Textured, plush",
+                    "installation_type": ["Glue-down method", "Loose lay method"],
+                    "durability": "10 to 15 years",
+                    "maintenance": "Vacuum regularly and spot clean with mild detergent. Avoid excessive water."
+                },
+                "installation": {
+                    "method": ["Glue-down for permanent setups", "Loose lay for flexible installations"],
+                    "surface_types": ["Concrete", "Tile", "Plywood"],
+                    "diy_friendly": true,
+                    "professional_recommended": true,
+                    "requirements": [
+                        "Ensure a clean, dry, and level subfloor",
+                        "Use adhesive for glue-down in high-traffic areas",
+                        "Loose lay suitable for smaller or temporary setups",
+                        "Align tiles for consistent patterns and secure fit"
+                    ]
+                },
+                "maintenance": {
+                    "cleaning_method": "Vacuum regularly and spot clean with a mild detergent. Avoid excessive water or harsh chemicals.",
+                    "special_treatments": "No waxing or polishing needed",
+                    "no_waxing": true,
+                    "no_polishing": true,
+                    "no_sealants": true
+                },
+                "faqs": [
+                    {
+                        "question": "What are Carpet-tiles-456 used for?",
+                        "answer": "Carpet-tiles-456 are versatile flooring solutions for homes, offices, and commercial spaces, ideal for creating stylish and comfortable interiors."
+                    },
+                    {
+                        "question": "Are Carpet-tiles-456 suitable for Malaysian homes?",
+                        "answer": "Yes, their durability, comfort, and easy maintenance make them perfect for Malaysian households."
+                    },
+                    {
+                        "question": "How durable are Carpet-tiles-456?",
+                        "answer": "With proper care, they last 10–15 years, even in high-traffic areas."
+                    },
+                    {
+                        "question": "Are Carpet-tiles-456 suitable for wet areas?",
+                        "answer": "They are not waterproof but can be used in low-moisture areas. Avoid bathrooms or kitchens with high water exposure."
+                    },
+                    {
+                        "question": "Can I install Carpet-tiles-456 myself?",
+                        "answer": "Yes, they’re DIY-friendly with glue-down or loose lay options, though professional installation is recommended for larger spaces."
+                    },
+                    {
+                        "question": "How much do carpet tiles cost in Malaysia?",
+                        "answer": "Carpet tiles like Carpet-tiles-456 typically cost RM4 to RM10 per square foot, depending on quality and brand."
+                    },
+                    {
+                        "question": "How do I clean Carpet-tiles-456?",
+                        "answer": "Vacuum regularly and spot clean with a mild detergent. Avoid excessive water or harsh chemicals."
+                    },
+                    {
+                        "question": "Where can I buy Carpet-tiles-456 in Malaysia?",
+                        "answer": "Purchase online from WCD Malaysia, a trusted supplier of premium carpet tiles."
+                    }
+                ],
+                "call_to_action": {
+                    "primary": "Transform Your Space Now! Choose Carpet-tiles-456 for stylish, durable, and comfortable flooring.",
+                    "secondary": "Visit WCD Malaysia to check availability and get expert flooring advice.",
+                    "tertiary": "Shop Carpet-tiles-456 at WCD Malaysia, your trusted source for quality carpet tiles."
+                },
+                "status": "active",
+                "created_at": "2025-07-17",
+                "updated_at": "2025-07-31",
+                "additional_description": {
+                    "headline": "Carpet-tiles-456 – Your Solution for Stylish and Comfortable Flooring",
+                    "sections": [
+                        {
+                            "title": "Upgrade with Carpet-tiles-456",
+                            "content": "Revamp your home or office with Carpet-tiles-456, a versatile carpet tile solution that combines durability, comfort, and modern style for Malaysian interiors."
+                        },
+                        {
+                            "title": "Perfect for Every Space",
+                            "content": "From cozy bedrooms to busy offices, Carpet-tiles-456 delivers comfort, durability, and elegance to any room."
+                        },
+                        {
+                            "title": "Why Carpet-tiles-456 Stands Out",
+                            "content": "Enjoy a durable, easy-to-clean surface with a stylish design. Made with eco-friendly materials, it’s a safe and sustainable choice for any environment."
+                        },
+                        {
+                            "title": "Flexible and Easy Installation",
+                            "content": "Carpet-tiles-456 are simple to install with DIY-friendly loose lay or secure glue-down methods, offering flexibility for any project."
+                        },
+                        {
+                            "title": "Trusted Quality from WCD Malaysia",
+                            "content": "WCD Malaysia is your reliable source for premium carpet tiles. Shop Carpet-tiles-456 online for quality, value, and nationwide support."
+                        },
+                        {
+                            "title": "Start Your Flooring Journey",
+                            "content": "Ready to refresh your floors? Choose Carpet-tiles-456 from WCD Malaysia for durable, stylish, and comfortable flooring."
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "product": {
+                "id": "Carpet-tiles-789",
+                "name": "Carpet-tiles-789",
+                "slug": "Carpet-tiles-789",
+                "category": "Carpet tiles",
+                "brand": "Versafloor",
+                "images": {
+                    "main_image": "/Carpet tiles/Carpet-tiles-3.jpg",
+                    "gallery": ["/Carpet tiles/Carpet-tiles-3.jpg"],
+                    "thumbnails": ["/Carpet tiles/Carpet-tiles-3.jpg"],
+                    "alt_texts": [
+                        "Carpet-tiles-789 in stylish Malaysian interior",
+                        "Carpet-tiles-789 | Durable and Stylish Carpet Tiles Malaysia",
+                        "Transform your space with Carpet-tiles-789 – a versatile, durable, and modern carpet tile solution for Malaysian homes and offices.",
+                        "Designed for comfort and durability, Carpet-tiles-789 is perfect for high-traffic areas and stylish interiors."
+                    ]
+                },
+                "seo": {
+                    "meta_title": "Carpet-tiles-789 | Stylish & Durable Carpet Tiles Malaysia",
+                    "meta_description": "Discover Carpet-tiles-789 – a durable, stylish, and versatile carpet tile solution for Malaysian homes and offices. Shop now at WCD Malaysia for quality and affordability.",
+                    "keywords": [
+                        "Carpet-tiles-789 Malaysia",
+                        "carpet tiles Malaysia",
+                        "durable carpet tiles",
+                        "affordable carpet tiles",
+                        "stylish carpet tiles",
+                        "buy carpet tiles online Malaysia",
+                        "carpet tiles for office",
+                        "modern carpet tiles Malaysia",
+                        "carpet tiles price Malaysia",
+                        "low maintenance carpet tiles"
+                    ]
+                },
+                "description": {
+                    "short": "Redefine your interiors with Carpet-tiles-789 – a stylish, durable, and versatile carpet tile solution for Malaysian homes and businesses. Shop now at WCD Malaysia.",
+                    "long": "Carpet-tiles-789 brings unmatched comfort, style, and durability to Malaysian homes and commercial spaces. These premium carpet tiles are designed to endure heavy foot traffic while adding a warm, contemporary aesthetic to any room. Ideal for offices, living spaces, bedrooms, or commercial settings, Carpet-tiles-789 offers easy installation, low maintenance, and flexible design options, making it the perfect choice for homeowners, interior designers, and property developers across Malaysia."
+                },
+                "features": {
+                    "main_features": [
+                        "High Durability: Built to resist wear and tear in high-traffic areas.",
+                        "Stylish Design: Modern, textured finish that enhances any interior style.",
+                        "Easy Installation: Modular tiles allow for flexible and creative layouts.",
+                        "Low Maintenance: Simple to clean with regular vacuuming and occasional spot cleaning.",
+                        "Comfort Underfoot: Soft and cushioned for a cozy feel compared to hard floors.",
+                        "Eco-Friendly: Made with sustainable, allergen-resistant materials."
+                    ],
+                    "benefits": [
+                        "Long-lasting performance for busy homes and offices",
+                        "Customizable designs to suit any aesthetic",
+                        "Quick and easy installation for any project size",
+                        "Hassle-free maintenance for busy lifestyles",
+                        "Warm and comfortable flooring experience",
+                        "Safe and eco-conscious for all environments"
+                    ],
+                    "design_compatibility": ["Modern", "Minimalist", "Industrial", "Traditional"]
+                },
+                "specifications": {
+                    "waterproof": false,
+                    "slip_resistant": true,
+                    "product_code": "PM20162",
+                    "dimensions": "50cm x 50cm tiles",
+                    "thickness": "5.0 mm",
+                    "wear_layer": "0.5 mm",
+                    "backing": "Bitumen backing",
+                    "finish": "Textured, plush",
+                    "installation_type": ["Glue-down method", "Loose lay method"],
+                    "durability": "10 to 15 years",
+                    "maintenance": "Vacuum regularly and spot clean with mild detergent. Avoid excessive water."
+                },
+                "installation": {
+                    "method": ["Glue-down for permanent setups", "Loose lay for flexible installations"],
+                    "surface_types": ["Concrete", "Tile", "Plywood"],
+                    "diy_friendly": true,
+                    "professional_recommended": true,
+                    "requirements": [
+                        "Ensure a clean, dry, and level subfloor",
+                        "Use adhesive for glue-down in high-traffic areas",
+                        "Loose lay suitable for smaller or temporary setups",
+                        "Align tiles for consistent patterns and secure fit"
+                    ]
+                },
+                "maintenance": {
+                    "cleaning_method": "Vacuum regularly and spot clean with a mild detergent. Avoid excessive water or harsh chemicals.",
+                    "special_treatments": "No waxing or polishing needed",
+                    "no_waxing": true,
+                    "no_polishing": true,
+                    "no_sealants": true
+                },
+                "faqs": [
+                    {
+                        "question": "What are Carpet-tiles-789 used for?",
+                        "answer": "Carpet-tiles-789 are versatile flooring solutions for homes, offices, and commercial spaces, ideal for creating stylish and comfortable interiors."
+                    },
+                    {
+                        "question": "Are Carpet-tiles-789 suitable for Malaysian homes?",
+                        "answer": "Yes, their durability, comfort, and easy maintenance make them perfect for Malaysian households."
+                    },
+                    {
+                        "question": "How durable are Carpet-tiles-789?",
+                        "answer": "With proper care, they last 10–15 years, even in high-traffic areas."
+                    },
+                    {
+                        "question": "Are Carpet-tiles-789 suitable for wet areas?",
+                        "answer": "They are not waterproof but can be used in low-moisture areas. Avoid bathrooms or kitchens with high water exposure."
+                    },
+                    {
+                        "question": "Can I install Carpet-tiles-789 myself?",
+                        "answer": "Yes, they’re DIY-friendly with glue-down or loose lay options, though professional installation is recommended for larger spaces."
+                    },
+                    {
+                        "question": "How much do carpet tiles cost in Malaysia?",
+                        "answer": "Carpet tiles like Carpet-tiles-789 typically cost RM4 to RM10 per square foot, depending on quality and brand."
+                    },
+                    {
+                        "question": "How do I clean Carpet-tiles-789?",
+                        "answer": "Vacuum regularly and spot clean with a mild detergent. Avoid excessive water or harsh chemicals."
+                    },
+                    {
+                        "question": "Where can I buy Carpet-tiles-789 in Malaysia?",
+                        "answer": "Purchase online from WCD Malaysia, a trusted supplier of premium carpet tiles."
+                    }
+                ],
+                "call_to_action": {
+                    "primary": "Transform Your Space Now! Choose Carpet-tiles-789 for stylish, durable, and comfortable flooring.",
+                    "secondary": "Visit WCD Malaysia to check availability and get expert flooring advice.",
+                    "tertiary": "Shop Carpet-tiles-789 at WCD Malaysia, your trusted source for quality carpet tiles."
+                },
+                "status": "active",
+                "created_at": "2025-07-17",
+                "updated_at": "2025-07-31",
+                "additional_description": {
+                    "headline": "Carpet-tiles-789 – Your Solution for Stylish and Comfortable Flooring",
+                    "sections": [
+                        {
+                            "title": "Upgrade with Carpet-tiles-789",
+                            "content": "Revamp your home or office with Carpet-tiles-789, a versatile carpet tile solution that combines durability, comfort, and modern style for Malaysian interiors."
+                        },
+                        {
+                            "title": "Perfect for Every Space",
+                            "content": "From cozy bedrooms to busy offices, Carpet-tiles-789 delivers comfort, durability, and elegance to any room."
+                        },
+                        {
+                            "title": "Why Carpet-tiles-789 Stands Out",
+                            "content": "Enjoy a durable, easy-to-clean surface with a stylish design. Made with eco-friendly materials, it’s a safe and sustainable choice for any environment."
+                        },
+                        {
+                            "title": "Flexible and Easy Installation",
+                            "content": "Carpet-tiles-789 are simple to install with DIY-friendly loose lay or secure glue-down methods, offering flexibility for any project."
+                        },
+                        {
+                            "title": "Trusted Quality from WCD Malaysia",
+                            "content": "WCD Malaysia is your reliable source for premium carpet tiles. Shop Carpet-tiles-789 online for quality, value, and nationwide support."
+                        },
+                        {
+                            "title": "Start Your Flooring Journey",
+                            "content": "Ready to refresh your floors? Choose Carpet-tiles-789 from WCD Malaysia for durable, stylish, and comfortable flooring."
+                        }
+                    ]
+                }
+            }
+        },
+        // dummy data  for now  rest of the products  category Spc & Laminate
+        {
+            "product": {
+                "id": "Spc-Laminate-123",
+                "name": "Spc & Laminate 123",
+                "slug": "Spc-Laminate-123",
+                "category": "Spc & Laminate",
+                "brand": "Versafloor",
+                "images": {
+                    "main_image": "/Spc & Laminate/Spc-&-Laminate-2.jpg",
+                    "gallery": ["/Spc & Laminate/Spc-&-Laminate-2.jpg"],
+                    "thumbnails": ["/Spc & Laminate/Spc-&-Laminate-2.jpg"],
+                    "alt_texts": [
+                        "Spc-&-Laminate-123 in stylish Malaysian interior",
+                        "Spc-&-Laminate-123 | Durable and Stylish SPC & Laminate Flooring Malaysia",
+                        "Transform your space with Spc-&-Laminate-123 – a durable, waterproof, and modern flooring solution for Malaysian homes and offices.",
+                        "Designed for durability and elegance, Spc-&-Laminate-123 is perfect for high-traffic areas and stylish interiors."
+                    ]
+                },
+                "seo": {
+                    "meta_title": "Spc-&-Laminate-123 | Stylish & Durable SPC & Laminate Flooring Malaysia",
+                    "meta_description": "Discover Spc-&-Laminate-123 – a durable, waterproof, and stylish SPC and laminate flooring solution for Malaysian homes and offices. Shop now at WCD Malaysia for quality and affordability.",
+                    "keywords": [
+                        "Spc-&-Laminate-123 Malaysia",
+                        "SPC flooring Malaysia",
+                        "laminate flooring Malaysia",
+                        "waterproof SPC flooring",
+                        "durable laminate flooring",
+                        "buy SPC flooring online Malaysia",
+                        "modern laminate flooring",
+                        "SPC and laminate flooring price",
+                        "low maintenance flooring Malaysia",
+                        "stylish SPC flooring"
+                    ]
+                },
+                "description": {
+                    "short": "Elevate your interiors with Spc-&-Laminate-123 – a durable, waterproof, and stylish SPC and laminate flooring solution for Malaysian homes and businesses. Shop now at WCD Malaysia.",
+                    "long": "Spc-&-Laminate-123 brings unmatched durability, style, and versatility to Malaysian homes and commercial spaces. This premium SPC and laminate flooring is engineered to withstand heavy foot traffic, moisture, and daily wear while offering a sleek, wood-like aesthetic. Perfect for kitchens, bathrooms, living spaces, or offices, Spc-&-Laminate-123 combines easy click-lock installation, low maintenance, and a modern look, making it the ideal choice for homeowners, interior designers, and property developers across Malaysia."
+                },
+                "features": {
+                    "main_features": [
+                        "Waterproof: Ideal for wet areas like kitchens and bathrooms.",
+                        "High Durability: Resists scratches, dents, and heavy foot traffic.",
+                        "Stylish Design: Realistic wood-grain finish for a modern, elegant look.",
+                        "Easy Installation: Click-lock system for quick and secure setups.",
+                        "Low Maintenance: Simple to clean with regular sweeping and mopping.",
+                        "Eco-Friendly: Made with sustainable, allergen-free materials."
+                    ],
+                    "benefits": [
+                        "Safe for moisture-prone areas with waterproof properties",
+                        "Long-lasting performance for busy homes and offices",
+                        "Enhances interiors with a premium wood-like aesthetic",
+                        "Hassle-free installation with click-lock technology",
+                        "Effortless cleaning for busy lifestyles",
+                        "Safe and eco-conscious for all environments"
+                    ],
+                    "design_compatibility": ["Modern", "Minimalist", "Scandinavian", "Rustic"]
+                },
+                "specifications": {
+                    "waterproof": true,
+                    "slip_resistant": true,
+                    "product_code": "PM20162",
+                    "dimensions": "1220mm x 180mm planks",
+                    "thickness": "4.0 mm",
+                    "wear_layer": "0.3 mm",
+                    "backing": "EVA foam underlay",
+                    "finish": "Wood-grain, matte",
+                    "installation_type": ["Click-lock system", "Glue-down method"],
+                    "durability": "15 to 20 years",
+                    "maintenance": "Sweep regularly and mop with a damp cloth and mild detergent. Avoid abrasive cleaners."
+                },
+                "installation": {
+                    "method": ["Click-lock for quick, adhesive-free setups", "Glue-down for permanent installations"],
+                    "surface_types": ["Concrete", "Tile", "Plywood"],
+                    "diy_friendly": true,
+                    "professional_recommended": true,
+                    "requirements": [
+                        "Ensure a clean, dry, and level subfloor",
+                        "Use adhesive for glue-down in high-traffic areas",
+                        "Click-lock suitable for most residential and commercial spaces",
+                        "Allow planks to acclimate to room temperature before installation"
+                    ]
+                },
+                "maintenance": {
+                    "cleaning_method": "Sweep regularly and mop with a damp cloth and mild detergent. Avoid abrasive cleaners or excessive water.",
+                    "special_treatments": "No waxing or polishing needed",
+                    "no_waxing": true,
+                    "no_polishing": true,
+                    "no_sealants": true
+                },
+                "faqs": [
+                    {
+                        "question": "What is Spc-&-Laminate-123 used for?",
+                        "answer": "Spc-&-Laminate-123 is a versatile SPC and laminate flooring solution for homes, offices, and commercial spaces, ideal for both dry and wet areas due to its waterproof properties."
+                    },
+                    {
+                        "question": "Is Spc-&-Laminate-123 suitable for Malaysian homes?",
+                        "answer": "Yes, its durability, waterproofing, and easy maintenance make it perfect for Malaysian households."
+                    },
+                    {
+                        "question": "How durable is Spc-&-Laminate-123?",
+                        "answer": "With proper care, it lasts 15–20 years, even in high-traffic areas."
+                    },
+                    {
+                        "question": "Is Spc-&-Laminate-123 safe for wet areas?",
+                        "answer": "Yes, its waterproof properties make it ideal for bathrooms, kitchens, and laundry rooms."
+                    },
+                    {
+                        "question": "Can I install Spc-&-Laminate-123 myself?",
+                        "answer": "Yes, it’s DIY-friendly with a click-lock system or glue-down options, though professional installation is recommended for larger spaces."
+                    },
+                    {
+                        "question": "How much does SPC and laminate flooring cost in Malaysia?",
+                        "answer": "SPC and laminate flooring like Spc-&-Laminate-123 typically costs RM5 to RM12 per square foot, depending on quality and brand."
+                    },
+                    {
+                        "question": "How do I clean Spc-&-Laminate-123?",
+                        "answer": "Sweep regularly and mop with a damp cloth and mild detergent. Avoid abrasive cleaners or excessive water."
+                    },
+                    {
+                        "question": "Where can I buy Spc-&-Laminate-123 in Malaysia?",
+                        "answer": "Purchase online from WCD Malaysia, a trusted supplier of premium SPC and laminate flooring."
+                    }
+                ],
+                "call_to_action": {
+                    "primary": "Transform Your Space Now! Choose Spc-&-Laminate-123 for stylish, durable, and waterproof flooring.",
+                    "secondary": "Visit WCD Malaysia to check availability and get expert flooring advice.",
+                    "tertiary": "Shop Spc-&-Laminate-123 at WCD Malaysia, your trusted source for quality SPC and laminate flooring."
+                },
+                "status": "active",
+                "created_at": "2025-07-17",
+                "updated_at": "2025-07-31",
+                "additional_description": {
+                    "headline": "Spc-&-Laminate-123 – Your Solution for Stylish and Durable Flooring",
+                    "sections": [
+                        {
+                            "title": "Upgrade with Spc-&-Laminate-123",
+                            "content": "Revamp your home or office with Spc-&-Laminate-123, a durable, waterproof, and stylish SPC and laminate flooring solution for Malaysian interiors."
+                        },
+                        {
+                            "title": "Perfect for Every Space",
+                            "content": "From kitchens to offices, Spc-&-Laminate-123 delivers durability, elegance, and a wood-like aesthetic to any room."
+                        },
+                        {
+                            "title": "Why Spc-&-Laminate-123 Stands Out",
+                            "content": "Enjoy a waterproof, low-maintenance surface with a realistic wood-grain design. Made with eco-friendly materials, it’s a safe and sustainable choice."
+                        },
+                        {
+                            "title": "Effortless Installation",
+                            "content": "Spc-&-Laminate-123 is easy to install with a DIY-friendly click-lock system or secure glue-down methods, perfect for any project."
+                        },
+                        {
+                            "title": "Trusted Quality from WCD Malaysia",
+                            "content": "WCD Malaysia is your reliable source for premium SPC and laminate flooring. Shop Spc-&-Laminate-123 online for quality, value, and nationwide support."
+                        },
+                        {
+                            "title": "Start Your Flooring Journey",
+                            "content": "Ready to refresh your floors? Choose Spc-&-Laminate-123 from WCD Malaysia for durable, stylish, and waterproof flooring."
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "product": {
+                "id": "Spc-Laminate-456",
+                "name": "Spc-&-Laminate-456",
+                "slug": "Spc-Laminate-456",
+                "category": "Spc & Laminate",
+                "brand": "Versafloor",
+                "images": {
+                    "main_image": "/Spc & Laminate/Spc-&-Laminate-1.jpg",
+                    "gallery": ["/Spc & Laminate/Spc-&-Laminate-1.jpg"],
+                    "thumbnails": ["/Spc & Laminate/Spc-&-Laminate-1.jpg"],
+                    "alt_texts": [
+                        "Spc-&-Laminate-456 in stylish Malaysian interior",
+                        "Spc-&-Laminate-456 | Durable and Stylish SPC & Laminate Flooring Malaysia",
+                        "Transform your space with Spc-&-Laminate-456 – a durable, waterproof, and modern flooring solution for Malaysian homes and offices.",
+                        "Designed for durability and elegance, Spc-&-Laminate-456 is perfect for high-traffic areas and stylish interiors."
+                    ]
+                },
+                "seo": {
+                    "meta_title": "Spc-&-Laminate-456 | Stylish & Durable SPC & Laminate Flooring Malaysia",
+                    "meta_description": "Discover Spc-&-Laminate-456 – a durable, waterproof, and stylish SPC and laminate flooring solution for Malaysian homes and offices. Shop now at WCD Malaysia for quality and affordability.",
+                    "keywords": [
+                        "Spc-&-Laminate-456 Malaysia",
+                        "SPC flooring Malaysia",
+                        "laminate flooring Malaysia",
+                        "waterproof SPC flooring",
+                        "durable laminate flooring",
+                        "buy SPC flooring online Malaysia",
+                        "modern laminate flooring",
+                        "SPC and laminate flooring price",
+                        "low maintenance flooring Malaysia",
+                        "stylish SPC flooring"
+                    ]
+                },
+                "description": {
+                    "short": "Elevate your interiors with Spc-&-Laminate-456 – a durable, waterproof, and stylish SPC and laminate flooring solution for Malaysian homes and businesses. Shop now at WCD Malaysia.",
+                    "long": "Spc-&-Laminate-456 delivers unmatched durability, style, and versatility to Malaysian homes and commercial spaces. This premium SPC and laminate flooring is engineered to withstand heavy foot traffic, moisture, and daily wear while offering a sleek, wood-like aesthetic. Perfect for kitchens, bathrooms, living spaces, or offices, Spc-&-Laminate-456 combines easy click-lock installation, low maintenance, and a modern look, making it the ideal choice for homeowners, interior designers, and property developers across Malaysia."
+                },
+                "features": {
+                    "main_features": [
+                        "Waterproof: Ideal for wet areas like kitchens and bathrooms.",
+                        "High Durability: Resists scratches, dents, and heavy foot traffic.",
+                        "Stylish Design: Realistic wood-grain finish for a modern, elegant look.",
+                        "Easy Installation: Click-lock system for quick and secure setups.",
+                        "Low Maintenance: Simple to clean with regular sweeping and mopping.",
+                        "Eco-Friendly: Made with sustainable, allergen-free materials."
+                    ],
+                    "benefits": [
+                        "Safe for moisture-prone areas with waterproof properties",
+                        "Long-lasting performance for busy homes and offices",
+                        "Enhances interiors with a premium wood-like aesthetic",
+                        "Hassle-free installation with click-lock technology",
+                        "Effortless cleaning for busy lifestyles",
+                        "Safe and eco-conscious for all environments"
+                    ],
+                    "design_compatibility": ["Modern", "Minimalist", "Scandinavian", "Rustic"]
+                },
+                "specifications": {
+                    "waterproof": true,
+                    "slip_resistant": true,
+                    "product_code": "PM20162",
+                    "dimensions": "1220mm x 180mm planks",
+                    "thickness": "4.0 mm",
+                    "wear_layer": "0.3 mm",
+                    "backing": "EVA foam underlay",
+                    "finish": "Wood-grain, matte",
+                    "installation_type": ["Click-lock system", "Glue-down method"],
+                    "durability": "15 to 20 years",
+                    "maintenance": "Sweep regularly and mop with a damp cloth and mild detergent. Avoid abrasive cleaners."
+                },
+                "installation": {
+                    "method": ["Click-lock for quick, adhesive-free setups", "Glue-down for permanent installations"],
+                    "surface_types": ["Concrete", "Tile", "Plywood"],
+                    "diy_friendly": true,
+                    "professional_recommended": true,
+                    "requirements": [
+                        "Ensure a clean, dry, and level subfloor",
+                        "Use adhesive for glue-down in high-traffic areas",
+                        "Click-lock suitable for most residential and commercial spaces",
+                        "Allow planks to acclimate to room temperature before installation"
+                    ]
+                },
+                "maintenance": {
+                    "cleaning_method": "Sweep regularly and mop with a damp cloth and mild detergent. Avoid abrasive cleaners or excessive water.",
+                    "special_treatments": "No waxing or polishing needed",
+                    "no_waxing": true,
+                    "no_polishing": true,
+                    "no_sealants": true
+                },
+                "faqs": [
+                    {
+                        "question": "What is Spc-&-Laminate-456 used for?",
+                        "answer": "Spc-&-Laminate-456 is a versatile SPC and laminate flooring solution for homes, offices, and commercial spaces, ideal for both dry and wet areas due to its waterproof properties."
+                    },
+                    {
+                        "question": "Is Spc-&-Laminate-456 suitable for Malaysian homes?",
+                        "answer": "Yes, its durability, waterproofing, and easy maintenance make it perfect for Malaysian households."
+                    },
+                    {
+                        "question": "How durable is Spc-&-Laminate-456?",
+                        "answer": "With proper care, it lasts 15–20 years, even in high-traffic areas."
+                    },
+                    {
+                        "question": "Is Spc-&-Laminate-456 safe for wet areas?",
+                        "answer": "Yes, its waterproof properties make it ideal for bathrooms, kitchens, and laundry rooms."
+                    },
+                    {
+                        "question": "Can I install Spc-&-Laminate-456 myself?",
+                        "answer": "Yes, it’s DIY-friendly with a click-lock system or glue-down options, though professional installation is recommended for larger spaces."
+                    },
+                    {
+                        "question": "How much does SPC and laminate flooring cost in Malaysia?",
+                        "answer": "SPC and laminate flooring like Spc-&-Laminate-456 typically costs RM5 to RM12 per square foot, depending on quality and brand."
+                    },
+                    {
+                        "question": "How do I clean Spc-&-Laminate-456?",
+                        "answer": "Sweep regularly and mop with a damp cloth and mild detergent. Avoid abrasive cleaners or excessive water."
+                    },
+                    {
+                        "question": "Where can I buy Spc-&-Laminate-456 in Malaysia?",
+                        "answer": "Purchase online from WCD Malaysia, a trusted supplier of premium SPC and laminate flooring."
+                    }
+                ],
+                "call_to_action": {
+                    "primary": "Transform Your Space Now! Choose Spc-&-Laminate-456 for stylish, durable, and waterproof flooring.",
+                    "secondary": "Visit WCD Malaysia to check availability and get expert flooring advice.",
+                    "tertiary": "Shop Spc-&-Laminate-456 at WCD Malaysia, your trusted source for quality SPC and laminate flooring."
+                },
+                "status": "active",
+                "created_at": "2025-07-17",
+                "updated_at": "2025-07-31",
+                "additional_description": {
+                    "headline": "Spc-&-Laminate-456 – Your Solution for Stylish and Durable Flooring",
+                    "sections": [
+                        {
+                            "title": "Upgrade with Spc-&-Laminate-456",
+                            "content": "Revamp your home or office with Spc-&-Laminate-456, a durable, waterproof, and stylish SPC and laminate flooring solution for Malaysian interiors."
+                        },
+                        {
+                            "title": "Perfect for Every Space",
+                            "content": "From kitchens to offices, Spc-&-Laminate-456 delivers durability, elegance, and a wood-like aesthetic to any room."
+                        },
+                        {
+                            "title": "Why Spc-&-Laminate-456 Stands Out",
+                            "content": "Enjoy a waterproof, low-maintenance surface with a realistic wood-grain design. Made with eco-friendly materials, it’s a safe and sustainable choice."
+                        },
+                        {
+                            "title": "Effortless Installation",
+                            "content": "Spc-&-Laminate-456 is easy to install with a DIY-friendly click-lock system or secure glue-down methods, perfect for any project."
+                        },
+                        {
+                            "title": "Trusted Quality from WCD Malaysia",
+                            "content": "WCD Malaysia is your reliable source for premium SPC and laminate flooring. Shop Spc-&-Laminate-456 online for quality, value, and nationwide support."
+                        },
+                        {
+                            "title": "Start Your Flooring Journey",
+                            "content": "Ready to refresh your floors? Choose Spc-&-Laminate-456 from WCD Malaysia for durable, stylish, and waterproof flooring."
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "product": {
+                "id": "Spc-Laminate-789",
+                "name": "Spc-&-Laminate-789",
+                "slug": "Spc-Laminate-789",
+                "category": "Spc & Laminate",
+                "brand": "Versafloor",
+                "images": {
+                    "main_image": "/Spc & Laminate/Spc-&-Laminate-3.jpg",
+                    "gallery": ["/Spc & Laminate/Spc-&-Laminate-3.jpg"],
+                    "thumbnails": ["/Spc & Laminate/Spc-&-Laminate-3.jpg"],
+                    "alt_texts": [
+                        "Spc-&-Laminate-789 in stylish Malaysian interior",
+                        "Spc-&-Laminate-789 | Durable and Stylish SPC & Laminate Flooring Malaysia",
+                        "Transform your space with Spc-&-Laminate-789 – a durable, waterproof, and modern flooring solution for Malaysian homes and offices.",
+                        "Designed for durability and elegance, Spc-&-Laminate-789 is perfect for high-traffic areas and stylish interiors."
+                    ]
+                },
+                "seo": {
+                    "meta_title": "Spc-&-Laminate-789 | Stylish & Durable SPC & Laminate Flooring Malaysia",
+                    "meta_description": "Discover Spc-&-Laminate-789 – a durable, waterproof, and stylish SPC and laminate flooring solution for Malaysian homes and offices. Shop now at WCD Malaysia for quality and affordability.",
+                    "keywords": [
+                        "Spc-&-Laminate-789 Malaysia",
+                        "SPC flooring Malaysia",
+                        "laminate flooring Malaysia",
+                        "waterproof SPC flooring",
+                        "durable laminate flooring",
+                        "buy SPC flooring online Malaysia",
+                        "modern laminate flooring",
+                        "SPC and laminate flooring price",
+                        "low maintenance flooring Malaysia",
+                        "stylish SPC flooring"
+                    ]
+                },
+                "description": {
+                    "short": "Elevate your interiors with Spc-&-Laminate-789 – a durable, waterproof, and stylish SPC and laminate flooring solution for Malaysian homes and businesses. Shop now at WCD Malaysia.",
+                    "long": "Spc-&-Laminate-789 delivers unmatched durability, style, and versatility to Malaysian homes and commercial spaces. This premium SPC and laminate flooring is engineered to withstand heavy foot traffic, moisture, and daily wear while offering a sleek, wood-like aesthetic. Perfect for kitchens, bathrooms, living spaces, or offices, Spc-&-Laminate-789 combines easy click-lock installation, low maintenance, and a modern look, making it the ideal choice for homeowners, interior designers, and property developers across Malaysia."
+                },
+                "features": {
+                    "main_features": [
+                        "Waterproof: Ideal for wet areas like kitchens and bathrooms.",
+                        "High Durability: Resists scratches, dents, and heavy foot traffic.",
+                        "Stylish Design: Realistic wood-grain finish for a modern, elegant look.",
+                        "Easy Installation: Click-lock system for quick and secure setups.",
+                        "Low Maintenance: Simple to clean with regular sweeping and mopping.",
+                        "Eco-Friendly: Made with sustainable, allergen-free materials."
+                    ],
+                    "benefits": [
+                        "Safe for moisture-prone areas with waterproof properties",
+                        "Long-lasting performance for busy homes and offices",
+                        "Enhances interiors with a premium wood-like aesthetic",
+                        "Hassle-free installation with click-lock technology",
+                        "Effortless cleaning for busy lifestyles",
+                        "Safe and eco-conscious for all environments"
+                    ],
+                    "design_compatibility": ["Modern", "Minimalist", "Scandinavian", "Rustic"]
+                },
+                "specifications": {
+                    "waterproof": true,
+                    "slip_resistant": true,
+                    "product_code": "PM20162",
+                    "dimensions": "1220mm x 180mm planks",
+                    "thickness": "4.0 mm",
+                    "wear_layer": "0.3 mm",
+                    "backing": "EVA foam underlay",
+                    "finish": "Wood-grain, matte",
+                    "installation_type": ["Click-lock system", "Glue-down method"],
+                    "durability": "15 to 20 years",
+                    "maintenance": "Sweep regularly and mop with a damp cloth and mild detergent. Avoid abrasive cleaners."
+                },
+                "installation": {
+                    "method": ["Click-lock for quick, adhesive-free setups", "Glue-down for permanent installations"],
+                    "surface_types": ["Concrete", "Tile", "Plywood"],
+                    "diy_friendly": true,
+                    "professional_recommended": true,
+                    "requirements": [
+                        "Ensure a clean, dry, and level subfloor",
+                        "Use adhesive for glue-down in high-traffic areas",
+                        "Click-lock suitable for most residential and commercial spaces",
+                        "Allow planks to acclimate to room temperature before installation"
+                    ]
+                },
+                "maintenance": {
+                    "cleaning_method": "Sweep regularly and mop with a damp cloth and mild detergent. Avoid abrasive cleaners or excessive water.",
+                    "special_treatments": "No waxing or polishing needed",
+                    "no_waxing": true,
+                    "no_polishing": true,
+                    "no_sealants": true
+                },
+                "faqs": [
+                    {
+                        "question": "What is Spc-&-Laminate-789 used for?",
+                        "answer": "Spc-&-Laminate-789 is a versatile SPC and laminate flooring solution for homes, offices, and commercial spaces, ideal for both dry and wet areas due to its waterproof properties."
+                    },
+                    {
+                        "question": "Is Spc-&-Laminate-789 suitable for Malaysian homes?",
+                        "answer": "Yes, its durability, waterproofing, and easy maintenance make it perfect for Malaysian households."
+                    },
+                    {
+                        "question": "How durable is Spc-&-Laminate-789?",
+                        "answer": "With proper care, it lasts 15–20 years, even in high-traffic areas."
+                    },
+                    {
+                        "question": "Is Spc-&-Laminate-789 safe for wet areas?",
+                        "answer": "Yes, its waterproof properties make it ideal for bathrooms, kitchens, and laundry rooms."
+                    },
+                    {
+                        "question": "Can I install Spc-&-Laminate-789 myself?",
+                        "answer": "Yes, it’s DIY-friendly with a click-lock system or glue-down options, though professional installation is recommended for larger spaces."
+                    },
+                    {
+                        "question": "How much does SPC and laminate flooring cost in Malaysia?",
+                        "answer": "SPC and laminate flooring like Spc-&-Laminate-789 typically costs RM5 to RM12 per square foot, depending on quality and brand."
+                    },
+                    {
+                        "question": "How do I clean Spc-&-Laminate-789?",
+                        "answer": "Sweep regularly and mop with a damp cloth and mild detergent. Avoid abrasive cleaners or excessive water."
+                    },
+                    {
+                        "question": "Where can I buy Spc-&-Laminate-789 in Malaysia?",
+                        "answer": "Purchase online from WCD Malaysia, a trusted supplier of premium SPC and laminate flooring."
+                    }
+                ],
+                "call_to_action": {
+                    "primary": "Transform Your Space Now! Choose Spc-&-Laminate-789 for stylish, durable, and waterproof flooring.",
+                    "secondary": "Visit WCD Malaysia to check availability and get expert flooring advice.",
+                    "tertiary": "Shop Spc-&-Laminate-789 at WCD Malaysia, your trusted source for quality SPC and laminate flooring."
+                },
+                "status": "active",
+                "created_at": "2025-07-17",
+                "updated_at": "2025-07-31",
+                "additional_description": {
+                    "headline": "Spc-&-Laminate-789 – Your Solution for Stylish and Durable Flooring",
+                    "sections": [
+                        {
+                            "title": "Upgrade with Spc-&-Laminate-789",
+                            "content": "Revamp your home or office with Spc-&-Laminate-789, a durable, waterproof, and stylish SPC and laminate flooring solution for Malaysian interiors."
+                        },
+                        {
+                            "title": "Perfect for Every Space",
+                            "content": "From kitchens to offices, Spc-&-Laminate-789 delivers durability, elegance, and a wood-like aesthetic to any room."
+                        },
+                        {
+                            "title": "Why Spc-&-Laminate-789 Stands Out",
+                            "content": "Enjoy a waterproof, low-maintenance surface with a realistic wood-grain design. Made with eco-friendly materials, it’s a safe and sustainable choice."
+                        },
+                        {
+                            "title": "Effortless Installation",
+                            "content": "Spc-&-Laminate-789 is easy to install with a DIY-friendly click-lock system or secure glue-down methods, perfect for any project."
+                        },
+                        {
+                            "title": "Trusted Quality from WCD Malaysia",
+                            "content": "WCD Malaysia is your reliable source for premium SPC and laminate flooring. Shop Spc-&-Laminate-789 online for quality, value, and nationwide support."
+                        },
+                        {
+                            "title": "Start Your Flooring Journey",
+                            "content": "Ready to refresh your floors? Choose Spc-&-Laminate-789 from WCD Malaysia for durable, stylish, and waterproof flooring."
+                        }
+                    ]
+                }
+            }
+        },
+
+
+        // dummy data  for now  rest of the products  category Spc & Laminate
+        {
+            "product": {
+                "id": "Artificial-Grass-123",
+                "name": "Artificial Grass 123",
+                "slug": "Artificial-Grass-123",
+                "category": "Artificial Grass",
+                "brand": "Versafloor",
+                "images": {
+                    "main_image": "/Artificial Grass/Artificial-Grass-1.jpg",
+                    "gallery": ["/Artificial Grass/Artificial-Grass-1.jpg"],
+                    "thumbnails": ["/Artificial Grass/Artificial-Grass-1.jpg"],
+                    "alt_texts": [
+                        "Artificial-Grass-123 in stylish Malaysian outdoor space",
+                        "Artificial-Grass-123 | Durable and Stylish Artificial Grass Malaysia",
+                        "Transform your space with Artificial-Grass-123 – a durable, low-maintenance, and natural-looking artificial grass solution for Malaysian homes and commercial spaces.",
+                        "Designed for durability and aesthetics, Artificial-Grass-123 is perfect for outdoor and indoor applications."
+                    ]
+                },
+                "seo": {
+                    "meta_title": "Artificial-Grass-123 | Stylish & Durable Artificial Grass Malaysia",
+                    "meta_description": "Discover Artificial-Grass-123 – a durable, low-maintenance, and natural-looking artificial grass solution for Malaysian homes, gardens, and commercial spaces. Shop now at WCD Malaysia for quality and affordability.",
+                    "keywords": [
+                        "Artificial-Grass-123 Malaysia",
+                        "artificial grass Malaysia",
+                        "synthetic turf Malaysia",
+                        "durable artificial grass",
+                        "low maintenance artificial grass",
+                        "buy artificial grass online Malaysia",
+                        "artificial grass for gardens",
+                        "modern artificial grass Malaysia",
+                        "artificial grass price Malaysia",
+                        "outdoor artificial grass"
+                    ]
+                },
+                "description": {
+                    "short": "Transform your spaces with Artificial-Grass-123 – a durable, low-maintenance, and natural-looking artificial grass solution for Malaysian homes and businesses. Shop now at WCD Malaysia.",
+                    "long": "Artificial-Grass-123 brings durability, style, and practicality to Malaysian homes, gardens, and commercial spaces. This premium artificial grass is designed to mimic the look and feel of natural grass while withstanding heavy use, weather conditions, and UV exposure. Perfect for lawns, patios, balconies, or indoor recreational areas, Artificial-Grass-123 offers easy installation, minimal maintenance, and a lush, green aesthetic year-round, making it the ideal choice for homeowners, landscape designers, and property developers across Malaysia."
+                },
+                "features": {
+                    "main_features": [
+                        "Weather-Resistant: Withstands rain, sun, and humidity without fading.",
+                        "High Durability: Built to handle heavy foot traffic and wear.",
+                        "Natural Look: Realistic grass-like texture for a lush, green appearance.",
+                        "Easy Installation: Simple roll-out or adhesive-based setup for various surfaces.",
+                        "Low Maintenance: No mowing, watering, or fertilizing required.",
+                        "Eco-Friendly: Made with sustainable, non-toxic materials."
+                    ],
+                    "benefits": [
+                        "Year-round green aesthetic, perfect for Malaysia’s climate",
+                        "Long-lasting performance for high-traffic areas",
+                        "Enhances outdoor and indoor spaces with a natural look",
+                        "Hassle-free installation for quick setups",
+                        "Minimal upkeep saves time and costs",
+                        "Safe and eco-conscious for families and pets"
+                    ],
+                    "design_compatibility": ["Outdoor", "Garden", "Recreational", "Contemporary"]
+                },
+                "specifications": {
+                    "waterproof": true,
+                    "slip_resistant": true,
+                    "product_code": "PM20162",
+                    "dimensions": "2m x 25m rolls",
+                    "thickness": "25 mm",
+                    "pile_height": "20 mm",
+                    "backing": "Latex backing",
+                    "finish": "Grass-like, UV-resistant",
+                    "installation_type": ["Roll-out with adhesive", "Pinned for temporary setups"],
+                    "durability": "8 to 12 years",
+                    "maintenance": "Brush occasionally and rinse with water to remove debris. Avoid harsh chemicals."
+                },
+                "installation": {
+                    "method": ["Roll-out with adhesive for permanent setups", "Pinned for temporary or portable installations"],
+                    "surface_types": ["Soil", "Concrete", "Plywood"],
+                    "diy_friendly": true,
+                    "professional_recommended": true,
+                    "requirements": [
+                        "Ensure a clean, dry, and level surface",
+                        "Use adhesive for permanent outdoor installations",
+                        "Pin or tape for temporary or indoor setups",
+                        "Trim edges for a precise fit"
+                    ]
+                },
+                "maintenance": {
+                    "cleaning_method": "Brush occasionally with a stiff broom and rinse with water to remove debris. Avoid harsh chemicals or abrasive tools.",
+                    "special_treatments": "No mowing, watering, or fertilizing needed",
+                    "no_waxing": true,
+                    "no_polishing": true,
+                    "no_sealants": true
+                },
+                "faqs": [
+                    {
+                        "question": "What is Artificial-Grass-123 used for?",
+                        "answer": "Artificial-Grass-123 is a versatile synthetic turf solution for lawns, patios, balconies, and indoor recreational spaces, ideal for creating lush, green environments."
+                    },
+                    {
+                        "question": "Is Artificial-Grass-123 suitable for Malaysian homes?",
+                        "answer": "Yes, its weather resistance, durability, and low maintenance make it perfect for Malaysia’s tropical climate."
+                    },
+                    {
+                        "question": "How durable is Artificial-Grass-123?",
+                        "answer": "With proper care, it lasts 8–12 years, even in high-traffic or outdoor areas."
+                    },
+                    {
+                        "question": "Is Artificial-Grass-123 safe for wet areas?",
+                        "answer": "Yes, its waterproof and drainage-friendly design makes it ideal for wet conditions and outdoor spaces."
+                    },
+                    {
+                        "question": "Can I install Artificial-Grass-123 myself?",
+                        "answer": "Yes, it’s DIY-friendly with roll-out or pinned installation options, though professional installation is recommended for large areas."
+                    },
+                    {
+                        "question": "How much does artificial grass cost in Malaysia?",
+                        "answer": "Artificial grass like Artificial-Grass-123 typically costs RM6 to RM15 per square foot, depending on quality and brand."
+                    },
+                    {
+                        "question": "How do I clean Artificial-Grass-123?",
+                        "answer": "Brush occasionally with a stiff broom and rinse with water to remove debris. Avoid harsh chemicals or abrasive tools."
+                    },
+                    {
+                        "question": "Where can I buy Artificial-Grass-123 in Malaysia?",
+                        "answer": "Purchase online from WCD Malaysia, a trusted supplier of premium artificial grass."
+                    }
+                ],
+                "call_to_action": {
+                    "primary": "Transform Your Space Now! Choose Artificial-Grass-123 for durable, low-maintenance, and natural-looking flooring.",
+                    "secondary": "Visit WCD Malaysia to check availability and get expert landscaping advice.",
+                    "tertiary": "Shop Artificial-Grass-123 at WCD Malaysia, your trusted source for quality artificial grass."
+                },
+                "status": "active",
+                "created_at": "2025-07-17",
+                "updated_at": "2025-07-31",
+                "additional_description": {
+                    "headline": "Artificial-Grass-123 – Your Solution for Stylish and Durable Outdoor Flooring",
+                    "sections": [
+                        {
+                            "title": "Upgrade with Artificial-Grass-123",
+                            "content": "Revamp your garden, patio, or indoor space with Artificial-Grass-123, a durable, low-maintenance, and natural-looking artificial grass solution for Malaysian landscapes."
+                        },
+                        {
+                            "title": "Perfect for Every Space",
+                            "content": "From lawns to balconies, Artificial-Grass-123 delivers a lush, green aesthetic and lasting durability to any outdoor or indoor area."
+                        },
+                        {
+                            "title": "Why Artificial-Grass-123 Stands Out",
+                            "content": "Enjoy a weather-resistant, low-maintenance surface with a realistic grass-like look. Made with eco-friendly materials, it’s safe for families and pets."
+                        },
+                        {
+                            "title": "Effortless Installation",
+                            "content": "Artificial-Grass-123 is easy to install with DIY-friendly roll-out or pinned methods, perfect for any landscaping project."
+                        },
+                        {
+                            "title": "Trusted Quality from WCD Malaysia",
+                            "content": "WCD Malaysia is your reliable source for premium artificial grass. Shop Artificial-Grass-123 online for quality, value, and nationwide support."
+                        },
+                        {
+                            "title": "Start Your Landscaping Journey",
+                            "content": "Ready to refresh your outdoor spaces? Choose Artificial-Grass-123 from WCD Malaysia for durable, stylish, and low-maintenance artificial grass."
+                        }
+                    ]
+                }
+            }
+        },
+
+
+        // dummy data  for now  rest of the products  Alberta
+        {
+            "product": {
+                "id": "Alberta-123",
+                "name": "Alberta 123",
+                "slug": "Alberta-123",
+                "category": "Alberta",
+                "brand": "Versafloor",
+                "images": {
+                    "main_image": "/Alberta/Alberta-1.jpg",
+                    "gallery": ["/Alberta/Alberta-1.jpg"],
+                    "thumbnails": ["/Alberta/Alberta-1.jpg"],
+                    "alt_texts": [
+                        "Alberta-123 in stylish Malaysian outdoor space",
+                        "Alberta-123 | Durable and Stylish Artificial Grass Malaysia",
+                        "Transform your space with Alberta-123 – a durable, low-maintenance, and natural-looking artificial grass solution for Malaysian homes and commercial spaces.",
+                        "Designed for durability and aesthetics, Alberta-123 is perfect for outdoor and indoor applications."
+                    ]
+                },
+                "seo": {
+                    "meta_title": "Alberta-123 | Stylish & Durable Artificial Grass Malaysia",
+                    "meta_description": "Discover Alberta-123 – a durable, low-maintenance, and natural-looking artificial grass solution for Malaysian homes, gardens, and commercial spaces. Shop now at WCD Malaysia for quality and affordability.",
+                    "keywords": [
+                        "Alberta-123 Malaysia",
+                        "artificial grass Malaysia",
+                        "synthetic turf Malaysia",
+                        "durable artificial grass",
+                        "low maintenance artificial grass",
+                        "buy artificial grass online Malaysia",
+                        "artificial grass for gardens",
+                        "modern artificial grass Malaysia",
+                        "artificial grass price Malaysia",
+                        "outdoor artificial grass"
+                    ]
+                },
+                "description": {
+                    "short": "Transform your spaces with Alberta-123 – a durable, low-maintenance, and natural-looking artificial grass solution for Malaysian homes and businesses. Shop now at WCD Malaysia.",
+                    "long": "Alberta-123 brings durability, style, and practicality to Malaysian homes, gardens, and commercial spaces. This premium artificial grass is designed to mimic the look and feel of natural grass while withstanding heavy use, weather conditions, and UV exposure. Perfect for lawns, patios, balconies, or indoor recreational areas, Alberta-123 offers easy installation, minimal maintenance, and a lush, green aesthetic year-round, making it the ideal choice for homeowners, landscape designers, and property developers across Malaysia."
+                },
+                "features": {
+                    "main_features": [
+                        "Weather-Resistant: Withstands rain, sun, and humidity without fading.",
+                        "High Durability: Built to handle heavy foot traffic and wear.",
+                        "Natural Look: Realistic grass-like texture for a lush, green appearance.",
+                        "Easy Installation: Simple roll-out or adhesive-based setup for various surfaces.",
+                        "Low Maintenance: No mowing, watering, or fertilizing required.",
+                        "Eco-Friendly: Made with sustainable, non-toxic materials."
+                    ],
+                    "benefits": [
+                        "Year-round green aesthetic, perfect for Malaysia’s climate",
+                        "Long-lasting performance for high-traffic areas",
+                        "Enhances outdoor and indoor spaces with a natural look",
+                        "Hassle-free installation for quick setups",
+                        "Minimal upkeep saves time and costs",
+                        "Safe and eco-conscious for families and pets"
+                    ],
+                    "design_compatibility": ["Outdoor", "Garden", "Recreational", "Contemporary"]
+                },
+                "specifications": {
+                    "waterproof": true,
+                    "slip_resistant": true,
+                    "product_code": "PM20162",
+                    "dimensions": "2m x 25m rolls",
+                    "thickness": "25 mm",
+                    "pile_height": "20 mm",
+                    "backing": "Latex backing",
+                    "finish": "Grass-like, UV-resistant",
+                    "installation_type": ["Roll-out with adhesive", "Pinned for temporary setups"],
+                    "durability": "8 to 12 years",
+                    "maintenance": "Brush occasionally and rinse with water to remove debris. Avoid harsh chemicals."
+                },
+                "installation": {
+                    "method": ["Roll-out with adhesive for permanent setups", "Pinned for temporary or portable installations"],
+                    "surface_types": ["Soil", "Concrete", "Plywood"],
+                    "diy_friendly": true,
+                    "professional_recommended": true,
+                    "requirements": [
+                        "Ensure a clean, dry, and level surface",
+                        "Use adhesive for permanent outdoor installations",
+                        "Pin or tape for temporary or indoor setups",
+                        "Trim edges for a precise fit"
+                    ]
+                },
+                "maintenance": {
+                    "cleaning_method": "Brush occasionally with a stiff broom and rinse with water to remove debris. Avoid harsh chemicals or abrasive tools.",
+                    "special_treatments": "No mowing, watering, or fertilizing needed",
+                    "no_waxing": true,
+                    "no_polishing": true,
+                    "no_sealants": true
+                },
+                "faqs": [
+                    {
+                        "question": "What is Alberta-123 used for?",
+                        "answer": "Alberta-123 is a versatile synthetic turf solution for lawns, patios, balconies, and indoor recreational spaces, ideal for creating lush, green environments."
+                    },
+                    {
+                        "question": "Is Alberta-123 suitable for Malaysian homes?",
+                        "answer": "Yes, its weather resistance, durability, and low maintenance make it perfect for Malaysia’s tropical climate."
+                    },
+                    {
+                        "question": "How durable is Alberta-123?",
+                        "answer": "With proper care, it lasts 8–12 years, even in high-traffic or outdoor areas."
+                    },
+                    {
+                        "question": "Is Alberta-123 safe for wet areas?",
+                        "answer": "Yes, its waterproof and drainage-friendly design makes it ideal for wet conditions and outdoor spaces."
+                    },
+                    {
+                        "question": "Can I install Alberta-123 myself?",
+                        "answer": "Yes, it’s DIY-friendly with roll-out or pinned installation options, though professional installation is recommended for large areas."
+                    },
+                    {
+                        "question": "How much does artificial grass cost in Malaysia?",
+                        "answer": "Artificial grass like Alberta-123 typically costs RM6 to RM15 per square foot, depending on quality and brand."
+                    },
+                    {
+                        "question": "How do I clean Alberta-123?",
+                        "answer": "Brush occasionally with a stiff broom and rinse with water to remove debris. Avoid harsh chemicals or abrasive tools."
+                    },
+                    {
+                        "question": "Where can I buy Alberta-123 in Malaysia?",
+                        "answer": "Purchase online from WCD Malaysia, a trusted supplier of premium artificial grass."
+                    }
+                ],
+                "call_to_action": {
+                    "primary": "Transform Your Space Now! Choose Alberta-123 for durable, low-maintenance, and natural-looking artificial grass.",
+                    "secondary": "Visit WCD Malaysia to check availability and get expert landscaping advice.",
+                    "tertiary": "Shop Alberta-123 at WCD Malaysia, your trusted source for quality artificial grass."
+                },
+                "status": "active",
+                "created_at": "2025-07-17",
+                "updated_at": "2025-07-31",
+                "additional_description": {
+                    "headline": "Alberta-123 – Your Solution for Stylish and Durable Outdoor Flooring",
+                    "sections": [
+                        {
+                            "title": "Upgrade with Alberta-123",
+                            "content": "Revamp your garden, patio, or indoor space with Alberta-123, a durable, low-maintenance, and natural-looking artificial grass solution for Malaysian landscapes."
+                        },
+                        {
+                            "title": "Perfect for Every Space",
+                            "content": "From lawns to balconies, Alberta-123 delivers a lush, green aesthetic and lasting durability to any outdoor or indoor area."
+                        },
+                        {
+                            "title": "Why Alberta-123 Stands Out",
+                            "content": "Enjoy a weather-resistant, low-maintenance surface with a realistic grass-like look. Made with eco-friendly materials, it’s safe for families and pets."
+                        },
+                        {
+                            "title": "Effortless Installation",
+                            "content": "Alberta-123 is easy to install with DIY-friendly roll-out or pinned methods, perfect for any landscaping project."
+                        },
+                        {
+                            "title": "Trusted Quality from WCD Malaysia",
+                            "content": "WCD Malaysia is your reliable source for premium artificial grass. Shop Alberta-123 online for quality, value, and nationwide support."
+                        },
+                        {
+                            "title": "Start Your Landscaping Journey",
+                            "content": "Ready to refresh your outdoor spaces? Choose Alberta-123 from WCD Malaysia for durable, stylish, and low-maintenance artificial grass."
+                        }
+                    ]
+                }
+            }
+        },
+        // dummy data  for now  rest of the products Versafloor
+        {
+            "product": {
+                "id": "Versafloor-123",
+                "name": "Versafloor 123",
+                "slug": "Versafloor-123",
+                "category": "Versafloor",
+                "brand": "Versafloor",
+                "images": {
+                    "main_image": "/Versafloor/Versafloor1.jpg",
+                    "gallery": ["/Versafloor/Versafloor1.jpg"],
+                    "thumbnails": ["/Versafloor/Versafloor1.jpg"],
+                    "alt_texts": [
+                        "Versafloor-123 in stylish Malaysian outdoor space",
+                        "Versafloor-123 | Durable and Stylish Artificial Grass Malaysia",
+                        "Transform your space with Versafloor-123 – a durable, low-maintenance, and natural-looking artificial grass solution for Malaysian homes and commercial spaces.",
+                        "Designed for durability and aesthetics, Versafloor-123 is perfect for outdoor and indoor applications."
+                    ]
+                },
+                "seo": {
+                    "meta_title": "Versafloor-123 | Stylish & Durable Artificial Grass Malaysia",
+                    "meta_description": "Discover Versafloor-123 – a durable, low-maintenance, and natural-looking artificial grass solution for Malaysian homes, gardens, and commercial spaces. Shop now at WCD Malaysia for quality and affordability.",
+                    "keywords": [
+                        "Versafloor-123 Malaysia",
+                        "artificial grass Malaysia",
+                        "synthetic turf Malaysia",
+                        "durable artificial grass",
+                        "low maintenance artificial grass",
+                        "buy artificial grass online Malaysia",
+                        "artificial grass for gardens",
+                        "modern artificial grass Malaysia",
+                        "artificial grass price Malaysia",
+                        "outdoor artificial grass"
+                    ]
+                },
+                "description": {
+                    "short": "Transform your spaces with Versafloor-123 – a durable, low-maintenance, and natural-looking artificial grass solution for Malaysian homes and businesses. Shop now at WCD Malaysia.",
+                    "long": "Versafloor-123 brings durability, style, and practicality to Malaysian homes, gardens, and commercial spaces. This premium artificial grass is designed to mimic the look and feel of natural grass while withstanding heavy use, weather conditions, and UV exposure. Perfect for lawns, patios, balconies, or indoor recreational areas, Versafloor-123 offers easy installation, minimal maintenance, and a lush, green aesthetic year-round, making it the ideal choice for homeowners, landscape designers, and property developers across Malaysia."
+                },
+                "features": {
+                    "main_features": [
+                        "Weather-Resistant: Withstands rain, sun, and humidity without fading.",
+                        "High Durability: Built to handle heavy foot traffic and wear.",
+                        "Natural Look: Realistic grass-like texture for a lush, green appearance.",
+                        "Easy Installation: Simple roll-out or adhesive-based setup for various surfaces.",
+                        "Low Maintenance: No mowing, watering, or fertilizing required.",
+                        "Eco-Friendly: Made with sustainable, non-toxic materials."
+                    ],
+                    "benefits": [
+                        "Year-round green aesthetic, perfect for Malaysia’s climate",
+                        "Long-lasting performance for high-traffic areas",
+                        "Enhances outdoor and indoor spaces with a natural look",
+                        "Hassle-free installation for quick setups",
+                        "Minimal upkeep saves time and costs",
+                        "Safe and eco-conscious for families and pets"
+                    ],
+                    "design_compatibility": ["Outdoor", "Garden", "Recreational", "Contemporary"]
+                },
+                "specifications": {
+                    "waterproof": true,
+                    "slip_resistant": true,
+                    "product_code": "PM20162",
+                    "dimensions": "2m x 25m rolls",
+                    "thickness": "25 mm",
+                    "pile_height": "20 mm",
+                    "backing": "Latex backing",
+                    "finish": "Grass-like, UV-resistant",
+                    "installation_type": ["Roll-out with adhesive", "Pinned for temporary setups"],
+                    "durability": "8 to 12 years",
+                    "maintenance": "Brush occasionally and rinse with water to remove debris. Avoid harsh chemicals."
+                },
+                "installation": {
+                    "method": ["Roll-out with adhesive for permanent setups", "Pinned for temporary or portable installations"],
+                    "surface_types": ["Soil", "Concrete", "Plywood"],
+                    "diy_friendly": true,
+                    "professional_recommended": true,
+                    "requirements": [
+                        "Ensure a clean, dry, and level surface",
+                        "Use adhesive for permanent outdoor installations",
+                        "Pin or tape for temporary or indoor setups",
+                        "Trim edges for a precise fit"
+                    ]
+                },
+                "maintenance": {
+                    "cleaning_method": "Brush occasionally with a stiff broom and rinse with water to remove debris. Avoid harsh chemicals or abrasive tools.",
+                    "special_treatments": "No mowing, watering, or fertilizing needed",
+                    "no_waxing": true,
+                    "no_polishing": true,
+                    "no_sealants": true
+                },
+                "faqs": [
+                    {
+                        "question": "What is Versafloor-123 used for?",
+                        "answer": "Versafloor-123 is a versatile synthetic turf solution for lawns, patios, balconies, and indoor recreational spaces, ideal for creating lush, green environments."
+                    },
+                    {
+                        "question": "Is Versafloor-123 suitable for Malaysian homes?",
+                        "answer": "Yes, its weather resistance, durability, and low maintenance make it perfect for Malaysia’s tropical climate."
+                    },
+                    {
+                        "question": "How durable is Versafloor-123?",
+                        "answer": "With proper care, it lasts 8–12 years, even in high-traffic or outdoor areas."
+                    },
+                    {
+                        "question": "Is Versafloor-123 safe for wet areas?",
+                        "answer": "Yes, its waterproof and drainage-friendly design makes it ideal for wet conditions and outdoor spaces."
+                    },
+                    {
+                        "question": "Can I install Versafloor-123 myself?",
+                        "answer": "Yes, it’s DIY-friendly with roll-out or pinned installation options, though professional installation is recommended for large areas."
+                    },
+                    {
+                        "question": "How much does artificial grass cost in Malaysia?",
+                        "answer": "Artificial grass like Versafloor-123 typically costs RM6 to RM15 per square foot, depending on quality and brand."
+                    },
+                    {
+                        "question": "How do I clean Versafloor-123?",
+                        "answer": "Brush occasionally with a stiff broom and rinse with water to remove debris. Avoid harsh chemicals or abrasive tools."
+                    },
+                    {
+                        "question": "Where can I buy Versafloor-123 in Malaysia?",
+                        "answer": "Purchase online from WCD Malaysia, a trusted supplier of premium artificial grass."
+                    }
+                ],
+                "call_to_action": {
+                    "primary": "Transform Your Space Now! Choose Versafloor-123 for durable, low-maintenance, and natural-looking artificial grass.",
+                    "secondary": "Visit WCD Malaysia to check availability and get expert landscaping advice.",
+                    "tertiary": "Shop Versafloor-123 at WCD Malaysia, your trusted source for quality artificial grass."
+                },
+                "status": "active",
+                "created_at": "2025-07-17",
+                "updated_at": "2025-07-31",
+                "additional_description": {
+                    "headline": "Versafloor-123 – Your Solution for Stylish and Durable Outdoor Flooring",
+                    "sections": [
+                        {
+                            "title": "Upgrade with Versafloor-123",
+                            "content": "Revamp your garden, patio, or indoor space with Versafloor-123, a durable, low-maintenance, and natural-looking artificial grass solution for Malaysian landscapes."
+                        },
+                        {
+                            "title": "Perfect for Every Space",
+                            "content": "From lawns to balconies, Versafloor-123 delivers a lush, green aesthetic and lasting durability to any outdoor or indoor area."
+                        },
+                        {
+                            "title": "Why Versafloor-123 Stands Out",
+                            "content": "Enjoy a weather-resistant, low-maintenance surface with a realistic grass-like look. Made with eco-friendly materials, it’s safe for families and pets."
+                        },
+                        {
+                            "title": "Effortless Installation",
+                            "content": "Versafloor-123 is easy to install with DIY-friendly roll-out or pinned methods, perfect for any landscaping project."
+                        },
+                        {
+                            "title": "Trusted Quality from WCD Malaysia",
+                            "content": "WCD Malaysia is your reliable source for premium artificial grass. Shop Versafloor-123 online for quality, value, and nationwide support."
+                        },
+                        {
+                            "title": "Start Your Landscaping Journey",
+                            "content": "Ready to refresh your outdoor spaces? Choose Versafloor-123 from WCD Malaysia for durable, stylish, and low-maintenance artificial grass."
                         }
                     ]
                 }
