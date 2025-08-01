@@ -27,7 +27,7 @@ export default function PageHeader() {
         return (
             <span key={index}>
                 <span className="mx-1">/</span>
-                <a href={path} className="hover:underline">
+                <a href={path} className="hover:underline text-white">
                     {label}
                 </a>
             </span>
@@ -35,10 +35,10 @@ export default function PageHeader() {
     });
 
     return (
-        <div className="bg-gray-100 py-12 text-center h-48">
-            <h1 className="text-3xl font-bold text-gray-800">{pageTitle}</h1>
-            <div className="mt-2 text-gray-600 text-sm">
-                <Link href="/" className="hover:underline">
+        <div className="bg-black py-12 text-center h-48">
+            <h1 className="text-4xl font-bold text-orange-600 italic">{pageTitle}</h1>
+            <div className="mt-2 text-white text-sm">
+                <Link href="/" className="hover:underline text-white">
                     HOME
                 </Link>
                 {breadcrumb}

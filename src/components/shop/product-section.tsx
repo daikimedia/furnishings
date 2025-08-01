@@ -63,13 +63,13 @@ export default function ProductsSection({
 
     // Filter states
     const [selectedCategories, setSelectedCategories] = useState<string[]>([]);
-    const [selectedColors, setSelectedColors] = useState<string[]>([]);
-    const [selectedBrands, setSelectedBrands] = useState<string[]>([]);
+    const [, setSelectedColors] = useState<string[]>([]);
+    const [, setSelectedBrands] = useState<string[]>([]);
 
     // Extract unique categories from actual products data
     const categories = [...new Set(products.map(product => product.category))];
-    const colors = ["Red", "Blue", "Green", "Black", "White", "Yellow", "Brown", "Gray"];
-    const brands = ["Premium", "Standard", "Luxury", "Modern", "Classic"];
+    // const colors = ["Red", "Blue", "Green", "Black", "White", "Yellow", "Brown", "Gray"];
+    // const brands = ["Premium", "Standard", "Luxury", "Modern", "Classic"];
 
     // Filter logic
     const filteredProducts = products.filter(product => {
@@ -89,21 +89,21 @@ export default function ProductsSection({
         );
     };
 
-    const handleColorChange = (color: string) => {
-        setSelectedColors(prev =>
-            prev.includes(color)
-                ? prev.filter(c => c !== color)
-                : [...prev, color]
-        );
-    };
+    // const handleColorChange = (color: string) => {
+    //     setSelectedColors(prev =>
+    //         prev.includes(color)
+    //             ? prev.filter(c => c !== color)
+    //             : [...prev, color]
+    //     );
+    // };
 
-    const handleBrandChange = (brand: string) => {
-        setSelectedBrands(prev =>
-            prev.includes(brand)
-                ? prev.filter(b => b !== brand)
-                : [...prev, brand]
-        );
-    };
+    // const handleBrandChange = (brand: string) => {
+    //     setSelectedBrands(prev =>
+    //         prev.includes(brand)
+    //             ? prev.filter(b => b !== brand)
+    //             : [...prev, brand]
+    //     );
+    // };
 
     return (
         <div className="py-16 bg-white">
@@ -141,7 +141,7 @@ export default function ProductsSection({
                             </div>
 
                             {/* Colors Filter */}
-                            <div className="mb-8">
+                            {/* <div className="mb-8">
                                 <h4 className="font-medium text-gray-900 mb-3">Colors</h4>
                                 <div className="space-y-2">
                                     {colors.map((color) => (
@@ -156,10 +156,10 @@ export default function ProductsSection({
                                         </label>
                                     ))}
                                 </div>
-                            </div>
+                            </div> */}
 
                             {/* Brands Filter */}
-                            <div className="mb-6">
+                            {/* <div className="mb-6">
                                 <h4 className="font-medium text-gray-900 mb-3">Brands</h4>
                                 <div className="space-y-2">
                                     {brands.map((brand) => (
@@ -174,7 +174,7 @@ export default function ProductsSection({
                                         </label>
                                     ))}
                                 </div>
-                            </div>
+                            </div> */}
 
                             {/* Clear Filters Button */}
                             <button
