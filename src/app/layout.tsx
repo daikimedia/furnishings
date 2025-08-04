@@ -4,7 +4,7 @@ import "./globals.css";
 import Navbar from "@/components/common/navbar";
 import Footer from "@/components/common/footer";
 import Script from "next/script";
-
+import FloatingButton from "@/components/common/FloatingButton";
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -74,6 +74,7 @@ export default function RootLayout({
         />
         <Navbar />
         {children}
+        <FloatingButton />
         <Footer />
       </body>
     </html>
