@@ -62,16 +62,15 @@ export default function CategoryPage() {
                             <div key={product.id} className="group">
                                 <Link
                                     href={`/shop/${product.slug}`}
-                                    className="block bg-white rounded-2xl shadow-md  cursor-pointer   overflow-hidden"
+                                    className="block bg-white rounded-2xl shadow-md cursor-pointer overflow-hidden"
                                 >
                                     {/* Image Section */}
                                     <div className="relative h-56 overflow-hidden bg-orange-200">
                                         <img
                                             src={product.images?.main_image || '/images/placeholder.jpg'}
                                             alt={product.images?.alt_texts?.[0] || product.name}
-                                            className="w-full h-full object-cover p-4 "
+                                            className="w-full h-full object-cover p-4"
                                         />
-
                                     </div>
 
                                     {/* Product Info */}
@@ -79,22 +78,21 @@ export default function CategoryPage() {
                                         <h3 className="text-lg font-semibold text-gray-800 mb-2 group-hover:text-orange-600 transition-colors duration-300 line-clamp-2">
                                             {product.name}
                                         </h3>
-                                        <p className="text-gray-600 text-sm line-clamp-2 mb-3">
+                                        <p className="text-gray-600 text-sm line-clamp-2 mb-4">
                                             {product.description.short || product.description.long || "Premium flooring solution for modern spaces"}
                                         </p>
 
-                                        {/* Brand Badge */}
-                                        {/* <div className="mt-2">
-                                            <span className="inline-block bg-orange-100 text-orange-800 text-xs px-3 py-1 rounded-full font-medium">
-                                                {product.brand}
-                                            </span>
-                                        </div> */}
+                                        {/* View Product Button */}
+                                        <span className="inline-block px-4 py-2 text-sm font-medium text-white bg-orange-600 rounded-lg shadow hover:bg-orange-500 transition-colors duration-300">
+                                            View Product
+                                        </span>
                                     </div>
 
-                                    {/* Decorative Border */}
+                                    {/* Bottom Hover Bar */}
                                     <div className="h-1 bg-gradient-to-r from-orange-400 to-orange-600 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
                                 </Link>
                             </div>
+
                         );
                     })}
                 </div>

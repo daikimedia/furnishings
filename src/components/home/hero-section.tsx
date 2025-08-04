@@ -5,14 +5,14 @@ import Link from 'next/link';
 
 const slides = [
     {
-        title: 'Carpet Tiles',
+        title: 'Vinyl Sheet',
         subtitle: 'New Products',
         description:
             'Transform your space with premium carpet tiles designed for modern living. Quality and style combined.',
         image: '/carpet-tile.jpg',
     },
     {
-        title: 'synthetic grass',
+        title: 'Vinyl Sheet',
         subtitle: 'Trending Now',
         description:
             'Buy premium synthetic grass in Malaysia – durable, low-maintenance, and perfect for homes, offices, and outdoor spaces.',

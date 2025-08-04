@@ -95,7 +95,7 @@ export default function MainContentSections() {
                 <section className="py-12">
                     <div className="text-center">
                         <h2 className="text-3xl font-bold mb-12">
-                            Malaysia’s Trusted Vinyl & PVC Flooring Provider
+                            Malaysia’s  Most Trusted Vinyl Flooring & Carpet Provider
                         </h2>
                         <p className="text-xl text-gray-700 mb-6">
                             Waterproof · Durable · Stylish — Perfect for Malaysian Homes and Businesses
@@ -133,7 +133,7 @@ export default function MainContentSections() {
                 <section className="py-4">
                     <div className="text-center">
                         <h2 className="text-3xl font-bold text-black mb-12">
-                            Our Featured Vinyl & PVC Flooring Types
+                            Our Featured Vinyl Flooring & Carpet Provider
                         </h2>
                         <p className="text-lg text-gray-600 ">
                             Each flooring category is engineered to be waterproof, scratch-resistant,
