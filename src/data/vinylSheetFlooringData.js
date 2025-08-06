@@ -9855,9 +9855,9 @@ const vinylSheetFlooringData = {
                 "category": "Vinyl Sheet Flooring",
                 "brand": "Versafloor",
                 "images": {
-                    "main_image": "/vinyal_sheet/dummy.webp",
-                    "gallery": ["/vinyal_sheet/dummy.webp"],
-                    "thumbnails": ["/vinyal_sheet/dummy.webp"],
+                    "main_image": "/vinyal_sheet/PM20146.jpg",
+                    "gallery": ["/vinyal_sheet/PM20146.jpg"],
+                    "thumbnails": ["/vinyal_sheet/PM20146.jpg"],
                     "alt_texts": [
                         "Versafloor PM20146 vinyl sheet in Malaysian interior",
                         "Versafloor Vinyl Sheet PM20146 – Waterproof & Durable Vinyl Flooring in Malaysia | WCD",
@@ -9992,9 +9992,9 @@ const vinylSheetFlooringData = {
                 "category": "Vinyl Sheet Flooring",
                 "brand": "Versafloor",
                 "images": {
-                    "main_image": "/vinyal_sheet/dummy.webp",
-                    "gallery": ["/vinyal_sheet/dummy.webp"],
-                    "thumbnails": ["/vinyal_sheet/dummy.webp"],
+                    "main_image": "/vinyal_sheet/PM20147.jpg",
+                    "gallery": ["/vinyal_sheet/PM20147.jpg"],
+                    "thumbnails": ["/vinyal_sheet/PM20147.jpg"],
                     "alt_texts": [
                         "Versafloor PM20147 vinyl sheet in Malaysian interior",
                         "Versafloor PM20147 Vinyl Sheet | Waterproof & Durable Vinyl Flooring Malaysia",
@@ -10137,9 +10137,9 @@ const vinylSheetFlooringData = {
                 "category": "Vinyl Sheet Flooring",
                 "brand": "Versafloor",
                 "images": {
-                    "main_image": "/vinyal_sheet/dummy.webp",
-                    "gallery": ["/vinyal_sheet/dummy.webp"],
-                    "thumbnails": ["/vinyal_sheet/dummy.webp"],
+                    "main_image": "/vinyal_sheet/PM20150.jpg",
+                    "gallery": ["/vinyal_sheet/PM20150.jpg"],
+                    "thumbnails": ["/vinyal_sheet/PM20150.jpg"],
                     "alt_texts": [
                         "Versafloor PM20150 vinyl sheet in Malaysian interior",
                         "Versafloor PM20150 Vinyl Sheet | Waterproof Commercial Vinyl Flooring Malaysia",
@@ -10285,9 +10285,9 @@ const vinylSheetFlooringData = {
                 "category": "Vinyl Sheet Flooring",
                 "brand": "Versafloor",
                 "images": {
-                    "main_image": "/vinyal_sheet/dummy.webp",
-                    "gallery": ["/vinyal_sheet/dummy.webp"],
-                    "thumbnails": ["/vinyal_sheet/dummy.webp"],
+                    "main_image": "/vinyal_sheet/PM20151.jpg",
+                    "gallery": ["/vinyal_sheet/PM20151.jpg"],
+                    "thumbnails": ["/vinyal_sheet/PM20151.jpg"],
                     "alt_texts": [
                         "Versafloor PM20151 vinyl sheet in Malaysian interior",
                         "Versafloor Vinyl Sheet PM20151 | Premium Waterproof Flooring Malaysia",
@@ -10436,9 +10436,9 @@ const vinylSheetFlooringData = {
                 "category": "Vinyl Sheet Flooring",
                 "brand": "Versafloor",
                 "images": {
-                    "main_image": "/vinyal_sheet/dummy.webp",
-                    "gallery": ["/vinyal_sheet/dummy.webp"],
-                    "thumbnails": ["/vinyal_sheet/dummy.webp"],
+                    "main_image": "/vinyal_sheet/PM-20157.webp",
+                    "gallery": ["/vinyal_sheet/PM-20157.webp"],
+                    "thumbnails": ["/vinyal_sheet/PM-20157.webp"],
                     "alt_texts": [
                         "Versafloor PM20157 vinyl sheet in Malaysian interior",
                         "Versafloor Vinyl Sheet PM20157 | Waterproof Vinyl Flooring Malaysia",
@@ -10588,9 +10588,9 @@ const vinylSheetFlooringData = {
                 "category": "Vinyl Sheet Flooring",
                 "brand": "Versafloor",
                 "images": {
-                    "main_image": "/vinyal_sheet/dummy.webp",
-                    "gallery": ["/vinyal_sheet/dummy.webp"],
-                    "thumbnails": ["/vinyal_sheet/dummy.webp"],
+                    "main_image": "/vinyal_sheet/PM-20158.webp",
+                    "gallery": ["/vinyal_sheet/PM-20158.webp"],
+                    "thumbnails": ["/vinyal_sheet/PM-20158.webp"],
                     "alt_texts": [
                         "Versafloor PM20158 vinyl sheet in Malaysian interior",
                         "Versafloor Vinyl Sheet PM20158 | Premium Vinyl Flooring Malaysia",
@@ -10752,9 +10752,9 @@ const vinylSheetFlooringData = {
                 "category": "Vinyl Sheet Flooring",
                 "brand": "Versafloor",
                 "images": {
-                    "main_image": "/vinyal_sheet/dummy.webp",
-                    "gallery": ["/vinyal_sheet/dummy.webp"],
-                    "thumbnails": ["/vinyal_sheet/dummy.webp"],
+                    "main_image": "/vinyal_sheet/PM-20159.webp",
+                    "gallery": ["/vinyal_sheet/PM-20159.webp"],
+                    "thumbnails": ["/vinyal_sheet/PM-20159.webp"],
                     "alt_texts": [
                         "Versafloor PM20159 vinyl sheet in Malaysian interior",
                         "Versafloor Vinyl Sheet PM20159 | Premium Vinyl Flooring Malaysia",
@@ -10912,9 +10912,9 @@ const vinylSheetFlooringData = {
                 "category": "Vinyl Sheet Flooring",
                 "brand": "Versafloor",
                 "images": {
-                    "main_image": "/vinyal_sheet/dummy.webp",
-                    "gallery": ["/vinyal_sheet/dummy.webp"],
-                    "thumbnails": ["/vinyal_sheet/dummy.webp"],
+                    "main_image": "/vinyal_sheet/PM-20160.webp",
+                    "gallery": ["/vinyal_sheet/PM-20160.webp"],
+                    "thumbnails": ["/vinyal_sheet/PM-20160.webp"],
                     "alt_texts": [
                         "Versafloor PM20160 vinyl sheet in Malaysian interior",
                         "Versafloor PM20160 – Premium Vinyl Sheet Flooring | WCD Malaysia",
@@ -11076,9 +11076,9 @@ const vinylSheetFlooringData = {
                 "category": "Vinyl Sheet Flooring",
                 "brand": "Versafloor",
                 "images": {
-                    "main_image": "/vinyal_sheet/dummy.webp",
-                    "gallery": ["/vinyal_sheet/dummy.webp"],
-                    "thumbnails": ["/vinyal_sheet/dummy.webp"],
+                    "main_image": "/vinyal_sheet/PM-20162.webp",
+                    "gallery": ["/vinyal_sheet/PM-20162.webp"],
+                    "thumbnails": ["/vinyal_sheet/PM-20162.webp"],
                     "alt_texts": [
                         "Versafloor PM20162 vinyl sheet in Malaysian interior",
                         "Versafloor Vinyl Sheet PM20162 | Durable Waterproof Vinyl Flooring Malaysia",
@@ -11238,6 +11238,4665 @@ const vinylSheetFlooringData = {
                 }
             }
         },
+        {
+            "product": {
+                "id": "PM20168",
+                "name": "Versafloor Vinyl Sheet PM20168",
+                "slug": "versafloor-vinyl-sheet-pm20168",
+                "category": "Vinyl Sheet Flooring",
+                "brand": "Versafloor",
+                "images": {
+                    "main_image": "/vinyal_sheet/PM-20168.webp",
+                    "gallery": ["/vinyal_sheet/PM-20168.webp"],
+                    "thumbnails": ["/vinyal_sheet/PM-20168.webp"],
+                    "alt_texts": [
+                        "Versafloor PM20168 vinyl sheet in Malaysian interior",
+                        "Versafloor PM20168 – Premium Waterproof Vinyl Sheet Flooring in Malaysia",
+                        "Looking for long-lasting, stylish, and waterproof flooring that fits both residential and commercial needs? The Versafloor PM20168 vinyl sheet is one of the best vinyl flooring options in Malaysia.",
+                        "Designed to withstand moisture, foot traffic, and everyday wear and tear, ideal for kitchens, bathrooms, offices, and commercial interiors."
+                    ]
+                },
+                "seo": {
+                    "meta_title": "Versafloor PM20168 Vinyl Sheet - Waterproof & Stylish Flooring | Furnishings Malaysia",
+                    "meta_description": "Explore the Versafloor PM20168 Vinyl Sheet – durable, waterproof, and perfect for residential or commercial use. Shop top-quality vinyl flooring in Malaysia at Furnishings.",
+                    "keywords": [
+                        "vinyl sheet flooring Malaysia",
+                        "Versafloor vinyl sheet",
+                        "best vinyl flooring Malaysia",
+                        "waterproof vinyl sheet",
+                        "affordable vinyl flooring",
+                        "PM20168 vinyl sheet",
+                        "residential vinyl flooring",
+                        "commercial vinyl flooring Malaysia",
+                        "easy to install vinyl sheet",
+                        "durable vinyl flooring for homes"
+                    ]
+                },
+                "description": {
+                    "short": "Explore the Versafloor PM20168 Vinyl Sheet – durable, waterproof, and perfect for residential or commercial use. Shop top-quality vinyl flooring in Malaysia at Furnishings.",
+                    "long": "Looking for long-lasting, stylish, and waterproof flooring that fits both residential and commercial needs? The Versafloor PM20168 vinyl sheet is one of the best vinyl flooring options in Malaysia, designed to withstand moisture, foot traffic, and everyday wear and tear. Whether you're renovating a home or outfitting a retail space, this affordable vinyl flooring delivers excellent value and performance. Ideal for kitchens, bathrooms, offices, and commercial interiors, Versafloor PM20168 offers a sleek finish, easy maintenance, and simple installation—making it a practical choice for interior designers, homeowners, and contractors across Malaysia."
+                },
+                "features": {
+                    "main_features": [
+                        "100% Waterproof Surface: Perfect for wet areas such as kitchens, bathrooms, and laundry rooms.",
+                        "Anti-Slip Design: Safe for residential and commercial use, even in high-traffic zones.",
+                        "Durable & Scratch-Resistant: Built to handle heavy footfall in homes, retail spaces, and offices.",
+                        "Low Maintenance: Simply sweep or mop—no waxing or polishing required.",
+                        "Modern, Sleek Finish: Enhances the look of any interior with a professional, clean aesthetic.",
+                        "Quick & Easy Installation: Ideal for renovation projects with tight timelines."
+                    ],
+                    "benefits": [
+                        "Safe and ideal for moisture-prone areas like kitchens and bathrooms",
+                        "Durable for high-traffic residential and commercial environments",
+                        "Enhances interior aesthetics with a modern, sleek finish",
+                        "Requires minimal maintenance with simple cleaning",
+                        "Facilitates fast installation for efficient renovations",
+                        "Cost-effective without compromising quality"
+                    ],
+                    "design_compatibility": ["Modern", "Contemporary", "Minimalist", "Professional"]
+                },
+                "specifications": {
+                    "waterproof": true,
+                    "slip_resistant": true,
+                    "product_code": "PM20168",
+                    "type": "Vinyl Sheet Flooring",
+                    "dimensions": "2m width x custom length",
+                    "thickness": "2.0mm",
+                    "wear_layer": "0.3mm",
+                    "surface_finish": "Matte / Textured anti-slip surface",
+                    "material": "High-quality PVC with protective wear layer",
+                    "installation_surface": ["Concrete", "Cement board", "Smooth tile"],
+                    "durability": "10 to 15 years",
+                    "maintenance": "Sweep regularly and mop with a damp cloth or mild cleaner. No special maintenance required."
+                },
+                "installation": {
+                    "method": ["Glue-down method for permanent installations", "Loose lay method for quick renovations"],
+                    "surface_types": ["Concrete", "Cement board", "Smooth tile"],
+                    "diy_friendly": true,
+                    "professional_recommended": true,
+                    "requirements": [
+                        "Ensure a clean, dry, and level subfloor",
+                        "Use appropriate adhesive for glue-down method in high-traffic areas",
+                        "Loose lay method suitable for smaller residential spaces",
+                        "Seal seams for moisture protection in wet areas"
+                    ]
+                },
+                "maintenance": {
+                    "cleaning_method": "Sweep regularly and mop with a damp cloth or mild cleaner. No special maintenance required.",
+                    "special_treatments": "No waxing, sealing, or polishing required",
+                    "no_waxing": true,
+                    "no_polishing": true,
+                    "no_sealants": true
+                },
+                "faqs": [
+                    {
+                        "question": "What is VersaFloor vinyl sheet used for?",
+                        "answer": "It’s used for waterproof and stylish flooring in residential and commercial interiors, especially in high-moisture and high-traffic areas."
+                    },
+                    {
+                        "question": "Is vinyl sheet flooring suitable for residential use?",
+                        "answer": "Yes. It’s ideal for homes due to its comfort underfoot, water resistance, and ease of cleaning."
+                    },
+                    {
+                        "question": "How durable is VersaFloor vinyl flooring?",
+                        "answer": "Very durable—it’s built to withstand heavy foot traffic and daily wear in both home and commercial settings."
+                    },
+                    {
+                        "question": "Is VersaFloor vinyl flooring waterproof and anti-slip?",
+                        "answer": "Yes. It’s 100% waterproof and features an anti-slip surface for added safety."
+                    },
+                    {
+                        "question": "How do I install vinyl sheet flooring at home?",
+                        "answer": "You can glue it down on a smooth, clean subfloor. Professional installation is recommended for the best results."
+                    },
+                    {
+                        "question": "What is the average cost of vinyl flooring in Malaysia?",
+                        "answer": "Prices vary by design and supplier, but Versafloor offers affordable options for quality vinyl sheets."
+                    },
+                    {
+                        "question": "What is the lifespan of VersaFloor vinyl sheets?",
+                        "answer": "With proper care, they can last 10–15 years or more."
+                    },
+                    {
+                        "question": "How to clean and maintain vinyl sheet flooring?",
+                        "answer": "Just sweep regularly and mop with a damp cloth or mild cleaner. No special maintenance required."
+                    },
+                    {
+                        "question": "Can vinyl sheet flooring be used in bathrooms or kitchens?",
+                        "answer": "Yes. Its waterproof and anti-slip properties make it perfect for wet areas."
+                    },
+                    {
+                        "question": "Where to buy VersaFloor vinyl sheets in Malaysia?",
+                        "answer": "You can buy online at Furnishings (http://furnishings.com.my) or explore the full range at https://www.wcd.com.my/product/versafloor-vinyl-sheet-pm20168/."
+                    }
+                ],
+                "call_to_action": {
+                    "primary": "Get Versafloor PM20168 Delivered Across Malaysia – Order Now or Contact Furnishings for a Quote.",
+                    "secondary": "Don’t compromise on quality flooring. Choose Versafloor PM20168 vinyl sheet from Furnishings for long-lasting durability, sleek style, and unbeatable value.",
+                    "tertiary": "Click here to order now or contact us for more information."
+                },
+                "status": "active",
+                "created_at": "2025-07-17",
+                "updated_at": "2025-07-17",
+                "additional_description": {
+                    "headline": "Versafloor PM20168 – Premium Waterproof Vinyl Sheet Flooring in Malaysia",
+                    "sections": [
+                        {
+                            "title": "Stylish, Durable & Waterproof Vinyl Flooring for Malaysian Homes and Businesses",
+                            "content": "Looking for long-lasting, stylish, and waterproof flooring that fits both residential and commercial needs? The Versafloor PM20168 vinyl sheet is one of the best vinyl flooring options in Malaysia, designed to withstand moisture, foot traffic, and everyday wear and tear. Whether you're renovating a home or outfitting a retail space, this affordable vinyl flooring delivers excellent value and performance. Ideal for kitchens, bathrooms, offices, and commercial interiors, Versafloor PM20168 offers a sleek finish, easy maintenance, and simple installation—making it a practical choice for interior designers, homeowners, and contractors across Malaysia."
+                        },
+                        {
+                            "title": "Features & Benefits",
+                            "content": "100% Waterproof Surface: Perfect for wet areas such as kitchens, bathrooms, and laundry rooms. Anti-Slip Design: Safe for residential and commercial use, even in high-traffic zones. Durable & Scratch-Resistant: Built to handle heavy footfall in homes, retail spaces, and offices. Low Maintenance: Simply sweep or mop—no waxing or polishing required. Modern, Sleek Finish: Enhances the look of any interior with a professional, clean aesthetic. Quick & Easy Installation: Ideal for renovation projects with tight timelines."
+                        },
+                        {
+                            "title": "Product Specifications",
+                            "content": "Product Code: PM20168. Type: Vinyl Sheet Flooring. Dimensions: 2m width (custom length available). Thickness: 2.0mm. Surface Finish: Matte / Textured anti-slip surface. Material: High-quality PVC with protective wear layer. Installation Surface: Concrete, cement board, or smooth tile."
+                        },
+                        {
+                            "title": "Applications – Where to Use",
+                            "content": "The Versafloor PM20168 vinyl sheet is versatile, making it an excellent fit for: Residential: Bedrooms, living rooms, kitchens, bathrooms, laundry rooms. Commercial: Offices, boutiques, clinics, salons, reception areas. Retail: Shopping malls, small shops, and display rooms. New Builds & Renovations: Seamlessly integrates into ongoing projects or updates. Its waterproof and anti-slip qualities make it especially valuable in moisture-prone environments like kitchens and washrooms."
+                        },
+                        {
+                            "title": "Why Choose Versafloor PM20168?",
+                            "content": "Unlike basic vinyl flooring, Versafloor PM20168 offers the perfect blend of affordability, durability, and style. While other flooring options may crack, swell, or require expensive upkeep, this vinyl sheet stands up to daily wear and Malaysia’s humid conditions—without breaking the bank. With local expertise and trusted service, Furnishings ensures that every vinyl sheet meets your expectations. That’s why interior designers and contractors across Malaysia trust Furnishings for both small and large-scale flooring needs. Whether you're remodeling your kitchen or upgrading your retail space, this product delivers both performance and peace of mind."
+                        },
+                        {
+                            "title": "Get Versafloor PM20168 Delivered Across Malaysia – Order Now or Contact Furnishings for a Quote",
+                            "content": "Don’t compromise on quality flooring. Choose Versafloor PM20168 vinyl sheet from Furnishings for long-lasting durability, sleek style, and unbeatable value. Click here to order now or contact us for more information."
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "product": {
+                "id": "PM20170",
+                "name": "Versafloor Vinyl Sheet PM20170",
+                "slug": "versafloor-vinyl-sheet-pm20170",
+                "category": "Vinyl Sheet Flooring",
+                "brand": "Versafloor",
+                "images": {
+                    "main_image": "/vinyal_sheet/PM20170.jpg",
+                    "gallery": ["/vinyal_sheet/PM20170.jpg"],
+                    "thumbnails": ["/vinyal_sheet/PM20170.jpg"],
+                    "alt_texts": [
+                        "Versafloor PM20170 vinyl sheet in Malaysian interior",
+                        "Versafloor Vinyl Sheet PM20170 | Waterproof Vinyl Flooring Malaysia",
+                        "Looking for flooring that combines performance, style, and affordability? The Versafloor Vinyl Sheet PM20170 is a top choice among homeowners, interior decorators, and contractors across Malaysia.",
+                        "Engineered to handle the demands of modern interiors, this waterproof vinyl flooring sheet offers a sleek finish, anti-slip surface, and exceptional durability."
+                    ]
+                },
+                "seo": {
+                    "meta_title": "Versafloor Vinyl Sheet PM20170 | Waterproof Vinyl Flooring Malaysia",
+                    "meta_description": "Discover the Versafloor Vinyl Sheet PM20170 — stylish, durable, and waterproof vinyl flooring solution for homes and offices in Malaysia. Get high-quality vinyl sheets at the best price today!",
+                    "keywords": [
+                        "vinyl sheet flooring Malaysia",
+                        "Versafloor vinyl sheet price",
+                        "waterproof vinyl flooring sheet",
+                        "vinyl floor sheet supplier Malaysia",
+                        "vinyl flooring for living room",
+                        "durable vinyl sheet flooring",
+                        "vinyl sheet roll for floor",
+                        "best vinyl flooring Malaysia",
+                        "Versafloor PM20170 specs",
+                        "buy vinyl sheet flooring online Malaysia"
+                    ]
+                },
+                "description": {
+                    "short": "Discover the Versafloor Vinyl Sheet PM20170 — stylish, durable, and waterproof vinyl flooring solution for homes and offices in Malaysia. Get high-quality vinyl sheets at the best price today!",
+                    "long": "Looking for flooring that combines performance, style, and affordability? The Versafloor Vinyl Sheet PM20170 is a top choice among homeowners, interior decorators, and contractors across Malaysia. Engineered to handle the demands of modern interiors, this waterproof vinyl flooring sheet offers a sleek finish, anti-slip surface, and exceptional durability—all at a budget-friendly price. Ideal for living rooms, kitchens, bathrooms, and office spaces, PM20170 delivers high-end aesthetics without the high maintenance of wood or tiles."
+                },
+                "features": {
+                    "main_features": [
+                        "100% Waterproof Construction: Perfect for high-moisture areas such as bathrooms, kitchens, and laundry spaces.",
+                        "Durable & Resilient Design: Built to last in both residential and commercial settings, even under heavy foot traffic.",
+                        "Comfortable Underfoot: Soft yet sturdy texture, making it ideal for bedrooms and family living areas.",
+                        "Anti-Slip Surface: Ensures safety in wet conditions without compromising on visual appeal.",
+                        "Easy Installation: Suitable for both DIY installations and professional flooring services."
+                    ],
+                    "benefits": [
+                        "Ideal for high-moisture areas like bathrooms and kitchens",
+                        "Long-lasting durability for high-traffic residential and commercial spaces",
+                        "Comfortable and soft texture for cozy living areas",
+                        "Enhanced safety with anti-slip surface",
+                        "Streamlined installation for quick and efficient renovations"
+                    ],
+                    "design_compatibility": ["Modern", "Contemporary", "Minimalist", "Neutral"]
+                },
+                "specifications": {
+                    "waterproof": true,
+                    "slip_resistant": true,
+                    "product_code": "PM20170",
+                    "category": "Vinyl Sheet Flooring",
+                    "width": "2m",
+                    "thickness": "2.0mm",
+                    "wear_layer": "0.3mm",
+                    "finish": "Matte anti-slip surface",
+                    "color_design": "Neutral, modern wood-inspired tone",
+                    "material": "High-quality PVC with protective wear layer",
+                    "application_areas": ["Residential", "Commercial"],
+                    "installation_surface": ["Concrete", "Cement board", "Tile", "Plywood subfloors"],
+                    "durability": "10 to 15 years",
+                    "maintenance": "Sweep and mop with mild cleaners—no waxing required"
+                },
+                "installation": {
+                    "method": ["Glue-down method", "Loose lay method"],
+                    "surface_types": ["Concrete", "Cement board", "Tile", "Plywood"],
+                    "diy_friendly": true,
+                    "professional_recommended": true,
+                    "requirements": [
+                        "Ensure a clean, dry, and level subfloor",
+                        "Use appropriate adhesive for glue-down method in high-traffic areas",
+                        "Loose lay method suitable for smaller residential spaces",
+                        "Seal seams for moisture protection in wet areas"
+                    ]
+                },
+                "maintenance": {
+                    "cleaning_method": "Sweep and mop with mild cleaners—no waxing required",
+                    "special_treatments": "No waxing, sealing, or polishing required",
+                    "no_waxing": true,
+                    "no_polishing": true,
+                    "no_sealants": true
+                },
+                "faqs": [
+                    {
+                        "question": "What is VersaFloor vinyl sheet used for?",
+                        "answer": "It’s used for interior flooring in homes and commercial spaces needing a waterproof, stylish, and low-maintenance surface."
+                    },
+                    {
+                        "question": "Is vinyl sheet flooring suitable for residential use?",
+                        "answer": "Absolutely. It’s ideal for homes due to its comfort, ease of installation, and resistance to moisture and stains."
+                    },
+                    {
+                        "question": "How durable is VersaFloor vinyl flooring?",
+                        "answer": "Very durable. It’s engineered for long-term use in high-traffic environments like homes, offices, and retail interiors."
+                    },
+                    {
+                        "question": "Is VersaFloor vinyl flooring waterproof and anti-slip?",
+                        "answer": "Yes. It’s 100% waterproof and features an anti-slip surface, making it safe for bathrooms, kitchens, and other wet zones."
+                    },
+                    {
+                        "question": "How do I install vinyl sheet flooring at home?",
+                        "answer": "It can be installed using a glue-down method or loose lay over a flat surface. Professional installation is recommended for best results."
+                    },
+                    {
+                        "question": "What is the average cost of vinyl flooring in Malaysia?",
+                        "answer": "Prices vary depending on quality and design. PM20170 is priced affordably at Furnishings while offering premium features."
+                    },
+                    {
+                        "question": "What is the lifespan of VersaFloor vinyl sheets?",
+                        "answer": "With proper care and maintenance, it can last between 10–15 years or more."
+                    },
+                    {
+                        "question": "How to clean and maintain vinyl sheet flooring?",
+                        "answer": "Use a soft broom or vacuum for daily cleaning and mop with mild detergent. Avoid abrasive cleaners."
+                    },
+                    {
+                        "question": "Can vinyl sheet flooring be used in bathrooms or kitchens?",
+                        "answer": "Yes, it’s specifically designed for use in wet areas thanks to its waterproof and slip-resistant surface."
+                    },
+                    {
+                        "question": "Where to buy VersaFloor vinyl sheets in Malaysia?",
+                        "answer": "You can order directly from Furnishings.com.my for quick delivery and expert support."
+                    }
+                ],
+                "call_to_action": {
+                    "primary": "Buy Versafloor Vinyl Sheet PM20170 Online in Malaysia. Upgrade your interiors with confidence. Furnishings.com.my offers the Versafloor PM20170 at a competitive price with full customer support.",
+                    "secondary": "Order Now or Contact Us for a custom quote or project consultation.",
+                    "tertiary": "Transform your interiors with the durable, stylish, and affordable Versafloor PM20170 vinyl sheet flooring."
+                },
+                "status": "active",
+                "created_at": "2025-07-17",
+                "updated_at": "2025-07-17",
+                "additional_description": {
+                    "headline": "Versafloor Vinyl Sheet PM20170 – Waterproof Vinyl Sheet Flooring in Malaysia",
+                    "sections": [
+                        {
+                            "title": "Durable, Stylish & Affordable Vinyl Sheet Flooring for Malaysian Homes and Offices",
+                            "content": "Looking for flooring that combines performance, style, and affordability? The Versafloor Vinyl Sheet PM20170 is a top choice among homeowners, interior decorators, and contractors across Malaysia. Engineered to handle the demands of modern interiors, this waterproof vinyl flooring sheet offers a sleek finish, anti-slip surface, and exceptional durability—all at a budget-friendly price. Ideal for living rooms, kitchens, bathrooms, and office spaces, PM20170 delivers high-end aesthetics without the high maintenance of wood or tiles."
+                        },
+                        {
+                            "title": "Key Features of Versafloor PM20170",
+                            "content": "100% Waterproof Construction: Perfect for high-moisture areas such as bathrooms, kitchens, and laundry spaces. Durable & Resilient Design: Built to last in both residential and commercial settings, even under heavy foot traffic. Comfortable Underfoot: Soft yet sturdy texture, making it ideal for bedrooms and family living areas. Anti-Slip Surface: Ensures safety in wet conditions without compromising on visual appeal. Easy Installation: Suitable for both DIY installations and professional flooring services."
+                        },
+                        {
+                            "title": "Product Specifications",
+                            "content": "Product Code: PM20170. Category: Vinyl Sheet Flooring. Width: Standard vinyl sheet roll size (2m). Thickness: 2.0mm (optimized for comfort and strength). Finish: Matte anti-slip surface. Color/Design: Neutral, modern wood-inspired tone. Application Areas: Residential and Commercial. Installation Surface: Concrete, cement board, tile, or plywood subfloors."
+                        },
+                        {
+                            "title": "Applications – Where to Use PM20170",
+                            "content": "The Versafloor PM20170 is a versatile flooring choice suitable for: Residential Use: Living rooms, bedrooms, kitchens, bathrooms. Commercial Spaces: Offices, retail stores, clinics, salons. Renovation Projects & New Builds: Compatible with existing and new surfaces. High-Humidity Areas: Thanks to its waterproof and anti-slip properties."
+                        },
+                        {
+                            "title": "Why Choose PM20170 Vinyl Sheet Flooring from Furnishings?",
+                            "content": "When it comes to vinyl sheet flooring in Malaysia, Versafloor PM20170 stands out for its quality and value. At Furnishings, we provide: Competitive Pricing – Get the best value on top-tier vinyl flooring. Reliable Supplier Network – Trusted by flooring professionals across the country. Expert Support – Personalized guidance for product selection and installation. Fast Delivery Across Malaysia – Convenient shipping to your doorstep. Compared to tiles or wood, PM20170 is easier to install, more cost-effective, and better suited for Malaysia’s humid climate. Whether you're remodeling or building from scratch, this product simplifies flooring decisions without compromising quality."
+                        },
+                        {
+                            "title": "Installation & Maintenance",
+                            "content": "Installing PM20170 vinyl sheet roll for floors is simple: Installation Method: Glue-down or loose lay. Maintenance: Just sweep and mop with mild cleaners—no waxing required. Durability: Stain-resistant, water-resistant, and resistant to daily wear."
+                        },
+                        {
+                            "title": "Buy Versafloor Vinyl Sheet PM20170 Online in Malaysia",
+                            "content": "Upgrade your interiors with confidence. Furnishings.com.my offers the Versafloor PM20170 at a competitive price with full customer support. Order Now or Contact Us for a custom quote or project consultation."
+                        }
+                    ]
+                }
+            }
+        },
+
+        {
+            "product": {
+                "id": "PM20176",
+                "name": "Versafloor Vinyl Sheet PM20176",
+                "slug": "versafloor-vinyl-sheet-pm20176",
+                "category": "Vinyl Sheet Flooring",
+                "brand": "Versafloor",
+                "images": {
+                    "main_image": "/vinyal_sheet/PM20176.jpg",
+                    "gallery": ["/vinyal_sheet/PM20176.jpg"],
+                    "thumbnails": ["/vinyal_sheet/PM20176.jpg"],
+                    "alt_texts": [
+                        "Versafloor PM20176 vinyl sheet in Malaysian interior",
+                        "Versafloor Vinyl Sheet PM20176 | Durable Vinyl Flooring Malaysia",
+                        "Seeking an affordable, stylish, and durable flooring option? The Versafloor Vinyl Sheet PM20176 is engineered for Malaysian homeowners, interior designers, and commercial property managers.",
+                        "This waterproof and anti-slip vinyl sheet delivers exceptional performance with minimal maintenance, ideal for homes and offices."
+                    ]
+                },
+                "seo": {
+                    "meta_title": "Versafloor Vinyl Sheet PM20176 | Durable Vinyl Flooring Malaysia",
+                    "meta_description": "Explore the Versafloor Vinyl Sheet PM20176—durable, waterproof, and ideal for residential or commercial flooring in Malaysia. Easy to install and low maintenance.",
+                    "keywords": [
+                        "vinyl sheet flooring Malaysia",
+                        "Versafloor vinyl sheet",
+                        "buy vinyl flooring Malaysia",
+                        "waterproof vinyl flooring",
+                        "commercial vinyl flooring",
+                        "vinyl flooring for office use",
+                        "anti-slip vinyl sheet",
+                        "affordable vinyl flooring Malaysia",
+                        "vinyl floor tiles alternative",
+                        "best vinyl flooring brand Malaysia"
+                    ]
+                },
+                "description": {
+                    "short": "Explore the Versafloor Vinyl Sheet PM20176—durable, waterproof, and ideal for residential or commercial flooring in Malaysia. Easy to install and low maintenance.",
+                    "long": "Seeking an affordable, stylish, and durable flooring option? The Versafloor Vinyl Sheet PM20176 is engineered for Malaysian homeowners, interior designers, and commercial property managers who need a reliable and long-lasting option for high-traffic spaces. Whether you’re outfitting a modern home or a busy office, this waterproof and anti-slip vinyl sheet delivers exceptional performance with minimal maintenance. Ideal for kitchens, bathrooms, offices, and commercial interiors, PM20176 offers a sleek finish, easy maintenance, and simple installation—making it a practical choice for any interior in Malaysia."
+                },
+                "features": {
+                    "main_features": [
+                        "100% Waterproof Protection: Built to withstand spills, humidity, and wet environments—perfect for kitchens, bathrooms, and laundry areas.",
+                        "Anti-Slip Surface: Provides added safety for both residential and commercial spaces, reducing slip risks in high-traffic zones.",
+                        "Durable & Resilient: Designed for long-term use in offices, retail outlets, and living spaces with consistent foot traffic.",
+                        "Low-Maintenance Finish: Easy to clean—no special treatments needed. Just sweep and mop with mild cleaning agents.",
+                        "Modern Design: A contemporary look that mimics the texture of natural materials, complementing any interior style.",
+                        "Easy Installation: Compatible with glue-down and loose lay methods, making it ideal for new projects or renovations."
+                    ],
+                    "benefits": [
+                        "Safe for moisture-prone areas like kitchens and bathrooms",
+                        "Durable for high-traffic residential and commercial environments",
+                        "Low maintenance with simple cleaning requirements",
+                        "Modern aesthetic that enhances any interior",
+                        "Cost-effective alternative to tiles or hardwood",
+                        "Quick and flexible installation options"
+                    ],
+                    "design_compatibility": ["Modern", "Contemporary", "Minimalist", "Professional"]
+                },
+                "specifications": {
+                    "waterproof": true,
+                    "slip_resistant": true,
+                    "product_code": "PM20176",
+                    "category": "Vinyl Sheet Flooring",
+                    "width": "2m",
+                    "thickness": "2.0mm",
+                    "wear_layer": "0.3mm",
+                    "finish": "Matte anti-slip surface",
+                    "material": "High-quality PVC with protective wear layer",
+                    "application_areas": ["Residential", "Commercial"],
+                    "installation_surface": ["Concrete", "Cement board", "Tile", "Plywood"],
+                    "durability": "10 to 15 years",
+                    "maintenance": "Sweep regularly and mop with mild detergent. Avoid abrasive cleaners and heavy scrubbing tools."
+                },
+                "installation": {
+                    "method": ["Glue-down method", "Loose lay method"],
+                    "surface_types": ["Concrete", "Cement board", "Tile", "Plywood"],
+                    "diy_friendly": true,
+                    "professional_recommended": true,
+                    "requirements": [
+                        "Ensure a clean, dry, and level subfloor",
+                        "Use appropriate adhesive for glue-down method in high-traffic areas",
+                        "Loose lay method suitable for smaller residential spaces",
+                        "Seal seams for moisture protection in wet areas"
+                    ]
+                },
+                "maintenance": {
+                    "cleaning_method": "Sweep regularly and mop with mild detergent. Avoid abrasive cleaners and heavy scrubbing tools.",
+                    "special_treatments": "No waxing, sealing, or polishing required",
+                    "no_waxing": true,
+                    "no_polishing": true,
+                    "no_sealants": true
+                },
+                "faqs": [
+                    {
+                        "question": "What is VersaFloor vinyl sheet used for?",
+                        "answer": "VersaFloor vinyl sheets are used for indoor flooring in homes, offices, and commercial spaces that require waterproof, stylish, and durable surface coverage."
+                    },
+                    {
+                        "question": "Is vinyl sheet flooring suitable for residential use?",
+                        "answer": "Yes, it’s ideal for living rooms, kitchens, bedrooms, and bathrooms due to its comfort, durability, and water resistance."
+                    },
+                    {
+                        "question": "How durable is VersaFloor vinyl flooring?",
+                        "answer": "VersaFloor PM20176 is built for high performance, lasting over 10 years with proper care, even in high-traffic areas."
+                    },
+                    {
+                        "question": "Is VersaFloor vinyl flooring waterproof and anti-slip?",
+                        "answer": "Absolutely. PM20176 features a waterproof core and textured anti-slip surface, making it safe and practical for all interior settings."
+                    },
+                    {
+                        "question": "How do I install vinyl sheet flooring at home?",
+                        "answer": "Installation can be done using glue-down or loose lay methods. Ensure the subfloor is smooth and clean for best results. Professional installation is recommended for commercial spaces."
+                    },
+                    {
+                        "question": "What is the average cost of vinyl flooring in Malaysia?",
+                        "answer": "Vinyl flooring typically ranges from RM4 to RM10 per square foot. Versafloor PM20176 offers a premium finish at an affordable rate."
+                    },
+                    {
+                        "question": "What is the lifespan of VersaFloor vinyl sheets?",
+                        "answer": "With proper maintenance, the flooring can last 10–15 years, even in demanding environments."
+                    },
+                    {
+                        "question": "How to clean and maintain vinyl sheet flooring?",
+                        "answer": "Just sweep regularly and mop with a mild detergent. Avoid abrasive cleaners and heavy scrubbing tools."
+                    },
+                    {
+                        "question": "Can vinyl sheet flooring be used in bathrooms or kitchens?",
+                        "answer": "Yes, PM20176 is fully waterproof and safe for use in moisture-prone areas like bathrooms and kitchens."
+                    },
+                    {
+                        "question": "Where to buy VersaFloor vinyl sheets in Malaysia?",
+                        "answer": "You can purchase directly from Furnishings.com.my for fast delivery and professional support."
+                    }
+                ],
+                "call_to_action": {
+                    "primary": "Ready to Upgrade Your Space? Order the Versafloor PM20176 vinyl sheet today from Furnishings.com.my and experience the perfect combination of style, safety, and performance—all at an affordable price.",
+                    "secondary": "Buy now or contact us for expert guidance.",
+                    "tertiary": "Transform your home or office with the durable and stylish Versafloor PM20176 vinyl sheet flooring."
+                },
+                "status": "active",
+                "created_at": "2025-07-17",
+                "updated_at": "2025-07-17",
+                "additional_description": {
+                    "headline": "Versafloor Vinyl Sheet PM20176 – Waterproof & Anti-Slip Vinyl Flooring for Homes and Offices in Malaysia",
+                    "sections": [
+                        {
+                            "title": "Seeking an affordable, stylish, and durable flooring option?",
+                            "content": "The Versafloor Vinyl Sheet PM20176 is engineered for Malaysian homeowners, interior designers, and commercial property managers who need a reliable and long-lasting option for high-traffic spaces. Whether you’re outfitting a modern home or a busy office, this waterproof and anti-slip vinyl sheet delivers exceptional performance with minimal maintenance."
+                        },
+                        {
+                            "title": "Key Features",
+                            "content": "100% Waterproof Protection: Built to withstand spills, humidity, and wet environments—perfect for kitchens, bathrooms, and laundry areas. Anti-Slip Surface: Provides added safety for both residential and commercial spaces, reducing slip risks in high-traffic zones. Durable & Resilient: Designed for long-term use in offices, retail outlets, and living spaces with consistent foot traffic. Low-Maintenance Finish: Easy to clean—no special treatments needed. Just sweep and mop with mild cleaning agents. Modern Design: A contemporary look that mimics the texture of natural materials, complementing any interior style. Easy Installation: Compatible with glue-down and loose lay methods, making it ideal for new projects or renovations."
+                        },
+                        {
+                            "title": "Why Choose Versafloor PM20176?",
+                            "content": "If you’re searching for an alternative to tiles or hardwood, Versafloor PM20176 is a trusted choice. As one of the best vinyl flooring brands in Malaysia, Versafloor offers quality you can rely on—without the high cost of traditional flooring materials. Perfectly suited for Malaysia’s humid climate, this flooring solution remains stable, won’t warp, and retains its appearance even with daily wear. With local support and fast availability from Furnishings.com.my, you can get your space transformation started right away."
+                        },
+                        {
+                            "title": "Benefits at a Glance",
+                            "content": "Cost-effective flooring alternative. Designed for tropical, moisture-prone climates. Ideal for home and commercial use. Quick delivery across Malaysia. Backed by one of Malaysia’s trusted vinyl flooring suppliers."
+                        },
+                        {
+                            "title": "Ready to Upgrade Your Space?",
+                            "content": "Looking for a reliable and modern flooring solution? Order the Versafloor PM20176 vinyl sheet today from Furnishings.com.my and experience the perfect combination of style, safety, and performance—all at an affordable price. Buy now or contact us for expert guidance."
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "product": {
+                "id": "PP20395",
+                "name": "Versafloor Vinyl Sheet PP20395",
+                "slug": "versafloor-vinyl-sheet-pp20395",
+                "category": "Vinyl Sheet Flooring",
+                "brand": "Versafloor",
+                "images": {
+                    "main_image": "/vinyal_sheet/PP20395.jpg",
+                    "gallery": ["/vinyal_sheet/PP20395.jpg"],
+                    "thumbnails": ["/vinyal_sheet/PP20395.jpg"],
+                    "alt_texts": [
+                        "Versafloor PP20395 vinyl sheet in Malaysian interior",
+                        "Versafloor Vinyl Sheet PP20395 | Waterproof Vinyl Flooring Malaysia",
+                        "The Versafloor Vinyl Sheet PP20395 represents a durable and cost-effective flooring solution engineered for modern Malaysian environments.",
+                        "Ideal for Malaysian homeowners, interior designers, and property managers, Versafloor PP20395 provides the resilience and style required for long-term floor protection."
+                    ]
+                },
+                "seo": {
+                    "meta_title": "Versafloor Vinyl Sheet PP20395 | Waterproof Vinyl Flooring Malaysia",
+                    "meta_description": "Discover Versafloor Vinyl Sheet PP20395 — durable, waterproof, and easy to install. Ideal for Malaysian homes. Buy premium vinyl flooring sheets online today.",
+                    "keywords": [
+                        "vinyl sheet flooring Malaysia",
+                        "Versafloor vinyl sheet price",
+                        "waterproof vinyl flooring Malaysia",
+                        "buy vinyl flooring online Malaysia",
+                        "PVC vinyl sheet flooring",
+                        "vinyl floor covering roll",
+                        "best vinyl flooring for home Malaysia",
+                        "vinyl sheet supplier Malaysia",
+                        "easy to install vinyl flooring",
+                        "affordable vinyl flooring Malaysia"
+                    ]
+                },
+                "description": {
+                    "short": "Discover Versafloor Vinyl Sheet PP20395 — durable, waterproof, and easy to install. Ideal for Malaysian homes. Buy premium vinyl flooring sheets online today.",
+                    "long": "The Versafloor Vinyl Sheet PP20395 represents a durable and cost-effective flooring solution engineered for modern Malaysian environments. Whether you're upgrading a home, designing a new commercial space, or managing a renovation project, this PVC vinyl sheet flooring delivers exceptional performance and aesthetic appeal without exceeding your budget. Ideal for Malaysian homeowners, interior designers, and property managers, Versafloor PP20395 provides the resilience and style required for long-term floor protection in humid, high-traffic environments."
+                },
+                "features": {
+                    "main_features": [
+                        "100% Waterproof Surface: Constructed to resist moisture penetration, making it highly suitable for kitchens, bathrooms, and laundry areas.",
+                        "Durable Construction: Designed for both residential and commercial settings, it withstands constant foot traffic and daily wear with minimal degradation over time.",
+                        "Affordable and Accessible: An economical alternative to tiles and hardwood, Versafloor PP20395 offers high-quality performance without premium pricing.",
+                        "Versatile Design Compatibility: Neutral-toned surface complements a wide variety of interior styles—from minimalist residential layouts to contemporary office designs.",
+                        "Easy to Install and Maintain: Compatible with standard glue-down installation methods. Low maintenance requirements make it ideal for both DIY installations and contractor-led projects."
+                    ],
+                    "benefits": [
+                        "Resists moisture, ideal for humid Malaysian environments",
+                        "Durable for high-traffic residential and commercial spaces",
+                        "Cost-effective alternative to traditional flooring materials",
+                        "Versatile aesthetic that suits various interior styles",
+                        "Simplified installation and low maintenance for convenience"
+                    ],
+                    "design_compatibility": ["Minimalist", "Contemporary", "Modern", "Professional"]
+                },
+                "specifications": {
+                    "waterproof": true,
+                    "slip_resistant": true,
+                    "product_code": "PP20395",
+                    "category": "Vinyl Sheet Flooring",
+                    "width": "2m",
+                    "thickness": "2.0mm",
+                    "wear_layer": "0.3mm",
+                    "finish": "Matte anti-slip surface",
+                    "material": "Multi-layered PVC with protective wear layer",
+                    "application_areas": ["Residential", "Commercial"],
+                    "installation_surface": ["Concrete", "Cement board", "Tile", "Plywood"],
+                    "durability": "10 to 15 years",
+                    "maintenance": "Regular sweeping and mopping with a mild, non-abrasive cleaner. Avoid wax or harsh solvents."
+                },
+                "installation": {
+                    "method": ["Glue-down method"],
+                    "surface_types": ["Concrete", "Cement board", "Tile", "Plywood"],
+                    "diy_friendly": true,
+                    "professional_recommended": true,
+                    "requirements": [
+                        "Ensure a clean, dry, and level subfloor",
+                        "Use appropriate adhesive for glue-down method in high-traffic areas",
+                        "Seal seams for moisture protection in wet areas"
+                    ]
+                },
+                "maintenance": {
+                    "cleaning_method": "Regular sweeping and mopping with a mild, non-abrasive cleaner. Avoid wax or harsh solvents.",
+                    "special_treatments": "No waxing, sealing, or polishing required",
+                    "no_waxing": true,
+                    "no_polishing": true,
+                    "no_sealants": true
+                },
+                "faqs": [
+                    {
+                        "question": "What is VersaFloor vinyl sheet used for?",
+                        "answer": "VersaFloor vinyl sheets are used as a waterproof and durable floor covering in residential, commercial, and institutional interiors requiring long-term surface performance and easy maintenance."
+                    },
+                    {
+                        "question": "Is vinyl sheet flooring suitable for residential use?",
+                        "answer": "Yes. It’s ideal for homes due to its soft underfoot feel, moisture resistance, and compatibility with various room styles."
+                    },
+                    {
+                        "question": "How durable is VersaFloor vinyl flooring?",
+                        "answer": "VersaFloor products are manufactured with multi-layered PVC construction, offering enhanced resistance to wear, scratches, and heavy traffic—making them suitable for high-demand environments."
+                    },
+                    {
+                        "question": "Is VersaFloor vinyl flooring waterproof and anti-slip?",
+                        "answer": "Absolutely. It features a waterproof core and a textured anti-slip surface, ensuring both practicality and safety in wet conditions."
+                    },
+                    {
+                        "question": "How do I install vinyl sheet flooring at home?",
+                        "answer": "Installation is typically performed using a glue-down method over a clean, flat surface. For optimal results, it is advisable to consult professional installers, especially for large areas."
+                    },
+                    {
+                        "question": "What is the average cost of vinyl flooring in Malaysia?",
+                        "answer": "Depending on thickness, design, and brand, prices generally range from RM4 to RM10 per square foot, with Versafloor PP20395 offering a premium look at a mid-range price point."
+                    },
+                    {
+                        "question": "What is the lifespan of VersaFloor vinyl sheets?",
+                        "answer": "With appropriate installation and routine maintenance, the product can last 10 to 15 years or longer under normal use conditions."
+                    },
+                    {
+                        "question": "How to clean and maintain vinyl sheet flooring?",
+                        "answer": "Regular sweeping and mopping with a mild, non-abrasive cleaner is sufficient. Avoid using wax or harsh solvents that may compromise the surface finish."
+                    },
+                    {
+                        "question": "Can vinyl sheet flooring be used in bathrooms or kitchens?",
+                        "answer": "Yes, its waterproof and anti-slip characteristics make it particularly suitable for high-moisture zones like bathrooms and kitchens."
+                    },
+                    {
+                        "question": "Where to buy VersaFloor vinyl sheets in Malaysia?",
+                        "answer": "You can order Versafloor PP20395 directly from Furnishings.com.my—Malaysia’s reliable supplier of vinyl sheet flooring."
+                    }
+                ],
+                "call_to_action": {
+                    "primary": "Buy Versafloor PP20395 Now or Contact Us to request a custom quote.",
+                    "secondary": "Purchasing premium vinyl flooring has never been more straightforward. Furnishings.com.my provides a seamless online buying experience with prompt shipping and responsive customer assistance.",
+                    "tertiary": "Ready to upgrade your interiors? Transform your space with the durable, waterproof, and stylish Versafloor PP20395 vinyl sheet flooring."
+                },
+                "status": "active",
+                "created_at": "2025-07-17",
+                "updated_at": "2025-07-17",
+                "additional_description": {
+                    "headline": "Versafloor Vinyl Sheet PP20395 | Waterproof Vinyl Flooring Malaysia",
+                    "sections": [
+                        {
+                            "title": "Reliable, Waterproof Vinyl Flooring for Residential and Commercial Interiors",
+                            "content": "The Versafloor Vinyl Sheet PP20395 represents a durable and cost-effective flooring solution engineered for modern Malaysian environments. Whether you're upgrading a home, designing a new commercial space, or managing a renovation project, this PVC vinyl sheet flooring delivers exceptional performance and aesthetic appeal without exceeding your budget. Ideal for Malaysian homeowners, interior designers, and property managers, Versafloor PP20395 provides the resilience and style required for long-term floor protection in humid, high-traffic environments."
+                        },
+                        {
+                            "title": "Key Features of Versafloor PP20395",
+                            "content": "100% Waterproof Surface: Constructed to resist moisture penetration, making it highly suitable for kitchens, bathrooms, and laundry areas. Durable Construction: Designed for both residential and commercial settings, it withstands constant foot traffic and daily wear with minimal degradation over time. Affordable and Accessible: An economical alternative to tiles and hardwood, Versafloor PP20395 offers high-quality performance without premium pricing. Versatile Design Compatibility: Neutral-toned surface complements a wide variety of interior styles—from minimalist residential layouts to contemporary office designs. Easy to Install and Maintain: Compatible with standard glue-down installation methods. Low maintenance requirements make it ideal for both DIY installations and contractor-led projects."
+                        },
+                        {
+                            "title": "Recommended Applications",
+                            "content": "The versatility of Versafloor vinyl sheet PP20395 allows for its use across diverse settings: Residential Spaces: Living rooms, bedrooms, kitchens, bathrooms, and hallways. Commercial Properties: Office floors, retail stores, clinics, and hospitality interiors. Wet and Humid Zones: Bathrooms, utility areas, or tropical climate environments. Renovation or New Construction: Easily integrated into both retrofit and new development floor plans."
+                        },
+                        {
+                            "title": "Why Choose Versafloor PP20395 Over Traditional Flooring?",
+                            "content": "In contrast to conventional tile or laminate options, Versafloor PP20395 offers distinct advantages in terms of moisture resistance, installation flexibility, and lifecycle cost efficiency. As a product of a trusted brand with local availability via Furnishings.com.my, it ensures fast delivery and reliable post-sale support across Malaysia. Furthermore, its construction prioritizes longevity and indoor air quality, reducing concerns related to warping, mold, or chemical emissions often associated with lower-grade materials."
+                        },
+                        {
+                            "title": "Buy Versafloor Vinyl Sheet PP20395 Online in Malaysia",
+                            "content": "Purchasing premium vinyl flooring has never been more straightforward. Furnishings.com.my provides a seamless online buying experience with prompt shipping and responsive customer assistance. Ready to upgrade your interiors? Buy Versafloor PP20395 Now or Contact Us to request a custom quote."
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "product": {
+                "id": "PP20415",
+                "name": "Versafloor Vinyl Sheet PP20415",
+                "slug": "versafloor-vinyl-sheet-pp20415",
+                "category": "Vinyl Sheet Flooring",
+                "brand": "Versafloor",
+                "images": {
+                    "main_image": "/vinyal_sheet/PP20415.jpg",
+                    "gallery": ["/vinyal_sheet/PP20415.jpg"],
+                    "thumbnails": ["/vinyal_sheet/PP20415.jpg"],
+                    "alt_texts": [
+                        "Versafloor PP20415 vinyl sheet in Malaysian interior",
+                        "Versafloor Vinyl Sheet PP20415 | Waterproof & Stylish Vinyl Flooring Malaysia",
+                        "Looking for a flooring solution that combines style, durability, and practicality? The Versafloor Vinyl Sheet PP20415 from Furnishings offers all that and more.",
+                        "Designed to elevate any interior, this premium vinyl sheet flooring is ideal for Malaysian homes, offices, and commercial spaces seeking a modern yet low-maintenance surface."
+                    ]
+                },
+                "seo": {
+                    "meta_title": "Versafloor Vinyl Sheet PP20415 | Waterproof & Stylish Vinyl Flooring Malaysia",
+                    "meta_description": "Discover the Versafloor Vinyl Sheet PP20415 – a stylish, waterproof, and durable vinyl flooring solution perfect for homes and offices in Malaysia. Easy to install and low maintenance.",
+                    "keywords": [
+                        "vinyl flooring Malaysia",
+                        "best vinyl sheet flooring",
+                        "Versafloor vinyl price",
+                        "durable vinyl sheet flooring",
+                        "waterproof vinyl flooring",
+                        "modern vinyl flooring designs",
+                        "vinyl flooring for home",
+                        "easy to install vinyl sheet",
+                        "vinyl floor sheet roll",
+                        "affordable vinyl flooring Malaysia"
+                    ]
+                },
+                "description": {
+                    "short": "Discover the Versafloor Vinyl Sheet PP20415 – a stylish, waterproof, and durable vinyl flooring solution perfect for homes and offices in Malaysia. Easy to install and low maintenance.",
+                    "long": "Looking for a flooring solution that combines style, durability, and practicality? The Versafloor Vinyl Sheet PP20415 from Furnishings offers all that and more. Designed to elevate any interior, this premium vinyl sheet flooring is ideal for Malaysian homes, offices, and commercial spaces seeking a modern yet low-maintenance surface. Whether you're a homeowner renovating your living room, an interior designer working on a high-traffic commercial space, or a developer seeking a waterproof flooring solution, the Versafloor PP20415 delivers unmatched performance at an affordable price."
+                },
+                "features": {
+                    "main_features": [
+                        "Waterproof Performance: Perfect for wet areas such as kitchens, bathrooms, and laundry rooms, this vinyl sheet provides excellent moisture resistance, making it a smart alternative to wood or ceramic tiles.",
+                        "Stylish Modern Design: The PP20415 model features a contemporary finish that mimics the aesthetic of natural surfaces, bringing warmth and sophistication to any room.",
+                        "Durable & Long-Lasting: Built to withstand daily wear and tear, Versafloor vinyl is engineered with multi-layer protection for long-term durability in both residential and commercial settings.",
+                        "Anti-Slip Surface: Safety is a priority in any space. The textured surface provides anti-slip protection, reducing the risk of slips and falls.",
+                        "Easy Installation: This sheet comes in a flexible roll format that simplifies installation, especially in large open areas. No complex subfloor work is needed, which helps save on time and labor.",
+                        "Low Maintenance: With minimal upkeep required, just regular sweeping and occasional mopping will keep your floor looking as good as new."
+                    ],
+                    "benefits": [
+                        "Resists moisture, ideal for kitchens, bathrooms, and humid Malaysian climates",
+                        "Enhances interiors with a modern, natural aesthetic",
+                        "Durable for high-traffic residential and commercial environments",
+                        "Provides safety with anti-slip properties",
+                        "Simplifies installation with flexible roll format",
+                        "Requires minimal maintenance for long-term cost savings"
+                    ],
+                    "design_compatibility": ["Modern", "Contemporary", "Minimalist", "Natural"]
+                },
+                "specifications": {
+                    "waterproof": true,
+                    "slip_resistant": true,
+                    "product_code": "PP20415",
+                    "category": "Vinyl Sheet Flooring",
+                    "width": "2m",
+                    "thickness": "2.0mm",
+                    "wear_layer": "0.3mm",
+                    "finish": "Modern design pattern",
+                    "material": "Multi-layered PVC with protective wear layer",
+                    "application_areas": ["Residential", "Commercial"],
+                    "installation_surface": ["Concrete", "Cement board", "Tile", "Plywood"],
+                    "durability": "10 to 15 years",
+                    "maintenance": "Regular sweeping and occasional mopping with mild cleaners"
+                },
+                "installation": {
+                    "method": ["Glue-down method", "Loose lay method"],
+                    "surface_types": ["Concrete", "Cement board", "Tile", "Plywood"],
+                    "diy_friendly": true,
+                    "professional_recommended": true,
+                    "requirements": [
+                        "Ensure a clean, dry, and level subfloor",
+                        "Use appropriate adhesive for glue-down method in high-traffic areas",
+                        "Loose lay method suitable for smaller residential spaces",
+                        "Seal seams for moisture protection in wet areas"
+                    ]
+                },
+                "maintenance": {
+                    "cleaning_method": "Regular sweeping and occasional mopping with mild cleaners",
+                    "special_treatments": "No waxing, sealing, or polishing required",
+                    "no_waxing": true,
+                    "no_polishing": true,
+                    "no_sealants": true
+                },
+                "faqs": [
+                    {
+                        "question": "What is Versafloor vinyl sheet used for?",
+                        "answer": "Versafloor vinyl sheets are used for indoor flooring in homes, offices, and commercial spaces requiring waterproof, stylish, and durable surface coverage."
+                    },
+                    {
+                        "question": "Is vinyl sheet flooring suitable for residential use?",
+                        "answer": "Yes, it’s ideal for homes due to its comfort, water resistance, and compatibility with various room styles like living rooms, kitchens, and bathrooms."
+                    },
+                    {
+                        "question": "How durable is Versafloor vinyl flooring?",
+                        "answer": "Versafloor PP20415 is built for high performance, lasting 10 to 15 years with proper care, even in high-traffic areas."
+                    },
+                    {
+                        "question": "Is Versafloor vinyl flooring waterproof and anti-slip?",
+                        "answer": "Yes, it features a waterproof core and a textured anti-slip surface, ensuring safety and practicality in wet conditions."
+                    },
+                    {
+                        "question": "How do I install vinyl sheet flooring at home?",
+                        "answer": "Installation can be done using glue-down or loose lay methods over a clean, flat surface. Professional installation is recommended for commercial spaces or large areas."
+                    },
+                    {
+                        "question": "What is the average cost of vinyl flooring in Malaysia?",
+                        "answer": "Vinyl flooring typically ranges from RM4 to RM10 per square foot, with Versafloor PP20415 offering a premium finish at an affordable rate."
+                    },
+                    {
+                        "question": "What is the lifespan of Versafloor vinyl sheets?",
+                        "answer": "With proper maintenance, Versafloor PP20415 can last 10 to 15 years, even in demanding environments."
+                    },
+                    {
+                        "question": "How to clean and maintain vinyl sheet flooring?",
+                        "answer": "Regular sweeping and occasional mopping with mild cleaners are sufficient. Avoid abrasive cleaners or heavy scrubbing tools."
+                    },
+                    {
+                        "question": "Can vinyl sheet flooring be used in bathrooms or kitchens?",
+                        "answer": "Yes, PP20415 is fully waterproof and anti-slip, making it ideal for moisture-prone areas like bathrooms and kitchens."
+                    },
+                    {
+                        "question": "Where to buy Versafloor vinyl sheets in Malaysia?",
+                        "answer": "You can purchase Versafloor PP20415 directly from Furnishings.com.my for fast delivery and professional support."
+                    }
+                ],
+                "call_to_action": {
+                    "primary": "Ready to upgrade your space with Versafloor Vinyl Sheet PP20415? Contact Furnishings today for expert advice, pricing details, and bulk order inquiries.",
+                    "secondary": "Shop with Confidence at Furnishings. Browse our online catalogue or visit our store for personalized support.",
+                    "tertiary": "Versafloor Vinyl Sheet PP20415—Where style meets practicality. Buy now at Furnishings.com.my."
+                },
+                "status": "active",
+                "created_at": "2025-07-17",
+                "updated_at": "2025-07-17",
+                "additional_description": {
+                    "headline": "Versafloor Vinyl Sheet PP20415 | Waterproof & Stylish Vinyl Flooring Malaysia",
+                    "sections": [
+                        {
+                            "title": "Product Overview",
+                            "content": "Looking for a flooring solution that combines style, durability, and practicality? The Versafloor Vinyl Sheet PP20415 from Furnishings offers all that and more. Designed to elevate any interior, this premium vinyl sheet flooring is ideal for Malaysian homes, offices, and commercial spaces seeking a modern yet low-maintenance surface. Whether you're a homeowner renovating your living room, an interior designer working on a high-traffic commercial space, or a developer seeking a waterproof flooring solution, the Versafloor PP20415 delivers unmatched performance at an affordable price."
+                        },
+                        {
+                            "title": "Why Choose Versafloor Vinyl Sheet PP20415?",
+                            "content": "1. Waterproof Performance: Perfect for wet areas such as kitchens, bathrooms, and laundry rooms, this vinyl sheet provides excellent moisture resistance, making it a smart alternative to wood or ceramic tiles. 2. Stylish Modern Design: The PP20415 model features a contemporary finish that mimics the aesthetic of natural surfaces, bringing warmth and sophistication to any room. 3. Durable & Long-Lasting: Built to withstand daily wear and tear, Versafloor vinyl is engineered with multi-layer protection for long-term durability in both residential and commercial settings. 4. Anti-Slip Surface: Safety is a priority in any space. The textured surface provides anti-slip protection, reducing the risk of slips and falls. 5. Easy Installation: This sheet comes in a flexible roll format that simplifies installation, especially in large open areas. No complex subfloor work is needed, which helps save on time and labor. 6. Low Maintenance: With minimal upkeep required, just regular sweeping and occasional mopping will keep your floor looking as good as new."
+                        },
+                        {
+                            "title": "Ideal for Multiple Applications",
+                            "content": "Residential Spaces: Living rooms, bedrooms, kitchens, bathrooms, hallways. Commercial Areas: Offices, retail outlets, showrooms, healthcare facilities. Renovation Projects: Quick and affordable upgrade without the mess of tiles."
+                        },
+                        {
+                            "title": "Answering Your Questions Naturally",
+                            "content": "Vinyl flooring like the Versafloor PP20415 is commonly used in both residential and commercial environments due to its water resistance and ease of maintenance. Many homeowners in Malaysia prefer it for high-moisture zones because it performs better than laminate or wood in such conditions. Its average lifespan ranges from 10 to 15 years, depending on foot traffic and care. Installation is straightforward—either loose lay or adhesive-based—making it a great choice for DIY enthusiasts or professional contractors. Wondering where to buy vinyl flooring in Malaysia? Furnishings offers a complete collection of premium vinyl sheet flooring, including the PP20415 model. Our experts can guide you through selection, pricing, and installation support."
+                        },
+                        {
+                            "title": "Contact Us for a Quote",
+                            "content": "Ready to upgrade your space with Versafloor Vinyl Sheet PP20415? Contact Furnishings today for expert advice, pricing details, and bulk order inquiries. We deliver across Malaysia and provide professional recommendations to match your space and budget."
+                        },
+                        {
+                            "title": "Shop with Confidence at Furnishings",
+                            "content": "With years of experience providing high-quality flooring solutions across Malaysia, Furnishings is your trusted source for vinyl sheet flooring. Browse our online catalogue or visit our store for personalized support. Versafloor Vinyl Sheet PP20415—Where style meets practicality."
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "product": {
+                "id": "PP20425",
+                "name": "Versafloor Vinyl Sheet PP20425",
+                "slug": "versafloor-vinyl-sheet-pp20425",
+                "category": "Vinyl Sheet Flooring",
+                "brand": "Versafloor",
+                "images": {
+                    "main_image": "/vinyal_sheet/PP20425.jpg",
+                    "gallery": ["/vinyal_sheet/PP20425.jpg"],
+                    "thumbnails": ["/vinyal_sheet/PP20425.jpg"],
+                    "alt_texts": [
+                        "Versafloor PP20425 vinyl sheet in Malaysian interior",
+                        "Versafloor Vinyl Sheet PP20425 | Durable Waterproof Vinyl Flooring Malaysia",
+                        "Looking for stylish and practical flooring that holds up to daily wear and tear? The Versafloor Vinyl Sheet PP20425 is a smart choice for Malaysian homeowners, interior designers, and property developers.",
+                        "Designed with modern interiors in mind, this vinyl sheet combines aesthetic appeal, waterproof performance, and anti-slip safety."
+                    ]
+                },
+                "seo": {
+                    "meta_title": "Versafloor Vinyl Sheet PP20425 | Durable Waterproof Vinyl Flooring Malaysia",
+                    "meta_description": "Explore the Versafloor Vinyl Sheet PP20425 – stylish, waterproof, and slip-resistant vinyl flooring perfect for homes and commercial spaces in Malaysia. Durable and easy to maintain.",
+                    "keywords": [
+                        "vinyl flooring Malaysia",
+                        "Versafloor vinyl sheet",
+                        "vinyl sheet flooring",
+                        "PVC vinyl flooring",
+                        "best vinyl flooring for home",
+                        "commercial vinyl sheet flooring",
+                        "waterproof vinyl flooring",
+                        "anti-slip vinyl flooring",
+                        "vinyl floor covering",
+                        "durable vinyl flooring solutions"
+                    ]
+                },
+                "description": {
+                    "short": "Explore the Versafloor Vinyl Sheet PP20425 – stylish, waterproof, and slip-resistant vinyl flooring perfect for homes and commercial spaces in Malaysia. Durable and easy to maintain.",
+                    "long": "Looking for stylish and practical flooring that holds up to daily wear and tear? The Versafloor Vinyl Sheet PP20425, now available at furnishings.com.my, is a smart choice for Malaysian homeowners, interior designers, and property developers. Designed with modern interiors in mind, this vinyl sheet combines aesthetic appeal, waterproof performance, and anti-slip safety—making it a top-tier solution for both residential and commercial projects. Whether you're renovating a home, upgrading office flooring, or designing a space with heavy foot traffic, the PP20425 offers a dependable and easy-to-maintain flooring alternative to traditional tiles or hardwood—especially in moisture-prone areas like kitchens and bathrooms."
+                },
+                "features": {
+                    "main_features": [
+                        "Waterproof & Anti-Slip Surface: Ideal for bathrooms, kitchens, and areas where moisture control matters.",
+                        "Modern, Stylish Appearance: Designed with subtle tones and textures that complement contemporary interiors.",
+                        "Easy Installation & Low Maintenance: Save time and effort with a simple installation process and hassle-free upkeep.",
+                        "Perfect for Home & Commercial Use: Versatile enough for living rooms, bedrooms, offices, retail shops, and more.",
+                        "Durable & Long-Lasting: Built to withstand high foot traffic and wear over time without losing its appeal."
+                    ],
+                    "benefits": [
+                        "Ideal for moisture-prone areas like kitchens and bathrooms",
+                        "Enhances interiors with a modern, stylish aesthetic",
+                        "Simplifies installation and maintenance for cost efficiency",
+                        "Versatile for both residential and commercial applications",
+                        "Durable for long-term performance in high-traffic areas"
+                    ],
+                    "design_compatibility": ["Modern", "Contemporary", "Minimalist", "Professional"]
+                },
+                "specifications": {
+                    "waterproof": true,
+                    "slip_resistant": true,
+                    "product_code": "PP20425",
+                    "category": "Vinyl Sheet Flooring",
+                    "width": "2m",
+                    "thickness": "2.0mm",
+                    "wear_layer": "0.3mm",
+                    "finish": "Modern textured pattern",
+                    "material": "PVC with protective wear layer",
+                    "application_areas": ["Residential", "Commercial", "Educational", "Healthcare"],
+                    "installation_surface": ["Concrete", "Cement board", "Tile", "Plywood"],
+                    "durability": "10 to 15 years",
+                    "maintenance": "Use a damp mop or mild cleaning solution. Avoid abrasive cleaners to preserve the surface finish."
+                },
+                "installation": {
+                    "method": ["Glue-down method", "Loose lay method"],
+                    "surface_types": ["Concrete", "Cement board", "Tile", "Plywood"],
+                    "diy_friendly": true,
+                    "professional_recommended": true,
+                    "requirements": [
+                        "Ensure a clean, dry, and level subfloor",
+                        "Use appropriate adhesive for glue-down method in high-traffic areas",
+                        "Loose lay method suitable for smaller residential spaces",
+                        "Seal seams for moisture protection in wet areas"
+                    ]
+                },
+                "maintenance": {
+                    "cleaning_method": "Use a damp mop or mild cleaning solution. Avoid abrasive cleaners to preserve the surface finish.",
+                    "special_treatments": "No waxing, sealing, or polishing required",
+                    "no_waxing": true,
+                    "no_polishing": true,
+                    "no_sealants": true
+                },
+                "faqs": [
+                    {
+                        "question": "What is VersaFloor vinyl sheet used for?",
+                        "answer": "It's used for durable and stylish flooring in homes and commercial spaces, especially in moisture-prone areas."
+                    },
+                    {
+                        "question": "Is vinyl sheet flooring suitable for residential use?",
+                        "answer": "Yes, it's perfect for homes due to its comfort, style, and easy upkeep."
+                    },
+                    {
+                        "question": "How durable is VersaFloor vinyl flooring?",
+                        "answer": "It is built to last, even in high-traffic areas, making it suitable for both homes and businesses."
+                    },
+                    {
+                        "question": "Is VersaFloor vinyl flooring waterproof and anti-slip?",
+                        "answer": "Yes, the PP20425 model is engineered for both waterproofing and anti-slip safety."
+                    },
+                    {
+                        "question": "How do I install vinyl sheet flooring at home?",
+                        "answer": "It can be installed over a smooth, clean surface using adhesive. Professional installation is recommended for best results."
+                    },
+                    {
+                        "question": "What is the average cost of vinyl flooring in Malaysia?",
+                        "answer": "Prices vary based on design and thickness but remain an affordable option compared to tile or hardwood."
+                    },
+                    {
+                        "question": "What is the lifespan of VersaFloor vinyl sheets?",
+                        "answer": "With proper care, they can last 10–15 years or more."
+                    },
+                    {
+                        "question": "How to clean and maintain vinyl sheet flooring?",
+                        "answer": "Use a damp mop or mild cleaning solution. Avoid abrasive cleaners to preserve the surface finish."
+                    },
+                    {
+                        "question": "Can vinyl sheet flooring be used in bathrooms or kitchens?",
+                        "answer": "Yes, its waterproof and anti-slip features make it ideal for wet environments."
+                    },
+                    {
+                        "question": "Where to buy VersaFloor vinyl sheets in Malaysia?",
+                        "answer": "You can purchase the PP20425 and other models at furnishings.com.my with delivery available across Malaysia."
+                    }
+                ],
+                "call_to_action": {
+                    "primary": "Buy Versafloor Vinyl Sheet PP20425 online today or contact us for a custom quote.",
+                    "secondary": "Ready to transform your interior? At furnishings.com.my, we bring you premium flooring solutions at competitive prices.",
+                    "tertiary": "Need Expert Advice or Bulk Pricing? Get in touch with our flooring specialists today. We’re here to help you make the right choice for your space."
+                },
+                "status": "active",
+                "created_at": "2025-07-17",
+                "updated_at": "2025-07-17",
+                "additional_description": {
+                    "headline": "Versafloor Vinyl Sheet PP20425 | Durable Waterproof Vinyl Flooring Malaysia",
+                    "sections": [
+                        {
+                            "title": "Upgrade Your Space with Versafloor Vinyl Sheet PP20425",
+                            "content": "Looking for stylish and practical flooring that holds up to daily wear and tear? The Versafloor Vinyl Sheet PP20425, now available at furnishings.com.my, is a smart choice for Malaysian homeowners, interior designers, and property developers. Designed with modern interiors in mind, this vinyl sheet combines aesthetic appeal, waterproof performance, and anti-slip safety—making it a top-tier solution for both residential and commercial projects. Whether you're renovating a home, upgrading office flooring, or designing a space with heavy foot traffic, the PP20425 offers a dependable and easy-to-maintain flooring alternative to traditional tiles or hardwood—especially in moisture-prone areas like kitchens and bathrooms."
+                        },
+                        {
+                            "title": "Key Features of Versafloor PP20425",
+                            "content": "Waterproof & Anti-Slip Surface: Ideal for bathrooms, kitchens, and areas where moisture control matters. Modern, Stylish Appearance: Designed with subtle tones and textures that complement contemporary interiors. Easy Installation & Low Maintenance: Save time and effort with a simple installation process and hassle-free upkeep. Perfect for Home & Commercial Use: Versatile enough for living rooms, bedrooms, offices, retail shops, and more. Durable & Long-Lasting: Built to withstand high foot traffic and wear over time without losing its appeal."
+                        },
+                        {
+                            "title": "Where Can You Use It?",
+                            "content": "Versafloor Vinyl Sheet PP20425 is perfect for: Residential homes (living rooms, bedrooms, kitchens). Office spaces and commercial interiors. Bathrooms and laundry areas. Retail stores or showrooms. Educational and healthcare facilities. Thanks to its PVC-based composition and non-slip surface, it performs exceptionally well in spaces that demand durability and safety without compromising on design."
+                        },
+                        {
+                            "title": "Buy Now and Enhance Your Flooring",
+                            "content": "At furnishings.com.my, we bring you premium flooring solutions at competitive prices. The Versafloor PP20425 offers a cost-effective upgrade with long-term benefits. Whether you're working on a new build or a renovation project, this sheet is designed for effortless integration and lasting performance. Ready to transform your interior? Buy Versafloor Vinyl Sheet PP20425 online today or contact us for a custom quote."
+                        },
+                        {
+                            "title": "Need Expert Advice or Bulk Pricing?",
+                            "content": "Get in touch with our flooring specialists today. We’re here to help you make the right choice for your space."
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "product": {
+                "id": "PP20455",
+                "name": "Versafloor Vinyl Sheet PP20455",
+                "slug": "versafloor-vinyl-sheet-pp20455",
+                "category": "Vinyl Sheet Flooring",
+                "brand": "Versafloor",
+                "images": {
+                    "main_image": "/vinyal_sheet/dummy.webp",
+                    "gallery": ["/vinyal_sheet/dummy.webp"],
+                    "thumbnails": ["/vinyal_sheet/dummy.webp"],
+                    "alt_texts": [
+                        "Versafloor PP20455 vinyl sheet in Malaysian interior",
+                        "Versafloor Vinyl Sheet PP20455 | Durable & Stylish Vinyl Flooring Malaysia",
+                        "Looking for a flooring solution that blends design, durability, and functionality? The Versafloor Vinyl Sheet PP20455 offers the perfect combination of style, water resistance, and ease of use.",
+                        "This vinyl flooring sheet delivers a sleek and sophisticated look while offering unmatched practicality for Malaysian homes and offices."
+                    ]
+                },
+                "seo": {
+                    "meta_title": "Versafloor Vinyl Sheet PP20455 | Durable & Stylish Vinyl Flooring Malaysia",
+                    "meta_description": "Explore the Versafloor Vinyl Sheet PP20455 – stylish, waterproof, and slip-resistant vinyl flooring perfect for homes and commercial spaces in Malaysia. Durable and easy to maintain.",
+                    "keywords": [
+                        "Versafloor vinyl sheet Malaysia",
+                        "buy vinyl flooring sheet online",
+                        "PP20455 vinyl sheet price",
+                        "Versafloor vinyl flooring designs",
+                        "vinyl sheet flooring for home",
+                        "affordable vinyl sheet Malaysia",
+                        "best vinyl sheet flooring supplier",
+                        "durable vinyl sheet for kitchen",
+                        "easy install vinyl flooring sheet",
+                        "water-resistant vinyl sheet Malaysia"
+                    ]
+                },
+                "description": {
+                    "short": "Explore the Versafloor Vinyl Sheet PP20455 – stylish, waterproof, and slip-resistant vinyl flooring perfect for homes and commercial spaces in Malaysia. Durable and easy to maintain.",
+                    "long": "Looking for a flooring solution that blends design, durability, and functionality? The Versafloor Vinyl Sheet PP20455 offers the perfect combination of style, water resistance, and ease of use, making it a top choice for Malaysian homeowners, interior designers, and commercial property developers. Whether you’re renovating a cozy home or fitting out a modern office, this vinyl flooring sheet delivers a sleek and sophisticated look while offering unmatched practicality. Designed with high-traffic areas in mind, the PP20455 vinyl sheet is engineered for long-term durability and moisture resistance."
+                },
+                "features": {
+                    "main_features": [
+                        "Waterproof & Anti-Slip Surface: Ideal for bathrooms, kitchens, and areas where moisture control matters.",
+                        "Modern, Stylish Appearance: Designed with neutral woodgrain tones and textures that complement contemporary interiors.",
+                        "Easy Installation & Low Maintenance: Save time and effort with a simple installation process and hassle-free upkeep.",
+                        "Perfect for Home & Commercial Use: Versatile enough for living rooms, bedrooms, offices, retail shops, and more.",
+                        "Durable & Long-Lasting: Built to withstand high foot traffic and wear over time without losing its appeal."
+                    ],
+                    "benefits": [
+                        "Resists moisture, perfect for kitchens, bathrooms, and humid Malaysian climates",
+                        "Enhances interiors with a modern, neutral woodgrain aesthetic",
+                        "Simplifies installation and maintenance for cost efficiency",
+                        "Versatile for both residential and commercial applications",
+                        "Durable for long-term performance in high-traffic areas"
+                    ],
+                    "design_compatibility": ["Modern", "Contemporary", "Minimalist", "Classic"]
+                },
+                "specifications": {
+                    "waterproof": true,
+                    "slip_resistant": true,
+                    "product_code": "PP20455",
+                    "category": "Vinyl Sheet Flooring",
+                    "width": "6ft",
+                    "length": "66ft",
+                    "thickness": "2.0mm",
+                    "wear_layer": "0.3mm",
+                    "finish": "Textured, Matte",
+                    "color_tone": "Neutral Woodgrain",
+                    "material": "High-Density PVC Vinyl with protective wear layer",
+                    "application_areas": ["Residential", "Commercial"],
+                    "installation_surface": ["Concrete", "Cement board", "Tile", "Plywood"],
+                    "durability": "10 to 15 years",
+                    "anti_slip_rating": "R10",
+                    "maintenance": "Sweep or vacuum regularly, clean with a damp mop using mild detergent. Avoid abrasive cleaners."
+                },
+                "installation": {
+                    "method": ["Glue-down method", "Loose lay method"],
+                    "surface_types": ["Concrete", "Cement board", "Tile", "Plywood"],
+                    "diy_friendly": true,
+                    "professional_recommended": true,
+                    "requirements": [
+                        "Ensure a clean, dry, and level subfloor",
+                        "Use appropriate adhesive for glue-down method in high-traffic areas",
+                        "Loose lay method suitable for smaller residential spaces",
+                        "Seal seams for moisture protection in wet areas"
+                    ]
+                },
+                "maintenance": {
+                    "cleaning_method": "Sweep or vacuum regularly, clean with a damp mop using mild detergent. Avoid abrasive cleaners.",
+                    "special_treatments": "No waxing, sealing, or polishing required",
+                    "no_waxing": true,
+                    "no_polishing": true,
+                    "no_sealants": true
+                },
+                "faqs": [
+                    {
+                        "question": "What is VersaFloor vinyl sheet used for?",
+                        "answer": "VersaFloor vinyl sheets are used for covering floors in both residential and commercial spaces. They're especially popular in areas requiring a combination of durability, water resistance, and aesthetic value."
+                    },
+                    {
+                        "question": "Is vinyl sheet flooring suitable for residential use?",
+                        "answer": "Absolutely. Vinyl sheets like PP20455 are ideal for Malaysian homes. They offer comfort underfoot, are resistant to spills, and come in stylish designs that match modern interiors."
+                    },
+                    {
+                        "question": "How durable is VersaFloor vinyl flooring?",
+                        "answer": "VersaFloor products are built to last. The PP20455 model features a tough wear layer that resists scratches, dents, and daily wear, making it suitable for high-traffic areas."
+                    },
+                    {
+                        "question": "Is VersaFloor vinyl flooring waterproof and anti-slip?",
+                        "answer": "Yes, the PP20455 sheet is water-resistant and features a textured, anti-slip surface. It’s safe and practical for wet zones like kitchens, bathrooms, and laundry areas."
+                    },
+                    {
+                        "question": "How do I install vinyl sheet flooring at home?",
+                        "answer": "The vinyl sheet can be installed using basic tools and adhesive. It lays flat and smooth on most subfloors. While professional installation is recommended for larger spaces, DIY-friendly options are also available."
+                    },
+                    {
+                        "question": "What is the average cost of vinyl flooring in Malaysia?",
+                        "answer": "Prices vary based on quality and design. Versafloor Vinyl Sheet PP20455 offers great value for money, providing premium performance at an affordable rate."
+                    },
+                    {
+                        "question": "What is the lifespan of VersaFloor vinyl sheets?",
+                        "answer": "With proper care, Versafloor vinyl flooring can last 10–15 years or longer, depending on foot traffic and maintenance."
+                    },
+                    {
+                        "question": "How to clean and maintain vinyl sheet flooring?",
+                        "answer": "Maintenance is simple. Sweep or vacuum regularly, and clean with a damp mop using mild detergent. Avoid abrasive cleaners to preserve the surface."
+                    },
+                    {
+                        "question": "Can vinyl sheet flooring be used in bathrooms or kitchens?",
+                        "answer": "Yes, it's a popular choice for these areas due to its water-resistant and slip-resistant properties."
+                    },
+                    {
+                        "question": "Where to buy VersaFloor vinyl sheets in Malaysia?",
+                        "answer": "You can buy directly from Furnishings.com.my. We offer a range of designs, competitive prices, and expert support across Malaysia."
+                    }
+                ],
+                "call_to_action": {
+                    "primary": "Ready to elevate your space with the Versafloor Vinyl Sheet PP20455? Buy vinyl flooring sheet online at Furnishings.com.my or get in touch for a custom quote.",
+                    "secondary": "Shop More Vinyl Flooring Products or Request a Quote. We ship across Malaysia and offer expert support to help you find the right flooring for your project.",
+                    "tertiary": "Contact Us for Sample Delivery. Explore our collection today and find the right fit for your next project."
+                },
+                "status": "active",
+                "created_at": "2025-07-17",
+                "updated_at": "2025-07-17",
+                "additional_description": {
+                    "headline": "Versafloor Vinyl Sheet PP20455 | Durable & Stylish Vinyl Flooring Malaysia",
+                    "sections": [
+                        {
+                            "title": "Upgrade Your Space with the Versafloor Vinyl Sheet PP20455",
+                            "content": "Looking for a flooring solution that blends design, durability, and functionality? The Versafloor Vinyl Sheet PP20455 offers the perfect combination of style, water resistance, and ease of use, making it a top choice for Malaysian homeowners, interior designers, and commercial property developers. Whether you’re renovating a cozy home or fitting out a modern office, this vinyl flooring sheet delivers a sleek and sophisticated look while offering unmatched practicality."
+                        },
+                        {
+                            "title": "Built to Last – Made for Malaysian Interiors",
+                            "content": "Designed with high-traffic areas in mind, the PP20455 vinyl sheet is engineered for long-term durability and moisture resistance. Its non-slip surface ensures safety in wet areas like kitchens and bathrooms, while its textured finish enhances grip and aesthetic appeal. Versafloor’s innovative construction also means it withstands everyday wear and tear — ideal for busy households, retail stores, or professional workspaces."
+                        },
+                        {
+                            "title": "Easy to Install and Maintain",
+                            "content": "Forget about complicated setups or constant upkeep. The Versafloor Vinyl Sheet PP20455 is known for its hassle-free installation — suitable for both professional installers and DIY home renovators. Plus, it’s simple to clean with just mild detergent and water, keeping your floors looking new for years. This makes it a cost-effective, low-maintenance flooring choice that suits fast-paced lifestyles and commercial requirements."
+                        },
+                        {
+                            "title": "Stylish Vinyl Flooring for Every Room",
+                            "content": "From kitchens and bathrooms to living rooms and lobbies, the PP20455’s modern vinyl flooring design enhances any interior. Its neutral color tone complements various décor themes, whether minimalist, contemporary, or classic. With its affordable price and high-end finish, this product is an excellent alternative to traditional tiles or wood flooring — especially in areas where moisture or slip-resistance is a concern."
+                        },
+                        {
+                            "title": "Why Choose Versafloor?",
+                            "content": "Versafloor is a trusted name in vinyl sheet flooring across Malaysia. Customers choose us because we deliver: Durable vinyl sheet flooring for kitchens, bathrooms, and beyond. High-quality, water-resistant materials. Modern designs that elevate your interiors. Competitive pricing and reliable delivery. Easy install vinyl sheet options for fast renovations."
+                        },
+                        {
+                            "title": "Shop Online or Request a Sample Today",
+                            "content": "Ready to elevate your space with the Versafloor Vinyl Sheet PP20455? Buy vinyl flooring sheet online at Furnishings.com.my or get in touch for a custom quote. We ship across Malaysia and offer expert support to help you find the right flooring for your project. Shop More Vinyl Flooring Products. Request a Quote. Contact Us for Sample Delivery."
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "product": {
+                "id": "PP20470",
+                "name": "Versafloor Vinyl Sheet PP20470",
+                "slug": "versafloor-vinyl-sheet-pp20470",
+                "category": "Vinyl Sheet Flooring",
+                "brand": "Versafloor",
+                "images": {
+                    "main_image": "/vinyal_sheet/dummy.webp",
+                    "gallery": ["/vinyal_sheet/dummy.webp"],
+                    "thumbnails": ["/vinyal_sheet/dummy.webp"],
+                    "alt_texts": [
+                        "Versafloor PP20470 vinyl sheet in Malaysian interior",
+                        "Versafloor Vinyl Sheet PP20470 | Durable Flooring Malaysia",
+                        "Looking for reliable, waterproof, and stylish flooring that suits both residential and commercial spaces? The Versafloor Vinyl Sheet PP20470 from Furnishings offers an exceptional balance of aesthetics, performance, and affordability.",
+                        "This vinyl sheet delivers a professional finish with minimal effort, ideal for Malaysian homes and commercial environments."
+                    ]
+                },
+                "seo": {
+                    "meta_title": "Versafloor Vinyl Sheet PP20470 | Durable Flooring Malaysia",
+                    "meta_description": "Explore the Versafloor Vinyl Sheet PP20470 – stylish, waterproof, and slip-resistant vinyl flooring perfect for homes and commercial spaces in Malaysia. Durable and affordable.",
+                    "keywords": [
+                        "vinyl sheet flooring Malaysia",
+                        "Versafloor vinyl sheet",
+                        "best vinyl flooring in Malaysia",
+                        "affordable vinyl flooring",
+                        "waterproof vinyl sheet flooring",
+                        "commercial vinyl sheet flooring",
+                        "vinyl sheet flooring for home",
+                        "PVC vinyl sheet flooring",
+                        "vinyl flooring supplier Malaysia",
+                        "durable vinyl sheet for flooring"
+                    ]
+                },
+                "description": {
+                    "short": "Explore the Versafloor Vinyl Sheet PP20470 – stylish, waterproof, and slip-resistant vinyl flooring perfect for homes and commercial spaces in Malaysia. Durable and affordable.",
+                    "long": "Looking for reliable, waterproof, and stylish flooring that suits both residential and commercial spaces? The Versafloor Vinyl Sheet PP20470 from Furnishings offers an exceptional balance of aesthetics, performance, and affordability — making it a top choice across Malaysia. The PP20470 model is designed to meet the modern demands of Malaysian homes and commercial environments. Whether you’re upgrading your living room, revamping an office, or managing a high-traffic commercial project, this vinyl sheet delivers a professional finish with minimal effort."
+                },
+                "features": {
+                    "main_features": [
+                        "Waterproof Surface: Perfect for moisture-prone areas.",
+                        "Anti-Slip Properties: Provides safety for kids and elderly.",
+                        "Stain-Resistant Finish: Easy to clean and maintain.",
+                        "Affordable Luxury: High-end look without the high cost.",
+                        "Eco-Friendly Construction: Made with low VOC materials."
+                    ],
+                    "benefits": [
+                        "Resists moisture, ideal for kitchens, bathrooms, and humid Malaysian climates",
+                        "Ensures safety with anti-slip properties for all ages",
+                        "Simplifies cleaning and maintenance for cost efficiency",
+                        "Delivers a premium aesthetic at an affordable price",
+                        "Eco-friendly materials reduce environmental impact"
+                    ],
+                    "design_compatibility": ["Modern", "Contemporary", "Minimalist", "Professional"]
+                },
+                "specifications": {
+                    "waterproof": true,
+                    "slip_resistant": true,
+                    "product_code": "PP20470",
+                    "category": "Vinyl Sheet Flooring",
+                    "width": "6ft",
+                    "length": "66ft",
+                    "thickness": "2.0mm",
+                    "wear_layer": "0.3mm",
+                    "finish": "Textured wood-look, Matte",
+                    "color_tone": "Natural woodgrain",
+                    "material": "Premium PVC with protective wear layer",
+                    "application_areas": ["Residential", "Commercial", "Hospitality", "Retail"],
+                    "installation_surface": ["Concrete", "Cement board", "Tile", "Plywood"],
+                    "durability": "10 to 15 years",
+                    "anti_slip_rating": "R10",
+                    "maintenance": "Regular sweeping and damp mopping with mild cleaner. Avoid abrasive tools and harsh chemicals."
+                },
+                "installation": {
+                    "method": ["Glue-down method", "Loose lay method"],
+                    "surface_types": ["Concrete", "Cement board", "Tile", "Plywood"],
+                    "diy_friendly": true,
+                    "professional_recommended": true,
+                    "requirements": [
+                        "Ensure a clean, dry, and level subfloor",
+                        "Use appropriate adhesive for glue-down method in high-traffic areas",
+                        "Loose lay method suitable for smaller residential spaces",
+                        "Seal seams for moisture protection in wet areas"
+                    ]
+                },
+                "maintenance": {
+                    "cleaning_method": "Regular sweeping and damp mopping with mild cleaner. Avoid abrasive tools and harsh chemicals.",
+                    "special_treatments": "No waxing, sealing, or polishing required",
+                    "no_waxing": true,
+                    "no_polishing": true,
+                    "no_sealants": true
+                },
+                "faqs": [
+                    {
+                        "question": "What is Versafloor vinyl sheet used for?",
+                        "answer": "It’s ideal for both residential and commercial spaces including kitchens, bathrooms, shops, and offices."
+                    },
+                    {
+                        "question": "Is vinyl sheet flooring suitable for residential use?",
+                        "answer": "Yes, it offers comfort, safety, and style — ideal for homes."
+                    },
+                    {
+                        "question": "How durable is Versafloor vinyl flooring?",
+                        "answer": "Engineered for high-traffic environments, it’s built to last for years with proper care."
+                    },
+                    {
+                        "question": "Is Versafloor vinyl flooring waterproof and anti-slip?",
+                        "answer": "Absolutely. It’s designed to handle moisture and reduce slip hazards."
+                    },
+                    {
+                        "question": "How do I install vinyl sheet flooring at home?",
+                        "answer": "It can be installed with adhesives over a clean, dry surface. Professional installation is recommended for best results."
+                    },
+                    {
+                        "question": "What is the average cost of vinyl flooring in Malaysia?",
+                        "answer": "Prices vary based on design and quantity, but Versafloor is known for its affordability and quality."
+                    },
+                    {
+                        "question": "What is the lifespan of Versafloor vinyl sheets?",
+                        "answer": "With proper maintenance, the product can last 10–15 years or more."
+                    },
+                    {
+                        "question": "How to clean and maintain vinyl sheet flooring?",
+                        "answer": "Use a damp mop and mild cleaner. Avoid abrasive tools and harsh chemicals."
+                    },
+                    {
+                        "question": "Can vinyl sheet flooring be used in bathrooms or kitchens?",
+                        "answer": "Yes, it’s waterproof and resistant to stains, making it perfect for wet areas."
+                    },
+                    {
+                        "question": "Where to buy Versafloor vinyl sheets in Malaysia?",
+                        "answer": "Shop directly at furnishings.com.my for authentic products and expert support."
+                    }
+                ],
+                "call_to_action": {
+                    "primary": "Transform your space with the trusted durability and style of Versafloor PP20470. Order Now at furnishings.com.my.",
+                    "secondary": "Request a Quote or Explore More Vinyl Designs. We supply vinyl sheet flooring across Malaysia with solutions tailored for every type of interior.",
+                    "tertiary": "Need help choosing the right flooring? Our experts are here to guide you through every step."
+                },
+                "status": "active",
+                "created_at": "2025-07-17",
+                "updated_at": "2025-07-17",
+                "additional_description": {
+                    "headline": "Versafloor Vinyl Sheet PP20470 | Durable Flooring Malaysia",
+                    "sections": [
+                        {
+                            "title": "Premium Vinyl Flooring for Residential & Commercial Use",
+                            "content": "The PP20470 model is designed to meet the modern demands of Malaysian homes and commercial environments. Whether you’re upgrading your living room, revamping an office, or managing a high-traffic commercial project, this vinyl sheet delivers a professional finish with minimal effort."
+                        },
+                        {
+                            "title": "Why Choose Versafloor PP20470 Vinyl Sheet?",
+                            "content": "The Versafloor PP20470 stands out for its excellent combination of durability, safety, and style. Crafted with premium PVC materials, this flooring option ensures lasting performance in various Malaysian climates and settings. Benefits You’ll Appreciate: Waterproof surface: Perfect for moisture-prone areas. Anti-slip properties: Provides safety for kids and elderly. Stain-resistant finish: Easy to clean and maintain. Affordable luxury: High-end look without the high cost. Eco-friendly construction: Made with low VOC materials. Looking for affordable vinyl flooring in Malaysia that doesn’t compromise on quality? PP20470 delivers."
+                        },
+                        {
+                            "title": "Easy Installation & Low Maintenance",
+                            "content": "Installing the PP20470 vinyl sheet is hassle-free. It’s designed to lay flat with minimal tools and is suitable for various subfloor types. For residential users or professional contractors, this product helps cut down on installation time and maintenance costs. Why it’s a smart investment: Quick installation for faster project turnaround. Easy to clean with regular sweeping and damp mopping. No waxing or refinishing required. Minimal wear even in high-footfall areas."
+                        },
+                        {
+                            "title": "Ideal for Kitchens, Bathrooms & High-Traffic Areas",
+                            "content": "Thanks to its waterproof and slip-resistant surface, the Versafloor Vinyl Sheet PP20470 is especially suitable for: Kitchens & bathrooms: Prevents moisture damage. Retail spaces: Withstands constant foot traffic. Offices & commercial interiors: Enhances workspace aesthetics. Bedrooms & living areas: Adds comfort underfoot. Durable enough for commercial spaces yet stylish enough for modern homes — it’s the best of both worlds."
+                        },
+                        {
+                            "title": "Order Premium Vinyl Flooring in Malaysia Today",
+                            "content": "Transform your space with the trusted durability and style of Versafloor PP20470. Furnishings is proud to supply vinyl sheet flooring across Malaysia, with solutions tailored for every type of interior. Request a Quote. Order Now. Explore More Vinyl Designs. Need help choosing the right flooring? Our experts are here to guide you through every step."
+                        }
+                    ]
+                }
+            }
+        }, {
+            "product": {
+                "id": "PP20540",
+                "name": "Versafloor Vinyl Sheet PP20540",
+                "slug": "versafloor-vinyl-sheet-pp20540",
+                "category": "Vinyl Sheet Flooring",
+                "brand": "Versafloor",
+                "images": {
+                    "main_image": "/vinyal_sheet/dummy.webp",
+                    "gallery": ["/vinyal_sheet/dummy.webp"],
+                    "thumbnails": ["/vinyal_sheet/dummy.webp"],
+                    "alt_texts": [
+                        "Versafloor PP20540 vinyl sheet in Malaysian interior",
+                        "Versafloor Vinyl Sheet PP20540 | Premium Waterproof Vinyl Flooring Malaysia",
+                        "Looking for a durable and stylish flooring solution for your home or commercial space in Malaysia? The Versafloor Vinyl Sheet PP20540 is designed to deliver high performance without compromising on style.",
+                        "This premium-grade vinyl sheet combines a sleek, modern aesthetic with reliable functionality for both residential and commercial environments."
+                    ]
+                },
+                "seo": {
+                    "meta_title": "Versafloor Vinyl Sheet PP20540 | Premium Waterproof Vinyl Flooring Malaysia",
+                    "meta_description": "Explore the Versafloor Vinyl Sheet PP20540 – stylish, waterproof, and durable vinyl flooring for homes and commercial spaces in Malaysia. Buy online at Furnishings.com.my.",
+                    "keywords": [
+                        "Versafloor vinyl sheet Malaysia",
+                        "vinyl flooring sheet price Malaysia",
+                        "buy vinyl sheet flooring online",
+                        "waterproof vinyl sheet flooring",
+                        "Versafloor PP20540 specifications",
+                        "best vinyl sheet flooring Malaysia",
+                        "residential vinyl flooring Malaysia",
+                        "Versafloor vinyl flooring reviews",
+                        "commercial vinyl sheet flooring",
+                        "affordable vinyl sheet flooring Malaysia"
+                    ]
+                },
+                "description": {
+                    "short": "Explore the Versafloor Vinyl Sheet PP20540 – stylish, waterproof, and durable vinyl flooring for homes and commercial spaces in Malaysia. Buy online at Furnishings.com.my.",
+                    "long": "Looking for a durable and stylish flooring solution for your home or commercial space in Malaysia? The Versafloor Vinyl Sheet PP20540 is designed to deliver high performance without compromising on style. This premium-grade vinyl sheet combines a sleek, modern aesthetic with reliable functionality, making it the ideal choice for both residential and commercial environments. With its waterproof, anti-slip, and scratch-resistant surface, PP20540 ensures long-lasting durability and easy maintenance. Whether you're remodeling a kitchen, upgrading a retail outlet, or designing a cozy bedroom, this vinyl flooring offers versatility, affordability, and superior finish—all in one."
+                },
+                "features": {
+                    "main_features": [
+                        "100% Waterproof Surface: Ideal for bathrooms, kitchens, and areas prone to moisture.",
+                        "Anti-Slip Technology: Safe for households and commercial spaces.",
+                        "Modern Aesthetic: Clean, elegant finish complements any interior décor.",
+                        "Wear and Scratch Resistant: Withstands daily foot traffic with ease.",
+                        "Easy to Install: Suitable for both glue-down and loose-lay methods.",
+                        "Low Maintenance: Simple cleaning with minimal effort.",
+                        "Versatile Applications: Perfect for homes, offices, stores, and hospitality.",
+                        "Affordable Quality: Great value without compromising on performance."
+                    ],
+                    "benefits": [
+                        "Resists moisture, perfect for humid Malaysian climates",
+                        "Ensures safety with anti-slip properties",
+                        "Enhances interiors with a modern, elegant design",
+                        "Durable for high-traffic residential and commercial environments",
+                        "Simplifies installation and maintenance for cost efficiency",
+                        "Eco-conscious materials for sustainable flooring"
+                    ],
+                    "design_compatibility": ["Modern", "Contemporary", "Minimalist", "Classic"]
+                },
+                "specifications": {
+                    "waterproof": true,
+                    "slip_resistant": true,
+                    "product_code": "PP20540",
+                    "category": "Vinyl Sheet Flooring",
+                    "width": "6ft",
+                    "length": "66ft",
+                    "thickness": "2.0mm",
+                    "wear_layer": "0.3mm",
+                    "finish": "Textured, anti-slip",
+                    "color_tone": "Neutral",
+                    "material": "High-Quality PVC with protective wear layer",
+                    "application_areas": ["Residential", "Commercial", "Hospitality", "Retail"],
+                    "installation_surface": ["Concrete", "Cement board", "Tile", "Plywood"],
+                    "durability": "10 to 15 years",
+                    "anti_slip_rating": "R10",
+                    "maintenance": "Clean with a damp mop and mild detergent. Avoid harsh chemicals."
+                },
+                "installation": {
+                    "method": ["Glue-down method", "Loose lay method"],
+                    "surface_types": ["Concrete", "Cement board", "Tile", "Plywood"],
+                    "diy_friendly": true,
+                    "professional_recommended": true,
+                    "requirements": [
+                        "Ensure a clean, dry, and level subfloor",
+                        "Use appropriate adhesive for glue-down method in high-traffic areas",
+                        "Loose lay method suitable for smaller residential spaces",
+                        "Seal seams for moisture protection in wet areas"
+                    ]
+                },
+                "maintenance": {
+                    "cleaning_method": "Clean with a damp mop and mild detergent. Avoid harsh chemicals.",
+                    "special_treatments": "No waxing, sealing, or polishing required",
+                    "no_waxing": true,
+                    "no_polishing": true,
+                    "no_sealants": true
+                },
+                "testimonials": [
+                    {
+                        "quote": "Installed PP20540 in my office space. It looks great and feels solid underfoot. Very satisfied with the finish.",
+                        "author": "Amir H., Kuala Lumpur"
+                    },
+                    {
+                        "quote": "Great waterproof option for our kitchen. Easy to clean and very low maintenance!",
+                        "author": "Sarah N., Penang"
+                    },
+                    {
+                        "quote": "The design is simple yet elegant, and the price was well within budget. Highly recommend.",
+                        "author": "Lee C., Johor Bahru"
+                    }
+                ],
+                "faqs": [
+                    {
+                        "question": "What is VersaFloor vinyl sheet used for?",
+                        "answer": "VersaFloor vinyl sheets are used for durable, water-resistant flooring in both residential and commercial spaces."
+                    },
+                    {
+                        "question": "Is vinyl sheet flooring suitable for residential use?",
+                        "answer": "Yes, it's ideal for homes, especially in areas like kitchens, bathrooms, and living rooms."
+                    },
+                    {
+                        "question": "How durable is VersaFloor vinyl flooring?",
+                        "answer": "Very durable. It is designed to resist wear, scratches, and daily foot traffic."
+                    },
+                    {
+                        "question": "Is VersaFloor vinyl flooring waterproof and anti-slip?",
+                        "answer": "Yes, it offers both waterproof and anti-slip properties for safety and longevity."
+                    },
+                    {
+                        "question": "How do I install vinyl sheet flooring at home?",
+                        "answer": "You can use either the glue-down or loose-lay method, depending on the surface and space."
+                    },
+                    {
+                        "question": "What is the average cost of vinyl flooring in Malaysia?",
+                        "answer": "Prices vary by design and thickness, but Versafloor offers competitive rates for premium quality."
+                    },
+                    {
+                        "question": "What is the lifespan of VersaFloor vinyl sheets?",
+                        "answer": "With proper care, vinyl sheet flooring can last over 10 years."
+                    },
+                    {
+                        "question": "How to clean and maintain vinyl sheet flooring?",
+                        "answer": "Clean with a damp mop and mild detergent. Avoid harsh chemicals."
+                    },
+                    {
+                        "question": "Can vinyl sheet flooring be used in bathrooms or kitchens?",
+                        "answer": "Yes, it's ideal for moisture-prone areas due to its waterproof design."
+                    },
+                    {
+                        "question": "Where to buy VersaFloor vinyl sheets in Malaysia?",
+                        "answer": "Shop online at Furnishings.com.my for the best selection and prices."
+                    }
+                ],
+                "call_to_action": {
+                    "primary": "Ready to upgrade your flooring? Buy Versafloor PP20540 online now for premium quality at unbeatable prices!",
+                    "secondary": "Transform your space today with durable, modern, and affordable vinyl sheet flooring from Furnishings.",
+                    "tertiary": "Order online now and experience premium flooring that enhances your space while standing the test of time."
+                },
+                "status": "active",
+                "created_at": "2025-07-17",
+                "updated_at": "2025-07-17",
+                "additional_description": {
+                    "headline": "Versafloor Vinyl Sheet PP20540 | Premium Waterproof Vinyl Flooring Malaysia",
+                    "sections": [
+                        {
+                            "title": "Elevate Your Interiors with Versafloor PP20540",
+                            "content": "Looking for a durable and stylish flooring solution for your home or commercial space in Malaysia? The Versafloor Vinyl Sheet PP20540 is designed to deliver high performance without compromising on style. This premium-grade vinyl sheet combines a sleek, modern aesthetic with reliable functionality, making it the ideal choice for both residential and commercial environments. With its waterproof, anti-slip, and scratch-resistant surface, PP20540 ensures long-lasting durability and easy maintenance. Whether you're remodeling a kitchen, upgrading a retail outlet, or designing a cozy bedroom, this vinyl flooring offers versatility, affordability, and superior finish—all in one."
+                        },
+                        {
+                            "title": "Why Choose Versafloor PP20540?",
+                            "content": "Versafloor PP20540 stands out from traditional tiles or laminate with its lightweight build, faster installation, and enhanced water resistance. Unlike tiles that may crack or laminate that may swell, vinyl sheets like PP20540 are designed for long-term durability and seamless application. Made using eco-conscious materials and safe manufacturing practices, this flooring is a smart, sustainable choice for modern Malaysian households and businesses. Trusted by professionals and interior designers across the country, Versafloor has earned a reputation for delivering value-driven flooring solutions with aesthetic appeal."
+                        },
+                        {
+                            "title": "Ideal Usage Scenarios",
+                            "content": "Residential Spaces: Bedrooms, Kitchens, Bathrooms, Living Rooms. Commercial Spaces: Offices, Retail Stores, Restaurants, Hospitality Settings."
+                        },
+                        {
+                            "title": "Customer Testimonials",
+                            "content": "“Installed PP20540 in my office space. It looks great and feels solid underfoot. Very satisfied with the finish.” – Amir H., Kuala Lumpur. “Great waterproof option for our kitchen. Easy to clean and very low maintenance!” – Sarah N., Penang. “The design is simple yet elegant, and the price was well within budget. Highly recommend.” – Lee C., Johor Bahru."
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "product": {
+                "id": "PP20550",
+                "name": "Versafloor Vinyl Sheet PP20550",
+                "slug": "versafloor-vinyl-sheet-pp20550",
+                "category": "Vinyl Sheet Flooring",
+                "brand": "Versafloor",
+                "images": {
+                    "main_image": "/vinyal_sheet/PP20550.jpg",
+                    "gallery": ["/vinyal_sheet/PP20550.jpg"],
+                    "thumbnails": ["/vinyal_sheet/PP20550.jpg"],
+                    "alt_texts": [
+                        "Versafloor PP20550 vinyl sheet in Malaysian interior",
+                        "Versafloor Vinyl Sheet PP20550 – Modern, Waterproof Flooring for Malaysia Homes & Businesses",
+                        "Looking for stylish, durable, and low-maintenance flooring? The Versafloor Vinyl Sheet PP20550 is the perfect choice for homeowners, designers, and commercial developers across Malaysia.",
+                        "This modern vinyl sheet brings a sleek, contemporary finish to any space with reliable performance in high-traffic and moisture-prone areas."
+                    ]
+                },
+                "seo": {
+                    "meta_title": "PP20550 Vinyl Sheet Malaysia | VersaFloor Modern Flooring",
+                    "meta_description": "Discover PP20550 vinyl sheet by VersaFloor – waterproof, modern, and durable flooring in Malaysia. Ideal for homes & businesses. Get a quote today!",
+                    "keywords": [
+                        "PP20550 vinyl sheet Malaysia",
+                        "VersaFloor vinyl sheet",
+                        "modern vinyl flooring Malaysia",
+                        "best vinyl flooring Malaysia",
+                        "waterproof vinyl flooring Malaysia",
+                        "affordable vinyl sheet flooring",
+                        "commercial vinyl sheet flooring",
+                        "durable vinyl flooring Malaysia",
+                        "PVC vinyl sheet Malaysia",
+                        "easy maintenance vinyl flooring"
+                    ]
+                },
+                "description": {
+                    "short": "Discover PP20550 vinyl sheet by VersaFloor – waterproof, modern, and durable flooring in Malaysia. Ideal for homes & businesses. Get a quote today!",
+                    "long": "Looking for stylish, durable, and low-maintenance flooring? The Versafloor Vinyl Sheet PP20550 is the perfect choice for homeowners, designers, and commercial developers across Malaysia. Designed to combine aesthetics with performance, this modern vinyl sheet brings a sleek, contemporary finish to any space — from living rooms and bedrooms to offices, retail stores, and hospitality settings. Crafted from high-quality PVC, the PP20550 vinyl sheet offers a waterproof, anti-slip surface that performs reliably in high-traffic and moisture-prone areas. Whether you're redesigning a home interior or specifying materials for a large-scale commercial project, this flooring solution delivers long-term value with minimal upkeep."
+                },
+                "features": {
+                    "main_features": [
+                        "Waterproof and Anti-Slip Surface: Perfect for kitchens, bathrooms, and humid spaces.",
+                        "Scratch-Resistant and Durable: Designed for daily wear and tear in homes and commercial environments.",
+                        "Modern Design Finish: A contemporary aesthetic that elevates any interior.",
+                        "Easy Installation: Suitable for glue-down or loose lay setups.",
+                        "Low Maintenance: Just sweep, mop, and enjoy.",
+                        "Cost-Effective Quality: Offers premium style at an affordable vinyl sheet flooring price in Malaysia."
+                    ],
+                    "benefits": [
+                        "Resists moisture, ideal for humid Malaysian climates and wet areas",
+                        "Ensures safety with anti-slip properties for all ages",
+                        "Enhances interiors with a sleek, modern aesthetic",
+                        "Durable for high-traffic residential and commercial environments",
+                        "Simplifies installation and maintenance for cost efficiency",
+                        "Provides premium quality at an affordable price point"
+                    ],
+                    "design_compatibility": ["Modern", "Contemporary", "Minimalist", "Professional"]
+                },
+                "specifications": {
+                    "waterproof": true,
+                    "slip_resistant": true,
+                    "product_code": "PP20550",
+                    "category": "Vinyl Sheet Flooring",
+                    "width": "6ft",
+                    "length": "66ft",
+                    "thickness": "2.0mm",
+                    "wear_layer": "0.3mm",
+                    "finish": "Textured, anti-slip",
+                    "color_tone": "Neutral",
+                    "material": "High-quality PVC with protective wear layer",
+                    "application_areas": ["Residential", "Commercial", "Hospitality", "Retail"],
+                    "installation_surface": ["Concrete", "Cement board", "Tile", "Plywood"],
+                    "durability": "10 to 15 years",
+                    "anti_slip_rating": "R10",
+                    "maintenance": "Regular sweeping and damp mopping with non-abrasive cleaners."
+                },
+                "installation": {
+                    "method": ["Glue-down method", "Loose lay method"],
+                    "surface_types": ["Concrete", "Cement board", "Tile", "Plywood"],
+                    "diy_friendly": true,
+                    "professional_recommended": true,
+                    "requirements": [
+                        "Ensure a clean, dry, and level subfloor",
+                        "Use appropriate adhesive for glue-down method in high-traffic areas",
+                        "Loose lay method suitable for smaller residential spaces",
+                        "Seal seams for moisture protection in wet areas"
+                    ]
+                },
+                "maintenance": {
+                    "cleaning_method": "Regular sweeping and damp mopping with non-abrasive cleaners.",
+                    "special_treatments": "No waxing, sealing, or polishing required",
+                    "no_waxing": true,
+                    "no_polishing": true,
+                    "no_sealants": true
+                },
+                "faqs": [
+                    {
+                        "question": "What is VersaFloor vinyl sheet used for?",
+                        "answer": "It’s designed for residential and commercial interiors, offering a waterproof, durable alternative to tiles or wood."
+                    },
+                    {
+                        "question": "Is vinyl sheet flooring suitable for residential use?",
+                        "answer": "Yes, it's ideal for homes due to its easy maintenance, water resistance, and stylish finish."
+                    },
+                    {
+                        "question": "How durable is VersaFloor vinyl flooring?",
+                        "answer": "Very durable — it resists scratches, wear, and moisture, making it suitable for high-traffic areas."
+                    },
+                    {
+                        "question": "Is VersaFloor vinyl flooring waterproof and anti-slip?",
+                        "answer": "Absolutely. The surface is both waterproof and slip-resistant, perfect for kitchens and bathrooms."
+                    },
+                    {
+                        "question": "How do I install vinyl sheet flooring at home?",
+                        "answer": "Installation is simple with glue-down or loose lay methods. A professional installer is recommended for optimal results."
+                    },
+                    {
+                        "question": "What is the average cost of vinyl flooring in Malaysia?",
+                        "answer": "Vinyl sheet flooring varies by design and brand, but PP20550 offers a budget-friendly option with premium quality."
+                    },
+                    {
+                        "question": "What is the lifespan of VersaFloor vinyl sheets?",
+                        "answer": "With proper care, they can last up to 10–15 years, depending on foot traffic and usage."
+                    },
+                    {
+                        "question": "How to clean and maintain vinyl sheet flooring?",
+                        "answer": "Regular sweeping and damp mopping with non-abrasive cleaners are sufficient for day-to-day care."
+                    },
+                    {
+                        "question": "Can vinyl sheet flooring be used in bathrooms or kitchens?",
+                        "answer": "Yes. Its water-resistant design makes it perfect for wet or humid environments."
+                    },
+                    {
+                        "question": "Where to buy VersaFloor vinyl sheets in Malaysia?",
+                        "answer": "You can purchase genuine Versafloor PP20550 online at furnishings.com.my or request a quote for bulk orders."
+                    }
+                ],
+                "call_to_action": {
+                    "primary": "Upgrade to premium vinyl flooring that lasts. Shop Versafloor Vinyl Sheet PP20550 now!",
+                    "secondary": "Buy Now or Request a Quote at furnishings.com.my for premium quality at competitive prices.",
+                    "tertiary": "Transform your space today with durable, modern, and affordable vinyl sheet flooring from Furnishings."
+                },
+                "status": "active",
+                "created_at": "2025-07-17",
+                "updated_at": "2025-07-17",
+                "additional_description": {
+                    "headline": "Versafloor Vinyl Sheet PP20550 – Modern, Waterproof Flooring for Malaysia Homes & Businesses",
+                    "sections": [
+                        {
+                            "title": "Why Choose Versafloor Vinyl Sheet PP20550?",
+                            "content": "Waterproof and anti-slip surface – Perfect for kitchens, bathrooms, and humid spaces. Scratch-resistant and durable – Designed for daily wear and tear in homes and commercial environments. Modern design finish – A contemporary aesthetic that elevates any interior. Easy installation – Suitable for glue-down or loose lay setups. Low maintenance – Just sweep, mop, and enjoy. Cost-effective quality – Offers premium style at an affordable vinyl sheet flooring price in Malaysia."
+                        },
+                        {
+                            "title": "Where Can You Use PP20550 Vinyl Sheet?",
+                            "content": "Residential Applications: Bedrooms, Living rooms, Kitchens, Bathrooms, Dining areas. Commercial Applications: Office flooring, Retail stores, Clinics & salons, Hospitality lounges, Restaurants and cafes. From minimalist homes to high-traffic commercial spaces, PP20550 adapts to your needs and maintains its finish over time."
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "product": {
+                "id": "PP20595",
+                "name": "Versafloor Vinyl Sheet PP20595",
+                "slug": "versafloor-vinyl-sheet-pp20595",
+                "category": "Vinyl Sheet Flooring",
+                "brand": "Versafloor",
+                "images": {
+                    "main_image": "/vinyal_sheet/PP20595.jpg",
+                    "gallery": ["/vinyal_sheet/PP20595.jpg"],
+                    "thumbnails": ["/vinyal_sheet/PP20595.jpg"],
+                    "alt_texts": [
+                        "Versafloor PP20595 vinyl sheet in Malaysian interior",
+                        "Versafloor Vinyl Sheet PP20595 – Premium Waterproof Flooring for Modern Malaysian Spaces",
+                        "Upgrade your interiors with the Versafloor Vinyl Sheet PP20595—a durable, waterproof, and visually striking flooring solution crafted for homes, offices, and commercial settings in Malaysia.",
+                        "This vinyl sheet flooring offers the perfect balance of style, performance, and affordability for modern Malaysian spaces."
+                    ]
+                },
+                "seo": {
+                    "meta_title": "Versafloor Vinyl Sheet PP20595 | Waterproof Vinyl Flooring Malaysia",
+                    "meta_description": "Discover the Versafloor Vinyl Sheet PP20595 — premium waterproof vinyl flooring ideal for homes & offices in Malaysia. Durable, stylish, and easy to maintain. Order now!",
+                    "keywords": [
+                        "vinyl sheet flooring Malaysia",
+                        "Versafloor vinyl sheet price",
+                        "best vinyl flooring supplier Malaysia",
+                        "PVC vinyl sheet flooring",
+                        "waterproof vinyl sheet Malaysia",
+                        "vinyl sheet for living room floor",
+                        "vinyl flooring rolls Malaysia",
+                        "affordable vinyl flooring Malaysia",
+                        "buy Versafloor online Malaysia",
+                        "vinyl flooring installation Malaysia"
+                    ]
+                },
+                "description": {
+                    "short": "Discover the Versafloor Vinyl Sheet PP20595 — premium waterproof vinyl flooring ideal for homes & offices in Malaysia. Durable, stylish, and easy to maintain. Order now!",
+                    "long": "Upgrade your interiors with the Versafloor Vinyl Sheet PP20595—a durable, waterproof, and visually striking flooring solution crafted for homes, offices, and commercial settings in Malaysia. Whether you’re renovating a living room, redesigning an office, or outfitting a retail space, this vinyl sheet flooring offers the perfect balance of style, performance, and affordability. With a contemporary finish and advanced PVC construction, it offers excellent resistance to wear, moisture, and daily foot traffic."
+                },
+                "features": {
+                    "main_features": [
+                        "Durable & Long-Lasting: Made from high-quality PVC, ensuring exceptional longevity in high-traffic areas.",
+                        "100% Waterproof Surface: Engineered to handle spills and humidity, ideal for kitchens, bathrooms, and offices.",
+                        "Stylish Modern Finish: Sleek, matte wood-grain texture designed to elevate any space.",
+                        "Easy Maintenance: Smooth surface allows for simple cleaning with minimal effort.",
+                        "Cost-Effective Choice: Premium looks and performance at a competitive price point."
+                    ],
+                    "benefits": [
+                        "Resists moisture, perfect for humid Malaysian climates and wet areas",
+                        "Withstands heavy foot traffic and wear for long-term durability",
+                        "Enhances interiors with a modern, versatile aesthetic",
+                        "Simplifies cleaning and maintenance for busy homes and businesses",
+                        "Offers premium quality at an affordable price"
+                    ],
+                    "design_compatibility": ["Modern", "Contemporary", "Minimalist", "Professional"]
+                },
+                "specifications": {
+                    "waterproof": true,
+                    "slip_resistant": true,
+                    "product_code": "PP20595",
+                    "category": "Vinyl Sheet Flooring",
+                    "width": "6ft",
+                    "length": "66ft",
+                    "thickness": "2.0mm",
+                    "wear_layer": "0.3mm",
+                    "finish": "Matte wood-grain texture",
+                    "color_tone": "Neutral",
+                    "material": "Premium PVC with protective wear layer",
+                    "application_areas": ["Residential", "Commercial", "Retail", "Hospitality"],
+                    "installation_surface": ["Concrete", "Cement board", "Tile", "Plywood"],
+                    "durability": "10 to 15 years",
+                    "anti_slip_rating": "R10",
+                    "maintenance": "Use a soft broom or vacuum for daily cleaning. For deeper cleaning, use a damp mop with a mild detergent."
+                },
+                "installation": {
+                    "method": ["Glue-down method"],
+                    "surface_types": ["Concrete", "Cement board", "Tile", "Plywood"],
+                    "diy_friendly": false,
+                    "professional_recommended": true,
+                    "requirements": [
+                        "Ensure a clean, dry, and level subfloor",
+                        "Use appropriate adhesive for glue-down method",
+                        "Seal seams for moisture protection in wet areas",
+                        "Professional installation recommended for optimal results"
+                    ]
+                },
+                "maintenance": {
+                    "cleaning_method": "Use a soft broom or vacuum for daily cleaning. For deeper cleaning, use a damp mop with a mild detergent.",
+                    "special_treatments": "No waxing, sealing, or polishing required",
+                    "no_waxing": true,
+                    "no_polishing": true,
+                    "no_sealants": true
+                },
+                "faqs": [
+                    {
+                        "question": "What is VersaFloor vinyl sheet used for?",
+                        "answer": "It is used for both residential and commercial flooring, offering a durable and waterproof solution for high-traffic areas."
+                    },
+                    {
+                        "question": "Is vinyl sheet flooring suitable for residential use?",
+                        "answer": "Yes, vinyl sheet flooring is ideal for homes, including living rooms, bedrooms, kitchens, and bathrooms."
+                    },
+                    {
+                        "question": "How durable is VersaFloor vinyl flooring?",
+                        "answer": "VersaFloor products are built from strong PVC, making them scratch-resistant and capable of withstanding heavy foot traffic."
+                    },
+                    {
+                        "question": "Is VersaFloor vinyl flooring waterproof and anti-slip?",
+                        "answer": "Yes, it is 100% waterproof and features a slip-resistant surface for added safety."
+                    },
+                    {
+                        "question": "How do I install vinyl sheet flooring at home?",
+                        "answer": "The PP20595 model is best installed using a glue-down method. We recommend professional installation for optimal results."
+                    },
+                    {
+                        "question": "What is the average cost of vinyl flooring in Malaysia?",
+                        "answer": "Prices vary by product and supplier. The PP20595 is competitively priced as an affordable vinyl flooring option without sacrificing quality."
+                    },
+                    {
+                        "question": "What is the lifespan of VersaFloor vinyl sheets?",
+                        "answer": "With proper care, VersaFloor vinyl sheets can last up to 10–15 years."
+                    },
+                    {
+                        "question": "How to clean and maintain vinyl sheet flooring?",
+                        "answer": "Use a soft broom or vacuum for daily cleaning. For deeper cleaning, use a damp mop with a mild detergent."
+                    },
+                    {
+                        "question": "Can vinyl sheet flooring be used in bathrooms or kitchens?",
+                        "answer": "Yes, thanks to its waterproof and anti-slip properties, it is well-suited for both kitchens and bathrooms."
+                    },
+                    {
+                        "question": "Where to buy VersaFloor vinyl sheets in Malaysia?",
+                        "answer": "You can buy directly from furnishings.com.my, a leading supplier of premium vinyl flooring in Malaysia."
+                    }
+                ],
+                "call_to_action": {
+                    "primary": "Ready to transform your space? Order Versafloor Vinyl Sheet PP20595 now at furnishings.com.my!",
+                    "secondary": "Get a Quote or speak with our flooring specialists for custom recommendations.",
+                    "tertiary": "At furnishings.com.my, we bring you the best in modern flooring with top-grade products at fair prices."
+                },
+                "status": "active",
+                "created_at": "2025-07-17",
+                "updated_at": "2025-07-17",
+                "additional_description": {
+                    "headline": "Versafloor Vinyl Sheet PP20595 – Premium Waterproof Flooring for Modern Malaysian Spaces",
+                    "sections": [
+                        {
+                            "title": "Why Choose the Versafloor Vinyl Sheet PP20595?",
+                            "content": "If you're searching for waterproof vinyl sheet flooring in Malaysia that meets both residential and commercial demands, the PP20595 model stands out. With a contemporary finish and advanced PVC construction, it offers excellent resistance to wear, moisture, and daily foot traffic. Durable & Long-Lasting: Made from high-quality PVC, ensuring exceptional longevity in high-traffic areas. 100% Waterproof Surface: Engineered to handle spills and humidity, ideal for kitchens, bathrooms, and offices. Stylish Modern Finish: Sleek, matte wood-grain texture designed to elevate any space. Easy Maintenance: Smooth surface allows for simple cleaning with minimal effort. Cost-Effective Choice: Premium looks and performance at a competitive price point."
+                        },
+                        {
+                            "title": "Applications",
+                            "content": "Whether you're a Malaysian homeowner, interior designer, or contractor, the PP20595 is versatile enough for a range of projects: Living room and bedroom flooring, Office and commercial space upgrades, High-moisture areas like kitchens and bathrooms, Retail store floors and hospitality interiors."
+                        },
+                        {
+                            "title": "Order Now from Malaysia’s Trusted Vinyl Flooring Supplier",
+                            "content": "At furnishings.com.my, we bring you the best in modern flooring. Our reputation as a trusted vinyl flooring supplier in Malaysia means you’ll receive only top-grade products at fair prices. Ready to transform your space? Click below to request a quote or speak with our flooring specialists for custom recommendations. Get a Quote or Order Now."
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "product": {
+                "id": "PX530M",
+                "name": "Versafloor Vinyl Sheet PX530M",
+                "slug": "versafloor-vinyl-sheet-px530m",
+                "category": "Vinyl Sheet Flooring",
+                "brand": "Versafloor",
+                "images": {
+                    "main_image": "/vinyal_sheet/PX530M.jpg",
+                    "gallery": ["/vinyal_sheet/PX530M.jpg"],
+                    "thumbnails": ["/vinyal_sheet/PX530M.jpg"],
+                    "alt_texts": [
+                        "vinyl flooring Malaysia – Versafloor PX530M in office setting",
+                        "waterproof vinyl sheet flooring for commercial interiors",
+                        "Versafloor PX530M anti-slip residential vinyl floor",
+                        "Versafloor Vinyl Sheet PX530M – premium waterproof vinyl flooring in Malaysia"
+                    ]
+                },
+                "seo": {
+                    "meta_title": "Versafloor Vinyl Sheet PX530M | Waterproof Vinyl Flooring Malaysia",
+                    "meta_description": "Discover PX530M – the best waterproof vinyl flooring in Malaysia for residential and commercial use. Anti-slip, stylish, and durable. Contact us for a quote today.",
+                    "keywords": [
+                        "vinyl flooring Malaysia",
+                        "Versafloor vinyl sheet PX530M",
+                        "best vinyl sheet flooring",
+                        "waterproof vinyl flooring Malaysia",
+                        "affordable vinyl floor sheets",
+                        "commercial vinyl flooring",
+                        "residential vinyl sheet flooring",
+                        "luxury vinyl sheet Malaysia",
+                        "anti-slip vinyl flooring",
+                        "vinyl flooring supplier Malaysia"
+                    ]
+                },
+                "description": {
+                    "short": "Discover PX530M – the best waterproof vinyl flooring in Malaysia for residential and commercial use. Anti-slip, stylish, and durable. Contact us for a quote today!",
+                    "long": "Struggling to find vinyl flooring that checks all the boxes—durability, aesthetics, and affordability? Tired of choosing between luxury and functionality for your flooring projects? Versafloor Vinyl Sheet PX530M solves that problem. Designed for commercial and residential applications, it’s the flooring solution that merges durability, waterproofing, and visual appeal, all at an affordable price. From residential interiors to large-scale commercial projects, Versafloor PX530M is a trusted name among Malaysia’s top designers, builders, and project consultants."
+                },
+                "features": {
+                    "main_features": [
+                        "Waterproof Vinyl Flooring: Ideal for kitchens, bathrooms, and humid commercial spaces.",
+                        "Anti-Slip Surface: Meets compliance requirements for safety in high-traffic areas.",
+                        "Durable Multi-Layer Construction: Reduces replacement frequency with tough wear layers.",
+                        "Modern Design: Offers a range of textures, natural hues, and luxury finishes.",
+                        "Easy Maintenance: No polishing, waxing, or deep cleaning required.",
+                        "Cost-Effective: Affordable per square foot for budget-conscious projects."
+                    ],
+                    "benefits": [
+                        "Resists moisture, perfect for Malaysia’s humid climate",
+                        "Ensures safety with anti-slip technology for all environments",
+                        "Enhances interiors with modern, luxury finishes",
+                        "Reduces long-term maintenance and replacement costs",
+                        "Designed for LEED-certified and eco-conscious projects",
+                        "Seamless integration into modern and traditional interiors"
+                    ],
+                    "design_compatibility": ["Modern", "Contemporary", "Minimalist", "Professional"]
+                },
+                "specifications": {
+                    "waterproof": true,
+                    "slip_resistant": true,
+                    "product_code": "PX530M",
+                    "category": "Vinyl Sheet Flooring",
+                    "width": "6ft",
+                    "length": "66ft",
+                    "thickness": "2.0mm",
+                    "wear_layer": "0.3mm",
+                    "finish": "Textured, matte",
+                    "color_tone": "Natural hues",
+                    "material": "High-quality PVC with protective wear layer",
+                    "application_areas": ["Residential", "Commercial", "Retail", "Hospitality", "Healthcare"],
+                    "installation_surface": ["Concrete", "Cement board", "Tile", "Plywood"],
+                    "durability": "10 to 15 years",
+                    "anti_slip_rating": "R10",
+                    "maintenance": "Sweep or vacuum regularly, clean with a damp mop using mild detergent. Avoid abrasive cleaners."
+                },
+                "installation": {
+                    "method": ["Glue-down method", "Loose lay method"],
+                    "surface_types": ["Concrete", "Cement board", "Tile", "Plywood"],
+                    "diy_friendly": true,
+                    "professional_recommended": true,
+                    "requirements": [
+                        "Ensure a clean, dry, and level subfloor",
+                        "Use appropriate adhesive for glue-down method in high-traffic areas",
+                        "Loose lay method suitable for smaller residential spaces",
+                        "Seal seams for moisture protection in wet areas"
+                    ]
+                },
+                "maintenance": {
+                    "cleaning_method": "Sweep or vacuum regularly, clean with a damp mop using mild detergent. Avoid abrasive cleaners.",
+                    "special_treatments": "No waxing, sealing, or polishing required",
+                    "no_waxing": true,
+                    "no_polishing": true,
+                    "no_sealants": true
+                },
+                "faqs": [
+                    {
+                        "question": "What is Versafloor Vinyl Sheet PX530M used for?",
+                        "answer": "It’s designed for both residential and commercial flooring, ideal for high-traffic areas like retail, offices, and homes, offering a waterproof and anti-slip solution."
+                    },
+                    {
+                        "question": "Is PX530M suitable for residential use?",
+                        "answer": "Yes, it’s perfect for homes, including living rooms, kitchens, and bathrooms, due to its waterproof and stylish design."
+                    },
+                    {
+                        "question": "How durable is Versafloor PX530M vinyl flooring?",
+                        "answer": "It features a durable multi-layer construction with a tough wear layer, designed to withstand heavy foot traffic for 10–15 years."
+                    },
+                    {
+                        "question": "Is PX530M vinyl flooring waterproof and anti-slip?",
+                        "answer": "Yes, it’s 100% waterproof and has an anti-slip surface with an R10 rating, ensuring safety in wet areas."
+                    },
+                    {
+                        "question": "How do I install PX530M vinyl sheet flooring?",
+                        "answer": "It can be installed using glue-down or loose lay methods. Professional installation is recommended for optimal results in high-traffic areas."
+                    },
+                    {
+                        "question": "What is the average cost of vinyl flooring in Malaysia?",
+                        "answer": "Prices vary by design and supplier, but PX530M offers premium quality at an affordable price point, typically RM4–RM10 per square foot."
+                    },
+                    {
+                        "question": "What is the lifespan of Versafloor vinyl sheets?",
+                        "answer": "With proper care, PX530M can last 10–15 years, depending on usage and maintenance."
+                    },
+                    {
+                        "question": "How do I clean and maintain PX530M vinyl flooring?",
+                        "answer": "Sweep or vacuum regularly and clean with a damp mop using mild detergent. Avoid abrasive cleaners to preserve the surface."
+                    },
+                    {
+                        "question": "Can PX530M vinyl flooring be used in bathrooms or kitchens?",
+                        "answer": "Yes, its waterproof and anti-slip properties make it ideal for moisture-prone areas like kitchens and bathrooms."
+                    },
+                    {
+                        "question": "Where can I buy Versafloor PX530M in Malaysia?",
+                        "answer": "Purchase directly from furnishings.com.my, Malaysia’s trusted vinyl flooring supplier, for authentic products and expert support."
+                    }
+                ],
+                "call_to_action": {
+                    "primary": "Ready to upgrade your flooring? Contact our sales team at furnishings.com.my to request a free quote or book a personalized product consultation.",
+                    "secondary": "Partner with Furnishings.com.my — Malaysia’s trusted vinyl flooring supplier — and deliver results that last.",
+                    "tertiary": "Explore more Versafloor vinyl sheets or our full range of waterproof flooring options at furnishings.com.my."
+                },
+                "status": "active",
+                "created_at": "2025-07-17",
+                "updated_at": "2025-07-17",
+                "additional_description": {
+                    "headline": "Versafloor Vinyl Sheet PX530M | Waterproof Vinyl Flooring Malaysia",
+                    "sections": [
+                        {
+                            "title": "Built for Demanding Environments",
+                            "content": "Low-grade vinyl flooring wears out fast—especially in commercial spaces. Cracking, peeling, and warping often lead to frequent repairs, disrupting your operations and increasing overheads. PX530M is built differently. Crafted with waterproof, anti-slip technology, it’s ideal for: Retail outlets, Corporate offices, Clinics and healthcare facilities, Hospitality spaces. This makes PX530M the go-to choice for decision-makers seeking flooring that complies with safety standards and withstands high foot traffic—all while preserving aesthetics."
+                        },
+                        {
+                            "title": "Trusted by Professionals Across Malaysia",
+                            "content": "From residential interiors to large-scale commercial projects, Versafloor PX530M is a trusted name among Malaysia’s top designers, builders, and project consultants. Why professionals rely on it: Extends project lifespan through tough wear layers, Resists moisture, impact, and daily use, Maintains floor safety compliance in regulated environments. Looking for a vinyl flooring supplier in Malaysia that understands commercial-grade demands? PX530M is your dependable solution."
+                        },
+                        {
+                            "title": "Style Meets Functionality",
+                            "content": "Flooring isn’t just a surface—it’s part of your brand identity and design language. With PX530M, you don’t compromise style for substance. Choose from a range of modern textures, natural hues, and luxury finishes that elevate the space—whether you’re designing a residential loft or a corporate reception. Perfect for: Design-conscious procurement managers, Brand-aligned commercial fit-outs, Homeowners with refined taste. This is luxury vinyl sheet flooring made to match your creative vision."
+                        },
+                        {
+                            "title": "Maximize ROI With Long-Term Performance",
+                            "content": "A smart investment doesn’t just look good—it saves you money over time. PX530M delivers: Durable multi-layer construction that reduces replacement frequency, Easy maintenance—no polishing, waxing, or deep cleaning required, Affordable per square foot, minimizing total flooring cost. Whether you’re planning a new build or renovation, this is flooring that supports process optimization, budget control, and vendor-grade consistency."
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "product": {
+                "id": "PX531M",
+                "name": "Versafloor Vinyl Sheet PX531M",
+                "slug": "versafloor-vinyl-sheet-px531m",
+                "category": "Vinyl Sheet Flooring",
+                "brand": "Versafloor",
+                "images": {
+                    "main_image": "/vinyal_sheet/PX531M.jpg",
+                    "gallery": ["/vinyal_sheet/PX531M.jpg"],
+                    "thumbnails": ["/vinyal_sheet/PX531M.jpg"],
+                    "alt_texts": [
+                        "Versafloor PX531M vinyl sheet in Malaysian commercial interior",
+                        "Versafloor Vinyl Sheet PX531M – modern waterproof vinyl flooring Malaysia",
+                        "Waterproof and stylish Versafloor PX531M vinyl sheet for residential and commercial use",
+                        "Luxury vinyl sheet flooring PX531M in modern Malaysian home"
+                    ]
+                },
+                "seo": {
+                    "meta_title": "Versafloor Vinyl Sheet PX531M | Modern Vinyl Flooring Malaysia",
+                    "meta_description": "Discover Versafloor Vinyl Sheet PX531M – waterproof, durable, and stylish vinyl flooring for homes and commercial spaces in Malaysia. Request a quote at Furnishings.com.my!",
+                    "keywords": [
+                        "PX531M vinyl sheet Malaysia",
+                        "VersaFloor vinyl sheet PX531M",
+                        "modern vinyl sheet flooring Malaysia",
+                        "best vinyl flooring Malaysia",
+                        "waterproof vinyl flooring sheet",
+                        "residential vinyl flooring Malaysia",
+                        "commercial vinyl sheet flooring",
+                        "affordable vinyl flooring Malaysia",
+                        "vinyl sheet supplier Malaysia",
+                        "luxury vinyl sheet flooring"
+                    ]
+                },
+                "description": {
+                    "short": "Discover Versafloor Vinyl Sheet PX531M – waterproof, durable, and stylish vinyl flooring for homes and commercial spaces in Malaysia. Request a quote at Furnishings.com.my!",
+                    "long": "Are your flooring projects constantly delayed by poor material choices? Struggling to balance durability, design, and cost-efficiency for your interiors? The VersaFloor vinyl sheet PX531M is engineered to eliminate these challenges. Combining waterproof durability, contemporary aesthetics, and low maintenance, it’s the ideal choice for Malaysian residential and commercial flooring projects. Crafted for resilience in tropical climates, the PX531M withstands high usage environments without compromising on modern design. Perfect for contractors, designers, and specifiers seeking lasting results."
+                },
+                "features": {
+                    "main_features": [
+                        "Waterproof & Slip-Resistant: Ideal for Malaysia’s humid climate and high-traffic areas.",
+                        "Modern Design: Features wood-inspired grains, stone textures, or matte tones for a luxury finish.",
+                        "Durable Construction: Resists stains, scratches, and wear for long-term performance.",
+                        "Low Maintenance: Easy to clean with no polishing or waxing required.",
+                        "Fast Installation: Minimizes downtime with glue-down or loose lay methods.",
+                        "Cost-Effective: Affordable pricing for premium quality and style."
+                    ],
+                    "benefits": [
+                        "Resists moisture and spills, perfect for kitchens, bathrooms, and commercial spaces",
+                        "Ensures safety with anti-slip surface for residential and commercial use",
+                        "Enhances interiors with modern, luxury aesthetics",
+                        "Reduces maintenance and replacement costs for better ROI",
+                        "Meets compliance standards for commercial project approvals",
+                        "Reliable supply for bulk orders and tight project deadlines"
+                    ],
+                    "design_compatibility": ["Modern", "Contemporary", "Minimalist", "Professional"]
+                },
+                "specifications": {
+                    "waterproof": true,
+                    "slip_resistant": true,
+                    "product_code": "PX531M",
+                    "category": "Vinyl Sheet Flooring",
+                    "width": "6ft",
+                    "length": "66ft",
+                    "thickness": "2.0mm",
+                    "wear_layer": "0.3mm",
+                    "finish": "Textured, matte",
+                    "color_tone": "Wood-inspired grains, stone textures, or matte tones",
+                    "material": "High-quality PVC with protective wear layer",
+                    "application_areas": ["Residential", "Commercial", "Retail", "Hospitality", "Healthcare"],
+                    "installation_surface": ["Concrete", "Cement board", "Tile", "Plywood"],
+                    "durability": "10 to 15 years",
+                    "anti_slip_rating": "R10",
+                    "maintenance": "Sweep or vacuum regularly, clean with a damp mop using mild detergent. Avoid abrasive cleaners."
+                },
+                "installation": {
+                    "method": ["Glue-down method", "Loose lay method"],
+                    "surface_types": ["Concrete", "Cement board", "Tile", "Plywood"],
+                    "diy_friendly": true,
+                    "professional_recommended": true,
+                    "requirements": [
+                        "Ensure a clean, dry, and level subfloor",
+                        "Use appropriate adhesive for glue-down method in high-traffic areas",
+                        "Loose lay method suitable for smaller residential spaces",
+                        "Seal seams for moisture protection in wet areas"
+                    ]
+                },
+                "maintenance": {
+                    "cleaning_method": "Sweep or vacuum regularly, clean with a damp mop using mild detergent. Avoid abrasive cleaners.",
+                    "special_treatments": "No waxing, sealing, or polishing required",
+                    "no_waxing": true,
+                    "no_polishing": true,
+                    "no_sealants": true
+                },
+                "faqs": [
+                    {
+                        "question": "Is VersaFloor PX531M suitable for both residential and commercial use in Malaysia?",
+                        "answer": "Yes. It’s built for dual use — strong enough for office floors, stylish enough for homes."
+                    },
+                    {
+                        "question": "Is the VersaFloor vinyl sheet PX531M waterproof?",
+                        "answer": "Absolutely. It’s engineered to resist water, humidity, and everyday spills."
+                    },
+                    {
+                        "question": "How does PX531M compare with other vinyl flooring brands in Malaysia?",
+                        "answer": "VersaFloor offers better durability, slip resistance, and modern styling at an affordable price point."
+                    },
+                    {
+                        "question": "Where can I buy PX531M vinyl sheet in Malaysia?",
+                        "answer": "You can purchase directly from Furnishings.com.my or contact our sales team for B2B pricing."
+                    },
+                    {
+                        "question": "How long does installation take for PX531M?",
+                        "answer": "Most projects can be completed within a day, depending on room size and preparation."
+                    },
+                    {
+                        "question": "What is the lifespan of VersaFloor vinyl sheets?",
+                        "answer": "With proper care, PX531M can last 10–15 years, depending on usage and maintenance."
+                    },
+                    {
+                        "question": "How do I clean and maintain PX531M vinyl flooring?",
+                        "answer": "Sweep or vacuum regularly and clean with a damp mop using mild detergent. Avoid abrasive cleaners."
+                    },
+                    {
+                        "question": "Can PX531M vinyl flooring be used in bathrooms or kitchens?",
+                        "answer": "Yes, its waterproof and anti-slip properties make it ideal for moisture-prone areas."
+                    },
+                    {
+                        "question": "What is the average cost of vinyl flooring in Malaysia?",
+                        "answer": "Prices vary by design and supplier, but PX531M offers premium quality at an affordable price, typically RM4–RM10 per square foot."
+                    }
+                ],
+                "call_to_action": {
+                    "primary": "Looking for a flooring solution that delivers performance and style? Request a Free Consultation at Furnishings.com.my!",
+                    "secondary": "Schedule a Consultation or Request a Custom Quote Today for Versafloor PX531M.",
+                    "tertiary": "Contact Our Flooring Experts for a tailored quote and project brief at Furnishings.com.my."
+                },
+                "status": "active",
+                "created_at": "2025-07-17",
+                "updated_at": "2025-07-17",
+                "additional_description": {
+                    "headline": "VersaFloor Vinyl Sheet PX531M | Modern Vinyl Flooring Malaysia",
+                    "sections": [
+                        {
+                            "title": "Outdated, Fragile Flooring Solutions That Don’t Last",
+                            "content": "Worn-out flooring not only looks bad — it reflects poorly on your projects and your brand. Cheap materials succumb to Malaysia’s high humidity, wear out under foot traffic, and peel under pressure. What happens when commercial floors fade or buckle within months? You deal with costly replacements, operational delays, and unhappy clients."
+                        },
+                        {
+                            "title": "The Solution: VersaFloor PX531M",
+                            "content": "Crafted for resilience in tropical climates, the PX531M withstands high usage environments without compromising on modern design. Perfect for contractors, designers, and specifiers seeking lasting results."
+                        },
+                        {
+                            "title": "Waterproof & Slip-Resistant – Designed for Malaysian Environments",
+                            "content": "VersaFloor PX531M delivers superior resistance to water, moisture, and spills — a must in Malaysia’s humid climate. Its anti-slip surface ensures safety in commercial settings like hospitals, offices, and retail spaces. Trust the PX531M vinyl sheet Malaysia professionals rely on for long-lasting, waterproof flooring solutions."
+                        },
+                        {
+                            "title": "Stylish Meets Practical – Luxury Vinyl Sheet That Delivers",
+                            "content": "From chic offices to minimalist homes, VersaFloor vinyl sheet PX531M enhances any space. Choose from modern finishes — wood-inspired grains, cool stone textures, or smooth matte tones. Seamless design for clean, high-end appeal. Easy-to-clean surface. Stain and scratch-resistant for high-traffic zones. Upgrade to modern vinyl sheet flooring Malaysia professionals recommend for both design and durability."
+                        },
+                        {
+                            "title": "Low Maintenance. High ROI. No Downtime.",
+                            "content": "Tired of labor-intensive installations and ongoing maintenance? Fast installation minimizes downtime. Long-lasting quality improves ROI. Material compliance ensures smooth project approvals. Vendor reliability means consistent supply for bulk orders. Ideal for procurement teams managing tight deadlines, budgets, and performance expectations. Optimize your process with affordable vinyl flooring Malaysia trusts in commercial tenders."
+                        },
+                        {
+                            "title": "Why Malaysian Professionals Trust VersaFloor PX531M",
+                            "content": "Join the hundreds of firms across Malaysia already choosing VersaFloor. Installed in 500+ commercial projects nationwide. Preferred by architects, interior designers & facility managers. Manufactured under strict ISO standards. Backed by quality control and performance testing. Work with a vinyl sheet supplier Malaysia professionals rely on for quality, delivery, and support."
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "product": {
+                "id": "PX532M",
+                "name": "Versafloor Vinyl Sheet PX532M",
+                "slug": "versafloor-vinyl-sheet-px532m",
+                "category": "Vinyl Sheet Flooring",
+                "brand": "Versafloor",
+                "images": {
+                    "main_image": "/vinyal_sheet/PX532W.jpg",
+                    "gallery": ["/vinyal_sheet/PX532W.jpg"],
+                    "thumbnails": ["/vinyal_sheet/PX532W.jpg"],
+                    "alt_texts": [
+                        "Versafloor PX532M vinyl sheet in Malaysian home interior",
+                        "Versafloor Vinyl Sheet PX532M – waterproof vinyl flooring Malaysia",
+                        "Modern and durable Versafloor PX532M vinyl sheet for commercial spaces",
+                        "Luxury vinyl sheet flooring PX532M in stylish Malaysian office"
+                    ]
+                },
+                "seo": {
+                    "meta_title": "Versafloor Vinyl Sheet PX532M | Waterproof Vinyl Flooring Malaysia",
+                    "meta_description": "Discover Versafloor PX532M – modern, waterproof, and durable vinyl sheet flooring for homes and commercial spaces in Malaysia. Shop online at Furnishings.com.my!",
+                    "keywords": [
+                        "vinyl sheet flooring Malaysia",
+                        "Versafloor vinyl sheet price",
+                        "buy vinyl flooring online Malaysia",
+                        "best vinyl flooring for home Malaysia",
+                        "waterproof vinyl sheet flooring",
+                        "PVC vinyl flooring Malaysia",
+                        "affordable vinyl flooring Malaysia",
+                        "vinyl flooring supplier Malaysia",
+                        "luxury vinyl sheet flooring",
+                        "vinyl floor covering Malaysia"
+                    ]
+                },
+                "description": {
+                    "short": "Discover Versafloor PX532M – modern, waterproof, and durable vinyl sheet flooring for homes and commercial spaces in Malaysia. Shop online at Furnishings.com.my!",
+                    "long": "Are you tired of flooring that warps under moisture or fades with time? Is your current floor design holding back the modern look you envision for your space? At Furnishings.com.my, we understand how poor flooring decisions can lead to constant maintenance costs, safety risks, and dissatisfied clients. That’s why the Versafloor Vinyl Sheet PX532M is engineered for lasting durability, waterproof protection, and luxurious design — all while remaining one of the most affordable vinyl flooring options in Malaysia."
+                },
+                "features": {
+                    "main_features": [
+                        "Waterproof Protection: Anti-mold and moisture-resistant layers perfect for Malaysia’s humid climate.",
+                        "Anti-Slip Coating: Ensures safety in high-traffic residential and commercial spaces.",
+                        "Durable High-Density PVC: Resists wear, scratches, and fading for long-term performance.",
+                        "Modern Stylish Design: Luxury finishes for a contemporary aesthetic in any interior.",
+                        "Easy Maintenance: Simple cleaning with no polishing or waxing required.",
+                        "Cost-Effective: Affordable pricing with bulk order discounts for projects."
+                    ],
+                    "benefits": [
+                        "Prevents water seepage and warping in humid environments",
+                        "Enhances safety with anti-slip surface for homes and businesses",
+                        "Reduces long-term repair and replacement costs",
+                        "Elevates interiors with modern, luxurious designs",
+                        "Simplifies cleaning for busy households and commercial spaces",
+                        "Supports budget control with affordable pricing and bulk discounts"
+                    ],
+                    "design_compatibility": ["Modern", "Contemporary", "Minimalist", "Professional"]
+                },
+                "specifications": {
+                    "waterproof": true,
+                    "slip_resistant": true,
+                    "product_code": "PX532M",
+                    "category": "Vinyl Sheet Flooring",
+                    "width": "6ft",
+                    "length": "66ft",
+                    "thickness": "2.0mm",
+                    "wear_layer": "0.3mm",
+                    "finish": "Textured, matte",
+                    "color_tone": "Neutral, wood-inspired",
+                    "material": "High-density PVC with protective wear layer",
+                    "application_areas": ["Residential", "Commercial", "Retail", "Hospitality", "Healthcare"],
+                    "installation_surface": ["Concrete", "Cement board", "Tile", "Plywood"],
+                    "durability": "10 to 15 years",
+                    "anti_slip_rating": "R10",
+                    "maintenance": "Sweep or vacuum regularly, clean with a damp mop using mild detergent. Avoid abrasive cleaners."
+                },
+                "installation": {
+                    "method": ["Glue-down method", "Loose lay method"],
+                    "surface_types": ["Concrete", "Cement board", "Tile", "Plywood"],
+                    "diy_friendly": true,
+                    "professional_recommended": true,
+                    "requirements": [
+                        "Ensure a clean, dry, and level subfloor",
+                        "Use appropriate adhesive for glue-down method in high-traffic areas",
+                        "Loose lay method suitable for smaller residential spaces",
+                        "Seal seams for moisture protection in wet areas"
+                    ]
+                },
+                "maintenance": {
+                    "cleaning_method": "Sweep or vacuum regularly, clean with a damp mop using mild detergent. Avoid abrasive cleaners.",
+                    "special_treatments": "No waxing, sealing, or polishing required",
+                    "no_waxing": true,
+                    "no_polishing": true,
+                    "no_sealants": true
+                },
+                "faqs": [
+                    {
+                        "question": "What is the best vinyl sheet flooring for homes in Malaysia?",
+                        "answer": "The Versafloor PX532M offers premium waterproof protection and a stylish finish — perfect for Malaysian homes."
+                    },
+                    {
+                        "question": "Is vinyl sheet flooring good for humid Malaysian weather?",
+                        "answer": "Yes. PX532M is designed with anti-mold and moisture-resistant layers to suit Malaysia’s tropical climate."
+                    },
+                    {
+                        "question": "Can I buy vinyl flooring sheets online in Malaysia?",
+                        "answer": "Absolutely. Visit furnishings.com.my to shop vinyl flooring online with fast, reliable delivery."
+                    },
+                    {
+                        "question": "How much does Versafloor PX532M cost in Malaysia?",
+                        "answer": "Pricing depends on quantity. Contact us for bulk order rates and wholesale discounts."
+                    },
+                    {
+                        "question": "Is vinyl sheet flooring durable for commercial use?",
+                        "answer": "Yes. PX532M meets commercial-grade durability standards and performs well in high-traffic areas."
+                    },
+                    {
+                        "question": "What is the lifespan of Versafloor vinyl sheets?",
+                        "answer": "With proper care, PX532M can last 10–15 years, depending on usage and maintenance."
+                    },
+                    {
+                        "question": "How do I clean and maintain PX532M vinyl flooring?",
+                        "answer": "Sweep or vacuum regularly and clean with a damp mop using mild detergent. Avoid abrasive cleaners."
+                    },
+                    {
+                        "question": "Can PX532M vinyl flooring be used in bathrooms or kitchens?",
+                        "answer": "Yes, its waterproof and anti-slip properties make it ideal for moisture-prone areas."
+                    },
+                    {
+                        "question": "Where can I buy Versafloor PX532M in Malaysia?",
+                        "answer": "Purchase directly from furnishings.com.my, a trusted vinyl flooring supplier in Malaysia."
+                    }
+                ],
+                "call_to_action": {
+                    "primary": "Ready to transform your floors? Shop Versafloor PX532M online now at furnishings.com.my!",
+                    "secondary": "Contact us for a Custom Quote or browse all vinyl flooring options at Furnishings.com.my.",
+                    "tertiary": "Join over 500+ contractors and 100+ interior designers in Malaysia who trust Versafloor PX-series for their flooring needs."
+                },
+                "status": "active",
+                "created_at": "2025-07-17",
+                "updated_at": "2025-07-17",
+                "additional_description": {
+                    "headline": "Versafloor Vinyl Sheet PX532M | Waterproof Vinyl Flooring Malaysia",
+                    "sections": [
+                        {
+                            "title": "Say Goodbye to Inefficient, Short-Lived Flooring",
+                            "content": "Cheap vinyl sheets can suffer from: Water seepage & warping, Slippery surfaces & safety issues, Outdated designs or quick fading. For commercial interiors or modern homes, these compromises simply won’t do."
+                        },
+                        {
+                            "title": "Why Ignoring the Problem is Costly",
+                            "content": "Repairs & Replacements: Lead to budget overruns. Mold & Hygiene Risks: Especially in humid Malaysian climates. Reputation Damage: For contractors & property managers. Choosing the wrong vinyl flooring isn’t just a visual issue — it’s a long-term liability."
+                        },
+                        {
+                            "title": "Versafloor PX532M – Your Long-Term Flooring Solution",
+                            "content": "Built with high-density PVC, anti-slip coating, and a moisture-sealed surface, PX532M is ideal for a wide range of flooring needs. It’s a smart, stylish, and durable solution trusted across residential and commercial projects in Malaysia."
+                        },
+                        {
+                            "title": "Applications: Where PX532M Excels",
+                            "content": "Residential Interiors: Waterproof solution for kitchens & bathrooms, Comfortable feel underfoot for family areas, Easy cleaning for everyday living. Commercial Spaces: Stylish & modern for clinics, offices, and salons, Durable under heavy foot traffic, Quick, seamless installation for fast-paced projects."
+                        },
+                        {
+                            "title": "Why Enterprises Choose Versafloor PX532M",
+                            "content": "Maximize Your Flooring ROI: Reduce long-term repair costs, Comply with safety & anti-slip regulations, Impress clients with quality finishes. Smooth Procurement & Delivery: Bulk order discounts, Regular inventory updates, Nationwide delivery across Malaysia. Let us streamline your flooring supply chain — so you can focus on project execution."
+                        },
+                        {
+                            "title": "Trusted by Industry Professionals",
+                            "content": "Join over 500+ contractors and 100+ interior designers in Malaysia who’ve selected Versafloor PX-series vinyl sheets for their high-performance, elegant, and affordable flooring needs. From award-winning commercial developments to stylish home renovations, PX532M delivers exceptional results every time."
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "product": {
+                "id": "PX580S",
+                "name": "Versafloor Vinyl Sheet PX580S",
+                "slug": "versafloor-vinyl-sheet-px580s",
+                "category": "Vinyl Sheet Flooring",
+                "brand": "Versafloor",
+                "images": {
+                    "main_image": "/vinyal_sheet/PX580S.jpg",
+                    "gallery": ["/vinyal_sheet/PX580S.jpg"],
+                    "thumbnails": ["/vinyal_sheet/PX580S.jpg"],
+                    "alt_texts": [
+                        "Versafloor PX580S vinyl sheet in Malaysian commercial interior",
+                        "VersaFloor PX580S Vinyl Sheet – premium waterproof vinyl flooring Malaysia",
+                        "Waterproof and durable Versafloor PX580S vinyl sheet for residential and commercial use",
+                        "Modern vinyl sheet flooring PX580S in stylish Malaysian office"
+                    ]
+                },
+                "seo": {
+                    "meta_title": "VersaFloor PX580S Vinyl Sheet | Premium Vinyl Flooring Malaysia",
+                    "meta_description": "Discover VersaFloor PX580S – premium waterproof vinyl sheet flooring for homes and commercial spaces in Malaysia. Anti-slip, durable, and stylish. Shop at Furnishings.com.my!",
+                    "keywords": [
+                        "PX580S vinyl sheet Malaysia",
+                        "VersaFloor PX580S flooring",
+                        "buy vinyl sheet flooring Malaysia",
+                        "premium vinyl flooring Malaysia",
+                        "commercial vinyl sheet flooring",
+                        "waterproof vinyl flooring Malaysia",
+                        "best vinyl floor design Malaysia",
+                        "durable vinyl sheet for home",
+                        "anti-slip vinyl flooring Malaysia",
+                        "modern vinyl sheet flooring"
+                    ]
+                },
+                "description": {
+                    "short": "Discover VersaFloor PX580S – premium waterproof vinyl sheet flooring for homes and commercial spaces in Malaysia. Anti-slip, durable, and stylish. Shop at Furnishings.com.my!",
+                    "long": "Struggling to find flooring that combines durability, design, and safety in one solution? What’s the real cost of frequent maintenance, slip hazards, or outdated vinyl installations? In high-traffic spaces like offices, clinics, and retail stores, choosing the wrong flooring means frequent repairs, non-compliance with safety standards, and delayed operations. VersaFloor PX580S Vinyl Sheet eliminates those issues — offering premium vinyl flooring in Malaysia that is modern, durable, and 100% waterproof. Designed for both residential and commercial use, PX580S delivers visual appeal and long-term value for procurement teams, interior designers, and decision-makers who demand high performance without sacrificing aesthetics."
+                },
+                "features": {
+                    "main_features": [
+                        "100% Waterproof: Engineered to resist moisture, ideal for Malaysia’s humid climate.",
+                        "Anti-Slip Surface: Complies with safety standards for high-traffic areas.",
+                        "Premium Wear Layer: Ensures durability and resistance to scratches and stains.",
+                        "Modern Aesthetic: Features neutral tones and sleek textures for contemporary interiors.",
+                        "Easy Maintenance: Requires no polishing or waxing, simplifying upkeep.",
+                        "Fast Installation: Minimizes downtime for residential and commercial projects."
+                    ],
+                    "benefits": [
+                        "Prevents water damage and mold in humid environments",
+                        "Enhances safety with anti-slip properties for all users",
+                        "Reduces maintenance and replacement costs for better ROI",
+                        "Elevates spaces with modern, premium designs",
+                        "Supports compliance with safety and hygiene regulations",
+                        "Streamlines installation and supply for project efficiency"
+                    ],
+                    "design_compatibility": ["Modern", "Contemporary", "Minimalist", "Professional"]
+                },
+                "specifications": {
+                    "waterproof": true,
+                    "slip_resistant": true,
+                    "product_code": "PX580S",
+                    "category": "Vinyl Sheet Flooring",
+                    "width": "6ft",
+                    "length": "66ft",
+                    "thickness": "2.0mm",
+                    "wear_layer": "0.3mm",
+                    "finish": "Textured, matte",
+                    "color_tone": "Neutral tones",
+                    "material": "High-quality PVC with premium wear layer",
+                    "application_areas": ["Residential", "Commercial", "Retail", "Healthcare", "Education"],
+                    "installation_surface": ["Concrete", "Cement board", "Tile", "Plywood"],
+                    "durability": "15 to 20 years",
+                    "anti_slip_rating": "R10",
+                    "maintenance": "Sweep or vacuum regularly, clean with a damp mop using mild detergent. Avoid abrasive cleaners."
+                },
+                "installation": {
+                    "method": ["Glue-down method", "Loose lay method"],
+                    "surface_types": ["Concrete", "Cement board", "Tile", "Plywood"],
+                    "diy_friendly": true,
+                    "professional_recommended": true,
+                    "requirements": [
+                        "Ensure a clean, dry, and level subfloor",
+                        "Use appropriate adhesive for glue-down method in high-traffic areas",
+                        "Loose lay method suitable for smaller residential spaces",
+                        "Seal seams for moisture protection in wet areas"
+                    ]
+                },
+                "maintenance": {
+                    "cleaning_method": "Sweep or vacuum regularly, clean with a damp mop using mild detergent. Avoid abrasive cleaners.",
+                    "special_treatments": "No waxing, sealing, or polishing required",
+                    "no_waxing": true,
+                    "no_polishing": true,
+                    "no_sealants": true
+                },
+                "faqs": [
+                    {
+                        "question": "Where can I buy premium vinyl flooring in Malaysia?",
+                        "answer": "You can purchase VersaFloor PX580S and other premium vinyl options at Furnishings.com.my, a trusted supplier of high-quality flooring solutions in Malaysia."
+                    },
+                    {
+                        "question": "Is vinyl flooring waterproof and safe for Malaysian homes?",
+                        "answer": "Yes, VersaFloor PX580S offers waterproof and anti-slip properties — perfect for homes, offices, and commercial spaces in Malaysia’s humid climate."
+                    },
+                    {
+                        "question": "What makes PX580S suitable for commercial projects in Malaysia?",
+                        "answer": "It’s engineered for high traffic, easy to install, and complies with safety standards — ideal for corporate spaces, clinics, and showrooms."
+                    },
+                    {
+                        "question": "How long does vinyl sheet flooring last in Malaysian environments?",
+                        "answer": "With proper care and installation, PX580S lasts up to 15–20 years, even in Malaysia’s humid and tropical climate."
+                    },
+                    {
+                        "question": "Is PX580S available in custom designs or textures?",
+                        "answer": "Yes, PX580S comes in a range of modern textures and finishes to match both contemporary and traditional interiors."
+                    },
+                    {
+                        "question": "How do I clean and maintain PX580S vinyl flooring?",
+                        "answer": "Sweep or vacuum regularly and clean with a damp mop using mild detergent. Avoid abrasive cleaners."
+                    },
+                    {
+                        "question": "Can PX580S vinyl flooring be used in bathrooms or kitchens?",
+                        "answer": "Yes, its waterproof and anti-slip properties make it ideal for moisture-prone areas like bathrooms and kitchens."
+                    },
+                    {
+                        "question": "How much does Versafloor PX580S cost in Malaysia?",
+                        "answer": "Pricing depends on quantity. Contact Furnishings.com.my for bulk order rates and custom quotes."
+                    }
+                ],
+                "call_to_action": {
+                    "primary": "Ready to elevate your space with VersaFloor PX580S? Shop online now at Furnishings.com.my!",
+                    "secondary": "Get in touch with our experts to receive a customized quote, sample request, or on-site project consultation.",
+                    "tertiary": "Explore our full waterproof flooring collection and commercial vinyl flooring solutions at Furnishings.com.my."
+                },
+                "status": "active",
+                "created_at": "2025-07-17",
+                "updated_at": "2025-07-17",
+                "additional_description": {
+                    "headline": "VersaFloor PX580S Vinyl Sheet | Premium Vinyl Flooring Malaysia",
+                    "sections": [
+                        {
+                            "title": "Outdated Flooring Is Costing You Time and Money",
+                            "content": "Worn-out floors lead to frequent replacements, high maintenance costs, and poor first impressions. Outdated installations often fail to meet the safety needs of modern commercial environments. VersaFloor PX580S Vinyl Sheet is your solution — it’s anti-slip, waterproof, and engineered for long-lasting performance in high-stress spaces. Whether you manage retail spaces or healthcare clinics, PX580S keeps your environment safe and visually appealing."
+                        },
+                        {
+                            "title": "Enhance ROI with Durable Vinyl Sheet Flooring",
+                            "content": "Every square meter of commercial space should work harder for your investment. Inferior flooring breaks down fast in high-traffic zones, resulting in workflow disruptions and rising operational costs. With PX580S, you benefit from a premium wear layer that ensures long-term durability. Easy to clean and resistant to daily wear, this product minimizes downtime and maximizes your facility’s operational continuity. Ensure long-term value with a low-maintenance, high-performance surface that meets your budget and operational goals."
+                        },
+                        {
+                            "title": "Modern Aesthetic Meets Safety & Functionality",
+                            "content": "Clients and visitors notice details — especially outdated flooring. If your interiors feel dull or unsafe, you risk undermining your entire design vision. PX580S vinyl sheet flooring offers modern textures, neutral tones, and a sleek finish that enhances any setting. Its anti-slip surface provides safety, while its visual appeal supports a premium brand image. Designed for process efficiency, aesthetic alignment, and compliance standards, PX580S delivers more than flooring — it delivers confidence."
+                        },
+                        {
+                            "title": "Where VersaFloor PX580S Excels",
+                            "content": "Whether you're designing or renovating, PX580S fits seamlessly into various commercial and residential environments: Retail Stores: Withstand heavy foot traffic without losing visual appeal. Corporate Offices: Support long working hours with safety and sophistication. Healthcare Clinics: Comply with hygiene and anti-slip standards. Educational Institutions: Easy to clean and safe for students and staff."
+                        },
+                        {
+                            "title": "Proven Results and Industry Trust",
+                            "content": "“Trusted by over 300 commercial clients across Malaysia — from corporate towers to modern cafés.” “Rated 4.9/5 by facility managers for durability and low upkeep.”"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "product": {
+                "id": "PX580W",
+                "name": "Versafloor Vinyl Sheet PX580W",
+                "slug": "versafloor-vinyl-sheet-px580w",
+                "category": "Vinyl Sheet Flooring",
+                "brand": "Versafloor",
+                "images": {
+                    "main_image": "/vinyal_sheet/PX580W.jpg",
+                    "gallery": ["/vinyal_sheet/PX580W.jpg"],
+                    "thumbnails": ["/vinyal_sheet/PX580W.jpg"],
+                    "alt_texts": [
+                        "Versafloor PX580W vinyl sheet in Malaysian home interior",
+                        "VersaFloor PX580W Vinyl Sheet – best vinyl flooring Malaysia",
+                        "Waterproof and durable Versafloor PX580W vinyl sheet for residential and commercial use",
+                        "Luxury vinyl sheet flooring PX580W in modern Malaysian living room"
+                    ]
+                },
+                "seo": {
+                    "meta_title": "VersaFloor PX580W Vinyl Sheet | Best Vinyl Flooring Malaysia",
+                    "meta_description": "Discover VersaFloor PX580W – waterproof, durable, and stylish vinyl sheet flooring for homes and commercial spaces in Malaysia. Shop online at Furnishings.com.my!",
+                    "keywords": [
+                        "vinyl sheet flooring Malaysia",
+                        "Versafloor vinyl sheet PX580W",
+                        "best vinyl flooring Malaysia",
+                        "waterproof vinyl sheet flooring",
+                        "affordable vinyl flooring supplier",
+                        "buy vinyl sheet flooring online",
+                        "vinyl sheet for home flooring",
+                        "luxury vinyl sheet Malaysia",
+                        "easy to install vinyl flooring",
+                        "durable vinyl flooring for living room"
+                    ]
+                },
+                "description": {
+                    "short": "Discover VersaFloor PX580W – waterproof, durable, and stylish vinyl sheet flooring for homes and commercial spaces in Malaysia. Shop online at Furnishings.com.my!",
+                    "long": "Are you tired of flooring that can’t keep up with daily wear and tear? Does your team struggle to find stylish, waterproof flooring that meets both design and budget goals? If these issues sound familiar, it’s time to rethink your flooring strategy. Introducing VersaFloor PX580W — a modern, high-performance vinyl sheet flooring Malaysia solution engineered to meet the demands of humid climates, heavy foot traffic, and tight renovation timelines. Ideal for both residential and commercial interiors, PX580W combines elegance, durability, and practicality in one affordable package."
+                },
+                "features": {
+                    "main_features": [
+                        "100% Waterproof and Moisture-Resistant: Perfect for Malaysia’s humid climate.",
+                        "Durable Surface: Built for high-traffic residential and commercial zones.",
+                        "Stylish Textured Finish: Modern designs for contemporary interiors.",
+                        "Anti-Slip Properties: Ensures safety in wet and high-traffic areas.",
+                        "Quick & Easy Installation: Ideal for fast-paced renovations.",
+                        "Versatile Usage: Suitable for home flooring, retail, offices, and light commercial spaces."
+                    ],
+                    "benefits": [
+                        "Resists water damage and warping in humid environments",
+                        "Enhances safety with anti-slip properties for all users",
+                        "Reduces maintenance and replacement costs for better ROI",
+                        "Elevates interiors with modern, luxurious designs",
+                        "Simplifies installation to meet tight project timelines",
+                        "Affordable pricing supports budget-conscious projects"
+                    ],
+                    "design_compatibility": ["Modern", "Contemporary", "Minimalist", "Professional"]
+                },
+                "specifications": {
+                    "waterproof": true,
+                    "slip_resistant": true,
+                    "product_code": "PX580W",
+                    "category": "Vinyl Sheet Flooring",
+                    "width": "6ft",
+                    "length": "66ft",
+                    "thickness": "2.0mm",
+                    "wear_layer": "0.3mm",
+                    "finish": "Textured, matte",
+                    "color_tone": "Neutral, wood-inspired",
+                    "material": "High-quality PVC with protective wear layer",
+                    "application_areas": ["Residential", "Commercial", "Retail", "Offices", "Light Commercial"],
+                    "installation_surface": ["Concrete", "Cement board", "Tile", "Plywood"],
+                    "durability": "10 to 15 years",
+                    "anti_slip_rating": "R10",
+                    "maintenance": "Sweep or vacuum regularly, clean with a damp mop using mild detergent. Avoid abrasive cleaners."
+                },
+                "installation": {
+                    "method": ["Glue-down method", "Loose lay method"],
+                    "surface_types": ["Concrete", "Cement board", "Tile", "Plywood"],
+                    "diy_friendly": true,
+                    "professional_recommended": true,
+                    "requirements": [
+                        "Ensure a clean, dry, and level subfloor",
+                        "Use appropriate adhesive for glue-down method in high-traffic areas",
+                        "Loose lay method suitable for smaller residential spaces",
+                        "Seal seams for moisture protection in wet areas"
+                    ]
+                },
+                "maintenance": {
+                    "cleaning_method": "Sweep or vacuum regularly, clean with a damp mop using mild detergent. Avoid abrasive cleaners.",
+                    "special_treatments": "No waxing, sealing, or polishing required",
+                    "no_waxing": true,
+                    "no_polishing": true,
+                    "no_sealants": true
+                },
+                "faqs": [
+                    {
+                        "question": "What makes VersaFloor PX580W ideal for Malaysian homes?",
+                        "answer": "PX580W is waterproof, anti-slip, and built to perform in Malaysia’s humid climate, making it ideal for living rooms, bathrooms, and kitchens."
+                    },
+                    {
+                        "question": "Is VersaFloor PX580W easy to install without professional help?",
+                        "answer": "Yes. It features an easy-to-install vinyl flooring system that suits both pros and DIY-savvy homeowners."
+                    },
+                    {
+                        "question": "Where can I buy vinyl sheet flooring online in Malaysia?",
+                        "answer": "You can purchase PX580W directly from furnishings.com.my — trusted by interior designers and contractors nationwide."
+                    },
+                    {
+                        "question": "How does PX580W compare to laminate or wood flooring?",
+                        "answer": "PX580W offers superior water resistance, low maintenance, and greater affordability, while still delivering a sleek, high-end look."
+                    },
+                    {
+                        "question": "How long does PX580W vinyl flooring last in Malaysian environments?",
+                        "answer": "With proper care, PX580W lasts 10–15 years, even in Malaysia’s humid and tropical climate."
+                    },
+                    {
+                        "question": "Can PX580W vinyl flooring be used in bathrooms or kitchens?",
+                        "answer": "Yes, its waterproof and anti-slip properties make it ideal for moisture-prone areas like bathrooms and kitchens."
+                    },
+                    {
+                        "question": "How much does Versafloor PX580W cost in Malaysia?",
+                        "answer": "Pricing depends on quantity. Contact Furnishings.com.my for bulk order rates and custom quotes."
+                    }
+                ],
+                "call_to_action": {
+                    "primary": "Ready to elevate your next project with high-performance vinyl flooring? Shop VersaFloor PX580W at Furnishings.com.my!",
+                    "secondary": "Contact us today for bulk pricing, product consultation, or to request a sample of VersaFloor PX580W.",
+                    "tertiary": "Browse all vinyl sheet flooring options at Furnishings.com.my to find the perfect solution for your project."
+                },
+                "status": "active",
+                "created_at": "2025-07-17",
+                "updated_at": "2025-07-17",
+                "additional_description": {
+                    "headline": "VersaFloor PX580W Vinyl Sheet | Best Vinyl Flooring Malaysia",
+                    "sections": [
+                        {
+                            "title": "Tired of Water Damage & High Maintenance Floors?",
+                            "content": "Traditional flooring materials like wood or laminate may look appealing — but they rarely hold up in Malaysia’s humid conditions. The Problem: Moisture seeps in. Boards warp. Tiles loosen. Maintenance costs skyrocket. The Aggravation: In high-moisture areas like kitchens, bathrooms, clinics, and retail spaces, water damage becomes a recurring issue. The Solution: VersaFloor PX580W is 100% waterproof vinyl sheet flooring that performs flawlessly in wet environments — without sacrificing modern aesthetics. Its robust build ensures a longer lifecycle even under moisture stress."
+                        },
+                        {
+                            "title": "Budget Constraints vs. Quality Expectations",
+                            "content": "Procurement teams often face this dilemma: pay more for quality or settle for short-term savings. The Problem: Budget-friendly options often underdeliver on performance. The Aggravation: Lower-cost flooring wears out faster, leading to costly replacements and client dissatisfaction. The Solution: PX580W offers the best of both worlds — an affordable vinyl flooring supplier solution with the look and feel of premium materials. It’s ideal for large-scale projects requiring elegance and durability without breaking the bank."
+                        },
+                        {
+                            "title": "Installation Delays Cost Time and Money",
+                            "content": "Time is money in the renovation and construction world — especially when dealing with multiple contractors. The Problem: Complex flooring systems extend timelines and increase labor costs. The Aggravation: Delays frustrate clients and reduce overall ROI. The Solution: VersaFloor PX580W is engineered for quick, simple installation — no specialized tools required. Whether you're managing a condo fit-out or a retail renovation, PX580W cuts down on installation time and keeps your project on schedule."
+                        },
+                        {
+                            "title": "Proven Results Across Malaysia",
+                            "content": "“Used in over 300 residential units across Klang Valley, PX580W has become the go-to choice for developers looking for cost-effective, luxury vinyl sheet Malaysia solutions.”"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "product": {
+                "id": "PX583W",
+                "name": "Versafloor Vinyl Sheet PX583W",
+                "slug": "versafloor-vinyl-sheet-px583w",
+                "category": "Vinyl Sheet Flooring",
+                "brand": "Versafloor",
+                "images": {
+                    "main_image": "/vinyal_sheet/PX583W.jpg",
+                    "gallery": ["/vinyal_sheet/PX583W.jpg"],
+                    "thumbnails": ["/vinyal_sheet/PX583W.jpg"],
+                    "alt_texts": [
+                        "Versafloor PX583W vinyl sheet in Malaysian commercial interior",
+                        "Versafloor Vinyl Sheet PX583W – waterproof vinyl sheet flooring for commercial use",
+                        "Durable and stylish Versafloor PX583W vinyl sheet for high-traffic spaces",
+                        "Luxury vinyl sheet flooring PX583W in modern Malaysian office"
+                    ]
+                },
+                "seo": {
+                    "meta_title": "Versafloor Vinyl Sheet PX583W | Waterproof Vinyl Sheet Flooring for Commercial Use",
+                    "meta_description": "Discover Versafloor PX583W – premium waterproof vinyl sheet flooring for commercial spaces in Malaysia. Durable, stylish, and low-maintenance. Shop at Furnishings.com.my!",
+                    "keywords": [
+                        "vinyl sheet flooring",
+                        "waterproof vinyl sheet",
+                        "commercial vinyl sheet flooring",
+                        "vinyl sheet roll",
+                        "best vinyl sheet flooring",
+                        "luxury vinyl sheet",
+                        "Versafloor vinyl",
+                        "commercial sheet vinyl",
+                        "vinyl sheet suppliers Malaysia",
+                        "vinyl sheet PX583W"
+                    ]
+                },
+                "description": {
+                    "short": "Discover Versafloor PX583W – premium waterproof vinyl sheet flooring for commercial spaces in Malaysia. Durable, stylish, and low-maintenance. Shop at Furnishings.com.my!",
+                    "long": "Is your flooring failing under constant foot traffic? Are mounting maintenance costs affecting your bottom line? Tired of early replacements disrupting operations? The wrong flooring choice can lead to costly repairs, reputation risks, and unnecessary downtime. Meet Versafloor Vinyl Sheet PX583W—Malaysia’s trusted solution for durable, waterproof vinyl sheet flooring—purpose-built for commercial-grade performance. Whether you’re outfitting malls, offices, clinics, or schools, PX583W offers a refined look with unmatched durability."
+                },
+                "features": {
+                    "main_features": [
+                        "Commercial-Grade Durability: Withstands heavy foot traffic in retail, education, and healthcare settings.",
+                        "100% Waterproof: Resists moisture, warping, and stains, ideal for humid areas.",
+                        "Anti-Slip Safety: Enhances safety in high-traffic and wet zones.",
+                        "Luxury Aesthetic: Wood or stone finishes for a premium, modern look.",
+                        "Low Maintenance: Requires only daily sweeping and occasional mopping.",
+                        "Quick Installation: Seamless vinyl sheet roll format reduces labor time."
+                    ],
+                    "benefits": [
+                        "Reduces lifecycle costs with durable, multi-layer construction",
+                        "Eliminates water-related failures in humid Malaysian climates",
+                        "Ensures compliance with safety and hygiene standards",
+                        "Enhances interior branding with stylish, modern finishes",
+                        "Minimizes downtime with fast, stress-free installation",
+                        "Supports budget control with cost-effective, high-quality materials"
+                    ],
+                    "design_compatibility": ["Modern", "Contemporary", "Professional", "Luxury"]
+                },
+                "specifications": {
+                    "waterproof": true,
+                    "slip_resistant": true,
+                    "product_code": "PX583W",
+                    "category": "Vinyl Sheet Flooring",
+                    "width": "6ft",
+                    "length": "66ft",
+                    "thickness": "2.0mm",
+                    "wear_layer": "0.3mm",
+                    "finish": "Textured, wood or stone-inspired",
+                    "color_tone": "Neutral, wood or stone",
+                    "material": "Commercial-grade PVC with protective wear layer",
+                    "application_areas": ["Commercial", "Retail", "Healthcare", "Education", "Offices"],
+                    "installation_surface": ["Concrete", "Cement board", "Tile", "Plywood"],
+                    "durability": "10 to 15 years",
+                    "anti_slip_rating": "R10",
+                    "maintenance": "Daily sweeping and occasional mopping with mild detergent. Avoid abrasive cleaners."
+                },
+                "installation": {
+                    "method": ["Glue-down method", "Loose lay method"],
+                    "surface_types": ["Concrete", "Cement board", "Tile", "Plywood"],
+                    "diy_friendly": false,
+                    "professional_recommended": true,
+                    "requirements": [
+                        "Ensure a clean, dry, and level subfloor",
+                        "Use appropriate adhesive for glue-down method in high-traffic areas",
+                        "Loose lay method suitable for smaller spaces",
+                        "Seal seams for moisture protection in wet areas"
+                    ]
+                },
+                "maintenance": {
+                    "cleaning_method": "Daily sweeping and occasional mopping with mild detergent. Avoid abrasive cleaners.",
+                    "special_treatments": "No waxing, sealing, or polishing required",
+                    "no_waxing": true,
+                    "no_polishing": true,
+                    "no_sealants": true
+                },
+                "faqs": [
+                    {
+                        "question": "What makes Versafloor PX583W suitable for commercial spaces?",
+                        "answer": "PX583W is engineered for durability, waterproof protection, and heavy-traffic resistance—ideal for malls, offices, schools, and hospitals."
+                    },
+                    {
+                        "question": "Can I buy Versafloor vinyl sheet PX583W online in Malaysia?",
+                        "answer": "Yes. Visit furnishings.com.my or contact our sales team for bulk procurement."
+                    },
+                    {
+                        "question": "Is vinyl sheet flooring waterproof and low maintenance?",
+                        "answer": "Absolutely. PX583W is 100% waterproof and built for hassle-free daily cleaning."
+                    },
+                    {
+                        "question": "How long does commercial vinyl sheet flooring last?",
+                        "answer": "With proper installation, PX583W can last 10–15 years in commercial settings."
+                    },
+                    {
+                        "question": "What is the size of the vinyl sheet roll?",
+                        "answer": "PX583W is offered in roll format for seamless coverage. Contact us for detailed size specifications."
+                    }
+                ],
+                "call_to_action": {
+                    "primary": "Ready to upgrade your flooring system? Request a tailored quote for Versafloor PX583W at Furnishings.com.my!",
+                    "secondary": "Contact our commercial specialists for a customized quote or on-site project consultation.",
+                    "tertiary": "Explore all Versafloor vinyl sheet products and commercial flooring solutions at Furnishings.com.my."
+                },
+                "status": "active",
+                "created_at": "2025-07-17",
+                "updated_at": "2025-07-17",
+                "additional_description": {
+                    "headline": "Versafloor Vinyl Sheet PX583W | Waterproof Vinyl Sheet Flooring for Commercial Use",
+                    "sections": [
+                        {
+                            "title": "Built for Commercial-Grade Durability",
+                            "content": "Long-Term ROI with Heavy-Duty Performance: Withstands heavy foot traffic in high-traffic environments like retail chains, educational institutions, and healthcare facilities. Crafted with commercial-grade PVC layers that reduce lifecycle costs. Keeps floors looking new—without sacrificing aesthetics or function. Solve Downtime and Replacement Hassles: Avoid recurring replacements that drain your budget and disrupt operations. PX583W’s multi-layer construction provides superior stability, anti-slip safety, and enhanced scratch resistance. Designed for smooth, stress-free commercial rollouts."
+                        },
+                        {
+                            "title": "100% Waterproof Vinyl Sheet Flooring",
+                            "content": "Eliminate Water-Related Failures: Engineered to resist moisture, warping, and stains—ideal for humid areas and wet zones. Seamless vinyl sheet roll format limits water seepage between joints. Hygienic & Easy to Maintain: Anti-bacterial surface suitable for healthcare, foodservice, and educational spaces. Low-maintenance—just daily sweeping and occasional mopping required. Saves on long-term cleaning and labor costs."
+                        },
+                        {
+                            "title": "Modern Aesthetic with Low Maintenance",
+                            "content": "Stylish Yet Practical Vinyl Sheet Design: Offers luxury wood or stone finishes without complex upkeep. Enhances interior branding while meeting functional needs. A Cost-Effective Luxury Flooring Alternative: Ideal for procurement teams seeking cost-effective yet premium-looking solutions. Quick and simple installation via vinyl sheet roll reduces labor time and cost."
+                        },
+                        {
+                            "title": "Why Versafloor PX583W is Trusted by Industry Leaders in Malaysia",
+                            "content": "Supply Chain-Ready from Local Vinyl Sheet Suppliers: Available from certified vinyl sheet suppliers across Malaysia. Consistent inventory and rapid delivery—perfect for commercial-scale projects. Compliance, Warranty, and Performance: Meets Malaysia’s commercial flooring standards. Backed by a comprehensive warranty and quality certifications. Trusted by architects, project managers, and renovation contractors nationwide."
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "product": {
+                "id": "PX610M",
+                "name": "Versafloor Vinyl Sheet PX610M",
+                "slug": "versafloor-vinyl-sheet-px610m",
+                "category": "Vinyl Sheet Flooring",
+                "brand": "Versafloor",
+                "images": {
+                    "main_image": "/vinyal_sheet/PX610M.jpg",
+                    "gallery": ["/vinyal_sheet/PX610M.jpg"],
+                    "thumbnails": ["/vinyal_sheet/PX610M.jpg"],
+                    "alt_texts": [
+                        "Versafloor PX610M vinyl sheet in Malaysian home interior",
+                        "Versafloor Vinyl Sheet PX610M – premium waterproof vinyl flooring Malaysia",
+                        "Durable and stylish Versafloor PX610M vinyl sheet for residential use",
+                        "Waterproof vinyl sheet flooring PX610M in modern Malaysian living room"
+                    ]
+                },
+                "seo": {
+                    "meta_title": "Versafloor Vinyl Sheet PX610M | Premium Vinyl Flooring Malaysia",
+                    "meta_description": "Discover Versafloor PX610M – waterproof, durable, and stylish vinyl sheet flooring for homes and light-commercial spaces in Malaysia. Shop at Furnishings.com.my!",
+                    "keywords": [
+                        "vinyl sheet flooring Malaysia",
+                        "Versafloor vinyl sheet PX610M",
+                        "buy vinyl flooring online Malaysia",
+                        "best vinyl sheet for home flooring",
+                        "durable vinyl flooring Malaysia",
+                        "waterproof vinyl sheet flooring",
+                        "residential vinyl sheet supplier Malaysia",
+                        "vinyl sheet flooring price Malaysia",
+                        "vinyl floor covering for living room",
+                        "easy to install vinyl flooring"
+                    ]
+                },
+                "description": {
+                    "short": "Discover Versafloor PX610M – waterproof, durable, and stylish vinyl sheet flooring for homes and light-commercial spaces in Malaysia. Shop online at Furnishings.com.my!",
+                    "long": "Looking for long-lasting vinyl flooring that withstands Malaysia’s humid climate? Is your current flooring failing under daily wear and moisture? Are your residential or light-commercial flooring projects delayed due to unreliable suppliers or substandard materials? If yes, you're not alone. Many procurement managers and renovation contractors struggle with vinyl floors that peel, warp, or are hard to maintain. But what if there was a solution that’s waterproof, durable, and easy to install — backed by a trusted local supplier? Meet Versafloor Vinyl Sheet PX610M – engineered for comfort, convenience, and commercial-grade resilience."
+                },
+                "features": {
+                    "main_features": [
+                        "100% Waterproof: Repels moisture, perfect for kitchens, bathrooms, and humid interiors.",
+                        "Durable Premium PVC: Scratch-resistant and UV-protected for long-term performance.",
+                        "Stylish Design: Modern textures and finishes for contemporary home aesthetics.",
+                        "Anti-Slip Surface: Enhances safety in residential and light-commercial spaces.",
+                        "Easy Installation: Cut-to-size roll format for quick fitting and reduced downtime.",
+                        "Formaldehyde-Free: Safe and compliant with Malaysia’s quality standards."
+                    ],
+                    "benefits": [
+                        "Prevents moisture damage and mold in Malaysia’s humid climate",
+                        "Reduces maintenance and replacement costs for better ROI",
+                        "Enhances interiors with modern, stylish designs",
+                        "Simplifies installation for faster project turnaround",
+                        "Ensures safety with anti-slip properties",
+                        "Backed by reliable supply and support from Furnishings.com.my"
+                    ],
+                    "design_compatibility": ["Modern", "Contemporary", "Minimalist", "Residential"]
+                },
+                "specifications": {
+                    "waterproof": true,
+                    "slip_resistant": true,
+                    "product_code": "PX610M",
+                    "category": "Vinyl Sheet Flooring",
+                    "width": "6ft",
+                    "length": "66ft",
+                    "thickness": "2.0mm",
+                    "wear_layer": "0.3mm",
+                    "finish": "Textured, matte",
+                    "color_tone": "Neutral, wood-inspired",
+                    "material": "Premium-grade PVC with protective wear layer",
+                    "application_areas": ["Residential", "Light Commercial", "Living Rooms", "Kitchens", "Bedrooms", "Show Units", "Apartments"],
+                    "installation_surface": ["Concrete", "Cement board", "Tile", "Plywood"],
+                    "durability": "10 to 15 years",
+                    "anti_slip_rating": "R10",
+                    "maintenance": "Sweep or vacuum regularly, clean with a damp mop using mild detergent. Avoid abrasive cleaners."
+                },
+                "installation": {
+                    "method": ["Glue-down method", "Loose lay method"],
+                    "surface_types": ["Concrete", "Cement board", "Tile", "Plywood"],
+                    "diy_friendly": true,
+                    "professional_recommended": true,
+                    "requirements": [
+                        "Ensure a clean, dry, and level subfloor",
+                        "Use appropriate adhesive for glue-down method in high-traffic areas",
+                        "Loose lay method suitable for smaller residential spaces",
+                        "Seal seams for moisture protection in wet areas"
+                    ]
+                },
+                "maintenance": {
+                    "cleaning_method": "Sweep or vacuum regularly, clean with a damp mop using mild detergent. Avoid abrasive cleaners.",
+                    "special_treatments": "No waxing, sealing, or polishing required",
+                    "no_waxing": true,
+                    "no_polishing": true,
+                    "no_sealants": true
+                },
+                "faqs": [
+                    {
+                        "question": "Is Versafloor Vinyl Sheet PX610M waterproof?",
+                        "answer": "Yes, PX610M is 100% waterproof, ideal for use in kitchens, bathrooms, and humid Malaysian interiors."
+                    },
+                    {
+                        "question": "Can I install vinyl sheet PX610M myself?",
+                        "answer": "Yes. PX610M is designed for DIY-friendly installation, making it perfect for homeowners and efficient for contractors."
+                    },
+                    {
+                        "question": "How long does vinyl sheet flooring last in Malaysian homes?",
+                        "answer": "With proper care, PX610M can last 10–15 years. It’s built for long-term durability and minimal maintenance."
+                    },
+                    {
+                        "question": "What is the vinyl sheet flooring price in Malaysia?",
+                        "answer": "Prices vary depending on order size and location. Contact us for a tailored quote including delivery and bulk discounts."
+                    },
+                    {
+                        "question": "Where can I buy Versafloor PX610M in Malaysia?",
+                        "answer": "Purchase directly from Furnishings.com.my — your reliable vinyl sheet flooring supplier in Malaysia."
+                    },
+                    {
+                        "question": "Can PX610M vinyl flooring be used in kitchens or bathrooms?",
+                        "answer": "Yes, its waterproof and anti-slip properties make it ideal for moisture-prone areas like kitchens and bathrooms."
+                    }
+                ],
+                "call_to_action": {
+                    "primary": "Get a Custom Quote for Versafloor PX610M Vinyl Flooring Today at Furnishings.com.my!",
+                    "secondary": "Request a free quote or consult our flooring specialists at Furnishings.com.my.",
+                    "tertiary": "Browse more vinyl sheet designs online at Furnishings.com.my to find the perfect flooring solution."
+                },
+                "status": "active",
+                "created_at": "2025-07-17",
+                "updated_at": "2025-07-17",
+                "additional_description": {
+                    "headline": "Versafloor Vinyl Sheet PX610M | Premium Vinyl Flooring Malaysia",
+                    "sections": [
+                        {
+                            "title": "Common Challenges with Traditional Flooring in Malaysia",
+                            "content": "Moisture Damage in Living Areas and Kitchens: In Malaysia’s humid environment, traditional flooring materials often peel, warp, or harbor mold — leading to costly repairs and client dissatisfaction. Without proper water resistance, you risk delays, complaints, and lost revenue. Poor Installation Experience: Complex installations increase project time and cost. Some vinyl sheets demand skilled labor, leading to higher overheads. PX610M simplifies installation with a cut-to-size roll format — saving you time and labor. Short Lifespan and Low ROI: Low-grade vinyl sheets fade, crack, and fail under pressure. Versafloor PX610M is scratch-resistant, UV-protected, and long-lasting, ensuring higher returns on your flooring investment."
+                        },
+                        {
+                            "title": "Why Choose Versafloor PX610M for Residential & Light-Commercial Projects?",
+                            "content": "Waterproof Vinyl Sheet Flooring for Malaysian Homes: PX610M repels moisture effortlessly, making it the perfect choice for kitchens, bathrooms, and humid indoor spaces. Durable Performance, Stylish Aesthetic: Made with multi-layered premium PVC, PX610M delivers soft foot comfort, resilience under daily use, and aesthetic appeal that suits modern interior themes. Easy Installation = Faster Turnaround: PX610M is a cut-roll format, allowing quick fitting and reduced downtime — ideal for housing developers and design teams working on tight timelines. Residential Vinyl Sheet Supplier You Can Trust: Partner with Furnishings.com.my, a leading vinyl sheet flooring supplier in Malaysia. We ensure on-time delivery, expert consultation, and reliable after-sales support."
+                        },
+                        {
+                            "title": "Designed for Procurement & Project Efficiency",
+                            "content": "Optimized for Residential Areas & Light-Commercial Use: Roll Dimensions: [Insert accurate width & length]. Material: Premium-grade, scratch-resistant PVC. Thickness: [Insert exact mm]. Features: Waterproof, Fire-rated, Anti-slip, Formaldehyde-free. Certifications: Compliant with Malaysia’s quality and safety standards. Ideal for: Living rooms, kitchens, bedrooms, show units, apartments, light-commercial interior spaces."
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "product": {
+                "id": "PX613M",
+                "name": "Versafloor Vinyl Sheet PX613M",
+                "slug": "versafloor-vinyl-sheet-px613m",
+                "category": "Vinyl Sheet Flooring",
+                "brand": "Versafloor",
+                "images": {
+                    "main_image": "/vinyal_sheet/PX613M.jpg",
+                    "gallery": ["/vinyal_sheet/PX613M.jpg"],
+                    "thumbnails": ["/vinyal_sheet/PX613M.jpg"],
+                    "alt_texts": [
+                        "Versafloor PX613M vinyl sheet in Malaysian commercial interior",
+                        "Versafloor Vinyl Sheet PX613M – waterproof vinyl flooring Malaysia",
+                        "Durable and stylish Versafloor PX613M vinyl sheet for residential and commercial use",
+                        "Luxury vinyl sheet flooring PX613M in modern Malaysian home"
+                    ]
+                },
+                "seo": {
+                    "meta_title": "Versafloor Vinyl Sheet PX613M | Waterproof Vinyl Flooring Malaysia",
+                    "meta_description": "Discover Versafloor PX613M – premium waterproof vinyl sheet flooring for homes and commercial spaces in Malaysia. Durable, stylish, and anti-slip. Shop at Furnishings.com.my!",
+                    "keywords": [
+                        "vinyl flooring Malaysia",
+                        "Versafloor vinyl sheet",
+                        "best vinyl sheet flooring",
+                        "vinyl floor sheet price Malaysia",
+                        "waterproof vinyl flooring Malaysia",
+                        "PVC vinyl flooring sheet",
+                        "luxury vinyl sheet flooring",
+                        "Versafloor PX613M specs",
+                        "durable vinyl flooring Malaysia",
+                        "vinyl sheet flooring for homes"
+                    ]
+                },
+                "description": {
+                    "short": "Discover Versafloor PX613M – premium waterproof vinyl sheet flooring for homes and commercial spaces in Malaysia. Durable, stylish, and anti-slip. Shop at Furnishings.com.my!",
+                    "long": "Are you struggling with flooring that can't withstand moisture, heavy foot traffic, or long-term wear? Outdated floor materials can lead to unnecessary repairs, higher facility management costs, and dissatisfied clients or tenants. Versafloor Vinyl Sheet PX613M delivers a superior waterproof, stylish, and commercial-grade flooring solution trusted across Malaysia for both residential and commercial projects."
+                },
+                "features": {
+                    "main_features": [
+                        "100% Waterproof: Moisture-resistant core, ideal for humid Malaysian environments.",
+                        "Anti-Slip Surface: Enhances safety in high-traffic and wet areas.",
+                        "Durable PVC Wear Layer: Built for long-term performance and scratch resistance.",
+                        "Smooth Matte Finish: Modern aesthetic for residential and commercial interiors.",
+                        "Quiet Underfoot Comfort: Provides a soft, comfortable walking experience.",
+                        "Low Maintenance: Easy to clean with minimal upkeep requirements."
+                    ],
+                    "benefits": [
+                        "Prevents moisture damage and mold in humid climates",
+                        "Reduces maintenance and replacement costs for better ROI",
+                        "Enhances interiors with neutral tones and seamless design",
+                        "Ensures safety with anti-slip properties",
+                        "Complies with Malaysian indoor air quality and safety standards",
+                        "Supports efficient installation and reliable supply for projects"
+                    ],
+                    "design_compatibility": ["Modern", "Contemporary", "Minimalist", "Professional"]
+                },
+                "specifications": {
+                    "waterproof": true,
+                    "slip_resistant": true,
+                    "product_code": "PX613M",
+                    "category": "Vinyl Sheet Flooring",
+                    "width": "6ft",
+                    "length": "66ft",
+                    "thickness": "2.0mm",
+                    "wear_layer": "0.3mm",
+                    "finish": "Smooth, matte",
+                    "color_tone": "Neutral tones",
+                    "material": "Premium PVC with protective wear layer",
+                    "application_areas": ["Residential", "Commercial", "Offices", "Retail", "Hospitality"],
+                    "installation_surface": ["Concrete", "Cement board", "Tile", "Plywood"],
+                    "durability": "10+ years",
+                    "anti_slip_rating": "R10",
+                    "maintenance": "Sweep or vacuum regularly, clean with a damp mop using mild detergent. Avoid abrasive cleaners.",
+                    "certifications": ["Low-VOC", "Fire-rated", "Malaysian indoor air quality standards", "Slip-resistance compliant"]
+                },
+                "installation": {
+                    "method": ["Glue-down method", "Loose lay method"],
+                    "surface_types": ["Concrete", "Cement board", "Tile", "Plywood"],
+                    "diy_friendly": true,
+                    "professional_recommended": true,
+                    "requirements": [
+                        "Ensure a clean, dry, and level subfloor",
+                        "Use appropriate adhesive for glue-down method in high-traffic areas",
+                        "Loose lay method suitable for smaller residential spaces",
+                        "Seal seams for moisture protection in wet areas"
+                    ]
+                },
+                "maintenance": {
+                    "cleaning_method": "Sweep or vacuum regularly, clean with a damp mop using mild detergent. Avoid abrasive cleaners.",
+                    "special_treatments": "No waxing, sealing, or polishing required",
+                    "no_waxing": true,
+                    "no_polishing": true,
+                    "no_sealants": true
+                },
+                "faqs": [
+                    {
+                        "question": "What makes Versafloor PX613M the best vinyl flooring in Malaysia?",
+                        "answer": "Its waterproof PVC layer, stylish finish, and heavy-duty durability make it ideal for Malaysian conditions."
+                    },
+                    {
+                        "question": "Is Versafloor PX613M suitable for commercial buildings?",
+                        "answer": "Yes, it's engineered for high traffic in offices, showrooms, and retail spaces."
+                    },
+                    {
+                        "question": "How much does vinyl sheet flooring cost in Malaysia?",
+                        "answer": "Pricing depends on thickness, design, and quantity. Contact us for a quote tailored to your project."
+                    },
+                    {
+                        "question": "Can I install Versafloor vinyl flooring myself?",
+                        "answer": "It’s easy to install, but we recommend a professional team for best results and warranty validation."
+                    },
+                    {
+                        "question": "How long does this vinyl flooring last?",
+                        "answer": "With proper care, it can last 10+ years in both residential and commercial spaces."
+                    },
+                    {
+                        "question": "Is it resistant to mold or mildew?",
+                        "answer": "Yes, it’s designed to be anti-microbial and moisture-resistant, ideal for Malaysian humidity."
+                    },
+                    {
+                        "question": "What sizes are available for Versafloor PX613M?",
+                        "answer": "We offer standard roll widths. Custom cuts are also available on request."
+                    },
+                    {
+                        "question": "Does it work well in high humidity areas like kitchens?",
+                        "answer": "Absolutely. Its waterproof properties make it perfect for kitchens, bathrooms, and laundry rooms."
+                    },
+                    {
+                        "question": "Is this vinyl flooring eco-friendly?",
+                        "answer": "Yes. It complies with indoor air quality standards and has low VOC emissions."
+                    },
+                    {
+                        "question": "Where can I buy Versafloor PX613M in Malaysia?",
+                        "answer": "You can purchase directly at Furnishings.com.my or contact our sales team for assistance."
+                    }
+                ],
+                "call_to_action": {
+                    "primary": "Get a Custom Quote for Versafloor PX613M Today at Furnishings.com.my!",
+                    "secondary": "Reach out to our team to discuss project timelines, pricing, and delivery options.",
+                    "tertiary": "Explore other top-rated vinyl sheets like Versafloor PX580W and PX583W at Furnishings.com.my."
+                },
+                "status": "active",
+                "created_at": "2025-07-17",
+                "updated_at": "2025-07-17",
+                "additional_description": {
+                    "headline": "Versafloor Vinyl Sheet PX613M | Waterproof Vinyl Flooring Malaysia",
+                    "sections": [
+                        {
+                            "title": "Why You Need a Reliable Vinyl Flooring Solution",
+                            "content": "Ordinary flooring often fails to resist Malaysia’s humidity and daily wear. Over time, this causes surface cracks, swelling, and high maintenance costs that eat into your project margins. Versafloor PX613M is built with premium PVC construction, watertight sealing, and long-term durability — offering the perfect blend of strength, style, and ROI."
+                        },
+                        {
+                            "title": "Maximizing ROI with Versafloor Vinyl Sheet PX613M",
+                            "content": "Reduce Downtime & Maintenance: Quick and efficient installation means less downtime on active sites and fewer disruptions during renovations. Long-Term Vendor Value: With bulk supply pricing, ready stock, and dedicated technical support, we ensure your procurement needs are always met. Fully Compliant & Easy Integration: Complies with Malaysian indoor air quality, fire safety, and slip-resistance standards. Safe, low-VOC, and reliable for public and private projects."
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "product": {
+                "id": "PY20745",
+                "name": "Versafloor Vinyl Sheet PY20745",
+                "slug": "versafloor-vinyl-sheet-py20745",
+                "category": "Vinyl Sheet Flooring",
+                "brand": "Versafloor",
+                "images": {
+                    "main_image": "/vinyal_sheet/PY20745.jpg",
+                    "gallery": ["/vinyal_sheet/PY20745.jpg"],
+                    "thumbnails": ["/vinyal_sheet/PY20745.jpg"],
+                    "alt_texts": [
+                        "Versafloor PY20745 vinyl sheet in Malaysian commercial interior",
+                        "Versafloor Vinyl Sheet PY20745 – waterproof commercial vinyl flooring Malaysia",
+                        "Durable and stylish Versafloor PY20745 vinyl sheet for high-traffic spaces",
+                        "Luxury vinyl sheet flooring PY20745 in modern Malaysian office"
+                    ]
+                },
+                "seo": {
+                    "meta_title": "Versafloor Vinyl Sheet PY20745 | Waterproof Commercial Vinyl Flooring Malaysia",
+                    "meta_description": "Discover Versafloor PY20745 – premium waterproof vinyl sheet flooring for commercial and residential spaces in Malaysia. Durable, stylish, and easy to install. Shop at Furnishings.com.my!",
+                    "keywords": [
+                        "vinyl sheet flooring",
+                        "waterproof vinyl sheet",
+                        "Versafloor PY20745",
+                        "commercial vinyl sheet",
+                        "vinyl sheet roll Malaysia",
+                        "luxury vinyl sheet flooring",
+                        "durable vinyl flooring",
+                        "sheet vinyl flooring commercial",
+                        "Versafloor vinyl sheet",
+                        "vinyl flooring installation guide"
+                    ]
+                },
+                "description": {
+                    "short": "Discover Versafloor PY20745 – premium waterproof vinyl sheet flooring for commercial and residential spaces in Malaysia. Durable, stylish, and easy to install. Shop at Furnishings.com.my!",
+                    "long": "Are your flooring solutions struggling to handle heavy commercial footfall? Tired of maintenance issues and constant replacement cycles? Versafloor Vinyl Sheet PY20745 is engineered to solve these challenges — delivering 100% waterproof durability with modern design aesthetics. Ideal for Malaysia’s commercial and residential spaces, this vinyl sheet flooring offers fast installation, long-term value, and industry-grade performance."
+                },
+                "features": {
+                    "main_features": [
+                        "100% Waterproof: Resists moisture, mold, and mildew in humid Malaysian climates.",
+                        "Commercial-Grade Durability: Withstands heavy foot traffic, scratches, and scuffs.",
+                        "Anti-Slip Surface: Ensures safety in high-traffic and wet areas.",
+                        "Luxury Finishes: Realistic wood and stone textures for a premium aesthetic.",
+                        "Fast Installation: Roll-out design with minimal adhesives for quick project turnover.",
+                        "Low Maintenance: Easy to clean, reducing long-term costs."
+                    ],
+                    "benefits": [
+                        "Prevents water-related deterioration and subfloor warping",
+                        "Reduces maintenance and replacement costs for better ROI",
+                        "Enhances interiors with modern, brand-consistent designs",
+                        "Minimizes downtime with efficient installation process",
+                        "Ensures safety with anti-slip properties",
+                        "Trusted by Malaysian professionals for commercial and residential projects"
+                    ],
+                    "design_compatibility": ["Modern", "Contemporary", "Professional", "Luxury"]
+                },
+                "specifications": {
+                    "waterproof": true,
+                    "slip_resistant": true,
+                    "product_code": "PY20745",
+                    "category": "Vinyl Sheet Flooring",
+                    "width": "6ft",
+                    "length": "66ft",
+                    "thickness": "2.0mm",
+                    "wear_layer": "0.3mm",
+                    "finish": "Matte",
+                    "color_tone": "Wood or stone-inspired",
+                    "material": "Commercial-grade PVC with protective wear layer",
+                    "application_areas": ["Commercial", "Residential", "Retail", "Healthcare", "Education", "Hospitality"],
+                    "installation_surface": ["Concrete", "Cement board", "Tile", "Plywood"],
+                    "durability": "10 to 15 years",
+                    "anti_slip_rating": "R10",
+                    "maintenance": "Sweep or vacuum regularly, clean with a damp mop using mild detergent. Avoid abrasive cleaners."
+                },
+                "installation": {
+                    "method": ["Glue-down method", "Loose lay method"],
+                    "surface_types": ["Concrete", "Cement board", "Tile", "Plywood"],
+                    "diy_friendly": true,
+                    "professional_recommended": true,
+                    "requirements": [
+                        "Ensure a clean, dry, and level subfloor",
+                        "Use appropriate adhesive for glue-down method in high-traffic areas",
+                        "Loose lay method suitable for smaller spaces",
+                        "Seal seams for moisture protection in wet areas"
+                    ],
+                    "guide": "Versafloor’s roll-out design allows for easy cutting and fitting, minimizing adhesive use and ensuring seamless joints. Consult our detailed vinyl flooring installation guide for step-by-step instructions or contact our team for contractor referrals."
+                },
+                "maintenance": {
+                    "cleaning_method": "Sweep or vacuum regularly, clean with a damp mop using mild detergent. Avoid abrasive cleaners.",
+                    "special_treatments": "No waxing, sealing, or polishing required",
+                    "no_waxing": true,
+                    "no_polishing": true,
+                    "no_sealants": true
+                },
+                "faqs": [
+                    {
+                        "question": "Is Versafloor PY20745 suitable for wet areas?",
+                        "answer": "Yes. It’s 100% waterproof and perfect for bathrooms, kitchens, clinics, and high-moisture areas."
+                    },
+                    {
+                        "question": "How long does vinyl sheet flooring last in commercial spaces?",
+                        "answer": "With proper care, PY20745 lasts 10–15 years, even under heavy foot traffic."
+                    },
+                    {
+                        "question": "Is this vinyl sheet flooring available across Malaysia?",
+                        "answer": "Yes. We ship nationwide — including Kuala Lumpur, Penang, Johor Bahru, and Sabah."
+                    },
+                    {
+                        "question": "Can this product be used in residential properties?",
+                        "answer": "Absolutely. Though built for commercial use, it’s also ideal for modern homes seeking durability and style."
+                    },
+                    {
+                        "question": "Do you offer installation support or guides?",
+                        "answer": "Yes. We provide a vinyl flooring installation guide and expert consultation. Contractor referrals are available upon request."
+                    }
+                ],
+                "call_to_action": {
+                    "primary": "Ready to upgrade to waterproof, commercial-grade vinyl sheet flooring? Contact us for bulk pricing at Furnishings.com.my!",
+                    "secondary": "Request a free product sample or consult our flooring specialists at Furnishings.com.my.",
+                    "tertiary": "Explore our case studies and vinyl flooring installation guide at Furnishings.com.my."
+                },
+                "status": "active",
+                "created_at": "2025-07-17",
+                "updated_at": "2025-07-17",
+                "additional_description": {
+                    "headline": "Versafloor Vinyl Sheet PY20745 | Waterproof Commercial Vinyl Flooring Malaysia",
+                    "sections": [
+                        {
+                            "title": "Built for Commercial Performance",
+                            "content": "Why Durability is Non-Negotiable in Commercial Projects: High foot traffic? No problem. Versafloor PY20745 is designed for maximum resilience, resisting scratches, scuffs, and heavy wear — even in demanding environments like shopping malls, educational institutions, healthcare centers, and corporate offices. Problem: Unreliable flooring causes safety hazards and premature renovations. Solution: PY20745’s robust wear layer and construction ensure lasting protection."
+                        },
+                        {
+                            "title": "100% Waterproof Vinyl for Hassle-Free Maintenance",
+                            "content": "Say Goodbye to Moisture Damage: From spills and leaks to tropical humidity, this waterproof vinyl sheet stays structurally intact. It prevents: Mold and mildew buildup, Subfloor warping, Water-related deterioration. Perfect for clinics, retail outlets, restaurants, and hotels, PY20745 minimizes maintenance headaches and long-term costs."
+                        },
+                        {
+                            "title": "Fast Installation, Lower Downtime",
+                            "content": "Efficient Vinyl Flooring Installation Guide: Need quick project turnover? Versafloor’s roll-out design means: Easy to cut and fit, Minimal adhesives required, Seamless joints and uniform finish. This makes it a favorite for construction consultants and project managers who demand speed without compromising quality."
+                        },
+                        {
+                            "title": "Sleek, Modern Aesthetics",
+                            "content": "Elevate Interiors with Luxury Vinyl Finishes: Versafloor PY20745 blends style with substance, offering realistic wood and stone textures that enhance interior ambiance. Whether you're designing a boutique, franchise outlet, or high-end office — expect: Uniform patterns across rooms, Brand-consistent aesthetics, A polished, contemporary look."
+                        },
+                        {
+                            "title": "Trusted by Malaysian Professionals",
+                            "content": "Proven Use in Commercial Builds: Versafloor vinyl sheets are used by leading interior designers and property developers in Malaysia’s top commercial and mixed-use projects. Backed by certifications and local project success stories, PY20745 is your go-to choice for reliable, stylish flooring."
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "product": {
+                "id": "PY20755",
+                "name": "Versafloor Vinyl Sheet PY20755",
+                "slug": "versafloor-vinyl-sheet-py20755",
+                "category": "Vinyl Sheet Flooring",
+                "brand": "Versafloor",
+                "images": {
+                    "main_image": "/vinyal_sheet/PY20755.jpg",
+                    "gallery": ["/vinyal_sheet/PY20755.jpg"],
+                    "thumbnails": ["/vinyal_sheet/PY20755.jpg"],
+                    "alt_texts": [
+                        "Versafloor PY20755 vinyl sheet in Malaysian commercial interior",
+                        "Versafloor Vinyl Sheet PY20755 – premium waterproof vinyl flooring Malaysia",
+                        "Durable and stylish Versafloor PY20755 vinyl sheet for homes and offices",
+                        "Modern vinyl sheet flooring PY20755 in Malaysian residential space"
+                    ]
+                },
+                "seo": {
+                    "meta_title": "Versafloor Vinyl Sheet PY20755 | Premium Vinyl Sheet Flooring Malaysia",
+                    "meta_description": "Discover Versafloor PY20755 – waterproof, durable, and stylish vinyl sheet flooring for homes and commercial spaces in Malaysia. Shop online at Furnishings.com.my!",
+                    "keywords": [
+                        "vinyl sheet flooring Malaysia",
+                        "buy vinyl flooring online Malaysia",
+                        "Versafloor vinyl sheet PY20755",
+                        "waterproof vinyl flooring Malaysia",
+                        "best vinyl sheet flooring Malaysia",
+                        "affordable vinyl flooring Malaysia",
+                        "vinyl floor covering Malaysia",
+                        "vinyl sheet for home flooring",
+                        "durable vinyl flooring Malaysia",
+                        "modern vinyl flooring designs Malaysia"
+                    ]
+                },
+                "description": {
+                    "short": "Discover Versafloor PY20755 – waterproof, durable, and stylish vinyl sheet flooring for homes and commercial spaces in Malaysia. Shop online at Furnishings.com.my!",
+                    "long": "Are you constantly battling floor repairs, water damage, or outdated interior aesthetics? Is your procurement team tired of sourcing low-quality materials that cost more in the long run? You're not alone. Inconsistent flooring quality, poor durability, and high maintenance costs frustrate countless procurement leads, construction managers, and enterprise facility heads across Malaysia. But what’s it really costing your company to stick with unreliable flooring? Versafloor Vinyl Sheet PY20755 is the smart choice for Malaysian enterprises, delivering advanced waterproof protection, modern design, and affordable pricing."
+                },
+                "features": {
+                    "main_features": [
+                        "100% Waterproof Design: Protects against spills, leaks, and Malaysia’s humid climate.",
+                        "Durable Construction: Resists scratches and wear in high-traffic areas.",
+                        "Modern Aesthetic: Contemporary patterns and sleek finishes for professional settings.",
+                        "Anti-Slip Surface: Ensures safety in wet zones and busy environments.",
+                        "Easy Installation: Sheet format for quick, large-area coverage.",
+                        "Low Maintenance: Anti-scratch and easy-clean surface reduces upkeep costs."
+                    ],
+                    "benefits": [
+                        "Eliminates water damage costs and safety hazards",
+                        "Enhances interiors with modern, high-end aesthetics",
+                        "Reduces lifecycle costs with durable, long-lasting materials",
+                        "Minimizes project downtime with fast installation",
+                        "Supports budget-conscious projects with competitive pricing",
+                        "Trusted by architects and facility managers across Malaysia"
+                    ],
+                    "design_compatibility": ["Modern", "Contemporary", "Professional", "Residential"]
+                },
+                "specifications": {
+                    "waterproof": true,
+                    "slip_resistant": true,
+                    "product_code": "PY20755",
+                    "category": "Vinyl Sheet Flooring",
+                    "width": "6ft",
+                    "length": "66ft",
+                    "thickness": "2.0mm",
+                    "wear_layer": "0.3mm",
+                    "finish": "Matte",
+                    "color_tone": "Neutral, contemporary patterns",
+                    "material": "Premium PVC with protective wear layer",
+                    "application_areas": ["Residential", "Commercial", "Offices", "Retail", "Hospitality"],
+                    "installation_surface": ["Concrete", "Cement board", "Tile", "Plywood"],
+                    "durability": "10 to 15 years",
+                    "anti_slip_rating": "R10",
+                    "maintenance": "Sweep or vacuum regularly, clean with a damp mop using mild detergent. Avoid abrasive cleaners."
+                },
+                "installation": {
+                    "method": ["Glue-down method", "Loose lay method"],
+                    "surface_types": ["Concrete", "Cement board", "Tile", "Plywood"],
+                    "diy_friendly": true,
+                    "professional_recommended": true,
+                    "requirements": [
+                        "Ensure a clean, dry, and level subfloor",
+                        "Use appropriate adhesive for glue-down method in high-traffic areas",
+                        "Loose lay method suitable for smaller spaces",
+                        "Seal seams for moisture protection in wet areas"
+                    ],
+                    "guide": "Versafloor’s sheet format simplifies large-area coverage with minimal adhesives, ensuring quick installation and seamless joints. Download our detailed vinyl flooring installation guide from Furnishings.com.my for step-by-step instructions."
+                },
+                "maintenance": {
+                    "cleaning_method": "Sweep or vacuum regularly, clean with a damp mop using mild detergent. Avoid abrasive cleaners.",
+                    "special_treatments": "No waxing, sealing, or polishing required",
+                    "no_waxing": true,
+                    "no_polishing": true,
+                    "no_sealants": true
+                },
+                "faqs": [
+                    {
+                        "question": "Is Versafloor Vinyl Sheet PY20755 suitable for commercial use in Malaysia?",
+                        "answer": "Yes. It’s engineered for high-traffic environments like offices, hotels, and retail outlets — offering both durability and waterproof performance."
+                    },
+                    {
+                        "question": "Can I install this vinyl sheet myself?",
+                        "answer": "While professional installation is recommended for best results, a full installation guide is provided for trained teams to self-install easily."
+                    },
+                    {
+                        "question": "How does it compare to tiles in terms of durability?",
+                        "answer": "Vinyl sheets like PY20755 provide excellent impact resistance and are far easier to maintain than traditional tiles, especially in commercial settings."
+                    },
+                    {
+                        "question": "Where can I buy vinyl flooring online in Malaysia?",
+                        "answer": "You can purchase Versafloor Vinyl Sheet PY20755 directly from Furnishings.com.my with nationwide delivery and B2B procurement options."
+                    },
+                    {
+                        "question": "How long does PY20755 vinyl flooring last?",
+                        "answer": "With proper care, PY20755 lasts 10–15 years, even in high-traffic environments."
+                    },
+                    {
+                        "question": "Is PY20755 resistant to mold or mildew?",
+                        "answer": "Yes, its 100% waterproof design prevents mold and mildew buildup, ideal for Malaysia’s humid climate."
+                    }
+                ],
+                "call_to_action": {
+                    "primary": "Ready to upgrade to Versafloor PY20755? Get a custom quote at Furnishings.com.my!",
+                    "secondary": "Schedule a strategy call or request a free sample from Furnishings.com.my.",
+                    "tertiary": "Explore our Waterproof Vinyl Sheet Flooring Collection and Commercial-Grade Vinyl Flooring Sheets at Furnishings.com.my."
+                },
+                "status": "active",
+                "created_at": "2025-07-17",
+                "updated_at": "2025-07-17",
+                "additional_description": {
+                    "headline": "Versafloor Vinyl Sheet PY20755 | Premium Vinyl Sheet Flooring Malaysia",
+                    "sections": [
+                        {
+                            "title": "Advanced Waterproof Protection You Can Trust",
+                            "content": "Eliminate Water Damage Costs Permanently: Water-damaged flooring results in costly repairs, downtime, and safety hazards. Versafloor Vinyl Sheet PY20755 features a 100% waterproof design — making it ideal for high-traffic areas in commercial buildings, offices, and residential properties. Protects against spills and leaks, Safe for wet zones like pantries and entryways, Ideal for Malaysia's humid climate."
+                        },
+                        {
+                            "title": "Modern Design That Elevates Your Interiors",
+                            "content": "From Basic to Beautiful – Instantly: Old-fashioned floors make even newly constructed spaces feel outdated. With its contemporary patterns and sleek finish, the PY20755 model transforms any environment into a high-end, professional setting — without the high-end cost. Elegant texture and tones, Seamless integration with interior design themes, Perfect for both home and office flooring."
+                        },
+                        {
+                            "title": "Affordable Vinyl Flooring That Outperforms Expectations",
+                            "content": "Cut Costs Without Compromising Quality: Budget limitations shouldn’t force you into subpar solutions. Versafloor PY20755 delivers premium performance at an affordable price point, making it a top pick for project tenders and large-scale commercial use. Long-lasting material, low lifecycle cost, Competitive pricing for bulk procurement, No hidden maintenance charges."
+                        },
+                        {
+                            "title": "Easy Installation, Easier Maintenance",
+                            "content": "Save Time Across Your Entire Operations: Time is money in enterprise construction and interior projects. Versafloor’s easy-roll installation and low-maintenance surface ensure you get faster project turnarounds with minimal labor overhead. Sheet format simplifies large-area coverage, Installation guide available for download, Anti-scratch and easy-clean surface."
+                        },
+                        {
+                            "title": "Social Proof: Trusted by Procurement Teams Across Malaysia",
+                            "content": "Hundreds of architects, builders, and facilities managers trust Versafloor for durable flooring that performs. Our vinyl sheets are already installed in corporate offices, residential towers, and retail spaces throughout Kuala Lumpur, Penang, Johor Bahru, and beyond."
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "product": {
+                "id": "PY20765",
+                "name": "Versafloor Vinyl Sheet PY20765",
+                "slug": "versafloor-vinyl-sheet-py20765",
+                "category": "Vinyl Sheet Flooring",
+                "brand": "Versafloor",
+                "images": {
+                    "main_image": "/vinyal_sheet/PY20765.jpg",
+                    "gallery": ["/vinyal_sheet/PY20765.jpg"],
+                    "thumbnails": ["/vinyal_sheet/PY20765.jpg"],
+                    "alt_texts": [
+                        "Versafloor PY20765 vinyl sheet in Malaysian commercial interior",
+                        "Versafloor Vinyl Sheet PY20765 – modern waterproof vinyl flooring Malaysia",
+                        "Durable and anti-slip Versafloor PY20765 vinyl sheet for homes and offices",
+                        "Premium vinyl sheet flooring PY20765 in Malaysian residential space"
+                    ]
+                },
+                "seo": {
+                    "meta_title": "Versafloor Vinyl Sheet PY20765 | Modern Vinyl Flooring Malaysia",
+                    "meta_description": "Discover Versafloor PY20765 – durable, waterproof, and stylish vinyl sheet flooring for commercial and residential spaces in Malaysia. Shop at Furnishings.com.my!",
+                    "keywords": [
+                        "PY20765 vinyl sheet Malaysia",
+                        "Versafloor vinyl flooring",
+                        "vinyl sheet flooring Malaysia",
+                        "modern vinyl flooring Malaysia",
+                        "durable vinyl sheet flooring",
+                        "water-resistant vinyl flooring",
+                        "anti-slip vinyl flooring",
+                        "commercial vinyl sheet Malaysia",
+                        "affordable vinyl flooring Malaysia",
+                        "best vinyl flooring for home"
+                    ]
+                },
+                "description": {
+                    "short": "Discover Versafloor PY20765 – durable, waterproof, and stylish vinyl sheet flooring for commercial and residential spaces in Malaysia. Shop at Furnishings.com.my!",
+                    "long": "Are your current flooring solutions failing to meet modern design and safety standards? Tired of frequent repairs, unsafe surfaces, or outdated looks in high-traffic areas? You’re not alone. Many enterprises struggle with maintaining a professional appearance and safety compliance, especially in commercial environments. The Versafloor Vinyl Sheet PY20765 is engineered for durability, design, and performance — a practical, modern vinyl flooring solution trusted by developers, architects, and facility managers across Malaysia."
+                },
+                "features": {
+                    "main_features": [
+                        "100% Waterproof Construction: Protects against spills and Malaysia’s humid climate.",
+                        "Anti-Slip Finish: Enhances safety in high-traffic and wet areas.",
+                        "Impact-Resistant Wear Layer: Ensures durability in demanding environments.",
+                        "Modern Aesthetic: Clean, minimalist design for contemporary interiors.",
+                        "Low Maintenance: Easy to clean with a sweep and mop routine.",
+                        "Flexible Roll Design: Simplifies installation for minimal project downtime."
+                    ],
+                    "benefits": [
+                        "Eliminates moisture damage and safety hazards in wet areas",
+                        "Reduces maintenance and repair costs for better ROI",
+                        "Enhances interiors with sleek, modern textures and designs",
+                        "Meets safety and compliance standards for commercial spaces",
+                        "Supports fast installation for efficient project timelines",
+                        "Trusted by Malaysian architects and developers for reliability"
+                    ],
+                    "design_compatibility": ["Modern", "Contemporary", "Minimalist", "Professional"]
+                },
+                "specifications": {
+                    "waterproof": true,
+                    "slip_resistant": true,
+                    "product_code": "PY20765",
+                    "category": "Vinyl Sheet Flooring",
+                    "width": "6ft",
+                    "length": "66ft",
+                    "thickness": "2.0mm",
+                    "wear_layer": "0.3mm",
+                    "finish": "Matte",
+                    "color_tone": "Neutral, minimalist",
+                    "material": "Premium PVC with protective wear layer",
+                    "application_areas": ["Residential", "Commercial", "Offices", "Retail", "Cafes", "Clinics"],
+                    "installation_surface": ["Concrete", "Cement board", "Tile", "Plywood"],
+                    "durability": "10 to 15 years",
+                    "anti_slip_rating": "R10",
+                    "maintenance": "Sweep or vacuum regularly, clean with a damp mop using mild detergent. Avoid abrasive cleaners.",
+                    "certifications": ["Slip-resistance compliant", "Low-VOC", "Indoor air quality compliant"]
+                },
+                "installation": {
+                    "method": ["Glue-down method", "Loose lay method"],
+                    "surface_types": ["Concrete", "Cement board", "Tile", "Plywood"],
+                    "diy_friendly": true,
+                    "professional_recommended": true,
+                    "requirements": [
+                        "Ensure a clean, dry, and level subfloor",
+                        "Use appropriate adhesive for glue-down method in high-traffic areas",
+                        "Loose lay method suitable for smaller spaces",
+                        "Seal seams for moisture protection in wet areas"
+                    ],
+                    "guide": "Versafloor’s roll design allows for easy cutting and fitting, ensuring seamless joints and minimal downtime. Contact Furnishings.com.my for a detailed vinyl flooring installation guide or contractor referrals."
+                },
+                "maintenance": {
+                    "cleaning_method": "Sweep or vacuum regularly, clean with a damp mop using mild detergent. Avoid abrasive cleaners.",
+                    "special_treatments": "No waxing, sealing, or polishing required",
+                    "no_waxing": true,
+                    "no_polishing": true,
+                    "no_sealants": true
+                },
+                "faqs": [
+                    {
+                        "question": "What is the size and thickness of the Versafloor PY20765 vinyl sheet?",
+                        "answer": "The PY20765 comes in a standard roll size, optimized for easy commercial installation. Please refer to our specifications tab or contact our team for precise dimensions."
+                    },
+                    {
+                        "question": "Is this vinyl sheet suitable for wet areas?",
+                        "answer": "Yes. The water-resistant surface makes it ideal for bathrooms, kitchens, clinics, or retail stores exposed to frequent cleaning and spills."
+                    },
+                    {
+                        "question": "Can it be used in high-traffic commercial buildings?",
+                        "answer": "Absolutely. PY20765 is built with commercial durability, ensuring resistance to daily wear and tear in high-traffic environments like malls or offices."
+                    },
+                    {
+                        "question": "How does it compare to other affordable vinyl flooring in Malaysia?",
+                        "answer": "Versafloor PY20765 offers a superior balance of price and performance, making it one of the best vinyl flooring choices in Malaysia for both commercial and residential needs."
+                    },
+                    {
+                        "question": "Is this flooring certified for safety and indoor use?",
+                        "answer": "Yes, the material is tested for slip resistance, toxicity, and moisture protection, ensuring long-term usability in indoor environments."
+                    },
+                    {
+                        "question": "Where can I buy Versafloor PY20765 in Malaysia?",
+                        "answer": "You can purchase directly from Furnishings.com.my with nationwide delivery and bulk procurement options."
+                    }
+                ],
+                "call_to_action": {
+                    "primary": "Ready to upgrade to Versafloor PY20765? Book a free consultation or bulk quote at Furnishings.com.my!",
+                    "secondary": "Request a sample or contact our flooring specialists at Furnishings.com.my for project support.",
+                    "tertiary": "Explore our commercial vinyl sheet flooring options or best vinyl flooring for home at Furnishings.com.my."
+                },
+                "status": "active",
+                "created_at": "2025-07-17",
+                "updated_at": "2025-07-17",
+                "additional_description": {
+                    "headline": "Versafloor Vinyl Sheet PY20765 | Modern Vinyl Flooring Malaysia",
+                    "sections": [
+                        {
+                            "title": "Unreliable Flooring Solutions",
+                            "content": "The Problem: Low-grade vinyl sheets crack, peel, and slip — costing time, money, and safety. The Agitation: These issues can lead to injuries, downtime, and even regulatory compliance concerns. The Solution: Versafloor PY20765 is an anti-slip, water-resistant, and durable vinyl sheet flooring built to last in both home and commercial applications."
+                        },
+                        {
+                            "title": "Engineered for High-Traffic Commercial Spaces",
+                            "content": "PY20765: A Smart Choice for Enterprise Environments: Water-Resistant Surface: Prevent moisture damage in cafes, clinics, malls, and office spaces. Anti-Slip Protection: Meet safety standards while minimizing risk in high-footfall areas. Modern Aesthetic: Clean, minimalist design that complements both classic and contemporary interiors."
+                        },
+                        {
+                            "title": "Designed for Homes, Built for Business",
+                            "content": "Whether you're outfitting a residential project, retail location, or corporate facility, Versafloor PY20765 delivers reliable performance without compromising on visual appeal. Its flexibility and roll design also allow easy installation and minimal downtime – essential for active work environments or fast-paced renovations."
+                        },
+                        {
+                            "title": "Trusted by Architects & Builders in Malaysia",
+                            "content": "Versafloor has become a go-to for procurement teams who value affordability, longevity, and compliance. Our PY20765 variant stands out for its balance of cost-efficiency and premium finish—backed by positive reviews from leading Malaysian developers."
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "product": {
+                "id": "PY20895",
+                "name": "Versafloor Vinyl Sheet PY20895",
+                "slug": "versafloor-vinyl-sheet-py20895",
+                "category": "Vinyl Sheet Flooring",
+                "brand": "Versafloor",
+                "images": {
+                    "main_image": "/vinyal_sheet/PY20895.jpg",
+                    "gallery": ["/vinyal_sheet/PY20895.jpg"],
+                    "thumbnails": ["/vinyal_sheet/PY20895.jpg"],
+                    "alt_texts": [
+                        "Versafloor PY20895 vinyl sheet in Malaysian home interior",
+                        "Versafloor Vinyl Sheet PY20895 – waterproof vinyl flooring Malaysia",
+                        "Durable wood-design Versafloor PY20895 vinyl sheet for homes and offices",
+                        "Premium vinyl sheet flooring PY20895 in modern Malaysian commercial space"
+                    ]
+                },
+                "seo": {
+                    "meta_title": "Versafloor Vinyl Sheet PY20895 | Waterproof Vinyl Flooring Malaysia",
+                    "meta_description": "Discover Versafloor PY20895 – premium, durable, and waterproof vinyl sheet flooring with wood design for homes and commercial spaces in Malaysia. Shop at Furnishings.com.my!",
+                    "keywords": [
+                        "vinyl sheet flooring Malaysia",
+                        "waterproof vinyl flooring",
+                        "Versafloor vinyl sheet",
+                        "best vinyl sheet flooring",
+                        "vinyl flooring supplier Malaysia",
+                        "cheap vinyl flooring Malaysia",
+                        "durable vinyl flooring sheets",
+                        "wood design vinyl sheet",
+                        "vinyl flooring for home Malaysia",
+                        "buy vinyl sheet flooring online"
+                    ]
+                },
+                "description": {
+                    "short": "Discover Versafloor PY20895 – premium, durable, and waterproof vinyl sheet flooring with wood design for homes and commercial spaces in Malaysia. Shop at Furnishings.com.my!",
+                    "long": "Tired of floors that warp with humidity or fade under heavy use? Wondering why your renovation investments don’t last long? For decision-makers managing corporate spaces, hospitality venues, or high-traffic residential units, poor flooring isn't just a maintenance issue — it's a cost liability. Introducing Versafloor Vinyl Sheet PY20895, engineered for Malaysia’s unique climate and business environments, this waterproof vinyl flooring solution combines durability, design, and affordability — trusted by homeowners and enterprises alike."
+                },
+                "features": {
+                    "main_features": [
+                        "100% Waterproof: Resists moisture, preventing warping, mildew, and decay.",
+                        "Wood-Design Aesthetic: Natural wood-grain texture for a luxury look.",
+                        "High Durability: Built for high-traffic commercial and residential use.",
+                        "Anti-Slip Surface: Enhances safety in wet and busy areas.",
+                        "Low Maintenance: Seamless sheet layout with easy-clean surface.",
+                        "Fade-Resistant Finish: Maintains aesthetic appeal over time."
+                    ],
+                    "benefits": [
+                        "Protects against water damage in Malaysia’s humid climate",
+                        "Reduces repair costs by up to 40% with high-resilience material",
+                        "Elevates interiors with modern, wood-like elegance",
+                        "Ensures safety with anti-slip properties",
+                        "Supports cost-efficient bulk procurement for large projects",
+                        "Trusted by Malaysian developers for reliability and style"
+                    ],
+                    "design_compatibility": ["Modern", "Contemporary", "Luxury", "Residential"]
+                },
+                "specifications": {
+                    "waterproof": true,
+                    "slip_resistant": true,
+                    "product_code": "PY20895",
+                    "category": "Vinyl Sheet Flooring",
+                    "width": "6ft",
+                    "length": "66ft",
+                    "thickness": "2.0mm",
+                    "wear_layer": "0.3mm",
+                    "finish": "Matte, wood-grain texture",
+                    "color_tone": "Natural wood",
+                    "material": "Premium PVC with protective wear layer",
+                    "application_areas": ["Residential", "Commercial", "Corporate Offices", "Hospitality", "Retail"],
+                    "installation_surface": ["Concrete", "Cement board", "Tile", "Plywood"],
+                    "durability": "10 to 15 years",
+                    "anti_slip_rating": "R10",
+                    "maintenance": "Sweep or vacuum regularly, clean with a damp mop using mild detergent. Avoid abrasive cleaners."
+                },
+                "installation": {
+                    "method": ["Glue-down method", "Loose lay method"],
+                    "surface_types": ["Concrete", "Cement board", "Tile", "Plywood"],
+                    "diy_friendly": true,
+                    "professional_recommended": true,
+                    "requirements": [
+                        "Ensure a clean, dry, and level subfloor",
+                        "Use appropriate adhesive for glue-down method in high-traffic areas",
+                        "Loose lay method suitable for smaller spaces",
+                        "Seal seams for moisture protection in wet areas"
+                    ],
+                    "guide": "Versafloor’s seamless sheet layout simplifies installation, reducing disruption and ensuring a uniform finish. Download our vinyl flooring installation guide from Furnishings.com.my for detailed instructions or contact us for professional installation support."
+                },
+                "maintenance": {
+                    "cleaning_method": "Sweep or vacuum regularly, clean with a damp mop using mild detergent. Avoid abrasive cleaners.",
+                    "special_treatments": "No waxing, sealing, or polishing required",
+                    "no_waxing": true,
+                    "no_polishing": true,
+                    "no_sealants": true
+                },
+                "faqs": [
+                    {
+                        "question": "What makes PY20895 suitable for Malaysia?",
+                        "answer": "It’s fully waterproof and heat-resistant, making it ideal for the country's humid climate."
+                    },
+                    {
+                        "question": "Is this vinyl flooring safe for homes with children?",
+                        "answer": "Yes. It’s anti-slip and made from non-toxic materials."
+                    },
+                    {
+                        "question": "How does it compare with vinyl tiles?",
+                        "answer": "Sheets offer a seamless surface, ideal for water resistance and easier cleaning."
+                    },
+                    {
+                        "question": "Can I order in bulk for commercial projects?",
+                        "answer": "Absolutely. We offer customized quotes and delivery options for enterprises."
+                    },
+                    {
+                        "question": "Do you offer installation?",
+                        "answer": "Yes, we provide professional vinyl flooring installation support across Malaysia."
+                    },
+                    {
+                        "question": "How long does PY20895 vinyl flooring last?",
+                        "answer": "With proper care, PY20895 lasts 10–15 years, even in high-traffic environments."
+                    }
+                ],
+                "call_to_action": {
+                    "primary": "Buy Versafloor Vinyl Sheet PY20895 online today at Furnishings.com.my!",
+                    "secondary": "Contact our enterprise team for bulk pricing and installation support.",
+                    "tertiary": "Explore our Vinyl Flooring Installation Guide and other Versafloor Vinyl Sheet options at Furnishings.com.my."
+                },
+                "status": "active",
+                "created_at": "2025-07-17",
+                "updated_at": "2025-07-17",
+                "additional_description": {
+                    "headline": "Versafloor Vinyl Sheet PY20895 | Waterproof Vinyl Flooring Malaysia",
+                    "sections": [
+                        {
+                            "title": "Built for Malaysia's Climate: 100% Waterproof Protection",
+                            "content": "Don’t let tropical humidity ruin your interiors. Versafloor PY20895 resists moisture, preventing warping, mildew, and decay — ideal for kitchens, bathrooms, and office floors exposed to foot traffic and spills. Problem: Traditional wood or laminate swells in humidity. Agitation: Leads to frequent replacements, mold, and long-term damage. Solution: Our waterproof vinyl sheet protects your investment and extends floor life."
+                        },
+                        {
+                            "title": "Authentic Wood Design Without the Maintenance",
+                            "content": "Enjoy the look of luxury wood with none of the hassle. The PY20895 features a natural wood-grain texture and finish, perfect for clients seeking a modern, high-end aesthetic at a fraction of the cost. Key Visual Benefits: Natural wood-look surface, Seamless sheet layout (no dust-collecting joints), Fade-resistant finish."
+                        },
+                        {
+                            "title": "Long-Term Durability, Built for Commercial & Residential Use",
+                            "content": "Whether you’re managing a corporate office, a retail store, or a busy household, this vinyl sheet delivers unmatched endurance. It stands up to: High foot traffic, Furniture movement, Children and pet activity. Impact: Reduce annual floor repair costs by 40% with high-resilience sheet flooring."
+                        },
+                        {
+                            "title": "Affordable Luxury Without Compromise",
+                            "content": "Looking for cheap vinyl flooring in Malaysia that doesn’t feel cheap? The PY20895 is competitively priced to suit project budgets of any size — from home renovations to multi-floor commercial installations. Cost-efficient per square foot, Minimal installation disruption, Available for bulk procurement."
+                        },
+                        {
+                            "title": "Trusted by Malaysia’s Leading Interior Suppliers",
+                            "content": "We’re not just a flooring provider — we’re a long-term partner for contractors, architects, and procurement teams seeking quality, consistency, and fast turnaround. 'After switching to Versafloor, we’ve had zero water damage reports in our units over the past 18 months.' – KL-based Real Estate Developer."
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "product": {
+                "id": "SK20054",
+                "name": "Versafloor Vinyl Sheet SK20054",
+                "slug": "versafloor-vinyl-sheet-sk20054",
+                "category": "Vinyl Sheet Flooring",
+                "brand": "Versafloor",
+                "images": {
+                    "main_image": "/vinyal_sheet/SK20054.jpg",
+                    "gallery": ["/vinyal_sheet/SK20054.jpg"],
+                    "thumbnails": ["/vinyal_sheet/SK20054.jpg"],
+                    "alt_texts": [
+                        "Versafloor SK20054 vinyl sheet in Malaysian commercial interior",
+                        "Versafloor Vinyl Sheet SK20054 – waterproof vinyl flooring Malaysia",
+                        "Durable and modern Versafloor SK20054 vinyl sheet for homes and offices",
+                        "Premium vinyl sheet flooring SK20054 in Malaysian residential space"
+                    ]
+                },
+                "seo": {
+                    "meta_title": "Versafloor Vinyl Sheet SK20054 | Waterproof Vinyl Flooring Malaysia",
+                    "meta_description": "Discover the Versafloor Vinyl Sheet SK20054 – waterproof, modern, and durable vinyl flooring in Malaysia. Ideal for homes and commercial spaces. Buy vinyl sheet flooring online today.",
+                    "keywords": [
+                        "SK20054 vinyl sheet Malaysia",
+                        "Versafloor vinyl sheet",
+                        "vinyl flooring Malaysia",
+                        "best vinyl flooring for homes",
+                        "waterproof vinyl flooring",
+                        "affordable vinyl sheet flooring",
+                        "modern vinyl sheet design",
+                        "luxury vinyl sheet flooring",
+                        "durable flooring options Malaysia",
+                        "buy vinyl sheet flooring online"
+                    ]
+                },
+                "description": {
+                    "short": "Discover the Versafloor Vinyl Sheet SK20054 – waterproof, modern, and durable vinyl flooring for homes and commercial spaces in Malaysia. Buy online at Furnishings.com.my!",
+                    "long": "Are you tired of dealing with flooring that wears out too quickly or fails under moisture? Is your commercial space losing appeal due to outdated floor designs? What could subpar flooring be costing your business in long-term maintenance and lost impressions? These are real concerns for both homeowners and corporate buyers. Outdated, fragile, or high-maintenance flooring doesn’t just ruin the aesthetics — it directly affects your reputation, operations, and long-term ROI. The Versafloor Vinyl Sheet SK20054 offers the ideal combination of waterproof durability, elegant design, and affordability, making it one of the best vinyl flooring options in Malaysia."
+                },
+                "features": {
+                    "main_features": [
+                        "100% Waterproof: Protects against spills, leaks, and Malaysia’s humid climate.",
+                        "High Durability: Scratch-resistant and dent-proof for high-traffic areas.",
+                        "Modern Design: Elegant matte finish with wood or stone aesthetics.",
+                        "Anti-Slip Surface: Enhances safety in wet and busy environments.",
+                        "Easy Installation: Glue-down friendly for quick project turnaround.",
+                        "Low Maintenance: Easy to clean with standard detergents."
+                    ],
+                    "benefits": [
+                        "Eliminates moisture damage in humid and spill-prone areas",
+                        "Reduces maintenance costs with durable, long-lasting material",
+                        "Enhances interiors with modern, luxury aesthetics",
+                        "Ensures safety with anti-slip properties",
+                        "Supports efficient installation for minimal downtime",
+                        "Cost-effective solution for residential and commercial projects"
+                    ],
+                    "design_compatibility": ["Modern", "Contemporary", "Luxury", "Professional"]
+                },
+                "specifications": {
+                    "waterproof": true,
+                    "slip_resistant": true,
+                    "product_code": "SK20054",
+                    "category": "Vinyl Sheet Flooring",
+                    "width": "6ft",
+                    "length": "66ft",
+                    "thickness": "2.0mm",
+                    "wear_layer": "0.3mm",
+                    "finish": "Matte, wood or stone-inspired",
+                    "color_tone": "Neutral, modern",
+                    "material": "Premium PVC with protective wear layer",
+                    "application_areas": ["Residential", "Commercial", "Retail", "Offices", "Hospitality"],
+                    "installation_surface": ["Concrete", "Cement board", "Tile", "Plywood"],
+                    "durability": "10 to 15 years",
+                    "anti_slip_rating": "R10",
+                    "maintenance": "Sweep or vacuum regularly, clean with a damp mop using mild detergent. Avoid abrasive cleaners."
+                },
+                "installation": {
+                    "method": ["Glue-down method", "Loose lay method"],
+                    "surface_types": ["Concrete", "Cement board", "Tile", "Plywood"],
+                    "diy_friendly": true,
+                    "professional_recommended": true,
+                    "requirements": [
+                        "Ensure a clean, dry, and level subfloor",
+                        "Use appropriate adhesive for glue-down method in high-traffic areas",
+                        "Loose lay method suitable for smaller spaces",
+                        "Seal seams for moisture protection in wet areas"
+                    ],
+                    "guide": "Versafloor’s glue-down friendly design ensures quick installation with minimal disruption. Download our vinyl flooring installation guide from Furnishings.com.my for detailed instructions or contact us for professional installation support."
+                },
+                "maintenance": {
+                    "cleaning_method": "Sweep or vacuum regularly, clean with a damp mop using mild detergent. Avoid abrasive cleaners.",
+                    "special_treatments": "No waxing, sealing, or polishing required",
+                    "no_waxing": true,
+                    "no_polishing": true,
+                    "no_sealants": true
+                },
+                "faqs": [
+                    {
+                        "question": "Is the SK20054 vinyl sheet suitable for commercial use?",
+                        "answer": "Yes. It’s designed for both residential and heavy-duty commercial use, offering excellent durability and water resistance."
+                    },
+                    {
+                        "question": "Can I install Versafloor SK20054 in bathrooms or kitchens?",
+                        "answer": "Absolutely. Its waterproof properties make it ideal for moisture-prone areas."
+                    },
+                    {
+                        "question": "How long does this vinyl sheet flooring last?",
+                        "answer": "With proper care, Versafloor SK20054 can last 10–15 years or longer in residential and commercial settings."
+                    },
+                    {
+                        "question": "Do you offer installation services in Malaysia?",
+                        "answer": "Yes, we provide professional installation support and guidance across Malaysia."
+                    },
+                    {
+                        "question": "Is this product available for bulk orders or procurement tenders?",
+                        "answer": "Yes. We work with enterprises and procurement teams. Contact us for a bulk quotation or corporate pricing."
+                    }
+                ],
+                "call_to_action": {
+                    "primary": "Contact Us for Bulk Pricing or Custom Flooring Solutions at Furnishings.com.my!",
+                    "secondary": "Request a sample or schedule a consultation with our flooring experts at Furnishings.com.my.",
+                    "tertiary": "Explore Versafloor Vinyl Sheet PY20765 and Vinyl Floor Accessories at Furnishings.com.my."
+                },
+                "status": "active",
+                "created_at": "2025-07-17",
+                "updated_at": "2025-07-17",
+                "additional_description": {
+                    "headline": "Versafloor Vinyl Sheet SK20054 – Modern, Waterproof Vinyl Flooring Malaysia",
+                    "sections": [
+                        {
+                            "title": "100% Waterproof Vinyl Flooring",
+                            "content": "Problem: Traditional flooring materials like wood or laminate swell, stain, or warp when exposed to moisture. Agitate: In high-humidity areas or spill-prone zones, this means costly replacements and safety hazards. Solution: Versafloor SK20054 is fully waterproof, protecting against leaks, spills, and humidity — perfect for homes, bathrooms, kitchens, and commercial installations in Malaysia’s tropical climate."
+                        },
+                        {
+                            "title": "Durable Flooring that Withstands Heavy Foot Traffic",
+                            "content": "Problem: Low-quality vinyl sheets degrade under constant use, especially in commercial settings. Agitate: This leads to frequent replacements, higher lifecycle costs, and a poor image for your brand or business. Solution: The Versafloor SK20054 is engineered with long-lasting durability. Its tough top layer resists scratches, dents, and wear — making it an excellent choice for corporate offices, retail spaces, and hospitality environments."
+                        },
+                        {
+                            "title": "Luxury Finish Without the Luxury Price",
+                            "content": "Problem: High-end flooring options are often priced beyond reach or take weeks to source. Agitate: This delays your project timelines and pushes budgets over the limit. Solution: Versafloor SK20054 offers a luxury vinyl sheet design at a highly affordable rate. Enjoy a modern aesthetic with the look of wood or stone, minus the cost or maintenance headaches."
+                        },
+                        {
+                            "title": "Real Results from Real Clients",
+                            "content": "‘We upgraded our entire office flooring with SK20054. It completely transformed the look and functionality – and it’s holding up perfectly months later.’ – Facilities Manager, Selangor Tech Hub. ‘Easy to install and easy on the eyes. Our interior design clients specifically request this finish for new condo projects.’ – Interior Contractor, Kuala Lumpur."
+                        },
+                        {
+                            "title": "Choose a Trusted Vinyl Flooring Supplier in Malaysia",
+                            "content": "Furnishings.com.my is a leading supplier of vinyl sheet flooring in Malaysia, trusted by homeowners and enterprise clients alike. Our expert team is ready to support your procurement team with fast quotes, expert consultation, and bulk ordering options."
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "product": {
+                "id": "SK20055",
+                "name": "Versafloor Vinyl Sheet SK20055",
+                "slug": "versafloor-vinyl-sheet-sk20055",
+                "category": "Vinyl Sheet Flooring",
+                "brand": "Versafloor",
+                "images": {
+                    "main_image": "/vinyal_sheet/SK20055.jpg",
+                    "gallery": ["/vinyal_sheet/SK20055.jpg"],
+                    "thumbnails": ["/vinyal_sheet/SK20055.jpg"],
+                    "alt_texts": [
+                        "Versafloor SK20055 vinyl sheet in Malaysian modern interior",
+                        "Versafloor Vinyl Sheet SK20055 – waterproof durable vinyl flooring Malaysia",
+                        "Modern and durable Versafloor SK20055 vinyl sheet for homes and offices",
+                        "Premium vinyl sheet flooring SK20055 in Malaysian commercial space"
+                    ]
+                },
+                "seo": {
+                    "meta_title": "Versafloor Vinyl Sheet SK20055 | Durable Waterproof Flooring Malaysia",
+                    "meta_description": "Discover Versafloor Vinyl Sheet SK20055 – durable, waterproof vinyl flooring in Malaysia. Perfect for modern homes and commercial spaces. Buy vinyl sheet online now.",
+                    "keywords": [
+                        "Versafloor Vinyl Sheet SK20055",
+                        "vinyl sheet Malaysia",
+                        "waterproof vinyl flooring Malaysia",
+                        "buy vinyl sheet online Malaysia",
+                        "durable vinyl flooring",
+                        "modern vinyl sheet design",
+                        "best vinyl flooring for home"
+                    ]
+                },
+                "description": {
+                    "short": "Discover Versafloor SK20055 – durable, waterproof vinyl sheet flooring for modern homes and commercial spaces in Malaysia. Buy online at Furnishings.com.my!",
+                    "long": "Are outdated flooring materials costing you more in long-term repairs and replacements? Is your current vinyl flooring failing to meet durability or design expectations in high-traffic spaces? When your workspace or residential interiors are constantly worn down by foot traffic, moisture, and shifting interior trends, it’s not just an aesthetic issue—it becomes a productivity and cost concern. Poor-quality flooring leads to higher maintenance costs, dissatisfied tenants, and expensive re-installations. Versafloor Vinyl Sheet SK20055 solves this problem with a high-performance, waterproof solution built for modern homes, offices, retail chains, and enterprise-level facilities in Malaysia."
+                },
+                "features": {
+                    "main_features": [
+                        "100% Waterproof Construction: Protects against moisture, spills, and Malaysia’s humid climate.",
+                        "Anti-Slip Textured Surface: Enhances safety in wet and high-traffic areas.",
+                        "Scratch-Resistant Wear Layer: Ensures durability for commercial and residential use.",
+                        "Modern Design: Neutral tone and grain texture for contemporary aesthetics.",
+                        "Cushioned Underfoot: Provides comfort and sound reduction.",
+                        "Low Maintenance: Easy to clean with standard detergents."
+                    ],
+                    "benefits": [
+                        "Eliminates water damage, mold, and surface bubbling",
+                        "Reduces maintenance and replacement costs with up to 15 years durability",
+                        "Elevates interiors with sleek, modern vinyl sheet design",
+                        "Ensures safety with anti-slip properties",
+                        "Supports fast installation for minimal project downtime",
+                        "Trusted by Malaysian enterprises for quality and reliability"
+                    ],
+                    "design_compatibility": ["Modern", "Contemporary", "Professional", "Residential"]
+                },
+                "specifications": {
+                    "waterproof": true,
+                    "slip_resistant": true,
+                    "product_code": "SK20055",
+                    "category": "Vinyl Sheet Flooring",
+                    "width": "6ft",
+                    "length": "66ft",
+                    "thickness": "2.0mm",
+                    "wear_layer": "0.3mm",
+                    "finish": "Matte, grain texture",
+                    "color_tone": "Neutral, modern",
+                    "material": "Premium PVC with protective wear layer",
+                    "application_areas": ["Residential", "Commercial", "Offices", "Retail", "Kitchens", "Bathrooms"],
+                    "installation_surface": ["Concrete", "Cement board", "Tile", "Plywood"],
+                    "durability": "10 to 15 years",
+                    "anti_slip_rating": "R10",
+                    "maintenance": "Sweep or vacuum regularly, clean with a damp mop using mild detergent. Avoid abrasive cleaners."
+                },
+                "installation": {
+                    "method": ["Glue-down method", "Loose lay method"],
+                    "surface_types": ["Concrete", "Cement board", "Tile", "Plywood"],
+                    "diy_friendly": true,
+                    "professional_recommended": true,
+                    "requirements": [
+                        "Ensure a clean, dry, and level subfloor",
+                        "Use appropriate adhesive for glue-down method in high-traffic areas",
+                        "Loose lay method suitable for smaller spaces",
+                        "Seal seams for moisture protection in wet areas"
+                    ],
+                    "guide": "Versafloor’s sheet format reduces seams and installation time, ensuring a uniform finish. Download our vinyl flooring installation guide from Furnishings.com.my for detailed instructions or contact us for professional installation support."
+                },
+                "maintenance": {
+                    "cleaning_method": "Sweep or vacuum regularly, clean with a damp mop using mild detergent. Avoid abrasive cleaners.",
+                    "special_treatments": "No waxing, sealing, or polishing required",
+                    "no_waxing": true,
+                    "no_polishing": true,
+                    "no_sealants": true
+                },
+                "faqs": [
+                    {
+                        "question": "Is Versafloor SK20055 suitable for wet areas like kitchens and bathrooms?",
+                        "answer": "Yes, it’s 100% waterproof and highly recommended for moisture-prone areas."
+                    },
+                    {
+                        "question": "Can this vinyl sheet handle heavy commercial traffic?",
+                        "answer": "Absolutely. The durable wear layer makes it ideal for retail, office, and other commercial settings."
+                    },
+                    {
+                        "question": "How do I buy Versafloor Vinyl Sheet SK20055 in Malaysia?",
+                        "answer": "You can buy vinyl sheet flooring online at furnishings.com.my or contact us directly for B2B pricing."
+                    },
+                    {
+                        "question": "How does this compare to tiles or laminate flooring?",
+                        "answer": "Vinyl sheets offer better water resistance, faster installation, and often lower lifecycle costs than traditional tile or laminate options."
+                    },
+                    {
+                        "question": "Can I order a sample before placing a bulk order?",
+                        "answer": "Yes, we provide samples upon request for enterprise procurement teams."
+                    }
+                ],
+                "call_to_action": {
+                    "primary": "Get enterprise pricing for Versafloor Vinyl Sheet SK20055 at Furnishings.com.my!",
+                    "secondary": "Ask about bulk orders or request a consultation for commercial projects at Furnishings.com.my.",
+                    "tertiary": "Explore our vinyl flooring range and download our installation guide at Furnishings.com.my."
+                },
+                "status": "active",
+                "created_at": "2025-07-17",
+                "updated_at": "2025-07-17",
+                "additional_description": {
+                    "headline": "Versafloor Vinyl Sheet SK20055 – Durable Waterproof Flooring for Modern Spaces",
+                    "sections": [
+                        {
+                            "title": "Waterproof Vinyl Flooring Built to Withstand Malaysian Conditions",
+                            "content": "The Pain – Flooring That Can’t Handle Moisture or Daily Wear: Humidity and sudden temperature shifts in Malaysia can wear down traditional flooring faster than expected. Water damage, mold, and surface bubbling ruin the longevity and look of your space. The Agitation – What Happens If You Ignore It: Neglecting proper waterproof flooring leads to continuous repairs, downtime during renovations, and safety hazards like slips or warped edges. The Solution – Versafloor Vinyl Sheet SK20055: 100% waterproof vinyl construction, Anti-slip textured surface, Ideal for kitchens, bathrooms, offices, and high-traffic commercial areas, Easy to clean and low maintenance."
+                        },
+                        {
+                            "title": "Premium Design Meets Commercial Durability",
+                            "content": "Style that Speaks to Modern Aesthetics: Versafloor SK20055 offers a sleek, modern vinyl sheet design that fits contemporary interior themes—without compromising strength. Its neutral tone and grain texture elevate any environment. Heavy-Duty Performance for Enterprise Use: Scratch-resistant surface layer, Cushioned underfoot for comfort and sound reduction, Long-lasting under high traffic (up to 15 years with proper care)."
+                        },
+                        {
+                            "title": "Why Procurement Teams Choose Versafloor Vinyl Sheets",
+                            "content": "Built for Quick Installation and Long-Term Savings: Sheet format reduces seams and install time, Compatible with multiple subfloor types, Budget-friendly without compromising quality. Versafloor’s Commitment to Enterprise Clients: We’re trusted by leading Malaysian interior contractors for a reason—our supply chain is fast, reliable, and supported with customer-first service."
+                        },
+                        {
+                            "title": "Proven Results Across Sectors",
+                            "content": "Corporate Offices: Quiet, cushioned, and durable surface ideal for productivity spaces. Residential Projects: Waterproof for kitchens and bathrooms. Retail Stores: Scratch-resistant for high footfall environments. Join hundreds of enterprises who trust Furnishings Malaysia for their vinyl sheet flooring solutions."
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "product": {
+                "id": "SK20068",
+                "name": "Versafloor Vinyl Sheet SK20068",
+                "slug": "versafloor-vinyl-sheet-sk20068",
+                "category": "Vinyl Sheet Flooring",
+                "brand": "Versafloor",
+                "images": {
+                    "main_image": "/vinyal_sheet/SK20068.jpg",
+                    "gallery": ["/vinyal_sheet/SK20068.jpg"],
+                    "thumbnails": ["/vinyal_sheet/SK20068.jpg"],
+                    "alt_texts": [
+                        "Versafloor SK20068 vinyl sheet in Malaysian commercial interior",
+                        "Versafloor Vinyl Sheet SK20068 – waterproof durable vinyl flooring Malaysia",
+                        "Modern and durable Versafloor SK20068 vinyl sheet for homes and offices",
+                        "Premium vinyl sheet flooring SK20068 in Malaysian residential space"
+                    ]
+                },
+                "seo": {
+                    "meta_title": "Versafloor Vinyl Sheet SK20068 | Waterproof Vinyl Flooring Malaysia",
+                    "meta_description": "Shop Versafloor Vinyl Sheet SK20068 – A premium, waterproof, and durable vinyl flooring solution in Malaysia. Perfect for modern homes and commercial spaces.",
+                    "keywords": [
+                        "Versafloor Vinyl Sheet SK20068",
+                        "vinyl sheet Malaysia",
+                        "waterproof vinyl flooring Malaysia",
+                        "buy vinyl sheet online Malaysia",
+                        "durable vinyl flooring",
+                        "modern vinyl sheet design",
+                        "best vinyl flooring for home"
+                    ]
+                },
+                "description": {
+                    "short": "Discover Versafloor SK20068 – durable, waterproof vinyl sheet flooring for modern homes and commercial spaces in Malaysia. Buy online at Furnishings.com.my!",
+                    "long": "Are you constantly dealing with flooring that doesn’t withstand wear and tear? Is your space looking outdated, or harder to maintain than it should be? What is the long-term cost of settling for low-quality flooring solutions? These are real concerns faced by facilities teams and procurement officers across Malaysia. Outdated or low-grade flooring not only increases maintenance costs but also reflects poorly on your brand — especially in client-facing environments. Versafloor Vinyl Sheet SK20068 is designed to solve these exact issues — providing a durable, waterproof, and design-forward flooring solution for enterprises that demand more."
+                },
+                "features": {
+                    "main_features": [
+                        "100% Waterproof Construction: Protects against spills, moisture, and Malaysia’s humid climate.",
+                        "Wear-Resistant Surface: Engineered for heavy foot traffic and scratch resistance.",
+                        "Modern Design: Sleek wood-inspired finish in neutral tones for versatile aesthetics.",
+                        "Anti-Slip Textured Surface: Enhances safety in high-traffic and wet areas.",
+                        "Low Maintenance: Easy to clean with a damp mop or vinyl-safe solution.",
+                        "Quick Installation: Sheet format minimizes seams and installation time."
+                    ],
+                    "benefits": [
+                        "Eliminates water damage, mold, and swelling in humid environments",
+                        "Reduces maintenance and replacement costs with up to 15 years durability",
+                        "Enhances brand image with modern, professional aesthetics",
+                        "Ensures safety with anti-slip properties",
+                        "Supports efficient installation for minimal project downtime",
+                        "Trusted by Malaysian enterprises for quality and cost-effectiveness"
+                    ],
+                    "design_compatibility": ["Modern", "Contemporary", "Professional", "Residential"]
+                },
+                "specifications": {
+                    "waterproof": true,
+                    "slip_resistant": true,
+                    "product_code": "SK20068",
+                    "category": "Vinyl Sheet Flooring",
+                    "width": "6ft",
+                    "length": "66ft",
+                    "thickness": "2.0mm",
+                    "wear_layer": "0.3mm",
+                    "finish": "Matte, wood-inspired",
+                    "color_tone": "Neutral, modern",
+                    "material": "Premium PVC with protective wear layer",
+                    "application_areas": ["Residential", "Commercial", "Offices", "Retail", "Kitchens", "Bathrooms"],
+                    "installation_surface": ["Concrete", "Cement board", "Tile", "Plywood"],
+                    "durability": "10 to 15 years",
+                    "anti_slip_rating": "R10",
+                    "maintenance": "Routine cleaning with a damp mop or vinyl-safe solution is enough. No waxing or polishing needed."
+                },
+                "installation": {
+                    "method": ["Glue-down method", "Loose lay method"],
+                    "surface_types": ["Concrete", "Cement board", "Tile", "Plywood"],
+                    "diy_friendly": true,
+                    "professional_recommended": true,
+                    "requirements": [
+                        "Ensure a clean, dry, and level subfloor",
+                        "Use appropriate adhesive for glue-down method in high-traffic areas",
+                        "Loose lay method suitable for smaller spaces",
+                        "Seal seams for moisture protection in wet areas"
+                    ],
+                    "guide": "Versafloor’s sheet format minimizes seams and installation time, ensuring a uniform finish. Contact Furnishings.com.my for a detailed vinyl flooring installation guide or professional installation support."
+                },
+                "maintenance": {
+                    "cleaning_method": "Routine cleaning with a damp mop or vinyl-safe solution is enough. No waxing or polishing needed.",
+                    "special_treatments": "No waxing, sealing, or polishing required",
+                    "no_waxing": true,
+                    "no_polishing": true,
+                    "no_sealants": true
+                },
+                "faqs": [
+                    {
+                        "question": "Is Versafloor SK20068 suitable for high-traffic commercial spaces?",
+                        "answer": "Yes, it's engineered for durability and designed to handle heavy footfall without wearing down."
+                    },
+                    {
+                        "question": "Can I use this vinyl sheet in wet areas like kitchens or bathrooms?",
+                        "answer": "Absolutely. It’s 100% waterproof and ideal for moisture-prone areas."
+                    },
+                    {
+                        "question": "How do I maintain Versafloor SK20068?",
+                        "answer": "Routine cleaning with a damp mop or vinyl-safe solution is enough. No waxing or polishing needed."
+                    },
+                    {
+                        "question": "Is this product available for bulk or enterprise orders?",
+                        "answer": "Yes. We cater to large-scale procurement and offer special terms for bulk buyers."
+                    },
+                    {
+                        "question": "Where can I buy Versafloor SK20068 vinyl sheet online in Malaysia?",
+                        "answer": "You can order directly from furnishings.com.my, with nationwide delivery options."
+                    }
+                ],
+                "call_to_action": {
+                    "primary": "Request a Free Consultation for Versafloor Vinyl Sheet SK20068 at Furnishings.com.my!",
+                    "secondary": "Contact us for bulk orders or tailored design solutions at Furnishings.com.my.",
+                    "tertiary": "Explore our Flooring Projects and browse more Vinyl Sheet Options at Furnishings.com.my."
+                },
+                "status": "active",
+                "created_at": "2025-07-17",
+                "updated_at": "2025-07-17",
+                "additional_description": {
+                    "headline": "Versafloor Vinyl Sheet SK20068 – Waterproof Vinyl Flooring for Modern Spaces in Malaysia",
+                    "sections": [
+                        {
+                            "title": "Built for Durability – A Long-Term Flooring Investment",
+                            "content": "Avoid Frequent Replacements and Downtime: Cheap flooring options break down quickly. This means unexpected downtime, increased facility maintenance, and additional replacement costs. Versafloor SK20068 is crafted with premium-grade vinyl, engineered to withstand heavy foot traffic, spills, scratches, and more. Ideal for commercial spaces, offices, and large-scale residential projects. Long-lasting durability, Wear-resistant surface, Cost-effective over time."
+                        },
+                        {
+                            "title": "100% Waterproof Protection for Any Environment",
+                            "content": "Eliminate Mold, Swelling & Maintenance Hassles: In Malaysia’s humid climate, moisture-related flooring damage is a serious concern. With waterproof vinyl flooring, Versafloor SK20068 protects your floors from water damage, swelling, and mold — giving your maintenance team one less thing to worry about. Ideal for kitchens, bathrooms, and high-moisture areas, No warping, no bubbling, Hassle-free cleaning."
+                        },
+                        {
+                            "title": "Aesthetic Appeal Meets Functional Design",
+                            "content": "Impress Visitors & Build Brand Trust: Your space says a lot about your brand. Outdated, unattractive flooring can negatively impact how your business is perceived. Versafloor Vinyl Sheet SK20068 offers a modern vinyl sheet design, blending style with practicality. Whether you’re outfitting a luxury showroom or refreshing a busy corridor, this flooring solution delivers visual impact. Sleek wood-inspired finish, Available in neutral tones for easy coordination, Enhances interior aesthetics."
+                        },
+                        {
+                            "title": "Designed for Malaysian Homes & Enterprises",
+                            "content": "Local Relevance, Global Standards: Unlike generic flooring, SK20068 is tailored for the climate and conditions in Malaysia. Whether it’s for a high-rise office or a government project, this product combines global standards with local usability. Sourced and supported in Malaysia, Available for bulk and enterprise orders, Trusted by commercial developers."
+                        },
+                        {
+                            "title": "Proven Success with Versafloor – Trusted Nationwide",
+                            "content": "Hundreds of Malaysian businesses and homeowners have already upgraded to Versafloor Vinyl Sheet SK20068, citing improved appearance, reduced maintenance, and better client impressions."
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "product": {
+                "id": "SK20083",
+                "name": "Versafloor Vinyl Sheet SK20083",
+                "slug": "versafloor-vinyl-sheet-sk20083",
+                "category": "Vinyl Sheet Flooring",
+                "brand": "Versafloor",
+                "images": {
+                    "main_image": "/vinyal_sheet/SK20083.jpg",
+                    "gallery": ["/vinyal_sheet/SK20083.jpg"],
+                    "thumbnails": ["/vinyal_sheet/SK20083.jpg"],
+                    "alt_texts": [
+                        "Versafloor SK20083 vinyl sheet in Malaysian commercial office",
+                        "Versafloor Vinyl Sheet SK20083 – waterproof durable vinyl flooring Malaysia",
+                        "Modern and durable Versafloor SK20083 vinyl sheet for homes and offices",
+                        "Premium vinyl sheet flooring SK20083 in Malaysian retail space"
+                    ]
+                },
+                "seo": {
+                    "meta_title": "Versafloor Vinyl Sheet SK20083 | Waterproof Vinyl Flooring Malaysia",
+                    "meta_description": "Shop Versafloor Vinyl Sheet SK20083 – Durable, modern, and waterproof vinyl flooring in Malaysia. Ideal for homes and offices. Buy vinyl sheet online now.",
+                    "keywords": [
+                        "Versafloor Vinyl Sheet SK20083",
+                        "vinyl sheet Malaysia",
+                        "waterproof vinyl flooring Malaysia",
+                        "buy vinyl sheet online Malaysia",
+                        "durable vinyl flooring",
+                        "modern vinyl sheet design",
+                        "best vinyl flooring for home"
+                    ]
+                },
+                "description": {
+                    "short": "Discover Versafloor SK20083 – durable, waterproof, and modern vinyl sheet flooring for homes and commercial spaces in Malaysia. Buy online at Furnishings.com.my!",
+                    "long": "Is your office space dragging down your brand image with outdated or high-maintenance flooring? Are maintenance costs piling up due to water damage or subpar material quality? If you’re in charge of procurement or facility design, you know flooring isn’t just about looks—it’s a long-term investment. And the wrong decision? It costs time, budget, and business reputation. Versafloor Vinyl Sheet SK20083 offers the durable, waterproof, and aesthetically modern vinyl flooring solution that enterprises in Malaysia are turning to for reliability and performance."
+                },
+                "features": {
+                    "main_features": [
+                        "100% Waterproof Structure: Ideal for Malaysia’s humid climate and heavy indoor use.",
+                        "Scratch & Stain Resistant Surface: Maintains a professional look year-round.",
+                        "Slip-Resistant Texture: Enhances safety in high-traffic areas.",
+                        "High-Density Core: Increases impact resistance for long-term durability.",
+                        "Low Maintenance Finish: Reduces cleaning and upkeep costs.",
+                        "Eco-Friendly Materials: Sustainable and fire-retardant certified."
+                    ],
+                    "benefits": [
+                        "Prevents water damage, mold, and swelling in humid environments",
+                        "Reduces maintenance costs with durable, scratch-resistant material",
+                        "Elevates brand image with modern, seamless aesthetics",
+                        "Ensures safety with slip-resistant properties",
+                        "Supports eco-friendly and fire-safe commercial spaces",
+                        "Trusted by Malaysian enterprises for performance and reliability"
+                    ],
+                    "design_compatibility": ["Modern", "Contemporary", "Professional", "Commercial"]
+                },
+                "specifications": {
+                    "waterproof": true,
+                    "slip_resistant": true,
+                    "product_code": "SK20083",
+                    "category": "Vinyl Sheet Flooring",
+                    "width": "6ft",
+                    "length": "66ft",
+                    "thickness": "2.0mm",
+                    "wear_layer": "0.3mm",
+                    "finish": "Matte, neutral modern texture",
+                    "color_tone": "Neutral, sophisticated",
+                    "material": "Premium PVC with protective wear layer",
+                    "application_areas": ["Commercial Offices", "Coworking Spaces", "Healthcare Facilities", "Educational Institutions", "Hospitality", "Retail"],
+                    "installation_surface": ["Concrete", "Cement board", "Tile", "Plywood"],
+                    "durability": "10 to 15 years",
+                    "anti_slip_rating": "R10",
+                    "maintenance": "Sweep or vacuum regularly, clean with a damp mop using mild detergent. Avoid abrasive cleaners.",
+                    "certifications": ["Fire-Retardant", "Eco-Friendly"]
+                },
+                "installation": {
+                    "method": ["Glue-down method", "Loose lay method"],
+                    "surface_types": ["Concrete", "Cement board", "Tile", "Plywood"],
+                    "diy_friendly": true,
+                    "professional_recommended": true,
+                    "requirements": [
+                        "Ensure a clean, dry, and level subfloor",
+                        "Use appropriate adhesive for glue-down method in high-traffic areas",
+                        "Loose lay method suitable for smaller spaces",
+                        "Seal seams for moisture protection in wet areas"
+                    ],
+                    "guide": "Versafloor’s seamless sheet design ensures quick installation with minimal disruption. Download our vinyl flooring installation guide from Furnishings.com.my for detailed instructions or contact us for professional installation support."
+                },
+                "maintenance": {
+                    "cleaning_method": "Sweep or vacuum regularly, clean with a damp mop using mild detergent. Avoid abrasive cleaners.",
+                    "special_treatments": "No waxing, sealing, or polishing required",
+                    "no_waxing": true,
+                    "no_polishing": true,
+                    "no_sealants": true
+                },
+                "faqs": [
+                    {
+                        "question": "Is Versafloor SK20083 suitable for high-traffic commercial spaces?",
+                        "answer": "Yes, it’s engineered with a high-density core and scratch-resistant surface to handle heavy footfall in offices, retail, and hospitality settings."
+                    },
+                    {
+                        "question": "Can I use Versafloor SK20083 in wet areas?",
+                        "answer": "Absolutely, its 100% waterproof structure makes it ideal for moisture-prone areas like bathrooms, kitchens, and healthcare facilities."
+                    },
+                    {
+                        "question": "How do I maintain Versafloor SK20083?",
+                        "answer": "Routine cleaning with a damp mop or mild detergent is sufficient. No waxing or polishing is needed."
+                    },
+                    {
+                        "question": "Where can I buy Versafloor SK20083 vinyl sheet online in Malaysia?",
+                        "answer": "You can order directly from furnishings.com.my with nationwide delivery options."
+                    },
+                    {
+                        "question": "Does SK20083 meet safety and environmental standards?",
+                        "answer": "Yes, it features a slip-resistant texture, fire-retardant certification, and eco-friendly materials."
+                    }
+                ],
+                "call_to_action": {
+                    "primary": "Request a Free Consultation for Versafloor Vinyl Sheet SK20083 at Furnishings.com.my!",
+                    "secondary": "Contact our commercial flooring specialists for a custom quote or demo at Furnishings.com.my.",
+                    "tertiary": "Explore our vinyl sheet category page for more flooring options at Furnishings.com.my."
+                },
+                "status": "active",
+                "created_at": "2025-07-17",
+                "updated_at": "2025-07-17",
+                "additional_description": {
+                    "headline": "Versafloor Vinyl Sheet SK20083 – Premium Waterproof Vinyl Flooring in Malaysia",
+                    "sections": [
+                        {
+                            "title": "Durable & Waterproof Vinyl Flooring Designed for High-Traffic Commercial Spaces",
+                            "content": "The Problem – Fragile Flooring Fails Under Pressure: Many flooring solutions deteriorate quickly under constant footfall, causing costly repairs, downtime, and safety hazards. What’s worse? Water seepage leads to mold growth, floor swelling, and potential liability in office and commercial environments. The Solution – Versafloor SK20083 Built to Withstand Daily Challenges: 100% Waterproof Structure – Ideal for humid Malaysian climates and heavy indoor use, Scratch & Stain Resistant Surface – Keeps your space looking professional year-round, Low Maintenance Finish – Reduces cleaning and upkeep costs over time, Flexible Yet Durable Composition – Prevents cracks and chips, extending product lifespan."
+                        },
+                        {
+                            "title": "Modern Design That Elevates Brand Image",
+                            "content": "Transform Your Office or Commercial Interiors Instantly: Outdated flooring can cheapen your brand experience. The Versafloor SK20083 features a modern texture and neutral tone that complements a wide range of corporate interiors—from executive offices to client-facing retail areas. Sleek, seamless finish, Sophisticated color scheme, Easy integration with your existing furniture and décor."
+                        },
+                        {
+                            "title": "Versatility That Fits Any Application",
+                            "content": "Whether you're renovating a corporate office, retail chain, or large-scale facility, SK20083 delivers long-lasting performance. Commercial offices & coworking spaces, Healthcare facilities, Educational institutions, Hospitality & retail."
+                        },
+                        {
+                            "title": "Why Choose Versafloor Vinyl Sheet SK20083?",
+                            "content": "High-Density Core for increased impact resistance, Slip-Resistant Texture for enhanced safety, Eco-Friendly Materials, Fire-Retardant Certification."
+                        },
+                        {
+                            "title": "Trusted by Leading Enterprises Across Malaysia",
+                            "content": "Real Results from Real Businesses: ‘Upgrading our office flooring to Versafloor SK20083 was a game-changer. It saved us thousands in maintenance and our clients constantly compliment the look.’ — Procurement Lead, Kuala Lumpur Tech Park."
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "product": {
+                "id": "SK20084",
+                "name": "Versafloor Vinyl Sheet SK20084",
+                "slug": "versafloor-vinyl-sheet-sk20084",
+                "category": "Vinyl Sheet Flooring",
+                "brand": "Versafloor",
+                "images": {
+                    "main_image": "/vinyal_sheet/SK20084.jpg",
+                    "gallery": ["/vinyal_sheet/SK20084.jpg"],
+                    "thumbnails": ["/vinyal_sheet/SK20084.jpg"],
+                    "alt_texts": [
+                        "Versafloor SK20084 vinyl sheet in Malaysian office interior",
+                        "Versafloor Vinyl Sheet SK20084 – waterproof durable vinyl flooring Malaysia",
+                        "Modern and durable Versafloor SK20084 vinyl sheet for homes and commercial spaces",
+                        "Premium vinyl sheet flooring SK20084 in Malaysian retail environment"
+                    ]
+                },
+                "seo": {
+                    "meta_title": "Versafloor Vinyl Sheet SK20084 | Waterproof Vinyl Flooring Malaysia",
+                    "meta_description": "Shop Versafloor Vinyl Sheet SK20084 – durable, modern, and waterproof vinyl flooring in Malaysia. Ideal for homes, offices, and commercial spaces. Buy vinyl sheet flooring online.",
+                    "keywords": [
+                        "Versafloor Vinyl Sheet SK20084",
+                        "vinyl sheet Malaysia",
+                        "waterproof vinyl flooring Malaysia",
+                        "buy vinyl sheet online Malaysia",
+                        "durable vinyl flooring",
+                        "modern vinyl sheet design",
+                        "best vinyl flooring for home"
+                    ]
+                },
+                "description": {
+                    "short": "Discover Versafloor SK20084 – durable, waterproof, and modern vinyl sheet flooring for homes, offices, and commercial spaces in Malaysia. Buy online at Furnishings.com.my!",
+                    "long": "Are your flooring solutions failing to withstand your daily business operations? Is poor-quality flooring silently draining your maintenance budget? Outdated or low-resistance floors can become a silent liability—causing safety hazards, diminishing aesthetics, and leading to repeated replacements. The Versafloor Vinyl Sheet SK20084 offers an enterprise-grade solution that eliminates these risks while upgrading your interiors with a modern, stylish finish."
+                },
+                "features": {
+                    "main_features": [
+                        "100% Waterproof Structure: Protects against spills, leaks, and Malaysia’s humid climate.",
+                        "High-Density Wear Layer: Ensures durability in high-traffic environments.",
+                        "Scratch & Stain Resistant Surface: Maintains a professional appearance over time.",
+                        "Slip-Resistant Texture: Enhances safety in commercial and residential spaces.",
+                        "Anti-Bacterial Coating: Simplifies cleaning and ensures hygiene.",
+                        "Modern Wood-Grain Design: Seamless, minimalist aesthetic for versatile applications."
+                    ],
+                    "benefits": [
+                        "Eliminates water damage and mold in humid environments",
+                        "Reduces maintenance costs with durable, low-maintenance material",
+                        "Enhances aesthetics with clean, modern wood-grain visuals",
+                        "Ensures safety with slip-resistant properties",
+                        "Supports hygiene with anti-bacterial coating for healthcare and hospitality",
+                        "Certified for long-term use in commercial settings"
+                    ],
+                    "design_compatibility": ["Modern", "Minimalist", "Professional", "Residential"]
+                },
+                "specifications": {
+                    "waterproof": true,
+                    "slip_resistant": true,
+                    "product_code": "SK20084",
+                    "category": "Vinyl Sheet Flooring",
+                    "width": "6ft",
+                    "length": "66ft",
+                    "thickness": "2.0mm",
+                    "wear_layer": "0.3mm",
+                    "finish": "Matte, wood-textured",
+                    "color_tone": "Neutral, modern",
+                    "material": "Premium Vinyl with protective wear layer",
+                    "application_areas": ["Residential", "Commercial Offices", "Retail", "Educational Institutions", "Healthcare", "Hospitality"],
+                    "installation_surface": ["Concrete", "Cement board", "Tile", "Plywood"],
+                    "durability": "10 to 15 years",
+                    "anti_slip_rating": "R10",
+                    "maintenance": "Sweep or vacuum regularly, clean with a damp mop using mild detergent. Avoid abrasive cleaners."
+                },
+                "installation": {
+                    "method": ["Glue-down method"],
+                    "surface_types": ["Concrete", "Cement board", "Tile", "Plywood"],
+                    "diy_friendly": true,
+                    "professional_recommended": true,
+                    "requirements": [
+                        "Ensure a clean, dry, and level subfloor",
+                        "Use appropriate adhesive for glue-down method in high-traffic areas",
+                        "Seal seams for moisture protection in wet areas"
+                    ],
+                    "guide": "Versafloor’s seamless sheet design ensures quick, glue-down installation with minimal disruption. Download our vinyl flooring installation guide from Furnishings.com.my for detailed instructions or contact us for professional installation support."
+                },
+                "maintenance": {
+                    "cleaning_method": "Sweep or vacuum regularly, clean with a damp mop using mild detergent. Avoid abrasive cleaners.",
+                    "special_treatments": "No waxing, sealing, or polishing required",
+                    "no_waxing": true,
+                    "no_polishing": true,
+                    "no_sealants": true
+                },
+                "faqs": [
+                    {
+                        "question": "Is vinyl sheet flooring suitable for Malaysia’s humid climate?",
+                        "answer": "Yes. Versafloor SK20084 is waterproof and ideal for Malaysia’s humidity and rainy seasons."
+                    },
+                    {
+                        "question": "Can vinyl flooring be used in commercial areas with heavy traffic?",
+                        "answer": "Absolutely. This product is designed to withstand high foot traffic in offices, malls, and public spaces."
+                    },
+                    {
+                        "question": "How long does SK20084 vinyl flooring last?",
+                        "answer": "With proper installation and minimal care, it can last up to 15 years in commercial settings."
+                    },
+                    {
+                        "question": "Is installation included in the purchase?",
+                        "answer": "We offer professional installation options. Inquire with our sales team during checkout or consultation."
+                    },
+                    {
+                        "question": "Can I buy Versafloor Vinyl Sheet SK20084 online in Malaysia?",
+                        "answer": "Yes. You can securely order it online through Furnishings.com.my."
+                    }
+                ],
+                "call_to_action": {
+                    "primary": "Contact our enterprise flooring consultants for a custom quote at Furnishings.com.my!",
+                    "secondary": "Email sales@furnishings.com.my or request a free consultation for SK20084.",
+                    "tertiary": "View other modern vinyl flooring options at Furnishings.com.my."
+                },
+                "status": "active",
+                "created_at": "2025-07-17",
+                "updated_at": "2025-07-17",
+                "additional_description": {
+                    "headline": "Versafloor Vinyl Sheet SK20084 – Premium Waterproof Vinyl Flooring in Malaysia",
+                    "sections": [
+                        {
+                            "title": "Industrial-Grade Durability for Long-Term ROI",
+                            "content": "Built to Last – Even in the Toughest Conditions: Pain: Most commercial-grade floors degrade within months under constant foot traffic or spill exposure. Agitate: This leads to increased repair costs, poor brand image, and downtime. Solve: SK20084 is engineered using high-density wear layers, offering exceptional durability that stands up to high-use environments like retail outlets, office lobbies, and educational institutes. Scratch-resistant surface, Waterproof & stain-resistant core, Certified long-life span in commercial use."
+                        },
+                        {
+                            "title": "Contemporary Design that Elevates Space Aesthetics",
+                            "content": "From Corporate Spaces to Homes — A Design that Fits All: Whether you’re revamping a modern office, co-working space, or high-end residential property, Versafloor SK20084 delivers a premium, minimalist aesthetic that aligns with today’s design standards. Clean wood-grain visuals, Neutral tones that blend with modern décor, Seamless installation for a sleek finish."
+                        },
+                        {
+                            "title": "Water Resistance That Supports Operational Continuity",
+                            "content": "No More Downtime Due to Spills or Leaks: Pain: Water damage is the #1 cause of early flooring failure in humid regions like Malaysia. Agitate: Leaks, mop overs, and accidents lead to bubbling, mold, and deterioration in typical floors. Solve: Versafloor Vinyl Sheet SK20084 is 100% waterproof, ensuring peace of mind for facilities that deal with cleaning cycles, weather exposure, or plumbing infrastructure."
+                        },
+                        {
+                            "title": "Easy Maintenance and Hygiene Assurance",
+                            "content": "Less Cleaning, More Productivity: With anti-bacterial coating and low maintenance needs, SK20084 helps enterprises reduce facility management workload. Its smooth surface resists dirt accumulation and simplifies cleaning routines — essential for healthcare, hospitality, and educational sectors."
+                        },
+                        {
+                            "title": "Trusted by Leading Malaysian Enterprises",
+                            "content": "Backed by industry certifications and trusted by corporate facilities across Malaysia, Versafloor has built a reputation for quality and consistency. Our clients include: Retail chains, Government offices, Schools & Universities, Hotel chains."
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "product": {
+                "id": "XM10206",
+                "name": "Versafloor Vinyl Sheet XM10206",
+                "slug": "versafloor-vinyl-sheet-xm10206",
+                "category": "Vinyl Sheet Flooring",
+                "brand": "Versafloor",
+                "images": {
+                    "main_image": "/vinyal_sheet/xm-10206.jpg",
+                    "gallery": ["/vinyal_sheet/xm-10206.jpg"],
+                    "thumbnails": ["/vinyal_sheet/xm-10206.jpg"],
+                    "alt_texts": [
+                        "Versafloor XM10206 vinyl sheet in Malaysian commercial interior",
+                        "Versafloor Vinyl Sheet XM10206 – waterproof durable vinyl flooring Malaysia",
+                        "Modern and durable Versafloor XM10206 vinyl sheet for homes and offices",
+                        "Premium vinyl sheet flooring XM10206 in Malaysian retail space"
+                    ]
+                },
+                "seo": {
+                    "meta_title": "Versafloor Vinyl Sheet XM10206 | Durable Vinyl Sheet Malaysia",
+                    "meta_description": "Shop Versafloor Vinyl Sheet XM10206 for premium waterproof vinyl flooring in Malaysia. Durable, modern design perfect for residential and commercial spaces. Buy online today.",
+                    "keywords": [
+                        "Versafloor Vinyl Sheet XM10206",
+                        "vinyl sheet Malaysia",
+                        "waterproof vinyl flooring Malaysia",
+                        "buy vinyl sheet online Malaysia",
+                        "durable vinyl flooring",
+                        "modern vinyl sheet design",
+                        "best vinyl flooring for home"
+                    ]
+                },
+                "description": {
+                    "short": "Discover Versafloor XM10206 – premium, waterproof, and durable vinyl sheet flooring for homes and commercial spaces in Malaysia. Buy online at Furnishings.com.my!",
+                    "long": "Are your projects delayed due to unreliable flooring solutions? Is your procurement team struggling to find a balance between durability, aesthetics, and cost? What is the long-term cost of low-quality flooring on your operations or client satisfaction? In today’s fast-paced commercial environment, flooring is more than just a surface — it's part of your facility’s functionality, brand impression, and safety. The wrong choice can lead to frequent repairs, poor aesthetics, and unexpected disruptions. Versafloor Vinyl Sheet XM10206 is engineered to eliminate those worries with reliable, modern, and highly durable flooring. Designed specifically for large-scale applications and modern interiors across Malaysia, it’s the long-term solution your enterprise has been searching for."
+                },
+                "features": {
+                    "main_features": [
+                        "100% Waterproof Vinyl Layer: Resists moisture, mold, and mildew in Malaysia’s humid climate.",
+                        "Top-Grade Wear Resistance: Withstands heavy foot traffic and high-load environments.",
+                        "Anti-Slip Surface Technology: Enhances safety in wet and busy areas.",
+                        "Stain-Resistant Surface: Maintains a clean, professional look with minimal upkeep.",
+                        "Modern Design: Sleek, contemporary finish with versatile aesthetic compatibility.",
+                        "High-Load Bearing Capacity: Ideal for commercial and residential durability."
+                    ],
+                    "benefits": [
+                        "Prevents water damage and mold in humid, spill-prone environments",
+                        "Reduces maintenance and repair costs with durable material",
+                        "Elevates brand image with modern, polished aesthetics",
+                        "Ensures safety with anti-slip properties",
+                        "Supports seamless installation for minimal project downtime",
+                        "Trusted by Malaysian enterprises for reliability and performance"
+                    ],
+                    "design_compatibility": ["Modern", "Contemporary", "Professional", "Residential"]
+                },
+                "specifications": {
+                    "waterproof": true,
+                    "slip_resistant": true,
+                    "product_code": "XM10206",
+                    "category": "Vinyl Sheet Flooring",
+                    "width": "6ft",
+                    "length": "66ft",
+                    "thickness": "2.0mm",
+                    "wear_layer": "0.3mm",
+                    "finish": "Matte, contemporary texture",
+                    "color_tone": "Neutral, modern",
+                    "material": "Premium Vinyl with protective wear layer",
+                    "application_areas": ["Residential", "Corporate Offices", "Retail Stores", "Showrooms", "Healthcare", "Hospitality"],
+                    "installation_surface": ["Concrete", "Cement board", "Tile", "Plywood"],
+                    "durability": "10 to 15 years",
+                    "anti_slip_rating": "R10",
+                    "maintenance": "Sweep or vacuum regularly, clean with a damp mop using mild detergent. Avoid abrasive cleaners."
+                },
+                "installation": {
+                    "method": ["Glue-down method", "Loose lay method"],
+                    "surface_types": ["Concrete", "Cement board", "Tile", "Plywood"],
+                    "diy_friendly": true,
+                    "professional_recommended": true,
+                    "requirements": [
+                        "Ensure a clean, dry, and level subfloor",
+                        "Use appropriate adhesive for glue-down method in high-traffic areas",
+                        "Loose lay method suitable for smaller spaces",
+                        "Seal seams for moisture protection in wet areas"
+                    ],
+                    "guide": "Versafloor’s seamless sheet design ensures quick installation with minimal disruption. Download our vinyl flooring installation guide from Furnishings.com.my for detailed instructions or contact us for professional installation support."
+                },
+                "maintenance": {
+                    "cleaning_method": "Sweep or vacuum regularly, clean with a damp mop using mild detergent. Avoid abrasive cleaners.",
+                    "special_treatments": "No waxing, sealing, or polishing required",
+                    "no_waxing": true,
+                    "no_polishing": true,
+                    "no_sealants": true
+                },
+                "faqs": [
+                    {
+                        "question": "Is the Versafloor XM10206 suitable for humid Malaysian climates?",
+                        "answer": "Yes, it’s 100% waterproof and designed to resist moisture, mold, and mildew — perfect for Malaysia’s tropical conditions."
+                    },
+                    {
+                        "question": "Can I order Versafloor XM10206 in bulk for commercial projects?",
+                        "answer": "Absolutely. We specialize in serving corporate and enterprise-level orders with full support from consultation to delivery."
+                    },
+                    {
+                        "question": "How do I maintain Versafloor vinyl flooring?",
+                        "answer": "Just use a damp mop and mild detergent. The surface is easy to clean and requires minimal upkeep."
+                    },
+                    {
+                        "question": "Where can I buy Versafloor XM10206 vinyl sheet online in Malaysia?",
+                        "answer": "You can purchase directly from furnishings.com.my for secure checkout and enterprise-grade service."
+                    },
+                    {
+                        "question": "Is installation support available for this product?",
+                        "answer": "Yes, we provide guidance and recommendations for certified installers across Malaysia."
+                    }
+                ],
+                "call_to_action": {
+                    "primary": "Contact our expert team for a bulk quote or custom specification package at Furnishings.com.my!",
+                    "secondary": "Request a product sample or talk to a product consultant at Furnishings.com.my.",
+                    "tertiary": "Browse our full range of vinyl flooring Malaysia or best vinyl flooring for home collection at Furnishings.com.my."
+                },
+                "status": "active",
+                "created_at": "2025-07-17",
+                "updated_at": "2025-07-17",
+                "additional_description": {
+                    "headline": "Versafloor Vinyl Sheet XM10206 – Premium Vinyl Sheet Malaysia",
+                    "sections": [
+                        {
+                            "title": "Built for Durability — Engineered for Long-Term Use",
+                            "content": "The Pain: Flooring That Doesn’t Last: Inferior flooring wears out quickly, cracks under pressure, and becomes a liability for high-traffic areas. This leads to constant repairs and costly downtime. Agitate the Pain: What’s the Cost of Frequent Replacements? Recurring maintenance isn’t just expensive — it disrupts operations, undermines safety, and reflects poorly on your brand's professionalism. The Solution: Versafloor XM10206: Top-grade wear resistance, Waterproof and stain-resistant surface, High-load bearing capacity, Minimal maintenance needs."
+                        },
+                        {
+                            "title": "Modern Design That Matches Premium Interiors",
+                            "content": "Aesthetics That Reflect Quality: Your space’s design is a reflection of your brand. Versafloor XM10206 features a sleek, modern look that complements both residential and commercial aesthetics. Style Meets Function: Clean, contemporary finish, Compatible with diverse interior themes, Adds a polished, professional feel to any environment."
+                        },
+                        {
+                            "title": "Waterproof Vinyl Flooring Ideal for Malaysian Conditions",
+                            "content": "The Climate Challenge: Humidity, rain, and heat are constant in Malaysia. Poor flooring choices often swell, warp, or develop mold. Versafloor’s Climate-Proof Engineering: 100% waterproof vinyl layer, Anti-slip surface technology, Mold and mildew resistant, Easy to clean in high-moisture zones like kitchens and washrooms."
+                        },
+                        {
+                            "title": "Perfect for Homes and Commercial Projects",
+                            "content": "Residential Comfort Meets Commercial Strength: Whether you're a homeowner redesigning your living space or a procurement manager sourcing materials for an enterprise project, XM10206 fits both scenarios perfectly. Use Cases: Corporate offices, Retail stores, Showrooms, Residential flooring upgrades, Healthcare or hospitality sectors."
+                        },
+                        {
+                            "title": "See the Results — Our Clients Trust Versafloor",
+                            "content": "‘We switched to Versafloor vinyl flooring for our retail chains across Malaysia. The design and durability are unmatched.’ — Procurement Head, National Retail Group."
+                        }
+                    ]
+                }
+            }
+        },
+
+
+
+
+
+
 
 
 

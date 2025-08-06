@@ -76,7 +76,7 @@ const flooringData = [
         features: ["No glue required", "Heavy-duty sheets", "Temporary friendly"]
     },
     {
-        type: "PVC Sheet Flooring",
+        type: "Vinyl Sheet Flooring",
         description: "Seamless vinyl rolls for large, wet areas",
         idealFor: "Clinics, labs, commercial wet zones",
         icon: <Droplet className="w-6 h-6" />,

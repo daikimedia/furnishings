@@ -347,7 +347,7 @@ const ContactUsPage = () => {
                     <div className="bg-white rounded-2xl shadow-md overflow-hidden">
                         <div className="h-96 bg-gray-200 relative">
                             <iframe
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509374!2d144.9537353153167!3d-37.81627997975171!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d4c2b349649%3A0xb6899234e561db11!2sEnvato!5e0!3m2!1sen!2sau!4v1635824543210!5m2!1sen!2sau"
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1573291.9860987484!2d101.0727241!3d4.0895796!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6a5aab8eaba0ddcd%3A0x54759df5cc229ce4!2sVinyl%20Flooring%20%26%20Carpets%20Specialist%20Center!5e1!3m2!1sen!2sin!4v1754302526927!5m2!1sen!2sin"
                                 width="100%"
                                 height="100%"
                                 style={{ border: 0 }}

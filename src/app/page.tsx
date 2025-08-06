@@ -15,6 +15,7 @@ import FlooringProjectSection from "@/components/home/nationwide-section";
 import CompanyOverviewSection from "@/components/home/overview-section";
 import MainContentSections from "@/components/home/main-content-section";
 import FlooringSection from "@/components/home/flooring-section";
+import CTASection from "@/components/common/CTA-section";
 
 
 export const metadata = {
@@ -42,9 +43,11 @@ export default function Home() {
       <PricingSection />
       <FlooringSection />
       <FaqSection />
+      <CTASection />
       <TestimonialsSection />
       <FlooringProjectSection />
       <CompanyOverviewSection />
+      <CTASection />
       <BlogPage />
     </main>
   );
