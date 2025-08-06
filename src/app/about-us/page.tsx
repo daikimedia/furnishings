@@ -1,5 +1,6 @@
 import AboutUs from "@/components/aboutus/about-us";
 import PageHeader from "@/components/common/header";
+import CTASection from "@/components/common/CTA-section";
 
 export const metadata = {
     title: "About Us | Furnishing Malaysia – Vinyl & SPC Flooring Experts",
@@ -10,6 +11,7 @@ export default function About() {
     return (<>
         <PageHeader />
         <AboutUs />
+        <CTASection />
     </>
 
     )

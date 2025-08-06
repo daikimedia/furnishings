@@ -1,4 +1,4 @@
-import { CheckCircle, HeartHandshake, ShieldCheck, Leaf, PhoneCall, Mail, Earth } from "lucide-react";
+import { CheckCircle, HeartHandshake, ShieldCheck, Leaf } from "lucide-react";
 
 export default function CompanyOverviewSection() {
     return (
@@ -61,28 +61,7 @@ export default function CompanyOverviewSection() {
                     </div>
                 </section>
 
-                {/* CTA Section */}
-                <div className="bg-gradient-to-br from-orange-400 to-orange-600 rounded-3xl py-12 px-6 text-white text-center shadow-md">
-                    <h3 className="text-3xl font-bold mb-4">Let’s Shape Your Interior Together</h3>
-                    <p className="text-base md:text-lg max-w-3xl mx-auto mb-6">
-                        Ready to transform your living or working space? At <strong>Furnishing Solutions</strong>, we pair smart materials with expert workmanship to create floors that are beautiful, functional, and built to last.
-                    </p>
-                    <p className="font-medium text-sm md:text-base mb-8">
-                        Contact us today for your free consultation and quotation.
-                    </p>
 
-                    <div className="flex flex-col md:flex-row justify-center items-center gap-6 text-white text-sm">
-                        <div className="flex items-center gap-2">
-                            <PhoneCall /> | WhatsApp: <strong> [Insert Phone Number]</strong>
-                        </div>
-                        <div className="flex items-center gap-2">
-                            <Mail /> | Email: <strong> [Insert Email]</strong>
-                        </div>
-                        <div className="flex items-center gap-2">
-                            <Earth /> | Website: <a href="https://www.furnishings.com.my" className="underline hover:text-orange-200">www.furnishings.com.my</a>
-                        </div>
-                    </div>
-                </div>
             </div>
         </section>
     );
