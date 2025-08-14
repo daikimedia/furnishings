@@ -30,7 +30,7 @@ const Navbar = () => {
     const mainNavItems = [
         { label: "Home", href: "/" },
         { label: "About Us", href: "/about-us" },
-        { label: "Explore Categories", href: "/", dropdown: exploreCategories, key: "explore" },
+        { label: "Explore Categories", href: "/category", dropdown: exploreCategories, key: "explore" },
         { label: "Contact", href: "/contact" },
         { label: "shop", href: "/shop" },
         { label: "", href: "/shop", icon: <ShoppingCart className="h-5 w-5 ml-2" /> },
