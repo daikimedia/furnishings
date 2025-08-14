@@ -3,7 +3,7 @@
 import React, { useState } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
-import { ChevronDown, Menu, X } from 'lucide-react'
+import { ChevronDown, Menu, X, ShoppingCart } from 'lucide-react'
 import { Button } from "@/components/ui/button"
 import SearchAutoComplete from '@/components/common/SearchAutoComplete'
 
@@ -32,11 +32,14 @@ const Navbar = () => {
         { label: "About Us", href: "/about-us" },
         { label: "Explore Categories", href: "/", dropdown: exploreCategories, key: "explore" },
         { label: "Contact", href: "/contact" },
+        { label: "shop", href: "/shop" },
+        { label: "", href: "/shop", icon: <ShoppingCart className="h-5 w-5 ml-2" /> },
     ]
 
-    const NavLink = ({ title, href }: { title: string, href: string }) => (
-        <Link href={href} className="block px-4 py-3 text-lg font-medium text-gray-900 hover:bg-gray-100 rounded-md transition">
+    const NavLink = ({ title, href, icon }: { title: string, href: string, icon?: React.ReactNode }) => (
+        <Link href={href} className="block px-4 py-3 text-lg font-medium text-gray-900 hover:bg-gray-100 rounded-md transition flex items-center">
             {title}
+            {icon}
         </Link>
     )
 
@@ -55,6 +58,7 @@ const Navbar = () => {
                         <div key={i} className="relative group">
                             <Link href={item.href || "#"} className="flex items-center font-semibold px-3 py-2 text-black hover:text-orange-400 transition">
                                 {item.label}
+                                {item.icon && item.icon}
                                 {item.dropdown && <ChevronDown className="h-4 w-4 ml-1 transition-transform group-hover:rotate-180" />}
                             </Link>
 
