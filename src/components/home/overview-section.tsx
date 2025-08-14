@@ -21,7 +21,7 @@ export default function CompanyOverviewSection() {
                 </section>
                 {/* Core Values */}
                 <section className="mb-12">
-                    <h3 className="text-3xl font-bold text-center text-gray-800 mb-12">Our Core Values</h3>
+                    <h3 className="text-3xl font-bold text-center text-black mb-12">Our Core Values</h3>
                     <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
                         {/* Value 1 */}
                         <div className="p-6 border border-orange-100 rounded-xl shadow-md transition">

@@ -1,4 +1,4 @@
-import { Droplet, ShieldCheck, Brush, Wrench, Globe, Check, Home, Layers, Building, } from "lucide-react";
+import { Droplet, ShieldCheck, Brush, Wrench, Globe, Check, Home, Layers, } from "lucide-react";
 
 const features = [
     {
@@ -69,14 +69,7 @@ const flooringData = [
         features: ["No adhesive needed", "Easy installation", "DIY friendly"]
     },
     {
-        type: "Loose-Lay Vinyl",
-        description: "Heavy, densified sheets that adhere without glue",
-        idealFor: "Showrooms, temporary setups, events",
-        icon: <Building className="w-6 h-6" />,
-        features: ["No glue required", "Heavy-duty sheets", "Temporary friendly"]
-    },
-    {
-        type: "Vinyl Sheet Flooring",
+        type: "Vinyl Sheet Flooring (PVC)",
         description: "Seamless vinyl rolls for large, wet areas",
         idealFor: "Clinics, labs, commercial wet zones",
         icon: <Droplet className="w-6 h-6" />,

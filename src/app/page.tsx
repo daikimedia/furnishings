@@ -16,7 +16,7 @@ import CompanyOverviewSection from "@/components/home/overview-section";
 import MainContentSections from "@/components/home/main-content-section";
 import FlooringSection from "@/components/home/flooring-section";
 import CTASection from "@/components/common/CTA-section";
-
+import CTASection2 from "@/components/home/CTA-section2"
 
 export const metadata = {
   title: "Vinyl & PVC Flooring Malaysia | Furnishing Solutions",
@@ -47,7 +47,7 @@ export default function Home() {
       <TestimonialsSection />
       <FlooringProjectSection />
       <CompanyOverviewSection />
-      <CTASection />
+      <CTASection2 />
       <BlogPage />
     </main>
   );

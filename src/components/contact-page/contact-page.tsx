@@ -218,7 +218,7 @@ const ContactUsPage = () => {
                                         <h3 className="text-xl font-semibold mb-3">Showroom Address:</h3>
                                         <div className="space-y-2 text-orange-100">
                                             <p>Furnishing Flooring Solutions</p>
-                                            <p>[Insert Full Address Here]</p>
+                                            {/* <p>[Insert Full Address Here]</p> */}
                                             <p>Selangor, Malaysia</p>
                                         </div>
                                     </div>
@@ -226,18 +226,18 @@ const ContactUsPage = () => {
                                     <div>
                                         <h3 className="text-xl font-semibold mb-3">Phone / WhatsApp:</h3>
                                         <div className="space-y-2 text-orange-100">
-                                            <p>[Insert Phone Number]</p>
+                                            <p>+60 12-349 8710</p>
                                             <p>(Call or message during business hours)</p>
                                         </div>
                                     </div>
 
-                                    <div>
+                                    {/* <div>
                                         <h3 className="text-xl font-semibold mb-3">Email:</h3>
                                         <div className="space-y-2 text-orange-100">
                                             <p>[Insert Email Address]</p>
                                             <p>(We typically respond within 24 hours)</p>
                                         </div>
-                                    </div>
+                                    </div> */}
 
                                     <div>
                                         <h3 className="text-xl font-semibold mb-3">Website:</h3>
