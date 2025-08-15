@@ -15900,8 +15900,18 @@ const vinylSheetFlooringData = {
                 "brand": "StrataMax Pro",
                 "images": {
                     "main_image": "/vinyal_sheet/asp13-french-press.jpg",
-                    "gallery": ["/vinyal_sheet/asp13-french-press.jpg"],
-                    "thumbnails": ["/vinyal_sheet/asp13-french-press2.jpg"],
+                    "gallery": [
+                        "/vinyal_sheet/asp13-french-press.jpg",
+                        "/vinyal_sheet/asp13-french-press2.jpg",
+                        // "/vinyal_sheet/asp13-french-press3.jpg",
+                        // "/vinyal_sheet/asp13-french-press4.jpg"
+                    ],
+                    "thumbnails": [
+                        "/vinyal_sheet/asp13-french-press.jpg",
+                        "/vinyal_sheet/asp13-french-press2.jpg",
+                        // "/vinyal_sheet/asp13-french-press3-thumb.jpg",
+                        // "/vinyal_sheet/asp13-french-press4-thumb.jpg"
+                    ],
                     "alt_texts": [
                         "StrataMax Pro French Press vinyl sheet in modern interior",
                         "StrataMax Pro Windsor Vinyl Sheet ASP13 – durable vinyl flooring",
@@ -15924,7 +15934,7 @@ const vinylSheetFlooringData = {
                 },
                 "description": {
                     "short": "Discover StrataMax Pro Windsor Vinyl Sheet ASP13 – premium, durable vinyl flooring with a traditional wood look, ideal for homes and commercial spaces.",
-                    "long": "Struggling with flooring that wears out quickly or doesn’t match your aesthetic vision? StrataMax Pro Windsor Vinyl Sheet ASP13 offers a perfect blend of durability, style, and functionality. Designed with a traditional wood look and Diamond 10® Technology, this vinyl sheet is built to withstand heavy foot traffic while maintaining its ultra-low gloss, Hickory-inspired French Press finish. Whether for residential or commercial spaces, it’s a reliable, long-term flooring solution that enhances any room at, below, or above ground level."
+                    "long": "Struggling with flooring that wears out quickly or doesn’t match your aesthetic vision? StrataMax Pro Windsor Vinyl Sheet ASP13 offers a perfect blend of durability, style, and functionality. Designed with Diamond 10® Technology and an ultra-low gloss, Hickory-inspired French Press finish, this vinyl sheet is built to withstand heavy foot traffic while maintaining a timeless, traditional wood aesthetic. Ideal for any room at, below, or above ground level, it’s a versatile solution for residential and commercial projects."
                 },
                 "features": {
                     "main_features": [
@@ -15948,23 +15958,13 @@ const vinylSheetFlooringData = {
                 "specifications": {
                     "waterproof": false,
                     "slip_resistant": false,
-                    "product_code": "ASP13",
-                    "category": "Vinyl Sheet Flooring",
-                    "width": "12ft",
-                    "length": "Not specified",
-                    "thickness": "Not specified",
-                    "wear_layer": "Diamond 10® Technology",
-                    "finish": "Ultra Low Gloss",
-                    "color_tone": "French Press",
-                    "material": "Premium Vinyl with Diamond 10® Technology wear layer",
-                    "application_areas": ["Residential", "Commercial", "Any Room At, Below or Above Ground Level"],
-                    "installation_surface": ["Concrete", "Plywood", "OSB (factory fully sanded face)"],
                     "durability": "25 years (Residential Warranty)",
-                    "anti_slip_rating": "Not specified",
+                    "installation_type": "Full Spread, Modified Loose Lay",
+                    "surface_requirement": "Clean, dry, and level subfloor",
                     "maintenance": "Sweep or vacuum regularly, clean with a damp mop using mild detergent. Avoid abrasive cleaners."
                 },
                 "installation": {
-                    "method": ["Full Spread", "Modified Loose Lay"],
+                    "method": "Full Spread and Modified Loose Lay installation methods",
                     "surface_types": ["Concrete", "Plywood", "OSB (factory fully sanded face)"],
                     "diy_friendly": false,
                     "professional_recommended": true,
@@ -15973,8 +15973,7 @@ const vinylSheetFlooringData = {
                         "Use appropriate adhesive for Full Spread method",
                         "Modified Loose Lay suitable for wood subfloors with one seam",
                         "Cabinets can be installed on Full Spread method only"
-                    ],
-                    "guide": "StrataMax Pro ASP13 supports Full Spread and Modified Loose Lay installation methods. For best results, contact an Armstrong Flooring Certified Installer for professional installation. Download our installation guide for detailed instructions."
+                    ]
                 },
                 "maintenance": {
                     "cleaning_method": "Sweep or vacuum regularly, clean with a damp mop using mild detergent. Avoid abrasive cleaners.",
@@ -16022,7 +16021,7 @@ const vinylSheetFlooringData = {
                         },
                         {
                             "title": "Traditional Wood Aesthetic for Timeless Appeal",
-                            "content": "Aesthetics That Inspire: The French Press color and Hickory species design bring a warm, traditional wood look to any space. Style Meets Durability: Ultra-low gloss finish, Complements classic and modern interiors, Enhances residential and commercial spaces."
+                            "content": "Aesthetics That Inspire: The French Press color and Hickory species design bring a warm, traditional wood look to any space. Style Meets Durability: Ultra-low gloss finish, Complements classic and traditional interiors, Enhances residential and commercial spaces."
                         },
                         {
                             "title": "Versatile Installation for Any Space",
@@ -16045,8 +16044,18 @@ const vinylSheetFlooringData = {
                 "brand": "StrataMax Pro",
                 "images": {
                     "main_image": "/vinyal_sheet/asp14-woodstove.jpg",
-                    "gallery": ["/vinyal_sheet/asp14-woodstove.jpg"],
-                    "thumbnails": ["/vinyal_sheet/asp14-woodstove2.jpg"],
+                    "gallery": [
+                        "/vinyal_sheet/asp14-woodstove.jpg",
+                        "/vinyal_sheet/asp14-woodstove2.jpg",
+                        // "/vinyal_sheet/asp14-woodstove.jpg",
+                        // "/vinyal_sheet/asp14-woodstove.jpg"
+                    ],
+                    "thumbnails": [
+                        "/vinyal_sheet/asp14-woodstove.jpg",
+                        "/vinyal_sheet/asp14-woodstove2.jpg",
+                        // "/vinyal_sheet/asp14-woodstove.jpg",
+                        // "/vinyal_sheet/asp14-woodstove4-thumb.jpg"
+                    ],
                     "alt_texts": [
                         "StrataMax Pro Woodstove vinyl sheet in modern interior",
                         "StrataMax Pro Westhaven Hickory Vinyl Sheet ASP14 – durable vinyl flooring",
@@ -16093,23 +16102,13 @@ const vinylSheetFlooringData = {
                 "specifications": {
                     "waterproof": false,
                     "slip_resistant": false,
-                    "product_code": "ASP14",
-                    "category": "Vinyl Sheet Flooring",
-                    "width": "12ft",
-                    "length": "150ft",
-                    "thickness": "Not specified",
-                    "wear_layer": "Diamond 10® Technology",
-                    "finish": "Low Gloss",
-                    "color_tone": "Woodstove",
-                    "material": "Premium Vinyl with Diamond 10® Technology wear layer",
-                    "application_areas": ["Residential", "Commercial", "Any Room At, Below or Above Ground Level"],
-                    "installation_surface": ["Concrete", "Plywood", "OSB (factory fully sanded face)"],
                     "durability": "25 years (Residential Warranty)",
-                    "anti_slip_rating": "Not specified",
+                    "installation_type": "Full Spread, Modified Loose Lay",
+                    "surface_requirement": "Clean, dry, and level subfloor",
                     "maintenance": "Sweep or vacuum regularly, clean with a damp mop using mild detergent. Avoid abrasive cleaners."
                 },
                 "installation": {
-                    "method": ["Full Spread", "Modified Loose Lay"],
+                    "method": "Full Spread and Modified Loose Lay installation methods",
                     "surface_types": ["Concrete", "Plywood", "OSB (factory fully sanded face)"],
                     "diy_friendly": false,
                     "professional_recommended": true,
@@ -16118,8 +16117,7 @@ const vinylSheetFlooringData = {
                         "Use appropriate adhesive for Full Spread method",
                         "Modified Loose Lay suitable for wood subfloors with one seam",
                         "Cabinets can be installed on Full Spread method only"
-                    ],
-                    "guide": "StrataMax Pro ASP14 supports Full Spread and Modified Loose Lay installation methods. For best results, contact an Armstrong Flooring Certified Installer for professional installation. Download our installation guide for detailed instructions."
+                    ]
                 },
                 "maintenance": {
                     "cleaning_method": "Sweep or vacuum regularly, clean with a damp mop using mild detergent. Avoid abrasive cleaners.",
@@ -16190,8 +16188,18 @@ const vinylSheetFlooringData = {
                 "brand": "StrataMax Pro",
                 "images": {
                     "main_image": "/vinyal_sheet/asp15-spice-gold.jpg",
-                    "gallery": ["/vinyal_sheet/asp15-spice-gold.jpg"],
-                    "thumbnails": ["/vinyal_sheet/asp15-spice-gold2.jpg"],
+                    "gallery": [
+                        "/vinyal_sheet/asp15-spice-gold.jpg",
+                        "/vinyal_sheet/asp15-spice-gold2.jpg",
+                        "/vinyal_sheet/asp15-spice-gold2.jpg",
+                        "/vinyal_sheet/asp15-spice-gold2.jpg"
+                    ],
+                    "thumbnails": [
+                        "/vinyal_sheet/asp15-spice-gold.jpg",
+                        "/vinyal_sheet/asp15-spice-gold2.jpg",
+                        // "/vinyal_sheet/asp15-spice-gold2-thumb.jpg",
+                        // "/vinyal_sheet/asp15-spice-gold2-thumb.jpg"
+                    ],
                     "alt_texts": [
                         "StrataMax Pro Spice Gold vinyl sheet in modern interior",
                         "StrataMax Pro Westhaven Hickory Vinyl Sheet ASP15 – durable vinyl flooring",
@@ -16214,7 +16222,7 @@ const vinylSheetFlooringData = {
                 },
                 "description": {
                     "short": "Discover StrataMax Pro Westhaven Hickory Vinyl Sheet ASP15 – premium, durable vinyl flooring with a traditional wood look, ideal for homes and commercial spaces.",
-                    "long": "Looking for flooring that combines lasting durability with a warm, classic aesthetic? StrataMax Pro Westhaven Hickory Vinyl Sheet ASP15 is designed to deliver both. With Diamond 10® Technology and a low-gloss, Hickory-inspired Spice Gold finish, this vinyl sheet is perfect for high-traffic areas while offering a timeless, traditional wood look. Ideal for any room at, below, or above ground level, it’s a versatile solution for residential and commercial projects."
+                    "long": "Looking for flooring that combines lasting durability with a warm, classic aesthetic? StrataMax Pro Westhaven Hickory Vinyl Sheet ASP15 is designed to deliver both. With Diamond 10® Technology and a low-gloss, Hickory-inspired Spice Gold finish, this vinyl sheet is perfect for high-traffic areas while offering a timeless, traditional wood look. Ideal for any room at, below, or above ground level, it's a versatile solution for residential and commercial projects."
                 },
                 "features": {
                     "main_features": [
@@ -16238,23 +16246,13 @@ const vinylSheetFlooringData = {
                 "specifications": {
                     "waterproof": false,
                     "slip_resistant": false,
-                    "product_code": "ASP15",
-                    "category": "Vinyl Sheet Flooring",
-                    "width": "12ft",
-                    "length": "Not specified",
-                    "thickness": "Not specified",
-                    "wear_layer": "Diamond 10® Technology",
-                    "finish": "Low Gloss",
-                    "color_tone": "Spice Gold",
-                    "material": "Premium Vinyl with Diamond 10® Technology wear layer",
-                    "application_areas": ["Residential", "Commercial", "Any Room At, Below or Above Ground Level"],
-                    "installation_surface": ["Concrete", "Plywood", "OSB (factory fully sanded face)"],
                     "durability": "25 years (Residential Warranty)",
-                    "anti_slip_rating": "Not specified",
+                    "installation_type": "Full Spread, Modified Loose Lay",
+                    "surface_requirement": "Clean, dry, and level subfloor",
                     "maintenance": "Sweep or vacuum regularly, clean with a damp mop using mild detergent. Avoid abrasive cleaners."
                 },
                 "installation": {
-                    "method": ["Full Spread", "Modified Loose Lay"],
+                    "method": "Full Spread and Modified Loose Lay installation methods",
                     "surface_types": ["Concrete", "Plywood", "OSB (factory fully sanded face)"],
                     "diy_friendly": false,
                     "professional_recommended": true,
@@ -16263,8 +16261,7 @@ const vinylSheetFlooringData = {
                         "Use appropriate adhesive for Full Spread method",
                         "Modified Loose Lay suitable for wood subfloors with one seam",
                         "Cabinets can be installed on Full Spread method only"
-                    ],
-                    "guide": "StrataMax Pro ASP15 supports Full Spread and Modified Loose Lay installation methods. For best results, contact an Armstrong Flooring Certified Installer for professional installation. Download our installation guide for detailed instructions."
+                    ]
                 },
                 "maintenance": {
                     "cleaning_method": "Sweep or vacuum regularly, clean with a damp mop using mild detergent. Avoid abrasive cleaners.",
@@ -16280,7 +16277,7 @@ const vinylSheetFlooringData = {
                     },
                     {
                         "question": "Can I install StrataMax Pro ASP15 in a basement?",
-                        "answer": "Yes, it’s designed for installation in any room, including at, below, or above ground level."
+                        "answer": "Yes, it's designed for installation in any room, including at, below, or above ground level."
                     },
                     {
                         "question": "What is the difference between Full Spread and Modified Loose Lay installation?",
@@ -16300,7 +16297,7 @@ const vinylSheetFlooringData = {
                     "secondary": "Explore StrataMax Pro ASP15 at authorized Armstrong Flooring distributors.",
                     "tertiary": "Browse our full range of vinyl flooring solutions on the Armstrong Flooring website."
                 },
-                "status": "out_of_stock",
+                "status": "in_stock",
                 "created_at": "2025-08-14",
                 "updated_at": "2025-08-14",
                 "additional_description": {
@@ -16308,7 +16305,7 @@ const vinylSheetFlooringData = {
                     "sections": [
                         {
                             "title": "Built for Durability and Long-Term Use",
-                            "content": "The Pain: Flooring That Doesn’t Last: Low-quality flooring scratches, stains, and requires frequent replacements, leading to costly disruptions. Agitate the Pain: Constant repairs increase costs and disrupt your home or business. The Solution: StrataMax Pro ASP15: Diamond 10® Technology for superior scratch and stain resistance, 25-year residential warranty, Ideal for high-traffic areas."
+                            "content": "The Pain: Flooring That Doesn't Last: Low-quality flooring scratches, stains, and requires frequent replacements, leading to costly disruptions. Agitate the Pain: Constant repairs increase costs and disrupt your home or business. The Solution: StrataMax Pro ASP15: Diamond 10® Technology for superior scratch and stain resistance, 25-year residential warranty, Ideal for high-traffic areas."
                         },
                         {
                             "title": "Warm, Traditional Wood Aesthetic",
@@ -16316,7 +16313,7 @@ const vinylSheetFlooringData = {
                         },
                         {
                             "title": "Versatile Installation for Any Project",
-                            "content": "The Challenge: Complex Flooring Installation: Some flooring options limit where or how they can be installed. StrataMax’s Solution: Suitable for any room at, below, or above ground level, Supports Full Spread and Modified Loose Lay methods, Professional installation recommended for optimal results."
+                            "content": "The Challenge: Complex Flooring Installation: Some flooring options limit where or how they can be installed. StrataMax's Solution: Suitable for any room at, below, or above ground level, Supports Full Spread and Modified Loose Lay methods, Professional installation recommended for optimal results."
                         },
                         {
                             "title": "Perfect for Homes and Commercial Spaces",
