@@ -1,36 +1,82 @@
 'use client'
 
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import { ChevronDown, Menu, X, ShoppingCart } from 'lucide-react'
 import { Button } from "@/components/ui/button"
 import SearchAutoComplete from '@/components/common/SearchAutoComplete'
 
+interface Category {
+    id: number
+    name: string
+    slug: string
+    products_count: number
+}
+
+interface ApiResponse {
+    success: boolean
+    data: Category[]
+}
+
 const Navbar = () => {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+    const [categories, setCategories] = useState<Category[]>([])
+    const [loading, setLoading] = useState(true)
     // const [activeDropdown, setActiveDropdown] = useState<string | null>(null)
     // const [activeSubDropdown, setActiveSubDropdown] = useState<string | null>(null)
 
     const toggleMobileMenu = () => setMobileMenuOpen(!mobileMenuOpen)
 
-    const vinylSheetLinks = [
-        { title: "Alberta", href: "/category/alberta" },
-        { title: "Versafloor", href: "/category/versafloor" },
-    ]
+    // Fetch categories from API
+    useEffect(() => {
+        const fetchCategories = async () => {
+            try {
+                setLoading(true)
+                const response = await fetch('https://cms.furnishings.daikimedia.com/api/categories')
+                const result: ApiResponse = await response.json()
+                
+                if (result.success) {
+                    setCategories(result.data)
+                }
+            } catch (error) {
+                console.error('Error fetching categories:', error)
+            } finally {
+                setLoading(false)
+            }
+        }
 
-    const exploreCategories = [
-        { label: "Flooring", href: "/category/flooring" },
-        { label: "Carpet tiles", href: "/category/carpet-tiles" },
-        { label: "Spc & Laminate", href: "/category/spc-and-laminate" },
-        { label: "Vinyl Sheet", href: "/category/vinyl-sheet-flooring", dropdown: vinylSheetLinks, key: "vinyl" },
-        { label: "Artificial Grass", href: "/category/artificial-grass" },
-    ]
+        fetchCategories()
+    }, [])
+
+    // Create subcategories for Vinyl Sheet Flooring
+    const vinylSheetSubcategories = categories.filter(cat => 
+        cat.name === 'Alberta' || cat.name === 'Versafloor'
+    ).map(cat => ({
+        title: cat.name,
+        href: `/category/${cat.slug}`
+    }))
+
+    // Create explore categories from API data
+    const exploreCategories = categories
+        .filter(cat => !['Alberta', 'Versafloor'].includes(cat.name)) // Exclude subcategories
+        .map(cat => ({
+            label: cat.name,
+            href: `/category/${cat.slug}`,
+            ...(cat.name === 'Vinyl Sheet Flooring' && vinylSheetSubcategories.length > 0 
+                ? { dropdown: vinylSheetSubcategories, key: "vinyl" } 
+                : {})
+        }))
 
     const mainNavItems = [
         { label: "Home", href: "/" },
         { label: "About Us", href: "/about-us" },
-        { label: "Explore Categories", href: "/category", dropdown: exploreCategories, key: "explore" },
+        { 
+            label: "Explore Categories", 
+            href: "/category", 
+            dropdown: loading ? [] : exploreCategories, 
+            key: "explore" 
+        },
         { label: "Contact", href: "/contact" },
         { label: "shop", href: "/shop" },
         { label: "", href: "/shop", icon: <ShoppingCart className="h-5 w-5 ml-2" /> },

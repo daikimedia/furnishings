@@ -1,7 +1,51 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Link from "next/link";
-import vinylSheetFlooringData from "@/data/vinylSheetFlooringData";
+
+// API Product interface
+interface ApiProduct {
+    id: number
+    sku: string
+    name: string
+    slug: string
+    brand: string
+    status: string
+    category: {
+        id: number
+        name: string
+        slug: string
+    }
+    images: {
+        main_image: string
+        gallery: string[]
+        thumbnails: string[]
+        alt_texts: string[]
+    }
+    description: {
+        short: string
+        long: string
+    }
+    purchase_price: number | null
+    retail_price: number | null
+    quantity: number
+}
+
+interface Category {
+    id: number
+    name: string
+    slug: string
+    products_count: number
+}
+
+interface ProductsApiResponse {
+    success: boolean
+    data: ApiProduct[]
+}
+
+interface CategoriesApiResponse {
+    success: boolean
+    data: Category[]
+}
 
 type Product = {
     description: string;
@@ -21,44 +65,15 @@ type ProductsSectionProps = {
     showAll?: boolean;
 };
 
-// Properly typed mock data structure
-type MockDataItem = {
-    product: {
-        description: string | { short: string; long: string };
-        id: string | number;
-        name: string;
-        price: number;
-        originalPrice?: number;
-        discount?: number;
-        images?: {
-            main_image?: string;
-        };
-        category: string;
-        isAlreadyAdded?: boolean;
-        slug?: string; // Added slug to the type definition
-    };
-};
+
 
 export default function ProductsSection({
     limit,
     showAll = false,
 }: ProductsSectionProps) {
-    const [products] = useState<Product[]>(
-        (vinylSheetFlooringData.products as unknown as MockDataItem[]).map((item) => ({
-            description: typeof item.product.description === 'string'
-                ? item.product.description
-                : item.product.description?.short || item.product.description?.long || "",
-            id: Number(item.product.id),
-            slug: item.product.slug || `product-${item.product.id}`,
-            name: item.product.name,
-            price: item.product.price,
-            originalPrice: item.product.originalPrice ?? null,
-            discount: item.product.discount ?? null,
-            image: item.product.images?.main_image || "",
-            category: item.product.category,
-            isAlreadyAdded: item.product.isAlreadyAdded ?? false,
-        }))
-    );
+    const [products, setProducts] = useState<Product[]>([]);
+    const [categories, setCategories] = useState<Category[]>([]);
+    const [loading, setLoading] = useState(true);
     const [, setHoveredProduct] = useState<number | null>(null);
 
     // Filter states
@@ -66,10 +81,63 @@ export default function ProductsSection({
     const [, setSelectedColors] = useState<string[]>([]);
     const [, setSelectedBrands] = useState<string[]>([]);
 
-    // Extract unique categories from actual products data
-    const categories = [...new Set(products.map(product => product.category))];
-    // const colors = ["Red", "Blue", "Green", "Black", "White", "Yellow", "Brown", "Gray"];
-    // const brands = ["Premium", "Standard", "Luxury", "Modern", "Classic"];
+    // Fetch products and categories from API
+    useEffect(() => {
+        const fetchData = async () => {
+            try {
+                setLoading(true);
+                
+                // Fetch products and categories in parallel
+                const [productsResponse, categoriesResponse] = await Promise.all([
+                    fetch('https://cms.furnishings.daikimedia.com/api/products'),
+                    fetch('https://cms.furnishings.daikimedia.com/api/categories')
+                ]);
+
+                const productsResult: ProductsApiResponse = await productsResponse.json();
+                const categoriesResult: CategoriesApiResponse = await categoriesResponse.json();
+
+                console.log('Products result:', productsResult);
+                console.log('Categories result:', categoriesResult);
+
+                if (productsResult.success) {
+                    // Transform API products to component Product type
+                    const transformedProducts: Product[] = productsResult.data.map((apiProduct) => {
+                        // Fix image URL - prepend domain if it's a relative path
+                        let imageUrl = apiProduct.images.main_image || '';
+                        if (imageUrl && !imageUrl.startsWith('http')) {
+                            imageUrl = `https://cms.furnishings.daikimedia.com${imageUrl}`;
+                        }
+                        
+                        return {
+                            id: apiProduct.id,
+                            name: apiProduct.name,
+                            slug: apiProduct.slug,
+                            description: apiProduct.description.short || apiProduct.description.long || '',
+                            price: apiProduct.retail_price || apiProduct.purchase_price || 0,
+                            originalPrice: null, // Can be calculated if needed
+                            discount: null, // Can be calculated if needed
+                            image: imageUrl,
+                            category: apiProduct.category?.name || 'Uncategorized', 
+                            isAlreadyAdded: false
+                        };
+                    });
+                    
+                    console.log('Transformed products:', transformedProducts);
+                    setProducts(transformedProducts);
+                }
+
+                if (categoriesResult.success) {
+                    setCategories(categoriesResult.data);
+                }
+            } catch (error) {
+                console.error('Error fetching products and categories:', error);
+            } finally {
+                setLoading(false);
+            }
+        };
+
+        fetchData();
+    }, []);
 
     // Filter logic
     const filteredProducts = products.filter(product => {
@@ -125,19 +193,25 @@ export default function ProductsSection({
                             {/* Categories Filter */}
                             <div className="mb-8">
                                 <h4 className="font-medium text-gray-900 mb-3">Categories</h4>
-                                <div className="space-y-2">
-                                    {categories.map((category) => (
-                                        <label key={category} className="flex items-center">
-                                            <input
-                                                type="checkbox"
-                                                checked={selectedCategories.includes(category)}
-                                                onChange={() => handleCategoryChange(category)}
-                                                className="w-4 h-4 accent-orange-600  hover:accent-orange-600"
-                                            />
-                                            <span className="ml-2 text-sm text-gray-700">{category}</span>
-                                        </label>
-                                    ))}
-                                </div>
+                                {loading ? (
+                                    <div className="text-gray-500 text-sm">Loading categories...</div>
+                                ) : (
+                                    <div className="space-y-2">
+                                        {categories.map((category) => (
+                                            <label key={category.id} className="flex items-center">
+                                                <input
+                                                    type="checkbox"
+                                                    checked={selectedCategories.includes(category.name)}
+                                                    onChange={() => handleCategoryChange(category.name)}
+                                                    className="w-4 h-4 accent-orange-600 hover:accent-orange-600"
+                                                />
+                                                <span className="ml-2 text-sm text-gray-700">
+                                                    {category.name} ({category.products_count})
+                                                </span>
+                                            </label>
+                                        ))}
+                                    </div>
+                                )}
                             </div>
 
                             {/* Colors Filter */}
@@ -192,8 +266,13 @@ export default function ProductsSection({
 
                     {/* Products Grid */}
                     <div className="flex-1 w-full">
-                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-8">
-                            {displayedProducts.map((product) => (
+                        {loading ? (
+                            <div className="flex justify-center items-center py-12">
+                                <div className="text-gray-500 text-lg">Loading products...</div>
+                            </div>
+                        ) : (
+                            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-8">
+                                {displayedProducts.map((product) => (
                                 <Link
                                     key={product.id}
                                     href={`/shop/${product.slug}`}
@@ -238,11 +317,12 @@ export default function ProductsSection({
                                     </div>
 
                                 </Link>
-                            ))}
-                        </div>
+                                ))}
+                            </div>
+                        )}
 
                         {/* No Products Found */}
-                        {displayedProducts.length === 0 && (
+                        {!loading && displayedProducts.length === 0 && (
                             <div className="text-center py-12">
                                 <p className="text-gray-500 text-lg">No products found matching your filters.</p>
                             </div>

@@ -2,11 +2,27 @@
 
 import React, { useState, useEffect, useRef } from 'react';
 import { useRouter } from 'next/navigation';
-import vinylSheetFlooringData from '@/data/vinylSheetFlooringData';
 import { Search } from 'lucide-react';
+
 interface Product {
     name: string;
     slug: string;
+}
+
+interface ApiProduct {
+    id: number;
+    name: string;
+    slug: string;
+    category: {
+        id: number;
+        name: string;
+        slug: string;
+    } | null;
+}
+
+interface ProductsApiResponse {
+    success: boolean;
+    data: ApiProduct[];
 }
 
 const SearchAutoComplete: React.FC = () => {
@@ -14,16 +30,33 @@ const SearchAutoComplete: React.FC = () => {
     const [suggestions, setSuggestions] = useState<Product[]>([]);
     const [showDropdown, setShowDropdown] = useState(false);
     const [selectedIndex, setSelectedIndex] = useState(-1);
+    const [products, setProducts] = useState<Product[]>([]);
 
     const searchRef = useRef<HTMLDivElement>(null);
     const inputRef = useRef<HTMLInputElement>(null);
     const router = useRouter();
 
-    // Extract products with name and slug
-    const products: Product[] = vinylSheetFlooringData.products.map(item => ({
-        name: item.product.name,
-        slug: item.product.slug
-    }));
+    // Fetch products from API
+    useEffect(() => {
+        const fetchProducts = async () => {
+            try {
+                const response = await fetch('https://cms.furnishings.daikimedia.com/api/products');
+                const result: ProductsApiResponse = await response.json();
+                
+                if (result.success && result.data) {
+                    const productList: Product[] = result.data.map(item => ({
+                        name: item.name,
+                        slug: item.slug
+                    }));
+                    setProducts(productList);
+                }
+            } catch (error) {
+                console.error('Error fetching products for search:', error);
+            }
+        };
+
+        fetchProducts();
+    }, []);
 
     // Filter suggestions based on search term
     useEffect(() => {
@@ -40,7 +73,7 @@ const SearchAutoComplete: React.FC = () => {
         setSuggestions(filtered.slice(0, 8)); // Limit to 8 suggestions
         setShowDropdown(filtered.length > 0);
         setSelectedIndex(-1);
-    }, [searchTerm]);
+    }, [searchTerm, products]);
 
     // Handle click outside to close dropdown
     useEffect(() => {

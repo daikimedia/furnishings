@@ -1,8 +1,45 @@
-"use client";
+  "use client";
 import Link from "next/link";
+import { useState, useEffect } from "react";
 import { Facebook, Twitter, Linkedin, Youtube, ArrowUp } from "lucide-react";
 
+interface Category {
+    id: number
+    name: string
+    slug: string
+    products_count: number
+}
+
+interface ApiResponse {
+    success: boolean
+    data: Category[]
+}
+
 export default function Footer() {
+    const [categories, setCategories] = useState<Category[]>([]);
+    const [loading, setLoading] = useState(true);
+
+    // Fetch categories from API  
+    useEffect(() => {
+        const fetchCategories = async () => {
+            try {
+                setLoading(true);
+                const response = await fetch('https://cms.furnishings.daikimedia.com/api/categories');
+                const result: ApiResponse = await response.json();
+                
+                if (result.success) {
+                    setCategories(result.data);
+                }
+            } catch (error) {
+                console.error('Error fetching categories for footer:', error);
+            } finally {
+                setLoading(false);
+            }
+        };
+
+        fetchCategories();
+    }, []);
+
     return (
         <footer className="relative bg-black text-white rounded-t-3xl overflow-hidden font-sans">
             {/* Background Lines */}
@@ -58,15 +95,22 @@ export default function Footer() {
                     {/* === Categories Section === */}
                     <div className="space-y-4">
                         <h4 className="font-bold text-orange-600 text-base sm:text-lg">CATEGORIES</h4>
-                        <ul className="space-y-2 sm:space-y-3 text-gray-300 text-sm sm:text-base">
-                            <li><Link href="/category/flooring" className="hover:text-orange-600 transition-colors block py-1">Flooring</Link></li>
-                            <li><Link href="/category/carpet-tiles" className="hover:text-orange-600 transition-colors block py-1">Carpet Tiles</Link></li>
-                            <li><Link href="/category/spc-and-laminate" className="hover:text-orange-600 transition-colors block py-1">Spc & Laminate</Link></li>
-                            <li><Link href="/category/vinyl-sheet-flooring" className="hover:text-orange-600 transition-colors block py-1">Vinyl Sheet</Link></li>
-                            <li><Link href="/category/alberta" className="hover:text-orange-600 transition-colors block py-1">Alberta</Link></li>
-                            <li><Link href="/category/versafloor" className="hover:text-orange-600 transition-colors block py-1">Versafloor</Link></li>
-                            <li><Link href="/category/artificial-grass" className="hover:text-orange-600 transition-colors block py-1">Artificial Grass</Link></li>
-                        </ul>
+                        {loading ? (
+                            <div className="text-gray-300 text-sm">Loading categories...</div>
+                        ) : (
+                            <ul className="space-y-2 sm:space-y-3 text-gray-300 text-sm sm:text-base">
+                                {categories.map((category) => (
+                                    <li key={category.id}>
+                                        <Link 
+                                            href={`/category/${category.slug}`} 
+                                            className="hover:text-orange-600 transition-colors block py-1"
+                                        >
+                                            {category.name}
+                                        </Link>
+                                    </li>
+                                ))}
+                            </ul>
+                        )}
                     </div>
                 </div>
             </div>
