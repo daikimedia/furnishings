@@ -1,19 +1,65 @@
 'use client'
 
-import React, { useState } from 'react'
-import vinylSheetFlooringData from '@/data/vinylSheetFlooringData'
+import React, { useState, useEffect } from 'react'
 import Image from 'next/image'
 import { cn } from '@/lib/utils'
 import Link from 'next/link'
 import { motion, AnimatePresence } from 'framer-motion'
 
+interface ApiProduct {
+    id: number;
+    name: string;
+    slug: string;
+    category: {
+        id: number;
+        name: string;
+        slug: string;
+    } | null;
+    images: {
+        main_image: string;
+        gallery: string[];
+    };
+    description: {
+        short: string;
+        long: string;
+    };
+}
+
+interface ProductsApiResponse {
+    success: boolean;
+    data: ApiProduct[];
+}
+
 const categories = ['Artificial Grass', 'Carpet', 'Carpet Tiles', 'LVT & SPC', 'VINYL', 'Vinyl Sheet']
 
 const CategoryTabs = () => {
     const [activeCategory, setActiveCategory] = useState('Artificial Grass')
+    const [products, setProducts] = useState<ApiProduct[]>([])
+    const [loading, setLoading] = useState(true)
 
-    const filteredProducts = vinylSheetFlooringData.products.filter(
-        (product) => product.product.category === activeCategory
+    // Fetch products from API
+    useEffect(() => {
+        const fetchProducts = async () => {
+            try {
+                setLoading(true)
+                const response = await fetch('https://cms.furnishings.daikimedia.com/api/products')
+                const result: ProductsApiResponse = await response.json()
+                
+                if (result.success && result.data) {
+                    setProducts(result.data)
+                }
+            } catch (error) {
+                console.error('Error fetching products:', error)
+            } finally {
+                setLoading(false)
+            }
+        }
+
+        fetchProducts()
+    }, [])
+
+    const filteredProducts = products.filter(
+        (product) => product.category?.name === activeCategory
     )
 
     return (
@@ -51,18 +97,26 @@ const CategoryTabs = () => {
                     transition={{ duration: 0.4, ease: 'easeInOut' }}
                     className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8"
                 >
-                    {filteredProducts.map((product) => (
+                    {loading ? (
+                        // Loading skeleton
+                        [...Array(8)].map((_, index) => (
+                            <div key={index} className="bg-gray-200 animate-pulse rounded-xl h-80"></div>
+                        ))
+                    ) : (
+                        filteredProducts.map((product) => (
                         <motion.div
-                            key={product.product.id}
+                            key={product.id}
                             whileHover={{ y: -8 }}
                             className="group bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-200 cursor-pointer transform overflow-hidden"
                         >
-                            <Link href={`/shop/${product.product.id}`}>
+                            <Link href={`/shop/${product.slug}`}>
                                 {/* Image */}
                                 <div className="relative h-60 overflow-hidden">
                                     <Image
-                                        src={product.product.images.main_image}
-                                        alt={product.product.name}
+                                        src={product.images.main_image?.startsWith('http') 
+                                            ? product.images.main_image 
+                                            : `https://cms.furnishings.daikimedia.com${product.images.main_image}`}
+                                        alt={product.name}
                                         width={300}
                                         height={240}
                                         className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
@@ -73,10 +127,10 @@ const CategoryTabs = () => {
                                 {/* Content */}
                                 <div className="p-6">
                                     <h3 className="text-xl font-semibold text-gray-900 mb-2 group-hover:text-orange-600 transition-colors duration-300">
-                                        {product.product.name}
+                                        {product.name}
                                     </h3>
                                     <p className="text-gray-600 text-base mb-4 line-clamp-2">
-                                        {product.product.description.short}
+                                        {product.description.short}
                                     </p>
 
                                     <div className="flex items-center text-orange-600 font-medium group-hover:text-orange-600 transition-colors duration-300">
@@ -96,7 +150,8 @@ const CategoryTabs = () => {
                                 <div className="h-1 bg-gradient-to-r from-orange-400 to-orange-600 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
                             </Link>
                         </motion.div>
-                    ))}
+                        ))
+                    )}
                 </motion.div>
             </AnimatePresence>
 
