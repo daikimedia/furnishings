@@ -68,7 +68,7 @@ async function fetchProductBySlug(slug: string): Promise<ApiProduct | null> {
     try {
         console.log('Fetching product with slug:', slug);
         const response = await fetch('https://cms.furnishings.daikimedia.com/api/products', {
-            next: { revalidate: 3600 } // Revalidate every hour
+            next: { revalidate: 30 } // Revalidate every hour
         });
         
         if (!response.ok) {
