@@ -68,8 +68,9 @@ async function fetchProductBySlug(slug: string): Promise<ApiProduct | null> {
     try {
         console.log('Fetching product with slug:', slug);
         const response = await fetch('https://cms.furnishings.daikimedia.com/api/products', {
-            next: { revalidate: 30 } // Revalidate every hour
+            next: { revalidate: 30 } // Revalidate 30 second 
         });
+        
         
         if (!response.ok) {
             console.error('API response not ok:', response.status, response.statusText);
@@ -109,6 +110,8 @@ export default async function ProductPage({ params }: { params: Promise<Params> 
     const { slug } = await params;
 
     const productData = await fetchProductBySlug(slug);
+
+    console.log(productData);
 
     if (!productData) {
         notFound();

@@ -1,5 +1,5 @@
 "use client";
-import { useState, useEffect } from "react";
+import { useState, useEffect, type Key, type ReactNode } from "react";
 import { Facebook, Twitter, Instagram, Phone, MapPin } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
@@ -97,6 +97,7 @@ type ProductData = {
     updated_at: string;
     additional_description: {
         headline: string;
+        main_title?: string;
         sections: Array<{
             title: string;
             content: string;
@@ -107,8 +108,19 @@ type ProductData = {
 type SingleProductProps = {
     productData: ProductData;
 };
-
 export default function SingleProduct({ productData }: SingleProductProps) {
+    // Parse JSON string into object safely
+    let descriptionData = null;
+
+    try {
+      if (typeof productData.additional_description === 'string') {
+        descriptionData = JSON.parse(productData.additional_description);
+      } else if (typeof productData.additional_description === 'object') {
+        descriptionData = productData.additional_description;
+      }
+    } catch (e) {
+      console.error("Invalid JSON in additional_description", e);
+    }
     const [activeTab, setActiveTab] = useState("description");
     const [selectedImage, setSelectedImage] = useState(0);
     const [relatedProducts, setRelatedProducts] = useState<ApiProduct[]>([]);
@@ -121,30 +133,28 @@ export default function SingleProduct({ productData }: SingleProductProps) {
                 setLoadingRelated(true);
                 const response = await fetch('https://cms.furnishings.daikimedia.com/api/products');
                 const result: ProductsApiResponse = await response.json();
-                
-                console.log(result);
                 if (result.success) {
                     const categoryName = typeof productData.category === 'string' ? productData.category : productData.category?.name;
-                    
+
                     // First try to get products from same category, excluding current product
                     let filtered = result.data
-                        .filter(p => 
-                            p.category && 
-                            p.category.name === categoryName && 
+                        .filter(p =>
+                            p.category &&
+                            p.category.name === categoryName &&
                             p.id.toString() !== productData.id
                         )
                         .slice(0, 4);
-                    
+
                     // If no products found in same category, get any other products
                     if (filtered.length === 0) {
                         filtered = result.data
-                            .filter(p => 
-                                p.category && 
+                            .filter(p =>
+                                p.category &&
                                 p.id.toString() !== productData.id
                             )
                             .slice(0, 4);
                     }
-                    
+
                     console.log('Related products found:', filtered.length);
                     setRelatedProducts(filtered);
                 }
@@ -168,36 +178,34 @@ export default function SingleProduct({ productData }: SingleProductProps) {
                                 <h3 className="text-xl font-semibold mb-4">
                                     Product Description
                                 </h3>
-                                <div className="text-gray-600 leading-relaxed mb-4" 
-                                     dangerouslySetInnerHTML={{ __html: productData.description.long || productData.description.short || '' }}>
+                                <div className="text-gray-600 leading-relaxed mb-4"
+                                    dangerouslySetInnerHTML={{ __html: productData.description.long || productData.description.short || '' }}>
                                 </div>
                             </div>
+                          
 
                             {/* Additional Description Sections */}
-                            {productData.additional_description && (
-                                <div className="space-y-8">
-                                    <h3 className="text-2xl font-bold text-gray-900 mb-6">
-                                        {productData.additional_description.headline}
-                                    </h3>
-                                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                                        {productData.additional_description.sections.map(
-                                            (section, index) => (
-                                                <div
-                                                    key={index}
-                                                    className="bg-gradient-to-br from-orange-50 to-orange-100 rounded-xl p-6 shadow-md "
-                                                >
-                                                    <h4 className="text-lg font-semibold mb-4 text-orange-800">
-                                                        {section.title}
-                                                    </h4>
-                                                    <p className="text-gray-700 leading-relaxed">
-                                                        {section.content}
-                                                    </p>
-                                                </div>
-                                            )
-                                        )}
-                                    </div>
-                                </div>
-                            )}
+                            {descriptionData?.sections?.length > 0 && (
+  <div className="space-y-8">
+    <h3 className="text-2xl font-bold text-gray-900 mb-6">
+      {descriptionData.heading ?? descriptionData.headline}
+    </h3>
+
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+      {descriptionData.sections.map((section: { title: ReactNode, content: ReactNode }, index: Key) => (
+        <div
+          key={index}
+          className="bg-gradient-to-br from-orange-50 to-orange-100 rounded-xl p-6 shadow-md"
+        >
+          <h4 className="text-lg font-semibold mb-4 text-orange-800">
+            {section.title}
+          </h4>
+          <p className="text-gray-700 leading-relaxed">{section.content}</p>
+        </div>
+      ))}
+    </div>
+  </div>
+)}
                             <div>
                                 <h4 className="text-lg font-semibold mb-3">
                                     Design Compatibility
@@ -249,19 +257,19 @@ export default function SingleProduct({ productData }: SingleProductProps) {
                                     <div className="flex justify-between border-b pb-2">
                                         <span className="text-gray-600">Installation Type:</span>
                                         <span className="font-medium">
-                                            {productData.specifications?.installation_type || 'N/A'}
+                                            {productData.specifications?.installation_type || 'Cut and stick down'}
                                         </span>
                                     </div>
                                     <div className="flex justify-between border-b pb-2">
                                         <span className="text-gray-600">Surface Requirement:</span>
                                         <span className="font-medium">
-                                            {productData.specifications?.surface_requirement || 'N/A'}
+                                            {productData.specifications?.surface_requirement || 'Dry, flat surfaces (tile or concrete)'}
                                         </span>
                                     </div>
                                     <div className="flex justify-between">
                                         <span className="text-gray-600">Maintenance:</span>
                                         <span className="font-medium">
-                                            {productData.specifications?.maintenance || 'N/A'}
+                                            {productData.specifications?.maintenance || 'Sweep and damp mop only'}
                                         </span>
                                     </div>
                                 </div>
@@ -272,19 +280,19 @@ export default function SingleProduct({ productData }: SingleProductProps) {
                                     Installation Details
                                 </h4>
                                 <div className="space-y-4">
-                                    <div>
+                                    <div className="flex justify-between border-b pb-2"> 
                                         <h5 className="font-medium mb-2">Installation Method:</h5>
                                         <p className="text-gray-600 text-sm">
-                                            {productData.installation?.method || 'N/A'}
+                                            {productData.installation?.method || 'Cut and stick down onto dry surfaces'}
                                         </p>
                                     </div>
-                                    <div>
+                                    <div className="flex justify-between border-b pb-2">
                                         <h5 className="font-medium mb-2">Surface Types:</h5>
                                         <p className="text-gray-600 text-sm">
-                                            {(productData.installation?.surface_types || []).join(", ") || 'N/A'}
+                                            {(productData.installation?.surface_types || []).join(", ") || 'tile, concrete'}
                                         </p>
                                     </div>
-                                    <div>
+                                    {/* <div className="flex justify-between border-b pb-2">
                                         <h5 className="font-medium mb-2">Requirements:</h5>
                                         <ul className="text-gray-600 text-sm space-y-1">
                                             {(productData.installation?.requirements || []).map(
@@ -296,7 +304,7 @@ export default function SingleProduct({ productData }: SingleProductProps) {
                                                 )
                                             )}
                                         </ul>
-                                    </div>
+                                    </div> */}
                                     <div className="flex flex-wrap gap-2 text-sm">
                                         <span
                                             className={`px-3 py-1 rounded-full ${productData.installation?.diy_friendly
@@ -305,7 +313,7 @@ export default function SingleProduct({ productData }: SingleProductProps) {
                                                 }`}
                                         >
                                             DIY Friendly:{" "}
-                                            {productData.installation?.diy_friendly ? "Yes" : "No"}
+                                            {productData.installation?.diy_friendly ? "Yes" : "Yes"}
                                         </span>
                                         <span
                                             className={`px-3 py-1 rounded-full ${productData.installation?.professional_recommended
@@ -316,7 +324,7 @@ export default function SingleProduct({ productData }: SingleProductProps) {
                                             Professional Recommended:{" "}
                                             {productData.installation?.professional_recommended
                                                 ? "Yes"
-                                                : "No"}
+                                                : "Yes"}
                                         </span>
                                     </div>
                                 </div>
@@ -381,8 +389,8 @@ export default function SingleProduct({ productData }: SingleProductProps) {
                         <div className="aspect-square bg-gray-100 rounded-lg overflow-hidden">
                             <Image
                                 src={
-                                    productData.images.gallery?.[selectedImage] || 
-                                    productData.images.main_image || 
+                                    productData.images.gallery?.[selectedImage] ||
+                                    productData.images.main_image ||
                                     "/placeholder.svg"
                                 }
                                 alt={productData.images.alt_texts?.[selectedImage] || productData.name}
@@ -397,9 +405,8 @@ export default function SingleProduct({ productData }: SingleProductProps) {
                             {productData.images.gallery?.map((img, index) => (
                                 <div
                                     key={index}
-                                    className={`w-20 h-20 bg-gray-100 rounded-lg overflow-hidden cursor-pointer border-2 flex-shrink-0 ${
-                                        selectedImage === index ? "border-orange-500" : "border-transparent"
-                                    }`}
+                                    className={`w-20 h-20 bg-gray-100 rounded-lg overflow-hidden cursor-pointer border-2 flex-shrink-0 ${selectedImage === index ? "border-orange-500" : "border-transparent"
+                                        }`}
                                     onClick={() => setSelectedImage(index)}
                                 >
                                     <Image
@@ -431,8 +438,8 @@ export default function SingleProduct({ productData }: SingleProductProps) {
                             <h1 className="text-3xl font-bold text-gray-900 mb-4">
                                 {productData.name}
                             </h1>
-                            <div className="text-gray-600 leading-relaxed mb-6" 
-                                 dangerouslySetInnerHTML={{ __html: productData.description.short || '' }}>
+                            <div className="text-gray-600 leading-relaxed mb-6"
+                                dangerouslySetInnerHTML={{ __html: productData.description.short || '' }}>
                             </div>
                         </div>
 
@@ -533,7 +540,7 @@ export default function SingleProduct({ productData }: SingleProductProps) {
                     <h2 className="text-2xl font-bold text-gray-900 mb-8">
                         Related Products
                     </h2>
-                    
+
                     {loadingRelated ? (
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                             {[...Array(4)].map((_, index) => (
@@ -544,10 +551,10 @@ export default function SingleProduct({ productData }: SingleProductProps) {
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                             {relatedProducts.map((product) => {
                                 // Fix image URL
-                                const imageUrl = product.images.main_image?.startsWith('http') 
-                                    ? product.images.main_image 
+                                const imageUrl = product.images.main_image?.startsWith('http')
+                                    ? product.images.main_image
                                     : `https://cms.furnishings.daikimedia.com${product.images.main_image}`;
-                                
+
                                 return (
                                     <Link
                                         key={product.id}
