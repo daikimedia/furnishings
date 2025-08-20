@@ -1,5 +1,5 @@
 "use client";
-import { useState, useEffect, JSXElementConstructor, Key, ReactElement, ReactNode, ReactPortal } from "react";
+import { useState, useEffect, type Key, type ReactNode } from "react";
 import { Facebook, Twitter, Instagram, Phone, MapPin } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
@@ -192,7 +192,7 @@ export default function SingleProduct({ productData }: SingleProductProps) {
     </h3>
 
     <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-      {descriptionData.sections.map((section: { title: string | number | bigint | boolean | ReactElement<unknown, string | JSXElementConstructor<any>> | Iterable<ReactNode> | ReactPortal | Promise<string | number | bigint | boolean | ReactPortal | ReactElement<unknown, string | JSXElementConstructor<any>> | Iterable<ReactNode> | null | undefined> | null | undefined; content: string | number | bigint | boolean | ReactElement<unknown, string | JSXElementConstructor<any>> | Iterable<ReactNode> | ReactPortal | Promise<string | number | bigint | boolean | ReactPortal | ReactElement<unknown, string | JSXElementConstructor<any>> | Iterable<ReactNode> | null | undefined> | null | undefined; }, index: Key | null | undefined) => (
+      {descriptionData.sections.map((section: { title: ReactNode, content: ReactNode }, index: Key) => (
         <div
           key={index}
           className="bg-gradient-to-br from-orange-50 to-orange-100 rounded-xl p-6 shadow-md"
