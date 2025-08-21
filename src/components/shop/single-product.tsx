@@ -211,7 +211,8 @@ export default function SingleProduct({ productData }: SingleProductProps) {
                                     Design Compatibility
                                 </h4>
                                 <div className="flex flex-wrap gap-2">
-                                    {(productData.features?.design_compatibility || []).map(
+                                    {Array.isArray(productData.features?.design_compatibility) 
+                                    ? productData.features.design_compatibility.map(
                                         (style, index) => (
                                             <span
                                                 key={index}
@@ -220,7 +221,8 @@ export default function SingleProduct({ productData }: SingleProductProps) {
                                                 {style}
                                             </span>
                                         )
-                                    )}
+                                    )
+                                    : null}
                                 </div>
                             </div>
                         </div>
@@ -337,12 +339,14 @@ export default function SingleProduct({ productData }: SingleProductProps) {
                                 Why Customers Choose This
                             </h4>
                             <ul className="grid grid-cols-1 md:grid-cols-2 gap-4 list-none">
-                                {(productData.features?.benefits || []).map((benefit, index) => (
+                                {Array.isArray(productData.features?.benefits) 
+                                ? productData.features.benefits.map((benefit, index) => (
                                     <li key={index} className="flex items-start gap-3">
                                         <span className="w-3 h-3 mt-2 rounded-full bg-orange-500 flex-shrink-0"></span>
                                         <span className="text-gray-600">{benefit}</span>
                                     </li>
-                                ))}
+                                ))
+                                : null}
                             </ul>
                         </div>
                     </div>
@@ -355,7 +359,8 @@ export default function SingleProduct({ productData }: SingleProductProps) {
                             Frequently Asked Questions
                         </h3>
                         <Accordion type="single" collapsible className="w-full space-y-4">
-                            {(productData.faqs || []).map((faq, index) => (
+                            {Array.isArray(productData.faqs) 
+                                ? productData.faqs.map((faq, index) => (
                                 <AccordionItem
                                     key={index}
                                     value={`item-${index}`}
@@ -368,7 +373,8 @@ export default function SingleProduct({ productData }: SingleProductProps) {
                                         {faq.answer}
                                     </AccordionContent>
                                 </AccordionItem>
-                            ))}
+                            ))
+                                : null}
                         </Accordion>
                     </div>
                 );
@@ -447,17 +453,19 @@ export default function SingleProduct({ productData }: SingleProductProps) {
                         <div className="bg-gray-50 rounded-lg p-6">
                             <h3 className="font-semibold mb-3">Key Features</h3>
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
-                                {(productData.features?.main_features || [])
-                                    .slice(0, 6)
-                                    .map((feature, index) => (
-                                        <div
-                                            key={index}
-                                            className="flex items-center text-sm text-gray-600"
-                                        >
-                                            <div className="w-2 h-2 bg-orange-500 rounded-full mr-3"></div>
-                                            {feature}
-                                        </div>
-                                    ))}
+                                {Array.isArray(productData.features?.main_features) 
+                                    ? productData.features.main_features
+                                        .slice(0, 6)
+                                        .map((feature, index) => (
+                                            <div
+                                                key={index}
+                                                className="flex items-center text-sm text-gray-600"
+                                            >
+                                                <div className="w-2 h-2 bg-orange-500 rounded-full mr-3"></div>
+                                                {feature}
+                                            </div>
+                                        ))
+                                    : null}
                             </div>
                         </div>
 
