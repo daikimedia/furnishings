@@ -8,42 +8,63 @@ const staticPages = [
     { url: '/', priority: 1.0 },
     { url: '/about-us', priority: 0.8 },
     { url: '/contact', priority: 0.8 },
-    { url: '/shop', priority: 0.8 },
-    { url: '/category', priority: 0.8 },
     { url: '/blog', priority: 0.7 },
     { url: '/return-and-refunds-policy', priority: 0.5 },
     { url: '/terms-&-conditions', priority: 0.5 },
 ];
 
-// Define types for our data
-interface Product {
+// Define types for our API responses
+interface Category {
+    id: string;
+    name: string;
     slug: string;
-    updatedAt?: string;
+    updatedAt: string;
 }
 
-// Example function to fetch categories
-async function getCategories() {
-    // Replace this with your actual data fetching logic
-    return [
-        'flooring',
-        'carpet-tiles',
-        'spc-and-laminate',
-        'vinyl-sheet-flooring',
-        'alberta',
-        'versafloor',
-        'artificial-grass'
-    ];
+interface Product {
+    id: string;
+    name: string;
+    slug: string;
+    updatedAt: string;
+    category?: {
+        slug: string;
+    };
 }
 
-// Example function to fetch products
+interface ApiResponse<T> {
+    data: T[];
+}
+
+// Fetch categories from API
+async function getCategories(): Promise<Category[]> {
+    try {
+        const response = await fetch('https://cms.furnishings.daikimedia.com/api/categories');
+        const data: ApiResponse<Category> = await response.json();
+        return data.data || [];
+    } catch (error) {
+        console.error('Error fetching categories:', error);
+        return [];
+    }
+}
+
+// Fetch products from API
 async function getProducts(): Promise<Product[]> {
-    // Replace this with your actual data fetching logic
-    // This is a placeholder that returns an empty array
-    return [];
+    try {
+        const response = await fetch('https://cms.furnishings.daikimedia.com/api/products');
+        const data: ApiResponse<Product> = await response.json();
+        return data.data || [];
+    } catch (error) {
+        console.error('Error fetching products:', error);
+        return [];
+    }
 }
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-    const categories = await getCategories();
+    const [categories, products] = await Promise.all([
+        getCategories(),
+        getProducts()
+    ]);
+
     const currentDate = new Date().toISOString();
 
     // Generate sitemap entries for static pages
@@ -55,24 +76,29 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     }));
 
     // Generate sitemap entries for category pages
-    const categoryUrls = categories.map((category: string) => ({
-        url: `${baseUrl}/category/${category}`,
-        lastModified: currentDate,
+    const categoryUrls = categories.map((category) => ({
+        url: `${baseUrl}/category/${category.slug}`,
+        lastModified: category.updatedAt || currentDate,
         changeFrequency: 'weekly' as const,
         priority: 0.8,
     }));
 
-    // If you have dynamic product pages, you can add them here
-    const productUrls = (await getProducts()).map((product: Product) => ({
-        url: `${baseUrl}/shop/${product.slug}`,
-        lastModified: product.updatedAt || currentDate,
-        changeFrequency: 'daily' as const,
-        priority: 0.7,
-    }));
+    // Generate sitemap entries for product pages
+    const productUrls = products.map((product) => {
+        // If product has a category, include it in the URL
+        const categorySlug = product.category?.slug || 'products';
+        return {
+            url: `${baseUrl}/shop/${categorySlug}/${product.slug}`,
+            lastModified: product.updatedAt || currentDate,
+            changeFrequency: 'daily' as const,
+            priority: 0.7,
+        };
+    });
 
+    // Combine all URLs
     return [
         ...staticUrls,
         ...categoryUrls,
-        ...productUrls, // Uncomment when you have product data
+        ...productUrls,
     ];
 }
