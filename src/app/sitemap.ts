@@ -8,6 +8,8 @@ const staticPages = [
     { url: '/', priority: 1.0 },
     { url: '/about-us', priority: 0.8 },
     { url: '/contact', priority: 0.8 },
+    { url: '/shop', priority: 0.8 },
+    { url: '/category', priority: 0.8 },
     { url: '/blog', priority: 0.7 },
     { url: '/return-and-refunds-policy', priority: 0.5 },
     { url: '/terms-&-conditions', priority: 0.5 },
