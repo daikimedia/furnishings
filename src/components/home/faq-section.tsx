@@ -8,6 +8,7 @@ import {
 } from "@/components/ui/accordion";
 import { useState } from "react";
 import { Minus, Plus } from "lucide-react";
+import Script from "next/script"; // ✅ ye add karna
 
 const faqItems = [
     {
@@ -50,14 +51,30 @@ const faqItems = [
 export default function FaqSection() {
     const [openItem, setOpenItem] = useState<string | null>(null);
 
+    // ✅ JSON-LD Schema banake string me convert karo
+    const faqSchema = {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        mainEntity: faqItems.map((item) => ({
+            "@type": "Question",
+            name: item.question,
+            acceptedAnswer: {
+                "@type": "Answer",
+                text: item.answer,
+            },
+        })),
+    };
+
     return (
-        <section className=" px-6 py-12">
+        <section className="px-6 py-12">
             <div className="container mx-auto">
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-10 items-start">
                     {/* Sticky Heading */}
                     <div className="md:sticky md:top-24 self-start">
                         <h2 className="text-3xl font-bold text-left">Frequently Asked Questions</h2>
-                        <p className="text-gray-600 mt-2">Got questions? We’ve got you covered – check out our most asked queries.</p>
+                        <p className="text-gray-600 mt-2">
+                            Got questions? We’ve got you covered – check out our most asked queries.
+                        </p>
                     </div>
 
                     {/* Accordion Q&A */}
@@ -74,9 +91,7 @@ export default function FaqSection() {
 
                                 return (
                                     <AccordionItem key={itemKey} value={itemKey}>
-                                        <AccordionTrigger
-                                            className="text-left text-lg font-medium py-4 px-4 flex justify-between items-center hover:bg-orange-50 [&>svg]:hidden no-underline hover:no-underline"
-                                        >
+                                        <AccordionTrigger className="text-left text-lg font-medium py-4 px-4 flex justify-between items-center hover:bg-orange-50 [&>svg]:hidden no-underline hover:no-underline">
                                             <span className="flex-1">{item.question}</span>
                                             <div className="flex-shrink-0 ml-2">
                                                 {isOpen ? (
@@ -96,6 +111,14 @@ export default function FaqSection() {
                     </div>
                 </div>
             </div>
+
+            {/* ✅ Yaha Schema inject ho raha hai */}
+            <Script
+                id="faq-schema"
+                type="application/ld+json"
+                strategy="afterInteractive"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+            />
         </section>
     );
 }
