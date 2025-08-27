@@ -148,7 +148,7 @@ const TestimonialsSection = () => {
                                         </div>
                                     </div>
                                     <div className="text-gray-700 leading-relaxed">
-                                        <p className="text-sm">{testimonial.text}</p>
+                                        <p className="text-sm text-justify">{testimonial.text}</p>
                                     </div>
                                 </div>
                             ))}

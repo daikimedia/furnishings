@@ -3,7 +3,7 @@
 import React, { useState, useEffect } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
-import { ChevronDown, Menu, X, ShoppingCart } from 'lucide-react'
+import { ChevronDown, Menu, X } from 'lucide-react'
 import { Button } from "@/components/ui/button"
 import SearchAutoComplete from '@/components/common/SearchAutoComplete'
 
@@ -35,7 +35,7 @@ const Navbar = () => {
                 setLoading(true)
                 const response = await fetch('https://cms.furnishings.daikimedia.com/api/categories')
                 const result: ApiResponse = await response.json()
-                
+
                 if (result.success) {
                     setCategories(result.data)
                 }
@@ -49,8 +49,22 @@ const Navbar = () => {
         fetchCategories()
     }, [])
 
+    // Prevent body scroll when mobile menu is open
+    useEffect(() => {
+        if (mobileMenuOpen) {
+            document.body.style.overflow = 'hidden'
+        } else {
+            document.body.style.overflow = 'unset'
+        }
+
+        // Cleanup on unmount
+        return () => {
+            document.body.style.overflow = 'unset'
+        }
+    }, [mobileMenuOpen])
+
     // Create subcategories for Vinyl Sheet Flooring
-    const vinylSheetSubcategories = categories.filter(cat => 
+    const vinylSheetSubcategories = categories.filter(cat =>
         cat.name === 'Alberta' || cat.name === 'Versafloor'
     ).map(cat => ({
         title: cat.name,
@@ -63,27 +77,31 @@ const Navbar = () => {
         .map(cat => ({
             label: cat.name,
             href: `/category/${cat.slug}`,
-            ...(cat.name === 'Vinyl Sheet Flooring' && vinylSheetSubcategories.length > 0 
-                ? { dropdown: vinylSheetSubcategories, key: "vinyl" } 
+            ...(cat.name === 'Vinyl Sheet Flooring' && vinylSheetSubcategories.length > 0
+                ? { dropdown: vinylSheetSubcategories, key: "vinyl" }
                 : {})
         }))
 
     const mainNavItems = [
         { label: "Home", href: "/" },
         { label: "About Us", href: "/about-us" },
-        { 
-            label: "Explore Categories", 
-            href: "/category", 
-            dropdown: loading ? [] : exploreCategories, 
-            key: "explore" 
+        {
+            label: "Explore Categories",
+            href: "/category",
+            dropdown: loading ? [] : exploreCategories,
+            key: "explore"
         },
         { label: "Contact", href: "/contact" },
-        { label: "shop", href: "/shop" },
-        { label: "", href: "/shop", icon: <ShoppingCart className="h-5 w-5 ml-2" /> },
+        { label: "Shop", href: "/shop" },
+        // { label: "", href: "/shop", icon: <ShoppingCart className="h-5 w-5 ml-2" /> },
     ]
 
     const NavLink = ({ title, href, icon }: { title: string, href: string, icon?: React.ReactNode }) => (
-        <Link href={href} className="block px-4 py-3 text-lg font-medium text-gray-900 hover:bg-gray-100 rounded-md transition flex items-center">
+        <Link
+            href={href}
+            className="block px-4 py-3 text-lg font-medium text-gray-900 hover:bg-gray-100 rounded-md transition flex items-center"
+            onClick={() => setMobileMenuOpen(false)} // Close menu on link click
+        >
             {title}
             {icon}
         </Link>
@@ -104,7 +122,7 @@ const Navbar = () => {
                         <div key={i} className="relative group">
                             <Link href={item.href || "#"} className="flex items-center font-semibold px-3 py-2 text-black hover:text-orange-400 transition">
                                 {item.label}
-                                {item.icon && item.icon}
+                                {/* {item.icon && item.icon} */}
                                 {item.dropdown && <ChevronDown className="h-4 w-4 ml-1 transition-transform group-hover:rotate-180" />}
                             </Link>
 
@@ -151,44 +169,47 @@ const Navbar = () => {
                 </div>
             </div>
 
-            {/* ✅ Mobile Fullscreen Menu (Improved) */}
+            {/* ✅ Mobile Fullscreen Menu (Scrollable) */}
             <div className={`fixed inset-0 bg-white z-40 transform transition-transform duration-300 ease-in-out ${mobileMenuOpen ? 'translate-x-0' : 'translate-x-full'}`}>
-                {/* Top Bar with Close */}
-                <div className="flex justify-between items-center px-4 py-3 border-b shadow-md">
+                {/* Fixed Top Bar with Close */}
+                <div className="flex justify-between items-center px-4 py-3 border-b shadow-md bg-white sticky top-0 z-10">
                     <Link href="/" onClick={() => setMobileMenuOpen(false)}>
                         <Image src="/images/logo (2).png" alt="Logo" width={40} height={40} className="rounded-md" />
                     </Link>
                     <Button variant="ghost" size="icon" onClick={toggleMobileMenu}><X className="w-6 h-6" /></Button>
                 </div>
 
-                {/* Mobile Search */}
-                <div className="p-4 border-b">
-                    <SearchAutoComplete />
-                </div>
+                {/* Scrollable Content Area */}
+                <div className="h-full overflow-y-auto pb-20"> {/* Added pb-20 for bottom padding */}
+                    {/* Mobile Search - Fixed at top of scrollable area */}
+                    <div className="p-4 border-b bg-white sticky top-0 z-10">
+                        <SearchAutoComplete />
+                    </div>
 
-                {/* Mobile Nav Links */}
-                <div className="flex flex-col space-y-2 p-4">
-                    {mainNavItems.map((item, idx) => (
-                        <div key={idx} className="w-full">
-                            <NavLink title={item.label} href={item.href || "#"} />
-                            {item.dropdown && (
-                                <div className="ml-4 border-l pl-4 space-y-2">
-                                    {item.dropdown.map((cat, i2) => (
-                                        <div key={i2}>
-                                            <NavLink title={cat.label} href={cat.href} />
-                                            {cat.dropdown && (
-                                                <div className="ml-4 border-l pl-3 space-y-1">
-                                                    {cat.dropdown.map((sub, i3) => (
-                                                        <NavLink key={i3} title={sub.title} href={sub.href} />
-                                                    ))}
-                                                </div>
-                                            )}
-                                        </div>
-                                    ))}
-                                </div>
-                            )}
-                        </div>
-                    ))}
+                    {/* Mobile Nav Links - Scrollable content */}
+                    <div className="flex flex-col space-y-2 p-4">
+                        {mainNavItems.map((item, idx) => (
+                            <div key={idx} className="w-full">
+                                <NavLink title={item.label} href={item.href || "#"} />
+                                {item.dropdown && (
+                                    <div className="ml-4 border-l pl-4 space-y-2 mt-2">
+                                        {item.dropdown.map((cat, i2) => (
+                                            <div key={i2}>
+                                                <NavLink title={cat.label} href={cat.href} />
+                                                {cat.dropdown && (
+                                                    <div className="ml-4 border-l pl-3 space-y-1 mt-2">
+                                                        {cat.dropdown.map((sub, i3) => (
+                                                            <NavLink key={i3} title={sub.title} href={sub.href} />
+                                                        ))}
+                                                    </div>
+                                                )}
+                                            </div>
+                                        ))}
+                                    </div>
+                                )}
+                            </div>
+                        ))}
+                    </div>
                 </div>
             </div>
         </header>

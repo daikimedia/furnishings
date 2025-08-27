@@ -1,7 +1,12 @@
 "use client"
-import React from 'react';
+import React, { useState, useRef } from 'react';
+import { ChevronLeft, ChevronRight } from 'lucide-react';
 
-const CertificateMarquee = () => {
+const CertificateCarousel = () => {
+    const scrollContainerRef = useRef<HTMLDivElement>(null);
+    const [canScrollLeft, setCanScrollLeft] = useState(false);
+    const [canScrollRight, setCanScrollRight] = useState(true);
+
     // You can replace these with your actual certificate images
     const certificates = [
         {
@@ -61,52 +66,128 @@ const CertificateMarquee = () => {
         }
     ];
 
+    const updateScrollButtons = () => {
+        if (scrollContainerRef.current) {
+            const { scrollLeft, scrollWidth, clientWidth } = scrollContainerRef.current;
+            setCanScrollLeft(scrollLeft > 0);
+            setCanScrollRight(scrollLeft < scrollWidth - clientWidth - 1);
+        }
+    };
+
+    const scrollLeft = () => {
+        if (scrollContainerRef.current) {
+            scrollContainerRef.current.scrollBy({
+                left: -300,
+                behavior: 'smooth'
+            });
+            setTimeout(updateScrollButtons, 300);
+        }
+    };
+
+    const scrollRight = () => {
+        if (scrollContainerRef.current) {
+            scrollContainerRef.current.scrollBy({
+                left: 300,
+                behavior: 'smooth'
+            });
+            setTimeout(updateScrollButtons, 300);
+        }
+    };
+
+    React.useEffect(() => {
+        updateScrollButtons();
+        const handleResize = () => updateScrollButtons();
+        window.addEventListener('resize', handleResize);
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
+
     return (
-        <div className=" py-12 overflow-hidden">
-            <div className="mx-auto ">
-                <h2 className="text-center text-3xl  font-bold mb-12 text-black">
+        <div className="py-12">
+            <div className="mx-auto  px-4">
+                <h2 className="text-center text-3xl font-bold mb-12 text-black">
                     Choose with Confidence with Our Certification
                 </h2>
-                <div className="relative">
-                    <div className="flex animate-seamless-marquee gap-12">
 
-                        {[...certificates, ...certificates, ...certificates].map((cert, index) => (
+                <div className="relative">
+                    {/* Left Arrow */}
+                    <button
+                        onClick={scrollLeft}
+                        disabled={!canScrollLeft}
+                        className={`absolute left-0 top-1/2 transform -translate-y-1/2 z-10 w-12 h-12 rounded-full bg-white shadow-lg border border-gray-200 flex items-center justify-center transition-all duration-300 ${canScrollLeft
+                            ? 'text-gray-700 hover:bg-gray-50 hover:shadow-xl cursor-pointer'
+                            : 'text-gray-300 cursor-not-allowed'
+                            }`}
+                    >
+                        <ChevronLeft size={24} />
+                    </button>
+
+                    {/* Right Arrow */}
+                    <button
+                        onClick={scrollRight}
+                        disabled={!canScrollRight}
+                        className={`absolute right-0 top-1/2 transform -translate-y-1/2 z-10 w-12 h-12 rounded-full bg-white shadow-lg border border-gray-200 flex items-center justify-center transition-all duration-300 ${canScrollRight
+                            ? 'text-gray-700 hover:bg-gray-50 hover:shadow-xl cursor-pointer'
+                            : 'text-gray-300 cursor-not-allowed'
+                            }`}
+                    >
+                        <ChevronRight size={24} />
+                    </button>
+
+                    {/* Scrollable Container */}
+                    <div
+                        ref={scrollContainerRef}
+                        className="flex gap-8 overflow-x-auto scrollbar-hide px-16 py-4"
+                        onScroll={updateScrollButtons}
+                        style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
+                    >
+                        {certificates.map((cert) => (
                             <div
-                                key={`cert-${index}`}
-                                className="flex-shrink-0 flex items-center justify-center w-40 h-32 hover:scale-105 transition-transform duration-300"
+                                key={cert.id}
+                                className="flex-shrink-0 flex items-center justify-center w-48 h-40 bg-white rounded-xl shadow-md hover:shadow-lg hover:scale-105 transition-all duration-300 border border-gray-100"
                             >
                                 <img
                                     src={cert.logo}
                                     alt={cert.name}
-                                    className="h-20 w-20 object-contain filter hover:brightness-110 transition-all duration-300"
-                                    style={{ background: 'transparent' }}
+                                    className="h-48 w-auto max-w-[140px] object-contain filter hover:brightness-110 transition-all duration-300"
+                                    style={{
+                                        background: 'transparent',
+                                        objectFit: 'contain'
+                                    }}
+                                    onError={(e) => {
+                                        const target = e.target as HTMLImageElement;
+                                        const nextSibling = target.nextSibling as HTMLElement;
+                                        target.style.display = 'none';
+                                        nextSibling.style.display = 'flex';
+                                    }}
                                 />
+                                <div
+                                    className="hidden items-center justify-center h-24 w-32 bg-gray-100 rounded text-gray-500 text-sm text-center"
+                                >
+                                    {cert.name}
+                                </div>
                             </div>
                         ))}
                     </div>
                 </div>
             </div>
-            <style jsx>{`
-                @keyframes seamless-marquee {
-                    0% {
-                        transform: translateX(0);
-                    }
-                    100% {
-                        transform: translateX(calc(-100% / 3));
-                    }
-                }
-                
-                .animate-seamless-marquee {
-                    animation: seamless-marquee 40s linear infinite;
-                    width: max-content;
-                }
-                
-                // .animate-seamless-marquee:hover {
-                //     animation-play-state: paused;
-                // }
 
+            <style jsx>{`
+                .scrollbar-hide::-webkit-scrollbar {
+                    display: none;
+                }
+                
+                .scrollbar-hide {
+                    -ms-overflow-style: none;
+                    scrollbar-width: none;
+                }
+                
+                /* Smooth scroll behavior */
+                .scrollbar-hide {
+                    scroll-behavior: smooth;
+                }
+                
                 /* Ensure PNG transparency is preserved */
-                .animate-seamless-marquee img {
+                img {
                     background: none !important;
                     backdrop-filter: none;
                 }
@@ -115,4 +196,4 @@ const CertificateMarquee = () => {
     );
 };
 
-export default CertificateMarquee;
+export default CertificateCarousel;

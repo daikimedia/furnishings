@@ -45,7 +45,7 @@ const processSteps = [
 
 export default function ProcessSection() {
     return (
-        <section className=" px-6 py-12 ">
+        <section className="px-6 py-12">
             <div className="container mx-auto">
                 {/* Header */}
                 <div className="text-center mb-16">
@@ -54,42 +54,51 @@ export default function ProcessSection() {
                     </h2>
                 </div>
 
-                {/* Process Steps */}
-                <div className="max-w-4xl mx-auto space-y-2">
-                    {processSteps.map((process, index) => {
-                        const IconComponent = process.icon;
-                        const isEven = index % 2 === 0;
+                {/* Timeline Wrapper */}
+                <div className="relative max-w-4xl mx-auto">
+                    {/* Center Vertical Line */}
+                    <div className="absolute left-1/2 top-0 bottom-0 -translate-x-1/2">
+                        {/* Line */}
+                        <div className="w-1 h-full bg-orange-200 relative">
+                            {/* Top Circle */}
+                            <div className="absolute -top-3 left-1/2 -translate-x-1/2 w-6 h-6 bg-orange-300 rounded-full shadow-md" />
+                            {/* Bottom Circle */}
+                            <div className="absolute -bottom-3 left-1/2 -translate-x-1/2 w-6 h-6 bg-orange-300 rounded-full shadow-md" />
+                        </div>
+                    </div>
 
-                        return (
-                            <div key={index} className="relative">
-                                {/* Connector Line */}
-                                {index < processSteps.length - 1 && (
-                                    <div className="absolute left-1/2 top-36 "></div>
-                                )}
+                    <div className="space-y-12">
+                        {processSteps.map((process, index) => {
+                            const IconComponent = process.icon;
+                            const isEven = index % 2 === 0; // alternate left-right
 
-                                <div className={`flex flex-col md:flex-row items-center gap-4 ${isEven ? 'md:flex-row' : 'md:flex-row-reverse'}`}>
-                                    {/* Content Card */}
-                                    <div className={`flex-1 ${isEven ? 'md:text-right' : 'md:text-left'}`}>
-                                        <div className="bg-white rounded-2xl p-4 shadow-md  transition-all duration-300 border border-orange-100">
-                                            <div className={`flex items-center gap-4 mb-4 ${isEven ? 'md:justify-end' : 'md:justify-start'} justify-center`}>
-
-                                                <h3 className="text-xl font-semibold  text-black">{process.title}</h3>
-                                            </div>
-                                            <p className="text-gray-600 text-justify text-base">
-                                                {process.description}
-                                            </p>
+                            return (
+                                <div
+                                    key={index}
+                                    className={`relative flex flex-col md:flex-row items-center gap-4 ${isEven ? "md:flex-row" : "md:flex-row-reverse"
+                                        }`}
+                                >
+                                    {/* Content */}
+                                    <div className={`flex-1 ${isEven ? "md:text-right" : "md:text-left"}`}>
+                                        <div className="bg-white rounded-2xl p-4 shadow-md border border-orange-100">
+                                            <h3 className="text-xl font-semibold text-black mb-2">{process.title}</h3>
+                                            <p className="text-gray-600 text-justify text-base">{process.description}</p>
                                         </div>
                                     </div>
-                                    <div className="flex-shrink-0">
-                                        <div className={`w-12 h-12 rounded-full bg-orange-600 flex items-center justify-center shadow-md  transition-transform duration-300`}>
+
+                                    {/* Icon (center line par fix) */}
+                                    <div className="flex-shrink-0 z-10">
+                                        <div className="w-12 h-12 rounded-full bg-orange-600 flex items-center justify-center shadow-md">
                                             <IconComponent className="w-6 h-6 text-white" />
                                         </div>
                                     </div>
+
+                                    {/* Spacing */}
                                     <div className="flex-1 hidden md:block"></div>
                                 </div>
-                            </div>
-                        );
-                    })}
+                            );
+                        })}
+                    </div>
                 </div>
             </div>
         </section>
