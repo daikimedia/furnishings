@@ -1,4 +1,13 @@
-import { Droplet, ShieldCheck, Brush, Wrench, Globe, Check, Home, Layers, } from "lucide-react";
+import {
+    Droplet,
+    ShieldCheck,
+    Brush,
+    Wrench,
+    Globe,
+    Check,
+    Home,
+    Layers,
+} from "lucide-react";
 
 const features = [
     {
@@ -19,14 +28,12 @@ const features = [
         description: (
             <>
                 <p>Choose from thousands of inspiring patterns and colours, including:</p>
-                <ul className="list-disc list-inside text-gray-600 text-sm space-y-1">
-
+                <ul className="list-disc list-outside pl-5 text-gray-600 text-base space-y-1">
                     <li>Wood-look vinyl planks (oak, walnut, teak)</li>
                     <li>Stone, marble, and concrete-effect tiles</li>
                     <li>
                         Monochrome or vibrant patterned rolls suitable for modern, minimalist, or traditional Malaysian interiors
                     </li>
-
                 </ul>
                 <p>Our diverse design range ensures every customer finds the perfect match for their décor.</p>
             </>
@@ -69,16 +76,13 @@ const flooringData = [
         features: ["No adhesive needed", "Easy installation", "DIY friendly"]
     },
     {
-        type: "Vinyl Sheet Flooring (PVC)",
+        type: "Vinyl Sheet Flooring (SVC)",
         description: "Seamless vinyl rolls for large, wet areas",
         idealFor: "Clinics, labs, commercial wet zones",
         icon: <Droplet className="w-6 h-6" />,
         features: ["Seamless design", "Waterproof", "Commercial grade"]
     }
 ];
-
-
-
 
 export default function MainContentSections() {
     return (
@@ -93,7 +97,7 @@ export default function MainContentSections() {
                         <p className="text-xl text-gray-700 mb-6">
                             Waterproof · Durable · Stylish — Perfect for Malaysian Homes and Businesses
                         </p>
-                        <p className="text-gray-700 text-lg leading-relaxed">
+                        <p className="text-gray-700 text-lg leading-relaxed text-justify">
                             Furnishing Solutions is Malaysia’s foremost specialist in vinyl and PVC flooring,
                             offering high-quality products and professional installation services tailored to
                             the country’s humid, tropical climate. Whether you’re renovating a condominium in
@@ -103,6 +107,7 @@ export default function MainContentSections() {
                         </p>
                     </div>
                 </section>
+
                 {/* Why Choose Us */}
                 <section className="py-12 ">
                     <h3 className="text-3xl font-bold items-center text-center mb-12">Why Choose Furnishing Solutions?</h3>
@@ -116,7 +121,13 @@ export default function MainContentSections() {
                                     <feature.icon className="w-6 h-6 text-white " />
                                 </div>
                                 <h4 className="text-lg font-semibold text-black mb-4">{feature.title}</h4>
-                                <p className="text-base text-gray-600">{feature.description}</p>
+
+                                {/* Fix here */}
+                                {typeof feature.description === "string" ? (
+                                    <p className="text-base text-gray-600 text-justify">{feature.description}</p>
+                                ) : (
+                                    <div className="text-base text-gray-600 text-justify">{feature.description}</div>
+                                )}
                             </div>
                         ))}
                     </div>
@@ -153,7 +164,7 @@ export default function MainContentSections() {
 
                                 {/* Card Body */}
                                 <div className="p-6">
-                                    <p className="text-gray-600 mb-4 leading-relaxed">
+                                    <p className="text-gray-600 mb-4 text-justify">
                                         {flooring.description}
                                     </p>
 
@@ -182,7 +193,6 @@ export default function MainContentSections() {
                         ))}
                     </div>
                 </section>
-
             </div>
         </div >
     );

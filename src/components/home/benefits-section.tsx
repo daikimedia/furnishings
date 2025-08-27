@@ -53,15 +53,17 @@ export default function VinylBenefitsSection() {
                                 className="group bg-white rounded-xl border border-orange-200 p-6  transition-all duration-300 shadow-md "
                             >
                                 {/* Icon */}
-                                <div className="flex items-center justify-center w-12 h-12 bg-orange-600 rounded-lg mb-4 ">
-                                    <IconComponent className="w-6 h-6 text-white" />
+                                <div className="flex justify-center">
+                                    <div className="flex items-center justify-center w-12 h-12 bg-orange-600 rounded-lg mb-4">
+                                        <IconComponent className="w-6 h-6 text-white" />
+                                    </div>
                                 </div>
 
                                 {/* Content */}
-                                <h3 className="text-xl font-semibold text-gray-900 mb-3  transition-colors">
+                                <h3 className="text-xl font-semibold text-gray-900 mb-3 text-center transition-colors">
                                     {benefit.title}
                                 </h3>
-                                <p className="text-gray-600 leading-relaxed">
+                                <p className="text-gray-600 leading-relaxed text-justify">
                                     {benefit.description}
                                 </p>
                             </div>

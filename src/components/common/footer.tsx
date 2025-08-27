@@ -1,4 +1,4 @@
-  "use client";
+"use client";
 import Link from "next/link";
 import { useState, useEffect } from "react";
 import { Facebook, Twitter, Linkedin, Youtube, ArrowUp } from "lucide-react";
@@ -26,7 +26,7 @@ export default function Footer() {
                 setLoading(true);
                 const response = await fetch('https://cms.furnishings.daikimedia.com/api/categories');
                 const result: ApiResponse = await response.json();
-                
+
                 if (result.success) {
                     setCategories(result.data);
                 }
@@ -59,7 +59,7 @@ export default function Footer() {
                     {/* === About Us Section === */}
                     <div className="space-y-4 sm:space-y-6 md:col-span-2 lg:col-span-1 lg:pr-16">
                         <h4 className="text-lg sm:text-xl font-bold tracking-tight text-orange-600">ABOUT US</h4>
-                        <p className="text-gray-300 leading-relaxed text-sm sm:text-base">
+                        <p className="text-gray-300 leading-relaxed text-sm sm:text-base text-justify">
                             From supply to professional installation, Furnishing is your one-stop destination
                             for innovative, lasting, and visually striking interior solutions.
                         </p>
@@ -101,8 +101,8 @@ export default function Footer() {
                             <ul className="space-y-2 sm:space-y-3 text-gray-300 text-sm sm:text-base">
                                 {categories.map((category) => (
                                     <li key={category.id}>
-                                        <Link 
-                                            href={`/category/${category.slug}`} 
+                                        <Link
+                                            href={`/category/${category.slug}`}
                                             className="hover:text-orange-600 transition-colors block py-1"
                                         >
                                             {category.name}

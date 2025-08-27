@@ -8,50 +8,50 @@ export const metadata = {
 };
 const services = [
     {
-        icon: <Phone className="w-6 h-6 text-white" />,
+        icon: <Phone className="w-5 h-5 sm:w-6 sm:h-6 text-white" />,
         title: "Free Flooring Consultation",
     },
     {
-        icon: <Layers className="w-6 h-6 text-white" />,
+        icon: <Layers className="w-5 h-5 sm:w-6 sm:h-6 text-white" />,
         title: "Product Recommendations",
     },
     {
-        icon: <HelpCircle className="w-6 h-6 text-white" />,
+        icon: <HelpCircle className="w-5 h-5 sm:w-6 sm:h-6 text-white" />,
         title: "Detailed Quotes (Materials + Installation)",
     },
     {
-        icon: <Ruler className="w-6 h-6 text-white" />,
+        icon: <Ruler className="w-5 h-5 sm:w-6 sm:h-6 text-white" />,
         title: "On-Site Measurement Scheduling",
     },
     {
-        icon: <Truck className="w-6 h-6 text-white" />,
+        icon: <Truck className="w-5 h-5 sm:w-6 sm:h-6 text-white" />,
         title: "Product Sample Requests",
     },
     {
-        icon: <Info className="w-6 h-6 text-white" />,
+        icon: <Info className="w-5 h-5 sm:w-6 sm:h-6 text-white" />,
         title: "After-Sales Support & Warranty Info",
     },
 ];
 
 const quoteItems = [
     {
-        icon: <Layers className="w-6 h-6 text-white" />,
+        icon: <Layers className="w-5 h-5 sm:w-6 sm:h-6 text-white" />,
         text: "Type of flooring you're interested in (LVP, LVT, PVC Sheet, SPC)",
     },
     {
-        icon: <Ruler className="w-6 h-6 text-white" />,
+        icon: <Ruler className="w-5 h-5 sm:w-6 sm:h-6 text-white" />,
         text: "Area size in square feet or meters",
     },
     {
-        icon: <Building2 className="w-6 h-6 text-white" />,
+        icon: <Building2 className="w-5 h-5 sm:w-6 sm:h-6 text-white" />,
         text: "Room type and intended use (e.g., kitchen, living room, office)",
     },
     {
-        icon: <MapPin className="w-6 h-6 text-white" />,
+        icon: <MapPin className="w-5 h-5 sm:w-6 sm:h-6 text-white" />,
         text: "Property location (city and state)",
     },
     {
-        icon: <Calendar className="w-6 h-6 text-white" />,
+        icon: <Calendar className="w-5 h-5 sm:w-6 sm:h-6 text-white" />,
         text: "Preferred time for installation",
     },
 ];
@@ -64,7 +64,7 @@ const ContactUsPage = () => {
         message: ''
     });
 
-    const handleInputChange = (e: { target: { name: string; value: string; }; }) => {
+    const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
         const { name, value } = e.target;
         setFormData(prev => ({
             ...prev,
@@ -85,14 +85,14 @@ const ContactUsPage = () => {
 
     return (
         <div className=" bg-white">
-            <div className='container mx-auto px-6'>
+            <div className='container mx-auto px-4 sm:px-6'>
                 {/* Introduction Section */}
-                <section className="py-12">
+                <section className="py-8 sm:py-12">
                     <div className=" text-center">
-                        <h2 className="text-3xl font-bold text-black mb-12">
+                        <h2 className="text-2xl sm:text-3xl font-bold text-black mb-8 sm:mb-12">
                             Let&apos;s Start Your Flooring Project with Confidence
                         </h2>
-                        <p className="text-lg text-gray-700 leading-relaxed">
+                        <p className="text-base sm:text-lg text-gray-700 leading-relaxed">
                             Looking for premium vinyl, PVC, or SPC flooring solutions in Malaysia? At Furnishing, we&apos;re committed to transforming residential and commercial spaces with high-quality, durable, and stylish flooring options. Whether you need expert advice, a custom quote, or an on-site consultation, our experienced team is ready to assist you.
                         </p>
                     </div>
@@ -101,26 +101,26 @@ const ContactUsPage = () => {
                 {/* Contact Information Section */}
 
                 {/* Services Section */}
-                <section className="py-12">
-                    <div className="text-center   mb-12">
-                        <h2 className="text-3xl font-bold text-black mb-12">
+                <section className="py-8 sm:py-12">
+                    <div className="text-center mb-8 sm:mb-12">
+                        <h2 className="text-2xl sm:text-3xl font-bold text-black mb-8 sm:mb-12">
                             Why Reach Out to Furnishing ?
                         </h2>
-                        <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+                        <p className="text-base sm:text-lg text-gray-600 max-w-3xl mx-auto">
                             As a leading provider of vinyl and PVC flooring in Malaysia, every flooring project begins with a clear conversation. We encourage homeowners, business owners, interior designers, and contractors to get in touch for:
                         </p>
                     </div>
 
-                    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 ">
+                    <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
                         {services.map((item, index) => (
                             <div
                                 key={index}
-                                className="bg-white p-6 rounded-xl shadow-md border border-orange-100"
+                                className="bg-white p-4 sm:p-6 rounded-xl shadow-md border border-orange-100"
                             >
-                                <div className="flex items-start gap-4">
-                                    <div className=" flex items-center justify-center rounded-lg w-12 h-12 bg-orange-600">{item.icon}</div>
+                                <div className="flex items-start gap-3 sm:gap-4">
+                                    <div className="flex items-center justify-center rounded-lg w-10 h-10 sm:w-12 sm:h-12 bg-orange-600 flex-shrink-0">{item.icon}</div>
                                     <div>
-                                        <h4 className="text-lg font-semibold text-gray-800">
+                                        <h4 className="text-base sm:text-lg font-semibold text-gray-800">
                                             {item.title}
                                         </h4>
                                     </div>
@@ -129,28 +129,28 @@ const ContactUsPage = () => {
                         ))}
                     </div>
 
-                    <div className="text-center mt-12">
-                        <p className="text-lg text-gray-700 ">
+                    <div className="text-center mt-8 sm:mt-12">
+                        <p className="text-base sm:text-lg text-gray-700 ">
                             We are here to make your flooring process simple, transparent, and stress-free—from inquiry to installation.
                         </p>
                     </div>
                 </section>
 
                 {/* Business Hours Section */}
-                <section className="py-12">
+                <section className="py-8 sm:py-12">
                     <div className=" text-center">
-                        <h2 className="text-3xl md:text-4xl font-bold  mb-12">
+                        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold  mb-8 sm:mb-12">
                             Business Hours
                         </h2>
-                        <div className="space-y-6 text-lg text-black">
+                        <div className="space-y-4 sm:space-y-6 text-base sm:text-lg text-black">
                             <div className="flex justify-center items-center gap-3">
-                                <Clock className="w-6 h-6 text-green-600" />
+                                <Clock className="w-5 h-5 sm:w-6 sm:h-6 text-green-600 flex-shrink-0" />
                                 <span >
                                     <strong>Monday – Saturday:</strong> 9:00 AM to 6:00 PM
                                 </span>
                             </div>
                             <div className="flex justify-center items-center gap-3">
-                                <Clock className="w-6 h-6 text-red-500" />
+                                <Clock className="w-5 h-5 sm:w-6 sm:h-6 text-red-500 flex-shrink-0" />
                                 <span>
                                     <strong>Sunday:</strong> Closed{" "}
                                     <span className="text-gray-500">
@@ -159,10 +159,10 @@ const ContactUsPage = () => {
                                 </span>
                             </div>
                         </div>
-                        <div className="mt-8 bg-orange-50 p-6 rounded-xl">
+                        <div className="mt-6 sm:mt-8 bg-orange-50 p-4 sm:p-6 rounded-xl">
                             <div className="flex justify-center items-center gap-3 text-orange-600">
-                                <CalendarCheck className="w-5 h-5" />
-                                <p className="text-base">
+                                <CalendarCheck className="w-5 h-5 flex-shrink-0" />
+                                <p className="text-sm sm:text-base">
                                     If you&apos;d like to visit our showroom or need on-site flooring samples, please call ahead to schedule your visit.
                                 </p>
                             </div>
@@ -171,51 +171,51 @@ const ContactUsPage = () => {
                 </section>
 
                 {/* Quote Section */}
-                <section className="py-12 ">
+                <section className="py-8 sm:py-12 ">
 
 
-                    <div className="text-center mb-12">
-                        <h3 className="text-3xl font-bold text-black mb-12">
+                    <div className="text-center mb-8 sm:mb-12">
+                        <h3 className="text-2xl sm:text-3xl font-bold text-black mb-8 sm:mb-12">
                             Request a Free Quote
                         </h3>
-                        <p className="text-lg text-gray-600">
+                        <p className="text-base sm:text-lg text-gray-600">
                             To receive a fast and accurate quote, please provide the following:
                         </p>
                     </div>
 
-                    <div className="grid md:grid-cols-2 gap-6 ">
+                    <div className="grid sm:grid-cols-2 gap-4 sm:gap-6 ">
                         {quoteItems.map((item, index) => (
                             <div
                                 key={index}
-                                className="bg-white p-6  rounded-xl shadow-md border border-orange-100"
+                                className="bg-white p-4 sm:p-6  rounded-xl shadow-md border border-orange-100"
                             >
-                                <div className="flex items-center gap-4">
-                                    <div className="flex items-center justify-center w-12 h-12 bg-orange-600 rounded-lg">{item.icon}</div>
-                                    <p className="text-gray-700  text-lg">{item.text}</p>
+                                <div className="flex items-center gap-3 sm:gap-4">
+                                    <div className="flex items-center justify-center w-10 h-10 sm:w-12 sm:h-12 bg-orange-600 rounded-lg flex-shrink-0">{item.icon}</div>
+                                    <p className="text-gray-700 text-base text-justify">{item.text}</p>
                                 </div>
                             </div>
                         ))}
                     </div>
 
-                    <div className="mt-12 text-center">
-                        <p className="text-gray-600 ">
+                    <div className="mt-8 sm:mt-12 text-center">
+                        <p className="text-gray-600 text-base">
                             Our team will provide a comprehensive estimate, including material costs, installation services, delivery fees (if applicable), and available warranties.
                         </p>
                     </div>
                 </section>
 
                 {/* Contact Form Section */}
-                <section className="py-12">
+                <section className="py-8 sm:py-12">
 
                     <div className="bg-white rounded-2xl shadow-md overflow-hidden border border-orange-100">
                         <div className="grid lg:grid-cols-2 gap-0">
                             {/* Contact Info */}
-                            <div className="bg-orange-600 text-white p-8 lg:p-12">
-                                <h2 className="text-3xl md:text-4xl font-bold mb-8">Contact Info</h2>
+                            <div className="bg-orange-600 text-white p-6 sm:p-8 lg:p-12">
+                                <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6 sm:mb-8">Contact Info</h2>
 
-                                <div className="space-y-8">
+                                <div className="space-y-6 sm:space-y-8">
                                     <div>
-                                        <h3 className="text-xl font-semibold mb-3">Showroom Address:</h3>
+                                        <h3 className="text-lg sm:text-xl font-semibold mb-3">Showroom Address:</h3>
                                         <div className="space-y-2 text-orange-100">
                                             <p>Furnishing Flooring Solutions</p>
                                             {/* <p>[Insert Full Address Here]</p> */}
@@ -224,7 +224,7 @@ const ContactUsPage = () => {
                                     </div>
 
                                     <div>
-                                        <h3 className="text-xl font-semibold mb-3">Phone / WhatsApp:</h3>
+                                        <h3 className="text-lg sm:text-xl font-semibold mb-3">Phone / WhatsApp:</h3>
                                         <div className="space-y-2 text-orange-100">
                                             <p>+60 12-349 8710</p>
                                             <p>(Call or message during business hours)</p>
@@ -240,7 +240,7 @@ const ContactUsPage = () => {
                                     </div> */}
 
                                     <div>
-                                        <h3 className="text-xl font-semibold mb-3">Website:</h3>
+                                        <h3 className="text-lg sm:text-xl font-semibold mb-3">Website:</h3>
                                         <div className="text-orange-100">
                                             <a href="https://www.furnishings.com.my" className="hover:text-white transition-colors">
                                                 https://www.furnishings.com.my
@@ -251,11 +251,11 @@ const ContactUsPage = () => {
                             </div>
 
                             {/* Contact Form */}
-                            <div className="p-8 lg:p-12">
-                                <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-8">Get In Touch</h2>
+                            <div className="p-6 sm:p-8 lg:p-12">
+                                <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-6 sm:mb-8">Get In Touch</h2>
 
-                                <div className="space-y-6">
-                                    <div className="grid md:grid-cols-2 gap-6">
+                                <div className="space-y-4 sm:space-y-6">
+                                    <div className="grid sm:grid-cols-2 gap-4 sm:gap-6">
                                         <div>
                                             <label htmlFor="firstName" className="block text-sm font-medium text-gray-700 mb-2">
                                                 First Name
@@ -266,7 +266,7 @@ const ContactUsPage = () => {
                                                 name="firstName"
                                                 value={formData.firstName}
                                                 onChange={handleInputChange}
-                                                className="w-full px-4 py-3 border border-gray-300 rounded-lg "
+                                                className="w-full px-3 sm:px-4 py-2 sm:py-3 border border-gray-300 rounded-lg "
                                                 placeholder="Enter your first name"
                                                 required
                                             />
@@ -282,7 +282,7 @@ const ContactUsPage = () => {
                                                 name="lastName"
                                                 value={formData.lastName}
                                                 onChange={handleInputChange}
-                                                className="w-full px-4 py-3 border border-gray-300 rounded-lg"
+                                                className="w-full px-3 sm:px-4 py-2 sm:py-3 border border-gray-300 rounded-lg"
                                                 placeholder="Enter your last name"
                                                 required
                                             />
@@ -299,7 +299,7 @@ const ContactUsPage = () => {
                                             name="subject"
                                             value={formData.subject}
                                             onChange={handleInputChange}
-                                            className="w-full px-4 py-3 border border-gray-300 rounded-lg "
+                                            className="w-full px-3 sm:px-4 py-2 sm:py-3 border border-gray-300 rounded-lg "
                                             placeholder="Enter subject"
                                             required
                                         />
@@ -315,7 +315,7 @@ const ContactUsPage = () => {
                                             value={formData.message}
                                             onChange={handleInputChange}
                                             rows={6}
-                                            className="w-full px-4 py-3 border border-gray-300 rounded-lg "
+                                            className="w-full px-3 sm:px-4 py-2 sm:py-3 border border-gray-300 rounded-lg "
                                             placeholder="Enter your message"
                                             required
                                         ></textarea>
@@ -323,7 +323,7 @@ const ContactUsPage = () => {
 
                                     <button
                                         onClick={handleSubmit}
-                                        className="w-full bg-orange-600  text-white font-semibold py-4 px-6 rounded-lg transition-colors duration-200 text-lg"
+                                        className="w-full bg-orange-600  text-white font-semibold py-3 sm:py-4 px-4 sm:px-6 rounded-lg transition-colors duration-200 text-base sm:text-lg"
                                     >
                                         SEND MESSAGE
                                     </button>
@@ -334,18 +334,18 @@ const ContactUsPage = () => {
                 </section>
 
                 {/* Map Section */}
-                <section className="py-12">
-                    <div className="text-center mb-12">
-                        <h2 className="text-3xl  font-bold text-black mb-12">
+                <section className="py-8 sm:py-12">
+                    <div className="text-center mb-8 sm:mb-12">
+                        <h2 className="text-2xl sm:text-3xl  font-bold text-black mb-8 sm:mb-12">
                             Get Directions to Our Showroom
                         </h2>
-                        <p className="text-base text-gray-600">
+                        <p className="text-sm sm:text-base text-gray-600">
                             If you prefer an in-person consultation or would like to browse physical samples, our Selangor showroom is open during business hours.
                         </p>
                     </div>
 
                     <div className="bg-white rounded-2xl shadow-md overflow-hidden">
-                        <div className="h-96 bg-gray-200 relative">
+                        <div className="h-64 sm:h-96 bg-gray-200 relative">
                             <iframe
                                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1573291.9860987484!2d101.0727241!3d4.0895796!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6a5aab8eaba0ddcd%3A0x54759df5cc229ce4!2sVinyl%20Flooring%20%26%20Carpets%20Specialist%20Center!5e1!3m2!1sen!2sin!4v1754302526927!5m2!1sen!2sin"
                                 width="100%"
@@ -366,44 +366,44 @@ const ContactUsPage = () => {
                 </section>
 
                 {/* Why Choose Us Section */}
-                <section className="py-12">
+                <section className="py-8 sm:py-12">
 
-                    <h2 className="text-3xl md:text-4xl font-bold text-black mb-12 text-center">
+                    <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-black mb-8 sm:mb-12 text-center">
                         Why Clients Choose Furnishing
                     </h2>
 
-                    <div className="grid md:grid-cols-2 gap-8 mb-12">
+                    <div className="grid sm:grid-cols-2 gap-6 sm:gap-8 mb-8 sm:mb-12">
                         <div className="space-y-4">
                             <div className="flex items-start gap-3">
                                 <div className="w-2 h-2 bg-orange-600 rounded-full mt-2 flex-shrink-0"></div>
-                                <p className="text-gray-700">High-quality flooring materials tailored for Malaysia&apos;s humid climate</p>
+                                <p className="text-sm sm:text-base text-gray-700">High-quality flooring materials tailored for Malaysia&apos;s humid climate</p>
                             </div>
                             <div className="flex items-start gap-3">
                                 <div className="w-2 h-2 bg-orange-600 rounded-full mt-2 flex-shrink-0"></div>
-                                <p className="text-gray-700">Expert installation teams with years of industry experience</p>
+                                <p className="text-sm sm:text-base text-gray-700">Expert installation teams with years of industry experience</p>
                             </div>
                             <div className="flex items-start gap-3">
                                 <div className="w-2 h-2 bg-orange-600 rounded-full mt-2 flex-shrink-0"></div>
-                                <p className="text-gray-700">Competitive and transparent pricing – no hidden fees</p>
+                                <p className="text-sm sm:text-base text-gray-700">Competitive and transparent pricing – no hidden fees</p>
                             </div>
                         </div>
                         <div className="space-y-4">
                             <div className="flex items-start gap-3">
                                 <div className="w-2 h-2 bg-orange-600 rounded-full mt-2 flex-shrink-0"></div>
-                                <p className="text-gray-700">Full warranties and aftercare for peace of mind</p>
+                                <p className="text-sm sm:text-base text-gray-700">Full warranties and aftercare for peace of mind</p>
                             </div>
                             <div className="flex items-start gap-3">
                                 <div className="w-2 h-2 bg-orange-600 rounded-full mt-2 flex-shrink-0"></div>
-                                <p className="text-gray-700">Outstanding customer service – before, during, and after installation</p>
+                                <p className="text-sm sm:text-base text-gray-700">Outstanding customer service – before, during, and after installation</p>
                             </div>
                         </div>
                     </div>
 
-                    <section className="bg-orange-50 p-8 rounded-xl text-center">
-                        <h3 className="text-2xl font-semibold text-gray-900 mb-12">
+                    <section className="bg-orange-50 p-6 sm:p-8 rounded-xl text-center">
+                        <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-8 sm:mb-12">
                             Your Trusted Flooring Partner in Malaysia
                         </h3>
-                        <p className="text-gray-700 text-lg">
+                        <p className="text-gray-700 text-base sm:text-lg">
                             No matter the size or scope of your flooring project, Furnishing offers industry expertise, quality assurance, and complete customer satisfaction. Contact us today and take the first step toward stylish, long-lasting floors.
                         </p>
                     </section>

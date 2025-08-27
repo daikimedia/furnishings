@@ -1,5 +1,6 @@
 
-import { PhoneCall, Earth } from "lucide-react";
+import { PhoneCall, Earth, UserSearch } from "lucide-react";
+import Link from "next/link";
 export default function CTASection2() {
     return (
         <section className="py-8 px-6">
@@ -25,10 +26,16 @@ export default function CTASection2() {
                         </a>
                     </div>
                     <div className="flex items-center gap-2">
-                        {/* <Mail /> | Email: <strong> [Insert Email]</strong> */}
+                        <UserSearch className="w-5 h-5" />
+                        <a href="https://www.furnishings.com.my">
+                            Reach Out: <strong><Link href="/contact">Contact Us</Link></strong>
+                        </a>
                     </div>
                     <div className="flex items-center gap-2">
-                        <Earth /> | Website: <a href="https://www.furnishings.com.my" className="underline hover:text-orange-200">www.furnishings.com.my</a>
+                        <Earth className="w-5 h-5" />
+                        <a href="https://www.furnishings.com.my">
+                            Website: <strong>www.furnishings.com.my</strong>
+                        </a>
                     </div>
                 </div>
             </div>

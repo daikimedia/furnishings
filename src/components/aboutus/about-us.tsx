@@ -28,14 +28,14 @@ const AboutUs = () => {
                             <h2 className="text-3xl  font-bold text-black mb-6">
                                 Malaysia’s Trusted Interior & Flooring Partner
                             </h2>
-                            <p className="text-gray-700 text-lg leading-relaxed mb-4">
+                            <p className="text-gray-700 text-lg leading-relaxed mb-4 text-justify">
                                 Furnishing is Malaysia’s trusted name for delivering premium vinyl and SPC flooring,
                                 stylish interior solutions, and modern furnishing materials tailored to local tastes.
                                 We pride ourselves on offering durable, elegant, and affordable flooring and wall
                                 furnishing options that enhance the look and function of homes, offices, and commercial
                                 spaces nationwide.
                             </p>
-                            <p className="text-gray-700 text-lg leading-relaxed">
+                            <p className="text-gray-700 text-lg leading-relaxed text-justify">
                                 From supply to professional installation, Furnishing is your one-stop destination for
                                 innovative, lasting, and visually striking interior solutions.
                             </p>
@@ -86,7 +86,7 @@ const AboutUs = () => {
                             {/* Text Content */}
                             <div className="p-6">
                                 <h3 className="text-2xl font-bold text-black mb-4">{item.title}</h3>
-                                <p className="text-gray-700 text-base leading-relaxed">{item.content}</p>
+                                <p className="text-gray-700 text-base leading-relaxed text-justify">{item.content}</p>
                             </div>
                         </div>
                     ))}
@@ -106,23 +106,23 @@ const AboutUs = () => {
                                 <Home className="w-6 h-6 text-white" />
                             </div>
                             <h3 className="text-xl font-bold text-gray-900 mb-3">Vinyl Flooring Solutions</h3>
-                            <p className="text-gray-600 text-sm mb-4">
+                            <p className="text-gray-600 text-base text-justify mb-4">
                                 Broad range of vinyl flooring options—planks, tiles, and sheets—with realistic wood, stone, and marble finishes.
                             </p>
                             <div className="space-y-2">
-                                <div className="flex items-center text-sm text-orange-600">
+                                <div className="flex items-center text-base text-orange-600">
                                     <Shield className="w-4 h-4 mr-2" />
                                     100% waterproof
                                 </div>
-                                <div className="flex items-center text-sm text-orange-600">
+                                <div className="flex items-center text-base text-orange-600">
                                     <Shield className="w-4 h-4 mr-2" />
                                     Anti-slip & scratch-resistant
                                 </div>
-                                <div className="flex items-center text-sm text-orange-600">
+                                <div className="flex items-center text-base text-orange-600">
                                     <Shield className="w-4 h-4 mr-2" />
                                     Hygienic and low-maintenance
                                 </div>
-                                <div className="flex items-center text-sm text-orange-600">
+                                <div className="flex items-center text-base text-orange-600">
                                     <Shield className="w-4 h-4 mr-2" />
                                     Easy installation
                                 </div>
@@ -135,7 +135,7 @@ const AboutUs = () => {
                                 <Building className="w-6 h-6 text-white" />
                             </div>
                             <h3 className="text-xl font-bold text-gray-900 mb-3">SPC Flooring</h3>
-                            <p className="text-gray-600 text-sm">
+                            <p className="text-gray-600 text-base text-justify">
                                 Highly durable SPC click-lock flooring designed for long-term performance in high-traffic areas. Resistant to wear, humidity, and impact.
                             </p>
                         </div>
@@ -146,7 +146,7 @@ const AboutUs = () => {
                                 <Star className="w-6 h-6 text-white" />
                             </div>
                             <h3 className="text-xl font-bold text-gray-900 mb-3">Wall Panels & Decorative Surfaces</h3>
-                            <p className="text-gray-600 text-sm">
+                            <p className="text-gray-600 text-base text-justify">
                                 From PVC wall cladding to custom decorative panels, offering thermal insulation, sound dampening, and premium aesthetic finishes.
                             </p>
                         </div>
@@ -157,7 +157,7 @@ const AboutUs = () => {
                                 <Users className="w-8 h-8 text-white" />
                             </div>
                             <h3 className="text-xl font-bold text-gray-900 mb-3">Consultation & Installation</h3>
-                            <p className="text-gray-600 text-sm">
+                            <p className="text-gray-600 text-base text-justify">
                                 Free consultation, on-site measurement, and professional installation services following high-quality standards.
                             </p>
                         </div>
@@ -174,32 +174,32 @@ const AboutUs = () => {
                     <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                         <div className="bg-white rounded-xl shadow-md p-6 border border-orange-100">
                             <h3 className="text-xl font-bold text-gray-900 mb-3">Designed for Malaysia&apos;s Climate</h3>
-                            <p className="text-gray-600">All products are selected for their resistance to moisture, heat, and tropical weather conditions—perfect for Malaysia&apos;s environment.</p>
+                            <p className="text-gray-600 text-base text-justify">All products are selected for their resistance to moisture, heat, and tropical weather conditions—perfect for Malaysia&apos;s environment.</p>
                         </div>
 
                         <div className="bg-white rounded-xl shadow-md p-6 border border-orange-100">
                             <h3 className="text-xl font-bold text-gray-900 mb-3">Premium Quality Materials</h3>
-                            <p className="text-gray-600">Our flooring and wall panels meet international quality standards and are backed by manufacturer warranties.</p>
+                            <p className="text-gray-600 text-base text-justify">Our flooring and wall panels meet international quality standards and are backed by manufacturer warranties.</p>
                         </div>
 
                         <div className="bg-white rounded-xl shadow-md p-6 border border-orange-100">
                             <h3 className="text-xl font-bold text-gray-900 mb-3">Wide Range of Designs</h3>
-                            <p className="text-gray-600">Choose from hundreds of colors, grains, and patterns that suit minimalist, modern, industrial, and luxury interiors.</p>
+                            <p className="text-gray-600 text-base text-justify">Choose from hundreds of colors, grains, and patterns that suit minimalist, modern, industrial, and luxury interiors.</p>
                         </div>
 
                         <div className="bg-white rounded-xl shadow-md p-6 border border-orange-100">
                             <h3 className="text-xl font-bold text-gray-900 mb-3">Start-to-Finish Service</h3>
-                            <p className="text-gray-600">From consultation and delivery to skilled installation and after-sales support, we offer end-to-end convenience.</p>
+                            <p className="text-gray-600 text-base text-justify">From consultation and delivery to skilled installation and after-sales support, we offer end-to-end convenience.</p>
                         </div>
 
                         <div className="bg-white rounded-xl shadow-md p-6 border border-orange-100">
                             <h3 className="text-xl font-bold text-gray-900 mb-3">Competitive Prices</h3>
-                            <p className="text-gray-600">We make professional-grade flooring and wall finishes affordable—ideal for homeowners, contractors, and designers alike.</p>
+                            <p className="text-gray-600 text-base text-justify">We make professional-grade flooring and wall finishes affordable—ideal for homeowners, contractors, and designers alike.</p>
                         </div>
 
                         <div className="bg-white rounded-xl shadow-md p-6 border border-orange-100">
                             <h3 className="text-xl font-bold text-gray-900 mb-3">Proven Track Record</h3>
-                            <p className="text-gray-600">With projects completed across residential and commercial sites, our products and services are trusted by clients nationwide.</p>
+                            <p className="text-gray-600 text-base text-justify">With projects completed across residential and commercial sites, our products and services are trusted by clients nationwide.</p>
                         </div>
                     </div>
                 </div>
@@ -215,41 +215,46 @@ const AboutUs = () => {
                             <div className="flex items-center justify-center w-12 h-12 bg-orange-600 rounded-lg mb-4 mx-auto">
                                 <Home className="w-6 h-6 text-white" />
                             </div>
-                            <h3 className="font-bold text-black mb-2">Homeowners</h3>
-                            <p className="text-sm text-gray-600">Updating floors with water-resistant, stylish options</p>
+                            <h3 className="font-bold text-black text-xl mb-2">Homeowners</h3>
+                            <p className="text-base text-gray-600 text-justify">Updating floors with water-resistant, stylish options</p>
                         </div>
 
                         <div className="border border-orange-100 shadow-md rounded-xl bg-white p-6 text-center">
                             <div className="flex items-center justify-center w-12 h-12 bg-orange-600 rounded-lg mb-4 mx-auto">
                                 <Star className="w-6 h-6 text-white" />
                             </div>
-                            <h3 className="font-bold text-gray-900 mb-2">Interior Designers</h3>
-                            <p className="text-sm text-gray-600">Seeking creative, reliable furnishing materials</p>
+                            <h3 className="font-bold text-gray-900 text-xl mb-2">Interior Designers</h3>
+                            <p className="text-base text-gray-600 text-justify">Seeking creative, reliable furnishing materials</p>
                         </div>
 
                         <div className="border border-orange-100 shadow-md rounded-xl bg-white p-6 text-center">
                             <div className="flex items-center justify-center w-12 h-12 bg-orange-600 rounded-lg mb-4 mx-auto">
                                 <Building className="w-6 h-6 text-white" />
                             </div>
-                            <h3 className="font-bold text-gray-900 mb-2">Commercial Businesses</h3>
-                            <p className="text-sm text-gray-600">Requiring flooring with durability and design appeal</p>
+                            <h3 className="font-bold text-gray-900 text-xl mb-2">Commercial Businesses</h3>
+                            <p className="text-base text-gray-600 text-justify">Requiring flooring with durability and design appeal</p>
                         </div>
 
                         {/* Centered last two items */}
-                        <div className="md:col-span-3 flex justify-center gap-6">
+                        <div className="md:col-span-3 flex flex-col md:flex-row justify-center gap-6">
                             <div className="border border-orange-100 shadow-md rounded-xl bg-white p-6 text-center w-full md:w-1/3">
                                 <div className="flex items-center justify-center w-12 h-12 bg-orange-600 rounded-lg mb-4 mx-auto">
                                     <Users className="w-6 h-6 text-white" />
                                 </div>
-                                <h3 className="font-bold text-gray-900 mb-2">Developers</h3>
-                                <p className="text-sm text-gray-600">Looking for bulk supply and expert installation</p>
+                                <h3 className="font-bold text-gray-900 text-xl mb-2">Developers</h3>
+                                <p className="text-base text-gray-600 text-justify">
+                                    Looking for bulk supply and expert installation
+                                </p>
                             </div>
+
                             <div className="border border-orange-100 shadow-md rounded-xl bg-white p-6 text-center w-full md:w-1/3">
                                 <div className="flex items-center justify-center w-12 h-12 bg-orange-600 rounded-lg mb-4 mx-auto">
                                     <Award className="w-6 h-6 text-white" />
                                 </div>
-                                <h3 className="font-bold text-gray-900 mb-2">Hospitality & Retail</h3>
-                                <p className="text-sm text-gray-600">Needing quick turnarounds and professional finishing</p>
+                                <h3 className="font-bold text-gray-900 text-xl mb-2">Hospitality & Retail</h3>
+                                <p className="text-base text-gray-600 text-justify">
+                                    Needing quick turnarounds and professional finishing
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -268,7 +273,7 @@ const AboutUs = () => {
                                 <Binoculars className="w-6 h-6 text-white" />
                             </div>
                             <h3 className="text-xl font-bold text-gray-900 mb-3">Innovation</h3>
-                            <p className="text-gray-600">Adopting new trends and sustainable materials</p>
+                            <p className="text-gray-600 text-base text-justify">Adopting new trends and sustainable materials</p>
                         </div>
 
                         <div className="bg-white rounded-xl shadow-md p-6 border border-orange-100 text-center">
@@ -276,7 +281,7 @@ const AboutUs = () => {
                                 <Shield className="w-6 h-6 text-white" />
                             </div>
                             <h3 className="text-xl font-bold text-gray-900 mb-3">Integrity</h3>
-                            <p className="text-gray-600">Transparent processes and honest recommendations</p>
+                            <p className="text-gray-600 text-base text-justify">Transparent processes and honest recommendations</p>
                         </div>
 
                         <div className="bg-white rounded-xl shadow-md p-6 border border-orange-100 text-center">
@@ -284,7 +289,7 @@ const AboutUs = () => {
                                 <Heart className="w-6 h-6 text-white" />
                             </div>
                             <h3 className="text-xl font-bold text-gray-900 mb-3">Customer-Focused</h3>
-                            <p className="text-gray-600">Every space and client need is unique</p>
+                            <p className="text-gray-600 text-base text-justify">Every space and client need is unique</p>
                         </div>
 
                         <div className="bg-white rounded-xl shadow-md p-6 border border-orange-100 text-center">
@@ -292,7 +297,7 @@ const AboutUs = () => {
                                 <Leaf className="w-6 h-6 text-white" />
                             </div>
                             <h3 className="text-xl font-bold text-gray-900 mb-3">Sustainability</h3>
-                            <p className="text-gray-600">Promoting eco-friendly and recyclable products</p>
+                            <p className="text-gray-600 text-base text-justify">Promoting eco-friendly and recyclable products</p>
                         </div>
                     </div>
                 </section>

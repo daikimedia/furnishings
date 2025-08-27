@@ -67,7 +67,7 @@ const FlooringSection = () => {
                                 {item.icon}
                             </div>
                             <h3 className="text-xl font-semibold text-black mb-3">{item.title}</h3>
-                            <p className="text-gray-600 mb-4">{item.description}</p>
+                            <p className="text-gray-600 text-justify mb-4">{item.description}</p>
                         </div>
                     ))}
                 </div>
