@@ -62,6 +62,8 @@ type ProductData = {
         design_compatibility: string[];
     };
     specifications: {
+        key: ReactNode;
+        value: ReactNode;
         waterproof: boolean;
         slip_resistant: boolean;
         durability: string;
@@ -69,6 +71,7 @@ type ProductData = {
         surface_requirement: string;
         maintenance: string;
     };
+
     installation: {
         method: string;
         surface_types: string[];
@@ -113,19 +116,21 @@ export default function SingleProduct({ productData }: SingleProductProps) {
     let descriptionData = null;
 
     try {
-      if (typeof productData.additional_description === 'string') {
-        descriptionData = JSON.parse(productData.additional_description);
-      } else if (typeof productData.additional_description === 'object') {
-        descriptionData = productData.additional_description;
-      }
+        if (typeof productData.additional_description === 'string') {
+            descriptionData = JSON.parse(productData.additional_description);
+        } else if (typeof productData.additional_description === 'object') {
+            descriptionData = productData.additional_description;
+        }
     } catch (e) {
-      console.error("Invalid JSON in additional_description", e);
+        console.error("Invalid JSON in additional_description", e);
     }
     const [activeTab, setActiveTab] = useState("description");
     const [selectedImage, setSelectedImage] = useState(0);
     const [relatedProducts, setRelatedProducts] = useState<ApiProduct[]>([]);
     const [loadingRelated, setLoadingRelated] = useState(true);
 
+
+    // console.log("*************", productData.specifications);
     // Fetch related products from API
     useEffect(() => {
         const fetchRelatedProducts = async () => {
@@ -182,47 +187,47 @@ export default function SingleProduct({ productData }: SingleProductProps) {
                                     dangerouslySetInnerHTML={{ __html: productData.description.long || productData.description.short || '' }}>
                                 </div>
                             </div>
-                          
+
 
                             {/* Additional Description Sections */}
                             {descriptionData?.sections?.length > 0 && (
-  <div className="space-y-8">
-    <h3 className="text-2xl font-bold text-gray-900 mb-6">
-      {descriptionData.heading ?? descriptionData.headline}
-    </h3>
+                                <div className="space-y-8">
+                                    <h3 className="text-2xl font-bold text-gray-900 mb-6">
+                                        {descriptionData.heading ?? descriptionData.headline}
+                                    </h3>
 
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-      {descriptionData.sections.map((section: { title: ReactNode, content: ReactNode }, index: Key) => (
-        <div
-          key={index}
-          className="bg-gradient-to-br from-orange-50 to-orange-100 rounded-xl p-6 shadow-md"
-        >
-          <h4 className="text-lg font-semibold mb-4 text-orange-800">
-            {section.title}
-          </h4>
-          <p className="text-gray-700 leading-relaxed">{section.content}</p>
-        </div>
-      ))}
-    </div>
-  </div>
-)}
+                                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                                        {descriptionData.sections.map((section: { title: ReactNode, content: ReactNode }, index: Key) => (
+                                            <div
+                                                key={index}
+                                                className="bg-gradient-to-br from-orange-50 to-orange-100 rounded-xl p-6 shadow-md"
+                                            >
+                                                <h4 className="text-lg font-semibold mb-4 text-orange-800">
+                                                    {section.title}
+                                                </h4>
+                                                <p className="text-gray-700 leading-relaxed">{section.content}</p>
+                                            </div>
+                                        ))}
+                                    </div>
+                                </div>
+                            )}
                             <div>
                                 <h4 className="text-lg font-semibold mb-3">
                                     Design Compatibility
                                 </h4>
                                 <div className="flex flex-wrap gap-2">
-                                    {Array.isArray(productData.features?.design_compatibility) 
-                                    ? productData.features.design_compatibility.map(
-                                        (style, index) => (
-                                            <span
-                                                key={index}
-                                                className="px-4 py-2 bg-orange-600 text-white rounded-md text-sm font-medium"
-                                            >
-                                                {style}
-                                            </span>
+                                    {Array.isArray(productData.features?.design_compatibility)
+                                        ? productData.features.design_compatibility.map(
+                                            (style, index) => (
+                                                <span
+                                                    key={index}
+                                                    className="px-4 py-2 bg-orange-600 text-white rounded-md text-sm font-medium"
+                                                >
+                                                    {style}
+                                                </span>
+                                            )
                                         )
-                                    )
-                                    : null}
+                                        : null}
                                 </div>
                             </div>
                         </div>
@@ -238,10 +243,120 @@ export default function SingleProduct({ productData }: SingleProductProps) {
                                     Product Specifications
                                 </h4>
                                 <div className="space-y-3">
+                                    {Array.isArray(productData.specifications) &&
+                                        productData.specifications.length > 0 &&
+                                        productData.specifications.some(spec => spec?.value) ? (
+                                        productData.specifications.map((spec, index) => (
+                                            <div
+                                                key={index}
+                                                className="flex justify-between border-b pb-2"
+                                            >
+                                                <span className="text-gray-600">{spec.key}</span>
+                                                <span className="font-medium">{spec.value || "N/A"}</span>
+                                            </div>
+                                        ))
+                                    ) : (
+                                        // Fallback to static specifications
+                                        <>
+                                            <div className="flex justify-between border-b pb-2">
+                                                <span className="text-gray-600">Waterproof:</span>
+                                                <span className="font-medium">yes</span>
+                                            </div>
+                                            <div className="flex justify-between border-b pb-2">
+                                                <span className="text-gray-600">Slip Resistant:</span>
+                                                <span className="font-medium">yes</span>
+                                            </div>
+                                            <div className="flex justify-between border-b pb-2">
+                                                <span className="text-gray-600">Durability:</span>
+                                                <span className="font-medium">10 to 15 years</span>
+                                            </div>
+                                            <div className="flex justify-between border-b pb-2">
+                                                <span className="text-gray-600">Installation Type:</span>
+                                                <span className="font-medium">cut and stick down</span>
+                                            </div>
+                                            <div className="flex justify-between border-b pb-2">
+                                                <span className="text-gray-600">Surface Requirement:</span>
+                                                <span className="font-medium">dry, flat surfaces (tile or concrete)</span>
+                                            </div>
+                                            <div className="flex justify-between">
+                                                <span className="text-gray-600">Maintenance:</span>
+                                                <span className="font-medium">Sweep and damp mop only</span>
+                                            </div>
+                                        </>
+                                    )}
+                                </div>
+                            </div>
+
+                            <div className="bg-blue-50 rounded-xl p-6">
+                                <h4 className="text-lg font-semibold mb-4">
+                                    Installation Details
+                                </h4>
+                                <div className="space-y-4">
                                     <div className="flex justify-between border-b pb-2">
-                                        <span className="text-gray-600">Waterproof:</span>
+                                        <h5 className="font-medium mb-2">Installation Method:</h5>
+                                        <p className="text-gray-600 text-sm">
+                                            {productData.installation?.method || "Cut and stick down onto dry surfaces"}
+                                        </p>
+                                    </div>
+                                    <div className="flex justify-between border-b pb-2">
+                                        <h5 className="font-medium mb-2">Surface Types:</h5>
+                                        <p className="text-gray-600 text-sm">
+                                            {(productData.installation?.surface_types || []).join(", ") || "tile, concrete"}
+                                        </p>
+                                    </div>
+                                    <div className="flex flex-wrap gap-2 text-sm">
+                                        <span
+                                            className={`px-3 py-1 rounded-full ${productData.installation?.diy_friendly
+                                                ? "bg-green-100 text-green-700"
+                                                : "bg-red-100 text-red-700"
+                                                }`}
+                                        >
+                                            DIY Friendly: {productData.installation?.diy_friendly ? "Yes" : "No"}
+                                        </span>
+                                        <span
+                                            className={`px-3 py-1 rounded-full ${productData.installation?.professional_recommended
+                                                ? "bg-orange-100 text-orange-700"
+                                                : "bg-gray-100 text-gray-700"
+                                                }`}
+                                        >
+                                            Professional Recommended: {productData.installation?.professional_recommended ? "Yes" : "No"}
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* Benefits Section */}
+                        <div className="bg-gray-50 rounded-xl p-6">
+                            <h4 className="text-lg font-semibold mb-4">
+                                Why Customers Choose This
+                            </h4>
+                            <ul className="grid grid-cols-1 md:grid-cols-2 gap-4 list-none">
+                                {Array.isArray(productData.features?.benefits)
+                                    ? productData.features.benefits.map((benefit, index) => (
+                                        <li key={index} className="flex items-start gap-3">
+                                            <span className="w-3 h-3 mt-2 rounded-full bg-orange-500 flex-shrink-0"></span>
+                                            <span className="text-gray-600">{benefit}</span>
+                                        </li>
+                                    ))
+                                    : null}
+                            </ul>
+                        </div>
+                    </div>
+                );
+                return (
+                    <div className="py-8 space-y-8">
+                        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                            <div className="bg-gray-50 rounded-xl p-6">
+                                <h4 className="text-lg font-semibold mb-4">
+                                    Product Specifications
+                                </h4>
+
+                                <div className="space-y-3">
+                                    <div className="flex justify-between border-b pb-2">
+                                        <span className="text-gray-600">{productData.specifications?.key}</span>
                                         <span className="font-medium">
-                                            {productData.specifications?.waterproof ? "Yes" : "No"}
+                                            {productData.specifications?.value}
                                         </span>
                                     </div>
                                     <div className="flex justify-between border-b pb-2">
@@ -282,7 +397,7 @@ export default function SingleProduct({ productData }: SingleProductProps) {
                                     Installation Details
                                 </h4>
                                 <div className="space-y-4">
-                                    <div className="flex justify-between border-b pb-2"> 
+                                    <div className="flex justify-between border-b pb-2">
                                         <h5 className="font-medium mb-2">Installation Method:</h5>
                                         <p className="text-gray-600 text-sm">
                                             {productData.installation?.method || 'Cut and stick down onto dry surfaces'}
@@ -339,14 +454,14 @@ export default function SingleProduct({ productData }: SingleProductProps) {
                                 Why Customers Choose This
                             </h4>
                             <ul className="grid grid-cols-1 md:grid-cols-2 gap-4 list-none">
-                                {Array.isArray(productData.features?.benefits) 
-                                ? productData.features.benefits.map((benefit, index) => (
-                                    <li key={index} className="flex items-start gap-3">
-                                        <span className="w-3 h-3 mt-2 rounded-full bg-orange-500 flex-shrink-0"></span>
-                                        <span className="text-gray-600">{benefit}</span>
-                                    </li>
-                                ))
-                                : null}
+                                {Array.isArray(productData.features?.benefits)
+                                    ? productData.features.benefits.map((benefit, index) => (
+                                        <li key={index} className="flex items-start gap-3">
+                                            <span className="w-3 h-3 mt-2 rounded-full bg-orange-500 flex-shrink-0"></span>
+                                            <span className="text-gray-600">{benefit}</span>
+                                        </li>
+                                    ))
+                                    : null}
                             </ul>
                         </div>
                     </div>
@@ -359,21 +474,21 @@ export default function SingleProduct({ productData }: SingleProductProps) {
                             Frequently Asked Questions
                         </h3>
                         <Accordion type="single" collapsible className="w-full space-y-4">
-                            {Array.isArray(productData.faqs) 
+                            {Array.isArray(productData.faqs)
                                 ? productData.faqs.map((faq, index) => (
-                                <AccordionItem
-                                    key={index}
-                                    value={`item-${index}`}
-                                    className="border-b pb-4"
-                                >
-                                    <AccordionTrigger className="font-semibold text-gray-900 text-lg">
-                                        {faq.question}
-                                    </AccordionTrigger>
-                                    <AccordionContent className="text-gray-600 pt-4">
-                                        {faq.answer}
-                                    </AccordionContent>
-                                </AccordionItem>
-                            ))
+                                    <AccordionItem
+                                        key={index}
+                                        value={`item-${index}`}
+                                        className="border-b pb-4"
+                                    >
+                                        <AccordionTrigger className="font-semibold text-gray-900 text-lg">
+                                            {faq.question}
+                                        </AccordionTrigger>
+                                        <AccordionContent className="text-gray-600 pt-4">
+                                            {faq.answer}
+                                        </AccordionContent>
+                                    </AccordionItem>
+                                ))
                                 : null}
                         </Accordion>
                     </div>
@@ -453,7 +568,7 @@ export default function SingleProduct({ productData }: SingleProductProps) {
                         <div className="bg-gray-50 rounded-lg p-6">
                             <h3 className="font-semibold mb-3">Key Features</h3>
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
-                                {Array.isArray(productData.features?.main_features) 
+                                {Array.isArray(productData.features?.main_features)
                                     ? productData.features.main_features
                                         .slice(0, 6)
                                         .map((feature, index) => (
