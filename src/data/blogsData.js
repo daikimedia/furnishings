@@ -5,6 +5,9 @@ const blogs = [
         title: 'Top Modern Floor Design Trends of 2025',
         excerpt: 'Explore the latest in luxury vinyl, marble finishes, and textured tiles for your space...',
         image: '/blog1.jpg',
+        publish_date: '2025-08-20',
+        author: 'Sarah Johnson',
+        tags: 'design, trends, flooring',
         content: `Explore the latest in flooring innovation. In 2025, modern design embraces minimalism, texture, and eco-consciousness. From luxury vinyl to marble-patterned ceramics, the market is booming with choices. Learn what works best for your home interior and how to stay ahead of design trends.`,
     },
     {
@@ -13,6 +16,9 @@ const blogs = [
         title: 'How to Choose the Perfect Flooring for Your Home',
         excerpt: 'A quick guide on selecting the right flooring based on lifestyle, durability, and design...',
         image: '/blog2.jpg',
+        publish_date: '2025-08-15',
+        author: 'Michael Chen',
+        tags: 'guide, selection, home',
         content: `Choosing the right flooring depends on your lifestyle, budget, and space. Vinyl is great for water resistance, hardwood offers classic charm, and tile provides durability. Read this complete guide to match your needs with the right floor.`,
     },
     {
@@ -21,6 +27,9 @@ const blogs = [
         title: '5 Mistakes to Avoid When Designing Floors',
         excerpt: 'Avoid these common floor planning pitfalls to get a flawless interior finish...',
         image: '/blog3.jpg',
+        publish_date: '2025-08-10',
+        author: 'Emma Rodriguez',
+        tags: 'mistakes, design, tips',
         content: `Many homeowners rush the flooring process and later regret it. Common mistakes include ignoring room traffic, skipping underlayment, picking style over practicality, not testing samples, and hiring cheap labor. Learn how to avoid these and get lasting results.`,
     },
 ];
