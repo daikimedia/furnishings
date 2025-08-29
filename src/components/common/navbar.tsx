@@ -93,6 +93,7 @@ const Navbar = () => {
         },
         { label: "Contact", href: "/contact" },
         { label: "Shop", href: "/shop" },
+        { label: "Latest News", href: "/blog" },
         // { label: "", href: "/shop", icon: <ShoppingCart className="h-5 w-5 ml-2" /> },
     ]
 
