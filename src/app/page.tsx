@@ -5,7 +5,7 @@ import HeroBanner from "@/components/home/hero-section";
 import CertificateMarquee from "@/components/home/Certificate-section";
 import TestimonialsSection from "@/components/home/testinomial-section";
 // import CategoryTabs from "@/components/home/category-tabs"
-import BlogPage from "@/components/home/latest-news";
+
 import FurniturePromoBanner from "@/components/home/sales-card";
 import FaqSection from "@/components/home/faq-section";
 import PricingSection from "@/components/home/pricing-section";
@@ -17,7 +17,7 @@ import MainContentSections from "@/components/home/main-content-section";
 import FlooringSection from "@/components/home/flooring-section";
 // import CTASection from "@/components/common/CTA-section";
 import CTASection2 from "@/components/home/CTA-section2"
-
+import BlogList from "@/components/blogs/blog-section"
 export const metadata = {
   title: "Vinyl & PVC Flooring Malaysia | Furnishing Solutions",
   description: "Transform your space in Malaysia with waterproof, stylish vinyl and PVC flooring. Furnishing Solutions offers expert installation and free quotations nationwide.",
@@ -48,7 +48,7 @@ export default function Home() {
       <FlooringProjectSection />
       <CompanyOverviewSection />
       <CTASection2 />
-      <BlogPage />
+      <BlogList limit={6} />
     </main>
   );
 }
