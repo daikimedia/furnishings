@@ -50,7 +50,7 @@ const BlogList = ({ limit, showHeader = true }: BlogListProps) => {
             <div className="container mx-auto">
                 {showHeader && (
                     <div className="text-center">
-                        <h2 className="text-3xl font-bold mb-12">Latest News</h2>
+                        <h2 className="text-3xl font-bold mb-12">Our Blogs</h2>
                         <p className="text-gray-600 mb-10 text-xl">
                             Stay updated with the latest ideas, inspiration, and innovations
                             from the furnishing world
