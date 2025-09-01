@@ -60,6 +60,12 @@ export default function RootLayout({
         <meta name="msapplication-TileColor" content="#ffffff" />
         <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
         <meta name="theme-color" content="#ffffff" />
+
+        <Script
+          src="https://analytics.ahrefs.com/analytics.js"
+          data-key="vajkVhoLVd1KSTGY47YLPA"
+          async
+        />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}

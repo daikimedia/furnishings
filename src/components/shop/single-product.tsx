@@ -114,7 +114,7 @@ type SingleProductProps = {
 export default function SingleProduct({ productData }: SingleProductProps) {
     // Parse JSON string into object safely
     let descriptionData = null;
-
+    console.log("productData.faqs", productData.faqs)
     try {
         if (typeof productData.additional_description === 'string') {
             descriptionData = JSON.parse(productData.additional_description);
@@ -468,14 +468,82 @@ export default function SingleProduct({ productData }: SingleProductProps) {
                 );
 
             case "faq":
+                // Define static FAQs directly here
+                const staticFaqs = [
+                    {
+                        question: "What is this type of flooring?",
+                        answer:
+                            "It’s a durable and stylish flooring solution designed to enhance interiors while remaining practical.",
+                    },
+                    {
+                        question: "Is it waterproof?",
+                        answer:
+                            "Yes, it is engineered to resist water, spills, and humidity, making it suitable for tropical climates.",
+                    },
+                    {
+                        question: "Can it be used in humid climates like Malaysia?",
+                        answer:
+                            "Absolutely. Its moisture resistance makes it perfect for Malaysia’s tropical weather.",
+                    },
+                    {
+                        question: "How long does it last?",
+                        answer: "With proper installation and care, it can last between 10–20 years.",
+                    },
+                    {
+                        question: "How is it installed?",
+                        answer:
+                            "Depending on the type, it can be glued down, loose-laid, or simply placed over existing surfaces.",
+                    },
+                    {
+                        question: "What are the main benefits?",
+                        answer:
+                            "It’s waterproof, anti-slip, low-maintenance, affordable, and designed for modern spaces.",
+                    },
+                    {
+                        question: "Is it anti-slip?",
+                        answer:
+                            "Yes, the surface is designed to reduce slipping, making it safe for wet areas.",
+                    },
+                    {
+                        question: "Is it suitable for kitchens and bathrooms?",
+                        answer:
+                            "Yes, its moisture resistance and easy cleaning make it ideal for high-use areas.",
+                    },
+                    {
+                        question: "Is it easy to clean?",
+                        answer: "Yes, simple sweeping and occasional mopping are enough to maintain it.",
+                    },
+                    {
+                        question: "Is it comfortable underfoot?",
+                        answer: "Yes, it provides a softer and warmer feel compared to tiles or stone.",
+                    },
+                    {
+                        question: "Can it be installed over existing floors?",
+                        answer:
+                            "In most cases, yes. It can go over tiles, cement, or other smooth surfaces.",
+                    },
+                    {
+                        question: "Is it cost-effective?",
+                        answer:
+                            "Yes, it’s one of the most budget-friendly options while offering premium looks.",
+                    },
+                ];
+
+                // Check if faqs are valid (non-null question and answer)
+                const hasValidFaqs = Array.isArray(productData.faqs) &&
+                    productData.faqs.length > 0 &&
+                    productData.faqs.every(
+                        (faq) => faq.question != null && faq.answer != null
+                    );
+
                 return (
                     <div className="py-8">
                         <h3 className="text-2xl font-bold mb-8 text-center">
                             Frequently Asked Questions
                         </h3>
                         <Accordion type="single" collapsible className="w-full space-y-4">
-                            {Array.isArray(productData.faqs)
-                                ? productData.faqs.map((faq, index) => (
+                            {hasValidFaqs ? (
+                                productData.faqs.map((faq, index) => (
                                     <AccordionItem
                                         key={index}
                                         value={`item-${index}`}
@@ -489,7 +557,22 @@ export default function SingleProduct({ productData }: SingleProductProps) {
                                         </AccordionContent>
                                     </AccordionItem>
                                 ))
-                                : null}
+                            ) : (
+                                staticFaqs.map((faq, index) => (
+                                    <AccordionItem
+                                        key={index}
+                                        value={`item-${index}`}
+                                        className="border-b pb-4"
+                                    >
+                                        <AccordionTrigger className="font-semibold text-gray-900 text-lg">
+                                            {faq.question}
+                                        </AccordionTrigger>
+                                        <AccordionContent className="text-gray-600 pt-4">
+                                            {faq.answer}
+                                        </AccordionContent>
+                                    </AccordionItem>
+                                ))
+                            )}
                         </Accordion>
                     </div>
                 );
@@ -593,14 +676,18 @@ export default function SingleProduct({ productData }: SingleProductProps) {
                                 {productData.call_to_action?.primary || "Contact us for pricing and availability"}
                             </p>
                             <div className="flex flex-col sm:flex-row gap-3">
-                                <button className="flex items-center justify-center bg-orange-600  text-white px-6 py-3 rounded-md transition-colors">
+                                <Link href="/contact"
+                                    className="flex items-center justify-center bg-orange-600  text-white px-6 py-3 rounded-md transition-colors">
                                     <Phone className="w-4 h-4 mr-2" />
                                     Call for Quote
-                                </button>
-                                <button className="flex items-center justify-center border border-orange-500 text-orange-600 hover:bg-orange-600 hover:text-white px-6 py-3 rounded-md transition-colors">
+                                </Link>
+                                <Link
+                                    href="/contact"
+                                    className="flex items-center justify-center border border-orange-500 text-orange-600 hover:bg-orange-600 hover:text-white px-6 py-3 rounded-md transition-colors">
                                     <MapPin className="w-4 h-4 mr-2" />
                                     Visit Showroom
-                                </button>
+
+                                </Link>
                             </div>
                             <p className="text-sm text-orange-600">
                                 {productData.call_to_action?.secondary || "Free consultation available"}
