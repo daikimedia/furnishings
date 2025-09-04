@@ -760,15 +760,20 @@ export default function SingleProduct({ productData }: SingleProductProps) {
                     ) : relatedProducts.length > 0 ? (
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                             {relatedProducts.map((product) => {
-                                // Fix image URL
-                                const imageUrl = product.images.main_image?.startsWith('http')
-                                    ? product.images.main_image
-                                    : `https://cms.furnishings.daikimedia.com${product.images.main_image}`;
+                                const normalizeUrl = (input: unknown): string => {
+                                    if (typeof input !== 'string') return '';
+                                    const trimmed = input.trim();
+                                    if (!trimmed || trimmed.toLowerCase() === 'null' || trimmed.toLowerCase() === 'undefined') {
+                                        return '';
+                                    }
+                                    return trimmed.startsWith('http') ? trimmed : `https://cms.furnishings.daikimedia.com${trimmed}`;
+                                };
+                                const imageUrl = normalizeUrl(product.images.main_image) || "/placeholder.svg";
 
                                 return (
                                     <Link
                                         key={product.id}
-                                        href={`/shop/${product.slug}`}
+                                        href={`/shop/${product.category?.slug || 'uncategorized'}/${product.slug}`}
                                         className="group relative overflow-hidden rounded-2xl bg-white shadow-md transition-shadow hover:shadow-lg"
                                     >
                                         {/* Image Section */}
