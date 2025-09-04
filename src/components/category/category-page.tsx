@@ -518,7 +518,7 @@ export default function CategoryPage() {
                                         return (
                                             <div key={product.id} className="group">
                                                 <Link
-                                                    href={`/shop/${product.slug}`}
+                                                    href={`/shop/${product.category?.slug || 'uncategorized'}/${product.slug}`}
                                                     className="block bg-white rounded-2xl shadow-md cursor-pointer overflow-hidden hover:shadow-lg transition-shadow"
                                                 >
                                                     {/* Image Section */}

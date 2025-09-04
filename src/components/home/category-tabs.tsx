@@ -109,7 +109,7 @@ const CategoryTabs = () => {
                             whileHover={{ y: -8 }}
                             className="group bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-200 cursor-pointer transform overflow-hidden"
                         >
-                            <Link href={`/shop/${product.slug}`}>
+                            <Link href={`/shop/${product.category?.slug || 'uncategorized'}/${product.slug}`}>
                                 {/* Image */}
                                 <div className="relative h-60 overflow-hidden">
                                     <Image

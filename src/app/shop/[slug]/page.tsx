@@ -1,6 +1,4 @@
-import { notFound } from "next/navigation";
-import SingleProduct from "@/components/shop/single-product";
-import PageHeader from "@/components/common/header";
+import { notFound, redirect } from "next/navigation";
 
 // API Product interface
 interface ApiProduct {
@@ -70,28 +68,28 @@ async function fetchProductBySlug(slug: string): Promise<ApiProduct | null> {
         const response = await fetch('https://cms.furnishings.daikimedia.com/api/products', {
             next: { revalidate: 30 } // Revalidate 30 second 
         });
-        
-        
+
+
         if (!response.ok) {
             console.error('API response not ok:', response.status, response.statusText);
             return null;
         }
-        
+
         const result: ProductsApiResponse = await response.json();
         console.log('API response:', result);
-        
+
         if (result.success && result.data) {
             console.log('Looking for product with slug:', slug);
             console.log('Available products:', result.data.map(p => ({ id: p.id, slug: p.slug, name: p.name })));
-            
+
             const product = result.data.find(p => p.slug === slug);
             console.log('Found product:', product);
-            
+
             // Validate product has required fields
             if (product && !product.category) {
                 console.warn('Product found but category is null:', product.slug);
             }
-            
+
             return product || null;
         }
         return null;
@@ -117,49 +115,11 @@ export default async function ProductPage({ params }: { params: Promise<Params> 
         notFound();
     }
 
-    // Fix image URLs
-    const fixedImageUrls = {
-        ...productData.images,
-        main_image: productData.images.main_image?.startsWith('http') 
-            ? productData.images.main_image 
-            : `https://cms.furnishings.daikimedia.com${productData.images.main_image}`,
-        gallery: productData.images.gallery?.map(img => 
-            img.startsWith('http') ? img : `https://cms.furnishings.daikimedia.com${img}`
-        ) || []
-    };
+    // Redirect legacy /shop/[slug] to canonical /shop/[category]/[slug]
+    const categorySlug = productData.category?.slug || 'uncategorized';
+    redirect(`/shop/${categorySlug}/${slug}`);
 
-    // Ensure all required fields are properly defined
-    const productWithDefaults = {
-        ...productData,
-        images: fixedImageUrls,
-        category: productData.category || { id: 0, name: 'Uncategorized', slug: 'uncategorized' },
-        additional_description: productData.additional_description ?? {
-            headline: "",
-            sections: [],
-        },
-        features: productData.features ?? {
-            main_features: [],
-            benefits: [],
-            design_compatibility: []
-        },
-        specifications: productData.specifications ?? {},
-        installation: productData.installation ?? {},
-        maintenance: productData.maintenance ?? {},
-        faqs: productData.faqs ?? [],
-        call_to_action: productData.cta ?? {
-            primary: "Contact us for more information",
-            secondary: "Get a quote today",
-            tertiary: "Professional installation available"
-        }
-    };
-
-    return (
-        <main>
-            <PageHeader />
-            {/* eslint-disable-next-line @typescript-eslint/no-explicit-any */}
-            <SingleProduct productData={productWithDefaults as any} />
-        </main>
-    );
+    // Unreachable after redirect
 }
 
 // Disable static generation to prevent build errors
@@ -177,20 +137,9 @@ export async function generateMetadata({ params }: { params: Promise<Params> }) 
             description: "The product you are looking for does not exist.",
         };
     }
-
-    // Fix image URL for metadata
-    const imageUrl = productData.images.main_image?.startsWith('http') 
-        ? productData.images.main_image 
-        : `https://cms.furnishings.daikimedia.com${productData.images.main_image}`;
-
+    // Prefer canonical path metadata; minimal metadata to avoid duplicate content
     return {
         title: productData.seo?.meta_title || productData.name,
         description: productData.seo?.meta_description || productData.description.short,
-        keywords: productData.seo?.keywords || [],
-        openGraph: {
-            title: productData.name,
-            description: productData.description.short,
-            images: [imageUrl],
-        },
     };
 }

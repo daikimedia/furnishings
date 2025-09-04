@@ -56,6 +56,7 @@ type Product = {
     discount: number | null;
     image: string;
     category: string;
+    categorySlug?: string;
     isAlreadyAdded: boolean;
     slug: string;
 };
@@ -118,6 +119,7 @@ export default function ProductsSection({
                             discount: null, // Can be calculated if needed
                             image: imageUrl,
                             category: apiProduct.category?.name || 'Uncategorized', 
+                            categorySlug: apiProduct.category?.slug || 'uncategorized',
                             isAlreadyAdded: false
                         };
                     });
@@ -275,7 +277,7 @@ export default function ProductsSection({
                                 {displayedProducts.map((product) => (
                                 <Link
                                     key={product.id}
-                                    href={`/shop/${product.slug}`}
+                                    href={`/shop/${product.categorySlug || 'uncategorized'}/${product.slug}`}
                                     className="group relative overflow-hidden rounded-2xl bg-white shadow-md transition-shadow"
                                     onMouseEnter={() => setHoveredProduct(product.id)}
                                     onMouseLeave={() => setHoveredProduct(null)}

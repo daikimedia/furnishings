@@ -7,6 +7,7 @@ import { Search } from 'lucide-react';
 interface Product {
     name: string;
     slug: string;
+    categorySlug?: string;
 }
 
 interface ApiProduct {
@@ -46,7 +47,8 @@ const SearchAutoComplete: React.FC = () => {
                 if (result.success && result.data) {
                     const productList: Product[] = result.data.map(item => ({
                         name: item.name,
-                        slug: item.slug
+                        slug: item.slug,
+                        categorySlug: item.category?.slug || 'uncategorized'
                     }));
                     setProducts(productList);
                 }
@@ -124,7 +126,7 @@ const SearchAutoComplete: React.FC = () => {
         setSearchTerm(product.name);
         setShowDropdown(false);
         setSelectedIndex(-1);
-        router.push(`/shop/${product.slug}`);
+        router.push(`/shop/${product.categorySlug || 'uncategorized'}/${product.slug}`);
     };
 
     // Handle input change
