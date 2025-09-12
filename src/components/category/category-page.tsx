@@ -2,6 +2,7 @@
 import React, { useState, useEffect, useMemo } from "react";
 import { useParams, useRouter } from "next/navigation";
 import Link from "next/link";
+import SquareLoader from "../common/loader";
 
 // API interfaces
 interface ApiProduct {
@@ -68,6 +69,14 @@ export default function CategoryPage() {
     // Get category name safely
     const categoryName = currentCategory?.name;
 
+    // Function to scroll to top smoothly
+    const scrollToTop = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    };
+
     // Apply filters and pagination
     const filteredProducts = useMemo(() => {
         let filtered = categoryProducts;
@@ -114,6 +123,17 @@ export default function CategoryPage() {
         setCurrentPage(1);
     }, [selectedColors, selectedTypes, selectedCategories]);
 
+    // Scroll to top when page changes
+    useEffect(() => {
+        scrollToTop();
+    }, [currentPage]);
+
+    // Updated pagination handler function
+    const handlePageChange = (newPage: number) => {
+        setCurrentPage(newPage);
+        // Scroll to top will be handled by the useEffect above
+    };
+
     // Pagination component
     const PaginationControls = () => {
         if (totalPages <= 1) return null;
@@ -157,7 +177,7 @@ export default function CategoryPage() {
                 <div className="flex items-center space-x-2 bg-white rounded-lg shadow-md p-2">
                     {/* Previous Button */}
                     <button
-                        onClick={() => setCurrentPage(Math.max(1, currentPage - 1))}
+                        onClick={() => handlePageChange(Math.max(1, currentPage - 1))}
                         disabled={currentPage === 1}
                         className={`px-3 py-2 rounded-lg text-sm font-medium transition-colors ${currentPage === 1
                             ? 'text-gray-400 cursor-not-allowed'
@@ -174,7 +194,7 @@ export default function CategoryPage() {
                                 <span className="px-3 py-2 text-gray-400">...</span>
                             ) : (
                                 <button
-                                    onClick={() => setCurrentPage(page as number)}
+                                    onClick={() => handlePageChange(page as number)}
                                     className={`px-3 py-2 rounded-lg text-sm font-medium transition-colors ${currentPage === page
                                         ? 'bg-orange-600 text-white'
                                         : 'text-gray-700 hover:bg-gray-100'
@@ -188,7 +208,7 @@ export default function CategoryPage() {
 
                     {/* Next Button */}
                     <button
-                        onClick={() => setCurrentPage(Math.min(totalPages, currentPage + 1))}
+                        onClick={() => handlePageChange(Math.min(totalPages, currentPage + 1))}
                         disabled={currentPage === totalPages}
                         className={`px-3 py-2 rounded-lg text-sm font-medium transition-colors ${currentPage === totalPages
                             ? 'text-gray-400 cursor-not-allowed'
@@ -290,10 +310,7 @@ export default function CategoryPage() {
     if (loading) {
         return (
             <div className="min-h-screen flex items-center justify-center">
-                <div className="text-center">
-                    <div className="animate-spin rounded-full h-32 w-32 border-b-2 border-orange-600 mx-auto mb-4"></div>
-                    <h2 className="text-xl font-semibold text-gray-700">Loading category...</h2>
-                </div>
+                <SquareLoader text="Loading Category..." />
             </div>
         );
     }
@@ -416,29 +433,6 @@ export default function CategoryPage() {
                                         ))}
                                 </div>
                             </div>
-
-                            {/* Price Range Filter */}
-                            {/* <div className="mb-6">
-                                <h3 className="text-lg font-semibold text-gray-700 mb-4">Price Range</h3>
-                                <div className="space-y-2">
-                                    {[
-                                        { label: 'Under $50', min: 0, max: 50 },
-                                        { label: '$50 - $100', min: 50, max: 100 },
-                                        { label: '$100 - $200', min: 100, max: 200 },
-                                        { label: 'Over $200', min: 200, max: Infinity }
-                                    ].map((range) => (
-                                        <label key={range.label} className="flex items-center">
-                                            <input
-                                                type="checkbox"
-                                                className="mr-3 w-4 h-4 text-orange-600 border-gray-300 rounded focus:ring-orange-500"
-                                                checked={selectedTypes.includes(range.label)}
-                                                onChange={() => handleTypeFilter(range.label)}
-                                            />
-                                            <span className="text-gray-700 text-sm">{range.label}</span>
-                                        </label>
-                                    ))}
-                                </div>
-                            </div> */}
 
                             {/* Clear Filters Button */}
                             <button
