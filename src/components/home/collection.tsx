@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
+import SquareLoader from "../common/loader";
 
 interface ApiCategory {
     id: number
@@ -36,7 +37,7 @@ export default function FloorCategories() {
                 const result: CategoriesApiResponse = await response.json();
 
                 console.log(result);
-                
+
                 if (result.success) {
                     // Transform API categories to component Category type with full image URL
                     const transformedCategories: Category[] = result.data.map((apiCategory) => ({
@@ -72,8 +73,8 @@ export default function FloorCategories() {
 
                 {/* Categories Grid */}
                 {loading ? (
-                    <div className="flex justify-center items-center py-12">
-                        <div className="text-gray-500 text-lg">Loading collections...</div>
+                    <div className="min-h-screen flex items-center justify-center">
+                        <SquareLoader text="Loading Category..." />
                     </div>
                 ) : (
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

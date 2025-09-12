@@ -1,6 +1,7 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
+import SquareLoader from "../common/loader";
 
 // API Product interface
 interface ApiProduct {
@@ -87,7 +88,7 @@ export default function ProductsSection({
         const fetchData = async () => {
             try {
                 setLoading(true);
-                
+
                 // Fetch products and categories in parallel
                 const [productsResponse, categoriesResponse] = await Promise.all([
                     fetch('https://cms.furnishings.daikimedia.com/api/products'),
@@ -108,7 +109,7 @@ export default function ProductsSection({
                         if (imageUrl && !imageUrl.startsWith('http')) {
                             imageUrl = `https://cms.furnishings.daikimedia.com${imageUrl}`;
                         }
-                        
+
                         return {
                             id: apiProduct.id,
                             name: apiProduct.name,
@@ -118,12 +119,12 @@ export default function ProductsSection({
                             originalPrice: null, // Can be calculated if needed
                             discount: null, // Can be calculated if needed
                             image: imageUrl,
-                            category: apiProduct.category?.name || 'Uncategorized', 
+                            category: apiProduct.category?.name || 'Uncategorized',
                             categorySlug: apiProduct.category?.slug || 'uncategorized',
                             isAlreadyAdded: false
                         };
                     });
-                    
+
                     console.log('Transformed products:', transformedProducts);
                     setProducts(transformedProducts);
                 }
@@ -158,22 +159,6 @@ export default function ProductsSection({
                 : [...prev, category]
         );
     };
-
-    // const handleColorChange = (color: string) => {
-    //     setSelectedColors(prev =>
-    //         prev.includes(color)
-    //             ? prev.filter(c => c !== color)
-    //             : [...prev, color]
-    //     );
-    // };
-
-    // const handleBrandChange = (brand: string) => {
-    //     setSelectedBrands(prev =>
-    //         prev.includes(brand)
-    //             ? prev.filter(b => b !== brand)
-    //             : [...prev, brand]
-    //     );
-    // };
 
     return (
         <div className="py-16 bg-white">
@@ -216,42 +201,6 @@ export default function ProductsSection({
                                 )}
                             </div>
 
-                            {/* Colors Filter */}
-                            {/* <div className="mb-8">
-                                <h4 className="font-medium text-gray-900 mb-3">Colors</h4>
-                                <div className="space-y-2">
-                                    {colors.map((color) => (
-                                        <label key={color} className="flex items-center">
-                                            <input
-                                                type="checkbox"
-                                                checked={selectedColors.includes(color)}
-                                                onChange={() => handleColorChange(color)}
-                                                className="w-4 h-4 accent-orange-600  hover:accent-orange-600"
-                                            />
-                                            <span className="ml-2 text-sm text-gray-700">{color}</span>
-                                        </label>
-                                    ))}
-                                </div>
-                            </div> */}
-
-                            {/* Brands Filter */}
-                            {/* <div className="mb-6">
-                                <h4 className="font-medium text-gray-900 mb-3">Brands</h4>
-                                <div className="space-y-2">
-                                    {brands.map((brand) => (
-                                        <label key={brand} className="flex items-center">
-                                            <input
-                                                type="checkbox"
-                                                checked={selectedBrands.includes(brand)}
-                                                onChange={() => handleBrandChange(brand)}
-                                                className="w-4 h-4 accent-orange-600  hover:accent-orange-600"
-                                            />
-                                            <span className="ml-2 text-sm text-gray-700">{brand}</span>
-                                        </label>
-                                    ))}
-                                </div>
-                            </div> */}
-
                             {/* Clear Filters Button */}
                             <button
                                 onClick={() => {
@@ -269,56 +218,56 @@ export default function ProductsSection({
                     {/* Products Grid */}
                     <div className="flex-1 w-full">
                         {loading ? (
-                            <div className="flex justify-center items-center py-12">
-                                <div className="text-gray-500 text-lg">Loading products...</div>
+                            <div className="min-h-screen flex items-center justify-center">
+                                <SquareLoader text="Loading Products..." />
                             </div>
                         ) : (
                             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-8">
                                 {displayedProducts.map((product) => (
-                                <Link
-                                    key={product.id}
-                                    href={`/shop/${product.categorySlug || 'uncategorized'}/${product.slug}`}
-                                    className="group relative overflow-hidden rounded-2xl bg-white shadow-md transition-shadow"
-                                    onMouseEnter={() => setHoveredProduct(product.id)}
-                                    onMouseLeave={() => setHoveredProduct(null)}
-                                >
-                                    {/* Image Section */}
-                                    <div className="relative h-56 overflow-hidden bg-orange-100">
-                                        <img
-                                            src={product.image}
-                                            alt={product.name}
-                                            className="w-full h-full object-cover p-4"
-                                        />
-                                    </div>
-
-                                    {/* Content Section */}
-                                    <div className="p-6">
-                                        <h3 className="text-xl font-semibold mb-3 text-gray-800 group-hover:text-orange-600 transition-colors duration-300 line-clamp-2">
-                                            {product.name}
-                                        </h3>
-                                        <p className="text-sm text-gray-600 mb-4 line-clamp-2">
-                                            {product.description || "Lorem ipsum dolor sit amet, consectetur adipiscing elit."}
-                                        </p>
-
-                                        <div className="flex items-center text-orange-500 font-medium">
-                                            <span className="text-sm">View Product</span>
-                                            <svg
-                                                className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform duration-300"
-                                                fill="none"
-                                                stroke="currentColor"
-                                                viewBox="0 0 24 24"
-                                            >
-                                                <path
-                                                    strokeLinecap="round"
-                                                    strokeLinejoin="round"
-                                                    strokeWidth={2}
-                                                    d="M9 5l7 7-7 7"
-                                                />
-                                            </svg>
+                                    <Link
+                                        key={product.id}
+                                        href={`/shop/${product.categorySlug || 'uncategorized'}/${product.slug}`}
+                                        className="group relative overflow-hidden rounded-2xl bg-white shadow-md transition-shadow"
+                                        onMouseEnter={() => setHoveredProduct(product.id)}
+                                        onMouseLeave={() => setHoveredProduct(null)}
+                                    >
+                                        {/* Image Section */}
+                                        <div className="relative h-56 overflow-hidden bg-orange-100">
+                                            <img
+                                                src={product.image}
+                                                alt={product.name}
+                                                className="w-full h-full object-cover p-4"
+                                            />
                                         </div>
-                                    </div>
 
-                                </Link>
+                                        {/* Content Section */}
+                                        <div className="p-6">
+                                            <h3 className="text-xl font-semibold mb-3 text-gray-800 group-hover:text-orange-600 transition-colors duration-300 line-clamp-2">
+                                                {product.name}
+                                            </h3>
+                                            <p className="text-sm text-gray-600 mb-4 line-clamp-2">
+                                                {product.description || "Lorem ipsum dolor sit amet, consectetur adipiscing elit."}
+                                            </p>
+
+                                            <div className="flex items-center text-orange-500 font-medium">
+                                                <span className="text-sm">View Product</span>
+                                                <svg
+                                                    className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform duration-300"
+                                                    fill="none"
+                                                    stroke="currentColor"
+                                                    viewBox="0 0 24 24"
+                                                >
+                                                    <path
+                                                        strokeLinecap="round"
+                                                        strokeLinejoin="round"
+                                                        strokeWidth={2}
+                                                        d="M9 5l7 7-7 7"
+                                                    />
+                                                </svg>
+                                            </div>
+                                        </div>
+
+                                    </Link>
                                 ))}
                             </div>
                         )}

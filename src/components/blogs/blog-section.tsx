@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import SquareLoader from '../common/loader';
 
 interface BlogPost {
     id: number;
@@ -41,7 +42,9 @@ const BlogList = ({ limit, showHeader = true }: BlogListProps) => {
         fetchBlogs();
     }, [limit]);
 
-    if (loading) return <p>Loading blogs...</p>;
+    if (loading) return <div className="min-h-screen flex items-center justify-center">
+        <SquareLoader text="Loading Blogs..." />
+    </div>;
     if (error) return <p className="text-red-600">Error: {error}</p>;
     if (blogs.length === 0) return <p>No blogs found</p>;
 
