@@ -310,7 +310,7 @@ export default function CategoryPage() {
     if (loading) {
         return (
             <div className="min-h-screen flex items-center justify-center">
-                <SquareLoader text="Loading Category..." />
+                <SquareLoader text="Loading..." />
             </div>
         );
     }

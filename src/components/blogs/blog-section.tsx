@@ -43,7 +43,7 @@ const BlogList = ({ limit, showHeader = true }: BlogListProps) => {
     }, [limit]);
 
     if (loading) return <div className="min-h-screen flex items-center justify-center">
-        <SquareLoader text="Loading Blogs..." />
+        <SquareLoader text="Loading..." />
     </div>;
     if (error) return <p className="text-red-600">Error: {error}</p>;
     if (blogs.length === 0) return <p>No blogs found</p>;
