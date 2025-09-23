@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import { useParams } from "next/navigation";
 import Image from "next/image";
 import PageHeader from "@/components/common/header";
+import SquareLoader from "@/components/common/loader";
 
 interface BlogPost {
     id: number;
@@ -96,11 +97,7 @@ export default function SingleBlogPage() {
         return (
             <>
                 <PageHeader />
-                <section className="py-12 px-6">
-                    <div className="container mx-auto text-center">
-                        <h2 className="text-3xl font-bold mb-4">Loading Blog...</h2>
-                    </div>
-                </section>
+                <SquareLoader />
             </>
         );
     }

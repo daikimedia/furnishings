@@ -37,7 +37,7 @@ export default function PageHeader() {
                 setLoading(true);
                 const response = await fetch('https://cms.furnishings.daikimedia.com/api/products');
                 const result: ProductsApiResponse = await response.json();
-                
+
                 if (result.success) {
                     setProducts(result.data);
                 }
@@ -79,7 +79,7 @@ export default function PageHeader() {
     return (
         <div className="bg-black py-12 text-center h-48">
             <h1 className="text-4xl font-bold text-orange-600 italic">
-                {loading ? "LOADING..." : pageTitle}
+                {pageTitle}
             </h1>
             <div className="mt-2 text-white text-sm">
                 <Link href="/" className="hover:underline text-white">
