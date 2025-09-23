@@ -20,6 +20,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "furnishings ",
   description: "Discover the best flooring solutions for your home",
+  metadataBase: new URL("https://www.furnishings.com.my"),
 };
 
 export default function RootLayout({
