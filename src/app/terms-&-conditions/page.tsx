@@ -1,5 +1,11 @@
 import PageHeader from "@/components/common/header";
 
+export const metadata = {
+    alternates: {
+        canonical: "/terms-&-conditions",
+    },
+};
+
 export default function Terms() {
 
     return (

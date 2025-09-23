@@ -5,6 +5,9 @@ import CTASection from "@/components/common/CTA-section";
 export const metadata = {
     title: "About Us | Furnishing Malaysia – Vinyl & SPC Flooring Experts",
     description: "Explore Furnishing – Malaysia’s vinyl flooring, SPC, and wall panels expert—affordable, waterproof, stylish interiors for homes & businesses. Get a free consultation today.",
+    alternates: {
+        canonical: "/about-us",
+    },
 }
 
 export default function About() {

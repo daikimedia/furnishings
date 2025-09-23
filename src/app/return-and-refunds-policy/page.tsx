@@ -1,3 +1,9 @@
+export const metadata = {
+    alternates: {
+        canonical: "/return-and-refunds-policy",
+    },
+};
+
 export default function Refund() {
     return (
         <>
