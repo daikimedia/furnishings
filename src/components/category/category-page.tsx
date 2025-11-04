@@ -258,7 +258,9 @@ export default function CategoryPage() {
                     const categoriesResult: CategoriesApiResponse = await categoriesResponse.json();
 
                     if (categoriesResult.success) {
-                        const category = categoriesResult.data.find(cat => cat.slug === slug);
+                        // Case-insensitive category slug comparison
+                        const normalizedSlug = slug.toLowerCase().trim();
+                        const category = categoriesResult.data.find(cat => cat.slug.toLowerCase().trim() === normalizedSlug);
                         if (category) {
                             setCurrentCategory(category);
                             setCategoryProducts([]);

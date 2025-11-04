@@ -54,7 +54,7 @@ const FlooringSection = () => {
                     Explore Flooring Solutions in Malaysia
                 </h2>
                 <p className="text-lg text-gray-600 mb-10 text-center">
-                    Discover the best home flooring solutions Malaysia has to offer, including laminate flooring Malaysia, vinyl flooring Malaysia, and more. Whether you&apos;re looking for waterproof vinyl flooring, affordable laminate flooring, or artificial grass Malaysia, we’ve got you covered!
+                    Discover the best home flooring solutions Malaysia has to offer, including laminate flooring Malaysia, vinyl flooring Malaysia, and more. Whether you&apos;re looking for waterproof Vinyl Flooring Roll Supplier in Malaysia, affordable laminate flooring, or artificial grass Malaysia, we’ve got you covered!
                 </p>
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">

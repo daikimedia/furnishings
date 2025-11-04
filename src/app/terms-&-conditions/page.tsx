@@ -1,8 +1,11 @@
+import type { Metadata } from "next";
 import PageHeader from "@/components/common/header";
 
-export const metadata = {
+export const metadata: Metadata = {
+    title: "Terms & Conditions – Shopping Policies | Furnishing Solutions",
+    description: "Review our terms and conditions to understand your shopping rights, store policies, and privacy guidelines when purchasing from Furnishing Solutions.",
     alternates: {
-        canonical: "/terms-&-conditions",
+        canonical: "https://www.furnishings.com.my/terms-and-conditions",
     },
 };
 

@@ -42,6 +42,11 @@ const SearchAutoComplete: React.FC = () => {
         const fetchProducts = async () => {
             try {
                 const response = await fetch('https://cms.furnishings.daikimedia.com/api/products');
+                
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                
                 const result: ProductsApiResponse = await response.json();
                 
                 if (result.success && result.data) {

@@ -71,8 +71,13 @@ async function fetchProductBySlug(slug: string): Promise<ApiProduct | null> {
             return null;
         }
         const result: ProductsApiResponse = await response.json();
-        const product = result.success ? result.data.find(p => p.slug === slug) : null;
-        return product || null;
+        if (result.success && result.data) {
+            // Case-insensitive slug comparison - compare lowercase versions
+            const normalizedSlug = slug.toLowerCase().trim();
+            const product = result.data.find(p => p.slug.toLowerCase().trim() === normalizedSlug);
+            return product || null;
+        }
+        return null;
     } catch {
         return null;
     }
@@ -97,7 +102,8 @@ export default async function ProductPage({ params }: { params: Promise<Params> 
             notFound();
         }
         const categorySlug = productData.category?.slug || 'uncategorized';
-        redirect(`/shop/${categorySlug}/${productSlug}`);
+        // Use CMS slug as canonical (jo slug CMS mai hai wahi use karo)
+        redirect(`/shop/${categorySlug}/${productData.slug}`);
     }
 
     // Canonical route: /shop/[category]/[product]
@@ -109,8 +115,9 @@ export default async function ProductPage({ params }: { params: Promise<Params> 
         }
 
         const canonicalCategory = productData.category?.slug || 'uncategorized';
-        if (category !== canonicalCategory) {
-            redirect(`/shop/${canonicalCategory}/${productSlug}`);
+        // Case-insensitive category comparison - use CMS slug as canonical
+        if (category.toLowerCase().trim() !== canonicalCategory.toLowerCase().trim()) {
+            redirect(`/shop/${canonicalCategory}/${productData.slug}`);
         }
 
         const normalizeUrl = (input: unknown): string => {
@@ -180,6 +187,7 @@ export async function generateMetadata({ params }: { params: Promise<Params> }) 
         };
     }
 
+    // Case-insensitive product slug matching
     const productSlug = slug.length === 1 ? slug[0] : slug[1];
     const productData = await fetchProductBySlug(productSlug);
     if (!productData) {
@@ -201,13 +209,38 @@ export async function generateMetadata({ params }: { params: Promise<Params> }) 
         return normalizeUrl(productData.images.main_image) || '/placeholder.svg';
     })();
 
+    // Build canonical URL from product data
+    const categorySlug = productData.category?.slug || 'uncategorized';
+    const canonicalUrl = `/shop/${categorySlug}/${productData.slug}`;
+
+    // Default static meta values
+    const defaultMetaTitle = "Premium Flooring & Furnishings | Furnishings Malaysia";
+    const defaultMetaDescription = "Discover premium quality flooring and furnishing products at Furnishings Malaysia. Browse our extensive collection of high-quality products for your home and office.";
+
+    // Get meta title with fallbacks
+    const metaTitle = productData.seo?.meta_title?.trim() || 
+                     productData.name?.trim() || 
+                     defaultMetaTitle;
+
+    // Get meta description with fallbacks
+    const metaDescription = productData.seo?.meta_description?.trim() || 
+                           productData.description?.short?.trim() || 
+                           defaultMetaDescription;
+
+    // Get OpenGraph values with fallbacks
+    const ogTitle = productData.name?.trim() || metaTitle;
+    const ogDescription = productData.description?.short?.trim() || metaDescription;
+
     return {
-        title: productData.seo?.meta_title || productData.name,
-        description: productData.seo?.meta_description || productData.description.short,
+        title: metaTitle,
+        description: metaDescription,
         keywords: productData.seo?.keywords || [],
+        alternates: {
+            canonical: canonicalUrl,
+        },
         openGraph: {
-            title: productData.name,
-            description: productData.description.short,
+            title: ogTitle,
+            description: ogDescription,
             images: [imageUrl],
         },
     };

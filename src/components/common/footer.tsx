@@ -25,6 +25,11 @@ export default function Footer() {
             try {
                 setLoading(true);
                 const response = await fetch('https://cms.furnishings.daikimedia.com/api/categories');
+                
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                
                 const result: ApiResponse = await response.json();
 
                 if (result.success) {

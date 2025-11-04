@@ -36,6 +36,11 @@ export default function PageHeader() {
             try {
                 setLoading(true);
                 const response = await fetch('https://cms.furnishings.daikimedia.com/api/products');
+                
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                
                 const result: ProductsApiResponse = await response.json();
 
                 if (result.success) {

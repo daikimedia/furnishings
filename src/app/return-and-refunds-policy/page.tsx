@@ -1,6 +1,10 @@
-export const metadata = {
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: "Return and Refund Policy – Easy Returns | Furnishing Solutions",
+    description: "Read our easy return and refund policy to enjoy a secure and worry-free shopping experience for all your modern furniture and stylish home décor items.",
     alternates: {
-        canonical: "/return-and-refunds-policy",
+        canonical: "https://www.furnishings.com.my/return-and-refunds-policy",
     },
 };
 
