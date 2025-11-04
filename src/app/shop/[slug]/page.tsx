@@ -137,9 +137,23 @@ export async function generateMetadata({ params }: { params: Promise<Params> }) 
             description: "The product you are looking for does not exist.",
         };
     }
+    // Default static meta values
+    const defaultMetaTitle = "Premium Flooring & Furnishings | Furnishings Malaysia";
+    const defaultMetaDescription = "Discover premium quality flooring and furnishing products at Furnishings Malaysia. Browse our extensive collection of high-quality products for your home and office.";
+
+    // Get meta title with fallbacks
+    const metaTitle = productData.seo?.meta_title?.trim() || 
+                     productData.name?.trim() || 
+                     defaultMetaTitle;
+
+    // Get meta description with fallbacks
+    const metaDescription = productData.seo?.meta_description?.trim() || 
+                           productData.description?.short?.trim() || 
+                           defaultMetaDescription;
+
     // Prefer canonical path metadata; minimal metadata to avoid duplicate content
     return {
-        title: productData.seo?.meta_title || productData.name,
-        description: productData.seo?.meta_description || productData.description.short,
+        title: metaTitle,
+        description: metaDescription,
     };
 }

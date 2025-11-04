@@ -34,6 +34,11 @@ export default function FloorCategories() {
             try {
                 setLoading(true);
                 const response = await fetch('https://cms.furnishings.daikimedia.com/api/categories');
+                
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                
                 const result: CategoriesApiResponse = await response.json();
 
                 console.log(result);
@@ -69,6 +74,7 @@ export default function FloorCategories() {
                     <p className="text-gray-600">
                         Discover our premium flooring solutions designed for Malaysian homes and commercial spaces.
                     </p>
+                    <h1 className="text-2xl font-semibold py-4">Shop by Category</h1>
                 </section>
 
                 {/* Categories Grid */}

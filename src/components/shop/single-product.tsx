@@ -114,7 +114,7 @@ type SingleProductProps = {
 export default function SingleProduct({ productData }: SingleProductProps) {
     // Parse JSON string into object safely
     let descriptionData = null;
-    console.log("productData.faqs", productData.faqs)
+    // console.log("productData.faqs", productData.faqs)
     try {
         if (typeof productData.additional_description === 'string') {
             descriptionData = JSON.parse(productData.additional_description);
@@ -639,9 +639,9 @@ export default function SingleProduct({ productData }: SingleProductProps) {
                                 Category:{" "}
                                 <span className="font-medium">{typeof productData.category === 'string' ? productData.category : productData.category?.name || 'Uncategorized'}</span>
                             </div>
-                            <h1 className="text-3xl font-bold text-gray-900 mb-4">
+                            <h2 className="text-3xl font-bold text-gray-900 mb-4">
                                 {productData.name}
-                            </h1>
+                            </h2>
                             <div className="text-gray-600 leading-relaxed mb-6"
                                 dangerouslySetInnerHTML={{ __html: productData.description.short || '' }}>
                             </div>

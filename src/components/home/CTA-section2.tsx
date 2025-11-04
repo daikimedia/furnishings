@@ -27,9 +27,9 @@ export default function CTASection2() {
                     </div>
                     <div className="flex items-center gap-2">
                         <UserSearch className="w-5 h-5" />
-                        <a href="https://www.furnishings.com.my">
+                        <span>
                             Reach Out: <strong><Link href="/contact">Contact Us</Link></strong>
-                        </a>
+                        </span>
                     </div>
                     <div className="flex items-center gap-2">
                         <Earth className="w-5 h-5" />

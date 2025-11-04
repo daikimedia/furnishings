@@ -95,6 +95,10 @@ export default function ProductsSection({
                     fetch('https://cms.furnishings.daikimedia.com/api/categories')
                 ]);
 
+                if (!productsResponse.ok || !categoriesResponse.ok) {
+                    throw new Error(`HTTP error! Products: ${productsResponse.status}, Categories: ${categoriesResponse.status}`);
+                }
+
                 const productsResult: ProductsApiResponse = await productsResponse.json();
                 const categoriesResult: CategoriesApiResponse = await categoriesResponse.json();
 

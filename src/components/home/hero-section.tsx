@@ -69,12 +69,12 @@ export default function HeroBanner() {
                 <div className="absolute inset-0 bg-black bg-opacity-70" />
                 <div className="container mx-auto px-6 py-20 relative z-10">
                     <div className="text-center space-y-8">
-                        <h1 className="text-5xl font-semibold text-white leading-tight">
+                        <h2 className="text-5xl font-semibold text-white leading-tight">
                             Transform your space with{' '}
                             <span className="text-orange-500 relative">
                                 {slides[currentSlide].title.toLowerCase()}
                             </span>
-                        </h1>
+                        </h2>
 
                         <p className="text-2xl text-white/90 max-w-2xl mx-auto leading-relaxed z-100">
                             {slides[currentSlide].description}

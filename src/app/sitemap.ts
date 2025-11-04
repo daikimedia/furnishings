@@ -33,6 +33,14 @@ interface Product {
     };
 }
 
+interface Blog {
+    id: number;
+    slug: string;
+    title: string;
+    updatedAt?: string;
+    createdAt?: string;
+}
+
 // Helper function to escape XML characters
 // function escapeXml(unsafe: string): string {
 //     return unsafe.replace(/[<>&'"]/g, function (c) {
@@ -97,11 +105,35 @@ async function getProducts(): Promise<Product[]> {
     }
 }
 
+async function getBlogs(): Promise<Blog[]> {
+    try {
+        const response = await fetch('https://cms.furnishings.daikimedia.com/api/blogs/all-blogs', {
+            cache: "no-store",
+            headers: {
+                'Cache-Control': 'no-cache',
+            },
+        });
+
+        if (!response.ok) {
+            console.warn(`Blogs API failed: ${response.status}`);
+            return [];
+        }
+
+        const data = await response.json();
+        // Check if data is an array directly or wrapped in a data property
+        return Array.isArray(data) ? data : (Array.isArray(data.data) ? data.data : []);
+    } catch (error) {
+        console.error('Error fetching blogs:', error);
+        return [];
+    }
+}
+
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     try {
-        const [categories, products] = await Promise.all([
+        const [categories, products, blogs] = await Promise.all([
             getCategories(),
             getProducts(),
+            getBlogs(),
         ]);
 
         const currentDate = new Date().toISOString();
@@ -139,11 +171,21 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
                 };
             });
 
-        const finalSitemap = [...staticUrls, ...categoryUrls, ...productUrls];
+        // Blog URLs - use slugs as-is from CMS (they should already be properly formatted)
+        const blogUrls = blogs
+            .filter(blog => blog.slug) // Ensure slug exists
+            .map((blog) => ({
+                url: `${baseUrl}/blog/${blog.slug}`,
+                lastModified: blog.updatedAt || blog.createdAt || currentDate,
+                changeFrequency: 'weekly' as const,
+                priority: 0.6,
+            }));
+
+        const finalSitemap = [...staticUrls, ...categoryUrls, ...productUrls, ...blogUrls];
 
         // Server-side logging
         console.log(`Sitemap generated with ${finalSitemap.length} URLs`);
-        console.log(`Static: ${staticUrls.length}, Categories: ${categoryUrls.length}, Products: ${productUrls.length}`);
+        console.log(`Static: ${staticUrls.length}, Categories: ${categoryUrls.length}, Products: ${productUrls.length}, Blogs: ${blogUrls.length}`);
 
         // Log first few URLs for debugging
         console.log('Sample URLs:', finalSitemap.slice(0, 3).map(item => item.url));
