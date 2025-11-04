@@ -177,7 +177,7 @@ export default function ProductsSection({
 
                 <div className="flex flex-col lg:flex-row gap-8">
                     {/* Sidebar Filters */}
-                    <div className="w-full lg:w-64 flex-shrink-0 lg:sticky lg:top-0 self-start">
+                    <div className="w-full lg:w-64 flex-shrink-0 sticky top-24 self-start">
                         <div className="bg-gray-50 p-6 rounded-lg">
                             <h3 className="text-lg font-semibold text-gray-900 mb-6">Filters</h3>
 
