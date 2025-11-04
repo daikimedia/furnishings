@@ -413,7 +413,7 @@ export default function CategoryPage() {
                 <div className="flex flex-col lg:flex-row gap-8">
                     {/* Filter Sidebar */}
                     <div className="max-w-70px">
-                        <div className="bg-gray-50 rounded-lg p-6 sticky top-4">
+                        <div className="bg-gray-50 rounded-lg p-6 sticky top-24">
                             <h2 className="text-xl font-bold text-gray-800 mb-6">Filters</h2>
 
                             {/* Brand Filter */}
