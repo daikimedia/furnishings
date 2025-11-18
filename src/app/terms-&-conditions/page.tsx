@@ -5,7 +5,7 @@ export const metadata: Metadata = {
     title: "Terms & Conditions – Shopping Policies | Furnishing Solutions",
     description: "Review our terms and conditions to understand your shopping rights, store policies, and privacy guidelines when purchasing from Furnishing Solutions.",
     alternates: {
-        canonical: "https://www.furnishings.com.my/terms-and-conditions",
+        canonical: "https://www.furnishings.com.my/terms-&-conditions",
     },
 };
 
