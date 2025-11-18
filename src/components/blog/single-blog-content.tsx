@@ -5,6 +5,7 @@ import { useParams } from "next/navigation";
 import Image from "next/image";
 import PageHeader from "@/components/common/header";
 import SquareLoader from "@/components/common/loader";
+import RelatedProducts from "@/components/blog/related-products";
 
 interface BlogPost {
     id: number;
@@ -150,6 +151,9 @@ export default function SingleBlogContent() {
                     />
                 </div>
             </section>
+            
+            {/* Related Products Section */}
+            <RelatedProducts />
         </>
     );
 }

@@ -13,7 +13,7 @@ const staticPages = [
     { url: '/blog', priority: 0.7 },
     { url: '/return-and-refunds-policy', priority: 0.5 },
     // Fixed: Changed & to - or use proper URL encoding
-    { url: '/terms-and-conditions', priority: 0.5 }, // or '/terms-%26-conditions'
+    { url: '/terms-&-conditions', priority: 0.5 }, // or '/terms-%26-conditions'
 ];
 
 interface Category {
