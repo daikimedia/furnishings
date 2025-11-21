@@ -12,8 +12,7 @@ const staticPages = [
     { url: '/contact', priority: 0.8 },
     { url: '/blog', priority: 0.7 },
     { url: '/return-and-refunds-policy', priority: 0.5 },
-    // Fixed: Changed & to - or use proper URL encoding
-    { url: '/terms-&-conditions', priority: 0.5 }, // or '/terms-%26-conditions'
+    { url: '/terms-and-conditions', priority: 0.5 },
 ];
 
 interface Category {
@@ -140,7 +139,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
         // Static URLs with proper URL cleaning
         const staticUrls = staticPages.map((page) => ({
-            url: `${baseUrl}${page.url}`,
+            url: `${baseUrl}${cleanUrl(page.url)}`,
             lastModified: currentDate,
             changeFrequency: 'monthly' as const,
             priority: page.priority,
@@ -171,11 +170,11 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
                 };
             });
 
-        // Blog URLs - use slugs as-is from CMS (they should already be properly formatted)
+        // Blog URLs with slug cleaning to prevent XML errors
         const blogUrls = blogs
             .filter(blog => blog.slug) // Ensure slug exists
             .map((blog) => ({
-                url: `${baseUrl}/blog/${blog.slug}`,
+                url: `${baseUrl}/blog/${cleanUrl(blog.slug)}`,
                 lastModified: blog.updatedAt || blog.createdAt || currentDate,
                 changeFrequency: 'weekly' as const,
                 priority: 0.6,
@@ -197,7 +196,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
         // Return static pages as fallback
         const currentDate = new Date().toISOString();
         return staticPages.map((page) => ({
-            url: `${baseUrl}${page.url}`,
+            url: `${baseUrl}${cleanUrl(page.url)}`,
             lastModified: currentDate,
             changeFrequency: 'monthly' as const,
             priority: page.priority,
