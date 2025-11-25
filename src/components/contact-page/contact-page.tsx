@@ -3,8 +3,8 @@ import { Phone, Layers, HelpCircle, Ruler, Truck, Info, CalendarCheck, Clock, Bu
 import React, { useState } from 'react';
 
 export const metadata = {
-    title: "Contact Us | Furnishing – Vinyl & PVC Flooring Experts in Malaysia",
-    description: "Need flooring advice in Malaysia? Contact Furnishing for expert guidance, free quotes, and top-quality vinyl & PVC flooring installation nationwide.",
+    title: "Contact Furnishing | Vinyl & Flooring Supplier in Malaysia",
+    description: "Contact Furnishing for vinyl, SPC, laminate flooring, carpet tiles and artificial grass in Malaysia. Request a site visit, quotation or product recommendation for your project today.",
 };
 const services = [
     {
@@ -86,7 +86,6 @@ const ContactUsPage = () => {
     return (
         <div className=" bg-white">
             <div className='container mx-auto px-4 sm:px-6'>
-                {/* Introduction Section */}
                 <section className="py-8 sm:py-12">
                     <div className=" text-center">
                         <h2 className="text-2xl sm:text-3xl font-bold text-black mb-8 sm:mb-12">
@@ -98,9 +97,6 @@ const ContactUsPage = () => {
                     </div>
                 </section>
 
-                {/* Contact Information Section */}
-
-                {/* Services Section */}
                 <section className="py-8 sm:py-12">
                     <div className="text-center mb-8 sm:mb-12">
                         <h2 className="text-2xl sm:text-3xl font-bold text-black mb-8 sm:mb-12">
@@ -136,7 +132,6 @@ const ContactUsPage = () => {
                     </div>
                 </section>
 
-                {/* Business Hours Section */}
                 <section className="py-8 sm:py-12">
                     <div className=" text-center">
                         <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold  mb-8 sm:mb-12">
@@ -170,7 +165,6 @@ const ContactUsPage = () => {
                     </div>
                 </section>
 
-                {/* Quote Section */}
                 <section className="py-8 sm:py-12 ">
 
 
@@ -204,12 +198,10 @@ const ContactUsPage = () => {
                     </div>
                 </section>
 
-                {/* Contact Form Section */}
                 <section className="py-8 sm:py-12">
 
                     <div className="bg-white rounded-2xl shadow-md overflow-hidden border border-orange-100">
                         <div className="grid lg:grid-cols-2 gap-0">
-                            {/* Contact Info */}
                             <div className="bg-orange-600 text-white p-6 sm:p-8 lg:p-12">
                                 <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6 sm:mb-8">Contact Info</h2>
 
@@ -218,7 +210,6 @@ const ContactUsPage = () => {
                                         <h3 className="text-lg sm:text-xl font-semibold mb-3">Showroom Address:</h3>
                                         <div className="space-y-2 text-orange-100">
                                             <p>Furnishing Flooring Solutions</p>
-                                            {/* <p>[Insert Full Address Here]</p> */}
                                             <p>Selangor, Malaysia</p>
                                         </div>
                                     </div>
@@ -231,14 +222,6 @@ const ContactUsPage = () => {
                                         </div>
                                     </div>
 
-                                    {/* <div>
-                                        <h3 className="text-xl font-semibold mb-3">Email:</h3>
-                                        <div className="space-y-2 text-orange-100">
-                                            <p>[Insert Email Address]</p>
-                                            <p>(We typically respond within 24 hours)</p>
-                                        </div>
-                                    </div> */}
-
                                     <div>
                                         <h3 className="text-lg sm:text-xl font-semibold mb-3">Website:</h3>
                                         <div className="text-orange-100">
@@ -250,7 +233,6 @@ const ContactUsPage = () => {
                                 </div>
                             </div>
 
-                            {/* Contact Form */}
                             <div className="p-6 sm:p-8 lg:p-12">
                                 <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-6 sm:mb-8">Get In Touch</h2>
 
@@ -333,7 +315,6 @@ const ContactUsPage = () => {
                     </div>
                 </section>
 
-                {/* Map Section */}
                 <section className="py-8 sm:py-12">
                     <div className="text-center mb-8 sm:mb-12">
                         <h2 className="text-2xl sm:text-3xl  font-bold text-black mb-8 sm:mb-12">
@@ -365,7 +346,6 @@ const ContactUsPage = () => {
                     </div>
                 </section>
 
-                {/* Why Choose Us Section */}
                 <section className="py-8 sm:py-12">
 
                     <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-black mb-8 sm:mb-12 text-center">

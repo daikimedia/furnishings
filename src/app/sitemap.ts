@@ -40,23 +40,9 @@ interface Blog {
     createdAt?: string;
 }
 
-// Helper function to escape XML characters
-// function escapeXml(unsafe: string): string {
-//     return unsafe.replace(/[<>&'"]/g, function (c) {
-//         switch (c) {
-//             case '<': return '&lt;';
-//             case '>': return '&gt;';
-//             case '&': return '&amp;';
-//             case '\'': return '&apos;';
-//             case '"': return '&quot;';
-//             default: return c;
-//         }
-//     });
-// }
 
-// Helper function to validate and clean URLs
+
 function cleanUrl(url: string): string {
-    // Remove any invalid characters and ensure proper encoding
     return url.replace(/[&]/g, 'and').replace(/\s+/g, '-').toLowerCase();
 }
 
@@ -119,7 +105,6 @@ async function getBlogs(): Promise<Blog[]> {
         }
 
         const data = await response.json();
-        // Check if data is an array directly or wrapped in a data property
         return Array.isArray(data) ? data : (Array.isArray(data.data) ? data.data : []);
     } catch (error) {
         console.error('Error fetching blogs:', error);
@@ -137,7 +122,6 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
         const currentDate = new Date().toISOString();
 
-        // Static URLs with proper URL cleaning
         const staticUrls = staticPages.map((page) => ({
             url: `${baseUrl}${cleanUrl(page.url)}`,
             lastModified: currentDate,
@@ -145,9 +129,8 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
             priority: page.priority,
         }));
 
-        // Category URLs with slug cleaning
         const categoryUrls = categories
-            .filter(category => category.slug) // Ensure slug exists
+            .filter(category => category.slug)
             .map((category) => ({
                 url: `${baseUrl}/category/${cleanUrl(category.slug)}`,
                 lastModified: category.updatedAt || currentDate,
@@ -155,9 +138,8 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
                 priority: 0.8,
             }));
 
-        // Product URLs with slug cleaning
         const productUrls = products
-            .filter(product => product.slug) // Ensure slug exists
+            .filter(product => product.slug)
             .map((product) => {
                 const categorySlug = product.category?.slug ? cleanUrl(product.category.slug) : 'products';
                 const productSlug = cleanUrl(product.slug);
@@ -170,9 +152,8 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
                 };
             });
 
-        // Blog URLs with slug cleaning to prevent XML errors
         const blogUrls = blogs
-            .filter(blog => blog.slug) // Ensure slug exists
+            .filter(blog => blog.slug)
             .map((blog) => ({
                 url: `${baseUrl}/blog/${cleanUrl(blog.slug)}`,
                 lastModified: blog.updatedAt || blog.createdAt || currentDate,
@@ -182,18 +163,15 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
         const finalSitemap = [...staticUrls, ...categoryUrls, ...productUrls, ...blogUrls];
 
-        // Server-side logging
         console.log(`Sitemap generated with ${finalSitemap.length} URLs`);
         console.log(`Static: ${staticUrls.length}, Categories: ${categoryUrls.length}, Products: ${productUrls.length}, Blogs: ${blogUrls.length}`);
 
-        // Log first few URLs for debugging
         console.log('Sample URLs:', finalSitemap.slice(0, 3).map(item => item.url));
 
         return finalSitemap;
     } catch (error) {
         console.error('Sitemap generation failed:', error);
 
-        // Return static pages as fallback
         const currentDate = new Date().toISOString();
         return staticPages.map((page) => ({
             url: `${baseUrl}${cleanUrl(page.url)}`,

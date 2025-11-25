@@ -3,8 +3,8 @@ import PageHeader from "@/components/common/header";
 import ProductsSection from "@/components/shop/product-section";
 
 export const metadata: Metadata = {
-    title: "Shop Modern Furniture & Stylish Home Décor | Furnishing Solutions",
-    description: "Discover premium-quality furniture and elegant home décor pieces designed to enhance your space with modern style, comfort, and long-lasting quality.",
+    title: "Shop Vinyl, SPC, Laminate & Carpet Tiles Online in Malaysia | Furnishing",
+    description: "Browse all vinyl, SPC, laminate flooring and carpet tiles online at Furnishing Malaysia. Compare designs and finishes, then request a quotation or consultation for your home or office.",
     alternates: {
         canonical: "https://www.furnishings.com.my/shop",
     },
@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 export default function Shop() {
     return (
         <main>
-            <PageHeader />
+            <PageHeader title="Vinyl & Flooring Solutions in Malaysia" />
             <ProductsSection showAll={true} />
         </main>
     );

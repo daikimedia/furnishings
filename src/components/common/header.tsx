@@ -23,14 +23,27 @@ interface ProductsApiResponse {
     data: Product[]
 }
 
-export default function PageHeader() {
+// Helper function to convert text to title case
+const toTitleCase = (str: string): string => {
+    return str
+        .toLowerCase()
+        .split(' ')
+        .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+        .join(' ');
+};
+
+interface PageHeaderProps {
+    hide?: boolean;
+    title?: string;
+}
+
+export default function PageHeader({ hide = false, title }: PageHeaderProps) {
     const pathname = usePathname();
     const paths = pathname.split("/").filter(Boolean);
     const lastSegment = paths[paths.length - 1];
     const [products, setProducts] = useState<Product[]>([]);
     const [loading, setLoading] = useState(true);
 
-    // Fetch products from API
     useEffect(() => {
         const fetchProducts = async () => {
             try {
@@ -56,20 +69,25 @@ export default function PageHeader() {
         fetchProducts();
     }, []);
 
-    // Find product by slug or SKU
     const product = products.find(p => p.slug === lastSegment || p.sku === lastSegment);
-    const pageTitle = product
-        ? product.name.toUpperCase()
-        : lastSegment?.replace(/-/g, " ").toUpperCase() || "HOME";
+    
+    let pageTitle = title 
+        ? title
+        : product
+            ? toTitleCase(product.name)
+            : lastSegment ? toTitleCase(lastSegment.replace(/-/g, " ")) : "Home";
+    
+    if (!title && paths.length === 2 && paths[0] === 'category') {
+        pageTitle = `${pageTitle} in Malaysia`;
+    }
 
     const breadcrumb = paths.map((segment, index) => {
         const path = "/" + paths.slice(0, index + 1).join("/");
 
-        // Find product match by slug or SKU
         const productMatch = products.find(p => p.slug === segment || p.sku === segment);
         const label = productMatch
-            ? productMatch.name.toUpperCase()
-            : segment.replace(/-/g, " ").toUpperCase();
+            ? toTitleCase(productMatch.name)
+            : toTitleCase(segment.replace(/-/g, " "));
 
         return (
             <span key={index}>
@@ -81,6 +99,10 @@ export default function PageHeader() {
         );
     });
 
+    if (hide) {
+        return null;
+    }
+
     return (
         <div className="bg-black py-12 text-center h-48">
             <h1 className="text-4xl font-bold text-orange-600 italic">
@@ -88,7 +110,7 @@ export default function PageHeader() {
             </h1>
             <div className="mt-2 text-white text-sm">
                 <Link href="/" className="hover:underline text-white">
-                    HOME
+                    Home
                 </Link>
                 {!loading && breadcrumb}
             </div>

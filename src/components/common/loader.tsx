@@ -3,14 +3,13 @@
 import React from "react";
 
 interface SquareLoaderProps {
-  text?: string; // optional prop
+  text?: string;
 }
 
 const SquareLoader: React.FC<SquareLoaderProps> = ({ text = "Loading..." }) => {
   return (
     <div className="fixed inset-0 flex items-center justify-center bg-white z-[9999]">
       <div className="text-center">
-        {/* Loader */}
         <div className="relative w-[116px] h-[86px] mx-auto mb-4">
           <div className="square animate-square1" />
           <div className="square animate-square2" />
@@ -19,11 +18,9 @@ const SquareLoader: React.FC<SquareLoaderProps> = ({ text = "Loading..." }) => {
           <div className="square animate-square5" />
         </div>
 
-        {/* Dynamic Text */}
         <h2 className="text-xl font-semibold text-gray-700">{text}</h2>
       </div>
 
-      {/* Custom styles */}
       <style jsx>{`
         .square {
           position: absolute;

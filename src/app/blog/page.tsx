@@ -3,8 +3,8 @@ import BlogList from "@/components/blogs/blog-section";
 import PageHeader from "@/components/common/header";
 
 export const metadata: Metadata = {
-    title: "Blog – Home Décor Tips & Interior Ideas | Furnishing Solutions",
-    description: "Explore expert home décor ideas, furniture styling tips, and modern interior inspiration to refresh your living space beautifully with Furnishing Solutions.",
+    title: "Flooring & Home Décor Blog Malaysia | Vinyl, SPC & Interior Ideas | Furnishing",
+    description: "Read flooring and home décor tips for Malaysian homes and offices on the Furnishing blog. Discover vinyl, SPC, laminate and carpet tile ideas, maintenance guides and renovation inspiration.",
     alternates: {
         canonical: "https://www.furnishings.com.my/blog",
     },
@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 export default function BlogPage() {
     return (
         <>
-            <PageHeader />
+            <PageHeader title="Flooring & Home Décor Blog in Malaysia" />
             <BlogList />
         </>
     )

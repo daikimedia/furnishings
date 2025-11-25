@@ -37,7 +37,6 @@ const SearchAutoComplete: React.FC = () => {
     const inputRef = useRef<HTMLInputElement>(null);
     const router = useRouter();
 
-    // Fetch products from API
     useEffect(() => {
         const fetchProducts = async () => {
             try {
@@ -65,7 +64,6 @@ const SearchAutoComplete: React.FC = () => {
         fetchProducts();
     }, []);
 
-    // Filter suggestions based on search term
     useEffect(() => {
         if (searchTerm.trim() === '') {
             setSuggestions([]);
@@ -77,12 +75,11 @@ const SearchAutoComplete: React.FC = () => {
             product.name.toLowerCase().includes(searchTerm.toLowerCase())
         );
 
-        setSuggestions(filtered.slice(0, 8)); // Limit to 8 suggestions
+        setSuggestions(filtered.slice(0, 8));
         setShowDropdown(filtered.length > 0);
         setSelectedIndex(-1);
     }, [searchTerm, products]);
 
-    // Handle click outside to close dropdown
     useEffect(() => {
         const handleClickOutside = (event: MouseEvent) => {
             if (searchRef.current && !searchRef.current.contains(event.target as Node)) {
@@ -95,7 +92,6 @@ const SearchAutoComplete: React.FC = () => {
         return () => document.removeEventListener('mousedown', handleClickOutside);
     }, []);
 
-    // Handle keyboard navigation
     const handleKeyDown = (e: React.KeyboardEvent) => {
         if (!showDropdown || suggestions.length === 0) return;
 
@@ -126,7 +122,6 @@ const SearchAutoComplete: React.FC = () => {
         }
     };
 
-    // Handle suggestion selection
     const handleSuggestionSelect = (product: Product) => {
         setSearchTerm(product.name);
         setShowDropdown(false);
@@ -134,12 +129,10 @@ const SearchAutoComplete: React.FC = () => {
         router.push(`/shop/${product.categorySlug || 'uncategorized'}/${product.slug}`);
     };
 
-    // Handle input change
     const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         setSearchTerm(e.target.value);
     };
 
-    // Handle input focus
     const handleInputFocus = () => {
         if (searchTerm.trim() !== '' && suggestions.length > 0) {
             setShowDropdown(true);
@@ -148,7 +141,6 @@ const SearchAutoComplete: React.FC = () => {
 
     return (
         <div ref={searchRef} className="relative w-full max-w-md mx-auto">
-            {/* Search Input */}
             <div className="relative">
                 <input
                     ref={inputRef}
@@ -161,13 +153,11 @@ const SearchAutoComplete: React.FC = () => {
                     className="w-full px-4 py-3 pr-10 text-gray-700 bg-white border border-orange-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-orange-500 transition-all duration-200"
                 />
 
-                {/* Search Icon */}
                 <div className="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none">
                     <Search className="w-5 h-5 text-gray-400" />
                 </div>
             </div>
 
-            {/* Dropdown Suggestions */}
             {showDropdown && suggestions.length > 0 && (
                 <div className="absolute z-50 w-full mt-1 bg-white border border-gray-200 rounded-lg shadow-lg max-h-64 overflow-y-auto">
                     {suggestions.map((product, index) => (
@@ -199,7 +189,6 @@ const SearchAutoComplete: React.FC = () => {
                 </div>
             )}
 
-            {/* No Results Message */}
             {showDropdown && searchTerm.trim() !== '' && suggestions.length === 0 && (
                 <div className="absolute z-50 w-full mt-1 bg-white border border-gray-200 rounded-lg shadow-lg">
                     <div className="px-4 py-3 text-gray-500 text-center">

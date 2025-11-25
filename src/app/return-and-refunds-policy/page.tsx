@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
-
+import PageHeader from "@/components/common/header";
 export const metadata: Metadata = {
-    title: "Return and Refund Policy – Easy Returns | Furnishing Solutions",
-    description: "Read our easy return and refund policy to enjoy a secure and worry-free shopping experience for all your modern furniture and stylish home décor items.",
+    title: "Return & Refund Policy | Furnishing Malaysia",
+    description: "Read Furnishing’s return and refund policy for vinyl flooring, SPC, laminate, carpet tiles and accessories in Malaysia. Understand eligibility, timelines and how to request a return or exchange.",
     alternates: {
         canonical: "https://www.furnishings.com.my/return-and-refunds-policy",
     },
@@ -11,9 +11,9 @@ export const metadata: Metadata = {
 export default function Refund() {
     return (
         <>
-
+<PageHeader title="Return & Refund Policy" />
             <main className="container mx-auto px-4 py-10 text-gray-800 leading-relaxed">
-                <h1 className="text-3xl font-bold text-black mb-12 item-center text-center">Return & Refund Policy</h1>
+                <h2 className="text-3xl font-bold text-black mb-12 item-center text-center">Return & Refund Policy</h2>
 
                 <section className="space-y-5">
                     <h2 className="text-2xl font-semibold text-black">Overview</h2>

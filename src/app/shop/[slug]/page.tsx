@@ -61,12 +61,11 @@ interface ProductsApiResponse {
     data: ApiProduct[]
 }
 
-// Fetch product data from API
 async function fetchProductBySlug(slug: string): Promise<ApiProduct | null> {
     try {
         console.log('Fetching product with slug:', slug);
         const response = await fetch('https://cms.furnishings.daikimedia.com/api/products', {
-            next: { revalidate: 30 } // Revalidate 30 second 
+            next: { revalidate: 30 } 
         });
 
 
@@ -85,7 +84,6 @@ async function fetchProductBySlug(slug: string): Promise<ApiProduct | null> {
             const product = result.data.find(p => p.slug === slug);
             console.log('Found product:', product);
 
-            // Validate product has required fields
             if (product && !product.category) {
                 console.warn('Product found but category is null:', product.slug);
             }
@@ -115,14 +113,11 @@ export default async function ProductPage({ params }: { params: Promise<Params> 
         notFound();
     }
 
-    // Redirect legacy /shop/[slug] to canonical /shop/[category]/[slug]
     const categorySlug = productData.category?.slug || 'uncategorized';
     redirect(`/shop/${categorySlug}/${slug}`);
 
-    // Unreachable after redirect
 }
 
-// Disable static generation to prevent build errors
 export const dynamic = 'force-dynamic';
 
 export async function generateMetadata({ params }: { params: Promise<Params> }) {
@@ -137,21 +132,35 @@ export async function generateMetadata({ params }: { params: Promise<Params> }) 
             description: "The product you are looking for does not exist.",
         };
     }
-    // Default static meta values
     const defaultMetaTitle = "Premium Flooring & Furnishings | Furnishings Malaysia";
     const defaultMetaDescription = "Discover premium quality flooring and furnishing products at Furnishings Malaysia. Browse our extensive collection of high-quality products for your home and office.";
 
-    // Get meta title with fallbacks
-    const metaTitle = productData.seo?.meta_title?.trim() || 
-                     productData.name?.trim() || 
-                     defaultMetaTitle;
+    const formatMetaTitle = (apiTitle: string | undefined): string => {
+        if (!apiTitle) {
+            return defaultMetaTitle;
+        }
+        
+        let cleanTitle = apiTitle.trim();
+        
+        cleanTitle = cleanTitle.replace(/^buy\s+/i, '');
+        
+        cleanTitle = cleanTitle.replace(/\s*\|\s*Furnishings.*$/i, '').trim();
+        
+        cleanTitle = cleanTitle.replace(/[–|\-|]\s*$/, '').trim();
+        
+        return `Buy ${cleanTitle} Vinyl Sheet Flooring | Furnishings`;
+    };
 
-    // Get meta description with fallbacks
+    const apiMetaTitle = productData.seo?.meta_title?.trim();
+    
+    const metaTitle = apiMetaTitle 
+        ? formatMetaTitle(apiMetaTitle)
+        : (productData.name?.trim() || defaultMetaTitle);
+
     const metaDescription = productData.seo?.meta_description?.trim() || 
                            productData.description?.short?.trim() || 
                            defaultMetaDescription;
 
-    // Prefer canonical path metadata; minimal metadata to avoid duplicate content
     return {
         title: metaTitle,
         description: metaDescription,

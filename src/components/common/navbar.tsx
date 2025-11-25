@@ -23,12 +23,9 @@ const Navbar = () => {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
     const [categories, setCategories] = useState<Category[]>([])
     const [loading, setLoading] = useState(true)
-    // const [activeDropdown, setActiveDropdown] = useState<string | null>(null)
-    // const [activeSubDropdown, setActiveSubDropdown] = useState<string | null>(null)
 
     const toggleMobileMenu = () => setMobileMenuOpen(!mobileMenuOpen)
 
-    // Fetch categories from API
     useEffect(() => {
         const fetchCategories = async () => {
             try {
@@ -54,7 +51,6 @@ const Navbar = () => {
         fetchCategories()
     }, [])
 
-    // Prevent body scroll when mobile menu is open
     useEffect(() => {
         if (mobileMenuOpen) {
             document.body.style.overflow = 'hidden'
@@ -62,13 +58,11 @@ const Navbar = () => {
             document.body.style.overflow = 'unset'
         }
 
-        // Cleanup on unmount
         return () => {
             document.body.style.overflow = 'unset'
         }
     }, [mobileMenuOpen])
 
-    // Create subcategories for Vinyl Sheet Flooring
     const vinylSheetSubcategories = categories.filter(cat =>
         cat.name === 'Alberta' || cat.name === 'Versafloor'
     ).map(cat => ({
@@ -76,9 +70,8 @@ const Navbar = () => {
         href: `/category/${cat.slug}`
     }))
 
-    // Create explore categories from API data
     const exploreCategories = categories
-        .filter(cat => !['Alberta', 'Versafloor'].includes(cat.name)) // Exclude subcategories
+        .filter(cat => !['Alberta', 'Versafloor'].includes(cat.name))
         .map(cat => ({
             label: cat.name,
             href: `/category/${cat.slug}`,
@@ -99,14 +92,13 @@ const Navbar = () => {
         { label: "Contact", href: "/contact" },
         { label: "Shop", href: "/shop" },
         { label: "Blogs", href: "/blog" },
-        // { label: "", href: "/shop", icon: <ShoppingCart className="h-5 w-5 ml-2" /> },
     ]
 
     const NavLink = ({ title, href, icon }: { title: string, href: string, icon?: React.ReactNode }) => (
         <Link
             href={href}
             className="block px-4 py-3 text-lg font-medium text-gray-900 hover:bg-gray-100 rounded-md transition flex items-center"
-            onClick={() => setMobileMenuOpen(false)} // Close menu on link click
+            onClick={() => setMobileMenuOpen(false)}
         >
             {title}
             {icon}
@@ -115,20 +107,16 @@ const Navbar = () => {
 
     return (
         <header className="w-full bg-white border-b border-gray-200 shadow-md sticky top-0 z-50">
-            {/* Top Navbar */}
             <div className="container mx-auto flex items-center justify-between px-4 py-3">
-                {/* Logo */}
                 <Link href="/" className="flex items-center space-x-2">
                     <Image src="/images/logo (2).png" alt="Logo" width={50} height={50} className="rounded-md" />
                 </Link>
 
-                {/* ✅ Desktop Menu with Dropdown Restored */}
                 <nav className="hidden md:flex space-x-8 items-center">
                     {mainNavItems.map((item, i) => (
                         <div key={i} className="relative group">
                             <Link href={item.href || "#"} className="flex items-center font-semibold px-3 py-2 text-black hover:text-orange-400 transition">
                                 {item.label}
-                                {/* {item.icon && item.icon} */}
                                 {item.dropdown && <ChevronDown className="h-4 w-4 ml-1 transition-transform group-hover:rotate-180" />}
                             </Link>
 
@@ -162,12 +150,10 @@ const Navbar = () => {
                     ))}
                 </nav>
 
-                {/* Desktop Search */}
                 <div className="hidden md:block w-64">
                     <SearchAutoComplete />
                 </div>
 
-                {/* Mobile Menu Button */}
                 <div className="md:hidden">
                     <Button variant="ghost" size="icon" onClick={toggleMobileMenu}>
                         {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
@@ -175,9 +161,7 @@ const Navbar = () => {
                 </div>
             </div>
 
-            {/* ✅ Mobile Fullscreen Menu (Scrollable) */}
             <div className={`fixed inset-0 bg-white z-40 transform transition-transform duration-300 ease-in-out ${mobileMenuOpen ? 'translate-x-0' : 'translate-x-full'}`}>
-                {/* Fixed Top Bar with Close */}
                 <div className="flex justify-between items-center px-4 py-3 border-b shadow-md bg-white sticky top-0 z-10">
                     <Link href="/" onClick={() => setMobileMenuOpen(false)}>
                         <Image src="/images/logo (2).png" alt="Logo" width={40} height={40} className="rounded-md" />
@@ -185,14 +169,11 @@ const Navbar = () => {
                     <Button variant="ghost" size="icon" onClick={toggleMobileMenu}><X className="w-6 h-6" /></Button>
                 </div>
 
-                {/* Scrollable Content Area */}
-                <div className="h-full overflow-y-auto pb-20"> {/* Added pb-20 for bottom padding */}
-                    {/* Mobile Search - Fixed at top of scrollable area */}
+                <div className="h-full overflow-y-auto pb-20">
                     <div className="p-4 border-b bg-white sticky top-0 z-10">
                         <SearchAutoComplete />
                     </div>
 
-                    {/* Mobile Nav Links - Scrollable content */}
                     <div className="flex flex-col space-y-2 p-4">
                         {mainNavItems.map((item, idx) => (
                             <div key={idx} className="w-full">

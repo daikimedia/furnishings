@@ -35,7 +35,6 @@ interface ProductsApiResponse {
     data: ApiProduct[];
 }
 
-// Function to shuffle array randomly
 function shuffleArray<T>(array: T[]): T[] {
     const shuffled = [...array];
     for (let i = shuffled.length - 1; i > 0; i--) {
@@ -62,7 +61,6 @@ export default function RelatedProducts() {
                 const result: ProductsApiResponse = await response.json();
 
                 if (result.success && result.data) {
-                    // Shuffle products randomly and take first 4
                     const shuffledProducts = shuffleArray(result.data);
                     setProducts(shuffledProducts.slice(0, 4));
                 }
@@ -105,7 +103,6 @@ export default function RelatedProducts() {
                 <h2 className="text-3xl font-bold mb-8 text-center">Products</h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                     {products.map((product) => {
-                        // Fix image URL - prepend domain if it's a relative path
                         let imageUrl = product.images.main_image || '';
                         if (imageUrl && !imageUrl.startsWith('http')) {
                             imageUrl = `https://cms.furnishings.daikimedia.com${imageUrl}`;
@@ -119,7 +116,6 @@ export default function RelatedProducts() {
                                 href={`/shop/${categorySlug}/${product.slug}`}
                                 className="group relative overflow-hidden rounded-2xl bg-white shadow-md transition-shadow hover:shadow-xl"
                             >
-                                {/* Image Section */}
                                 <div className="relative h-56 overflow-hidden bg-orange-100">
                                     {imageUrl ? (
                                         <img
@@ -134,7 +130,6 @@ export default function RelatedProducts() {
                                     )}
                                 </div>
 
-                                {/* Content Section */}
                                 <div className="p-6">
                                     <h3 className="text-xl font-semibold mb-3 text-gray-800 group-hover:text-orange-600 transition-colors duration-300 line-clamp-2">
                                         {product.name}
