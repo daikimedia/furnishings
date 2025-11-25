@@ -74,7 +74,7 @@ export default function FloorCategories() {
                     <p className="text-gray-600">
                         Discover our premium flooring solutions designed for Malaysian homes and commercial spaces.
                     </p>
-                    <h1 className="text-2xl font-semibold py-4">Shop by Category</h1>
+                    <h1 className="text-2xl font-semibold py-4">Vinyl Flooring in Malaysia for Homes & Offices</h1>
                 </section>
 
                 {/* Categories Grid */}

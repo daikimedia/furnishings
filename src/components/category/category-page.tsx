@@ -4,7 +4,6 @@ import { useParams, useRouter } from "next/navigation";
 import Link from "next/link";
 import SquareLoader from "../common/loader";
 
-// API interfaces
 interface ApiProduct {
     id: number
     name: string
@@ -51,25 +50,20 @@ export default function CategoryPage() {
     const router = useRouter();
     const { slug } = params;
 
-    // State management
     const [categoryProducts, setCategoryProducts] = useState<ApiProduct[]>([]);
     const [currentCategory, setCurrentCategory] = useState<ApiCategory | null>(null);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState<string | null>(null);
 
-    // Filter states
     const [selectedColors, setSelectedColors] = useState<string[]>([]);
     const [selectedTypes, setSelectedTypes] = useState<string[]>([]);
     const [selectedCategories, setSelectedCategories] = useState<string[]>([]);
 
-    // Pagination states
     const [currentPage, setCurrentPage] = useState(1);
     const productsPerPage = 15;
 
-    // Get category name safely
     const categoryName = currentCategory?.name;
 
-    // Function to scroll to top smoothly
     const scrollToTop = () => {
         window.scrollTo({
             top: 0,
@@ -77,18 +71,15 @@ export default function CategoryPage() {
         });
     };
 
-    // Apply filters and pagination
     const filteredProducts = useMemo(() => {
         let filtered = categoryProducts;
 
-        // Apply brand filter (using selectedColors array for brands)
         if (selectedColors.length > 0) {
             filtered = filtered.filter(product =>
                 selectedColors.includes(product.brand)
             );
         }
 
-        // Apply price range filter (using selectedTypes for price ranges)
         if (selectedTypes.length > 0) {
             filtered = filtered.filter(product => {
                 const price = product.retail_price || product.purchase_price || 0;
@@ -112,29 +103,23 @@ export default function CategoryPage() {
         return filtered;
     }, [categoryProducts, selectedColors, selectedTypes, selectedCategories]);
 
-    // Pagination calculations
     const totalPages = Math.ceil(filteredProducts.length / productsPerPage);
     const startIndex = (currentPage - 1) * productsPerPage;
     const endIndex = startIndex + productsPerPage;
     const currentProducts = filteredProducts.slice(startIndex, endIndex);
 
-    // Reset to page 1 when filters change
     useEffect(() => {
         setCurrentPage(1);
     }, [selectedColors, selectedTypes, selectedCategories]);
 
-    // Scroll to top when page changes
     useEffect(() => {
         scrollToTop();
     }, [currentPage]);
 
-    // Updated pagination handler function
     const handlePageChange = (newPage: number) => {
         setCurrentPage(newPage);
-        // Scroll to top will be handled by the useEffect above
     };
 
-    // Pagination component
     const PaginationControls = () => {
         if (totalPages <= 1) return null;
 
@@ -175,7 +160,6 @@ export default function CategoryPage() {
         return (
             <div className="flex justify-center items-center mt-8 mb-6">
                 <div className="flex items-center space-x-2 bg-white rounded-lg shadow-md p-2">
-                    {/* Previous Button */}
                     <button
                         onClick={() => handlePageChange(Math.max(1, currentPage - 1))}
                         disabled={currentPage === 1}
@@ -187,7 +171,6 @@ export default function CategoryPage() {
                         &laquo;
                     </button>
 
-                    {/* Page Numbers */}
                     {getVisiblePages().map((page, index) => (
                         <React.Fragment key={index}>
                             {page === '...' ? (
@@ -206,7 +189,6 @@ export default function CategoryPage() {
                         </React.Fragment>
                     ))}
 
-                    {/* Next Button */}
                     <button
                         onClick={() => handlePageChange(Math.min(totalPages, currentPage + 1))}
                         disabled={currentPage === totalPages}
@@ -222,10 +204,8 @@ export default function CategoryPage() {
         );
     };
 
-    // Fetch data from API
     useEffect(() => {
         const fetchCategoryData = async () => {
-            // Don't fetch if slug is not available yet
             if (!slug || typeof slug !== 'string') {
                 return;
             }
@@ -234,7 +214,6 @@ export default function CategoryPage() {
                 setLoading(true);
                 setError(null);
 
-                // Use the specific API endpoint for category products
                 const categoryProductsResponse = await fetch(
                     `https://cms.furnishings.daikimedia.com/api/categories/${slug}/products`
                 );
@@ -244,7 +223,6 @@ export default function CategoryPage() {
                 if (categoryProductsResult.success && categoryProductsResult.data.length > 0) {
                     setCategoryProducts(categoryProductsResult.data);
 
-                    // Extract category info from the first product
                     const firstProduct = categoryProductsResult.data[0];
                     setCurrentCategory({
                         id: firstProduct.category.id,
@@ -253,12 +231,10 @@ export default function CategoryPage() {
                         products_count: categoryProductsResult.data.length
                     });
                 } else {
-                    // If no products found, try to get category info from categories API
                     const categoriesResponse = await fetch('https://cms.furnishings.daikimedia.com/api/categories');
                     const categoriesResult: CategoriesApiResponse = await categoriesResponse.json();
 
                     if (categoriesResult.success) {
-                        // Case-insensitive category slug comparison
                         const normalizedSlug = slug.toLowerCase().trim();
                         const category = categoriesResult.data.find(cat => cat.slug.toLowerCase().trim() === normalizedSlug);
                         if (category) {
@@ -308,7 +284,6 @@ export default function CategoryPage() {
         );
     };
 
-    // Loading state
     if (loading) {
         return (
             <div className="min-h-screen flex items-center justify-center">
@@ -317,7 +292,6 @@ export default function CategoryPage() {
         );
     }
 
-    // Error state
     if (error) {
         return (
             <div className="min-h-screen flex items-center justify-center">
@@ -335,7 +309,6 @@ export default function CategoryPage() {
         );
     }
 
-    // Category not found state
     if (!loading && (!categoryName || !currentCategory)) {
         return (
             <div className="min-h-screen flex items-center justify-center">
@@ -353,16 +326,14 @@ export default function CategoryPage() {
         );
     }
 
-    // Show empty state if category exists but has no products
     if (!loading && currentCategory && categoryProducts.length === 0) {
         return (
             <div className="min-h-screen">
-                {/* Header */}
                 <div className="bg-white shadow-sm">
                     <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-6">
                         <div className="flex items-center justify-between">
                             <div>
-                                <h1 className="text-3xl font-bold text-gray-800">{categoryName}</h1>
+                                <h2 className="text-3xl font-bold text-gray-800">{categoryName ? `${categoryName} in Malaysia` : 'Category in Malaysia'}</h2>
                                 <p className="text-gray-600 mt-1">No products found in this category</p>
                             </div>
                         </div>
@@ -387,12 +358,11 @@ export default function CategoryPage() {
 
     return (
         <div className="h-full">
-            {/* Header */}
             <div className="bg-white shadow-sm">
                 <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-6">
                     <div className="flex items-center justify-between">
                         <div>
-                            <h1 className="text-3xl font-bold text-gray-800">{categoryName}</h1>
+                            <h2 className="text-3xl font-bold text-gray-800">{categoryName ? `${categoryName} in Malaysia` : 'Category in Malaysia'}</h2>
                             <p className="text-gray-600 mt-1">
                                 {filteredProducts.length} products found
                                 {filteredProducts.length !== categoryProducts.length &&
@@ -411,12 +381,10 @@ export default function CategoryPage() {
 
             <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-8">
                 <div className="flex flex-col lg:flex-row gap-8">
-                    {/* Filter Sidebar */}
                     <div className="max-w-70px">
                         <div className="bg-gray-50 rounded-lg p-6 sticky top-24">
                             <h2 className="text-xl font-bold text-gray-800 mb-6">Filters</h2>
 
-                            {/* Brand Filter */}
                             <div className="mb-6">
                                 <h3 className="text-lg font-semibold text-gray-700 mb-4">Brands</h3>
                                 <div className="space-y-2">
@@ -436,7 +404,6 @@ export default function CategoryPage() {
                                 </div>
                             </div>
 
-                            {/* Clear Filters Button */}
                             <button
                                 onClick={clearAllFilters}
                                 className="w-full bg-orange-600 text-white py-2 px-4 rounded-lg hover:bg-orange-500 transition-colors font-medium"
@@ -446,9 +413,7 @@ export default function CategoryPage() {
                         </div>
                     </div>
 
-                    {/* Products Grid */}
                     <div className="lg:w-3/4">
-                        {/* Active Filters Display */}
                         {(selectedColors.length > 0 || selectedTypes.length > 0 || selectedCategories.length > 0) && (
                             <div className="mb-6">
                                 <h4 className="text-sm font-medium text-gray-700 mb-2">Active Filters:</h4>
@@ -490,7 +455,6 @@ export default function CategoryPage() {
                             </div>
                         )}
 
-                        {/* Products Grid */}
                         {filteredProducts.length === 0 ? (
                             <div className="text-center py-12">
                                 <h2 className="text-xl font-semibold text-gray-700 mb-4">No Products Found</h2>
@@ -506,7 +470,6 @@ export default function CategoryPage() {
                             <>
                                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6">
                                     {currentProducts.map((product) => {
-                                        // Fix image URL
                                         const imageUrl = product.images.main_image?.startsWith('http')
                                             ? product.images.main_image
                                             : `https://cms.furnishings.daikimedia.com${product.images.main_image}`;
@@ -517,7 +480,6 @@ export default function CategoryPage() {
                                                     href={`/shop/${product.category?.slug || 'uncategorized'}/${product.slug}`}
                                                     className="block bg-white rounded-2xl shadow-md cursor-pointer overflow-hidden hover:shadow-lg transition-shadow"
                                                 >
-                                                    {/* Image Section */}
                                                     <div className="relative h-56 overflow-hidden bg-orange-200">
                                                         <img
                                                             src={imageUrl || '/images/placeholder.jpg'}
@@ -526,7 +488,6 @@ export default function CategoryPage() {
                                                         />
                                                     </div>
 
-                                                    {/* Product Info */}
                                                     <div className="p-6">
                                                         <h3 className="text-lg font-semibold text-gray-800 mb-2 group-hover:text-orange-600 transition-colors duration-300 line-clamp-2">
                                                             {product.name}
@@ -535,7 +496,6 @@ export default function CategoryPage() {
                                                             {product.description.short || product.description.long || "Premium flooring solution for modern spaces"}
                                                         </p>
 
-                                                        {/* Brand and Price */}
                                                         <div className="flex justify-between items-center mb-4">
                                                             <span className="text-xs text-gray-500">{product.brand}</span>
                                                             {(product.retail_price || product.purchase_price) && (
@@ -545,13 +505,11 @@ export default function CategoryPage() {
                                                             )}
                                                         </div>
 
-                                                        {/* View Product Button */}
                                                         <span className="inline-block px-4 py-2 text-sm font-medium text-white bg-orange-600 rounded-lg shadow hover:bg-orange-500 transition-colors duration-300">
                                                             View Product
                                                         </span>
                                                     </div>
 
-                                                    {/* Bottom Hover Bar */}
                                                     <div className="h-1 bg-gradient-to-r from-orange-400 to-orange-600 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
                                                 </Link>
                                             </div>
@@ -559,7 +517,6 @@ export default function CategoryPage() {
                                     })}
                                 </div>
 
-                                {/* Pagination Controls */}
                                 <PaginationControls />
                             </>
                         )}

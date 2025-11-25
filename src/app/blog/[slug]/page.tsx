@@ -14,10 +14,8 @@ interface BlogPost {
     tags?: string;
 }
 
-// Fetch blog data for metadata
 async function fetchBlogBySlug(slug: string): Promise<BlogPost | null> {
     try {
-        // Try dedicated single blog endpoint first
         let response = await fetch(`https://cms.furnishings.daikimedia.com/api/blogs/${slug}`, {
             cache: "no-store",
             headers: {
@@ -26,7 +24,6 @@ async function fetchBlogBySlug(slug: string): Promise<BlogPost | null> {
         });
 
         if (!response.ok) {
-            // Fallback: Fetch all blogs and filter
             response = await fetch(`https://cms.furnishings.daikimedia.com/api/blogs/all-blogs`, {
                 cache: "no-store",
                 headers: {
@@ -51,7 +48,6 @@ async function fetchBlogBySlug(slug: string): Promise<BlogPost | null> {
     }
 }
 
-// Helper function to truncate title to 150 characters
 function truncateTitle(title: string, maxLength: number = 150): string {
     if (title.length <= maxLength) {
         return title;
@@ -63,18 +59,15 @@ type Params = {
     slug: string;
 };
 
-// Generate metadata for SEO including canonical tag
 export async function generateMetadata({ params }: { params: Promise<Params> }): Promise<Metadata> {
     const { slug } = await params;
     const baseUrl = 'https://www.furnishings.com.my';
     const canonicalUrl = `${baseUrl}/blog/${slug}`;
 
-    // Fetch blog data
     const blog = await fetchBlogBySlug(slug);
 
-    // Default meta values
-    const defaultTitle = "Blog – Home Décor Tips & Interior Ideas | Furnishing Solutions";
-    const defaultDescription = "Explore expert home décor ideas, furniture styling tips, and modern interior inspiration to refresh your living space beautifully with Furnishing Solutions.";
+    const defaultTitle = "Flooring & Home Décor Blog Malaysia | Vinyl, SPC & Interior Ideas | Furnishing";
+    const defaultDescription = "Read flooring and home décor tips for Malaysian homes and offices on the Furnishing blog. Discover vinyl, SPC, laminate and carpet tile ideas, maintenance guides and renovation inspiration.";
 
     if (!blog) {
         return {
@@ -91,10 +84,8 @@ export async function generateMetadata({ params }: { params: Promise<Params> }):
         };
     }
 
-    // Generate meta title (max 150 characters)
     const metaTitle = truncateTitle(`${blog.title} | Furnishing Solutions`, 150);
     
-    // Use excerpt for description, or generate one from content
     const metaDescription = blog.excerpt 
         ? blog.excerpt.length > 160 
             ? blog.excerpt.substring(0, 160).trim() + '...'

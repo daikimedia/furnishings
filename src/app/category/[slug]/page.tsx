@@ -14,39 +14,37 @@ interface CategoriesApiResponse {
     data: ApiCategory[];
 }
 
-// Category-specific meta data mapping
 const categoryMetaData: Record<string, { title: string; description: string }> = {
     'flooring': {
-        title: 'Flooring Solutions for Modern Spaces | Furnishing Solutions',
-        description: 'Stylish and durable flooring solutions designed for modern homes and offices, offering lasting comfort, premium quality, and timeless visual appeal.'
+        title: 'Flooring in Malaysia | Furnishing',
+        description: 'Find quality flooring solutions in Malaysia including vinyl, SPC, laminate, carpet tiles and artificial grass. Browse collections from Furnishing and request a quotation for your project.'
     },
     'carpet-tiles': {
-        title: 'Durable Carpet Tiles for Offices & Homes | Furnishing Solutions',
-        description: 'Durable carpet tiles designed for offices and homes, combining comfort, easy maintenance, and long-lasting performance for high-traffic environments.'
+        title: 'Carpet Tiles in Malaysia | Furnishing',
+        description: 'Shop durable carpet tiles in Malaysia for offices, schools and homes. Enjoy modular designs, easy replacement and stylish colours from Furnishing.'
     },
     'artificial-grass': {
-        title: 'Premium Artificial Grass for Indoors & Outdoors | Furnishing Solutions',
-        description: 'Premium artificial grass offering a natural look, durability, and minimal maintenance for gardens, balconies, and indoor or outdoor living areas.'
+        title: 'Artificial Grass in Malaysia | Furnishing',
+        description: 'Choose premium artificial grass in Malaysia for balconies, gardens and indoor spaces. Soft underfoot, low maintenance and realistic looking turf supplied by Furnishing.'
     },
     'spc-laminate': {
-        title: 'SPC & Laminate Flooring for Every Style | Furnishing Solutions',
-        description: 'SPC and laminate flooring built for strength, beauty, and comfort. Perfect for modern homes, offices, and spaces needing a stylish, durable finish.'
+        title: 'SPC & Laminate Flooring in Malaysia | Furnishing',
+        description: 'Explore SPC and laminate flooring collections in Malaysia. Scratch-resistant and easy to maintain, perfect for modern homes and offices with Furnishing guidance.'
     },
     'alberta': {
-        title: 'Alberta Flooring Collection - Stylish & Durable | Furnishing Solutions',
-        description: 'Alberta Flooring Collection blends elegant textures with long-lasting durability, ideal for enhancing both residential and commercial interiors.'
+        title: 'Alberta Flooring in Malaysia | Furnishing',
+        description: 'Find quality flooring solutions in Malaysia including vinyl, SPC, laminate, carpet tiles and artificial grass. Browse collections from Furnishing and request a quotation for your project.'
     },
     'versafloor': {
-        title: 'Versafloor Collection - Quality Flooring Designs | Furnishing Solutions',
-        description: 'Versafloor Collection offers superior design, durability, and easy installation, making it perfect for home renovations and professional interiors.'
+        title: 'Versafloor Vinyl Flooring in Malaysia | Furnishing',
+        description: 'Find quality flooring solutions in Malaysia including vinyl, SPC, laminate, carpet tiles and artificial grass. Browse collections from Furnishing and request a quotation for your project.'
     },
     'vinyl-sheet-flooring': {
-        title: 'Vinyl Sheet Flooring for Homes & Businesses | Furnishing Solutions',
-        description: 'Vinyl sheet flooring crafted for comfort, resilience, and easy upkeep, providing a stylish and practical solution for homes and commercial spaces.'
+        title: 'Vinyl Sheet Flooring in Malaysia | Furnishing',
+        description: 'Discover vinyl sheet flooring in Malaysia with cushioned comfort, sound reduction and easy maintenance. Ideal for homes, schools, clinics and commercial spaces with expert support from Furnishing.'
     }
 };
 
-// Fetch category by slug for fallback
 async function fetchCategoryBySlug(slug: string): Promise<ApiCategory | null> {
     try {
         const response = await fetch('https://cms.furnishings.daikimedia.com/api/categories', {
@@ -62,7 +60,6 @@ async function fetchCategoryBySlug(slug: string): Promise<ApiCategory | null> {
 
         const result: CategoriesApiResponse = await response.json();
         if (result.success && result.data) {
-            // Case-insensitive slug comparison
             const normalizedSlug = slug.toLowerCase().trim();
             const category = result.data.find(cat => cat.slug.toLowerCase().trim() === normalizedSlug);
             return category || null;
@@ -81,11 +78,9 @@ type Params = {
 export async function generateMetadata({ params }: { params: Promise<Params> }): Promise<Metadata> {
     const { slug } = await params;
     
-    // Check if we have specific meta data for this category
     const specificMeta = categoryMetaData[slug];
     
     if (specificMeta) {
-        // Use specific meta data from mapping
         return {
             title: specificMeta.title,
             description: specificMeta.description,
@@ -100,10 +95,8 @@ export async function generateMetadata({ params }: { params: Promise<Params> }):
         };
     }
     
-    // Fallback: Fetch category and generate dynamic meta
     const category = await fetchCategoryBySlug(slug);
     
-    // Default static meta values
     const defaultMetaTitle = "Product Category – Premium Flooring & Furnishing Solutions";
     const defaultMetaDescription = "Browse our premium collection of flooring and furnishing products. Find quality solutions for your home and office.";
 
@@ -117,7 +110,6 @@ export async function generateMetadata({ params }: { params: Promise<Params> }):
         };
     }
 
-    // Dynamic meta title and description based on category
     const categoryName = category.name;
     const productsCount = category.products_count || 0;
 

@@ -19,7 +19,6 @@ export default function Footer() {
     const [categories, setCategories] = useState<Category[]>([]);
     const [loading, setLoading] = useState(true);
 
-    // Fetch categories from API  
     useEffect(() => {
         const fetchCategories = async () => {
             try {
@@ -47,7 +46,6 @@ export default function Footer() {
 
     return (
         <footer className="relative bg-black text-white rounded-t-3xl overflow-hidden font-sans">
-            {/* Background Lines */}
             <div className="absolute inset-0 pointer-events-none">
                 <svg className="w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
                     <path d="M0 100 L300 0 L600 200" stroke="rgba(255,255,255,0.1)" strokeWidth="1" fill="none" />
@@ -55,13 +53,10 @@ export default function Footer() {
                 </svg>
             </div>
 
-            {/* Main Footer Grid - Responsive Layout */}
             <div className="relative container mx-auto px-4 sm:px-6 lg:px-16 py-8 sm:py-12">
 
-                {/* Mobile First - Stacked Layout */}
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-[3.3fr_1fr_1fr] gap-8 lg:gap-12">
 
-                    {/* === About Us Section === */}
                     <div className="space-y-4 sm:space-y-6 md:col-span-2 lg:col-span-1 lg:pr-16">
                         <h4 className="text-lg sm:text-xl font-bold tracking-tight text-orange-600">ABOUT US</h4>
                         <p className="text-gray-300 leading-relaxed text-sm sm:text-base text-justify">
@@ -69,7 +64,6 @@ export default function Footer() {
                             for innovative, lasting, and visually striking interior solutions.
                         </p>
 
-                        {/* Social Icons */}
                         <div className="flex space-x-4 text-white">
                             <Link href="/"><Facebook className="w-5 h-5 hover:text-orange-600 transition-colors" /></Link>
                             <Link href="/"><Twitter className="w-5 h-5 hover:text-orange-600 transition-colors" /></Link>
@@ -77,7 +71,6 @@ export default function Footer() {
                             <Link href="/"><Youtube className="w-5 h-5 hover:text-orange-600 transition-colors" /></Link>
                         </div>
 
-                        {/* Back to Top Button */}
                         <button
                             onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
                             className="flex items-center justify-center space-x-2 border border-white px-3 py-2 rounded-md hover:bg-orange-600 hover:text-black transition-colors text-xs sm:text-sm w-full sm:w-auto">
@@ -86,7 +79,6 @@ export default function Footer() {
                         </button>
                     </div>
 
-                    {/* === Information Section === */}
                     <div className="space-y-4">
                         <h4 className="font-bold text-orange-600 text-base sm:text-lg">INFORMATION</h4>
                         <ul className="space-y-2 sm:space-y-3 text-gray-300 text-sm sm:text-base">
@@ -97,7 +89,6 @@ export default function Footer() {
                         </ul>
                     </div>
 
-                    {/* === Categories Section === */}
                     <div className="space-y-4">
                         <h4 className="font-bold text-orange-600 text-base sm:text-lg">CATEGORIES</h4>
                         {loading ? (
@@ -120,7 +111,6 @@ export default function Footer() {
                 </div>
             </div>
 
-            {/* Bottom Bar */}
             <div className="bg-black text-center py-3 px-4 text-xs sm:text-sm text-white border-t border-orange-600">
                 <div className="flex flex-col sm:flex-row items-center justify-center space-y-1 sm:space-y-0">
                     <span>© {new Date().getFullYear()} Furnishings powered by</span>

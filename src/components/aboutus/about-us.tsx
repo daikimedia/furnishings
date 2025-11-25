@@ -4,7 +4,6 @@ import Image from 'next/image';
 const AboutUs = () => {
     return (
         <div className="bg-white ">
-            {/* Hero Section */}
             <div className='container mx-auto px-6 '>
                 <section className="py-12">
                     <div className="text-center mb-12">
@@ -51,9 +50,7 @@ const AboutUs = () => {
                     </div>
                 </section>
 
-                {/* Mission & Vision Row */}
                 <div className="grid lg:grid-cols-2 gap-8  py-12">
-                    {/* Card List */}
                     {[
                         {
                             title: "Our Mission",
@@ -72,7 +69,6 @@ const AboutUs = () => {
                             key={index}
                             className="bg-white border border-orange-100 rounded-3xl shadow-md overflow-hidden transition-all duration-500"
                         >
-                            {/* Image Section with Colored Background */}
                             <div className="w-full h-56 bg-orange-100 flex items-center justify-center p-6">
                                 <div className="relative w-full h-full">
                                     <img
@@ -83,7 +79,6 @@ const AboutUs = () => {
                                 </div>
                             </div>
 
-                            {/* Text Content */}
                             <div className="p-6">
                                 <h3 className="text-2xl font-bold text-black mb-4">{item.title}</h3>
                                 <p className="text-gray-700 text-base leading-relaxed text-justify">{item.content}</p>
@@ -92,7 +87,6 @@ const AboutUs = () => {
                     ))}
                 </div>
 
-                {/* What We Offer Section */}
                 <section className=" py-12 ">
                     <div className="text-center mb-12 ">
                         <h2 className="text-3xl  font-bold text-gray-900 mb-4">What We Offer</h2>
@@ -100,7 +94,6 @@ const AboutUs = () => {
                     </div>
 
                     <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-                        {/* Vinyl Flooring */}
                         <div className="bg-white rounded-xl shadow-md p-6 border border-orange-100 ">
                             <div className="w-12 h-12 bg-orange-600 rounded-lg flex items-center justify-center mb-4">
                                 <Home className="w-6 h-6 text-white" />
@@ -129,7 +122,6 @@ const AboutUs = () => {
                             </div>
                         </div>
 
-                        {/* SPC Flooring */}
                         <div className="bg-white rounded-xl shadow-md p-6 border border-orange-100  transition-shadow">
                             <div className="w-12 h-12 bg-orange-600 rounded-lg flex items-center justify-center mb-4">
                                 <Building className="w-6 h-6 text-white" />
@@ -140,7 +132,6 @@ const AboutUs = () => {
                             </p>
                         </div>
 
-                        {/* Wall Panels */}
                         <div className="bg-white rounded-xl shadow-md p-6 border border-orange-100 ">
                             <div className="w-12 h-12 bg-orange-600 rounded-lg flex items-center justify-center mb-4">
                                 <Star className="w-6 h-6 text-white" />
@@ -151,7 +142,6 @@ const AboutUs = () => {
                             </p>
                         </div>
 
-                        {/* Consultation */}
                         <div className="bg-white rounded-xl shadow-md p-6 border border-orange-100 ">
                             <div className="w-12 h-12 bg-orange-600 rounded-lg flex items-center justify-center mb-4">
                                 <Users className="w-8 h-8 text-white" />
@@ -164,7 +154,6 @@ const AboutUs = () => {
                     </div>
                 </section>
 
-                {/* Why Choose Us Section */}
                 <div className="py-12">
                     <div className="text-center mb-12">
                         <h2 className="text-3xl  font-bold text-gray-900 mb-4">Why Choose Furnishing?</h2>
@@ -204,7 +193,6 @@ const AboutUs = () => {
                     </div>
                 </div>
 
-                {/* Who We Serve Section */}
                 <section className="py-12">
                     <div className="text-center mb-12">
                         <h2 className="text-3xl font-bold text-gray-900 mb-4">Who We Serve</h2>
@@ -235,7 +223,6 @@ const AboutUs = () => {
                             <p className="text-base text-gray-600 text-justify">Requiring flooring with durability and design appeal</p>
                         </div>
 
-                        {/* Centered last two items */}
                         <div className="md:col-span-3 flex flex-col md:flex-row justify-center gap-6">
                             <div className="border border-orange-100 shadow-md rounded-xl bg-white p-6 text-center w-full md:w-1/3">
                                 <div className="flex items-center justify-center w-12 h-12 bg-orange-600 rounded-lg mb-4 mx-auto">
@@ -260,7 +247,6 @@ const AboutUs = () => {
                     </div>
                 </section>
 
-                {/* Core Values Section */}
                 <section className="py-12">
                     <div className="text-center mb-12">
                         <h2 className="text-3xl font-bold text-gray-900 mb-4">Core Values</h2>
@@ -302,7 +288,6 @@ const AboutUs = () => {
                     </div>
                 </section>
 
-                {/* Serving Across Malaysia */}
                 <section className="py-12">
                     <div className="text-center mb-12">
                         <h2 className="text-3xl font-bold text-gray-900 mb-4">Serving Across Malaysia</h2>
@@ -336,7 +321,6 @@ const AboutUs = () => {
                     </div>
                 </section>
 
-                {/* Call to Action */}
                 <section className='py-12'>
                     <div className="bg-orange-50 p-8 text-center  rounded-xl">
                         <h3 className="text-2xl font-semibold text-gray-900 mb-12">

@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import PageHeader from "@/components/common/header";
 
 export const metadata: Metadata = {
-    title: "Terms & Conditions – Shopping Policies | Furnishing Solutions",
-    description: "Review our terms and conditions to understand your shopping rights, store policies, and privacy guidelines when purchasing from Furnishing Solutions.",
+    title: "Terms & Conditions | Furnishing Online Flooring Store Malaysia",
+    description: "Review the terms and conditions for shopping with Furnishing in Malaysia. Learn about orders, payments, warranties and website usage for our flooring products and services.",
     alternates: {
         canonical: "https://www.furnishings.com.my/terms-&-conditions",
     },
@@ -15,7 +15,7 @@ export default function Terms() {
         <>
             <PageHeader />
             <main className="container mx-auto px-4 py-10">
-                <h1 className="text-3xl font-bold text-black item-center text-center mb-12">Terms & Conditions</h1>
+                <h2 className="text-3xl font-bold text-black item-center text-center mb-12">Terms & Conditions</h2>
 
                 <section className="space-y-4 text-gray-800 text-base leading-relaxed">
                     <p>

@@ -1,8 +1,8 @@
 import PageHeader from "@/components/common/header"
 import ContactUsPage from "@/components/contact-page/contact-page"
 export const metadata = {
-    title: "Contact Us | Furnishing – Vinyl & PVC Flooring Experts in Malaysia",
-    description: "Need flooring advice in Malaysia? Contact Furnishing for expert guidance, free quotes, and top-quality vinyl & PVC flooring installation nationwide.",
+    title: "Contact Furnishing | Vinyl & Flooring Supplier in Malaysia",
+    description: "Contact Furnishing for vinyl, SPC, laminate flooring, carpet tiles and artificial grass in Malaysia. Request a site visit, quotation or product recommendation for your project today.",
     alternates: {
         canonical: "/contact",
     },
@@ -10,7 +10,7 @@ export const metadata = {
 export default function ContactUs() {
     return (
         <>
-            <PageHeader />
+            <PageHeader title="Contact Furnishing" />
             <ContactUsPage />
         </>
     )

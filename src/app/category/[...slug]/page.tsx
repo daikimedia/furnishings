@@ -76,7 +76,6 @@ interface CategoriesApiResponse {
     data: ApiCategory[];
 }
 
-// Case-insensitive product fetch
 async function fetchProductBySlug(slug: string): Promise<ApiProduct | null> {
     try {
         const response = await fetch('https://cms.furnishings.daikimedia.com/api/products', {
@@ -87,7 +86,6 @@ async function fetchProductBySlug(slug: string): Promise<ApiProduct | null> {
         }
         const result: ProductsApiResponse = await response.json();
         if (result.success && result.data) {
-            // Case-insensitive slug comparison
             const normalizedSlug = slug.toLowerCase().trim();
             const product = result.data.find(p => p.slug.toLowerCase().trim() === normalizedSlug);
             return product || null;
@@ -98,7 +96,6 @@ async function fetchProductBySlug(slug: string): Promise<ApiProduct | null> {
     }
 }
 
-// Case-insensitive category fetch
 async function fetchCategoryBySlug(slug: string): Promise<ApiCategory | null> {
     try {
         const response = await fetch('https://cms.furnishings.daikimedia.com/api/categories', {
@@ -114,7 +111,6 @@ async function fetchCategoryBySlug(slug: string): Promise<ApiCategory | null> {
 
         const result: CategoriesApiResponse = await response.json();
         if (result.success && result.data) {
-            // Case-insensitive slug comparison
             const normalizedSlug = slug.toLowerCase().trim();
             const category = result.data.find(cat => cat.slug.toLowerCase().trim() === normalizedSlug);
             return category || null;
@@ -137,29 +133,23 @@ export default async function CategoryPageRoute({ params }: { params: Promise<Pa
         notFound();
     }
 
-    // Route: /category/[category-slug]/[product-slug]
     if (slug.length === 2) {
         const [categorySlug, productSlug] = slug;
         
-        // Fetch product with case-insensitive matching
         const productData = await fetchProductBySlug(productSlug);
         
         if (!productData) {
             notFound();
         }
 
-        // Get canonical category and product slugs from CMS
         const canonicalCategory = productData.category?.slug || 'uncategorized';
         const canonicalProduct = productData.slug;
 
-        // Case-insensitive comparison - if URL doesn't match CMS canonical, redirect
         if (categorySlug.toLowerCase().trim() !== canonicalCategory.toLowerCase().trim() ||
             productSlug.toLowerCase().trim() !== canonicalProduct.toLowerCase().trim()) {
-            // Redirect to canonical URL using CMS slugs
             redirect(`/category/${canonicalCategory}/${canonicalProduct}`);
         }
 
-        // Normalize image URLs
         const normalizeUrl = (input: unknown): string => {
             if (typeof input !== 'string') return '';
             const trimmed = input.trim();
@@ -212,7 +202,6 @@ export default async function CategoryPageRoute({ params }: { params: Promise<Pa
         );
     }
 
-    // Route: /category/[category-slug] - show category page
     if (slug.length === 1) {
         return (
             <>
@@ -237,7 +226,6 @@ export async function generateMetadata({ params }: { params: Promise<Params> }):
         };
     }
 
-    // If product slug is present, generate product metadata
     if (slug.length === 2) {
         const productSlug = slug[1];
         const productData = await fetchProductBySlug(productSlug);
@@ -293,7 +281,6 @@ export async function generateMetadata({ params }: { params: Promise<Params> }):
         };
     }
 
-    // Category metadata
     const categorySlug = slug[0];
     const category = await fetchCategoryBySlug(categorySlug);
 

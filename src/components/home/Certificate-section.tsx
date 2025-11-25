@@ -7,7 +7,6 @@ const CertificateCarousel = () => {
     const [canScrollLeft, setCanScrollLeft] = useState(false);
     const [canScrollRight, setCanScrollRight] = useState(true);
 
-    // You can replace these with your actual certificate images
     const certificates = [
         {
             id: 1,
@@ -109,7 +108,6 @@ const CertificateCarousel = () => {
                 </h2>
 
                 <div className="relative">
-                    {/* Left Arrow */}
                     <button
                         onClick={scrollLeft}
                         disabled={!canScrollLeft}
@@ -121,7 +119,6 @@ const CertificateCarousel = () => {
                         <ChevronLeft size={24} />
                     </button>
 
-                    {/* Right Arrow */}
                     <button
                         onClick={scrollRight}
                         disabled={!canScrollRight}
@@ -133,7 +130,6 @@ const CertificateCarousel = () => {
                         <ChevronRight size={24} />
                     </button>
 
-                    {/* Scrollable Container */}
                     <div
                         ref={scrollContainerRef}
                         className="flex gap-8 overflow-x-auto scrollbar-hide px-16 py-4"

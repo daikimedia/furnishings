@@ -17,11 +17,7 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-// export const metadata: Metadata = {
-//   title: "furnishings ",
-//   description: "Discover the best flooring solutions for your home",
-//   metadataBase: new URL("https://www.furnishings.com.my"),
-// };
+
 
 export default function RootLayout({
   children,
@@ -33,7 +29,6 @@ export default function RootLayout({
       <head>
         <meta name="google-site-verification" content="OpT1FDJgXZs8BhiDyAY7mpRKvkyGX5odLEyL0lfK50s" />
 
-        {/* Google Tag Manager */}
         <Script id="google-tag-manager" strategy="lazyOnload">
           {`
     (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -43,7 +38,6 @@ export default function RootLayout({
     })(window,document,'script','dataLayer','GTM-TPQP72XJ');
   `}
         </Script>
-        {/* <!-- End Google Tag Manager --> */}
         <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png" />
         <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png" />
         <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png" />

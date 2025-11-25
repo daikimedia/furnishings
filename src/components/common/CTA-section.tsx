@@ -11,7 +11,6 @@ export default function CTASection() {
                 </p>
 
                 <div className="flex flex-col md:flex-row justify-center items-center gap-6 text-lg">
-                    {/* WhatsApp */}
                     <Link
                         href="https://wa.me/60123498710"
                         // target="_blank"
@@ -23,7 +22,6 @@ export default function CTASection() {
                         WhatsApp: <strong>+60 12-349 8710</strong>
                     </Link>
 
-                    {/* Website */}
                     <Link
                         href="/contact"
                         // target="_blank"
@@ -34,7 +32,6 @@ export default function CTASection() {
                         <strong>Contact Us</strong>
                     </Link>
 
-                    {/* Email */}
                     <Link
                         href="mailto:info@furnishings.com.my"
                         className="flex items-center gap-2 bg-orange-400 hover:bg-orange-500 text-white px-5 py-3 rounded-xl 

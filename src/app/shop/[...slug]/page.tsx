@@ -94,7 +94,7 @@ export default async function ProductPage({ params }: { params: Promise<Params> 
         notFound();
     }
 
-    // Legacy route: /shop/[product]
+   
     if (slug.length === 1) {
         const productSlug = slug[0];
         const productData = await fetchProductBySlug(productSlug);
@@ -102,11 +102,9 @@ export default async function ProductPage({ params }: { params: Promise<Params> 
             notFound();
         }
         const categorySlug = productData.category?.slug || 'uncategorized';
-        // Use CMS slug as canonical (jo slug CMS mai hai wahi use karo)
         redirect(`/shop/${categorySlug}/${productData.slug}`);
     }
 
-    // Canonical route: /shop/[category]/[product]
     if (slug.length === 2) {
         const [category, productSlug] = slug;
         const productData = await fetchProductBySlug(productSlug);
@@ -115,7 +113,6 @@ export default async function ProductPage({ params }: { params: Promise<Params> 
         }
 
         const canonicalCategory = productData.category?.slug || 'uncategorized';
-        // Case-insensitive category comparison - use CMS slug as canonical
         if (category.toLowerCase().trim() !== canonicalCategory.toLowerCase().trim()) {
             redirect(`/shop/${canonicalCategory}/${productData.slug}`);
         }
@@ -187,7 +184,6 @@ export async function generateMetadata({ params }: { params: Promise<Params> }) 
         };
     }
 
-    // Case-insensitive product slug matching
     const productSlug = slug.length === 1 ? slug[0] : slug[1];
     const productData = await fetchProductBySlug(productSlug);
     if (!productData) {
@@ -209,25 +205,38 @@ export async function generateMetadata({ params }: { params: Promise<Params> }) 
         return normalizeUrl(productData.images.main_image) || '/placeholder.svg';
     })();
 
-    // Build canonical URL from product data
     const categorySlug = productData.category?.slug || 'uncategorized';
     const canonicalUrl = `/shop/${categorySlug}/${productData.slug}`;
 
-    // Default static meta values
     const defaultMetaTitle = "Premium Flooring & Furnishings | Furnishings Malaysia";
     const defaultMetaDescription = "Discover premium quality flooring and furnishing products at Furnishings Malaysia. Browse our extensive collection of high-quality products for your home and office.";
 
-    // Get meta title with fallbacks
-    const metaTitle = productData.seo?.meta_title?.trim() || 
-                     productData.name?.trim() || 
-                     defaultMetaTitle;
+    const formatMetaTitle = (apiTitle: string | undefined): string => {
+        if (!apiTitle) {
+            return defaultMetaTitle;
+        }
 
-    // Get meta description with fallbacks
+        let cleanTitle = apiTitle.trim();
+        
+        cleanTitle = cleanTitle.replace(/^buy\s+/i, '');
+        
+        cleanTitle = cleanTitle.replace(/\s*\|\s*Furnishings.*$/i, '').trim();
+        
+        cleanTitle = cleanTitle.replace(/[–|\-|]\s*$/, '').trim();
+        
+        return `Buy ${cleanTitle} Vinyl Sheet Flooring | Furnishings`;
+    };
+
+    const apiMetaTitle = productData.seo?.meta_title?.trim();
+    
+    const metaTitle = apiMetaTitle 
+        ? formatMetaTitle(apiMetaTitle)
+        : (productData.name?.trim() || defaultMetaTitle);
+
     const metaDescription = productData.seo?.meta_description?.trim() || 
                            productData.description?.short?.trim() || 
                            defaultMetaDescription;
 
-    // Get OpenGraph values with fallbacks
     const ogTitle = productData.name?.trim() || metaTitle;
     const ogDescription = productData.description?.short?.trim() || metaDescription;
 

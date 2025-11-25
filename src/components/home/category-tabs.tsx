@@ -37,7 +37,6 @@ const CategoryTabs = () => {
     const [products, setProducts] = useState<ApiProduct[]>([])
     const [loading, setLoading] = useState(true)
 
-    // Fetch products from API
     useEffect(() => {
         const fetchProducts = async () => {
             try {
@@ -92,7 +91,6 @@ const CategoryTabs = () => {
             </div>
 
 
-            {/* Animated Product Grid */}
             <AnimatePresence mode="wait">
                 <motion.div
                     key={activeCategory}
@@ -103,7 +101,6 @@ const CategoryTabs = () => {
                     className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8"
                 >
                     {loading ? (
-                        // Loading skeleton
                         [...Array(8)].map((_, index) => (
                             <div key={index} className="bg-gray-200 animate-pulse rounded-xl h-80"></div>
                         ))
@@ -115,7 +112,6 @@ const CategoryTabs = () => {
                             className="group bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-200 cursor-pointer transform overflow-hidden"
                         >
                             <Link href={`/shop/${product.category?.slug || 'uncategorized'}/${product.slug}`}>
-                                {/* Image */}
                                 <div className="relative h-60 overflow-hidden">
                                     <Image
                                         src={product.images.main_image?.startsWith('http') 
@@ -129,7 +125,6 @@ const CategoryTabs = () => {
                                     <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300"></div>
                                 </div>
 
-                                {/* Content */}
                                 <div className="p-6">
                                     <h3 className="text-xl font-semibold text-gray-900 mb-2 group-hover:text-orange-600 transition-colors duration-300">
                                         {product.name}
@@ -151,7 +146,6 @@ const CategoryTabs = () => {
                                     </div>
                                 </div>
 
-                                {/* Decorative border */}
                                 <div className="h-1 bg-gradient-to-r from-orange-400 to-orange-600 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
                             </Link>
                         </motion.div>
