@@ -78,14 +78,12 @@ export async function generateMetadata({ params }: { params: Promise<Params> }):
             },
         };
     }
-
     const metaTitle = blog.meta_title?.trim() || 
                      `${blog.title} | Furnishing Solutions`;
-    
+
     const metaDescription = blog.meta_description?.trim() || 
                            blog.excerpt?.trim() || 
                            defaultDescription;
-
     return {
         title: metaTitle,
         description: metaDescription,
@@ -105,7 +103,6 @@ export async function generateMetadata({ params }: { params: Promise<Params> }):
         },
     };
 }
-
 export default function SingleBlogPage() {
     return <SingleBlogContent />;
 }
