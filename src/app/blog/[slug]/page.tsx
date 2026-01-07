@@ -12,6 +12,8 @@ interface BlogPost {
     publish_date: string;
     excerpt: string;
     tags?: string;
+    meta_title?: string;
+    meta_description?: string;
 }
 
 async function fetchBlogBySlug(slug: string): Promise<BlogPost | null> {
@@ -48,13 +50,6 @@ async function fetchBlogBySlug(slug: string): Promise<BlogPost | null> {
     }
 }
 
-function truncateTitle(title: string, maxLength: number = 150): string {
-    if (title.length <= maxLength) {
-        return title;
-    }
-    return title.substring(0, maxLength).trim() + '...';
-}
-
 type Params = {
     slug: string;
 };
@@ -84,13 +79,12 @@ export async function generateMetadata({ params }: { params: Promise<Params> }):
         };
     }
 
-    const metaTitle = truncateTitle(`${blog.title} | Furnishing Solutions`, 150);
+    const metaTitle = blog.meta_title?.trim() || 
+                     `${blog.title} | Furnishing Solutions`;
     
-    const metaDescription = blog.excerpt 
-        ? blog.excerpt.length > 160 
-            ? blog.excerpt.substring(0, 160).trim() + '...'
-            : blog.excerpt
-        : defaultDescription;
+    const metaDescription = blog.meta_description?.trim() || 
+                           blog.excerpt?.trim() || 
+                           defaultDescription;
 
     return {
         title: metaTitle,
