@@ -9,7 +9,7 @@ const AboutUs = () => {
                     <div className="text-center mb-12">
                         <h2 className="text-3xl  font-bold text-black mb-4">Our Story</h2>
                     </div>
-                    <div className=" text-center mx-auto">
+                    <div className="text-center mx-auto">
                         <div className="">
                             <p className="text-gray-700 text-lg  mb-6">
                                 Established with a mission to transform spaces with practical yet beautiful materials, Furnishing has grown into a go-to brand for top-quality vinyl flooring, PVC tiles, SPC panels, and interior wall solutions.
@@ -204,7 +204,7 @@ const AboutUs = () => {
                                 <Home className="w-6 h-6 text-white" />
                             </div>
                             <h3 className="font-bold text-black text-xl mb-2">Homeowners</h3>
-                            <p className="text-base text-gray-600 text-justify">Updating floors with water-resistant, stylish options</p>
+                            <p className="text-base text-gray-600 text-justify">Updating floors with water-resistant, stylish options.</p>
                         </div>
 
                         <div className="border border-orange-100 shadow-md rounded-xl bg-white p-6 text-center">
@@ -212,7 +212,7 @@ const AboutUs = () => {
                                 <Star className="w-6 h-6 text-white" />
                             </div>
                             <h3 className="font-bold text-gray-900 text-xl mb-2">Interior Designers</h3>
-                            <p className="text-base text-gray-600 text-justify">Seeking creative, reliable furnishing materials</p>
+                            <p className="text-base text-gray-600 text-justify">Seeking creative, reliable furnishing materials.</p>
                         </div>
 
                         <div className="border border-orange-100 shadow-md rounded-xl bg-white p-6 text-center">
@@ -220,7 +220,7 @@ const AboutUs = () => {
                                 <Building className="w-6 h-6 text-white" />
                             </div>
                             <h3 className="font-bold text-gray-900 text-xl mb-2">Commercial Businesses</h3>
-                            <p className="text-base text-gray-600 text-justify">Requiring flooring with durability and design appeal</p>
+                            <p className="text-base text-gray-600 text-justify">Requiring flooring with durability and design appeal.</p>
                         </div>
 
                         <div className="md:col-span-3 flex flex-col md:flex-row justify-center gap-6">
@@ -230,7 +230,7 @@ const AboutUs = () => {
                                 </div>
                                 <h3 className="font-bold text-gray-900 text-xl mb-2">Developers</h3>
                                 <p className="text-base text-gray-600 text-justify">
-                                    Looking for bulk supply and expert installation
+                                    Looking for bulk supply and expert installation.
                                 </p>
                             </div>
 
@@ -240,7 +240,7 @@ const AboutUs = () => {
                                 </div>
                                 <h3 className="font-bold text-gray-900 text-xl mb-2">Hospitality & Retail</h3>
                                 <p className="text-base text-gray-600 text-justify">
-                                    Needing quick turnarounds and professional finishing
+                                    Needing quick turnarounds and professional finishing.
                                 </p>
                             </div>
                         </div>
