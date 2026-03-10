@@ -5,7 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { useRouter, useSearchParams } from "next/navigation";
 import SquareLoader from "../common/loader";
-
+import { Suspense } from 'react';
 // API Product interface
 interface ApiProduct {
     id: number;
@@ -81,7 +81,7 @@ function useDebounce<T>(value: T, delay: number): T {
     return debouncedValue;
 }
 
-export default function ProductsSection({
+function ProductsSectionContent({
     page = 1,
     category,
     sort,
@@ -597,5 +597,14 @@ function Pagination({
                 Next
             </button>
         </div>
+    );
+}
+export default function ProductsSection(props: ProductsSectionProps) {
+    return (
+        <Suspense fallback={<div className="min-h-[500px] flex items-center justify-center">
+            <SquareLoader text="Loading products..." />
+        </div>}>
+            <ProductsSectionContent {...props} />
+        </Suspense>
     );
 }

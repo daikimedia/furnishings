@@ -5,6 +5,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter, useSearchParams } from 'next/navigation';
 import SquareLoader from '../common/loader';
+import { Suspense } from 'react';
 
 interface BlogPost {
     id: number;
@@ -30,7 +31,7 @@ let blogsCache: BlogPost[] | null = null;
 let cacheTimestamp = 0;
 const CACHE_DURATION = 5 * 60 * 1000; // 5 minutes
 
-const BlogList = ({ 
+const BlogListContent = ({ 
     limit, 
     showHeader = true, 
     showPagination = false,
@@ -281,4 +282,12 @@ const BlogList = ({
     );
 };
 
-export default BlogList;
+export default function BlogList(props: any) {
+    return (
+        <Suspense fallback={<div className="min-h-[400px] flex items-center justify-center">
+            <SquareLoader text="Loading blogs..." />
+        </div>}>
+            <BlogListContent {...props} />
+        </Suspense>
+    );
+}

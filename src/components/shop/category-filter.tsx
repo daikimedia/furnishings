@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { Suspense } from 'react';
 import { useSearchParams } from "next/navigation";
 import { useEffect, useState } from "react";
 
@@ -11,7 +12,7 @@ interface Category {
     products_count: number;
 }
 
-export default function CategoryFilter() {
+function CategoryFilterContent() {
     const searchParams = useSearchParams();
     const currentCategory = searchParams.get('category');
     const [categories, setCategories] = useState<Category[]>([]);
@@ -70,5 +71,16 @@ export default function CategoryFilter() {
                 </Link>
             ))}
         </div>
+    );
+}
+export default function CategoryFilter() {
+    return (
+        <Suspense fallback={<div className="flex flex-wrap gap-2">
+            {[...Array(5)].map((_, i) => (
+                <div key={i} className="h-10 w-24 bg-gray-200 animate-pulse rounded"></div>
+            ))}
+        </div>}>
+            <CategoryFilterContent />
+        </Suspense>
     );
 }
