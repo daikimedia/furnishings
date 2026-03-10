@@ -1,6 +1,8 @@
+import { Suspense } from "react";
 import type { Metadata } from "next";
-import BlogList from "@/components/blogs/blog-section";
 import PageHeader from "@/components/common/header";
+import BlogList from "@/components/blogs/blog-section";
+import ProductsLoading from "@/components/shop/products-loading";
 
 export const metadata: Metadata = {
     title: "Flooring & Home Décor Blog Malaysia | Vinyl, SPC & Interior Ideas | Furnishing",
@@ -9,12 +11,29 @@ export const metadata: Metadata = {
         canonical: "https://www.furnishings.com.my/blog",
     },
 };
+interface BlogPageProps {
+    searchParams?: Promise<{
+        page?: string;
+    }>;
+}
 
-export default function BlogPage() {
+export default async function BlogPage({ searchParams }: BlogPageProps) {
+    const params = await searchParams;
+    const currentPage = Number(params?.page) || 1;
+    
     return (
-        <>
+        <main>
             <PageHeader title="Flooring & Home Décor Blog in Malaysia" />
-            <BlogList />
-        </>
-    )
-};
+            
+            <Suspense fallback={<ProductsLoading />}>
+                <BlogList 
+                    showPagination={true} 
+                    itemsPerPage={9}
+                    currentPage={currentPage}
+                />
+            </Suspense>
+        </main>
+    );
+}
+
+export const revalidate = 300;

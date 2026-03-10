@@ -1,8 +1,14 @@
 "use client";
-import { useState, useEffect, type Key, type ReactNode } from "react";
-import { Facebook, Twitter, Instagram, Phone, MapPin } from "lucide-react";
+import { useState, useEffect, useMemo, useCallback } from "react";
+import { Facebook, Twitter, Instagram, Phone, MapPin, Check } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
+import {
+    Accordion,
+    AccordionItem,
+    AccordionTrigger,
+    AccordionContent,
+} from "@/components/ui/accordion";
 
 // API Product interface for related products
 interface ApiProduct {
@@ -28,12 +34,6 @@ interface ProductsApiResponse {
     success: boolean
     data: ApiProduct[]
 }
-import {
-    Accordion,
-    AccordionItem,
-    AccordionTrigger,
-    AccordionContent,
-} from "@/components/ui/accordion";
 
 type ProductData = {
     id: string;
@@ -61,17 +61,7 @@ type ProductData = {
         benefits: string[];
         design_compatibility: string[];
     };
-    specifications: {
-        key: ReactNode;
-        value: ReactNode;
-        waterproof: boolean;
-        slip_resistant: boolean;
-        durability: string;
-        installation_type: string | string[];
-        surface_requirement: string;
-        maintenance: string;
-    };
-
+    specifications: any;
     installation: {
         method: string;
         surface_types: string[];
@@ -111,36 +101,64 @@ type ProductData = {
 type SingleProductProps = {
     productData: ProductData;
 };
-export default function SingleProduct({ productData }: SingleProductProps) {
-    // Parse JSON string into object safely
-    let descriptionData = null;
-    // console.log("productData.faqs", productData.faqs)
-    try {
-        if (typeof productData.additional_description === 'string') {
-            descriptionData = JSON.parse(productData.additional_description);
-        } else if (typeof productData.additional_description === 'object') {
-            descriptionData = productData.additional_description;
-        }
-    } catch (e) {
-        console.error("Invalid JSON in additional_description", e);
+
+// Helper function to normalize URLs
+const normalizeUrl = (input: unknown): string => {
+    if (typeof input !== 'string') return '';
+    const trimmed = input.trim();
+    if (!trimmed || trimmed.toLowerCase() === 'null' || trimmed.toLowerCase() === 'undefined') {
+        return '';
     }
+    return trimmed.startsWith('http') ? trimmed : `https://cms.furnishings.daikimedia.com${trimmed}`;
+};
+
+export default function SingleProduct({ productData }: SingleProductProps) {
     const [activeTab, setActiveTab] = useState("description");
     const [selectedImage, setSelectedImage] = useState(0);
     const [relatedProducts, setRelatedProducts] = useState<ApiProduct[]>([]);
     const [loadingRelated, setLoadingRelated] = useState(true);
 
+    // Memoize description data parsing
+    const descriptionData = useMemo(() => {
+        try {
+            if (typeof productData.additional_description === 'string') {
+                return JSON.parse(productData.additional_description);
+            } else if (typeof productData.additional_description === 'object') {
+                return productData.additional_description;
+            }
+        } catch (e) {
+            console.error("Invalid JSON in additional_description", e);
+        }
+        return null;
+    }, [productData.additional_description]);
 
-    // console.log("*************", productData.specifications);
+    // Memoize category name
+    const categoryName = useMemo(() => {
+        return typeof productData.category === 'string' 
+            ? productData.category 
+            : productData.category?.name;
+    }, [productData.category]);
+
+    // Memoize gallery images
+    const galleryImages = useMemo(() => {
+        return productData.images.gallery?.filter(img => img) || [];
+    }, [productData.images.gallery]);
+
     // Fetch related products from API
     useEffect(() => {
+        const abortController = new AbortController();
+
         const fetchRelatedProducts = async () => {
             try {
                 setLoadingRelated(true);
-                const response = await fetch('https://cms.furnishings.daikimedia.com/api/products');
+                const response = await fetch('https://cms.furnishings.daikimedia.com/api/products', {
+                    signal: abortController.signal,
+                    next: { revalidate: 3600 }
+                });
+                
                 const result: ProductsApiResponse = await response.json();
+                
                 if (result.success) {
-                    const categoryName = typeof productData.category === 'string' ? productData.category : productData.category?.name;
-
                     // First try to get products from same category, excluding current product
                     let filtered = result.data
                         .filter(p =>
@@ -160,20 +178,66 @@ export default function SingleProduct({ productData }: SingleProductProps) {
                             .slice(0, 4);
                     }
 
-                    console.log('Related products found:', filtered.length);
                     setRelatedProducts(filtered);
                 }
             } catch (error) {
-                console.error('Error fetching related products:', error);
+                if (error instanceof Error && error.name !== 'AbortError') {
+                    console.error('Error fetching related products:', error);
+                }
             } finally {
                 setLoadingRelated(false);
             }
         };
 
         fetchRelatedProducts();
-    }, [productData.category, productData.id]);
 
-    const renderTabContent = () => {
+        return () => abortController.abort();
+    }, [categoryName, productData.id]);
+
+    // Memoize static FAQs
+    const staticFaqs = useMemo(() => [
+        {
+            question: "What is this type of flooring?",
+            answer: "It's a durable and stylish flooring solution designed to enhance interiors while remaining practical.",
+        },
+        {
+            question: "Is it waterproof?",
+            answer: "Yes, it is engineered to resist water, spills, and humidity, making it suitable for tropical climates.",
+        },
+        {
+            question: "How long does it last?",
+            answer: "With proper installation and care, it can last between 10–20 years.",
+        },
+        {
+            question: "Is it anti-slip?",
+            answer: "Yes, the surface is designed to reduce slipping, making it safe for wet areas.",
+        },
+        {
+            question: "Is it easy to clean?",
+            answer: "Yes, simple sweeping and occasional mopping are enough to maintain it.",
+        },
+        {
+            question: "Is it cost-effective?",
+            answer: "Yes, it's one of the most budget-friendly options while offering premium looks.",
+        },
+    ], []);
+
+    // Memoize has valid FAQs
+    const hasValidFaqs = useMemo(() => {
+        return Array.isArray(productData.faqs) &&
+            productData.faqs.length > 0 &&
+            productData.faqs.every(
+                (faq) => faq.question != null && faq.answer != null
+            );
+    }, [productData.faqs]);
+
+    // Memoize FAQs to display
+    const faqsToDisplay = useMemo(() => {
+        return hasValidFaqs ? productData.faqs : staticFaqs;
+    }, [hasValidFaqs, productData.faqs, staticFaqs]);
+
+    // Memoize tab content renderer
+    const renderTabContent = useCallback(() => {
         switch (activeTab) {
             case "description":
                 return (
@@ -183,11 +247,13 @@ export default function SingleProduct({ productData }: SingleProductProps) {
                                 <h3 className="text-xl font-semibold mb-4">
                                     Product Description
                                 </h3>
-                                <div className="text-gray-600 leading-relaxed mb-4"
-                                    dangerouslySetInnerHTML={{ __html: productData.description.long || productData.description.short || '' }}>
-                                </div>
+                                <div 
+                                    className="text-gray-600 leading-relaxed mb-4 prose max-w-none"
+                                    dangerouslySetInnerHTML={{ 
+                                        __html: productData.description.long || productData.description.short || '' 
+                                    }}
+                                />
                             </div>
-
 
                             {/* Additional Description Sections */}
                             {descriptionData?.sections?.length > 0 && (
@@ -197,10 +263,10 @@ export default function SingleProduct({ productData }: SingleProductProps) {
                                     </h3>
 
                                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                                        {descriptionData.sections.map((section: { title: ReactNode, content: ReactNode }, index: Key) => (
+                                        {descriptionData.sections.map((section: any, index: number) => (
                                             <div
                                                 key={index}
-                                                className="bg-gradient-to-br from-orange-50 to-orange-100 rounded-xl p-6 shadow-md"
+                                                className="bg-gradient-to-br from-orange-50 to-orange-100 rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow"
                                             >
                                                 <h4 className="text-lg font-semibold mb-4 text-orange-800">
                                                     {section.title}
@@ -211,13 +277,15 @@ export default function SingleProduct({ productData }: SingleProductProps) {
                                     </div>
                                 </div>
                             )}
-                            <div>
-                                <h4 className="text-lg font-semibold mb-3">
-                                    Design Compatibility
-                                </h4>
-                                <div className="flex flex-wrap gap-2">
-                                    {Array.isArray(productData.features?.design_compatibility)
-                                        ? productData.features.design_compatibility.map(
+                            
+                            {/* Design Compatibility */}
+                            {productData.features?.design_compatibility?.length > 0 && (
+                                <div>
+                                    <h4 className="text-lg font-semibold mb-3">
+                                        Design Compatibility
+                                    </h4>
+                                    <div className="flex flex-wrap gap-2">
+                                        {productData.features.design_compatibility.map(
                                             (style, index) => (
                                                 <span
                                                     key={index}
@@ -226,10 +294,10 @@ export default function SingleProduct({ productData }: SingleProductProps) {
                                                     {style}
                                                 </span>
                                             )
-                                        )
-                                        : null}
+                                        )}
+                                    </div>
                                 </div>
-                            </div>
+                            )}
                         </div>
                     </div>
                 );
@@ -238,33 +306,39 @@ export default function SingleProduct({ productData }: SingleProductProps) {
                 return (
                     <div className="py-8 space-y-8">
                         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                            {/* Product Specifications */}
                             <div className="bg-gray-50 rounded-xl p-6">
                                 <h4 className="text-lg font-semibold mb-4">
                                     Product Specifications
                                 </h4>
                                 <div className="space-y-3">
-                                    {Array.isArray(productData.specifications) &&
-                                        productData.specifications.length > 0 &&
-                                        productData.specifications.some(spec => spec?.value) ? (
-                                        productData.specifications.map((spec, index) => (
-                                            <div
-                                                key={index}
-                                                className="flex justify-between border-b pb-2"
-                                            >
-                                                <span className="text-gray-600">{spec.key}</span>
-                                                <span className="font-medium">{spec.value || "N/A"}</span>
-                                            </div>
-                                        ))
+                                    {productData.specifications && 
+                                     Object.keys(productData.specifications).length > 0 ? (
+                                        Object.entries(productData.specifications).map(([key, value]) => {
+                                            if (!value) return null;
+                                            return (
+                                                <div key={key} className="flex justify-between border-b pb-2">
+                                                    <span className="text-gray-600 capitalize">
+                                                        {key.replace(/_/g, ' ')}:
+                                                    </span>
+                                                    <span className="font-medium">
+                                                        {typeof value === 'boolean' 
+                                                            ? (value ? 'Yes' : 'No') 
+                                                            : String(value)}
+                                                    </span>
+                                                </div>
+                                            );
+                                        })
                                     ) : (
                                         // Fallback to static specifications
                                         <>
                                             <div className="flex justify-between border-b pb-2">
                                                 <span className="text-gray-600">Waterproof:</span>
-                                                <span className="font-medium">yes</span>
+                                                <span className="font-medium">Yes</span>
                                             </div>
                                             <div className="flex justify-between border-b pb-2">
                                                 <span className="text-gray-600">Slip Resistant:</span>
-                                                <span className="font-medium">yes</span>
+                                                <span className="font-medium">Yes</span>
                                             </div>
                                             <div className="flex justify-between border-b pb-2">
                                                 <span className="text-gray-600">Durability:</span>
@@ -272,11 +346,11 @@ export default function SingleProduct({ productData }: SingleProductProps) {
                                             </div>
                                             <div className="flex justify-between border-b pb-2">
                                                 <span className="text-gray-600">Installation Type:</span>
-                                                <span className="font-medium">cut and stick down</span>
+                                                <span className="font-medium">Cut and stick down</span>
                                             </div>
                                             <div className="flex justify-between border-b pb-2">
                                                 <span className="text-gray-600">Surface Requirement:</span>
-                                                <span className="font-medium">dry, flat surfaces (tile or concrete)</span>
+                                                <span className="font-medium">Dry, flat surfaces</span>
                                             </div>
                                             <div className="flex justify-between">
                                                 <span className="text-gray-600">Maintenance:</span>
@@ -287,292 +361,80 @@ export default function SingleProduct({ productData }: SingleProductProps) {
                                 </div>
                             </div>
 
+                            {/* Installation Details */}
                             <div className="bg-blue-50 rounded-xl p-6">
                                 <h4 className="text-lg font-semibold mb-4">
                                     Installation Details
                                 </h4>
                                 <div className="space-y-4">
                                     <div className="flex justify-between border-b pb-2">
-                                        <h5 className="font-medium mb-2">Installation Method:</h5>
+                                        <span className="font-medium">Installation Method:</span>
                                         <p className="text-gray-600 text-sm">
                                             {productData.installation?.method || "Cut and stick down onto dry surfaces"}
                                         </p>
                                     </div>
                                     <div className="flex justify-between border-b pb-2">
-                                        <h5 className="font-medium mb-2">Surface Types:</h5>
+                                        <span className="font-medium">Surface Types:</span>
                                         <p className="text-gray-600 text-sm">
-                                            {(productData.installation?.surface_types || []).join(", ") || "tile, concrete"}
+                                            {(productData.installation?.surface_types || []).join(", ") || "Tile, concrete"}
                                         </p>
                                     </div>
-                                    <div className="flex flex-wrap gap-2 text-sm">
-                                        <span
-                                            className={`px-3 py-1 rounded-full ${productData.installation?.diy_friendly
-                                                ? "bg-green-100 text-green-700"
-                                                : "bg-red-100 text-red-700"
-                                                }`}
-                                        >
-                                            DIY Friendly: {productData.installation?.diy_friendly ? "Yes" : "No"}
-                                        </span>
-                                        <span
-                                            className={`px-3 py-1 rounded-full ${productData.installation?.professional_recommended
-                                                ? "bg-orange-100 text-orange-700"
-                                                : "bg-gray-100 text-gray-700"
-                                                }`}
-                                        >
-                                            Professional Recommended: {productData.installation?.professional_recommended ? "Yes" : "No"}
-                                        </span>
+                                    <div className="flex flex-wrap gap-2 text-sm mt-4">
+                                        {productData.installation?.diy_friendly && (
+                                            <span className="px-3 py-1 bg-green-100 text-green-700 rounded-full">
+                                                DIY Friendly
+                                            </span>
+                                        )}
+                                        {productData.installation?.professional_recommended && (
+                                            <span className="px-3 py-1 bg-orange-100 text-orange-700 rounded-full">
+                                                Professional Recommended
+                                            </span>
+                                        )}
                                     </div>
                                 </div>
                             </div>
                         </div>
 
                         {/* Benefits Section */}
-                        <div className="bg-gray-50 rounded-xl p-6">
-                            <h4 className="text-lg font-semibold mb-4">
-                                Why Customers Choose This
-                            </h4>
-                            <ul className="grid grid-cols-1 md:grid-cols-2 gap-4 list-none">
-                                {Array.isArray(productData.features?.benefits)
-                                    ? productData.features.benefits.map((benefit, index) => (
-                                        <li key={index} className="flex items-start gap-3">
-                                            <span className="w-3 h-3 mt-2 rounded-full bg-orange-500 flex-shrink-0"></span>
-                                            <span className="text-gray-600">{benefit}</span>
-                                        </li>
-                                    ))
-                                    : null}
-                            </ul>
-                        </div>
-                    </div>
-                );
-                return (
-                    <div className="py-8 space-y-8">
-                        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                        {productData.features?.benefits?.length > 0 && (
                             <div className="bg-gray-50 rounded-xl p-6">
                                 <h4 className="text-lg font-semibold mb-4">
-                                    Product Specifications
+                                    Why Customers Choose This
                                 </h4>
-
-                                <div className="space-y-3">
-                                    <div className="flex justify-between border-b pb-2">
-                                        <span className="text-gray-600">{productData.specifications?.key}</span>
-                                        <span className="font-medium">
-                                            {productData.specifications?.value}
-                                        </span>
-                                    </div>
-                                    <div className="flex justify-between border-b pb-2">
-                                        <span className="text-gray-600">Slip Resistant:</span>
-                                        <span className="font-medium">
-                                            {productData.specifications?.slip_resistant ? "Yes" : "No"}
-                                        </span>
-                                    </div>
-                                    <div className="flex justify-between border-b pb-2">
-                                        <span className="text-gray-600">Durability:</span>
-                                        <span className="font-medium">
-                                            {productData.specifications?.durability || 'N/A'}
-                                        </span>
-                                    </div>
-                                    <div className="flex justify-between border-b pb-2">
-                                        <span className="text-gray-600">Installation Type:</span>
-                                        <span className="font-medium">
-                                            {productData.specifications?.installation_type || 'Cut and stick down'}
-                                        </span>
-                                    </div>
-                                    <div className="flex justify-between border-b pb-2">
-                                        <span className="text-gray-600">Surface Requirement:</span>
-                                        <span className="font-medium">
-                                            {productData.specifications?.surface_requirement || 'Dry, flat surfaces (tile or concrete)'}
-                                        </span>
-                                    </div>
-                                    <div className="flex justify-between">
-                                        <span className="text-gray-600">Maintenance:</span>
-                                        <span className="font-medium">
-                                            {productData.specifications?.maintenance || 'Sweep and damp mop only'}
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className="bg-blue-50 rounded-xl p-6">
-                                <h4 className="text-lg font-semibold mb-4">
-                                    Installation Details
-                                </h4>
-                                <div className="space-y-4">
-                                    <div className="flex justify-between border-b pb-2">
-                                        <h5 className="font-medium mb-2">Installation Method:</h5>
-                                        <p className="text-gray-600 text-sm">
-                                            {productData.installation?.method || 'Cut and stick down onto dry surfaces'}
-                                        </p>
-                                    </div>
-                                    <div className="flex justify-between border-b pb-2">
-                                        <h5 className="font-medium mb-2">Surface Types:</h5>
-                                        <p className="text-gray-600 text-sm">
-                                            {(productData.installation?.surface_types || []).join(", ") || 'tile, concrete'}
-                                        </p>
-                                    </div>
-                                    {/* <div className="flex justify-between border-b pb-2">
-                                        <h5 className="font-medium mb-2">Requirements:</h5>
-                                        <ul className="text-gray-600 text-sm space-y-1">
-                                            {(productData.installation?.requirements || []).map(
-                                                (req, index) => (
-                                                    <li key={index} className="flex items-start">
-                                                        <span className="w-2 h-2 bg-orange-500 rounded-full mt-2 mr-2 flex-shrink-0"></span>
-                                                        {req}
-                                                    </li>
-                                                )
-                                            )}
-                                        </ul>
-                                    </div> */}
-                                    <div className="flex flex-wrap gap-2 text-sm">
-                                        <span
-                                            className={`px-3 py-1 rounded-full ${productData.installation?.diy_friendly
-                                                ? "bg-green-100 text-green-700"
-                                                : "bg-red-100 text-red-700"
-                                                }`}
-                                        >
-                                            DIY Friendly:{" "}
-                                            {productData.installation?.diy_friendly ? "Yes" : "Yes"}
-                                        </span>
-                                        <span
-                                            className={`px-3 py-1 rounded-full ${productData.installation?.professional_recommended
-                                                ? "bg-orange-100 text-orange-700"
-                                                : "bg-gray-100 text-gray-700"
-                                                }`}
-                                        >
-                                            Professional Recommended:{" "}
-                                            {productData.installation?.professional_recommended
-                                                ? "Yes"
-                                                : "Yes"}
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        {/* Benefits Section */}
-                        <div className="bg-gray-50 rounded-xl p-6">
-                            <h4 className="text-lg font-semibold mb-4">
-                                Why Customers Choose This
-                            </h4>
-                            <ul className="grid grid-cols-1 md:grid-cols-2 gap-4 list-none">
-                                {Array.isArray(productData.features?.benefits)
-                                    ? productData.features.benefits.map((benefit, index) => (
+                                <ul className="grid grid-cols-1 md:grid-cols-2 gap-4 list-none">
+                                    {productData.features.benefits.map((benefit, index) => (
                                         <li key={index} className="flex items-start gap-3">
-                                            <span className="w-3 h-3 mt-2 rounded-full bg-orange-500 flex-shrink-0"></span>
+                                            <Check className="w-5 h-5 text-orange-500 flex-shrink-0 mt-0.5" />
                                             <span className="text-gray-600">{benefit}</span>
                                         </li>
-                                    ))
-                                    : null}
-                            </ul>
-                        </div>
+                                    ))}
+                                </ul>
+                            </div>
+                        )}
                     </div>
                 );
 
             case "faq":
-                // Define static FAQs directly here
-                const staticFaqs = [
-                    {
-                        question: "What is this type of flooring?",
-                        answer:
-                            "It’s a durable and stylish flooring solution designed to enhance interiors while remaining practical.",
-                    },
-                    {
-                        question: "Is it waterproof?",
-                        answer:
-                            "Yes, it is engineered to resist water, spills, and humidity, making it suitable for tropical climates.",
-                    },
-                    {
-                        question: "Can it be used in humid climates like Malaysia?",
-                        answer:
-                            "Absolutely. Its moisture resistance makes it perfect for Malaysia’s tropical weather.",
-                    },
-                    {
-                        question: "How long does it last?",
-                        answer: "With proper installation and care, it can last between 10–20 years.",
-                    },
-                    {
-                        question: "How is it installed?",
-                        answer:
-                            "Depending on the type, it can be glued down, loose-laid, or simply placed over existing surfaces.",
-                    },
-                    {
-                        question: "What are the main benefits?",
-                        answer:
-                            "It’s waterproof, anti-slip, low-maintenance, affordable, and designed for modern spaces.",
-                    },
-                    {
-                        question: "Is it anti-slip?",
-                        answer:
-                            "Yes, the surface is designed to reduce slipping, making it safe for wet areas.",
-                    },
-                    {
-                        question: "Is it suitable for kitchens and bathrooms?",
-                        answer:
-                            "Yes, its moisture resistance and easy cleaning make it ideal for high-use areas.",
-                    },
-                    {
-                        question: "Is it easy to clean?",
-                        answer: "Yes, simple sweeping and occasional mopping are enough to maintain it.",
-                    },
-                    {
-                        question: "Is it comfortable underfoot?",
-                        answer: "Yes, it provides a softer and warmer feel compared to tiles or stone.",
-                    },
-                    {
-                        question: "Can it be installed over existing floors?",
-                        answer:
-                            "In most cases, yes. It can go over tiles, cement, or other smooth surfaces.",
-                    },
-                    {
-                        question: "Is it cost-effective?",
-                        answer:
-                            "Yes, it’s one of the most budget-friendly options while offering premium looks.",
-                    },
-                ];
-
-                // Check if faqs are valid (non-null question and answer)
-                const hasValidFaqs = Array.isArray(productData.faqs) &&
-                    productData.faqs.length > 0 &&
-                    productData.faqs.every(
-                        (faq) => faq.question != null && faq.answer != null
-                    );
-
                 return (
                     <div className="py-8">
                         <h3 className="text-2xl font-bold mb-8 text-center">
                             Frequently Asked Questions
                         </h3>
-                        <Accordion type="single" collapsible className="w-full space-y-4">
-                            {hasValidFaqs ? (
-                                productData.faqs.map((faq, index) => (
-                                    <AccordionItem
-                                        key={index}
-                                        value={`item-${index}`}
-                                        className="border-b pb-4"
-                                    >
-                                        <AccordionTrigger className="font-semibold text-gray-900 text-lg">
-                                            {faq.question}
-                                        </AccordionTrigger>
-                                        <AccordionContent className="text-gray-600 pt-4">
-                                            {faq.answer}
-                                        </AccordionContent>
-                                    </AccordionItem>
-                                ))
-                            ) : (
-                                staticFaqs.map((faq, index) => (
-                                    <AccordionItem
-                                        key={index}
-                                        value={`item-${index}`}
-                                        className="border-b pb-4"
-                                    >
-                                        <AccordionTrigger className="font-semibold text-gray-900 text-lg">
-                                            {faq.question}
-                                        </AccordionTrigger>
-                                        <AccordionContent className="text-gray-600 pt-4">
-                                            {faq.answer}
-                                        </AccordionContent>
-                                    </AccordionItem>
-                                ))
-                            )}
+                        <Accordion type="single" collapsible className="w-full max-w-3xl mx-auto space-y-4">
+                            {faqsToDisplay.map((faq, index) => (
+                                <AccordionItem
+                                    key={index}
+                                    value={`item-${index}`}
+                                    className="border rounded-lg px-6"
+                                >
+                                    <AccordionTrigger className="font-semibold text-gray-900 text-lg hover:text-orange-600 transition-colors">
+                                        {faq.question}
+                                    </AccordionTrigger>
+                                    <AccordionContent className="text-gray-600 pt-4 pb-6">
+                                        {faq.answer}
+                                    </AccordionContent>
+                                </AccordionItem>
+                            ))}
                         </Accordion>
                     </div>
                 );
@@ -580,119 +442,124 @@ export default function SingleProduct({ productData }: SingleProductProps) {
             default:
                 return null;
         }
-    };
+    }, [activeTab, productData, descriptionData, faqsToDisplay]);
 
     return (
         <div className="bg-white">
-            <div className="container mx-auto px-8 py-8">
+            <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-8">
                 {/* Product Section */}
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-12">
                     {/* Product Images */}
                     <div className="space-y-4 lg:sticky lg:top-24 lg:self-start">
                         {/* Main Image */}
-                        <div className="aspect-square bg-gray-100 rounded-lg overflow-hidden">
+                        <div className="aspect-square bg-gray-100 rounded-lg overflow-hidden relative">
                             <Image
                                 src={
-                                    productData.images.gallery?.[selectedImage] ||
+                                    galleryImages[selectedImage] ||
                                     productData.images.main_image ||
                                     "/placeholder.svg"
                                 }
                                 alt={productData.images.alt_texts?.[selectedImage] || productData.name}
-                                className="w-full h-full object-cover"
-                                width={500}
-                                height={500}
+                                fill
+                                sizes="(max-width: 768px) 100vw, 50vw"
+                                className="object-cover"
                                 priority
                             />
                         </div>
+                        
                         {/* Thumbnail Images */}
-                        <div className="flex space-x-4 overflow-x-auto">
-                            {productData.images.gallery?.map((img, index) => (
-                                <div
-                                    key={index}
-                                    className={`w-20 h-20 bg-gray-100 rounded-lg overflow-hidden cursor-pointer border-2 flex-shrink-0 ${selectedImage === index ? "border-orange-500" : "border-transparent"
+                        {galleryImages.length > 0 && (
+                            <div className="flex space-x-4 overflow-x-auto pb-2">
+                                {galleryImages.map((img, index) => (
+                                    <button
+                                        key={index}
+                                        onClick={() => setSelectedImage(index)}
+                                        className={`relative w-20 h-20 flex-shrink-0 rounded-lg overflow-hidden border-2 transition-all ${
+                                            selectedImage === index 
+                                                ? 'border-orange-500 scale-105' 
+                                                : 'border-transparent hover:border-orange-300'
                                         }`}
-                                    onClick={() => setSelectedImage(index)}
-                                >
-                                    <Image
-                                        src={img || "/placeholder.svg"}
-                                        alt={productData.images.alt_texts?.[index] || `Thumbnail ${index + 1}`}
-                                        className="w-full h-full object-cover"
-                                        width={80}
-                                        height={80}
-                                        priority={index === 0}
-                                    />
-                                </div>
-                            ))}
-                        </div>
+                                    >
+                                        <Image
+                                            src={img}
+                                            alt={`Thumbnail ${index + 1}`}
+                                            fill
+                                            sizes="80px"
+                                            className="object-cover"
+                                        />
+                                    </button>
+                                ))}
+                            </div>
+                        )}
                     </div>
 
                     {/* Product Info */}
                     <div className="space-y-6">
                         <div>
-                            <div className="text-sm text-gray-500 mb-2">
-                                SKU: <span className="font-medium">{productData.id}</span>
+                            <div className="flex flex-wrap gap-4 text-sm text-gray-500 mb-4">
+                                <span>SKU: <span className="font-medium">{productData.id}</span></span>
+                                <span>Brand: <span className="font-medium">{productData.brand}</span></span>
+                                <span>Category: <span className="font-medium">{categoryName || 'Uncategorized'}</span></span>
                             </div>
-                            <div className="text-sm text-gray-500 mb-2">
-                                Brand: <span className="font-medium">{productData.brand}</span>
-                            </div>
-                            <div className="text-sm text-gray-500 mb-4">
-                                Category:{" "}
-                                <span className="font-medium">{typeof productData.category === 'string' ? productData.category : productData.category?.name || 'Uncategorized'}</span>
-                            </div>
-                            <h2 className="text-3xl font-bold text-gray-900 mb-4">
+                            
+                            <h1 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
                                 {productData.name}
-                            </h2>
-                            <div className="text-gray-600 leading-relaxed mb-6"
-                                dangerouslySetInnerHTML={{ __html: productData.description.short || '' }}>
-                            </div>
+                            </h1>
+                            
+                            <div 
+                                className="text-gray-600 leading-relaxed mb-6 prose max-w-none"
+                                dangerouslySetInnerHTML={{ __html: productData.description.short || '' }}
+                            />
                         </div>
 
                         {/* Key Features Quick Preview */}
-                        <div className="bg-gray-50 rounded-lg p-6">
-                            <h3 className="font-semibold mb-3">Key Features</h3>
-                            <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
-                                {Array.isArray(productData.features?.main_features)
-                                    ? productData.features.main_features
+                        {productData.features?.main_features?.length > 0 && (
+                            <div className="bg-gray-50 rounded-lg p-6">
+                                <h3 className="font-semibold mb-3">Key Features</h3>
+                                <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
+                                    {productData.features.main_features
                                         .slice(0, 6)
                                         .map((feature, index) => (
                                             <div
                                                 key={index}
                                                 className="flex items-center text-sm text-gray-600"
                                             >
-                                                <div className="w-2 h-2 bg-orange-500 rounded-full mr-3"></div>
-                                                {feature}
+                                                <div className="w-2 h-2 bg-orange-500 rounded-full mr-3 flex-shrink-0"></div>
+                                                <span>{feature}</span>
                                             </div>
-                                        ))
-                                    : null}
+                                        ))}
+                                </div>
                             </div>
-                        </div>
+                        )}
 
                         {/* Call to Action */}
                         <div className="bg-orange-50 rounded-lg p-6 space-y-4">
-                            <h3 className="font-semibold text-orange-800">
-                                Get This Product
+                            <h3 className="font-semibold text-orange-800 text-lg">
+                                {productData.call_to_action?.primary || "Get This Product"}
                             </h3>
+                            
                             <p className="text-orange-700">
-                                {productData.call_to_action?.primary || "Contact us for pricing and availability"}
+                                {productData.call_to_action?.secondary || "Contact us for pricing and availability"}
                             </p>
+                            
                             <div className="flex flex-col sm:flex-row gap-3">
-                                <Link href="/contact"
-                                    className="flex items-center justify-center bg-orange-600  text-white px-6 py-3 rounded-md transition-colors">
+                                <Link 
+                                    href="/contact"
+                                    className="flex-1 flex items-center justify-center bg-orange-600 text-white px-6 py-3 rounded-md hover:bg-orange-700 transition-colors"
+                                >
                                     <Phone className="w-4 h-4 mr-2" />
                                     Call for Quote
                                 </Link>
                                 <Link
                                     href="/contact"
-                                    className="flex items-center justify-center border border-orange-500 text-orange-600 hover:bg-orange-600 hover:text-white px-6 py-3 rounded-md transition-colors">
+                                    className="flex-1 flex items-center justify-center border-2 border-orange-500 text-orange-600 hover:bg-orange-600 hover:text-white px-6 py-3 rounded-md transition-colors"
+                                >
                                     <MapPin className="w-4 h-4 mr-2" />
                                     Visit Showroom
-
                                 </Link>
                             </div>
-                            <p className="text-sm text-orange-600">
-                                {productData.call_to_action?.secondary || "Free consultation available"}
-                            </p>
-                            <p className="text-sm text-orange-500 font-medium">
+                            
+                            <p className="text-sm text-orange-600 font-medium">
                                 {productData.call_to_action?.tertiary || "Professional installation recommended"}
                             </p>
                         </div>
@@ -701,125 +568,111 @@ export default function SingleProduct({ productData }: SingleProductProps) {
                         <div className="flex items-center space-x-4 pt-4 border-t">
                             <span className="text-gray-600">Share:</span>
                             <div className="flex items-center space-x-3">
-                                <Facebook className="w-5 h-5 text-gray-600 hover:text-blue-600 cursor-pointer transition-colors" />
-                                <Twitter className="w-5 h-5 text-gray-600 hover:text-blue-400 cursor-pointer transition-colors" />
-                                <Instagram className="w-5 h-5 text-gray-600 hover:text-pink-600 cursor-pointer transition-colors" />
+                                <button className="p-2 text-gray-600 hover:text-blue-600 hover:bg-blue-50 rounded-full transition-all">
+                                    <Facebook className="w-5 h-5" />
+                                </button>
+                                <button className="p-2 text-gray-600 hover:text-blue-400 hover:bg-blue-50 rounded-full transition-all">
+                                    <Twitter className="w-5 h-5" />
+                                </button>
+                                <button className="p-2 text-gray-600 hover:text-pink-600 hover:bg-pink-50 rounded-full transition-all">
+                                    <Instagram className="w-5 h-5" />
+                                </button>
                             </div>
                         </div>
                     </div>
                 </div>
 
+                {/* Tabs Section */}
                 <div className="border-t pt-8">
                     {/* Tab Navigation */}
-                    <div className="flex space-x-8 border-b">
-                        <button
-                            onClick={() => setActiveTab("description")}
-                            className={`pb-4 px-2 font-medium transition-colors ${activeTab === "description"
-                                ? "text-orange-500 border-b-2 border-orange-500"
-                                : "text-gray-600 hover:text-gray-900"
+                    <div className="flex flex-wrap gap-2 border-b">
+                        {['description', 'specifications', 'faq'].map((tab) => (
+                            <button
+                                key={tab}
+                                onClick={() => setActiveTab(tab)}
+                                className={`px-6 py-3 font-medium capitalize transition-all relative ${
+                                    activeTab === tab
+                                        ? 'text-orange-500 after:absolute after:bottom-0 after:left-0 after:w-full after:h-0.5 after:bg-orange-500'
+                                        : 'text-gray-600 hover:text-gray-900'
                                 }`}
-                        >
-                            Description
-                        </button>
-                        <button
-                            onClick={() => setActiveTab("specifications")}
-                            className={`pb-4 px-2 font-medium transition-colors ${activeTab === "specifications"
-                                ? "text-orange-500 border-b-2 border-orange-500"
-                                : "text-gray-600 hover:text-gray-900"
-                                }`}
-                        >
-                            Specifications
-                        </button>
-                        <button
-                            onClick={() => setActiveTab("faq")}
-                            className={`pb-4 px-2 font-medium transition-colors ${activeTab === "faq"
-                                ? "text-orange-500 border-b-2 border-orange-500"
-                                : "text-gray-600 hover:text-gray-900"
-                                }`}
-                        >
-                            FAQ
-                        </button>
+                            >
+                                {tab}
+                            </button>
+                        ))}
                     </div>
 
                     {/* Tab Content */}
-                    <div className="h-auto">{renderTabContent()}</div>
+                    <div className="min-h-[400px]">{renderTabContent()}</div>
                 </div>
 
                 {/* Related Products */}
-                <div className="border-t pt-12">
-                    <h2 className="text-2xl font-bold text-gray-900 mb-8">
-                        Related Products
-                    </h2>
+                {relatedProducts.length > 0 && (
+                    <div className="border-t pt-12">
+                        <h2 className="text-2xl font-bold text-gray-900 mb-8">
+                            Related Products
+                        </h2>
 
-                    {loadingRelated ? (
-                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                            {[...Array(4)].map((_, index) => (
-                                <div key={index} className="bg-gray-200 animate-pulse rounded-2xl h-80"></div>
-                            ))}
-                        </div>
-                    ) : relatedProducts.length > 0 ? (
-                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                            {relatedProducts.map((product) => {
-                                const normalizeUrl = (input: unknown): string => {
-                                    if (typeof input !== 'string') return '';
-                                    const trimmed = input.trim();
-                                    if (!trimmed || trimmed.toLowerCase() === 'null' || trimmed.toLowerCase() === 'undefined') {
-                                        return '';
-                                    }
-                                    return trimmed.startsWith('http') ? trimmed : `https://cms.furnishings.daikimedia.com${trimmed}`;
-                                };
-                                const imageUrl = normalizeUrl(product.images.main_image) || "/placeholder.svg";
+                        {loadingRelated ? (
+                            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                                {[...Array(4)].map((_, index) => (
+                                    <div key={index} className="bg-gray-200 animate-pulse rounded-2xl h-80"></div>
+                                ))}
+                            </div>
+                        ) : (
+                            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                                {relatedProducts.map((product) => {
+                                    const imageUrl = normalizeUrl(product.images.main_image) || "/placeholder.svg";
 
-                                return (
-                                    <Link
-                                        key={product.id}
-                                        href={`/shop/${product.category?.slug || 'uncategorized'}/${product.slug}`}
-                                        className="group relative overflow-hidden rounded-2xl bg-white shadow-md transition-shadow hover:shadow-lg"
-                                    >
-                                        {/* Image Section */}
-                                        <div className="relative h-48 overflow-hidden bg-orange-100">
-                                            <Image
-                                                src={imageUrl || "/placeholder.svg"}
-                                                alt={product.name}
-                                                className="w-full h-full object-cover p-4"
-                                                width={300}
-                                                height={200}
-                                            />
-                                        </div>
-
-                                        {/* Content Section */}
-                                        <div className="p-6">
-                                            <h3 className="text-xl font-semibold mb-2 text-gray-900 group-hover:text-orange-600 transition-colors duration-300 line-clamp-2">
-                                                {product.name}
-                                            </h3>
-                                            <p className="text-sm text-gray-600 mb-4 line-clamp-2">
-                                                {product.description.short}
-                                            </p>
-                                            <div className="flex items-center text-orange-600 font-medium">
-                                                <span className="text-sm font-semibold">View Product</span>
-                                                <svg
-                                                    className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform duration-300"
-                                                    fill="none"
-                                                    stroke="currentColor"
-                                                    viewBox="0 0 24 24"
-                                                >
-                                                    <path
-                                                        strokeLinecap="round"
-                                                        strokeLinejoin="round"
-                                                        strokeWidth={2}
-                                                        d="M9 5l7 7-7 7"
-                                                    />
-                                                </svg>
+                                    return (
+                                        <Link
+                                            key={product.id}
+                                            href={`/shop/${product.category?.slug || 'uncategorized'}/${product.slug}`}
+                                            className="group relative overflow-hidden rounded-2xl bg-white shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
+                                        >
+                                            {/* Image Section */}
+                                            <div className="relative h-48 overflow-hidden bg-orange-100">
+                                                <Image
+                                                    src={imageUrl}
+                                                    alt={product.name}
+                                                    fill
+                                                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
+                                                    className="object-cover p-4 transition-transform duration-500 group-hover:scale-110"
+                                                    loading="lazy"
+                                                />
                                             </div>
-                                        </div>
-                                    </Link>
-                                );
-                            })}
-                        </div>
-                    ) : (
-                        <p className="text-gray-600 text-center py-8">No related products found.</p>
-                    )}
-                </div>
+
+                                            {/* Content Section */}
+                                            <div className="p-6">
+                                                <h3 className="text-lg font-semibold mb-2 text-gray-900 group-hover:text-orange-600 transition-colors line-clamp-2">
+                                                    {product.name}
+                                                </h3>
+                                                <p className="text-sm text-gray-600 mb-4 line-clamp-2">
+                                                    {product.description.short}
+                                                </p>
+                                                <div className="flex items-center text-orange-600 font-medium">
+                                                    <span className="text-sm font-semibold">View Product</span>
+                                                    <svg
+                                                        className="w-4 h-4 ml-2 transition-transform duration-300 group-hover:translate-x-1"
+                                                        fill="none"
+                                                        stroke="currentColor"
+                                                        viewBox="0 0 24 24"
+                                                    >
+                                                        <path
+                                                            strokeLinecap="round"
+                                                            strokeLinejoin="round"
+                                                            strokeWidth={2}
+                                                            d="M9 5l7 7-7 7"
+                                                        />
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </Link>
+                                    );
+                                })}
+                            </div>
+                        )}
+                    </div>
+                )}
             </div>
         </div>
     );

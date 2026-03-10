@@ -163,10 +163,10 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
         const finalSitemap = [...staticUrls, ...categoryUrls, ...productUrls, ...blogUrls];
 
-        console.log(`Sitemap generated with ${finalSitemap.length} URLs`);
-        console.log(`Static: ${staticUrls.length}, Categories: ${categoryUrls.length}, Products: ${productUrls.length}, Blogs: ${blogUrls.length}`);
+        // console.log(`Sitemap generated with ${finalSitemap.length} URLs`);
+        // console.log(`Static: ${staticUrls.length}, Categories: ${categoryUrls.length}, Products: ${productUrls.length}, Blogs: ${blogUrls.length}`);
 
-        console.log('Sample URLs:', finalSitemap.slice(0, 3).map(item => item.url));
+        // console.log('Sample URLs:', finalSitemap.slice(0, 3).map(item => item.url));
 
         return finalSitemap;
     } catch (error) {

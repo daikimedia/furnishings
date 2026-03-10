@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef, useCallback, useMemo } from 'react';
 import { useRouter } from 'next/navigation';
 import { Search } from 'lucide-react';
 
@@ -10,46 +10,31 @@ interface Product {
     categorySlug?: string;
 }
 
-interface ApiProduct {
-    id: number;
-    name: string;
-    slug: string;
-    category: {
-        id: number;
-        name: string;
-        slug: string;
-    } | null;
-}
-
-interface ProductsApiResponse {
-    success: boolean;
-    data: ApiProduct[];
-}
-
 const SearchAutoComplete: React.FC = () => {
     const [searchTerm, setSearchTerm] = useState('');
     const [suggestions, setSuggestions] = useState<Product[]>([]);
     const [showDropdown, setShowDropdown] = useState(false);
     const [selectedIndex, setSelectedIndex] = useState(-1);
     const [products, setProducts] = useState<Product[]>([]);
+    const [loading, setLoading] = useState(false);
 
     const searchRef = useRef<HTMLDivElement>(null);
     const inputRef = useRef<HTMLInputElement>(null);
     const router = useRouter();
 
+    // Fetch products once with debounce
     useEffect(() => {
+        let mounted = true;
+
         const fetchProducts = async () => {
             try {
-                const response = await fetch('https://cms.furnishings.daikimedia.com/api/products');
-                
-                if (!response.ok) {
-                    throw new Error(`HTTP error! status: ${response.status}`);
-                }
-                
-                const result: ProductsApiResponse = await response.json();
-                
-                if (result.success && result.data) {
-                    const productList: Product[] = result.data.map(item => ({
+                setLoading(true);
+                // Use API route with search parameter for better performance
+                const response = await fetch('/api/products?limit=1000');
+                const result = await response.json();
+
+                if (mounted && result.success && result.data) {
+                    const productList: Product[] = result.data.map((item: any) => ({
                         name: item.name,
                         slug: item.slug,
                         categorySlug: item.category?.slug || 'uncategorized'
@@ -58,28 +43,36 @@ const SearchAutoComplete: React.FC = () => {
                 }
             } catch (error) {
                 console.error('Error fetching products for search:', error);
+            } finally {
+                if (mounted) setLoading(false);
             }
         };
 
         fetchProducts();
+
+        return () => {
+            mounted = false;
+        };
     }, []);
 
-    useEffect(() => {
-        if (searchTerm.trim() === '') {
-            setSuggestions([]);
-            setShowDropdown(false);
-            return;
-        }
-
-        const filtered = products.filter(product =>
-            product.name.toLowerCase().includes(searchTerm.toLowerCase())
-        );
-
-        setSuggestions(filtered.slice(0, 8));
-        setShowDropdown(filtered.length > 0);
-        setSelectedIndex(-1);
+    // Memoize filtered products for performance
+    const filteredProducts = useMemo(() => {
+        if (searchTerm.trim() === '') return [];
+        
+        const searchLower = searchTerm.toLowerCase();
+        return products
+            .filter(product => product.name.toLowerCase().includes(searchLower))
+            .slice(0, 8);
     }, [searchTerm, products]);
 
+    // Update suggestions when filtered products change
+    useEffect(() => {
+        setSuggestions(filteredProducts);
+        setShowDropdown(filteredProducts.length > 0 && searchTerm.trim() !== '');
+        setSelectedIndex(-1);
+    }, [filteredProducts, searchTerm]);
+
+    // Handle click outside
     useEffect(() => {
         const handleClickOutside = (event: MouseEvent) => {
             if (searchRef.current && !searchRef.current.contains(event.target as Node)) {
@@ -92,7 +85,14 @@ const SearchAutoComplete: React.FC = () => {
         return () => document.removeEventListener('mousedown', handleClickOutside);
     }, []);
 
-    const handleKeyDown = (e: React.KeyboardEvent) => {
+    const handleSuggestionSelect = useCallback((product: Product) => {
+        setSearchTerm(product.name);
+        setShowDropdown(false);
+        setSelectedIndex(-1);
+        router.push(`/shop/${product.categorySlug || 'uncategorized'}/${product.slug}`);
+    }, [router]);
+
+    const handleKeyDown = useCallback((e: React.KeyboardEvent) => {
         if (!showDropdown || suggestions.length === 0) return;
 
         switch (e.key) {
@@ -120,24 +120,17 @@ const SearchAutoComplete: React.FC = () => {
                 inputRef.current?.blur();
                 break;
         }
-    };
+    }, [showDropdown, suggestions, selectedIndex, handleSuggestionSelect]);
 
-    const handleSuggestionSelect = (product: Product) => {
-        setSearchTerm(product.name);
-        setShowDropdown(false);
-        setSelectedIndex(-1);
-        router.push(`/shop/${product.categorySlug || 'uncategorized'}/${product.slug}`);
-    };
-
-    const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const handleInputChange = useCallback((e: React.ChangeEvent<HTMLInputElement>) => {
         setSearchTerm(e.target.value);
-    };
+    }, []);
 
-    const handleInputFocus = () => {
+    const handleInputFocus = useCallback(() => {
         if (searchTerm.trim() !== '' && suggestions.length > 0) {
             setShowDropdown(true);
         }
-    };
+    }, [searchTerm, suggestions]);
 
     return (
         <div ref={searchRef} className="relative w-full max-w-md mx-auto">
@@ -151,6 +144,8 @@ const SearchAutoComplete: React.FC = () => {
                     onKeyDown={handleKeyDown}
                     placeholder="Search for flooring..."
                     className="w-full px-4 py-3 pr-10 text-gray-700 bg-white border border-orange-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-orange-500 transition-all duration-200"
+                    aria-label="Search products"
+                    autoComplete="off"
                 />
 
                 <div className="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none">
@@ -158,30 +153,28 @@ const SearchAutoComplete: React.FC = () => {
                 </div>
             </div>
 
+            {loading && searchTerm.trim() !== '' && (
+                <div className="absolute z-50 w-full mt-1 bg-white border border-gray-200 rounded-lg shadow-lg">
+                    <div className="px-4 py-3 text-gray-500 text-center">
+                        Loading...
+                    </div>
+                </div>
+            )}
+
             {showDropdown && suggestions.length > 0 && (
                 <div className="absolute z-50 w-full mt-1 bg-white border border-gray-200 rounded-lg shadow-lg max-h-64 overflow-y-auto">
                     {suggestions.map((product, index) => (
                         <button
                             key={product.slug}
                             onClick={() => handleSuggestionSelect(product)}
-                            className={`w-full px-4 py-3 text-left hover:bg-gray-50 focus:bg-gray-50 focus:outline-none transition-colors duration-150 ${index === selectedIndex ? 'bg-blue-50 text-blue-700' : 'text-gray-700'
-                                } ${index === 0 ? 'rounded-t-lg' : ''} ${index === suggestions.length - 1 ? 'rounded-b-lg' : 'border-b border-gray-100'
-                                }`}
+                            className={`w-full px-4 py-3 text-left hover:bg-gray-50 focus:bg-gray-50 focus:outline-none transition-colors duration-150 ${
+                                index === selectedIndex ? 'bg-orange-50 text-orange-700' : 'text-gray-700'
+                            } ${index === 0 ? 'rounded-t-lg' : ''} ${
+                                index === suggestions.length - 1 ? 'rounded-b-lg' : 'border-b border-gray-100'
+                            }`}
                         >
                             <div className="flex items-center">
-                                <svg
-                                    className="w-4 h-4 mr-3 text-gray-400"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    viewBox="0 0 24 24"
-                                >
-                                    <path
-                                        strokeLinecap="round"
-                                        strokeLinejoin="round"
-                                        strokeWidth={2}
-                                        d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-                                    />
-                                </svg>
+                                <Search className="w-4 h-4 mr-3 text-gray-400" />
                                 <span className="truncate">{product.name}</span>
                             </div>
                         </button>
@@ -189,10 +182,10 @@ const SearchAutoComplete: React.FC = () => {
                 </div>
             )}
 
-            {showDropdown && searchTerm.trim() !== '' && suggestions.length === 0 && (
+            {showDropdown && searchTerm.trim() !== '' && suggestions.length === 0 && !loading && (
                 <div className="absolute z-50 w-full mt-1 bg-white border border-gray-200 rounded-lg shadow-lg">
                     <div className="px-4 py-3 text-gray-500 text-center">
-                        No products found for &quot;{searchTerm}&quot;
+                        No products found for "{searchTerm}"
                     </div>
                 </div>
             )}

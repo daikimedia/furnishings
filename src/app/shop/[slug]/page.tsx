@@ -1,6 +1,5 @@
 import { notFound, redirect } from "next/navigation";
 
-// API Product interface
 interface ApiProduct {
     id: number
     sku: string
@@ -61,42 +60,56 @@ interface ProductsApiResponse {
     data: ApiProduct[]
 }
 
-async function fetchProductBySlug(slug: string): Promise<ApiProduct | null> {
+let cachedProducts: ApiProduct[] | null = null;
+let cacheTimestamp: number = 0;
+const CACHE_DURATION = 5 * 60 * 1000;
+
+async function fetchAllProducts(): Promise<ApiProduct[]> {
+    if (cachedProducts && Date.now() - cacheTimestamp < CACHE_DURATION) {
+        // console.log('✅ Using cached products in [slug] page');
+        return cachedProducts;
+    }
+
     try {
-        console.log('Fetching product with slug:', slug);
-        const response = await fetch('https://cms.furnishings.daikimedia.com/api/products', {
-            next: { revalidate: 30 } 
+        // console.log('🔄 Fetching fresh products in [slug] page...');
+        
+        const response = await fetch('http://localhost:3000/api/products?limit=1000', {
+            cache: 'no-store'
         });
 
-
         if (!response.ok) {
-            console.error('API response not ok:', response.status, response.statusText);
-            return null;
+            console.error('API response not ok:', response.status);
+            return cachedProducts || [];
         }
 
-        const result: ProductsApiResponse = await response.json();
-        console.log('API response:', result);
-
-        if (result.success && result.data) {
-            console.log('Looking for product with slug:', slug);
-            console.log('Available products:', result.data.map(p => ({ id: p.id, slug: p.slug, name: p.name })));
-
-            const product = result.data.find(p => p.slug === slug);
-            console.log('Found product:', product);
-
-            if (product && !product.category) {
-                console.warn('Product found but category is null:', product.slug);
-            }
-
-            return product || null;
+        const data = await response.json();
+        
+        if (data.products && Array.isArray(data.products)) {
+            cachedProducts = data.products;
+            cacheTimestamp = Date.now();
+            return data.products;
         }
-        return null;
+        
+        return cachedProducts || [];
     } catch (error) {
-        console.error('Error fetching product:', error);
-        return null;
+        console.error('Error fetching products:', error);
+        return cachedProducts || [];
     }
 }
 
+async function fetchProductBySlug(slug: string): Promise<ApiProduct | null> {
+    try {
+        const products = await fetchAllProducts();
+        
+        const normalizedSlug = slug.toLowerCase().trim();
+        const product = products.find(p => p.slug.toLowerCase().trim() === normalizedSlug);
+        
+        return product || null;
+    } catch (error) {
+        console.error('Error finding product:', error);
+        return null;
+    }
+}
 
 type Params = {
     slug: string;
@@ -107,33 +120,32 @@ export default async function ProductPage({ params }: { params: Promise<Params> 
 
     const productData = await fetchProductBySlug(slug);
 
-    console.log(productData);
-
     if (!productData) {
         notFound();
     }
 
     const categorySlug = productData.category?.slug || 'uncategorized';
     redirect(`/shop/${categorySlug}/${slug}`);
-
 }
 
-export const dynamic = 'force-dynamic';
+export const revalidate = 300; 
 
 export async function generateMetadata({ params }: { params: Promise<Params> }) {
     const { slug } = await params;
     const productData = await fetchProductBySlug(slug);
 
-    console.log(productData);
-
     if (!productData) {
         return {
             title: "Product Not Found",
             description: "The product you are looking for does not exist.",
+            robots: {
+                index: false,
+            }
         };
     }
+
     const defaultMetaTitle = "Premium Flooring & Furnishings | Furnishings Malaysia";
-    const defaultMetaDescription = "Discover premium quality flooring and furnishing products at Furnishings Malaysia. Browse our extensive collection of high-quality products for your home and office.";
+    const defaultMetaDescription = "Discover premium quality flooring and furnishing products at Furnishings Malaysia.";
 
     const formatMetaTitle = (apiTitle: string | undefined): string => {
         if (!apiTitle) {
@@ -141,11 +153,8 @@ export async function generateMetadata({ params }: { params: Promise<Params> }) 
         }
         
         let cleanTitle = apiTitle.trim();
-        
         cleanTitle = cleanTitle.replace(/^buy\s+/i, '');
-        
         cleanTitle = cleanTitle.replace(/\s*\|\s*Furnishings.*$/i, '').trim();
-        
         cleanTitle = cleanTitle.replace(/[–|\-|]\s*$/, '').trim();
         
         return `Buy ${cleanTitle} Vinyl Sheet Flooring | Furnishings`;
@@ -164,5 +173,12 @@ export async function generateMetadata({ params }: { params: Promise<Params> }) 
     return {
         title: metaTitle,
         description: metaDescription,
+        robots: {
+            index: true,
+            follow: true,
+        },
+        alternates: {
+            canonical: `/shop/${productData.category?.slug || 'uncategorized'}/${productData.slug}`,
+        },
     };
 }

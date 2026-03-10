@@ -73,7 +73,6 @@ const ContactUsPage = () => {
     };
 
     const handleSubmit = () => {
-        console.log('Form submitted:', formData);
         alert('Message sent successfully!');
         setFormData({
             firstName: '',

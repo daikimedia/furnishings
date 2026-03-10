@@ -1,8 +1,8 @@
-import { notFound, redirect } from "next/navigation";
-import SingleProduct from "@/components/shop/single-product";
+import { notFound } from "next/navigation";
+import { Suspense } from "react";
 import CategoryPage from "@/components/category/category-page";
 import PageHeader from "@/components/common/header";
-import type { Metadata } from "next";
+import ProductsLoading from "@/components/shop/products-loading";
 
 interface ApiProduct {
     id: number
@@ -76,244 +76,88 @@ interface CategoriesApiResponse {
     data: ApiCategory[];
 }
 
-async function fetchProductBySlug(slug: string): Promise<ApiProduct | null> {
-    try {
-        const response = await fetch('https://cms.furnishings.daikimedia.com/api/products', {
-            next: { revalidate: 30 }
-        });
-        if (!response.ok) {
-            return null;
-        }
-        const result: ProductsApiResponse = await response.json();
-        if (result.success && result.data) {
-            const normalizedSlug = slug.toLowerCase().trim();
-            const product = result.data.find(p => p.slug.toLowerCase().trim() === normalizedSlug);
-            return product || null;
-        }
-        return null;
-    } catch {
-        return null;
-    }
-}
+let productsCache: ApiProduct[] | null = null;
+let productsCacheTime = 0;
+const CACHE_DURATION = 5 * 60 * 1000;
 
-async function fetchCategoryBySlug(slug: string): Promise<ApiCategory | null> {
+async function getCategoryBySlug(slug: string): Promise<ApiCategory | null> {
     try {
         const response = await fetch('https://cms.furnishings.daikimedia.com/api/categories', {
-            cache: "no-store",
-            headers: {
-                'Cache-Control': 'no-cache',
-            },
+            next: { revalidate: 300 }
         });
-
-        if (!response.ok) {
-            return null;
-        }
-
+        
+        if (!response.ok) return null;
+        
         const result: CategoriesApiResponse = await response.json();
-        if (result.success && result.data) {
-            const normalizedSlug = slug.toLowerCase().trim();
-            const category = result.data.find(cat => cat.slug.toLowerCase().trim() === normalizedSlug);
-            return category || null;
-        }
-        return null;
+        if (!result.success) return null;
+        
+        const normalizedSlug = slug.toLowerCase().trim();
+        const category = result.data.find(c => c.slug.toLowerCase().trim() === normalizedSlug);
+        return category || null;
     } catch (error) {
         console.error('Error fetching category:', error);
         return null;
     }
 }
 
-type Params = {
-    slug: string[];
+type Props = {
+    params: Promise<{ slug: string[] }>;
+    searchParams?: Promise<{ [key: string]: string | string[] | undefined }>;
 };
 
-export default async function CategoryPageRoute({ params }: { params: Promise<Params> }) {
+export default async function CategoryPageRoute({ params }: Props) {
     const { slug } = await params;
-
+    
     if (!Array.isArray(slug) || slug.length === 0) {
         notFound();
     }
 
-    if (slug.length === 2) {
-        const [categorySlug, productSlug] = slug;
-        
-        const productData = await fetchProductBySlug(productSlug);
-        
-        if (!productData) {
-            notFound();
-        }
-
-        const canonicalCategory = productData.category?.slug || 'uncategorized';
-        const canonicalProduct = productData.slug;
-
-        if (categorySlug.toLowerCase().trim() !== canonicalCategory.toLowerCase().trim() ||
-            productSlug.toLowerCase().trim() !== canonicalProduct.toLowerCase().trim()) {
-            redirect(`/category/${canonicalCategory}/${canonicalProduct}`);
-        }
-
-        const normalizeUrl = (input: unknown): string => {
-            if (typeof input !== 'string') return '';
-            const trimmed = input.trim();
-            if (!trimmed || trimmed.toLowerCase() === 'null' || trimmed.toLowerCase() === 'undefined') {
-                return '';
-            }
-            return trimmed.startsWith('http') ? trimmed : `https://cms.furnishings.daikimedia.com${trimmed}`;
-        };
-
-        const fixedImageUrls = {
-            ...productData.images,
-            main_image: normalizeUrl(productData.images.main_image),
-            gallery: Array.isArray(productData.images.gallery)
-                ? productData.images.gallery
-                    .map(normalizeUrl)
-                    .filter(Boolean)
-                : []
-        };
-
-        const productWithDefaults = {
-            ...productData,
-            images: fixedImageUrls,
-            category: productData.category || { id: 0, name: 'Uncategorized', slug: 'uncategorized' },
-            additional_description: productData.additional_description ?? {
-                headline: "",
-                sections: [],
-            },
-            features: productData.features ?? {
-                main_features: [],
-                benefits: [],
-                design_compatibility: []
-            },
-            specifications: productData.specifications ?? {},
-            installation: productData.installation ?? {},
-            maintenance: productData.maintenance ?? {},
-            faqs: productData.faqs ?? [],
-            call_to_action: productData.cta ?? {
-                primary: "Contact us for more information",
-                secondary: "Get a quote today",
-                tertiary: "Professional installation available"
-            }
-        };
-
-        return (
-            <main>
-                <PageHeader />
-                {/* eslint-disable-next-line @typescript-eslint/no-explicit-any */}
-                <SingleProduct productData={productWithDefaults as any} />
-            </main>
-        );
+    // Get the category slug (first segment)
+    const categorySlug = slug[0];
+    
+    const category = await getCategoryBySlug(categorySlug);
+    
+    if (!category) {
+        notFound();
     }
 
-    if (slug.length === 1) {
-        return (
-            <>
-                <PageHeader />
-                <CategoryPage />
-            </>
-        );
-    }
-
-    notFound();
+    return (
+        <main>
+            <PageHeader />
+            <Suspense fallback={<ProductsLoading />}>
+                <CategoryPage slug={categorySlug} />
+            </Suspense>
+        </main>
+    );
 }
 
-export const dynamic = 'force-dynamic';
-
-export async function generateMetadata({ params }: { params: Promise<Params> }): Promise<Metadata> {
+export async function generateMetadata({ params }: Props) {
     const { slug } = await params;
-
+    
     if (!Array.isArray(slug) || slug.length === 0) {
         return {
-            title: "Category Not Found",
-            description: "The category you are looking for does not exist.",
-        };
-    }
-
-    if (slug.length === 2) {
-        const productSlug = slug[1];
-        const productData = await fetchProductBySlug(productSlug);
-        
-        if (!productData) {
-            return {
-                title: "Product Not Found",
-                description: "The product you are looking for does not exist.",
-            };
-        }
-
-        const imageUrl = (() => {
-            const normalizeUrl = (input: unknown): string => {
-                if (typeof input !== 'string') return '';
-                const trimmed = input.trim();
-                if (!trimmed || trimmed.toLowerCase() === 'null' || trimmed.toLowerCase() === 'undefined') {
-                    return '';
-                }
-                return trimmed.startsWith('http') ? trimmed : `https://cms.furnishings.daikimedia.com${trimmed}`;
-            };
-            return normalizeUrl(productData.images.main_image) || '/placeholder.svg';
-        })();
-
-        const categorySlug = productData.category?.slug || 'uncategorized';
-        const canonicalUrl = `/category/${categorySlug}/${productData.slug}`;
-
-        const defaultMetaTitle = "Premium Flooring & Furnishings | Furnishings Malaysia";
-        const defaultMetaDescription = "Discover premium quality flooring and furnishing products at Furnishings Malaysia. Browse our extensive collection of high-quality products for your home and office.";
-
-        const metaTitle = productData.seo?.meta_title?.trim() || 
-                         productData.name?.trim() || 
-                         defaultMetaTitle;
-
-        const metaDescription = productData.seo?.meta_description?.trim() || 
-                               productData.description?.short?.trim() || 
-                               defaultMetaDescription;
-
-        const ogTitle = productData.name?.trim() || metaTitle;
-        const ogDescription = productData.description?.short?.trim() || metaDescription;
-
-        return {
-            title: metaTitle,
-            description: metaDescription,
-            keywords: productData.seo?.keywords || [],
-            alternates: {
-                canonical: canonicalUrl,
-            },
-            openGraph: {
-                title: ogTitle,
-                description: ogDescription,
-                images: [imageUrl],
-            },
+            title: 'Category Not Found',
+            description: 'The category you are looking for does not exist.'
         };
     }
 
     const categorySlug = slug[0];
-    const category = await fetchCategoryBySlug(categorySlug);
-
-    const defaultMetaTitle = "Product Category – Premium Flooring & Furnishing Solutions";
-    const defaultMetaDescription = "Browse our premium collection of flooring and furnishing products. Find quality solutions for your home and office.";
-
+    const category = await getCategoryBySlug(categorySlug);
+    
     if (!category) {
         return {
-            title: defaultMetaTitle,
-            description: defaultMetaDescription,
-            alternates: {
-                canonical: `https://www.furnishings.com.my/category/${categorySlug}`,
-            },
+            title: 'Category Not Found',
+            description: 'The category you are looking for does not exist.'
         };
     }
 
-    const categoryName = category.name;
-    const productsCount = category.products_count || 0;
-
-    const metaTitle = `${categoryName} – Premium Flooring & Furnishing Solutions | Furnishing Solutions`;
-    const metaDescription = `Explore our ${categoryName.toLowerCase()} collection with ${productsCount} premium products. Discover quality flooring and furnishing solutions for your home and office.`;
-
     return {
-        title: metaTitle,
-        description: metaDescription,
+        title: `${category.name} Flooring Malaysia | Furnishings`,
+        description: `Browse our collection of ${category.name.toLowerCase()} flooring solutions in Malaysia.`,
         alternates: {
-            canonical: `https://www.furnishings.com.my/category/${category.slug}`,
-        },
-        openGraph: {
-            title: metaTitle,
-            description: metaDescription,
-            url: `https://www.furnishings.com.my/category/${category.slug}`,
-        },
+            canonical: `https://www.furnishings.com.my/category/${categorySlug}`,
+        }
     };
 }
 
+export const revalidate = 300;

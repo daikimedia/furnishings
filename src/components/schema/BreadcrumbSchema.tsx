@@ -8,18 +8,6 @@ interface Product {
     sku: string;
     name: string;
     slug: string;
-    brand: string;
-    status: string;
-    category: {
-        id: number;
-        name: string;
-        slug: string;
-    };
-}
-
-interface ProductsApiResponse {
-    success: boolean;
-    data: Product[];
 }
 
 interface BreadcrumbItem {
@@ -27,42 +15,28 @@ interface BreadcrumbItem {
     url: string;
 }
 
-interface BreadcrumbSchema {
-    "@context": string;
-    "@type": string;
-    "itemListElement": Array<{
-        "@type": string;
-        "position": number;
-        "name": string;
-        "item": string;
-    }>;
-}
-
 const DynamicBreadcrumbSchema = () => {
     const pathname = usePathname();
-    const [products, setProducts] = useState<Product[]>([]);
-    const [loading, setLoading] = useState(true);
+    const [productMap, setProductMap] = useState<Map<string, string>>(new Map());
 
-    // Fetch products from API
+    // Fetch products once and create a map for quick lookup
     useEffect(() => {
         const fetchProducts = async () => {
             try {
-                setLoading(true);
-                const response = await fetch('https://cms.furnishings.daikimedia.com/api/products');
-                
-                if (!response.ok) {
-                    throw new Error(`HTTP error! status: ${response.status}`);
-                }
-                
-                const result: ProductsApiResponse = await response.json();
+                // Use the API route instead of direct CMS URL
+                const response = await fetch('/api/products?limit=1000');
+                const result = await response.json();
 
-                if (result.success) {
-                    setProducts(result.data);
+                if (result.success && result.data) {
+                    const map = new Map<string, string>();
+                    result.data.forEach((product: Product) => {
+                        map.set(product.slug, product.name);
+                        map.set(product.sku, product.name);
+                    });
+                    setProductMap(map);
                 }
             } catch (error) {
-                console.error('Error fetching products:', error);
-            } finally {
-                setLoading(false);
+                console.error('Error fetching products for breadcrumb:', error);
             }
         };
 
@@ -70,9 +44,6 @@ const DynamicBreadcrumbSchema = () => {
     }, []);
 
     useEffect(() => {
-        // Wait for products to load before generating schema
-        if (loading) return;
-
         // Remove existing breadcrumb schema if any
         const existingSchema = document.querySelector('script[data-breadcrumb-schema]');
         if (existingSchema) {
@@ -83,19 +54,19 @@ const DynamicBreadcrumbSchema = () => {
         const generateBreadcrumbs = (path: string): BreadcrumbItem[] => {
             const segments = path.split('/').filter(segment => segment !== '');
             const breadcrumbs: BreadcrumbItem[] = [
-                { name: 'Home', url: 'https://furnishings.daikimedia.com' } // Update with your actual domain
+                { name: 'Home', url: 'https://www.furnishings.com.my' }
             ];
 
             let currentPath = '';
             segments.forEach((segment) => {
                 currentPath += `/${segment}`;
 
-                // Try to find product by slug or SKU
-                const productMatch = products.find(p => p.slug === segment || p.sku === segment);
-
+                // Try to find product name from map
+                const productName = productMap.get(segment);
+                
                 let name: string;
-                if (productMatch) {
-                    name = productMatch.name;
+                if (productName) {
+                    name = productName;
                 } else {
                     // Convert URL segment to readable name
                     name = segment
@@ -106,7 +77,7 @@ const DynamicBreadcrumbSchema = () => {
 
                 breadcrumbs.push({
                     name: name,
-                    url: `https://furnishings.daikimedia.com${currentPath}` // Update with your actual domain
+                    url: `https://www.furnishings.com.my${currentPath}`
                 });
             });
 
@@ -116,7 +87,7 @@ const DynamicBreadcrumbSchema = () => {
         const breadcrumbs = generateBreadcrumbs(pathname);
 
         // Create schema object
-        const schema: BreadcrumbSchema = {
+        const schema = {
             "@context": "https://schema.org",
             "@type": "BreadcrumbList",
             "itemListElement": breadcrumbs.map((breadcrumb, index) => ({
@@ -141,7 +112,7 @@ const DynamicBreadcrumbSchema = () => {
                 schemaScript.remove();
             }
         };
-    }, [pathname, products, loading]);
+    }, [pathname, productMap]);
 
     return null;
 };

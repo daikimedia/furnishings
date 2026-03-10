@@ -4,15 +4,10 @@ import { useState, useEffect } from "react";
 import { Facebook, Twitter, Linkedin, Youtube, ArrowUp } from "lucide-react";
 
 interface Category {
-    id: number
-    name: string
-    slug: string
-    products_count: number
-}
-
-interface ApiResponse {
-    success: boolean
-    data: Category[]
+    id: number;
+    name: string;
+    slug: string;
+    products_count: number;
 }
 
 export default function Footer() {
@@ -23,13 +18,9 @@ export default function Footer() {
         const fetchCategories = async () => {
             try {
                 setLoading(true);
-                const response = await fetch('https://cms.furnishings.daikimedia.com/api/categories');
-                
-                if (!response.ok) {
-                    throw new Error(`HTTP error! status: ${response.status}`);
-                }
-                
-                const result: ApiResponse = await response.json();
+                // Use API route instead of direct CMS URL
+                const response = await fetch('/api/categories');
+                const result = await response.json();
 
                 if (result.success) {
                     setCategories(result.data);
@@ -54,9 +45,7 @@ export default function Footer() {
             </div>
 
             <div className="relative container mx-auto px-4 sm:px-6 lg:px-16 py-8 sm:py-12">
-
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-[3.3fr_1fr_1fr] gap-8 lg:gap-12">
-
                     <div className="space-y-4 sm:space-y-6 md:col-span-2 lg:col-span-1 lg:pr-16">
                         <h4 className="text-lg sm:text-xl font-bold tracking-tight text-orange-600">ABOUT US</h4>
                         <p className="text-gray-300 leading-relaxed text-sm sm:text-base text-justify">
@@ -73,7 +62,8 @@ export default function Footer() {
 
                         <button
                             onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-                            className="flex items-center justify-center space-x-2 border border-white px-3 py-2 rounded-md hover:bg-orange-600 hover:text-black transition-colors text-xs sm:text-sm w-full sm:w-auto">
+                            className="flex items-center justify-center space-x-2 border border-white px-3 py-2 rounded-md hover:bg-orange-600 hover:text-black transition-colors text-xs sm:text-sm w-full sm:w-auto"
+                        >
                             <ArrowUp className="w-4 h-4 sm:w-5 sm:h-5" />
                             <span className="uppercase tracking-wide">Back to Top</span>
                         </button>
@@ -92,7 +82,11 @@ export default function Footer() {
                     <div className="space-y-4">
                         <h4 className="font-bold text-orange-600 text-base sm:text-lg">CATEGORIES</h4>
                         {loading ? (
-                            <div className="text-gray-300 text-sm">Loading categories...</div>
+                            <div className="space-y-2">
+                                {[...Array(5)].map((_, i) => (
+                                    <div key={i} className="h-4 bg-gray-700 animate-pulse rounded"></div>
+                                ))}
+                            </div>
                         ) : (
                             <ul className="space-y-2 sm:space-y-3 text-gray-300 text-sm sm:text-base">
                                 {categories.map((category) => (

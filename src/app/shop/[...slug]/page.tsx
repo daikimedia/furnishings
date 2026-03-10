@@ -1,6 +1,8 @@
 import { notFound, redirect } from "next/navigation";
+import { Suspense } from "react";
 import SingleProduct from "@/components/shop/single-product";
 import PageHeader from "@/components/common/header";
+import ProductLoading from "@/components/shop/product-loading";
 
 interface ApiProduct {
     id: number
@@ -62,26 +64,81 @@ interface ProductsApiResponse {
     data: ApiProduct[]
 }
 
-async function fetchProductBySlug(slug: string): Promise<ApiProduct | null> {
+const fetchAllProducts = async (): Promise<ApiProduct[]> => {
     try {
         const response = await fetch('https://cms.furnishings.daikimedia.com/api/products', {
-            next: { revalidate: 30 }
+            next: { 
+                revalidate: 300,
+                tags: ['products']
+            }
         });
+        
         if (!response.ok) {
-            return null;
+            return [];
         }
+        
         const result: ProductsApiResponse = await response.json();
-        if (result.success && result.data) {
-            // Case-insensitive slug comparison - compare lowercase versions
-            const normalizedSlug = slug.toLowerCase().trim();
-            const product = result.data.find(p => p.slug.toLowerCase().trim() === normalizedSlug);
-            return product || null;
-        }
-        return null;
+        return result.success && result.data ? result.data : [];
+    } catch {
+        return [];
+    }
+};
+
+async function fetchProductBySlug(slug: string): Promise<ApiProduct | null> {
+    try {
+        const products = await fetchAllProducts();
+        // Case-insensitive slug comparison
+        const normalizedSlug = slug.toLowerCase().trim();
+        const product = products.find(p => p.slug.toLowerCase().trim() === normalizedSlug);
+        return product || null;
     } catch {
         return null;
     }
 }
+
+const normalizeUrl = (input: unknown): string => {
+    if (typeof input !== 'string') return '';
+    const trimmed = input.trim();
+    if (!trimmed || trimmed.toLowerCase() === 'null' || trimmed.toLowerCase() === 'undefined') {
+        return '';
+    }
+    return trimmed.startsWith('http') ? trimmed : `https://cms.furnishings.daikimedia.com${trimmed}`;
+};
+const prepareProductData = (productData: ApiProduct) => {
+    const fixedImageUrls = {
+        ...productData.images,
+        main_image: normalizeUrl(productData.images.main_image),
+        gallery: Array.isArray(productData.images.gallery)
+            ? productData.images.gallery
+                .map(normalizeUrl)
+                .filter(Boolean)
+            : []
+    };
+
+    return {
+        ...productData,
+        images: fixedImageUrls,
+        category: productData.category || { id: 0, name: 'Uncategorized', slug: 'uncategorized' },
+        additional_description: productData.additional_description ?? {
+            headline: "",
+            sections: [],
+        },
+        features: productData.features ?? {
+            main_features: [],
+            benefits: [],
+            design_compatibility: []
+        },
+        specifications: productData.specifications ?? {},
+        installation: productData.installation ?? {},
+        maintenance: productData.maintenance ?? {},
+        faqs: productData.faqs ?? [],
+        call_to_action: productData.cta ?? {
+            primary: "Contact us for more information",
+            secondary: "Get a quote today",
+            tertiary: "Professional installation available"
+        }
+    };
+};
 
 type Params = {
     slug: string[];
@@ -94,77 +151,30 @@ export default async function ProductPage({ params }: { params: Promise<Params> 
         notFound();
     }
 
-   
     if (slug.length === 1) {
         const productSlug = slug[0];
         const productData = await fetchProductBySlug(productSlug);
+        
         if (!productData) {
             notFound();
         }
+        
         const categorySlug = productData.category?.slug || 'uncategorized';
         redirect(`/shop/${categorySlug}/${productData.slug}`);
     }
 
     if (slug.length === 2) {
         const [category, productSlug] = slug;
-        const productData = await fetchProductBySlug(productSlug);
-        if (!productData) {
-            notFound();
-        }
-
-        const canonicalCategory = productData.category?.slug || 'uncategorized';
-        if (category.toLowerCase().trim() !== canonicalCategory.toLowerCase().trim()) {
-            redirect(`/shop/${canonicalCategory}/${productData.slug}`);
-        }
-
-        const normalizeUrl = (input: unknown): string => {
-            if (typeof input !== 'string') return '';
-            const trimmed = input.trim();
-            if (!trimmed || trimmed.toLowerCase() === 'null' || trimmed.toLowerCase() === 'undefined') {
-                return '';
-            }
-            return trimmed.startsWith('http') ? trimmed : `https://cms.furnishings.daikimedia.com${trimmed}`;
-        };
-
-        const fixedImageUrls = {
-            ...productData.images,
-            main_image: normalizeUrl(productData.images.main_image),
-            gallery: Array.isArray(productData.images.gallery)
-                ? productData.images.gallery
-                    .map(normalizeUrl)
-                    .filter(Boolean)
-                : []
-        };
-
-        const productWithDefaults = {
-            ...productData,
-            images: fixedImageUrls,
-            category: productData.category || { id: 0, name: 'Uncategorized', slug: 'uncategorized' },
-            additional_description: productData.additional_description ?? {
-                headline: "",
-                sections: [],
-            },
-            features: productData.features ?? {
-                main_features: [],
-                benefits: [],
-                design_compatibility: []
-            },
-            specifications: productData.specifications ?? {},
-            installation: productData.installation ?? {},
-            maintenance: productData.maintenance ?? {},
-            faqs: productData.faqs ?? [],
-            call_to_action: productData.cta ?? {
-                primary: "Contact us for more information",
-                secondary: "Get a quote today",
-                tertiary: "Professional installation available"
-            }
-        };
-
+        
         return (
             <main>
                 <PageHeader />
-                {/* eslint-disable-next-line @typescript-eslint/no-explicit-any */}
-                <SingleProduct productData={productWithDefaults as any} />
+                <Suspense fallback={<ProductLoading />}>
+                    <ProductContent 
+                        category={category} 
+                        productSlug={productSlug} 
+                    />
+                </Suspense>
             </main>
         );
     }
@@ -172,7 +182,25 @@ export default async function ProductPage({ params }: { params: Promise<Params> 
     notFound();
 }
 
-export const dynamic = 'force-dynamic';
+async function ProductContent({ category, productSlug }: { category: string, productSlug: string }) {
+    const productData = await fetchProductBySlug(productSlug);
+    
+    if (!productData) {
+        notFound();
+    }
+
+    const canonicalCategory = productData.category?.slug || 'uncategorized';
+    
+    if (category.toLowerCase().trim() !== canonicalCategory.toLowerCase().trim()) {
+        redirect(`/shop/${canonicalCategory}/${productData.slug}`);
+    }
+
+    const productWithDefaults = prepareProductData(productData);
+
+    return <SingleProduct productData={productWithDefaults as any} />;
+}
+
+export const revalidate = 300;
 
 export async function generateMetadata({ params }: { params: Promise<Params> }) {
     const { slug } = await params;
@@ -186,6 +214,7 @@ export async function generateMetadata({ params }: { params: Promise<Params> }) 
 
     const productSlug = slug.length === 1 ? slug[0] : slug[1];
     const productData = await fetchProductBySlug(productSlug);
+    
     if (!productData) {
         return {
             title: "Product Not Found",
@@ -193,23 +222,12 @@ export async function generateMetadata({ params }: { params: Promise<Params> }) 
         };
     }
 
-    const imageUrl = (() => {
-        const normalizeUrl = (input: unknown): string => {
-            if (typeof input !== 'string') return '';
-            const trimmed = input.trim();
-            if (!trimmed || trimmed.toLowerCase() === 'null' || trimmed.toLowerCase() === 'undefined') {
-                return '';
-            }
-            return trimmed.startsWith('http') ? trimmed : `https://cms.furnishings.daikimedia.com${trimmed}`;
-        };
-        return normalizeUrl(productData.images.main_image) || '/placeholder.svg';
-    })();
-
+    const imageUrl = normalizeUrl(productData.images.main_image) || '/placeholder.svg';
     const categorySlug = productData.category?.slug || 'uncategorized';
     const canonicalUrl = `/shop/${categorySlug}/${productData.slug}`;
 
     const defaultMetaTitle = "Premium Flooring & Furnishings | Furnishings Malaysia";
-    const defaultMetaDescription = "Discover premium quality flooring and furnishing products at Furnishings Malaysia. Browse our extensive collection of high-quality products for your home and office.";
+    const defaultMetaDescription = "Discover premium quality flooring and furnishing products at Furnishings Malaysia.";
 
     const formatMetaTitle = (apiTitle: string | undefined): string => {
         if (!apiTitle) {
@@ -217,11 +235,8 @@ export async function generateMetadata({ params }: { params: Promise<Params> }) 
         }
 
         let cleanTitle = apiTitle.trim();
-        
         cleanTitle = cleanTitle.replace(/^buy\s+/i, '');
-        
         cleanTitle = cleanTitle.replace(/\s*\|\s*Furnishings.*$/i, '').trim();
-        
         cleanTitle = cleanTitle.replace(/[–|\-|]\s*$/, '').trim();
         
         return `Buy ${cleanTitle} Vinyl Sheet Flooring | Furnishings`;
@@ -254,7 +269,3 @@ export async function generateMetadata({ params }: { params: Promise<Params> }) 
         },
     };
 }
-
-
-
-
