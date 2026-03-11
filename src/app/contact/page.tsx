@@ -4,7 +4,7 @@ export const metadata = {
     title: "Contact Furnishing | Vinyl & Flooring Supplier in Malaysia",
     description: "Contact Furnishing for vinyl, SPC, laminate flooring, carpet tiles and artificial grass in Malaysia. Request a site visit, quotation or product recommendation for your project today.",
     alternates: {
-        canonical: "/contact",
+        canonical: "https://www.furnishings.com.my/contact",
     },
 };
 export default function ContactUs() {
