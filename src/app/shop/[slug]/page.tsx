@@ -178,7 +178,7 @@ export async function generateMetadata({ params }: { params: Promise<Params> }) 
             follow: true,
         },
         alternates: {
-            canonical: `/shop/${productData.category?.slug || 'uncategorized'}/${productData.slug}`,
+            canonical: `https://www.furnishings.com.my/shop/${productData.category?.slug || 'uncategorized'}/${productData.slug}`,
         },
     };
 }
