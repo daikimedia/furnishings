@@ -125,7 +125,7 @@ export default async function ProductPage({ params }: { params: Promise<Params> 
     }
 
     const categorySlug = productData.category?.slug || 'uncategorized';
-    redirect(`/shop/${categorySlug}/${slug}`);
+    redirect(`https://www.furnishings.com.my/shop/${categorySlug}/${slug}`);
 }
 
 export const revalidate = 300; 

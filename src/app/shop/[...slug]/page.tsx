@@ -160,7 +160,7 @@ export default async function ProductPage({ params }: { params: Promise<Params> 
         }
         
         const categorySlug = productData.category?.slug || 'uncategorized';
-        redirect(`/shop/${categorySlug}/${productData.slug}`);
+        redirect(`https://www.furnishings.com.my/shop/${categorySlug}/${productData.slug}`);
     }
 
     if (slug.length === 2) {
@@ -192,7 +192,7 @@ async function ProductContent({ category, productSlug }: { category: string, pro
     const canonicalCategory = productData.category?.slug || 'uncategorized';
     
     if (category.toLowerCase().trim() !== canonicalCategory.toLowerCase().trim()) {
-        redirect(`/shop/${canonicalCategory}/${productData.slug}`);
+        redirect(`https://www.furnishings.com.my/shop/${canonicalCategory}/${productData.slug}`);
     }
 
     const productWithDefaults = prepareProductData(productData);
@@ -224,7 +224,7 @@ export async function generateMetadata({ params }: { params: Promise<Params> }) 
 
     const imageUrl = normalizeUrl(productData.images.main_image) || '/placeholder.svg';
     const categorySlug = productData.category?.slug || 'uncategorized';
-    const canonicalUrl = `/shop/${categorySlug}/${productData.slug}`;
+    const canonicalUrl = `https://www.furnishings.com.my/shop/${categorySlug}/${productData.slug}`;
 
     const defaultMetaTitle = "Premium Flooring & Furnishings | Furnishings Malaysia";
     const defaultMetaDescription = "Discover premium quality flooring and furnishing products at Furnishings Malaysia.";
