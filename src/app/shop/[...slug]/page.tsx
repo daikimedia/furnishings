@@ -118,42 +118,55 @@ export async function generateMetadata({
     };
   }
 
-  const imageUrl = getFullImageUrl(productData.images.main_image) || "/placeholder.svg";
   const categorySlug = productData.category?.slug || "uncategorized";
-  const canonicalUrl = `/shop/${categorySlug}/${productData.slug}`;
 
-  // Format meta title
-  const formatMetaTitle = (apiTitle: string | undefined): string => {
-    if (!apiTitle) return productData.name;
-    
-    let cleanTitle = apiTitle.trim();
-    cleanTitle = cleanTitle.replace(/^buy\s+/i, "");
-    cleanTitle = cleanTitle.replace(/\s*\|\s*Furnishings.*$/i, "").trim();
-    cleanTitle = cleanTitle.replace(/[–|\-|]\s*$/, "").trim();
-    
-    return `Buy ${cleanTitle} | Furnishings Malaysia`;
-  };
+  const imageUrl =
+    getFullImageUrl(productData.images.main_image) || "/placeholder.svg";
 
-  const metaTitle = productData.seo?.meta_title 
-    ? formatMetaTitle(productData.seo.meta_title)
-    : `Buy ${productData.name} | Furnishings Malaysia`;
+  const canonicalUrl = `https://www.furnishings.com.my/shop/${categorySlug}/${productData.slug}`;
 
-  const metaDescription = 
+  const formatTitle = (title?: string) => {
+    const baseTitle = title || productData.name;
+
+  const metaTitle =
+    productData.seo?.meta_title || `${productData.name} | Furnishings Malaysia`;
+
+  const metaDescription =
     productData.seo?.meta_description ||
-    productData.description?.short ||
-    `Shop ${productData.name} online at Furnishings Malaysia. Premium quality flooring solution for your home or office.`;
-
+    `Shop ${productData.name} at Malaysia. Premium quality flooring solution.`;
+    
   return {
     title: metaTitle,
     description: metaDescription,
-    keywords: productData.seo?.keywords || [],
+
     alternates: {
       canonical: canonicalUrl,
     },
+
     openGraph: {
-      title: productData.name,
-      description: productData.description?.short || metaDescription,
+      title: metaTitle,
+      description: metaDescription,
+      url: canonicalUrl,
+      siteName: "Furnishings Malaysia",
+      images: [
+        {
+          url: imageUrl,
+          width: 1200,
+          height: 630,
+          alt: productData.name,
+        },
+      ],
+      type: "website",
+    },
+
+    twitter: {
+      card: "summary_large_image",
+      title: metaTitle,
+      description: metaDescription,
       images: [imageUrl],
     },
+
+    keywords: productData.seo?.keywords || [],
   };
+}
 }

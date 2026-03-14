@@ -38,4 +38,4 @@ export default function BlogPage({ searchParams }: BlogPageProps) {
   );
 }
 
-export const revalidate = 300;
+export const revalidate = 1800;

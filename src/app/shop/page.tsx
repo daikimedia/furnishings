@@ -43,4 +43,4 @@ export default async function Shop({ searchParams }: ShopPageProps) {
     );
 }
 
-export const revalidate = 300;
+export const revalidate = 1800;
