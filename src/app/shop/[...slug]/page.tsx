@@ -1,11 +1,11 @@
-// src/app/shop/[...slug]/page.tsx
 import { notFound, redirect } from "next/navigation";
 import { Suspense } from "react";
+import type { Metadata } from "next";
 import SingleProduct from "@/components/shop/single-product";
 import PageHeader from "@/components/common/header";
 import ProductLoading from "@/components/shop/product-loading";
 import { getProductBySlug } from "@/lib/api";
-import { Product, getFullImageUrl } from "@/lib/interfaces";
+import { getFullImageUrl } from "@/lib/interfaces";
 
 type Params = {
   slug: string[];
@@ -21,8 +21,6 @@ export default async function ProductPage({
   if (!Array.isArray(slug) || slug.length === 0) {
     notFound();
   }
-
-  // URL: /shop/product-slug
   if (slug.length === 1) {
     const productSlug = slug[0];
     const productData = await getProductBySlug(productSlug);
@@ -32,12 +30,8 @@ export default async function ProductPage({
     }
 
     const categorySlug = productData.category?.slug || "uncategorized";
-
-    // Redirect to canonical URL with category
     redirect(`/shop/${categorySlug}/${productData.slug}`);
   }
-
-  // URL: /shop/category/product
   if (slug.length === 2) {
     const [category, productSlug] = slug;
 
@@ -68,13 +62,10 @@ async function ProductContent({
   }
 
   const canonicalCategory = productData.category?.slug || "uncategorized";
-
-  // Redirect if category in URL doesn't match product's category
   if (category.toLowerCase().trim() !== canonicalCategory.toLowerCase().trim()) {
     redirect(`/shop/${canonicalCategory}/${productData.slug}`);
   }
 
-  // Prepare product data with proper image URLs
   const productWithFullUrls = {
     ...productData,
     images: {
@@ -98,7 +89,7 @@ export async function generateMetadata({
   params,
 }: {
   params: Promise<Params>;
-}) {
+}): Promise<Metadata> {
   const { slug } = await params;
 
   if (!Array.isArray(slug) || slug.length === 0) {
@@ -119,30 +110,20 @@ export async function generateMetadata({
   }
 
   const categorySlug = productData.category?.slug || "uncategorized";
-
-  const imageUrl =
-    getFullImageUrl(productData.images.main_image) || "/placeholder.svg";
-
+  const imageUrl = getFullImageUrl(productData.images.main_image) || "/placeholder.svg";
   const canonicalUrl = `https://www.furnishings.com.my/shop/${categorySlug}/${productData.slug}`;
 
-  const formatTitle = (title?: string) => {
-    const baseTitle = title || productData.name;
+  const metaTitle = productData.seo?.meta_title || `${productData.name} | Furnishings Malaysia`;
+  const metaDescription = productData.seo?.meta_description || 
+    `Shop ${productData.name} at Malaysia. Premium quality flooring solution with excellent durability and design.`;
 
-  const metaTitle =
-    productData.seo?.meta_title || `${productData.name} | Furnishings Malaysia`;
-
-  const metaDescription =
-    productData.seo?.meta_description ||
-    `Shop ${productData.name} at Malaysia. Premium quality flooring solution.`;
-    
+  // Return the metadata object directly
   return {
     title: metaTitle,
     description: metaDescription,
-
     alternates: {
       canonical: canonicalUrl,
     },
-
     openGraph: {
       title: metaTitle,
       description: metaDescription,
@@ -158,15 +139,12 @@ export async function generateMetadata({
       ],
       type: "website",
     },
-
     twitter: {
       card: "summary_large_image",
       title: metaTitle,
       description: metaDescription,
       images: [imageUrl],
     },
-
-    keywords: productData.seo?.keywords || [],
+    keywords: productData.seo?.keywords?.join(', ') || '',
   };
-}
 }

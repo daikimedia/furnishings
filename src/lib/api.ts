@@ -168,17 +168,21 @@ export const getBlogs = cache(async () => {
 });
 
 
+
 export const getBlogBySlug = cache(async (slug: string) => {
   try {
-    const res = await fetchWithRetry(`${API_BASE}/blogs/${slug}`, {
-      next: { revalidate: 3600 },
-    });
-
-    if (!res) return null;
-
-    return res.json();
+    const res = await fetch(`https://cms.furnishings.daikimedia.com/api/blogs/${slug}`);
+    
+    if (res.ok) {
+      const data = await res.json();
+      return data;
+    }
+    const allRes = await fetch(`https://cms.furnishings.daikimedia.com/api/blogs/all-blogs`);
+    const allBlogs = await allRes.json();
+    return allBlogs.find((blog: any) => blog.slug === slug) || null;
+    
   } catch (error) {
-    console.error("Error fetching blog:", error);
+    console.error('Error:', error);
     return null;
   }
 });

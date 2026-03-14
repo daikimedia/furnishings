@@ -101,6 +101,8 @@ export interface ProductListItem {
     price: number;
 }
 
+// lib/interfaces.ts
+
 export interface Blog {
     id: number;
     title: string;
@@ -109,10 +111,10 @@ export interface Blog {
     excerpt?: string;
     featuredImage?: string;
     author?: string;
-    publish_date?: string;
+    publish_date: string;
     created_at: string;
     updated_at: string;
-    tags?: string[] | string;
+    tags?: string;
     category?: string;
     views?: number;
     image?: string;
@@ -120,6 +122,8 @@ export interface Blog {
     meta_title?: string;
     meta_description?: string;
     category_name?: string;
+    focus_keyword?: string;
+    allow_comments?: boolean;
 }
 
 

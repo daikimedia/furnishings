@@ -1,47 +1,49 @@
 import type { Metadata } from "next";
+import { notFound } from "next/navigation";
 import SingleBlogContent from "@/components/blog/single-blog-content";
 import { getBlogBySlug } from "@/lib/api";
-import { Blog } from "@/lib/interfaces";
 
-type Params = {
-  slug: string;
+type Props = {
+  params: Promise<{ slug: string }>;
 };
 
-export async function generateMetadata(
-  { params }: { params: Promise<Params> }
-): Promise<Metadata> {
-
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
-
-  const blog = await getBlogBySlug(slug) as Blog | null;
+  const blog = await getBlogBySlug(slug);
 
   const baseUrl = "https://www.furnishings.com.my";
-  const canonicalUrl = `${baseUrl}/blog/${slug}`;
-
-  const defaultTitle = "Flooring & Home Décor Blog Malaysia | Vinyl, SPC & Interior Ideas | Furnishing";
-  const defaultDescription = "Read flooring and home décor tips for Malaysian homes and offices on the Furnishing blog.";
 
   if (!blog) {
     return {
-      title: defaultTitle,
-      description: defaultDescription,
-      alternates: { canonical: canonicalUrl },
+      title: "Blog Post Not Found",
+      description: "The requested blog post could not be found.",
     };
   }
 
+
   return {
-    title: blog.meta_title || defaultTitle,
-    description:blog.meta_description || defaultDescription,
-    alternates: { canonical: canonicalUrl },
+    title: blog.meta_title || blog.title,
+    description: blog.meta_description || blog.excerpt || "",
+    alternates: {
+        canonical: `https://www.furnishings.com.my/blog/${blog.slug}`,
+    },
     openGraph: {
-      title: blog.meta_title,
-      description: blog.meta_description || defaultDescription,
-      images: blog.featuredImage ? [`${baseUrl}${blog.featuredImage}`] : [],
+      title: blog.meta_title || blog.title,
+      description: blog.meta_description || blog.excerpt || "",
+      images: blog.featuredImage ? [`${baseUrl}/storage/${blog.featuredImage}`] : [],
+      type: 'article',
     },
   };
 }
 
-export default function SingleBlogPage() {
-  return <SingleBlogContent />;
+export default async function BlogPostPage({ params }: Props) {
+  const { slug } = await params;
+  const blog = await getBlogBySlug(slug);
+  
+  if (!blog) {
+    notFound();
+  }
+  return <SingleBlogContent blog={blog} />;
 }
+
 export const revalidate = 1800;
