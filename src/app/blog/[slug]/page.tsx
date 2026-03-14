@@ -31,8 +31,6 @@ export async function generateMetadata(
       alternates: { canonical: canonicalUrl },
     };
   }
-
-  // Blog doesn't have meta_title/meta_description, use blog fields directly
   const title = blog.title || defaultTitle;
   const description = blog.excerpt || blog.content?.substring(0, 160) || defaultDescription;
 
@@ -43,7 +41,7 @@ export async function generateMetadata(
     openGraph: {
       title: blog.title,
       description: blog.excerpt || blog.content?.substring(0, 160),
-      images: blog.featured_image ? [`${baseUrl}${blog.featured_image}`] : [],
+      images: blog.featuredImage ? [`${baseUrl}${blog.featuredImage}`] : [],
     },
   };
 }
