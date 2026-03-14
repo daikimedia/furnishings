@@ -1,271 +1,159 @@
+// src/app/shop/[...slug]/page.tsx
 import { notFound, redirect } from "next/navigation";
 import { Suspense } from "react";
 import SingleProduct from "@/components/shop/single-product";
 import PageHeader from "@/components/common/header";
 import ProductLoading from "@/components/shop/product-loading";
-
-interface ApiProduct {
-    id: number
-    sku: string
-    name: string
-    slug: string
-    brand: string
-    status: string
-    category: {
-        id: number
-        name: string
-        slug: string
-    } | null
-    images: {
-        main_image: string
-        gallery: string[]
-        thumbnails: string[]
-        alt_texts: string[]
-    }
-    description: {
-        short: string
-        long: string
-    }
-    seo: {
-        meta_title: string
-        meta_description: string
-        keywords: string[]
-    }
-    purchase_price: number | null
-    retail_price: number | null
-    quantity: number
-    features?: {
-        main_features?: string[]
-        benefits?: string[]
-        design_compatibility?: string[]
-    }
-    specifications?: object
-    installation?: object
-    maintenance?: object
-    faqs?: Array<{
-        question: string
-        answer: string
-    }>
-    cta?: {
-        primary: string
-        secondary: string
-        tertiary: string
-    }
-    additional_description?: {
-        headline: string
-        sections: object[]
-    } | null
-    created_at: string
-    updated_at: string
-}
-
-interface ProductsApiResponse {
-    success: boolean
-    data: ApiProduct[]
-}
-
-const fetchAllProducts = async (): Promise<ApiProduct[]> => {
-    try {
-        const response = await fetch('https://cms.furnishings.daikimedia.com/api/products', {
-            next: { 
-                revalidate: 300,
-                tags: ['products']
-            }
-        });
-        
-        if (!response.ok) {
-            return [];
-        }
-        
-        const result: ProductsApiResponse = await response.json();
-        return result.success && result.data ? result.data : [];
-    } catch {
-        return [];
-    }
-};
-
-async function fetchProductBySlug(slug: string): Promise<ApiProduct | null> {
-    try {
-        const products = await fetchAllProducts();
-        // Case-insensitive slug comparison
-        const normalizedSlug = slug.toLowerCase().trim();
-        const product = products.find(p => p.slug.toLowerCase().trim() === normalizedSlug);
-        return product || null;
-    } catch {
-        return null;
-    }
-}
-
-const normalizeUrl = (input: unknown): string => {
-    if (typeof input !== 'string') return '';
-    const trimmed = input.trim();
-    if (!trimmed || trimmed.toLowerCase() === 'null' || trimmed.toLowerCase() === 'undefined') {
-        return '';
-    }
-    return trimmed.startsWith('http') ? trimmed : `https://cms.furnishings.daikimedia.com${trimmed}`;
-};
-const prepareProductData = (productData: ApiProduct) => {
-    const fixedImageUrls = {
-        ...productData.images,
-        main_image: normalizeUrl(productData.images.main_image),
-        gallery: Array.isArray(productData.images.gallery)
-            ? productData.images.gallery
-                .map(normalizeUrl)
-                .filter(Boolean)
-            : []
-    };
-
-    return {
-        ...productData,
-        images: fixedImageUrls,
-        category: productData.category || { id: 0, name: 'Uncategorized', slug: 'uncategorized' },
-        additional_description: productData.additional_description ?? {
-            headline: "",
-            sections: [],
-        },
-        features: productData.features ?? {
-            main_features: [],
-            benefits: [],
-            design_compatibility: []
-        },
-        specifications: productData.specifications ?? {},
-        installation: productData.installation ?? {},
-        maintenance: productData.maintenance ?? {},
-        faqs: productData.faqs ?? [],
-        call_to_action: productData.cta ?? {
-            primary: "Contact us for more information",
-            secondary: "Get a quote today",
-            tertiary: "Professional installation available"
-        }
-    };
-};
+import { getProductBySlug } from "@/lib/api";
+import { Product, getFullImageUrl } from "@/lib/interfaces";
 
 type Params = {
-    slug: string[];
+  slug: string[];
 };
 
-export default async function ProductPage({ params }: { params: Promise<Params> }) {
-    const { slug } = await params;
+export default async function ProductPage({
+  params,
+}: {
+  params: Promise<Params>;
+}) {
+  const { slug } = await params;
 
-    if (!Array.isArray(slug) || slug.length === 0) {
-        notFound();
-    }
-
-    if (slug.length === 1) {
-        const productSlug = slug[0];
-        const productData = await fetchProductBySlug(productSlug);
-        
-        if (!productData) {
-            notFound();
-        }
-        
-        const categorySlug = productData.category?.slug || 'uncategorized';
-        redirect(`https://www.furnishings.com.my/shop/${categorySlug}/${productData.slug}`);
-    }
-
-    if (slug.length === 2) {
-        const [category, productSlug] = slug;
-        
-        return (
-            <main>
-                <PageHeader />
-                <Suspense fallback={<ProductLoading />}>
-                    <ProductContent 
-                        category={category} 
-                        productSlug={productSlug} 
-                    />
-                </Suspense>
-            </main>
-        );
-    }
-
+  if (!Array.isArray(slug) || slug.length === 0) {
     notFound();
+  }
+
+  // URL: /shop/product-slug
+  if (slug.length === 1) {
+    const productSlug = slug[0];
+    const productData = await getProductBySlug(productSlug);
+
+    if (!productData) {
+      notFound();
+    }
+
+    const categorySlug = productData.category?.slug || "uncategorized";
+
+    // Redirect to canonical URL with category
+    redirect(`/shop/${categorySlug}/${productData.slug}`);
+  }
+
+  // URL: /shop/category/product
+  if (slug.length === 2) {
+    const [category, productSlug] = slug;
+
+    return (
+      <main>
+        <PageHeader />
+        <Suspense fallback={<ProductLoading />}>
+          <ProductContent category={category} productSlug={productSlug} />
+        </Suspense>
+      </main>
+    );
+  }
+
+  notFound();
 }
 
-async function ProductContent({ category, productSlug }: { category: string, productSlug: string }) {
-    const productData = await fetchProductBySlug(productSlug);
-    
-    if (!productData) {
-        notFound();
-    }
+async function ProductContent({
+  category,
+  productSlug,
+}: {
+  category: string;
+  productSlug: string;
+}) {
+  const productData = await getProductBySlug(productSlug);
 
-    const canonicalCategory = productData.category?.slug || 'uncategorized';
-    
-    if (category.toLowerCase().trim() !== canonicalCategory.toLowerCase().trim()) {
-        redirect(`https://www.furnishings.com.my/shop/${canonicalCategory}/${productData.slug}`);
-    }
+  if (!productData) {
+    notFound();
+  }
 
-    const productWithDefaults = prepareProductData(productData);
+  const canonicalCategory = productData.category?.slug || "uncategorized";
 
-    return <SingleProduct productData={productWithDefaults as any} />;
+  // Redirect if category in URL doesn't match product's category
+  if (category.toLowerCase().trim() !== canonicalCategory.toLowerCase().trim()) {
+    redirect(`/shop/${canonicalCategory}/${productData.slug}`);
+  }
+
+  // Prepare product data with proper image URLs
+  const productWithFullUrls = {
+    ...productData,
+    images: {
+      ...productData.images,
+      main_image: getFullImageUrl(productData.images.main_image),
+      gallery: (productData.images.gallery || []).map(getFullImageUrl),
+      thumbnails: productData.images.thumbnails 
+        ? (Array.isArray(productData.images.thumbnails) 
+            ? productData.images.thumbnails.map(getFullImageUrl)
+            : [])
+        : [],
+    },
+  };
+
+  return <SingleProduct productData={productWithFullUrls} />;
 }
 
 export const revalidate = 300;
 
-export async function generateMetadata({ params }: { params: Promise<Params> }) {
-    const { slug } = await params;
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<Params>;
+}) {
+  const { slug } = await params;
 
-    if (!Array.isArray(slug) || slug.length === 0) {
-        return {
-            title: "Product Not Found",
-            description: "The product you are looking for does not exist.",
-        };
-    }
-
-    const productSlug = slug.length === 1 ? slug[0] : slug[1];
-    const productData = await fetchProductBySlug(productSlug);
-    
-    if (!productData) {
-        return {
-            title: "Product Not Found",
-            description: "The product you are looking for does not exist.",
-        };
-    }
-
-    const imageUrl = normalizeUrl(productData.images.main_image) || '/placeholder.svg';
-    const categorySlug = productData.category?.slug || 'uncategorized';
-    const canonicalUrl = `https://www.furnishings.com.my/shop/${categorySlug}/${productData.slug}`;
-
-    const defaultMetaTitle = "Premium Flooring & Furnishings | Furnishings Malaysia";
-    const defaultMetaDescription = "Discover premium quality flooring and furnishing products at Furnishings Malaysia.";
-
-    const formatMetaTitle = (apiTitle: string | undefined): string => {
-        if (!apiTitle) {
-            return defaultMetaTitle;
-        }
-
-        let cleanTitle = apiTitle.trim();
-        cleanTitle = cleanTitle.replace(/^buy\s+/i, '');
-        cleanTitle = cleanTitle.replace(/\s*\|\s*Furnishings.*$/i, '').trim();
-        cleanTitle = cleanTitle.replace(/[–|\-|]\s*$/, '').trim();
-        
-        return `Buy ${cleanTitle} Vinyl Sheet Flooring | Furnishings`;
-    };
-
-    const apiMetaTitle = productData.seo?.meta_title?.trim();
-    
-    const metaTitle = apiMetaTitle 
-        ? formatMetaTitle(apiMetaTitle)
-        : (productData.name?.trim() || defaultMetaTitle);
-
-    const metaDescription = productData.seo?.meta_description?.trim() || 
-                           productData.description?.short?.trim() || 
-                           defaultMetaDescription;
-
-    const ogTitle = productData.name?.trim() || metaTitle;
-    const ogDescription = productData.description?.short?.trim() || metaDescription;
-
+  if (!Array.isArray(slug) || slug.length === 0) {
     return {
-        title: metaTitle,
-        description: metaDescription,
-        keywords: productData.seo?.keywords || [],
-        alternates: {
-            canonical: canonicalUrl,
-        },
-        openGraph: {
-            title: ogTitle,
-            description: ogDescription,
-            images: [imageUrl],
-        },
+      title: "Product Not Found",
+      description: "The product you are looking for does not exist.",
     };
+  }
+
+  const productSlug = slug.length === 1 ? slug[0] : slug[1];
+  const productData = await getProductBySlug(productSlug);
+
+  if (!productData) {
+    return {
+      title: "Product Not Found",
+      description: "The product you are looking for does not exist.",
+    };
+  }
+
+  const imageUrl = getFullImageUrl(productData.images.main_image) || "/placeholder.svg";
+  const categorySlug = productData.category?.slug || "uncategorized";
+  const canonicalUrl = `/shop/${categorySlug}/${productData.slug}`;
+
+  // Format meta title
+  const formatMetaTitle = (apiTitle: string | undefined): string => {
+    if (!apiTitle) return productData.name;
+    
+    let cleanTitle = apiTitle.trim();
+    cleanTitle = cleanTitle.replace(/^buy\s+/i, "");
+    cleanTitle = cleanTitle.replace(/\s*\|\s*Furnishings.*$/i, "").trim();
+    cleanTitle = cleanTitle.replace(/[–|\-|]\s*$/, "").trim();
+    
+    return `Buy ${cleanTitle} | Furnishings Malaysia`;
+  };
+
+  const metaTitle = productData.seo?.meta_title 
+    ? formatMetaTitle(productData.seo.meta_title)
+    : `Buy ${productData.name} | Furnishings Malaysia`;
+
+  const metaDescription = 
+    productData.seo?.meta_description ||
+    productData.description?.short ||
+    `Shop ${productData.name} online at Furnishings Malaysia. Premium quality flooring solution for your home or office.`;
+
+  return {
+    title: metaTitle,
+    description: metaDescription,
+    keywords: productData.seo?.keywords || [],
+    alternates: {
+      canonical: canonicalUrl,
+    },
+    openGraph: {
+      title: productData.name,
+      description: productData.description?.short || metaDescription,
+      images: [imageUrl],
+    },
+  };
 }

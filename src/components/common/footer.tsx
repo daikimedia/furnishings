@@ -2,6 +2,7 @@
 import Link from "next/link";
 import { useState, useEffect } from "react";
 import { Facebook, Twitter, Linkedin, Youtube, ArrowUp } from "lucide-react";
+import { getCategories } from '@/lib/api';
 
 interface Category {
     id: number;
@@ -15,16 +16,12 @@ export default function Footer() {
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
+        setLoading(true);
         const fetchCategories = async () => {
             try {
-                setLoading(true);
-                // Use API route instead of direct CMS URL
-                const response = await fetch('/api/categories');
-                const result = await response.json();
-
-                if (result.success) {
-                    setCategories(result.data);
-                }
+                const data = await getCategories();
+                setCategories(data);
+                
             } catch (error) {
                 console.error('Error fetching categories for footer:', error);
             } finally {

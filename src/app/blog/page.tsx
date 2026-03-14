@@ -11,29 +11,31 @@ export const metadata: Metadata = {
         canonical: "https://www.furnishings.com.my/blog",
     },
 };
+
 interface BlogPageProps {
-    searchParams?: Promise<{
-        page?: string;
-    }>;
+  searchParams?: {
+    page?: string;
+  };
 }
 
-export default async function BlogPage({ searchParams }: BlogPageProps) {
-    const params = await searchParams;
-    const currentPage = Number(params?.page) || 1;
-    
-    return (
-        <main>
-            <PageHeader title="Flooring & Home Décor Blog in Malaysia" />
-            
-            <Suspense fallback={<ProductsLoading />}>
-                <BlogList 
-                    showPagination={true} 
-                    itemsPerPage={9}
-                    currentPage={currentPage}
-                />
-            </Suspense>
-        </main>
-    );
+export default function BlogPage({ searchParams }: BlogPageProps) {
+
+  const currentPage = Number(searchParams?.page) || 1;
+
+  return (
+    <main>
+      <PageHeader title="Flooring & Home Décor Blog in Malaysia" />
+
+      <Suspense fallback={<ProductsLoading />}>
+        <BlogList
+          showPagination={true}
+          itemsPerPage={9}
+          currentPage={currentPage}
+        />
+      </Suspense>
+
+    </main>
+  );
 }
 
 export const revalidate = 300;

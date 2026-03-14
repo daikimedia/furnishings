@@ -2,13 +2,8 @@
 
 import { usePathname } from 'next/navigation';
 import { useEffect, useState } from 'react';
-
-interface Product {
-    id: number;
-    sku: string;
-    name: string;
-    slug: string;
-}
+import { getProducts } from '@/lib/api';
+import { Product } from '@/lib/interfaces'; // Import from interfaces
 
 interface BreadcrumbItem {
     name: string;
@@ -18,25 +13,26 @@ interface BreadcrumbItem {
 const DynamicBreadcrumbSchema = () => {
     const pathname = usePathname();
     const [productMap, setProductMap] = useState<Map<string, string>>(new Map());
+    const [isLoaded, setIsLoaded] = useState(false);
 
-    // Fetch products once and create a map for quick lookup
+    // Fetch products using centralized API
     useEffect(() => {
         const fetchProducts = async () => {
             try {
-                // Use the API route instead of direct CMS URL
-                const response = await fetch('/api/products?limit=1000');
-                const result = await response.json();
-
-                if (result.success && result.data) {
+                const products = await getProducts();
+                
+                if (products && products.length > 0) {
                     const map = new Map<string, string>();
-                    result.data.forEach((product: Product) => {
+                    products.forEach((product: Product) => {
                         map.set(product.slug, product.name);
                         map.set(product.sku, product.name);
                     });
                     setProductMap(map);
                 }
+                setIsLoaded(true);
             } catch (error) {
                 console.error('Error fetching products for breadcrumb:', error);
+                setIsLoaded(true);
             }
         };
 
@@ -44,13 +40,13 @@ const DynamicBreadcrumbSchema = () => {
     }, []);
 
     useEffect(() => {
-        // Remove existing breadcrumb schema if any
+        if (!isLoaded) return;
+
         const existingSchema = document.querySelector('script[data-breadcrumb-schema]');
         if (existingSchema) {
             existingSchema.remove();
         }
 
-        // Generate breadcrumbs from current pathname
         const generateBreadcrumbs = (path: string): BreadcrumbItem[] => {
             const segments = path.split('/').filter(segment => segment !== '');
             const breadcrumbs: BreadcrumbItem[] = [
@@ -60,15 +56,12 @@ const DynamicBreadcrumbSchema = () => {
             let currentPath = '';
             segments.forEach((segment) => {
                 currentPath += `/${segment}`;
-
-                // Try to find product name from map
                 const productName = productMap.get(segment);
                 
                 let name: string;
                 if (productName) {
                     name = productName;
                 } else {
-                    // Convert URL segment to readable name
                     name = segment
                         .split('-')
                         .map(word => word.charAt(0).toUpperCase() + word.slice(1))
@@ -86,7 +79,6 @@ const DynamicBreadcrumbSchema = () => {
 
         const breadcrumbs = generateBreadcrumbs(pathname);
 
-        // Create schema object
         const schema = {
             "@context": "https://schema.org",
             "@type": "BreadcrumbList",
@@ -98,21 +90,19 @@ const DynamicBreadcrumbSchema = () => {
             }))
         };
 
-        // Create and inject script tag
         const script = document.createElement('script');
         script.type = 'application/ld+json';
         script.setAttribute('data-breadcrumb-schema', 'true');
         script.innerHTML = JSON.stringify(schema);
         document.head.appendChild(script);
 
-        // Cleanup function
         return () => {
             const schemaScript = document.querySelector('script[data-breadcrumb-schema]');
             if (schemaScript) {
                 schemaScript.remove();
             }
         };
-    }, [pathname, productMap]);
+    }, [pathname, productMap, isLoaded]);
 
     return null;
 };

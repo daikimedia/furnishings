@@ -1,4 +1,6 @@
 import { MetadataRoute } from 'next';
+import { getCategories, getProducts, getBlogs } from '@/lib/api';
+import { Category, Product, Blog, BlogResponse } from '@/lib/interfaces';
 
 // Force dynamic generation
 export const dynamic = "force-dynamic";
@@ -15,113 +17,39 @@ const staticPages = [
     { url: '/terms-and-conditions', priority: 0.5 },
 ];
 
-interface Category {
-    id: string;
-    name: string;
-    slug: string;
-    updatedAt: string;
-}
-
-interface Product {
-    id: string;
-    name: string;
-    slug: string;
-    updatedAt: string;
-    category?: {
-        slug: string;
-    };
-}
-
-interface Blog {
-    id: number;
-    slug: string;
-    title: string;
-    updatedAt?: string;
-    createdAt?: string;
-}
-
-
-
 function cleanUrl(url: string): string {
     return url.replace(/[&]/g, 'and').replace(/\s+/g, '-').toLowerCase();
 }
 
-async function getCategories(): Promise<Category[]> {
-    try {
-        const response = await fetch('https://cms.furnishings.daikimedia.com/api/categories', {
-            cache: "no-store",
-            headers: {
-                'Cache-Control': 'no-cache',
-            },
-        });
-
-        if (!response.ok) {
-            console.warn(`Categories API failed: ${response.status}`);
-            return [];
-        }
-
-        const data = await response.json();
-        return Array.isArray(data.data) ? data.data : [];
-    } catch (error) {
-        console.error('Error fetching categories:', error);
-        return [];
-    }
-}
-
-async function getProducts(): Promise<Product[]> {
-    try {
-        const response = await fetch('https://cms.furnishings.daikimedia.com/api/products', {
-            cache: "no-store",
-            headers: {
-                'Cache-Control': 'no-cache',
-            },
-        });
-
-        if (!response.ok) {
-            console.warn(`Products API failed: ${response.status}`);
-            return [];
-        }
-
-        const data = await response.json();
-        return Array.isArray(data.data) ? data.data : [];
-    } catch (error) {
-        console.error('Error fetching products:', error);
-        return [];
-    }
-}
-
-async function getBlogs(): Promise<Blog[]> {
-    try {
-        const response = await fetch('https://cms.furnishings.daikimedia.com/api/blogs/all-blogs', {
-            cache: "no-store",
-            headers: {
-                'Cache-Control': 'no-cache',
-            },
-        });
-
-        if (!response.ok) {
-            console.warn(`Blogs API failed: ${response.status}`);
-            return [];
-        }
-
-        const data = await response.json();
-        return Array.isArray(data) ? data : (Array.isArray(data.data) ? data.data : []);
-    } catch (error) {
-        console.error('Error fetching blogs:', error);
-        return [];
-    }
+function getLastModified(item: any): string {
+    const currentDate = new Date().toISOString();
+    return item.updatedAt || item.updated_at || item.createdAt || item.created_at || currentDate;
 }
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     try {
-        const [categories, products, blogs] = await Promise.all([
+        // Use centralized API functions
+        const [categoriesData, productsData, blogsData] = await Promise.all([
             getCategories(),
             getProducts(),
             getBlogs(),
         ]);
 
+        // Ensure we're working with arrays
+        const categories = Array.isArray(categoriesData) ? categoriesData as Category[] : [];
+        const products = Array.isArray(productsData) ? productsData as Product[] : [];
+        
+        // Handle blogs data which might have different structure
+        let blogs: Blog[] = [];
+        if (Array.isArray(blogsData)) {
+            blogs = blogsData as Blog[];
+        } else if (blogsData && typeof blogsData === 'object' && 'data' in blogsData && Array.isArray((blogsData as BlogResponse).data)) {
+            blogs = (blogsData as BlogResponse).data;
+        }
+
         const currentDate = new Date().toISOString();
 
+        // Static pages
         const staticUrls = staticPages.map((page) => ({
             url: `${baseUrl}${cleanUrl(page.url)}`,
             lastModified: currentDate,
@@ -129,49 +57,54 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
             priority: page.priority,
         }));
 
+        // Category URLs
         const categoryUrls = categories
-            .filter(category => category.slug)
+            .filter((category): category is Category => !!category?.slug)
             .map((category) => ({
                 url: `${baseUrl}/category/${cleanUrl(category.slug)}`,
-                lastModified: category.updatedAt || currentDate,
+                lastModified: getLastModified(category),
                 changeFrequency: 'weekly' as const,
                 priority: 0.8,
             }));
 
+        // Product URLs
         const productUrls = products
-            .filter(product => product.slug)
+            .filter((product): product is Product => !!product?.slug)
             .map((product) => {
                 const categorySlug = product.category?.slug ? cleanUrl(product.category.slug) : 'products';
                 const productSlug = cleanUrl(product.slug);
 
                 return {
                     url: `${baseUrl}/shop/${categorySlug}/${productSlug}`,
-                    lastModified: product.updatedAt || currentDate,
+                    lastModified: getLastModified(product),
                     changeFrequency: 'daily' as const,
                     priority: 0.7,
                 };
             });
 
+        // Blog URLs
         const blogUrls = blogs
-            .filter(blog => blog.slug)
+            .filter((blog): blog is Blog => !!blog?.slug)
             .map((blog) => ({
                 url: `${baseUrl}/blog/${cleanUrl(blog.slug)}`,
-                lastModified: blog.updatedAt || blog.createdAt || currentDate,
+                lastModified: getLastModified(blog),
                 changeFrequency: 'weekly' as const,
                 priority: 0.6,
             }));
 
         const finalSitemap = [...staticUrls, ...categoryUrls, ...productUrls, ...blogUrls];
 
-        // console.log(`Sitemap generated with ${finalSitemap.length} URLs`);
-        // console.log(`Static: ${staticUrls.length}, Categories: ${categoryUrls.length}, Products: ${productUrls.length}, Blogs: ${blogUrls.length}`);
-
-        // console.log('Sample URLs:', finalSitemap.slice(0, 3).map(item => item.url));
+        // Log for debugging (optional - remove in production)
+        if (process.env.NODE_ENV === 'development') {
+            console.log(`Sitemap generated with ${finalSitemap.length} URLs`);
+            console.log(`Static: ${staticUrls.length}, Categories: ${categoryUrls.length}, Products: ${productUrls.length}, Blogs: ${blogUrls.length}`);
+        }
 
         return finalSitemap;
     } catch (error) {
         console.error('Sitemap generation failed:', error);
 
+        // Fallback to static pages only
         const currentDate = new Date().toISOString();
         return staticPages.map((page) => ({
             url: `${baseUrl}${cleanUrl(page.url)}`,

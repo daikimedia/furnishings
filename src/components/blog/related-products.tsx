@@ -2,40 +2,13 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
-
-interface ApiProduct {
-    id: number;
-    sku: string;
-    name: string;
-    slug: string;
-    brand: string;
-    status: string;
-    category: {
-        id: number;
-        name: string;
-        slug: string;
-    } | null;
-    images: {
-        main_image: string;
-        gallery: string[];
-        thumbnails: string[];
-        alt_texts: string[];
-    };
-    description: {
-        short: string;
-        long: string;
-    };
-    purchase_price: number | null;
-    retail_price: number | null;
-    quantity: number;
-}
-
-interface ProductsApiResponse {
-    success: boolean;
-    data: ApiProduct[];
-}
+import Image from "next/image";
+import { getProducts } from "@/lib/api";
+import { Product, getFullImageUrl } from "@/lib/interfaces";
 
 function shuffleArray<T>(array: T[]): T[] {
+    if (!Array.isArray(array)) return [];
+    
     const shuffled = [...array];
     for (let i = shuffled.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
@@ -45,27 +18,25 @@ function shuffleArray<T>(array: T[]): T[] {
 }
 
 export default function RelatedProducts() {
-    const [products, setProducts] = useState<ApiProduct[]>([]);
+    const [products, setProducts] = useState<Product[]>([]);
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
         const fetchProducts = async () => {
             try {
                 setLoading(true);
-                const response = await fetch('https://cms.furnishings.daikimedia.com/api/products');
+                
+                const productsData = await getProducts();
 
-                if (!response.ok) {
-                    throw new Error("Failed to fetch products");
-                }
-
-                const result: ProductsApiResponse = await response.json();
-
-                if (result.success && result.data) {
-                    const shuffledProducts = shuffleArray(result.data);
+                if (Array.isArray(productsData) && productsData.length > 0) {
+                    const shuffledProducts = shuffleArray(productsData);
                     setProducts(shuffledProducts.slice(0, 4));
+                } else {
+                    setProducts([]);
                 }
             } catch (error) {
                 console.error('Error fetching products:', error);
+                setProducts([]);
             } finally {
                 setLoading(false);
             }
@@ -77,7 +48,7 @@ export default function RelatedProducts() {
     if (loading) {
         return (
             <div className="py-12">
-                <div className="container mx-auto">
+                <div className="container mx-auto px-6">
                     <h2 className="text-3xl font-bold mb-8 text-center">Products</h2>
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                         {[...Array(4)].map((_, i) => (
@@ -100,14 +71,10 @@ export default function RelatedProducts() {
     return (
         <div className="py-12 px-6 bg-gray-50">
             <div className="container mx-auto">
-                <h2 className="text-3xl font-bold mb-8 text-center">Products</h2>
+                <h2 className="text-3xl font-bold mb-8 text-center">Related Products</h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                     {products.map((product) => {
-                        let imageUrl = product.images.main_image || '';
-                        if (imageUrl && !imageUrl.startsWith('http')) {
-                            imageUrl = `https://cms.furnishings.daikimedia.com${imageUrl}`;
-                        }
-
+                        const imageUrl = getFullImageUrl(product.images.main_image);
                         const categorySlug = product.category?.slug || 'uncategorized';
 
                         return (
@@ -118,10 +85,12 @@ export default function RelatedProducts() {
                             >
                                 <div className="relative h-56 overflow-hidden bg-orange-100">
                                     {imageUrl ? (
-                                        <img
+                                        <Image
                                             src={imageUrl}
                                             alt={product.name}
-                                            className="w-full h-full object-cover p-4 group-hover:scale-105 transition-transform duration-300"
+                                            fill
+                                            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
+                                            className="object-cover p-4 group-hover:scale-105 transition-transform duration-300"
                                         />
                                     ) : (
                                         <div className="w-full h-full flex items-center justify-center text-gray-400">
@@ -135,7 +104,7 @@ export default function RelatedProducts() {
                                         {product.name}
                                     </h3>
                                     <p className="text-sm text-gray-600 mb-4 line-clamp-2">
-                                        {product.description.short || product.description.long || "Explore this amazing product."}
+                                        {product.description?.short || product.description?.long || "Explore this premium flooring solution."}
                                     </p>
 
                                     <div className="flex items-center text-orange-500 font-medium">

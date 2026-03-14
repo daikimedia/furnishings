@@ -1,71 +1,25 @@
+// components/category/category-page.tsx
 'use client';
 
-import React, { useState, useEffect, useMemo, useRef } from "react";
+import React, { useState, useEffect, useMemo } from "react";
 import { useParams, useRouter } from "next/navigation";
 import Link from "next/link";
+import Image from "next/image";
 import SquareLoader from "../common/loader";
-
-
-// Add missing interfaces at the top
-interface ApiProduct {
-    id: number;
-    name: string;
-    slug: string;
-    category: {
-        id: number;
-        name: string;
-        slug: string;
-    };
-    images: {
-        main_image: string;
-        gallery: string[];
-        thumbnails: string[];
-        alt_texts: string[];
-    };
-    description: {
-        short: string;
-        long: string;
-    };
-    brand: string;
-    retail_price: number | null;
-    purchase_price: number | null;
-}
-
-interface ApiCategory {
-    id: number;
-    name: string;
-    slug: string;
-    products_count: number;
-}
-
-interface ProductsApiResponse {
-    success: boolean;
-    data: ApiProduct[];
-}
-
-interface CategoriesApiResponse {
-    success: boolean;
-    data: ApiCategory[];
-}
+import { getCategories, getProducts } from "@/lib/api";
+import { Category, Product, getFullImageUrl, getProductDisplayPrice } from "@/lib/interfaces";
 
 interface CategoryPageProps {
     slug?: string;
 }
-
-let productsCache: any[] | null = null;
-let categoriesCache: any[] | null = null;
-let cacheTimestamp = 0;
-const CACHE_DURATION = 5 * 60 * 1000; 
 
 export default function CategoryPage({ slug: propSlug }: CategoryPageProps) {
     const params = useParams();
     const router = useRouter();
     
     const slug = propSlug || (params?.slug as string);
-    const fetchedRef = useRef(false);
-
-    const [categoryProducts, setCategoryProducts] = useState<ApiProduct[]>([]);
-    const [currentCategory, setCurrentCategory] = useState<ApiCategory | null>(null);
+    const [categoryProducts, setCategoryProducts] = useState<Product[]>([]);
+    const [currentCategory, setCurrentCategory] = useState<Category | null>(null);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState<string | null>(null);
     const [filterLoading, setFilterLoading] = useState(false);
@@ -77,7 +31,6 @@ export default function CategoryPage({ slug: propSlug }: CategoryPageProps) {
     const productsPerPage = 12;
 
     const categoryName = currentCategory?.name;
-
 
     const scrollToTop = () => {
         window.scrollTo({
@@ -101,7 +54,7 @@ export default function CategoryPage({ slug: propSlug }: CategoryPageProps) {
         // Filter by price range
         if (selectedPriceRanges.length > 0) {
             filtered = filtered.filter(product => {
-                const price = product.retail_price || product.purchase_price || 0;
+                const price = getProductDisplayPrice(product);
                 return selectedPriceRanges.some(range => {
                     switch (range) {
                         case 'Under RM50':
@@ -146,8 +99,77 @@ export default function CategoryPage({ slug: propSlug }: CategoryPageProps) {
         scrollToTop();
     }, [currentPage]);
 
+    useEffect(() => {
+        const fetchCategoryData = async () => {
+            if (!slug || typeof slug !== 'string') {
+                return;
+            }
+
+            try {
+                setLoading(true);
+                setError(null);
+
+                // Fetch categories and products using centralized API
+                const [categoriesData, productsData] = await Promise.all([
+                    getCategories(),
+                    getProducts()
+                ]);
+
+                // Find current category
+                const normalizedSlug = slug.toLowerCase().trim();
+                const category = categoriesData?.find((cat: Category) => 
+                    cat.slug.toLowerCase().trim() === normalizedSlug
+                );
+
+                if (!category) {
+                    setError('Category not found');
+                    setLoading(false);
+                    return;
+                }
+
+                setCurrentCategory(category);
+
+                // Filter products for this category
+                const categoryProductsList = productsData?.filter(
+                    (p: Product) => p.category?.slug.toLowerCase().trim() === normalizedSlug
+                ) || [];
+
+                setCategoryProducts(categoryProductsList);
+
+            } catch (error) {
+                console.error('Error fetching category data:', error);
+                setError('Failed to load category data. Please try again.');
+            } finally {
+                setLoading(false);
+            }
+        };
+
+        fetchCategoryData();
+    }, [slug]);
+
     const handlePageChange = (newPage: number) => {
         setCurrentPage(newPage);
+    };
+
+    const clearAllFilters = () => {
+        setSelectedBrands([]);
+        setSelectedPriceRanges([]);
+    };
+
+    const handleBrandFilter = (brand: string) => {
+        setSelectedBrands(prev =>
+            prev.includes(brand)
+                ? prev.filter(b => b !== brand)
+                : [...prev, brand]
+        );
+    };
+
+    const handlePriceRangeFilter = (range: string) => {
+        setSelectedPriceRanges(prev =>
+            prev.includes(range)
+                ? prev.filter(r => r !== range)
+                : [...prev, range]
+        );
     };
 
     const PaginationControls = () => {
@@ -239,90 +261,6 @@ export default function CategoryPage({ slug: propSlug }: CategoryPageProps) {
         );
     };
 
-    useEffect(() => {
-        if (fetchedRef.current) return;
-        fetchedRef.current = true;
-
-        const fetchCategoryData = async () => {
-            if (!slug || typeof slug !== 'string') {
-                return;
-            }
-
-            try {
-                setLoading(true);
-                setError(null);
-
-                const now = Date.now();
-                
-                // Fetch categories if cache is expired
-                if (!categoriesCache || now - cacheTimestamp > CACHE_DURATION) {
-                    const categoriesResponse = await fetch('/api/categories');
-                    const categoriesData = await categoriesResponse.json();
-                    categoriesCache = categoriesData.data || [];
-                }
-
-                // Fetch products if cache is expired
-                if (!productsCache || now - cacheTimestamp > CACHE_DURATION) {
-                    const productsResponse = await fetch('/api/products?limit=1000');
-                    const productsData = await productsResponse.json();
-                    productsCache = productsData.products || [];
-                    cacheTimestamp = now;
-                }
-
-                // Find current category
-                const normalizedSlug = slug.toLowerCase().trim();
-                const category = categoriesCache?.find((cat: any) => 
-                    cat.slug.toLowerCase().trim() === normalizedSlug
-                );
-
-                if (!category) {
-                    setError('Category not found');
-                    setLoading(false);
-                    return;
-                }
-
-                setCurrentCategory(category);
-
-                // Filter products for this category
-                const categoryProductsList = productsCache?.filter(
-                    (p: any) => p.category?.slug.toLowerCase().trim() === normalizedSlug
-                ) || [];
-
-                setCategoryProducts(categoryProductsList);
-
-            } catch (error) {
-                console.error('Error fetching category data:', error);
-                setError('Failed to load category data. Please try again.');
-            } finally {
-                setLoading(false);
-            }
-        };
-
-        fetchCategoryData();
-    }, [slug]);
-
-
-    const clearAllFilters = () => {
-        setSelectedBrands([]);
-        setSelectedPriceRanges([]);
-    };
-
-    const handleBrandFilter = (brand: string) => {
-        setSelectedBrands(prev =>
-            prev.includes(brand)
-                ? prev.filter(b => b !== brand)
-                : [...prev, brand]
-        );
-    };
-
-    const handlePriceRangeFilter = (range: string) => {
-        setSelectedPriceRanges(prev =>
-            prev.includes(range)
-                ? prev.filter(r => r !== range)
-                : [...prev, range]
-        );
-    };
-
     if (loading) {
         return (
             <div className="min-h-screen flex items-center justify-center">
@@ -397,10 +335,13 @@ export default function CategoryPage({ slug: propSlug }: CategoryPageProps) {
             {/* Main Content */}
             <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-8">
                 <div className="flex flex-col lg:flex-row gap-8">
+                    {/* Filters Sidebar */}
                     {uniqueBrands.length > 0 && (
                         <div className="lg:w-1/4">
                             <div className="bg-white rounded-lg shadow-sm p-6 sticky top-24">
                                 <h2 className="text-xl font-bold text-gray-800 mb-6">Filters</h2>
+                                
+                                {/* Brand Filter */}
                                 <div className="mb-6">
                                     <h3 className="text-lg font-semibold text-gray-700 mb-4">Brands</h3>
                                     <div className="space-y-2 max-h-60 overflow-y-auto">
@@ -419,6 +360,8 @@ export default function CategoryPage({ slug: propSlug }: CategoryPageProps) {
                                         ))}
                                     </div>
                                 </div>
+
+                                {/* Price Range Filter */}
                                 <div className="mb-6">
                                     <h3 className="text-lg font-semibold text-gray-700 mb-4">Price Range</h3>
                                     <div className="space-y-2">
@@ -438,6 +381,7 @@ export default function CategoryPage({ slug: propSlug }: CategoryPageProps) {
                                     </div>
                                 </div>
 
+                                {/* Clear Filters Button */}
                                 <button
                                     onClick={clearAllFilters}
                                     disabled={selectedBrands.length === 0 && selectedPriceRanges.length === 0}
@@ -449,7 +393,9 @@ export default function CategoryPage({ slug: propSlug }: CategoryPageProps) {
                         </div>
                     )}
 
+                    {/* Products Grid */}
                     <div className="lg:w-3/4">
+                        {/* Active Filters Display */}
                         {(selectedBrands.length > 0 || selectedPriceRanges.length > 0) && (
                             <div className="mb-6 bg-white p-4 rounded-lg shadow-sm">
                                 <h4 className="text-sm font-medium text-gray-700 mb-2">Active Filters:</h4>
@@ -486,7 +432,7 @@ export default function CategoryPage({ slug: propSlug }: CategoryPageProps) {
                                 <SquareLoader text="Filtering products..." />
                             </div>
                         ) : filteredProducts.length === 0 ? (
-                            <div className="bg-white rounded-lg shadow-sm p-12 text-center w-[80vw] mx-auto">
+                            <div className="bg-white rounded-lg shadow-sm p-12 text-center">
                                 <h2 className="text-xl font-semibold text-gray-700 mb-4">No Products Found</h2>
                                 <p className="text-gray-600 mb-6">Try adjusting your filters to see more results.</p>
                                 <Link
@@ -500,9 +446,8 @@ export default function CategoryPage({ slug: propSlug }: CategoryPageProps) {
                             <>
                                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                                     {currentProducts.map((product) => {
-                                        const imageUrl = product.images.main_image?.startsWith('http')
-                                            ? product.images.main_image
-                                            : `https://cms.furnishings.daikimedia.com${product.images.main_image}`;
+                                        const imageUrl = getFullImageUrl(product.images.main_image);
+                                        const price = getProductDisplayPrice(product);
 
                                         return (
                                             <Link
@@ -511,10 +456,12 @@ export default function CategoryPage({ slug: propSlug }: CategoryPageProps) {
                                                 className="group bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-lg transition-all duration-300"
                                             >
                                                 <div className="relative h-48 bg-gray-100 overflow-hidden">
-                                                    <img
+                                                    <Image
                                                         src={imageUrl || '/placeholder.svg'}
                                                         alt={product.name}
-                                                        className="w-full h-full object-cover p-4 group-hover:scale-105 transition-transform duration-300"
+                                                        fill
+                                                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                                                        className="object-cover p-4 group-hover:scale-105 transition-transform duration-300"
                                                     />
                                                 </div>
                                                 <div className="p-4">
@@ -526,25 +473,11 @@ export default function CategoryPage({ slug: propSlug }: CategoryPageProps) {
                                                     </p>
                                                     <div className="flex justify-between items-center">
                                                         <span className="text-xs text-gray-500 capitalize">{product.brand}</span>
-                                                        {(() => {
-                                                            const priceValue = product.retail_price || product.purchase_price;
-                                                            if (!priceValue) return null;
-                                                            
-                                                            let numericPrice: number;
-                                                            if (typeof priceValue === 'string') {
-                                                                numericPrice = parseFloat(priceValue);
-                                                            } else {
-                                                                numericPrice = priceValue;
-                                                            }
-                                                            
-                                                            if (isNaN(numericPrice) || numericPrice <= 0) return null;
-                                                            
-                                                            return (
-                                                                <span className="text-sm font-semibold text-orange-600">
-                                                                    RM {numericPrice.toFixed(2)}
-                                                                </span>
-                                                            );
-                                                        })()}
+                                                        {price > 0 && (
+                                                            <span className="text-sm font-semibold text-orange-600">
+                                                                RM {price.toFixed(2)}
+                                                            </span>
+                                                        )}
                                                     </div>
                                                 </div>
                                             </Link>

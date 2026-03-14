@@ -3,13 +3,8 @@
 import { usePathname } from "next/navigation";
 import { useState, useEffect } from "react";
 import Link from "next/link";
-
-interface Product {
-    id: number;
-    sku: string;
-    name: string;
-    slug: string;
-}
+import { getProducts } from "@/lib/api";
+import { Product } from "@/lib/interfaces"; // Import from interfaces
 
 interface PageHeaderProps {
     hide?: boolean;
@@ -21,28 +16,26 @@ export default function PageHeader({ hide = false, title }: PageHeaderProps) {
     const paths = pathname.split("/").filter(Boolean);
     const lastSegment = paths[paths.length - 1];
     const [productMap, setProductMap] = useState<Map<string, string>>(new Map());
-    const [loading, setLoading] = useState(true);
+    const [isLoaded, setIsLoaded] = useState(false);
 
+    // Fetch products using centralized API
     useEffect(() => {
         const fetchProducts = async () => {
             try {
-                setLoading(true);
-                // Use API route
-                const response = await fetch('/api/products?limit=1000');
-                const result = await response.json();
-
-                if (result.success && result.data) {
+                const products = await getProducts();
+                
+                if (Array.isArray(products) && products.length > 0) {
                     const map = new Map<string, string>();
-                    result.data.forEach((product: Product) => {
-                        map.set(product.slug, product.name);
-                        map.set(product.sku, product.name);
+                    products.forEach((product: Product) => {
+                        if (product?.slug) map.set(product.slug, product.name);
+                        if (product?.sku) map.set(product.sku, product.name);
                     });
                     setProductMap(map);
                 }
             } catch (error) {
-                console.error('Error fetching products:', error);
+                console.error('Error fetching products for header:', error);
             } finally {
-                setLoading(false);
+                setIsLoaded(true);
             }
         };
 
@@ -51,37 +44,49 @@ export default function PageHeader({ hide = false, title }: PageHeaderProps) {
 
     // Helper function to convert text to title case
     const toTitleCase = (str: string): string => {
+        if (!str) return '';
         return str
             .split('-')
             .map(word => word.charAt(0).toUpperCase() + word.slice(1))
             .join(' ');
     };
 
-    const productName = productMap.get(lastSegment);
-    
-    let pageTitle = title 
-        ? title
-        : productName
-            ? productName
-            : lastSegment ? toTitleCase(lastSegment) : "Home";
-    
-    if (!title && paths.length === 2 && paths[0] === 'category') {
-        pageTitle = `${pageTitle} in Malaysia`;
-    }
+    // Memoize page title to avoid recalculation on every render
+    const pageTitle = (() => {
+        if (title) return title;
+        
+        const productName = productMap.get(lastSegment);
+        if (productName) return productName;
+        
+        if (lastSegment) {
+            // Special handling for category pages
+            if (paths.length === 2 && paths[0] === 'category') {
+                return `${toTitleCase(lastSegment)} in Malaysia`;
+            }
+            return toTitleCase(lastSegment);
+        }
+        
+        return "Home";
+    })();
 
-    const breadcrumb = paths.map((segment, index) => {
-        const path = "/" + paths.slice(0, index + 1).join("/");
-        const label = productMap.get(segment) || toTitleCase(segment);
+    // Generate breadcrumbs only when needed
+    const renderBreadcrumbs = () => {
+        if (!isLoaded || paths.length === 0) return null;
 
-        return (
-            <span key={index}>
-                <span className="mx-1">/</span>
-                <a href={path} className="hover:underline text-white">
-                    {label}
-                </a>
-            </span>
-        );
-    });
+        return paths.map((segment, index) => {
+            const path = "/" + paths.slice(0, index + 1).join("/");
+            const label = productMap.get(segment) || toTitleCase(segment);
+
+            return (
+                <span key={segment + index}>
+                    <span className="mx-1">/</span>
+                    <Link href={path} className="hover:underline text-white">
+                        {label}
+                    </Link>
+                </span>
+            );
+        });
+    };
 
     if (hide) {
         return null;
@@ -96,7 +101,10 @@ export default function PageHeader({ hide = false, title }: PageHeaderProps) {
                 <Link href="/" className="hover:underline text-white">
                     Home
                 </Link>
-                {!loading && breadcrumb}
+                {renderBreadcrumbs()}
+                {!isLoaded && paths.length > 0 && (
+                    <span className="ml-1 opacity-50">Loading...</span>
+                )}
             </div>
         </div>
     );

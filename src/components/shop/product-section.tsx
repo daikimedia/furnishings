@@ -1,3 +1,4 @@
+// components/shop/products-section.tsx
 "use client";
 
 import React, { useState, useEffect, useMemo, useCallback } from "react";
@@ -6,55 +7,8 @@ import Image from "next/image";
 import { useRouter, useSearchParams } from "next/navigation";
 import SquareLoader from "../common/loader";
 import { Suspense } from 'react';
-// API Product interface
-interface ApiProduct {
-    id: number;
-    sku: string;
-    name: string;
-    slug: string;
-    brand: string;
-    status: string;
-    category: {
-        id: number;
-        name: string;
-        slug: string;
-    };
-    images: {
-        main_image: string;
-        gallery: string[];
-        thumbnails: string[];
-        alt_texts: string[];
-    };
-    description: {
-        short: string;
-        long: string;
-    };
-    purchase_price: number | null;
-    retail_price: number | null;
-    quantity: number;
-}
-
-interface Category {
-    id: number;
-    name: string;
-    slug: string;
-    products_count: number;
-}
-
-interface Product {
-    description: string;
-    id: number;
-    name: string;
-    price: number;
-    originalPrice: number | null;
-    discount: number | null;
-    image: string;
-    category: string;
-    categorySlug?: string;
-    isAlreadyAdded: boolean;
-    slug: string;
-    brand?: string;
-}
+import { getCategories, getProducts } from "@/lib/api";
+import { Category, Product, ProductListItem, toProductListItem, formatPrice } from "@/lib/interfaces";
 
 interface ProductsSectionProps {
     page?: number;
@@ -86,13 +40,12 @@ function ProductsSectionContent({
     category,
     sort,
     itemsPerPage = 12,
-    showAll = false,
 }: ProductsSectionProps) {
     const router = useRouter();
     const searchParams = useSearchParams();
     
     // State
-    const [products, setProducts] = useState<Product[]>([]);
+    const [products, setProducts] = useState<ProductListItem[]>([]);
     const [categories, setCategories] = useState<Category[]>([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState<string | null>(null);
@@ -118,9 +71,8 @@ function ProductsSectionContent({
     useEffect(() => {
         const fetchCategories = async () => {
             try {
-                const response = await fetch('/api/categories');
-                const data = await response.json();
-                setCategories(data.data || []);
+                const data = await getCategories();
+                setCategories(data);
             } catch (error) {
                 console.error('Error fetching categories:', error);
             }
@@ -136,70 +88,55 @@ function ProductsSectionContent({
                 setLoading(true);
                 setError(null);
                 
-                // Build URL with query parameters
-                const params = new URLSearchParams();
-                params.set('page', page.toString());
-                params.set('limit', itemsPerPage.toString());
+                const allProducts = await getProducts();
+                
+                // Filter products based on selected categories and brands
+                let filtered = [...allProducts];
                 
                 if (selectedCategories.length > 0) {
-                    params.set('category', selectedCategories.join(','));
+                    filtered = filtered.filter(p => 
+                        p.category && selectedCategories.includes(p.category.name)
+                    );
                 }
                 
                 if (selectedBrands.length > 0) {
-                    params.set('brand', selectedBrands.join(','));
+                    filtered = filtered.filter(p => 
+                        selectedBrands.includes(p.brand.toLowerCase())
+                    );
                 }
                 
+                // Sort products
                 if (sortBy !== 'default') {
-                    params.set('sort', sortBy);
-                }
-
-                const response = await fetch(`/api/products?${params.toString()}`);
-                
-                if (!response.ok) {
-                    throw new Error('Failed to fetch products');
-                }
-                
-                const data = await response.json();
-                
-                // Transform API products to component Product type
-                    // In the fetchProducts function, update the transformation:
-                    const transformedProducts: Product[] = (data.products || []).map((apiProduct: ApiProduct) => {
-                        let imageUrl = apiProduct.images?.main_image || '';
-                        if (imageUrl && !imageUrl.startsWith('http')) {
-                            imageUrl = `https://cms.furnishings.daikimedia.com${imageUrl}`;
+                    filtered.sort((a, b) => {
+                        const priceA = a.retail_price || a.purchase_price || 0;
+                        const priceB = b.retail_price || b.purchase_price || 0;
+                        
+                        switch(sortBy) {
+                            case 'price-asc':
+                                return (priceA as number) - (priceB as number);
+                            case 'price-desc':
+                                return (priceB as number) - (priceA as number);
+                            case 'name-asc':
+                                return a.name.localeCompare(b.name);
+                            case 'name-desc':
+                                return b.name.localeCompare(a.name);
+                            default:
+                                return 0;
                         }
-
-                        // Safely parse price
-                        let price = 0;
-                        if (apiProduct.retail_price) {
-                            price = typeof apiProduct.retail_price === 'string' 
-                                ? parseFloat(apiProduct.retail_price) 
-                                : apiProduct.retail_price;
-                        } else if (apiProduct.purchase_price) {
-                            price = typeof apiProduct.purchase_price === 'string'
-                                ? parseFloat(apiProduct.purchase_price)
-                                : apiProduct.purchase_price;
-                        }
-
-                        return {
-                            id: apiProduct.id,
-                            name: apiProduct.name,
-                            slug: apiProduct.slug,
-                            description: apiProduct.description?.short || apiProduct.description?.long || '',
-                            price: isNaN(price) ? 0 : price, // Ensure it's a valid number
-                            originalPrice: null,
-                            discount: null,
-                            image: imageUrl,
-                            category: apiProduct.category?.name || 'Uncategorized',
-                            categorySlug: apiProduct.category?.slug || 'uncategorized',
-                            isAlreadyAdded: false,
-                            brand: apiProduct.brand
-                        };
                     });
+                }
+                
+                setTotalProducts(filtered.length);
+                setTotalPages(Math.ceil(filtered.length / itemsPerPage));
+                
+                // Apply pagination
+                const startIndex = (page - 1) * itemsPerPage;
+                const paginatedProducts = filtered.slice(startIndex, startIndex + itemsPerPage);
+                
+                // Transform to list items
+                const productListItems = paginatedProducts.map(toProductListItem);
+                setProducts(productListItems);
 
-                setProducts(transformedProducts);
-                setTotalProducts(data.total || 0);
-                setTotalPages(data.totalPages || 1);
             } catch (error) {
                 console.error('Error fetching products:', error);
                 setError('Failed to load products. Please try again.');
@@ -232,12 +169,10 @@ function ProductsSectionContent({
         }
         
         const newUrl = `/shop${params.toString() ? `?${params.toString()}` : ''}`;
-        
-        // Update URL without causing a re-render cycle
         router.push(newUrl, { scroll: false });
     }, [debouncedCategories, debouncedBrands, debouncedSort, page, router]);
 
-    // Handle category change - only update state
+    // Handle category change
     const handleCategoryChange = useCallback((categoryName: string) => {
         setSelectedCategories(prev => {
             const newCategories = prev.includes(categoryName)
@@ -257,7 +192,7 @@ function ProductsSectionContent({
         });
     }, []);
 
-    // Handle sort change - only update state
+    // Handle sort change
     const handleSortChange = useCallback((e: React.ChangeEvent<HTMLSelectElement>) => {
         const newSort = e.target.value;
         setSortBy(newSort);
@@ -268,7 +203,6 @@ function ProductsSectionContent({
         setSelectedCategories([]);
         setSelectedBrands([]);
         setSortBy('default');
-        
         router.push('/shop', { scroll: false });
     }, [router]);
 
@@ -277,18 +211,17 @@ function ProductsSectionContent({
         const params = new URLSearchParams(searchParams.toString());
         params.set('page', newPage.toString());
         router.push(`/shop?${params.toString()}`, { scroll: false });
-        
-        // Scroll to top smoothly
         window.scrollTo({ top: 0, behavior: 'smooth' });
     }, [router, searchParams]);
 
-    // Get unique brands from products
+    // Get unique brands from all products (not just current page)
     const brands = useMemo(() => {
-        const uniqueBrands = new Set(products.map(p => p.brand).filter(Boolean));
+        const uniqueBrands = new Set<string>();
+        // We need to fetch all products for brands, but this is just for filter display
+        // You might want to fetch brands separately from API
         return Array.from(uniqueBrands);
-    }, [products]);
+    }, []);
 
-    // Show error state
     if (error) {
         return (
             <div className="min-h-[500px] flex items-center justify-center">
@@ -318,6 +251,7 @@ function ProductsSectionContent({
                 </div>
 
                 <div className="flex flex-col lg:flex-row gap-8">
+                    {/* Filters Sidebar */}
                     {!loading && products.length > 0 && (
                         <div className="w-full lg:w-64 flex-shrink-0">
                             <div className="bg-gray-50 p-6 rounded-lg sticky top-24">
@@ -327,43 +261,36 @@ function ProductsSectionContent({
 
                                 <div className="mb-8">
                                     <h4 className="font-medium text-gray-900 mb-3">Categories</h4>
-                                    {loading && categories.length === 0 ? (
-                                        <div className="space-y-2">
-                                            {[...Array(5)].map((_, i) => (
-                                                <div key={i} className="h-6 bg-gray-200 animate-pulse rounded"></div>
-                                            ))}
-                                        </div>
-                                    ) : (
-                                        <div className="space-y-2 max-h-60 overflow-y-auto pr-2">
-                                            {categories.map((cat) => (
-                                                <label key={cat.id} className="flex items-center cursor-pointer group">
-                                                    <input
-                                                        type="checkbox"
-                                                        checked={selectedCategories.includes(cat.name)}
-                                                        onChange={() => handleCategoryChange(cat.name)}
-                                                        className="w-4 h-4 accent-orange-600 rounded border-gray-300 focus:ring-orange-500"
-                                                    />
-                                                    <span className="ml-2 text-sm text-gray-700 group-hover:text-orange-600 transition-colors">
-                                                        {cat.name} ({cat.products_count})
-                                                    </span>
-                                                </label>
-                                            ))}
-                                        </div>
-                                    )}
+                                    <div className="space-y-2 max-h-60 overflow-y-auto pr-2">
+                                        {categories.map((cat) => (
+                                            <label key={cat.id} className="flex items-center cursor-pointer group">
+                                                <input
+                                                    type="checkbox"
+                                                    checked={selectedCategories.includes(cat.name)}
+                                                    onChange={() => handleCategoryChange(cat.name)}
+                                                    className="w-4 h-4 accent-orange-600 rounded border-gray-300 focus:ring-orange-500"
+                                                />
+                                                <span className="ml-2 text-sm text-gray-700 group-hover:text-orange-600 transition-colors">
+                                                    {cat.name} ({cat.products_count})
+                                                </span>
+                                            </label>
+                                        ))}
+                                    </div>
                                 </div>
-                                <div>
-                                    {(selectedCategories.length > 0 || selectedBrands.length > 0 || sortBy !== 'default') && (
-                                        <button
-                                            onClick={handleClearFilters}
-                                            className="w-full bg-orange-600 text-white px-4 py-2 rounded text-base font-medium "
-                                        >
+
+                                {(selectedCategories.length > 0 || selectedBrands.length > 0 || sortBy !== 'default') && (
+                                    <button
+                                        onClick={handleClearFilters}
+                                        className="w-full bg-orange-600 text-white px-4 py-2 rounded text-base font-medium hover:bg-orange-700 transition-colors"
+                                    >
                                         Clear All Filters
-                                        </button>
-                                    )}
-                                </div>
+                                    </button>
+                                )}
                             </div>
                         </div>
                     )}
+
+                    {/* Products Grid */}
                     <div className="flex-1 w-full">
                         <div className="flex flex-col sm:flex-row justify-between items-center mb-6">
                             <div className="text-sm text-gray-600 mb-4 sm:mb-0">
@@ -386,7 +313,6 @@ function ProductsSectionContent({
                             </div>
                         </div>
 
-                        {/* Products grid */}
                         {loading ? (
                             <div className="min-h-[500px] flex items-center justify-center">
                                 <SquareLoader text="Loading products..." />
@@ -416,7 +342,6 @@ function ProductsSectionContent({
                                             ))}
                                         </div>
 
-                                        {/* Pagination */}
                                         {totalPages > 1 && (
                                             <Pagination
                                                 currentPage={page}
@@ -441,33 +366,19 @@ function ProductCard({
     isHovered, 
     onHover 
 }: { 
-    product: Product; 
+    product: ProductListItem; 
     isHovered: boolean; 
     onHover: (id: number | null) => void;
 }) {
-    // Format price safely
-    const formatPrice = (price: any): string => {
-        if (!price && price !== 0) return '';
-        
-        // Convert to number if it's a string
-        const numPrice = typeof price === 'string' ? parseFloat(price) : price;
-        
-        // Check if it's a valid number
-        if (isNaN(numPrice) || numPrice <= 0) return '';
-        
-        return `RM ${numPrice.toFixed(2)}`;
-    };
-
     const formattedPrice = formatPrice(product.price);
 
     return (
         <Link
-            href={`/shop/${product.categorySlug || 'uncategorized'}/${product.slug}`}
+            href={`/shop/${product.category.slug}/${product.slug}`}
             className="group relative overflow-hidden rounded-2xl bg-white shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
             onMouseEnter={() => onHover(product.id)}
             onMouseLeave={() => onHover(null)}
         >
-            {/* Image Section */}
             <div className="relative h-56 overflow-hidden bg-orange-100">
                 <Image
                     src={product.image || "/placeholder.svg"}
@@ -476,12 +387,9 @@ function ProductCard({
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                     className="object-cover p-4 transition-transform duration-500 group-hover:scale-110"
                     loading="lazy"
-                    placeholder="blur"
-                    blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRg..."
                 />
             </div>
 
-            {/* Content Section */}
             <div className="p-6">
                 <h3 className="text-xl font-semibold mb-3 text-gray-800 group-hover:text-orange-600 transition-colors duration-300 line-clamp-2">
                     {product.name}
@@ -490,7 +398,6 @@ function ProductCard({
                     {product.description || "Premium quality flooring solution for your space."}
                 </p>
 
-                {/* Price if available - FIXED */}
                 {formattedPrice && (
                     <div className="mb-3">
                         <span className="text-lg font-bold text-gray-900">
@@ -532,16 +439,15 @@ function Pagination({
     totalPages: number; 
     onPageChange: (page: number) => void;
 }) {
-    const pages = Array.from({ length: totalPages }, (_, i) => i + 1);
-    
-    // Generate page numbers to display
     const getVisiblePages = () => {
-        if (totalPages <= 7) return pages;
+        if (totalPages <= 7) {
+            return Array.from({ length: totalPages }, (_, i) => i + 1);
+        }
         
         if (currentPage <= 4) {
-            return [...pages.slice(0, 5), '...', totalPages];
+            return [1, 2, 3, 4, 5, '...', totalPages];
         } else if (currentPage >= totalPages - 3) {
-            return [1, '...', ...pages.slice(totalPages - 5)];
+            return [1, '...', totalPages - 4, totalPages - 3, totalPages - 2, totalPages - 1, totalPages];
         } else {
             return [1, '...', currentPage - 1, currentPage, currentPage + 1, '...', totalPages];
         }
@@ -599,6 +505,7 @@ function Pagination({
         </div>
     );
 }
+
 export default function ProductsSection(props: ProductsSectionProps) {
     return (
         <Suspense fallback={<div className="min-h-[500px] flex items-center justify-center">

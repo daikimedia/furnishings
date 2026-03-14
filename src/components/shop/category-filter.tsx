@@ -1,16 +1,12 @@
+// components/shop/category-filter.tsx
 "use client";
 
 import Link from "next/link";
 import { Suspense } from 'react';
 import { useSearchParams } from "next/navigation";
 import { useEffect, useState } from "react";
-
-interface Category {
-    id: number;
-    name: string;
-    slug: string;
-    products_count: number;
-}
+import { getCategories } from "@/lib/api";
+import { Category } from "@/lib/interfaces";
 
 function CategoryFilterContent() {
     const searchParams = useSearchParams();
@@ -21,9 +17,8 @@ function CategoryFilterContent() {
     useEffect(() => {
         const fetchCategories = async () => {
             try {
-                const response = await fetch('/api/categories');
-                const data = await response.json();
-                setCategories(data.data || []);
+                const data = await getCategories();
+                setCategories(data);
             } catch (error) {
                 console.error('Error fetching categories:', error);
             } finally {
@@ -37,9 +32,9 @@ function CategoryFilterContent() {
     if (loading) {
         return (
             <div className="flex flex-wrap gap-2">
-                <div className="h-10 w-24 bg-gray-200 animate-pulse rounded"></div>
-                <div className="h-10 w-24 bg-gray-200 animate-pulse rounded"></div>
-                <div className="h-10 w-24 bg-gray-200 animate-pulse rounded"></div>
+                {[...Array(5)].map((_, i) => (
+                    <div key={i} className="h-10 w-24 bg-gray-200 animate-pulse rounded"></div>
+                ))}
             </div>
         );
     }
@@ -73,6 +68,7 @@ function CategoryFilterContent() {
         </div>
     );
 }
+
 export default function CategoryFilter() {
     return (
         <Suspense fallback={<div className="flex flex-wrap gap-2">
