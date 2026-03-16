@@ -1,6 +1,7 @@
 "use client"
 import React, { useState, useRef } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
+import Image from 'next/image';
 
 const CertificateCarousel = () => {
     const scrollContainerRef = useRef<HTMLDivElement>(null);
@@ -141,7 +142,7 @@ const CertificateCarousel = () => {
                                 key={cert.id}
                                 className="flex-shrink-0 flex items-center justify-center w-48 h-40 bg-white rounded-xl shadow-md hover:shadow-lg hover:scale-105 transition-all duration-300 border border-gray-100"
                             >
-                                <img
+                                <Image
                                     src={cert.logo}
                                     alt={cert.name}
                                     className="h-48 w-auto max-w-[140px] object-contain filter hover:brightness-110 transition-all duration-300"

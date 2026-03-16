@@ -71,7 +71,7 @@ const AboutUs = () => {
                         >
                             <div className="w-full h-56 bg-orange-100 flex items-center justify-center p-6">
                                 <div className="relative w-full h-full">
-                                    <img
+                                    <Image
                                         src={item.image}
                                         alt={item.title}
                                         className="object-cover h-full w-full rounded-lg"
