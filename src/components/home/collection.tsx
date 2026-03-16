@@ -67,7 +67,7 @@ export default function FloorCategories() {
                 {/* Categories Grid */}
                 {loading ? (
                     <div className="flex justify-center items-center py-20">
-                        <SquareLoader text="Loading collections..." />
+                        <SquareLoader text="Loading..." />
                     </div>
                 ) : categories.length === 0 ? (
                     <div className="text-center py-12">

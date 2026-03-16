@@ -314,7 +314,7 @@ function ProductsSectionContent({
 
                         {loading ? (
                             <div className="min-h-[500px] flex items-center justify-center">
-                                <SquareLoader text="Loading products..." />
+                                <SquareLoader text="Loading..." />
                             </div>
                         ) : (
                             <>
@@ -508,7 +508,7 @@ function Pagination({
 export default function ProductsSection(props: ProductsSectionProps) {
     return (
         <Suspense fallback={<div className="min-h-[500px] flex items-center justify-center">
-            <SquareLoader text="Loading products..." />
+            <SquareLoader text="Loading..." />
         </div>}>
             <ProductsSectionContent {...props} />
         </Suspense>

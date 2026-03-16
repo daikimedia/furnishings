@@ -159,7 +159,7 @@ const BlogListContent = ({
   if (loading) {
     return (
       <div className="min-h-[400px] flex items-center justify-center">
-        <SquareLoader text="Loading blogs..." />
+        <SquareLoader text="Loading..." />
       </div>
     );
   }
@@ -257,7 +257,7 @@ export default function BlogList(props: BlogListProps) {
     <Suspense
       fallback={
         <div className="min-h-[400px] flex items-center justify-center">
-          <SquareLoader text="Loading blogs..." />
+          <SquareLoader text="Loading..." />
         </div>
       }
     >

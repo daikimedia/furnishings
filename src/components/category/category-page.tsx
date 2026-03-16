@@ -264,7 +264,7 @@ export default function CategoryPage({ slug: propSlug }: CategoryPageProps) {
     if (loading) {
         return (
             <div className="min-h-screen flex items-center justify-center">
-                <SquareLoader text="Loading category..." />
+                <SquareLoader text="Loading..." />
             </div>
         );
     }

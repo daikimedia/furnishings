@@ -98,7 +98,6 @@ const CategoryTabs = () => {
                     className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8"
                 >
                     {loading ? (
-                        // Loading skeletons
                         [...Array(8)].map((_, index) => (
                             <div key={index} className="bg-gray-200 animate-pulse rounded-xl h-80"></div>
                         ))
